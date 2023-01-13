@@ -1,0 +1,406 @@
+---
+title: "organisation design and leading change management"
+author: "Eugene Hickey"
+date: "[tud.netlify.app/organisational-change.html](https://tud.netlify.app/organisational-change.html)"
+format:
+  revealjs:
+    theme: style.scss
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+    embed-resources: true
+    includes:
+      favicon: favicon.html
+code-link: true
+execute:
+  echo: true
+  freeze: auto
+---
+
+# School of Physics, Clinical & Optometric Sciences
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(scales)
+library(knitr)
+library(kableExtra)
+library(colorblindr)
+library(viridis)
+library(ggtext)
+library(pdftools)
+library(ggokabeito)   # Colorblind-friendly color palette
+library(showtext)
+library(ggrepel)
+options(dplyr.print_min = 6, dplyr.print_max = 6)
+theme_set(theme_gray(base_size = 18))
+```
+
+```{r setup}
+#| echo: false
+#| message: false
+#| warning: false
+
+font_add_google(name = "Lobster", family = "Fuzzy Bubbles")
+showtext_auto()
+theme_clean <- function() {
+  theme_minimal(base_family = "Fuzzy Bubbles") +
+    theme(panel.grid.minor = element_blank(),
+          text = element_text(size = 36, family = "Fuzzy Bubbles"),
+          plot.background = element_rect(fill = "white", color = NA),
+          axis.text = element_text(size = 40),
+          axis.title = element_text(face = "bold", size =40),
+          strip.text = element_text(face = "bold", size = rel(0.8), hjust = 0),
+          strip.background = element_rect(fill = "grey80", color = NA),
+          legend.text = element_text(size = 16))
+}
+```
+
+```{r cao_data}
+#| echo: false
+#| message: false
+#| warning: false
+#| cache: true
+
+# TU754 Industrial & Environmental Physics
+# TU761 OPTHALMIC DISPENSING
+# TU855 Science with Nanotechnology
+# TU868 CLINICAL MEASUREMENT
+# TU871 OPTOMETRY DT224
+# TU877 PHYSICS TECHNOLOGY DT222
+# TU878 Physics with Energy and Environment DT221
+# TU879 Physics with Medical Physics and Bioengineering DT235
+# TU880 Physics with Data Science
+
+
+years <- c("07", "08", "09", "10", "13", 14:19 )
+cao_points_year <- function(year) {
+  cao_pdf <- glue::glue("http://www2.cao.ie/points/lvl8_{year}.pdf")
+  z <- pdf_text(cao_pdf) %>% 
+    str_split("\n") %>% 
+    unlist()
+  z <- z[!str_detect(z, "^ ") & z != "" & !str_detect(z, "Course Code") & str_count(z, "  +") == 3] %>% # gets rid of non-data rows
+    str_split("  +") %>% # splits rows based on runs of several spaces
+    unlist() %>% 
+    str_remove("#") %>% 
+    str_remove("\\*") # deletes some annoying characters
+  z <- tibble(year = glue::glue("20{year}"), 
+              code = z[c(T, F, F, F)], 
+              course = z[c(F, T, F, F)], 
+              final = z[c(F, F, T, F)], 
+              medium = z[c(F, F, F, T)]) 
+  # original list made bunches of four elements that together described a course. This tibble winds them up to one row
+  z
+}
+
+z <- map_df(years, cao_points_year) %>% 
+  mutate(year = as.numeric(year))
+
+z21 <- readxl::read_excel("data/CAOPointsCharts2021.xlsx", 
+                          sheet = "EOS_2021", skip = 10) %>% 
+  janitor::clean_names() %>% 
+  filter(course_level == 8) %>% 
+  mutate(year = 2021) %>% 
+  select(year,
+         code = course_code, 
+         course = course_title,
+         final = eos_points,
+         medium = eos_midpoints) %>% 
+  mutate(year = 2021,
+         medium = as.character(medium))
+z20 <- readxl::read_excel("data/CAOPointsCharts2020.xlsx", 
+                          sheet = "PointsCharts2020_V2", skip = 9) %>% 
+  janitor::clean_names() %>% 
+  filter(level == 8) %>% 
+  mutate(year = 2020) %>%  
+  select(year,
+         code = course_code2, 
+         course = course_title,
+         final = eos,
+         medium = eos_mid_point) %>% 
+  mutate(year = 2020)
+
+z <- bind_rows(z, z20, z21)
+
+z1 <- z %>%
+  select(code, course) %>% 
+  group_by(code) %>%
+  mutate(last_name = if_else(row_number() == n(), 1 ,0)) %>% 
+  filter(last_name == 1) %>% 
+  select(code, last_name = course)
+
+z <- z %>% 
+  left_join(z1) %>% 
+  mutate(final = as.numeric(final),
+         medium = as.numeric(medium),
+         label = if_else(year == max(year), 
+                         as.character(code), NA_character_))
+```
+
+
+## our evolution
+
+::: columns
+::: {.column width="50%" style="text-align: center;"}
+![](presentation/images/University.png){height=300px}
+
+**Impact 1:**
+
+We're now a university
+:::
+
+::: {.column width="50%" style="text-align: center;"}
+![](presentation/images/geography.png){height=300px}
+
+**Impact 2:**
+
+We have a new geography
+:::
+:::
+
+## takeaway
+
+<br><br>
+
+> We change in response to new challenges and opportunities. Change is most effective when it is embraced, communicated, rewarded, and measured.
+
+::: aside
+
+Aguirre, Deanne, and Micah Alpern. 2014. “10 Principles of Leading Change Management.” Strategy + Business Magazine by PwC Strategy& Inc Summer.
+
+
+[https://www.strategy-business.com/article/00255](https://www.strategy-business.com/article/00255)
+:::
+
+## Understanding Change
+
+The new status of our organisation will affect [the way we work and the outcomes we can achieve]{style="font-weight:bold;background-color:#ccddeb;"}. Will entail sequence of operations to attain our goals
+
+## Planning Change
+
+We need to ensure engagement and support across the organisation. We need ways to measure the impact and success of new structures.
+
+## Implementing Change
+
+We need to generate enthusiasm for adopting new practices.  [Need metrics to gauge the impact of change at each step in the process]{style="font-weight:bold;background-color:#ccddeb;"}.
+
+## Communicate
+
+There needs to be an awareness of the vision behind change. There has to be a desire to participate in the process. Change needs to be sustained by reinforcing the actions taken.
+
+## Physics is in a good place
+
+
+
+```{r points_plot}
+#| echo: false
+#| message: false
+#| warning: false
+#| cache: true
+
+courses <- tribble(~course, ~number, ~old_name,
+                   "TU855", 1, "DT227",
+                   "TU868", 2, "DT229",
+                   "TU871", 3, "DT224",
+                   "TU877", 4, "DT222",
+                   "TU878", 5, "DT221",
+                   "TU879", 6, "DT235",
+                   "TU880", 7, "TU880")
+
+max_years <- z %>%  filter(code %in% courses$course) %>%  
+  group_by(code) %>% 
+  summarize(year_max = max(year)) |> 
+  left_join(courses, by = c("code" = "course")) |> 
+  mutate(legend = glue::glue("{code}"))
+
+z %>%  
+  mutate(code = str_replace(code, "DT224", "TU871"),
+         code = str_replace(code, "DT222", "TU877"),
+         code = str_replace(code, "DT221", "TU878"),
+         code = str_replace(code, "DT235", "TU879"),
+         code = str_replace(code, "DT227", "TU855"),
+         code = str_replace(code, "DT229", "TU868"),
+         course = str_remove(course, "with"),
+         course = str_remove(course, "Science"),
+         course = str_remove(course, "Physics"),
+         course = str_remove(course, "and")) |> 
+  filter(code %in% courses$course) %>%
+  mutate(code = glue::glue("{code}: {abbreviate(course, 15)}")) |>  
+  left_join(max_years) %>% 
+  mutate(label = ifelse(year == year_max, legend, "")) %>% 
+  ggplot(aes(year, final, colour = code, group = code)) +
+  geom_line(size = 2) +
+  geom_point(size = 5) +
+  geom_label_repel(aes(label = label),
+                   nudge_x = 0.2,
+                   size = 6,
+                   na.rm = TRUE,
+                   show.legend = F) +
+  scale_color_okabe_ito() +
+  scale_y_continuous(breaks = seq(100, 600, by = 50)) +
+  coord_cartesian(ylim = c(250, 600)) +
+  labs(y = "Final Points", x = "") +
+  theme_clean() +
+  theme(legend.position = "bottom", 
+        legend.text = element_text(size = 32), 
+        legend.title = element_blank()) +
+  guides(col=guide_legend(nrow=3))
+```
+
+## School of Physics, Clinical and Optometric Sciences
+
+::: columns
+::: {.column width="80%"}
+
+
+```{r schools}
+#| echo: false
+#| message: false
+#| warning: false
+#| cache: true
+schools <- tribble(~faculty, ~name, ~primary, ~secondary, ~tertiary,
+                   "Science", "PharmaChem", 2125, 550, 75,
+                   "Science", "BioSports", 925, 225, 1250,
+                   "Science", "Physics", 450, 100,  150,
+                   "Science", "Food", 625, 75, 475,
+                   "Computing", "Maths&Stats", 125,  75, 2550,
+                   "Computing", "CompSci", 800,950, 650,
+                   "Computing", "IT", 725, 375, 175,
+                   "Computing", "InfoSys", 825, 75, 350,
+                   "Engineering", "Architecture", 800, 0, 625,
+                   "Engineering", "Surveying", 1100, 0, 0,
+                   "Engineering", "Electr.", 1275, 1650, 550,
+                   "Engineering", "Civil", 950, 300, 850,
+                   "Engineering", "Mechanical", 1825, 550, 0) |> 
+  mutate(faculty = factor(faculty, levels = c("Science", "Computing", "Engineering")),
+         ToHighlight = ifelse( name == "Physics", "yes", "no" ))
+my_colour <- "#00589b"
+schools <- schools |> 
+  group_by(faculty) |> 
+  arrange(desc(primary), .by_group = T)
+schools$order <- 1:nrow(schools)
+schools |> 
+  mutate(name = ifelse(name == "Physics", glue::glue("<p style='color:{my_colour}'><strong>Physics</strong></p>"), name)) |> 
+  ggplot(aes(reorder(name, order, desc), primary, fill = ToHighlight)) + 
+  geom_col() +
+  scale_fill_manual( values = c( "yes"=my_colour, "no"="gray" ), guide = "none") + 
+  coord_flip() +
+  annotate("text", x = 11, y = 1600, 
+           label = "Physics has space to grow", 
+           size= 14, colour = my_colour,
+           family = "Fuzzy") +
+  annotate("segment", x = 11, xend = 10, y = 1000, yend = 600,
+           colour = my_colour, size = 2, arrow = arrow()) +
+  theme_clean() +
+  theme(axis.title = element_blank(),
+        axis.text.y = element_markdown(),
+        plot.title = element_markdown(size = 11, lineheight = 1.2))
+```
+
+
+:::
+
+::: {.column width="20%"}
+
+:::
+:::
+
+##  And resources to grow
+
+::: columns
+::: {.column width="70%" style="text-align: center;"}
+
+![](presentation/images/CQ-117.png){height=500px}
+
+:::
+::: {.column width="30%" style="text-align: center;"}
+
+<br>
+<br>
+<br>
+
+### Timetable for 32 berth physics laboratory later this month
+:::
+:::
+
+##
+
+```{r collapsibleTree}
+#| echo: false
+#| message: false
+#| warning: false
+#| cache: true
+#| fig-align: center
+
+
+library(collapsibleTree)
+
+vision <- tribble(~sections, ~subs,  ~metrics,
+                  "Core Strengths", "Teaching and Learning", "student-centred approach",
+                  "Core Strengths", "Teaching and Learning", "experiential learning opportunities",
+                  "Core Strengths", "Teaching and Learning", "adaptable staff",
+                  "Core Strengths", "Research and Innovation", "research centres",
+                  "Core Strengths", "Research and Innovation", "mentoring programme",
+                  "Core Strengths", "Research and Innovation", "external collaborations",
+                  "Growth Areas", "Teaching and Learning", "physics up 10% in 3-5 years",
+                  "Growth Areas", "Teaching and Learning", "optometric up 20% in 3-5 years",
+                  "Growth Areas", "Teaching and Learning", "clin.meas. up 20% in 3-5 years",
+                  "Growth Areas", "Teaching and Learning", "postgrad up 20% in 3-5 years",
+                  "Growth Areas", "Teaching and Learning", "professional education up 50% in 3-5 years",
+                  "Growth Areas", "Teaching and Learning", "explore level 9 online within 3 years",
+                  "Growth Areas", "Research and Innovation", "increase research activity",
+                  "Growth Areas", "Research and Innovation", "new research adirections",
+                  "Growth Areas", "Research and Innovation", "early stage researchers",
+                  "Growth Areas", "Research and Innovation", "fulltime researchers",
+                  "Growth Areas", "Research and Innovation", "more postgraduates",
+                  "Growth Areas", "Research and Innovation", "increase collaborations",
+                  "Growth Areas", "Research and Innovation", "enhance visibility",
+                  "Collaboration", "Undergraduate Teaching", "other sciences",
+                  "Collaboration", "Undergraduate Teaching", "engineering",
+                  "Collaboration", "Research", "other sciences",
+                  "Collaboration", "Research", "engineering",
+                  "Collaboration", "Research", "digital & data",
+                  "Collaboration", "Professional Education", "business",
+                  "Sustainability", "Research", "",
+                  "Sustainability", "Outreach", "",
+                  "Sustainability", "Awareness", "",
+                  "Sustainability", "Measure", "",
+                  "Change and Culture", "Diversity", "",
+                  "Change and Culture", "Alumni", "open days",
+                  "Change and Culture", "Alumni", "research",
+                  "Change and Culture", "Alumni", "social media",
+                  "Partnership", "industry", "",
+                  "Partnership", "community partners", "",
+                  "Financial", "", "")
+
+
+tree <- collapsibleTree(
+  vision,
+  fontSize = 24,
+  linkLength = 200,
+  root = "School Vision",
+  hierarchy = c("sections", "subs", "metrics"),
+  # fill = c(
+  #   # The root
+  #   my_colour,
+  #   # Unique regions
+  #   rep("brown", (length(unique(vision$sections)))),
+  #  # Unique names per region
+  #     rep("forestgreen", (nrow(vision)-length(unique(vision$sections))+3))
+  # )
+)
+tree[[1]]$options$margin$left <- 280
+tree[[1]]$options$margin$right <- 100
+tree
+```
+
+# Final thoughts
+
+
+## Clear Vision
+
+Acceptance that change is coming and a view of where the school is going
+
+## Detailed Plan
+
+Defined achievable goals; timeframes and milestones
