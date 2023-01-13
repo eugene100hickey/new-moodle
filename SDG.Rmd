@@ -1,0 +1,27 @@
+---
+title: "Technological University Dublin"
+output:
+  html_document:
+    includes:
+      in_header: favicon.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Analysis of our Submissions
+## Times Higher Education 
+## University Rankings
+
+- [SDG1 - Poverty](https://tud.netlify.app/poverty.html){target="_blank"}
+
+- [SDG3 - Health](https://tud.netlify.app/health.html){target="_blank"}
+
+- [SDG7 - Energy](https://tud.netlify.app/energy.html){target="_blank"}
+
+- [SDG11 - Sustainable Cities](https://tud.netlify.app/sustainable.html){target="_blank"}
+
+- [SDG13 - Climate](https://tud.netlify.app/climate.html){target="_blank"}
+
+- [SDG17 - Working Together](https://tud.netlify.app/working-together.html){target="_blank"}

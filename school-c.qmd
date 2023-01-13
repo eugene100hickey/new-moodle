@@ -1,0 +1,129 @@
+---
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    width: 1600
+    height: 900
+    footer: '<a href="https://www.fizzics.ie/">fizzics.ie</a>'
+tab-border-collapse: collapse
+background-size: 50% 50%;
+---
+#  {.title}
+
+::: r-fit-text
+Eugene Hickey
+
+[TU Dublin - Tallaght Campus]{.flow}
+:::
+
+::: footer
+:::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Teaching {.textcenter}
+
+
+|                                  |        |
+|----------------------------------|--------|
+| {{< fa solid person-running >}}  | 1st year Biomechanics   |
+| {{< fa solid network-wired >}}   | 2nd year Computer Measurement   |
+| {{< fa regular gem >}}           | 4th year Crystallography   |
+| {{< fa solid atom >}}            | 4th year Quantum Chemistry   |
+| {{< fa solid staff-snake >}}     | 4th year Projects |
+| {{< fa solid chart-gantt >}}     | PostGrad Data Visualisation |
+
+: {tbl-colwidths="[15,85]"}
+
+:::
+
+::: {.column width="50%"}
+
+### Research {.textcenter}
+
+
+|                                 |                   |
+|---------------------------------|-------------------|
+| {{< li yrixyrst >}}    | Health Provision  |
+| {{< li wlpxtupd >}}         | Neuroscience      |
+| {{< li clcopglh >}} | Astrophysics      |
+| {{< fa solid r >}}              | R package (genes) |
+
+
+: {tbl-colwidths="[15,85]"}
+
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Collaborations {.textcenter}
+
+
+|                                  |        |
+|----------------------------------|--------|
+| {{< fa solid magnifying-glass-chart >}}  | ML-Labs (TUD, UCD, DCU)  |
+| {{< fa solid graduation-cap >}}   | EUT+ (Darmstadt, Troyes)  |
+| {{< fa solid satellite >}}           | COST Action GAIA   |
+| {{< fa solid staff-snake >}}            | NHSr (workshops/conferences)  |
+| {{< fa solid globe >}}     | IRGEOS (C-SPAN)|
+| {{< fa solid server >}}     | ICHEC |
+
+: {tbl-colwidths="[15,85]"}
+
+:::
+
+::: {.column width="50%"}
+
+### Projects {.textcenter}
+
+
+|                                     |                             |
+|-------------------------------------|-----------------------------|
+| {{< fa solid building-columns >}}   | University Rankings Group   |
+| {{< fa solid laptop-code >}}        | Student Digital Experience  |
+| {{< fa regular calendar-check >}}   | Timetables                  |
+| {{< fa solid chalkboard-user >}}    | Learning Management Systems |
+
+
+: {tbl-colwidths="[15,85]"}
+
+:::
+::::
+
+---
+
+
+:::: columns
+::: {.column width="60%"}
+::: r-fit-text
+Thank you!
+
+|                                 |                   |
+|---------------------------------|-------------------|
+| {{< fa solid blog >}}    | [www.fizzics.ie/](https://www.fizzics.ie/)  |
+| {{< fa brands orcid >}} | [0000-0001-9813-9323](https://orcid.org/my-orcid?orcid=0000-0001-9813-9323)|
+| {{< fa brands mastodon >}}|[\@eugene100hickey](https://mastodon.social/@eugene100hickey)|
+| {{< fa brands twitter >}} | [\@eugene100hickey](https://twitter.com/eugene100hickey)|
+| {{< fa brands github >}}| [eugene100hickey.github.io/](https://github.com/eugene100hickey)|
+
+   
+:::
+:::
+
+::: {.column width="40%"}
+::: {#fig-website}
+
+<iframe onload="this.width=screen.width;this.height=screen.height*0.90;" src="https://www.fizzics.ie/teaching.html"></iframe>
+website / blog
+:::
+
+:::
+:::
+
