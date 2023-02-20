@@ -219,7 +219,6 @@ Access stores of ATP in the cell
 
 $$ ATP + H_2O\; \rightarrow\;ADP + P_i \qquad ATP_{ase} $$
 
-$$ ATP + H_2O\; \rightarrow\;ADP + P_i \qquad ATP_{ase} $$
 
 $$ CP + ADP\; \rightarrow \; ATP + C \qquad creatine\; kinase $$
 No $O_2$ in either process
