@@ -1,0 +1,82 @@
+---
+title: "Strategic Development and Operational Management of the Physics and Clinical Measurement Science"
+title-slide-attributes:
+  data-background-image: /img/clock.jpg
+  data-background-size: contain
+  data-background-opacity: "0.2"
+format: 
+  revealjs:
+    theme: solarized
+    slide-number: c/t
+editor: visual
+---
+
+-   making a new university is a complicated journey
+-   head of discipline is a key element in that process
+-   tentacles to many different players
+    -   students
+    -   staff of the discipline
+    -   other heads of discipline
+    -   upper management
+
+## Students
+
+-   answerable to students individually
+-   every student is different
+    -   qualities
+    -   attributes
+    -   challenges
+-   pastoral role of head of discipline
+
+## Staff
+
+-   staff
+    -   technical staff
+    -   academics
+    -   ancilliary staff
+-   need to make resources available
+-   need to work as an ensemble
+-   need to inspire
+
+## Other Heads of Discipline
+
+-   physics reaches across many domains
+    -   undergraduate courses
+    -   research groups
+-   joint courses - nano
+-   pool expertise in our evolving university
+
+## Upper Management
+
+-   need to communicate status and needs of discipline
+-   need to implement vision of university
+
+## Visible / Invisible Parts of Function
+
+-   Visible
+
+    -   need to inspire
+
+    -   need to encourage
+
+    -   need to help different elements work together
+
+-   Invisible
+
+    -   resource allocation and planning doesn't *just* happen
+
+    -   but it should seem like it does
+
+## Challenges
+
+-   student numbers in physics
+
+-   physics limited to less than 10% who take physics in LC
+
+-   names of courses important
+
+    -   ask secondary school students
+
+    -   back-up for other courses
+
+-   design of website
