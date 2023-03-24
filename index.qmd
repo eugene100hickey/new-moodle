@@ -1,0 +1,43 @@
+---
+title: "Eugene's Pages"
+format: 
+  html:
+    theme: solarized
+editor: visual
+---
+
+## Presentations
+
+-   [March 24th](https://tud.netlify.app/phys-clin-discipline)
+
+-   [January 13th](https://tud.netlify.app/organisational-change.html)
+
+-   [School Introductions](https://tud.netlify.app/school-c)
+
+## University Rankings
+
+-   [SDG 1 - Poverty](https://tud.netlify.app/poverty#1)
+
+-   [SDG 3 - Health](https://tud.netlify.app/health.html#1)
+
+-   [SDG 7-Energy](https://tud.netlify.app/energy#1)
+
+-   [SDG 11 - Sustainable Cities](https://tud.netlify.app/sustainable.html#1)
+
+-   [SDG 13 - Climate Action](https://tud.netlify.app/climate#1)
+
+-   [SDG 17 - Working Together](https://tud.netlify.app/working-together.html)
+
+## Sports Physics Lectures
+
+-   [Bio Energy](https://tud.netlify.app/bioenergy1#/title-slide)
+
+## Sports Laboratory
+
+-   [Graph Rules](https://tud.netlify.app/graph-rules#1)
+
+-   [Thermal Radiation](https://tud.netlify.app/wien)
+
+-   [Momentum Conservation](https://tud.netlify.app/collision)
+
+-   [Projectile Motion](https://tud.netlify.app/projectile)
