@@ -3,13 +3,18 @@ title: "Eugene"
 author: "Energy in Sport"
 date: "`r format(Sys.Date(), '%B %d %Y')`"
 format:
-  revealjs: 
+  revealjs:
     theme: dark
     slide-number: c/t
     show-slide-number: all
-    chalkboard:      
+    chalkboard:
       theme: whiteboard
       boardmarker-width: 5
+# format:
+#   pdf:
+#     toc: true
+#     number-sections: true
+#     colorlinks: true
 ---
 
 ```{r setup, include=FALSE}
@@ -316,7 +321,7 @@ Adipose Tissue
 
 ## Different Muscle Fibres
 
-![Muscle Fibres](fibres.png)
+![Muscle Fibres](img/fibres.png)
 
 ---
 
