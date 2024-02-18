@@ -86,7 +86,7 @@ get up to 1mL/kg/s
 
 ---
 
-## Respiratory Exchange Ratio (RER){.smaller}
+## Respiratory Exchange Ratio (RER)
 
 as well as measuring O~2~ levels we also monitor CO~2~
 gives us the RER
@@ -96,6 +96,8 @@ This gives information on type of food being used
 - for fats, RER = 0.7
 
 - for glucose, RER = 1.0
+
+---
 
 Fats, e.g. palmitate, 
 C~16~H~32~O~2~ + 23 O~2~ -> 16 CO~2~ + 16 H~2~O
@@ -369,7 +371,7 @@ Adipose Tissue
 
 - consumption of very dilute CHO drink during exercise
 
-- athletes at 70 VO~2~ max can exercise for ~4 hours rather than 3 hours before fatigue
+- athletes at 70% VO~2~ max can exercise for ~4 hours rather than 3 hours before fatigue
 
 - gives addition source of CHO thus sparing liver glycogen
 
@@ -771,7 +773,7 @@ $$Cardiac\;Output\;=\;Heart\;Rate\;\times\;Stroke\;Volume$$
 
 - increased muscle acidity
     - $H^+$ interferes with $Ca^{2+}$'s role in muscle contraction
-    - also inhibits anaerobis glycolysis
+    - also inhibits anaerobic glycolysis
     - buffering (e.g. $NaHCO_3$)
     
 ## Fatigue for Endurance Exercise
@@ -859,7 +861,7 @@ $$Cardiac\;Output\;=\;Heart\;Rate\;\times\;Stroke\;Volume$$
 
 - greater time to exhaustion
 
-- also interacts with $CA^{2+}$ from SR
+- also interacts with $Ca^{2+}$ from SR
 
 # Exercise in Health and Disease
 
