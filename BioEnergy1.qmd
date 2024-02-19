@@ -74,7 +74,7 @@ typically about
 - Maximum VO~2~ measured by exercising to exhaustion
 get up to 1mL/kg/s
 
-- corresponds to about 250 Watts of power
+- corresponds to about 2000 Watts of power
 
 - training will increase your VO~2~ max
 
@@ -117,10 +117,13 @@ $$ \frac{6}{6} = 1.0 $$
  
 ## CHO's needed at higher intensities
 
+![](img/vo2max-food.png)
+
 ```{r marathon}
 #| echo: false
 #| warning: false
 #| message: false
+#| eval: false
 
 
 library(tidyverse)
