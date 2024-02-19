@@ -114,29 +114,15 @@ $$ \frac{6}{6} = 1.0 $$
 
  - for high-powered activities like sprinting, mostly carbohydrates
 
----
+ 
+## CHO's needed at higher intensities
 
-## Fuel used During a Marathon
+```{r marathon}
+#| echo: false
+#| warning: false
+#| message: false
 
-- muscle triglycerides: provide ~ 30% of energy initially but fades to ~10%  gradually over four hours
 
-- plasma FFA: provide ~ 20% initially but this grows to 50% over four hours
-
-- blood glucose: provides 10% initially, this grows to 40% after four hours
-
-##  
-
-- muscle glycogen: provides ~ 40% initially but fades out over about 3 hours
-
-- decrease in CHO use leads to a decrease inperformance and to the onset of fatigue
-
-See [this video](https://www.youtube.com/embed/HDG4GSypcIE) for a discussion of energy use in sled dogs.
-
----
-
-##  Fuel used During a Marathon
-
-```{r marathon, echo = F, warning = F, message = F, cache = T}
 library(tidyverse)
 library(ggokabeito)
 library(showtext)
@@ -169,7 +155,33 @@ marathon %>% ggplot(aes(Times, Percentage, fill = Fuel)) +
 
 ```
 
+
 ---
+
+## Fuel used During a Marathon
+
+- muscle triglycerides: provide ~ 30% of energy initially but fades to ~10%  gradually over four hours
+
+- plasma FFA: provide ~ 20% initially but this grows to 50% over four hours
+
+- blood glucose: provides 10% initially, this grows to 40% after four hours
+
+##  
+
+- muscle glycogen: provides ~ 40% initially but fades out over about 3 hours
+
+- decrease in CHO use leads to a decrease inperformance and to the onset of fatigue
+
+See [this video](https://www.youtube.com/embed/HDG4GSypcIE) for a discussion of energy use in sled dogs.
+
+---
+
+##  Fuel used During a Marathon
+
+
+![](img/marathon-glucose.png)
+
+
 
 ## Crossover Concept
 
