@@ -82,7 +82,7 @@ SDG1_Poverty <- read_csv("../data/poverty/arizona/SDG1_2021_readme_weightings_20
   mutate(Indicator = str_wrap(Indicator, 10),
          Metric = str_wrap(Metric, 10))
 
-SDG1_Poverty_metrics <- read_csv("../data/poverty/arizona/SDG1_2021_readme_weightings_2021_07_19.csv", n_max = 20) %>% 
+SDG1_Poverty_metrics <- read_csv("data/poverty/arizona/SDG1_2021_readme_weightings_2021_07_19.csv", n_max = 20) %>% 
   mutate(Weight = Weight %>% str_remove("%") %>% as.numeric()) %>% 
   filter(`Attribute Type` == "Indicator") %>% 
   mutate(Indicator = glue::glue("{Attribute}"),
@@ -92,7 +92,7 @@ SDG1_Poverty_metrics <- read_csv("../data/poverty/arizona/SDG1_2021_readme_weigh
                     rep("Community anti-poverty programmes", 4))) %>% 
   select(Indicator, Metric)
 
-poverty <- function(filename = "../data/poverty/arizona/SDG1_2021_indicator_scores_2021_07_19.csv") {
+poverty <- function(filename = "data/poverty/arizona/SDG1_2021_indicator_scores_2021_07_19.csv") {
   z <- read_lines(filename)
   z <- z[-c(1)] %>%
     as_tibble() %>%
@@ -157,7 +157,7 @@ SDG1 <- function(df = z1, my_university = irish_universities, metric = "Research
     coord_flip()
 }
 
-dirs <- list.dirs("../data/poverty") %>% 
+dirs <- list.dirs("data/poverty") %>% 
   paste0("/SDG1_2021_indicator_scores_2021_07_19.csv")
 dirs <- dirs[-1]
 
@@ -169,7 +169,7 @@ z <- map(dirs, poverty) %>%
   filter(!str_starts(string = value, pattern = "student support")) %>% 
   arrange(value)
 
-zq <- read_csv("../data/poverty/arizona/SDG1_2021_readme_weightings_2021_07_19.csv", n_max = 20) %>% 
+zq <- read_csv("data/poverty/arizona/SDG1_2021_readme_weightings_2021_07_19.csv", n_max = 20) %>% 
   mutate(Weight = Weight %>% str_remove("%") %>% as.numeric())
 
 column_names <- zq %>% 
@@ -177,7 +177,7 @@ column_names <- zq %>%
   pull(Attribute) %>% 
   c("university", .)
 
-overall <- function(filename = "../data/poverty/arizona/SDG1_2021_sdg_overall_2021_07_19.csv") {
+overall <- function(filename = "data/poverty/arizona/SDG1_2021_sdg_overall_2021_07_19.csv") {
   read_lines(skip = 1, file = filename) %>% 
     as_tibble() %>% 
     mutate(score = str_sub(value, -6, -1) %>% parse_number()) %>% 
@@ -186,7 +186,7 @@ overall <- function(filename = "../data/poverty/arizona/SDG1_2021_sdg_overall_20
     filter(!(str_detect(university, "Worldwide:")))
 }
 
-overall_dirs <- list.dirs("../data/poverty") %>% 
+overall_dirs <- list.dirs("data/poverty") %>% 
   paste0("/SDG1_2021_sdg_overall_2021_07_19.csv")
 overall_dirs <- overall_dirs[-1]
 

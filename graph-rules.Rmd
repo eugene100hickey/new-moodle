@@ -3,6 +3,7 @@ title: "Rules for Graphs"
 subtitle: "⚡<br/>Physics Labs"
 institute: "TUD Physics"
 date: "`r format(Sys.Date(), '%A %B %d %Y')`"
+favicon: img/bullfinch.jpg
 output:
   xaringan::moon_reader:
     lib_dir: libs
