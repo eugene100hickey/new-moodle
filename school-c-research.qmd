@@ -37,7 +37,7 @@ Eugene Hickey
 | {{< li yrixyrst >}}    | Health Provision  |
 | {{< li clcopglh >}} | Astrophysics      |
 | {{< li wlpxtupd >}}         | Neuroscience      |
-| {{< fa solid r >}}              | R package (genes) |
+| {{< lif img/wired-lineal-1331-repository.json >}}              | R package (genes) |
 
 
 : {tbl-colwidths="[15,85]"}
@@ -74,13 +74,17 @@ Eugene Hickey
 
 - finished 2017
 - postdocs in DIAS and Berkeley (NESC)
-- now in DCU
+- now in DCU    
 - time-domain astronomy
 - correct for atmospheric effects
 
 
 :::
 ::::
+
+
+<br>
+- also two masters by research students (Elena & Tom)
 
 
 ---
