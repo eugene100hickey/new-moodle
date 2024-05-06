@@ -57,7 +57,7 @@ Eugene Hickey
 ## PhD Students
 
 <br>
-<br>
+
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -93,6 +93,7 @@ Eugene Hickey
 ---
 
 ## Collaborations
+<br>
 
 :::: {.columns}
 ::: {.column width="50%"}
