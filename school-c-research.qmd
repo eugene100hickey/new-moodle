@@ -116,7 +116,7 @@ Eugene Hickey
 |                                  |        |
 |----------------------------------|--------|
 | {{< fa solid magnifying-glass-chart >}}  | ML-Labs (TUD, UCD, DCU)  |
-| {{< fa solid people-roof >}}  | NORF (citizen astro)  |
+| {{< fa solid people-roof >}}  | NORF (citizen astronomy)  |
 | {{< fa solid graduation-cap >}}   | EUT+ (data science)  |
 | {{< fa solid satellite >}}           | COST Action GAIA   |
 | {{< fa solid staff-snake >}}            | NHSr (workshops/conferences)  |
