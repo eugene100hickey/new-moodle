@@ -7,6 +7,9 @@ format:
     footer: '<a href="https://www.fizzics.ie/">fizzics.ie</a>'
 tab-border-collapse: collapse
 background-size: 50% 50%;
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "img/bullfinch.jpg" />
 ---
 #  {.title}
 
