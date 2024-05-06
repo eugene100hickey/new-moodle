@@ -9,6 +9,9 @@ format:
     theme: solarized
     slide-number: c/t
 editor: visual
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "img/bullfinch.jpg" />
 ---
 
 -   making a new university is a complicated journey
