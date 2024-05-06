@@ -6,7 +6,7 @@ format:
 editor: visual
 include-in-header:
   - text: |
-      <link rel = "shortcut icon" href = "img/bullfinch.jpg" />
+      <link rel = "shortcut icon" href = "../img/bullfinch.jpg" />
 ---
 
 ## Presentations
