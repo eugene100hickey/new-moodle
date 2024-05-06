@@ -14,6 +14,8 @@ editor: visual
 
 -   [School Introductions](https://tud.netlify.app/school-c)
 
+-   [School Research Day](https://tud.netlify.app/school-c-research)
+
 ## University Rankings
 
 -   [SDG 1 - Poverty](https://tud.netlify.app/poverty#1)
