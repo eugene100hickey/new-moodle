@@ -11,6 +11,7 @@ include-in-header:
   - text: |
       <link rel = "shortcut icon" href = "img/bullfinch.jpg" />
 ---
+
 #  {.title}
 
 ::: r-fit-text
@@ -62,7 +63,12 @@ Eugene Hickey
 :::: {.columns}
 ::: {.column width="50%"}
 
-### Andrea Heaney {.textcenter}
+|                                 |                   |
+|---------------------------------|-------------------|
+| {{< li yrixyrst >}}    | <b>Andrea Heaney</b>  |
+
+
+: {tbl-colwidths="[15,85]"}
 
 - 2<sup>nd</sup> year
 - gender bias in health care
@@ -73,7 +79,13 @@ Eugene Hickey
 
 ::: {.column width="50%"}
 
-### Oisin Creaner {.textcenter}
+
+|                                 |                   |
+|---------------------------------|-------------------|
+| {{< li clcopglh >}} | <b>Oisin Creaner</b>     |
+
+
+: {tbl-colwidths="[15,85]"}
 
 - finished 2017
 - postdocs in DIAS and Berkeley (NESC)
