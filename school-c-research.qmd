@@ -51,18 +51,52 @@ Eugene Hickey
 
 ---
 
+## PhD Students
+
+<br>
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Andrea Heaney {.textcenter}
+
+- 2<sup>nd</sup> year
+- gender bias in health care
+- examining clinical use of AI 
+
+
+:::
+
+::: {.column width="50%"}
+
+### Oisin Creaner {.textcenter}
+
+- finished 2017
+- postdocs in DIAS and Berkeley (NESC)
+- now in DCU
+- time-domain astronomy
+- correct for atmospheric effects
+
+
+:::
+::::
+
+
+---
+
 ## Collaborations
 
 :::: {.columns}
 ::: {.column width="50%"}
 
-### Internal {.textcenter}
+### External {.textcenter}
 
 
 |                                  |        |
 |----------------------------------|--------|
 | {{< fa solid magnifying-glass-chart >}}  | ML-Labs (TUD, UCD, DCU)  |
-| {{< fa solid magnifying-glass-chart >}}  | NORF (citizen astro)  |
+| {{< fa solid people-roof >}}  | NORF (citizen astro)  |
 | {{< fa solid graduation-cap >}}   | EUT+ (data science)  |
 | {{< fa solid satellite >}}           | COST Action GAIA   |
 | {{< fa solid staff-snake >}}            | NHSr (workshops/conferences)  |
@@ -75,7 +109,7 @@ Eugene Hickey
 
 ::: {.column width="50%"}
 
-### External {.textcenter}
+### Internal {.textcenter}
 
 
 |                                     |                             |
