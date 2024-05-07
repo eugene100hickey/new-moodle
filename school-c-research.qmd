@@ -194,7 +194,7 @@ Thank you!
 ::: {.column width="40%"}
 ::: {#fig-website}
 
-<iframe onload="this.width=screen.width;this.height=screen.height*0.90;" src="https://www.fizzics.ie/teaching.html"></iframe>
+<iframe onload="this.width=screen.width;this.height=screen.height*0.90;" src="https://www.fizzics.ie/projects"></iframe>
 website / blog
 :::
 
