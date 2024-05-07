@@ -15,13 +15,39 @@ include-in-header:
 #  {.title}
 
 ::: r-fit-text
-Eugene Hickey
+Physics Research
 
 [TU Dublin - Tallaght Campus]{.flow}
 :::
 
 ::: footer
 :::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Physics
+
+- Shane - AFM/SPELS
+- Kevin - astrophysics
+- Andrew - clean room tech
+- Eugene - data science
+
+:::
+
+::: {.column width="50%"}
+
+### Other Science
+
+- sports science
+- antimicrobial resistance
+- electrohemistry
+- VR training
+- ........
+
+:::
+::::
 
 ---
 
