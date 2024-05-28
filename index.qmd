@@ -6,20 +6,20 @@ format:
 editor: visual
 include-in-header:
   - text: |
-      <link rel = "shortcut icon" href = "../img/bullfinch.jpg" />
+      <link rel = "shortcut icon" href = "../img/bullfinch.png" />
 ---
 
 ## Presentations
 
--   [March 24th](https://tud.netlify.app/phys-clin-discipline)
+-   [March 24th](https://tud.netlify.app/phys-clin-discipline){target="_blank"}
 
--   [January 13th](https://tud.netlify.app/organisational-change.html)
+-   [January 13th](https://tud.netlify.app/organisational-change.html){target="_blank"}
 
--   [School Introductions](https://tud.netlify.app/school-c)
+-   [School Introductions](https://tud.netlify.app/school-c){target="_blank"}
 
--   [School Research Day](https://tud.netlify.app/school-c-research)
+-   [School Research Day](https://tud.netlify.app/school-c-research){target="_blank"}
 
--   [UPCT May 2024](https://tud.netlify.app/cartegena-May-2024.html)
+-   [UPCT May 2024](https://tud.netlify.app/cartegena-May-2024.html){target="_blank"}
 
 ## University Rankings
 
