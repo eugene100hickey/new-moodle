@@ -19,6 +19,8 @@ include-in-header:
 
 -   [School Research Day](https://tud.netlify.app/school-c-research)
 
+-   [UPCT May 2024](https://tud.netlify.app/cartegena-May-2024.html)
+
 ## University Rankings
 
 -   [SDG 1 - Poverty](https://tud.netlify.app/poverty#1)
