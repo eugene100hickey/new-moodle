@@ -956,20 +956,21 @@
 <span id="cb26-11"><a href=""></a>  <span class="fu">arrange</span>(excess <span class="sc">|&gt;</span> <span class="fu">desc</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb26-12"><a href=""></a>  <span class="fu">left_join</span>(teams_meta, <span class="at">by =</span> <span class="fu">join_by</span>(team <span class="sc">==</span> team_name)) <span class="sc">|&gt;</span></span>
 <span id="cb26-13"><a href=""></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
-<span id="cb26-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:60%;">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 4
+<pre><code># A tibble: 7 × 4
   team            excess season    url                                          
   &lt;chr&gt;            &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;                                        
 1 Atletico Madrid  0.275 2022/2023 https://understat.com/team/Atletico_Madrid/2…
 2 Getafe           0.139 2022/2023 https://understat.com/team/Getafe/2022       
 3 Barcelona        0.107 2022/2023 https://understat.com/team/Barcelona/2022    
-4 Real Madrid     -0.301 2022/2023 https://understat.com/team/Real_Madrid/2022  
-5 Rayo Vallecano  -0.476 2022/2023 https://understat.com/team/Rayo_Vallecano/20…
-6 Real Sociedad   -0.706 2022/2023 https://understat.com/team/Real_Sociedad/2022</code></pre>
+4 Elche            0.093 2022/2023 https://understat.com/team/Elche/2022        
+5 Real Madrid     -0.301 2022/2023 https://understat.com/team/Real_Madrid/2022  
+6 Rayo Vallecano  -0.476 2022/2023 https://understat.com/team/Rayo_Vallecano/20…
+7 Real Sociedad   -0.706 2022/2023 https://understat.com/team/Real_Sociedad/2022</code></pre>
 </div>
 </div>
 </div>
@@ -993,7 +994,7 @@
 <span id="cb28-11"><a href=""></a>  <span class="fu">arrange</span>(excess <span class="sc">|&gt;</span> <span class="fu">desc</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb28-12"><a href=""></a>  <span class="fu">left_join</span>(teams_meta, <span class="at">by =</span> <span class="fu">join_by</span>(team <span class="sc">==</span> team_name)) <span class="sc">|&gt;</span></span>
 <span id="cb28-13"><a href=""></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
-<span id="cb28-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb28-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb28-15"><a href=""></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:60%;">
@@ -1470,18 +1471,24 @@
 <td class="gt_row gt_left" headers="url">https://understat.com/team/Barcelona/2022</td>
 </tr>
 <tr class="even">
+<td class="gt_row gt_left" headers="team">Elche</td>
+<td class="gt_row gt_right" headers="excess">0.093</td>
+<td class="gt_row gt_right" headers="season">2022/2023</td>
+<td class="gt_row gt_left" headers="url">https://understat.com/team/Elche/2022</td>
+</tr>
+<tr class="odd">
 <td class="gt_row gt_left" headers="team">Real Madrid</td>
 <td class="gt_row gt_right" headers="excess">-0.301</td>
 <td class="gt_row gt_right" headers="season">2022/2023</td>
 <td class="gt_row gt_left" headers="url">https://understat.com/team/Real_Madrid/2022</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="team">Rayo Vallecano</td>
 <td class="gt_row gt_right" headers="excess">-0.476</td>
 <td class="gt_row gt_right" headers="season">2022/2023</td>
 <td class="gt_row gt_left" headers="url">https://understat.com/team/Rayo_Vallecano/2022</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="team">Real Sociedad</td>
 <td class="gt_row gt_right" headers="excess">-0.706</td>
 <td class="gt_row gt_right" headers="season">2022/2023</td>
@@ -1515,7 +1522,7 @@
 <span id="cb29-11"><a href=""></a>  <span class="fu">arrange</span>(excess <span class="sc">|&gt;</span> <span class="fu">desc</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb29-12"><a href=""></a>  <span class="fu">left_join</span>(teams_meta, <span class="at">by =</span> <span class="fu">join_by</span>(team <span class="sc">==</span> team_name)) <span class="sc">|&gt;</span></span>
 <span id="cb29-13"><a href=""></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
-<span id="cb29-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb29-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb29-15"><a href=""></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
 <span id="cb29-16"><a href=""></a>  <span class="fu">cols_label</span>(<span class="at">team =</span> <span class="st">"Team"</span>,</span>
 <span id="cb29-17"><a href=""></a>             <span class="at">excess =</span> <span class="st">"Goal Excess"</span>,</span>
@@ -1996,18 +2003,24 @@
 <td class="gt_row gt_left" headers="url">https://understat.com/team/Barcelona/2022</td>
 </tr>
 <tr class="even">
+<td class="gt_row gt_left" headers="team">Elche</td>
+<td class="gt_row gt_right" headers="excess">0.093</td>
+<td class="gt_row gt_right" headers="season">2022/2023</td>
+<td class="gt_row gt_left" headers="url">https://understat.com/team/Elche/2022</td>
+</tr>
+<tr class="odd">
 <td class="gt_row gt_left" headers="team">Real Madrid</td>
 <td class="gt_row gt_right" headers="excess">-0.301</td>
 <td class="gt_row gt_right" headers="season">2022/2023</td>
 <td class="gt_row gt_left" headers="url">https://understat.com/team/Real_Madrid/2022</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="team">Rayo Vallecano</td>
 <td class="gt_row gt_right" headers="excess">-0.476</td>
 <td class="gt_row gt_right" headers="season">2022/2023</td>
 <td class="gt_row gt_left" headers="url">https://understat.com/team/Rayo_Vallecano/2022</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="team">Real Sociedad</td>
 <td class="gt_row gt_right" headers="excess">-0.706</td>
 <td class="gt_row gt_right" headers="season">2022/2023</td>
@@ -2041,7 +2054,7 @@
 <span id="cb30-11"><a href=""></a>  <span class="fu">arrange</span>(excess <span class="sc">|&gt;</span> <span class="fu">desc</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb30-12"><a href=""></a>  <span class="fu">left_join</span>(teams_meta, <span class="at">by =</span> <span class="fu">join_by</span>(team <span class="sc">==</span> team_name)) <span class="sc">|&gt;</span></span>
 <span id="cb30-13"><a href=""></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
-<span id="cb30-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb30-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb30-15"><a href=""></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
 <span id="cb30-16"><a href=""></a>  <span class="fu">cols_label</span>(<span class="at">team =</span> <span class="st">"Team"</span>,</span>
 <span id="cb30-17"><a href=""></a>             <span class="at">excess =</span> <span class="st">"Goal Excess"</span>,</span>
@@ -2523,18 +2536,24 @@
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Barcelona/2022</td>
 </tr>
 <tr class="even">
+<td class="gt_row gt_center" headers="team">Elche</td>
+<td class="gt_row gt_center" headers="excess">0.093</td>
+<td class="gt_row gt_center" headers="season">2022/2023</td>
+<td class="gt_row gt_center" headers="url">https://understat.com/team/Elche/2022</td>
+</tr>
+<tr class="odd">
 <td class="gt_row gt_center" headers="team">Real Madrid</td>
 <td class="gt_row gt_center" headers="excess">-0.301</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Real_Madrid/2022</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_center" headers="team">Rayo Vallecano</td>
 <td class="gt_row gt_center" headers="excess">-0.476</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Rayo_Vallecano/2022</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_center" headers="team">Real Sociedad</td>
 <td class="gt_row gt_center" headers="excess">-0.706</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
@@ -2568,7 +2587,7 @@
 <span id="cb31-11"><a href=""></a>  <span class="fu">arrange</span>(excess <span class="sc">|&gt;</span> <span class="fu">desc</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb31-12"><a href=""></a>  <span class="fu">left_join</span>(teams_meta, <span class="at">by =</span> <span class="fu">join_by</span>(team <span class="sc">==</span> team_name)) <span class="sc">|&gt;</span></span>
 <span id="cb31-13"><a href=""></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
-<span id="cb31-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb31-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb31-15"><a href=""></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
 <span id="cb31-16"><a href=""></a>  <span class="fu">cols_label</span>(<span class="at">team =</span> <span class="st">"Team"</span>,</span>
 <span id="cb31-17"><a href=""></a>             <span class="at">excess =</span> <span class="st">"Goal Excess"</span>,</span>
@@ -3063,18 +3082,24 @@
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Barcelona/2022</td>
 </tr>
 <tr class="even">
+<td class="gt_row gt_center" headers="team">Elche</td>
+<td class="gt_row gt_center" headers="excess">0.093</td>
+<td class="gt_row gt_center" headers="season">2022/2023</td>
+<td class="gt_row gt_center" headers="url">https://understat.com/team/Elche/2022</td>
+</tr>
+<tr class="odd">
 <td class="gt_row gt_center" headers="team">Real Madrid</td>
 <td class="gt_row gt_center" headers="excess">-0.301</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Real_Madrid/2022</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_center" headers="team">Rayo Vallecano</td>
 <td class="gt_row gt_center" headers="excess">-0.476</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Rayo_Vallecano/2022</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_center" headers="team">Real Sociedad</td>
 <td class="gt_row gt_center" headers="excess">-0.706</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
@@ -3108,7 +3133,7 @@
 <span id="cb32-11"><a href=""></a>  <span class="fu">arrange</span>(excess <span class="sc">|&gt;</span> <span class="fu">desc</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb32-12"><a href=""></a>  <span class="fu">left_join</span>(teams_meta, <span class="at">by =</span> <span class="fu">join_by</span>(team <span class="sc">==</span> team_name)) <span class="sc">|&gt;</span></span>
 <span id="cb32-13"><a href=""></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
-<span id="cb32-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb32-14"><a href=""></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">15</span><span class="sc">:</span><span class="dv">17</span>)) <span class="sc">|&gt;</span></span>
 <span id="cb32-15"><a href=""></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
 <span id="cb32-16"><a href=""></a>  <span class="fu">cols_label</span>(<span class="at">team =</span> <span class="st">"Team"</span>,</span>
 <span id="cb32-17"><a href=""></a>             <span class="at">excess =</span> <span class="st">"Goal Excess"</span>,</span>
@@ -3603,18 +3628,24 @@
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Barcelona/2022</td>
 </tr>
 <tr class="even">
+<td class="gt_row gt_center" headers="team">Elche</td>
+<td class="gt_row gt_center" headers="excess">0.093</td>
+<td class="gt_row gt_center" headers="season">2022/2023</td>
+<td class="gt_row gt_center" headers="url">https://understat.com/team/Elche/2022</td>
+</tr>
+<tr class="odd">
 <td class="gt_row gt_center" headers="team">Real Madrid</td>
 <td class="gt_row gt_center" headers="excess">-0.301</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Real_Madrid/2022</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_center" headers="team">Rayo Vallecano</td>
 <td class="gt_row gt_center" headers="excess">-0.476</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
 <td class="gt_row gt_center" headers="url">https://understat.com/team/Rayo_Vallecano/2022</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_center" headers="team">Real Sociedad</td>
 <td class="gt_row gt_center" headers="excess">-0.706</td>
 <td class="gt_row gt_center" headers="season">2022/2023</td>
@@ -4020,6 +4051,10 @@
 
 
 <img data-src="images/x-ray.png" class="quarto-figure quarto-figure-center r-stretch" width="851"></section>
+<section class="slide level2">
+
+
+<img data-src="images/dna.png" class="quarto-figure quarto-figure-center r-stretch" width="824"></section>
 <section id="advantages-of-exams" class="slide level2">
 <h2>Advantages of <code>exams</code></h2>
 <ul>
