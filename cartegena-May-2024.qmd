@@ -178,7 +178,7 @@ es |>
 ggplot() + 
 geom_sf(data=oceans_moll.sf, fill="#cce6ff") + 
 geom_sf(data=world_sf |> st_transform(crs="+proj=moll"), 
-aes(fill = NAME), show.legend = FALSE) +
+aes(fill = NAME), show.legend = FALSE) + #BREAK
 scale_fill_manual(values = rep(paletteer_d("MexBrewer::Naturaleza", n=7), 35)) + #ROTATE
 scale_fill_manual(values = rep(paletteer_d("palettetown::crobat", n=7), 35)) + #ROTATE
 scale_fill_manual(values = rep(paletteer_d("lisa::JosefAlbers", n=5), 50)) + #ROTATE
