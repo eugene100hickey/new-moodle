@@ -14,7 +14,7 @@ menu:
 background-size: 50% 50%;
 include-in-header:
   - text: |
-      <link rel = "shortcut icon" href = "images/bullfinch.jpg" />
+      <link rel = "shortcut icon" href = "img/bullfinch.png" />
 execute:
   echo: false
   warning: false
