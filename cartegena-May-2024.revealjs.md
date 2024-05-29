@@ -3823,7 +3823,7 @@ quiz(
 
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
-![](images/dna.png){fig-align='center' width=824}
+![](images/dna.png){fig-align='center' width=843}
 :::
 :::
 
