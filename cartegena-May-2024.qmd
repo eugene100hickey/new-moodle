@@ -240,7 +240,7 @@ theme_void()
 
 
 ```{r palette-quiz, echo=FALSE}
-xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/learnr-example/", ratio = "16:9")
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/learnr-example1/", ratio = "16:9")
 ```
 
 ## Advantages of `learnr`
