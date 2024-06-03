@@ -3813,7 +3813,7 @@ quiz(
 
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
-![](images/x-ray.png){fig-align='center' width=844}
+![](images/x-ray.png){fig-align='center' width=848}
 :::
 :::
 
