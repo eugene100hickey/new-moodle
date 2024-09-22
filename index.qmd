@@ -48,3 +48,12 @@ include-in-header:
 -   [Momentum Conservation](https://tud.netlify.app/collision)
 
 -   [Projectile Motion](https://tud.netlify.app/projectile)
+
+## ManTech Lectures
+
+-   [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf)
+
+-   [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf)
+
+-   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf)
+
