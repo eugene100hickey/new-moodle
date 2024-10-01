@@ -61,6 +61,10 @@ include-in-header:
 
 -   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf)
 
--   [Digitisation & Cables](https://tud.netlify.app/lectures/mantech/02-digitisattion-cables.pdf)
+-   [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisattion-cables.pdf)
+
+-   [White Noise](https://tud.netlify.app/lectures/cms/Whitenoisesound.wav)
+
+-   [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav)
 
 <!-- -   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf) -->
