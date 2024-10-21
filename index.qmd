@@ -59,6 +59,9 @@ include-in-header:
 
 -   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf) 
 
+-   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distil-tutorial.pdf)
+
+
 ## CMS Lectures
 
 -   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf)
