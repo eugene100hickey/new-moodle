@@ -55,7 +55,9 @@ include-in-header:
 
 -   [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf)
 
--   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf)
+-   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf) 
+
+-   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf) 
 
 ## CMS Lectures
 
@@ -67,4 +69,14 @@ include-in-header:
 
 -   [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav)
 
-<!-- -   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf) -->
+## LPP Lectures
+
+-   [Units](https://tud.netlify.app/lectures/lpp/03-units.pdf)
+
+-   [Moles](https://tud.netlify.app/lectures/lpp/04-moles-molarity-solutions.pdf)
+
+-   [Dilutions](https://tud.netlify.app/lectures/lpp/05-dilutions.pdf)
+
+-   [Concentrations](https://tud.netlify.app/lectures/lpp/06_Concentrations.pdf)
+
+-   [Measurement](https://tud.netlify.app/lectures/lpp/07-measurement.pdf)
