@@ -61,6 +61,8 @@ include-in-header:
 
 -   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distil-tutorial.pdf)
 
+-   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/)
+
 ## CMS Lectures
 
 -   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf)
