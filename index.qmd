@@ -67,7 +67,7 @@ include-in-header:
 
 -   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf)
 
--   [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisattion-cables.pdf)
+-   [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisation-cables.pdf)
 
 -   [White Noise](https://tud.netlify.app/lectures/cms/Whitenoisesound.wav)
 
