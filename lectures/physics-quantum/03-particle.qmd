@@ -1,0 +1,220 @@
+---
+title: "03-Particle_Physics"
+author:
+  - name: Eugene Hickey
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "logo.jpg" />
+css: logo.css
+footer: "Physics - Quantum"
+editor: visual
+---
+
+## Summary
+
+There are *17* fundamental particles. They are divided into groups. The first splitting is into the 12 ***fermions*** (obey Pauli Exclusion Principle) and the 5 ***bosons*** (force carriers, e.g. photons). Fermions are further split into ***leptons*** (no *strong* interactions, e.g. electrons) and ***baryons*** (e.g. protons and neutrons). There are also antimatter equivalents for all these particles (though sometimes the antimatter particle is the same as the regular one).
+
+These particles are grouped according to the ***Standard Model***.
+
+## Contents
+
+1.  The Standard Model
+
+2.  Fermions - Leptons
+
+3.  Fermions - Baryons
+
+4.  The Strong Force
+
+5.  Bosons
+
+6.  Shortcomings of Standard Model
+
+## Fermions - the fundamental leptons
+
+-   6 of these
+    -   electron
+    -   muon
+    -   tau
+    -   electron neutrino
+    -   muon neutrino
+    -   tau neutrino
+
+## Muons ($\mu$)
+
+-   like heavy electrons (mass = 105.66MeV)
+
+-   same charge, spin (like little magnet), lepton number (dictates what they can decay into, and what can decay into them)
+
+-   unstable, lifetime of 2.2$\mu s$, always produces an electron
+
+-   produced in the upper atmosphere by cosmic rays (mostly protons) striking atmospheric molecules
+
+    -   the fact they can reach the ground before decaying is a beautiful demonstation of relativistic time dilation
+    -   about 1 muon per minute per $cm^2$
+
+## Tau ($\tau$)
+
+-   like an even heavier electron (mass = 1.78GeV)
+
+-   again, same charge, spin, etc, as electrons and muons
+
+-   unstable, lifetime of $2.9 \times 10^{-13}s$
+
+-   many different routes of decay, including baryons
+
+    -   this is because $\tau$ is so heavy
+
+-   only detected in the laboratory, not seen in nature
+
+## Neutrinos ($\nu$)
+
+-   ghost like particle
+
+    -   no charge
+    -   not much mass (\<1eV)
+
+-   mostly produced by $\beta$ decays
+
+-   three different types, one for each of the leptons above
+
+    -   electron neutrino, $\nu _{e}$
+    -   muon neutrino, $\nu _{\mu}$
+    -   tau neutrino, $\nu _{\tau}$
+
+## 
+
+-   vaste numbers produced in the Sun
+    -   1 trillion solar $\nu$'s pass through you every second
+    -   you'll only absorb one in your lifetime
+-   really hard to detect
+    -   take an old gold mine in South Dakota
+    -   fill it with cleaning fluid
+    -   wait
+    -   about once a day get $\nu _{e}+\ ^{37}Cl\longrightarrow \ ^{37}Ar^{+}+e^{-}$
+
+## 
+
+-   following on from Homestake, other neutrino observatories such as:
+    -   SuperKamiokande in Japan
+    -   Sudbury (SNO) in Ontario
+    -   IceCube at the South Pole (literally) - $1km^3$
+-   in February 1987, sudden burst of $\nu$'s detected at various neutrino observatories
+    -   several hours later, light from a supernova in a nearby galaxy reached Earth
+    -   first time we'd seen this
+
+## Fermions - the baryons
+
+-   protons and neutrons aren't fundamental
+    -   they have internal structure
+    -   contain ***quarks***
+    -   proton has 2 *up* and 1 *down* quarks
+    -   neutron has 1 *up* and 2 *down* quarks
+    -   *up* and *down* are two examples of the 6 quarks
+
+## Fermions - the fundamental baryons (Quarks $\quark$)
+
+```{r quark_types}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: 'asis'
+
+library(tidyverse)
+library(gt)
+
+z <- tribble(~quark, ~mass, ~charge,
+              "up", "2.16MeV", "+2/3",
+              "down", "4.7MeV", "-1/3",
+              "strange", "93.5MeV", "-1/3", 
+              "charm", "1.273GeV", "+2/3",
+              "bottom", "4.183GeV",  "-1/3",
+              "top", "172.57GeV", "+2/3")
+
+z |> gt() |> 
+  tab_header(md("**Summary of Properties of Quarks**")) |> 
+  tab_options(table.font.size = 24)
+```
+
+-   note that $m_{proton}\gg 2 \times m_{up} + m_{down}$
+
+## Strong Force
+
+-   quarks have ***colour*** and are subject to the strong force
+    -   colours are *red*, *green*, and *blue*
+    -   (and *antired*, *antigreen*, and *antiblue*)
+    -   particles always have to be colour neutral
+        -   red / green / blue
+        -   antired / antigreen / antiblue
+        -   red / antired, etc
+    -   force gets stronger with distance
+
+## Mesons
+
+-   we observe quarks in triplets (e.g. proton), but also in pairs
+
+    -   these are called mesons
+
+-   pions (\~135MeV) are the lightest, made of up and/or down quarks
+
+-   kaons (\~500MeV) are similar, feature a strange quark
+
+## Particle Mass
+
+-   things like particle charge, spin, etc have definite values
+
+-   mass on the other hand seems more arbitrary
+
+    -   needs to be experimentally measured
+    -   see resonances in particle collider results
+
+-   mass is an *extrinsic* (as opposed to intrinsic) quantity
+
+## 
+
+-   acquired by particles as they move through the Higg's Field
+
+    -   Higg's Field slows them down
+    -   if a particle doesn't move at the light speed, it must have rest mass
+
+-   massless particles like photons ($\gamma$) or gluons don't interact with the Higg's Field, they must always move at the speed of light
+
+## Shortcomings of the Standard Model
+
+-   very much a work in progress
+
+-   doesn't say much about particle masses
+
+-   doesn't have a strong candidate for *Dark Matter*
+
+-   doesn't have a strong candidate for *Dark Energy*
+
+## 
+
+-   unknown why we live in a world of matter, not anti-matter
+
+-   potential anomaly in magnetic moment of mesons
+
+-   tough to reconcile with General Relativity
+
+    -   looking to detect ***Gravitons***
+
+-   neutrinos do something strange, seem to flip between $\nu_e$, $\nu_{\mu}$, and $\nu_{\tau}$
+
+## References
+
+-   [Young & Freedman - chapter 44](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1513){target="_blank"}
+
+-   [Serway & Jewett - chapter 44](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+
+-   [anti-matter](https://www.youtube.com/watch?v=Lo8NmoDL9T8&list=PLoaVOjvkzQtwltNydLdcTwBauZVpwdFwz&index=5){target="_blank"}

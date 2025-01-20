@@ -1,0 +1,106 @@
+---
+title: "00-Introduction"
+author:
+  - name: Eugene Hickey
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "logo.jpg" />
+css: logo.css
+footer: "Physics - Quantum"
+editor: visual
+---
+
+## Summary
+
+Course covers a smörgåsbord of topics; from all things nuclear, to crytallography, and finally through quantum mechanics. It will get increasing mathematical as the semester progresses. The emphasis will be problem solving and skills, rather than being heavy on volume and knowledge.
+
+## Contents
+
+1.  Radiation
+
+2.  Nuclear Physics
+
+3.  Particle Physics
+
+4.  Crytallography
+
+5.  Introduction to Quantum Physics
+
+6.  Schrödinger's Equation
+
+## Timetable
+
+-   2 lectures a week
+    -   Wednesday 14:00-15:00 room CQ008
+    -   Wednesday 15:00-16:00 room CQ010
+-   tutorial hour every second week
+    -   Thursday 16:00-17:00 room CQ212
+    -   start next week (5<sup>th</sup> Feb.)
+
+## Assessment
+
+::::::: columns
+:::: {.column width="40%"}
+::: {style="background-color: #fff4e0"}
+-   [**60% exam in May**]{style="color:#8d2220;"}
+
+    -   4 questions answer any 3
+
+    -   Q1 = radiation / nuclear
+
+    -   Q2 = particle / xtals
+
+    -   Q3 = intro to quantum
+
+    -   Q4 = Sch$\hat{o}$dinger
+:::
+::::
+
+:::: {.column width="60%"}
+::: {style="background-color: #fff4e0"}
+-   [**40% continuous assessment**]{style="color:#8d2220;"}
+
+    -   online quiz on Brightspace every week.
+
+    -   opens on Wednesday afternoons
+
+    -   closes nine days later on Friday at midnight
+
+    -   10 questions on each quiz, usually MCQ's
+
+    -   get 3 attempts, best one counts
+:::
+::::
+:::::::
+
+## Recommended Texts & Resources
+
+-   will add some at the end of every chapter
+
+::::::: columns
+:::: {.column width="50%"}
+::: {style="background-color: #fff4e0"}
+-   [[**Young & Freedman**](https://ebookcentral.proquest.com/lib/tudublin/detail.action?docID=5853694){target="_blank"}]{style="color:#8d2220;"}
+
+    ![](../../assets/university-physics.png){width="300"}
+:::
+::::
+
+:::: {.column width="50%"}
+::: {style="background-color: #fff4e0"}
+-   [[**Serway & Jewett**](https://research-ebsco-com.tudublin.idm.oclc.org/c/sr37fs/search/details/lh37eixz3f?db=nlebk&db=nlabk){target="_blank"}]{style="color:#8d2220;"}
+
+    ![](../../assets/serway-jewett.jpg){width="300"}
+:::
+::::
+:::::::

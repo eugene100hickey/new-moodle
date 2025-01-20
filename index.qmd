@@ -49,6 +49,22 @@ include-in-header:
 
 -   [Projectile Motion](https://tud.netlify.app/projectile)
 
+## Physics-Quantum Lectures
+
+- [00 Introduction](https://tud.netlify.applectures/lectures/physics-quantum/00-introduction.htm)
+
+- [01 Radiation](https://tud.netlify.applectures/lectures/physics-quantum/01-radiation.html)
+
+- [02 Nuclear Physics](https://tud.netlify.app/lectures/physics-quantum/02-nuclear.html)
+
+- [03 Particle Physics](https://tud.netlify.app/lectures/physics-quantum/03-particle.html)
+
+- [04 Crystallography](https://tud.netlify.app)
+
+- [05 Introduction to Quantum Physics](https://tud.netlify.app)
+
+- [06 Shrodinger Equation](https://tud.netlify.app)
+
 ## ManTech Lectures
 
 -   [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf)
