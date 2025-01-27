@@ -51,19 +51,19 @@ include-in-header:
 
 ## Physics-Quantum Lectures
 
-- [00 Introduction](https://tud.netlify.applectures/lectures/physics-quantum/00-introduction.htm)
+- [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
 
-- [01 Radiation](https://tud.netlify.applectures/lectures/physics-quantum/01-radiation.html)
+- [01 Radiation](https://tud.netlify.app/lectures/physics-quantum/01-radiation.html){target="_blank"}
 
-- [02 Nuclear Physics](https://tud.netlify.app/lectures/physics-quantum/02-nuclear.html)
+- [02 Nuclear Physics](https://tud.netlify.app/lectures/physics-quantum/02-nuclear.html){target="_blank"}
 
-- [03 Particle Physics](https://tud.netlify.app/lectures/physics-quantum/03-particle.html)
+- [03 Particle Physics](https://tud.netlify.app/lectures/physics-quantum/03-particle.html){target="_blank"}
 
-- [04 Crystallography](https://tud.netlify.app)
+- [04 Crystallography](https://tud.netlify.app){target="_blank"}
 
-- [05 Introduction to Quantum Physics](https://tud.netlify.app)
+- [05 Introduction to Quantum Physics](https://tud.netlify.app){target="_blank"}
 
-- [06 Shrodinger Equation](https://tud.netlify.app)
+- [06 Shrodinger Equation](https://tud.netlify.app){target="_blank"}
 
 ## ManTech Lectures
 

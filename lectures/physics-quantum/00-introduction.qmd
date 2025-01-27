@@ -42,9 +42,9 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
 
 -   2 lectures a week
     -   Wednesday 14:00-15:00 room CQ008
-    -   Wednesday 15:00-16:00 room CQ010
+    -   Wednesday 15:00-16:00 room CQ106
 -   tutorial hour every second week
-    -   Thursday 16:00-17:00 room CQ212
+    -   Thursday 16:00-17:00 room CQ009
     -   start next week (5<sup>th</sup> Feb.)
 
 ## Assessment
