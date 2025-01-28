@@ -40,6 +40,10 @@ These particles are grouped according to the ***Standard Model***.
 
 6.  Shortcomings of Standard Model
 
+##
+
+![](images/Standard_Model_of_Elementary_Particles.svg.png)
+
 ## Fermions - the fundamental leptons
 
 -   6 of these
@@ -122,7 +126,7 @@ These particles are grouped according to the ***Standard Model***.
     -   neutron has 1 *up* and 2 *down* quarks
     -   *up* and *down* are two examples of the 6 quarks
 
-## Fermions - the fundamental baryons (Quarks $\quark$)
+## Fermions - the fundamental baryons (Quarks)
 
 ```{r quark_types}
 #| echo: false
