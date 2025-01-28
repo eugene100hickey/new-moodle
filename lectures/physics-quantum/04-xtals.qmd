@@ -22,32 +22,25 @@ editor: visual
 
 ## Summary
 
+In solid form, many molecules line up in regular arrays showing long range order. These are crystals. Classically these are distinguished by flat faces and sharp edges, but in reality most solids are crystalline, just that the individual crystals are so small we don't recognise this.
+
+
+The experimental study of crystals is a powerful way to unpick the structure of the molecules from which they are composed.
 
 
 ## Contents
 
-1.  Introduction
-1.  Unit cells
-1.  Positions
-1. Planes
-1. Packing
-1. Density
-
-
-## Introduction
 ::: {style="font-size: 80%;"}
 
-- What are crystals?
-- Why are we interested?
-- Where do we get information?
-- Layers & Stacking
-- Unit Cells
-- Allowed shapes
-- Unit cell types
-- Bravais Lattices
-- BCC / FCC / HCP Crystals
-- Positions and Planes in Crystals
-- Examples of Different Crystal Types
+1. What are crystals?
+1. Why are we interested?
+1. Where do we get information?
+1. Unit Cells
+1. Bravais Lattices
+1. BCC / FCC / HCP Crystals
+1. Layers & Stacking
+1. Positions and Planes in Crystals
+1. Examples of Different Crystal Types
 
 :::
 
