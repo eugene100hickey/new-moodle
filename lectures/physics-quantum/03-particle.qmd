@@ -42,7 +42,7 @@ These particles are grouped according to the ***Standard Model***.
 
 ##
 
-![](images/Standard_Model_of_Elementary_Particles.svg.png)
+![](images/Standard_Model_of_Elementary_Particles.svg.png )
 
 ## Fermions - the fundamental leptons
 
