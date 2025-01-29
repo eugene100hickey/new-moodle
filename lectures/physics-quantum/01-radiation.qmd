@@ -140,7 +140,7 @@ $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 
 ### Appliances:
 
--   devices such as smoke detectors use radiation ($\alpha$ particles from $^{241}AM$)
+-   devices such as smoke detectors use radiation ($\alpha$ particles from $^{241}Am$)
 
 ### Archeology:
 
