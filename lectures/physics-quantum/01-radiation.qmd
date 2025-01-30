@@ -91,10 +91,10 @@ $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 -   neutron in the nucleus splits into a proton and an electron
 -   electron emitted as a beta particle
 -   Z increases by 1 and A remains the same
-    -   $^A_DP\;=>\;^{A}_{Z+1}D\;+\;\beta \; + \; \mu$
+    -   $^A_DP\;=>\;^{A}_{Z+1}D\;+\;\beta \; + \; \nu$
 -   examples
-    -   $^{99}_{42}Mo\;=>\;^{99}_{43}Tc\;+\;\beta \; + \; \mu$
-    -   $^{14}_{6}C\;=>\;^{14}_{7}N\;+\;\beta \; + \; \mu$
+    -   $^{99}_{42}Mo\;=>\;^{99}_{43}Tc\;+\;\beta \; + \; \nu$
+    -   $^{14}_{6}C\;=>\;^{14}_{7}N\;+\;\beta \; + \; \nu$
 
 ## Nucleus emits an $\gamma$ ray
 
@@ -117,8 +117,8 @@ $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 -   They can be prepared by irradiating target nuclei with neutrons ( e.g. $^{125}I$ for thryoid treatments ).
 -   The beta emitter $^{14}C$ is produced by cosmic rays in the upper atmosphere
 -   bigger range of energies than $\alpha$ particles
-    -   3.5MeV for $^{137}_{54}Xe \; \rightarrow \; ^{137}_{55}Cs \;+ \; \beta \; + \; \mu$
-    -   18keV for $^{3}_{1}T \; \rightarrow \; ^{3}_{2}He \;+ \; \beta \; + \; \mu$
+    -   3.5MeV for $^{137}_{54}Xe \; \rightarrow \; ^{137}_{55}Cs \;+ \; \beta \; + \; \nu$
+    -   18keV for $^{3}_{1}T \; \rightarrow \; ^{3}_{2}He \;+ \; \beta \; + \; \nu$
 
 ## 
 
