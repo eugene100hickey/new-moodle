@@ -1,5 +1,5 @@
 ---
-title: "04-Crystallography"
+title: "05-Introduction to Quantum Physics"
 author:
   - name: Eugene Hickey
     orcid: 0000-0001-9813-9323
@@ -29,15 +29,11 @@ The experimental study of crystals is a powerful way to unpick the structure of 
 ## Contents
 
 ::: {style="font-size: 80%;"}
-1.  What are crystals?
-2.  Why are we interested?
-3.  Where do we get information?
-4.  Unit Cells
-5.  Bravais Lattices
-6.  BCC / FCC / HCP Crystals
-7.  Layers & Stacking
-8.  Positions and Planes in Crystals
-9.  Examples of Different Crystal Types
+1.  Nature of Light
+1.  Blackbody Radiation & Planck
+1.  Photoelectric Effect
+1.  Energy & Momentum of Photons
+1.  Compton Effect
 :::
 
 ## What is a Crystal?
@@ -245,5 +241,3 @@ The experimental study of crystals is a powerful way to unpick the structure of 
 ## References
 
 -   [Young & Freedman - chapter 42.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1445){target="_blank"}
-
--  [Serway & Jewett - chapter 41.8](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk%26db%3dnlabk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}

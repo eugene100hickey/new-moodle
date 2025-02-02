@@ -322,6 +322,22 @@ z |> ggplot(aes(half_lives, number)) +
 -   internal radiation (mostly potassium, $^{40}K$) 0.03mSv per year
 -   get total of about $10\mu Sv$ per day. Below legal limit.
 
+## Equations
+
+- $N\;=\;N_0e^{-\lambda t}$
+
+- $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+
+- $Bq = Ci \times 3.7\times10^{10}$
+
+- $(energy\;in\;joules) = MeV \times 1.6\times 10^{-13}$
+
+- $Gray =  Bq \times (energy\;in\;joules) / (person\;mass\; in \;kg)$
+
+- $Sv = Bq \times (energy\;in\;joules) \times RBE / (person\;mass\; in \;kg)$
+
+- (expected number of deaths) = (dose in Sievert) $\times$ (population) / 50
+
 ## References
 
 -   [Young & Freedman - chapter 43.3-43.5](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}

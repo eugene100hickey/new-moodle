@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="04-xtals_files/libs/clipboard/clipboard.min.js"></script>
-<script src="04-xtals_files/libs/quarto-html/tabby.min.js"></script>
-<script src="04-xtals_files/libs/quarto-html/popper.min.js"></script>
-<script src="04-xtals_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="04-xtals_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="04-xtals_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="04-xtals_files/libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="05-crystals-x-ray-diffraction_files/libs/clipboard/clipboard.min.js"></script>
+<script src="05-crystals-x-ray-diffraction_files/libs/quarto-html/tabby.min.js"></script>
+<script src="05-crystals-x-ray-diffraction_files/libs/quarto-html/popper.min.js"></script>
+<script src="05-crystals-x-ray-diffraction_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="05-crystals-x-ray-diffraction_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="05-crystals-x-ray-diffraction_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="05-crystals-x-ray-diffraction_files/libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.37">
 
   <meta name="author" content="Eugene Hickey">
-  <title>04-Crystallography</title>
+  <title>05-Crystals &amp; X-Ray Diffraction</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="04-xtals_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="04-xtals_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="05-crystals-x-ray-diffraction_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="05-crystals-x-ray-diffraction_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,12 +29,12 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="04-xtals_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="05-crystals-x-ray-diffraction_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link rel="stylesheet" href="logo.css">
-  <link href="04-xtals_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="04-xtals_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="04-xtals_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="04-xtals_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">04-Crystallography</h1>
+  <h1 class="title">05-Crystals &amp; X-Ray Diffraction</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -150,273 +150,388 @@ Eugene Hickey <a href="https://orcid.org/0000-0001-9813-9323" class="quarto-titl
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
-<p>In solid form, many molecules line up in regular arrays showing long range order. These are crystals. Classically these are distinguished by flat faces and sharp edges, but in reality most solids are crystalline, just that the individual crystals are so small we don’t recognise this.</p>
-<p>The experimental study of crystals is a powerful way to unpick the structure of the molecules from which they are composed.</p>
+<p>To determine crystal structure, we need light of wavelength comparable to the size of the unit cells. These are X-rays. We’ll discuss how these are produced. Then we’ll see how we use them to determine the size and symmetries of the unit cell. Along with NMR, X-ray diffraction (XRD) is one of the main techniques of molecular structure determination.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
 <div style="font-size: 80%;">
 <ol type="1">
-<li>What are crystals?</li>
-<li>Why are we interested?</li>
-<li>Where do we get information?</li>
-<li>Unit Cells</li>
-<li>Bravais Lattices</li>
-<li>BCC / FCC / HCP Crystals</li>
-<li>Layers &amp; Stacking</li>
-<li>Positions and Planes in Crystals</li>
-<li>Examples of Different Crystal Types</li>
+<li>Sources of X-rays</li>
+<li>X-ray spectra</li>
+<li>Bragg reflection</li>
+<li>Separation of planes (hkl)</li>
+<li>Single crystal versus powder diffraction</li>
+<li>Extinctions</li>
+<li>Scattering factors</li>
 </ol>
 </div>
 </section>
-<section id="what-is-a-crystal" class="slide level2">
-<h2>What is a Crystal?</h2>
+<section id="x-ray-diffraction" class="slide level2">
+<h2>X-Ray Diffraction</h2>
 <div style="font-size: 70%;">
 <ul>
-<li>Arrangement of atoms with repeated pattern in three dimensions.</li>
-<li>Array of points in the crystal look identical (same surrounding atoms, same orientation)</li>
-<li>Examples:
+<li>This technique is for characterising crystalline materials
 <ul>
-<li>gems (diamond, ruby)</li>
-<li>ceramics (silicates, alumina)</li>
-<li>metals (iron, coppe)</li>
-<li>even polymers.</li>
+<li>in a simple exercise it can distinguish a crystalline from an amorphous specimen</li>
 </ul></li>
-<li>The opposite of a crystal is an amorphous or glassy solid. On an atomic scale these looks like frozen liquids.</li>
-<li>Can be tough to spot from external appearance
+<li>It primarily provides information on crystal structure
 <ul>
-<li>e.g.&nbsp;a smooth shaped piece of glass is NOT a crystal;</li>
-<li>e.g.&nbsp;A rough irregularly shaped particle may consist of crystalline material.</li>
+<li>Lattice type</li>
+<li>Crystal type</li>
 </ul></li>
+<li>compliments NMR for molecular characterisation</li>
 </ul>
 </div>
 </section>
-<section id="metals-have-crystals" class="slide level2">
-<h2>Metals have Crystals</h2>
+<section id="requirements-for-xrd" class="slide level2">
+<h2>Requirements for XRD</h2>
+<div style="font-size: 80%;">
 <ul>
-<li>Image below shows crystal grains in copper</li>
-<li>Polish and etch to reveal grain boundaries</li>
-</ul>
-
-<img data-src="images/metal-xtal.jpg" class="r-stretch"></section>
-<section id="why-do-we-care" class="slide level2">
-<h2>Why do we care?</h2>
-
-<img data-src="images/franklin.png" class="r-stretch"></section>
-<section id="information-on-crystals" class="slide level2">
-<h2>Information on Crystals</h2>
+<li>Source of X-Rays;
 <ul>
-<li>Cambridge Structural Database (CSD):
+<li>X-rays are collimated (into parallel beam) and directed onto the sample</li>
+</ul></li>
+<li>Crystal or powder sample</li>
+<li>X-ray detector
 <ul>
-<li>Information on &gt;1 million crystals (1046700, March 2020)</li>
-<li>Nomenclature (how to name them)</li>
-<li>Freely available</li>
-<li><a href="http://www.ccdc.cam.ac.uk/" target="_blank">http://www.ccdc.cam.ac.uk/</a></li>
+<li>The detector records and processes the X-ray signal diffracted from the sample and converts the signal to a count rate or intensity.</li>
+<li>The detector can sometimes be a photographic plate which will have a pattern (of dots or circles); In this case a CCD (charge-coupled device) converts the intensity of the pattern into an electrical signal which are then sent to a computer for processing.</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-
-<img data-src="images/ccdc.png" class="r-stretch"></section>
-<section id="unit-cells" class="slide level2">
-<h2>Unit Cells</h2>
-<div style="font-size: 80%;">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="images/characteristic-x-ray.png"></p>
+<div style="font-size: 65%;">
+<ol type="1">
+<li>high energy incident electron</li>
+<li>ejects core electron from atom</li>
+<li>core filled from outer shell electron</li>
+<li>difference in energy emitted as X-ray</li>
+</ol>
 <ul>
-<li>Fundamental building blocks of crystals</li>
-<li>Arrangement of blocks must fill all space</li>
-<li>Seven different shapes of unit cell allowed namely;
-<ul>
-<li>cubic</li>
-<li>tetragonal</li>
-<li>rhombohedral</li>
-<li>hexagonal</li>
-<li>orthorhombic</li>
-<li>monoclinic</li>
-<li>triclinic</li>
-</ul></li>
+<li>X-ray wavelength depends on atomic energy levels</li>
 </ul>
 </div>
-</section>
-<section id="parameters-for-unit-cells" class="slide level2">
-<h2>Parameters for Unit Cells</h2>
+</div><div class="column" style="width:20%;">
+
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/bremsstrahlung.png"></p>
+<div style="font-size: 65%;">
+<ol type="1">
+<li>high energy incident electron</li>
+<li>this electron bounces off atom</li>
+<li>change in energy emitted as X-ray</li>
+</ol>
 <ul>
-<li>cubic: <span class="math inline">\(a\;=\;b\;=\;c\;\)</span> and <span class="math inline">\(\;\alpha\;=\;\beta\;=\;\gamma\;=\;90^{\circ}\)</span></li>
-<li>tetragonal: <span class="math inline">\(a\;=\;b\;\neq\;c\;\)</span>and <span class="math inline">\(\;\alpha\;=\;\beta\;=\;\gamma\;=\;90^{\circ}\)</span></li>
-<li>orthorhombic: <span class="math inline">\(a\;\neq\;b\;\neq\;c\;\)</span> and <span class="math inline">\(\;\alpha\;=\;\beta\;=\;\gamma\;=\;90^{\circ}\)</span></li>
-<li>rhombohedral: <span class="math inline">\(a\;=\;b\;=\;c\;\)</span> and <span class="math inline">\(\;\alpha\;=\;\beta\;=\;\gamma\;\neq\;90^{\circ}\)</span></li>
-<li>hexagonal: <span class="math inline">\(a\;=\;b\;=\;c\)</span> and <span class="math inline">\(\alpha\;=\;\beta\;=\;90^{\circ}, \gamma\;=\;120^{\circ}\)</span></li>
-<li>monoclinic; <span class="math inline">\(a\;\neq\;b\;\neq\;c\;\)</span> and <span class="math inline">\(\;\alpha\;=\;\beta\;=\;90^{\circ}\;\neq\;\gamma\)</span></li>
-<li>triclinic: <span class="math inline">\(a\;\neq\;b\neq\;c\;\)</span> and <span class="math inline">\(\;\alpha\;\neq\;\beta\;\neq\;\gamma\;\neq\;90^{\circ}\)</span></li>
+<li>X-ray wavelength depends on collision, not atom</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="x-ray-spectrum" class="slide level2">
+<h2>X-Ray Spectrum</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>total spectrum consists of</p>
+<ul>
+<li>bremsstrahlung</li>
+<li>characteristic lines</li>
+</ul></li>
+<li><p>use filters to get monochromatic beam</p></li>
+<li><p>common line for XRD is 0.154051nm of <span class="math inline">\(Cu^{K\alpha}\)</span></p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/x-ray-spectrum.png"></p>
+</div></div>
+</section>
+<section id="principle-of-bragg-bretano-xrd" class="slide level2">
+<h2>Principle: (of Bragg-Bretano XRD)</h2>
+<ul>
+<li>Interference between X-ray beams reflected from the crystal planes</li>
+<li>Monochromatic x-ray beam directed at crystal;
+<ul>
+<li>Beams are scattered from each set of crystal planes at specific angles.</li>
+<li>X-ray diffraction peaks are produced by constructive interference of these reflected (scattered) beams.</li>
+<li>We need x-rays (rather than any other EM radiation) for this because we need the wavelength of the radiation to be approximately the same as the spacing of the crystal planes.</li>
+</ul></li>
 </ul>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-
-<img data-src="images/bravais1.png" class="r-stretch"></section>
-<section id="symmetries-within-unit-cells" class="slide level2">
-<h2>Symmetries within Unit Cells</h2>
 <ul>
-<li>As well as the symetries of their shapes, unit cells can have symmetries due to their internal structures</li>
-<li>Gives four types of unit cell
-<ul>
-<li>simple (P)</li>
-<li>face centered (F)</li>
-<li>body centered (I)</li>
-<li>base centered (C)</li>
-</ul></li>
+<li><p>Treat the crystal as stacks of reflecting planes;</p></li>
+<li><p>There are planes in many different orientations and many different separations; depending on the crystal type.</p></li>
+<li><p>For any one set of planes, separated by distance “d”, the incoming x-ray beam must make a particular angle, θ, called the Bragg angle, in order for constructive interference to occur between the beams reflected from successive planes</p></li>
 </ul>
+</section>
+<section id="bragg-reflection" class="slide level2">
+<h2>Bragg Reflection</h2>
+
+<img data-src="images/xrd-planes.gif" class="r-stretch"><p>$ n = 2 d sin $$</p>
+<p><a href="http://www.doitpoms.ac.uk/tlplib/xray-diffraction/bragg.php" target="_blank">http://www.doitpoms.ac.uk/tlplib/xray-diffraction/bragg.php</a></p>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
 
-<img data-src="images/flavours.png" class="r-stretch"></section>
-<section id="bravais-lattices" class="slide level2">
-<h2>Bravais Lattices</h2>
+<img data-src="images/xrd-planes2.png" class="r-stretch"><div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math inline">\(d_{(111)} = \frac{a}{\sqrt 3}\)</span></p>
+<p><span class="math inline">\(sin \theta = \frac{\lambda}{2d_{(111)}}\)</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math inline">\(d_{(100)} = \frac{a}{\sqrt 1}\)</span></p>
+<p><span class="math inline">\(sin \theta = \frac{\lambda}{2d_{(100)}}\)</span></p>
+</div></div>
+</section>
+<section id="relationship-between-d-and-a" class="slide level2">
+<h2>Relationship between <strong><em>d</em></strong> and <strong><em>a</em></strong></h2>
 <ul>
-<li>Not all of the seven cell shapes can have all four types of internal symmetry</li>
-<li>For instance, the face centered tetragonal structure can be reduced to the body centered tetragonal structure</li>
-<li>There are fourteen distinct possibilities called the Fourteen Bravais lattices</li>
-<li>The fourteen lattices contain all the necessary translational symmetries to describe every possible crystal structure in nature</li>
+<li>The separation of a given set of planes in a crystal <span class="math inline">\(d_{hkl}\)</span> can be determined by measuring the angle at which x-rays of known wavelength are strongly reflected. The relation between d and the lattice parameter of the plane (for the cubic structure) is given by:</li>
+</ul>
+<p><span class="math inline">\(d \; = \;\frac{a}{\sqrt {h^2 + k^2 + l^2}}\)</span></p>
+<ul>
+<li>This formula holds for the cubic structure only
+<ul>
+<li>equivalent relationships hold for other structures</li>
+</ul></li>
 </ul>
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
-
-<img data-src="images/bravais.png" class="r-stretch"></section>
-<section id="metallic-crystal-structures" class="slide level2">
-<h2>Metallic Crystal Structures</h2>
 <ul>
-<li>Because of the nature of the metallic bond the principle requirement is for a high density</li>
-<li>Three arrangements satisfy this criterion
+<li>For <strong><em>orthorhombic</em></strong> structures, get</li>
+</ul>
+<p><span class="math inline">\(\frac{1}{d^2} \; = \;\frac{h^2}{a^2} + \frac{k^2}{b^2} + \frac{l^2}{c^2}\)</span></p>
+</section>
+<section id="samples-and-methods" class="slide level2">
+<h2>Samples and Methods</h2>
 <ul>
-<li>body centered cubic (BCC)</li>
-<li>face centered cubic (FCC)</li>
-<li>hexagonal close packed (HCP)</li>
+<li>Two methods:
+<ul>
+<li>Single-crystal diffraction</li>
+<li>Powder (polycrystalline) diffraction</li>
+</ul></li>
+<li>Single Crystal:
+<ul>
+<li>Get full information on crystal structure</li>
+<li>Crystal type, lattice parameters, density of atoms on planes etc.</li>
+</ul></li>
+<li>Powder:
+<ul>
+<li>Get finger-print (ID)</li>
 </ul></li>
 </ul>
 </section>
-<section id="section-4" class="slide level2">
-<h2></h2>
-
-<img data-src="images/elements.png" class="r-stretch quarto-figure-center"><p class="caption"><span style="color:#4999ff;">Body Centred Cubic</span>, <span style="color:#f6ea00;">Hexagonal Close Packed</span>, and <span style="color:#48feda;">Face Centred Cubic</span></p></section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-
-<img data-src="images/apf.png" class="r-stretch"></section>
-<section id="section-6" class="slide level2">
-<h2></h2>
-
-<img data-src="images/lattice-bcc.png" class="r-stretch"></section>
-<section id="section-7" class="slide level2">
-<h2></h2>
-
-<img data-src="images/lattice-fcc.png" class="r-stretch"></section>
-<section id="layers-and-stacking" class="slide level2">
-<h2>Layers and Stacking</h2>
+<section id="pros-and-cons" class="slide level2">
+<h2>Pros and Cons</h2>
+<div style="font-size: 80%;">
 <ul>
-<li>We’ll talk about metals here
+<li>Advantages of Single Crystal XRD :
 <ul>
-<li>not so fussy about direction of bonds</li>
-<li>behave like hard spheres</li>
+<li>Detailed crystal structure;</li>
+<li>Unambiguous (no confusion about results)</li>
 </ul></li>
-</ul>
-<div class="columns">
-<div class="column" style="width:40%;">
+<li>Disadvantages:
 <ul>
-<li>Lay spheres out on a table so they are packed as close as possible in one layer
-<ul>
-<li>Two possibilities for next layer</li>
+<li>Must have a single, robust (stable) sample, generally between 50—250 microns in size</li>
+<li>Must be an optically clear sample</li>
+<li>Data collection generally requires between 24 and 72 hours</li>
 </ul></li>
-</ul>
-</div><div class="column" style="width:60%;">
-<p><img data-src="images/layers.png"></p>
-</div></div>
-</section>
-<section id="section-8" class="slide level2">
-<h2></h2>
+<li>Advantages of Powder XRD
 <ul>
-<li>There are two ways to stack layers</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:55%;">
-<ul>
-<li>ABABABABA</li>
-<li>Creates form called Hexagonal Close Packed (HCP)</li>
-</ul>
-<p><img data-src="images/hcp.png"></p>
-</div><div class="column" style="width:45%;">
-<ul>
-<li>ABCABCABC</li>
-<li>Creates form called Face Centred Cubic(FCC)</li>
-</ul>
-<p><img data-src="images/fcc.png"></p>
-</div></div>
-</section>
-<section id="positions-directions-and-planes" class="slide level2">
-<h2>Positions, Directions, and Planes</h2>
-<div style="font-size: 70%;">
-<ul>
-<li>Position
-<ul>
-<li>specifies a point within a unit cell</li>
-<li>expressed as fractions of lattice vectors.</li>
-<li>notation is ( 1/4, 0, -21/2 )</li>
-</ul></li>
-<li>Direction
-<ul>
-<li>specifies the direction of a line</li>
-<li>expressed as a set of integers</li>
-<li>notation is [210] where 1 means -1.</li>
-</ul></li>
-<li>Planes
-<ul>
-<li>specifies surfaces within the crystal</li>
-<li>expressed as a set of integers known as the Miller indices</li>
-<li>notation is (210).</li>
+<li>Easy to prepare sample:</li>
+<li>Grind down to particle size of 0.002 mm and press into a sample holder.</li>
 </ul></li>
 </ul>
 </div>
 </section>
-<section id="hints-for-positions" class="slide level2">
-<h2>Hints for Positions</h2>
+<section id="single-crystal-diffraction" class="slide level2">
+<h2>Single Crystal Diffraction</h2>
 <div class="columns">
-<div class="column" style="width:70%;">
+<div class="column" style="width:50%;">
+<p><img data-src="images/single-xtal.png"></p>
+</div><div class="column" style="width:50%;">
+<div style="font-size: 80%;">
 <ul>
-<li>by convention, take the position (0,0,0) to be in the bottom left hand corner at the back</li>
-<li>remember which axes point in which directions.<br>
-</li>
-<li>positions can be fractions; 21/2 , -3/4 , 8/3 , etc</li>
-<li>remember the notation; (x,y,z)</li>
-<li>positions with negative indices or indices &gt;1 will be outside the unit cell</li>
+<li>Crystal is mounted on a goniometer in centre;</li>
+<li>This allows for orientation;</li>
+<li>Crystal is slowly rotated (so that θ for differently oriented planes can be made to satisfy Bragg Law.</li>
+<li>The scan is called a “locked coupled scan” because as the crystal is moved through angle Δθ , detector is moved through angle 2 Δθ (so it will pick up reflections if they exist).</li>
+<li>Detector records angle and intensity.</li>
 </ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="images/axes.png"></p>
+</div>
 </div></div>
 </section>
-<section id="hints-for-planes" class="slide level2">
-<h2>Hints for Planes</h2>
+<section id="interior-of-x-ray-machine" class="slide level2">
+<h2>Interior of X-Ray Machine</h2>
+
+<img data-src="images/xrd-machine.png" class="r-stretch"></section>
+<section id="powder-patterns" class="slide level2">
+<h2>Powder Patterns</h2>
+<div style="font-size: 80%;">
 <ul>
-<li>sets of parallel planes all have the same Miller indices</li>
-<li>choose one of the planes that does not pass through the point (0,0,0)</li>
-<li>see where the plane cuts the x, y, and z axes (the intercepts, could be infinity)</li>
-<li>get the reciprocals of these intercepts</li>
-<li>clear fractions</li>
+<li>In every crystal type there are many planes at different orientations.</li>
+<li>If a single crystal is being used, the Bragg’s law might be fulfilled for one set of planes while another set of planes could cause destructive interference
+<ul>
+<li>Planes will not be oriented to satisfy Braggs Law</li>
+<li>Hence crystal has to be rotated.</li>
+</ul></li>
+<li>When a sample is in powder form however
+<ul>
+<li>at least some of the crystallites will always be orientated so as to satisfy the Bragg condition for each set of crystal planes that exist;</li>
+</ul></li>
+<li>So the full quota of crystal planes will show up.</li>
+</ul>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/xrd-pattern.png"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>The sample is spread on a flat plate;</li>
+<li>Diffraction intensities are detected electronically.</li>
+<li>Spectrum produced of intensity versus diffraction angle (either <span class="math inline">\(\theta\)</span> or <span class="math inline">\(2\theta\)</span>)</li>
+</ul>
+</div></div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/xrd-multipattern.jpg"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Qualitative analysis:</li>
+<li>determine the ten most intense</li>
+<li>diffraction lines and match</li>
+<li>with available diffraction pattern library</li>
+<li><a href="https://www.icdd.com/">ICCD – International Centre for Diffraction Data</a></li>
+</ul>
+</div></div>
+</section>
+<section id="spectrum-dependence-on-state-of-substance" class="slide level2">
+<h2>Spectrum Dependence on State of Substance</h2>
+
+<img data-src="images/crystal-glassy.png" class="r-stretch"></section>
+<section id="problems" class="slide level2">
+<h2>Problems</h2>
+<div style="font-size: 70%;">
+<ol type="1">
+<li>A first order reflection from the (111) planes of a cubic crystal was observed at a glancing angle of <span class="math inline">\(\theta_{111}\)</span> = 11.2<span class="math inline">\(^{\circ}\)</span> when Cu Kα X-rays of wavelength 0.154051 nm were used.
+<ol type="1">
+<li>Calculate <span class="math inline">\(d_{111}\)</span></li>
+<li>What is the length of the side of the unit cell?</li>
+<li>Calculate <span class="math inline">\(d_{123}\)</span></li>
+<li>Calculate the angle, from which the same lattice will give a reflection from the (123) plane.</li>
+</ol></li>
+</ol>
+<p>[0.397nm, 0.687nm, 0.191nm, <span class="math inline">\(\theta_{123}\)</span> = 23.85<span class="math inline">\(^{\circ}\)</span>]</p>
+<ol start="2" type="1">
+<li>The (111) planes in potassium iodide correspond to the first reflection in the X-ray spectrum. Calculate the minimum value of <span class="math inline">\(\theta\)</span> for KI using <span class="math inline">\(\lambda _{CuK\alpha}\)</span> = 0.154051 nm and a = 0.70655 nm for the cubic unit cell.</li>
+</ol>
+<p>[<span class="math inline">\(9.25^{\circ}\)</span>]</p>
+</div>
+</section>
+<section id="extinctions" class="slide level2">
+<h2>Extinctions</h2>
+<ul>
+<li>This means that reflections from some sets planes are cancelled out.</li>
+<li>Knowing which planes are NOT giving reflections lets us determine what type of cubic structure is diffracting the x-rays.
+<ul>
+<li>BCC structures h + k + l must be even</li>
+<li>FCC h, k and l themselves must be either all odd or all even</li>
+</ul></li>
 </ul>
 </section>
-<section id="section-9" class="slide level2">
+<section id="problems-1" class="slide level2">
+<h2>Problems</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 80%;">
+<ul>
+<li>YN - <span class="math inline">\(\lambda\;=\;Cu_{K\alpha} = 0.154051nm\)</span>
+<ul>
+<li>Find the 2θ position of all the peaks</li>
+<li>Find the interplanar spacing for all the peaks</li>
+<li>Find lattice constant</li>
+<li>Is it primitive, BCC, or FCC?</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<p><br> <br></p>
+<p><img data-src="images/yn.png"></p>
+</div></div>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 80%;">
+<ul>
+<li>NaCl
+<ul>
+<li><span class="math inline">\(\lambda\;=\;Cu_{K\alpha} = 0.154051nm\)</span></li>
+<li>face centred cubic</li>
+<li>Find the 2θ position of all the peaks</li>
+<li>Find the interplanar spacing for all the peaks</li>
+<li>index the peaks</li>
+<li>Find lattice constant</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<p><br> <br></p>
+<p><img data-src="images/nacl.png"></p>
+</div></div>
+</section>
+<section id="scattering-factor" class="slide level2">
+<h2>Scattering Factor</h2>
+<div style="font-size: 70%;">
+<ul>
+<li>The argument about extinction can only apply if the atoms/ions in the different planes have the same scattering strenghts.
+<ul>
+<li>The scattering strength (factor) of an atom/ion is related to its electron density distribution.</li>
+</ul></li>
+<li>This difference in scattering strength can even affect the pattern we get from similar type cells.
+<ul>
+<li>For example, the x-ray powder patterns for NaCl and KCl are different despite both crystals being FFC.</li>
+<li>This is due the different scattering strengths of the ions:</li>
+</ul></li>
+<li>Scattering factor for Na+, K+ and Cl- are 10, 18 and 18 respectively.
+<ul>
+<li>When waves from the + ion and the –ion should be cancelling out (destructive interference)</li>
+<li>this will not happen completely for Na+ and Cl-, but will be complete for K+ and Cl-</li>
+<li>So there are lines missing in KCl that are weakly present in NaCl</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-7" class="slide level2">
 <h2></h2>
 
-<img data-src="images/planes.png" class="r-stretch"></section>
-<section id="section-10" class="slide level2">
-<h2></h2>
-
-<img data-src="images/planes1.png" class="r-stretch"></section>
+<img data-src="images/scattering-factor.png" class="r-stretch"></section>
+<section id="equations" class="slide level2">
+<h2>Equations</h2>
+<ul>
+<li><p><span class="math inline">\(n\;\lambda = 2\;d\;sin\theta\)</span></p></li>
+<li><p><span class="math inline">\(d \; = \;\frac{a}{\sqrt {h^2 + k^2 + l^2}}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{1}{d^2} \; = \;\frac{h^2}{a^2} + \frac{k^2}{b^2} + \frac{l^2}{c^2}\)</span></p></li>
+<li><p>Body centred: <span class="math inline">\(h\;+\;k\;+\;l\;=\;even\)</span></p></li>
+<li><p>Face centred: h, k, l all even or all odd</p></li>
+</ul>
+</section>
 <section id="references" class="slide level2">
 <h2>References</h2>
 <ul>
-<li><p><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1445" target="_blank">Young &amp; Freedman - chapter 42.3</a></p></li>
-<li><p><a href="https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&amp;callbackUrl=https%3a%2f%2fresearch.ebsco.com&amp;db=nlebk&amp;format=EB&amp;profId=ehost&amp;lpid=&amp;ppid=&amp;lang=en&amp;location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk%26db%3dnlabk&amp;isPLink=False&amp;requestContext=&amp;profileIdentifier=sr37fs&amp;recordId=lh37eixz3f" target="_blank">Serway &amp; Jewett - chapter 41.8</a></p></li>
+<li><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1445" target="_blank">Young &amp; Freedman - chapter 42.3</a></li>
 </ul>
 
 </section>
@@ -429,19 +544,19 @@ Eugene Hickey <a href="https://orcid.org/0000-0001-9813-9323" class="quarto-titl
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="04-xtals_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="04-xtals_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="04-xtals_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="04-xtals_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="04-xtals_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="04-xtals_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="04-xtals_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="04-xtals_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="04-xtals_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="04-xtals_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="05-crystals-x-ray-diffraction_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
