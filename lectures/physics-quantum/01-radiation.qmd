@@ -332,11 +332,11 @@ z |> ggplot(aes(half_lives, number)) +
 
 - $(energy\;in\;joules) = MeV \times 1.6\times 10^{-13}$
 
-- $Gray =  Bq \times (energy\;in\;joules) / (person\;mass\; in \;kg)$
+- $Gray = \frac{Bq \times (energy\;in\;joules)}{(person\;mass\; in \;kg)}$
 
-- $Sv = Bq \times (energy\;in\;joules) \times RBE / (person\;mass\; in \;kg)$
+- $Sv = \frac{Bq \times (energy\;in\;joules) \times RBE }{(person\;mass\; in \;kg)}$
 
-- (expected number of deaths) = (dose in Sievert) $\times$ (population) / 50
+- $(expected\;number\; of\; deaths) = \frac{(dose\; in\; Sievert) \times (population)}{50}$
 
 ## References
 
