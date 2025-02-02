@@ -24,7 +24,7 @@ editor: visual
 
 The stability of the nucleus relies on the short range nuclear force. The models produced can account for the nature and energy of radiation products, the results of scattering experiments, and the range of isotopes across the table of elements. We get a measure of stability, the *binding energy per nucleon* that peaks around iron. Lighter elements will look to fuse together (fusion) and heavier elements to split apart (fission). Makes a source of tremendous amounts of energy.
 
-The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$), the natural energy or mass unit is the mega electron volt ($1MeV = 1.6 \times 10^{-19}J = 1.78 \times 10^{-30}kg$)
+The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$), the natural energy or mass unit is the mega electron volt ($1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$)
 
 ## Contents
 
@@ -298,6 +298,14 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
     -   magnetic confinement (20T) in a **Tokamak** (doughnut shape)
 
 -   Large science effort, current leaders are Lawrence Livermore in California (laser) and ITER in Cadarache in France (tokomak)
+
+## Equations
+
+-  $1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$
+
+- $Radius\;=\;1.2 \times \sqrt[3]{A}$ in femto-metres (1 fm = $10^{-15}m$)
+
+- $Binding\; E.\; per\; nucleon = \frac{938.272 \times Z + 939.565 \times (A-Z) - (mass\;in\;MeV)}{A}$
 
 ## References {.smaller}
 
