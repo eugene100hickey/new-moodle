@@ -324,19 +324,27 @@ z |> ggplot(aes(half_lives, number)) +
 
 ## Equations
 
-- $N\;=\;N_0e^{-\lambda t}$
+::: {style="font-size: 80%;"}
 
-- $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+-   $N\;=\;N_0e^{-\lambda t}$
 
-- $Bq = Ci \times 3.7\times10^{10}$
+-   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
 
-- $(energy\;in\;joules) = MeV \times 1.6\times 10^{-13}$
+-   $Bq = Ci \times 3.7\times10^{10}$
 
-- $Gray = \frac{Bq \times (energy\;in\;joules)}{(person\;mass\; in \;kg)}$
+-   $(energy\;in\;joules) = MeV \times 1.6\times 10^{-13}$
 
-- $Sv = \frac{Bq \times (energy\;in\;joules) \times RBE }{(person\;mass\; in \;kg)}$
+-   $Gray = \frac{Bq \times (energy\;in\;joules)}{(person\;mass\; in \;kg)}$
 
-- $(expected\;number\; of\; deaths) = \frac{(dose\; in\; Sievert) \times (population)}{50}$
+-   $Sv = \frac{Bq \times (energy\;in\;joules) \times RBE }{(person\;mass\; in \;kg)}$
+
+-   $(expected\;number\; of\; deaths) = \frac{(dose\; in\; Sievert) \times (population)}{50}$
+
+- typical daily dose = 10$\mu$Sv.
+
+- $LD_{50 / 30}$ = 4Sv
+
+:::
 
 ## References
 

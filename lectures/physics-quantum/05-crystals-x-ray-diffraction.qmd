@@ -27,7 +27,7 @@ To determine crystal structure, we need light of wavelength comparable to the si
 ## Contents
 
 ::: {style="font-size: 80%;"}
-1.  Sources of  X-rays
+1.  Sources of X-rays
 2.  X-ray spectra
 3.  Bragg reflection
 4.  Separation of planes (hkl)
@@ -127,9 +127,9 @@ To determine crystal structure, we need light of wavelength comparable to the si
 
 ## Bragg Reflection
 
-![](images/xrd-planes.gif) 
+![](images/xrd-planes.gif)
 
-$ n \times \lambda = 2 \times d \times sin \theta $$
+\$ n \times \lambda = 2 \times d \times sin \theta \$\$
 
 [http://www.doitpoms.ac.uk/tlplib/xray-diffraction/bragg.php](http://www.doitpoms.ac.uk/tlplib/xray-diffraction/bragg.php){target="_blank"}
 
@@ -274,103 +274,87 @@ $\frac{1}{d^2} \; = \;\frac{h^2}{a^2} + \frac{k^2}{b^2} + \frac{l^2}{c^2}$
 2.  The (111) planes in potassium iodide correspond to the first reflection in the X-ray spectrum. Calculate the minimum value of $\theta$ for KI using $\lambda _{CuK\alpha}$ = 0.154051 nm and a = 0.70655 nm for the cubic unit cell.
 
 \[$9.25^{\circ}$\]
-
 :::
 
 ## Extinctions
 
-- This means that reflections from some sets planes are cancelled out.
-- Knowing which planes are NOT giving reflections lets us determine what type of cubic structure is diffracting the x-rays. 
-    - BCC structures h + k + l  must be even
-    - FCC h, k and l themselves must be either all odd or all even
-    
+-   This means that reflections from some sets planes are cancelled out.
+-   Knowing which planes are NOT giving reflections lets us determine what type of cubic structure is diffracting the x-rays.
+    -   BCC structures h + k + l must be even
+    -   FCC h, k and l themselves must be either all odd or all even
+
 ## Problems
 
-::::: columns
-::: {.column width="40%"}
-
+:::::: columns
+:::: {.column width="40%"}
 ::: {style="font-size: 80%;"}
-- YN - $\lambda\;=\;Cu_{K\alpha} = 0.154051nm$
-    - Find the 2θ position of all the peaks
-    - Find the interplanar spacing for all the peaks
-    - Find lattice constant
-    - Is it primitive, BCC, or FCC?
-    
+-   YN - $\lambda\;=\;Cu_{K\alpha} = 0.154051nm$
+    -   Find the 2θ position of all the peaks
+    -   Find the interplanar spacing for all the peaks
+    -   Find lattice constant
+    -   Is it primitive, BCC, or FCC?
 :::
-:::
-::: {.column width="60%"}
+::::
 
-<br>
-<br>
+::: {.column width="60%"}
+<br> <br>
 
 ![](images/yn.png)
+:::
+::::::
 
+## 
+
+:::::: columns
+:::: {.column width="40%"}
+::: {style="font-size: 80%;"}
+-   NaCl
+    -   $\lambda\;=\;Cu_{K\alpha} = 0.154051nm$
+    -   face centred cubic
+    -   Find the 2θ position of all the peaks
+    -   Find the interplanar spacing for all the peaks
+    -   index the peaks
+    -   Find lattice constant
 :::
 ::::
 
-##
-
-::::: columns
-::: {.column width="40%"}
-
-::: {style="font-size: 80%;"}
-
-- NaCl
-    - $\lambda\;=\;Cu_{K\alpha} = 0.154051nm$
-    - face centred cubic
-    - Find the 2θ position of all the peaks
-    - Find the interplanar spacing for all the peaks
-    - index the peaks
-    - Find lattice constant
-
-:::
-:::
 ::: {.column width="60%"}
-
-<br>
-<br>
+<br> <br>
 
 ![](images/nacl.png)
-
 :::
-::::
+::::::
 
 ## Scattering Factor
 
 ::: {style="font-size: 70%;"}
-
-- The argument about extinction can only apply if the atoms/ions in the different planes have the same scattering strenghts.
-    - The scattering strength (factor) of an atom/ion is related to its electron density distribution.
-
-- This difference in scattering strength can even affect the pattern we get from similar type cells.
-    - For example, the x-ray powder patterns for NaCl and KCl are different despite both crystals being FFC.
-    - This is due the different scattering strengths of the ions: 
-
-- Scattering factor for Na+, K+ and Cl- are 10, 18 and 18 respectively.  
-    - When waves from the + ion and the –ion should be cancelling out (destructive interference) 
-    - this will not happen completely for Na+  and Cl-, but will be complete for K+  and Cl- 
-    - So there are lines missing in KCl that are weakly present in NaCl
-    
+-   The argument about extinction can only apply if the atoms/ions in the different planes have the same scattering strenghts.
+    -   The scattering strength (factor) of an atom/ion is related to its electron density distribution.
+-   This difference in scattering strength can even affect the pattern we get from similar type cells.
+    -   For example, the x-ray powder patterns for NaCl and KCl are different despite both crystals being FFC.
+    -   This is due the different scattering strengths of the ions:
+-   Scattering factor for Na+, K+ and Cl- are 10, 18 and 18 respectively.
+    -   When waves from the + ion and the –ion should be cancelling out (destructive interference)
+    -   this will not happen completely for Na+ and Cl-, but will be complete for K+ and Cl-
+    -   So there are lines missing in KCl that are weakly present in NaCl
 :::
-    
-##
+
+## 
 
 ![](images/scattering-factor.png)
 
 ## Equations
 
-- $n\;\lambda = 2\;d\;sin\theta$
+-   $n\;\lambda = 2\;d\;sin\theta$
 
-- $d \; = \;\frac{a}{\sqrt {h^2 + k^2 + l^2}}$
+-   $d \; = \;\frac{a}{\sqrt {h^2 + k^2 + l^2}}$
 
-- $\frac{1}{d^2} \; = \;\frac{h^2}{a^2} + \frac{k^2}{b^2} + \frac{l^2}{c^2}$
+-   $\frac{1}{d^2} \; = \;\frac{h^2}{a^2} + \frac{k^2}{b^2} + \frac{l^2}{c^2}$
 
-- Body centred: $h\;+\;k\;+\;l\;=\;even$
+-   Body centred: $h\;+\;k\;+\;l\;=\;even$
 
-- Face centred: h, k, l all even or all odd
+-   Face centred: h, k, l all even or all odd
 
 ## References
 
 -   [Young & Freedman - chapter 41.7](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1422){target="_blank"}
-
-
