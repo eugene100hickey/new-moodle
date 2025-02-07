@@ -1,7 +1,7 @@
 ---
 title: "01-Radiation"
 author:
-  - name: Eugene Hickey
+  - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
     email: eugene.hickey@tudublin.ie
     affiliation: 
@@ -325,7 +325,6 @@ z |> ggplot(aes(half_lives, number)) +
 ## Equations
 
 ::: {style="font-size: 80%;"}
-
 -   $N\;=\;N_0e^{-\lambda t}$
 
 -   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
@@ -340,10 +339,9 @@ z |> ggplot(aes(half_lives, number)) +
 
 -   $(expected\;number\; of\; deaths) = \frac{(dose\; in\; Sievert) \times (population)}{50}$
 
-- typical daily dose = 10$\mu$Sv.
+-   typical daily dose = 10$\mu$Sv.
 
-- $LD_{50 / 30}$ = 4Sv
-
+-   $LD_{50 / 30}$ = 4Sv
 :::
 
 ## References

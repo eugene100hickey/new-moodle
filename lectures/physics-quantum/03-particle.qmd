@@ -1,7 +1,7 @@
 ---
 title: "03-Particle_Physics"
 author:
-  - name: Eugene Hickey
+  - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
     email: eugene.hickey@tudublin.ie
     affiliation: 
@@ -40,9 +40,9 @@ These particles are grouped according to the ***Standard Model***.
 
 6.  Shortcomings of Standard Model
 
-##
+## 
 
-![](images/Standard_Model_of_Elementary_Particles.svg.png )
+![](images/Standard_Model_of_Elementary_Particles.svg.png)
 
 ## Fermions - the fundamental leptons
 
@@ -192,6 +192,65 @@ z |> gt() |>
     -   if a particle doesn't move at the light speed, it must have rest mass
 
 -   massless particles like photons ($\gamma$) or gluons don't interact with the Higg's Field, they must always move at the speed of light
+
+
+## The ~~Four~~ Three Forces of Nature
+
+
+:::: columns
+::: {style="font-size: 80%;"}
+::: {.column width="50%"}
+
+::: {style="background-color: #ccffff"}
+- Gravity
+    - really weak
+    - always attractive (except on cosmological scales)
+    - transmitted by gravitons
+    - General Relativity
+
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="background-color: #fff4e0"}
+- Electromagnetism
+    - medium strength
+    - +ve and -ve charges
+    - mediated by photons
+    - Maxwell's Equations, QED
+\newline
+:::
+:::
+:::
+::::
+
+:::: columns
+::: {style="font-size: 80%;"}
+::: {.column width="50%"}
+
+::: {style="background-color: #ffffcc"}
+- Weak Force
+    - pretty weak
+    - explains $\beta$ decay
+    - mediated by W and Z bosons
+
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="background-color: #ffccff"}
+
+- Strong Force
+    - only affects quarks
+    - super strong
+    - QCD
+
+:::
+:::
+:::
+::::
+
+Weak and electromagnetism united in to **_Electro-weak Force_**
 
 ## Shortcomings of the Standard Model
 

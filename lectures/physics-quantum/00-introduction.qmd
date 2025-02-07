@@ -1,7 +1,7 @@
 ---
 title: "00-Introduction"
 author:
-  - name: Eugene Hickey
+  - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
     email: eugene.hickey@tudublin.ie
     affiliation: 
