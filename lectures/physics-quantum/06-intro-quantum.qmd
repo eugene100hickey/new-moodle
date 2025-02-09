@@ -1,7 +1,7 @@
 ---
 title: "05-Introduction to Quantum Physics"
 author:
-  - name: Eugene Hickey
+  - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
     email: eugene.hickey@tudublin.ie
     affiliation: 
@@ -30,213 +30,44 @@ The experimental study of crystals is a powerful way to unpick the structure of 
 
 ::: {style="font-size: 80%;"}
 1.  Nature of Light
-1.  Blackbody Radiation & Planck
-1.  Photoelectric Effect
-1.  Energy & Momentum of Photons
-1.  Compton Effect
+2.  Blackbody Radiation & Planck
+3.  Photoelectric Effect
+4.  Energy & Momentum of Photons
+5.  Compton Effect
 :::
 
-## What is a Crystal?
+## Wave Nature of Light
 
 ::: {style="font-size: 70%;"}
--   Arrangement of atoms with repeated pattern in three dimensions.
--   Array of points in the crystal look identical (same surrounding atoms, same orientation)
--   Examples:
-    -   gems (diamond, ruby)
-    -   ceramics (silicates, alumina)
-    -   metals (iron, coppe)
-    -   even polymers.
--   The opposite of a crystal is an amorphous or glassy solid. On an atomic scale these looks like frozen liquids.
--   Can be tough to spot from external appearance
-    -   e.g. a smooth shaped piece of glass is NOT a crystal;
-    -   e.g. A rough irregularly shaped particle may consist of crystalline material.
+- optical interference patterns explained by waves
+
 :::
 
-## Metals have Crystals
-
--   Image below shows crystal grains in copper
--   Polish and etch to reveal grain boundaries
-
-![](images/metal-xtal.jpg)
-
-## Why do we care?
-
-![](images/franklin.png)
-
-## Information on Crystals
-
--   Cambridge Structural Database (CSD):
-    -   Information on \>1 million crystals (1046700, March 2020)
-    -   Nomenclature (how to name them)
-    -   Freely available
-    -   [http://www.ccdc.cam.ac.uk/](http://www.ccdc.cam.ac.uk/){target="_blank"}
-
-## 
-
-![](images/ccdc.png)
-
-## Unit Cells
-
-::: {style="font-size: 80%;"}
--   Fundamental building blocks of crystals
--   Arrangement of blocks must fill all space
--   Seven different shapes of unit cell allowed namely;
-    -   cubic
-    -   tetragonal
-    -   rhombohedral
-    -   hexagonal
-    -   orthorhombic
-    -   monoclinic
-    -   triclinic
-:::
-
-## Parameters for Unit Cells
-
--   cubic: $a\;=\;b\;=\;c\;$ and $\;\alpha\;=\;\beta\;=\;\gamma\;=\;90^{\circ}$
--   tetragonal: $a\;=\;b\;\neq\;c\;$and $\;\alpha\;=\;\beta\;=\;\gamma\;=\;90^{\circ}$
--   orthorhombic: $a\;\neq\;b\;\neq\;c\;$ and $\;\alpha\;=\;\beta\;=\;\gamma\;=\;90^{\circ}$
--   rhombohedral: $a\;=\;b\;=\;c\;$ and $\;\alpha\;=\;\beta\;=\;\gamma\;\neq\;90^{\circ}$
--   hexagonal: $a\;=\;b\;=\;c$ and $\alpha\;=\;\beta\;=\;90^{\circ}, \gamma\;=\;120^{\circ}$
--   monoclinic; $a\;\neq\;b\;\neq\;c\;$ and $\;\alpha\;=\;\beta\;=\;90^{\circ}\;\neq\;\gamma$
--   triclinic: $a\;\neq\;b\neq\;c\;$ and $\;\alpha\;\neq\;\beta\;\neq\;\gamma\;\neq\;90^{\circ}$
-
-## 
-
-![](images/bravais1.png)
-
-## Symmetries within Unit Cells
-
--   As well as the symetries of their shapes, unit cells can have symmetries due to their internal structures
--   Gives four types of unit cell
-    -   simple (P)
-    -   face centered (F)
-    -   body centered (I)
-    -   base centered (C)
-
-## 
-
-![](images/flavours.png)
-
-## Bravais Lattices
-
--   Not all of the seven cell shapes can have all four types of internal symmetry
--   For instance, the face centered tetragonal structure can be reduced to the body centered tetragonal structure
--   There are fourteen distinct possibilities called the Fourteen Bravais lattices
--   The fourteen lattices contain all the necessary translational symmetries to describe every possible crystal structure in nature
-
-## 
-
-![](images/bravais.png)
-
-## Metallic Crystal Structures
-
--   Because of the nature of the metallic bond the principle requirement is for a high density
--   Three arrangements satisfy this criterion
-    -   body centered cubic (BCC)
-    -   face centered cubic (FCC)
-    -   hexagonal close packed (HCP)
-
-## 
-
-![[Body Centred Cubic]{style="color:#4999ff;"}, [Hexagonal Close Packed]{style="color:#f6ea00;"}, and [Face Centred Cubic]{style="color:#48feda;"}](images/elements.png)
-
-## 
-
-![](images/apf.png)
-
-## 
-
-![](images/lattice-bcc.png)
-
-## 
-
-![](images/lattice-fcc.png)
-
-## Layers and Stacking
-
--   We’ll talk about metals here
-    -   not so fussy about direction of bonds
-    -   behave like hard spheres
-
-::::: columns
-::: {.column width="40%"}
--   Lay spheres out on a table so they are packed as close as possible in one layer
-    -   Two possibilities for next layer
-:::
-
-::: {.column width="60%"}
-![](images/layers.png)
-:::
-:::::
-
-## 
-
--   There are two ways to stack layers
-
-::::: columns
-::: {.column width="55%"}
--   ABABABABA
--   Creates form called Hexagonal Close Packed (HCP)
-
-![](images/hcp.png)
-:::
-
-::: {.column width="45%"}
--   ABCABCABC
--   Creates form called Face Centred Cubic(FCC)
-
-![](images/fcc.png)
-:::
-:::::
-
-## Positions, Directions, and Planes
+## Particle Nature of Light
 
 ::: {style="font-size: 70%;"}
--   Position
-    -   specifies a point within a unit cell
-    -   expressed as fractions of lattice vectors.
-    -   notation is ( 1/4, 0, -21/2 )
--   Direction
-    -   specifies the direction of a line
-    -   expressed as a set of integers
-    -   notation is \[210\] where 1 means -1.
--   Planes
-    -   specifies surfaces within the crystal
-    -   expressed as a set of integers known as the Miller indices
-    -   notation is (210).
+- photoelectric effect
+- pair-production
+
 :::
 
-## Hints for Positions
+## Blackbody Radiation
 
-::::: columns
-::: {.column width="70%"}
--   by convention, take the position (0,0,0) to be in the bottom left hand corner at the back
--   remember which axes point in which directions.\
--   positions can be fractions; 21/2 , -3/4 , 8/3 , etc
--   remember the notation; (x,y,z)
--   positions with negative indices or indices \>1 will be outside the unit cell
+::: {style="font-size: 70%;"}
+- every object emits light because of its temperature
+    - hot bodies are brighter
+    - hot bodies $\implies$ more intense colours
+        - $infrared \rightarrow  crimson \rightarrow yellow \rightarrow blue \rightarrow uv$
+    - spectrum explained by Planck's Radiation Law
+    
+${\displaystyle B_{\nu }(\nu ,T)={\frac {2h\nu ^{3}}{c^{2}}}{\frac {1}{e^{h\nu /(k_{\mathrm {B} }T)}-1}}}$
+
+- introduces Plank's constant, $h = 6.626 \times 10^{-34} Js$
+- also $\hbar = \frac{h}{2\pi} = 1.055 \times 10^{-34} Js$
 :::
-
-::: {.column width="30%"}
-![](images/axes.png)
-:::
-:::::
-
-## Hints for Planes
-
--   sets of parallel planes all have the same Miller indices
--   choose one of the planes that does not pass through the point (0,0,0)
--   see where the plane cuts the x, y, and z axes (the intercepts, could be infinity)
--   get the reciprocals of these intercepts
--   clear fractions
 
 ## 
 
-![](images/planes.png)
-
-## 
-
-![](images/planes1.png)
 
 ## References
 

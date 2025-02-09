@@ -46,17 +46,17 @@ These particles are grouped according to the ***Standard Model***.
 
 ## Fermions vs Bosons
 
-- fermions have half integer spin ($\frac{1}{2}, \frac{3}{2}, \frac{5}{2}..$)
-- bosons have integer spin (0, 1, 2...)
+-   fermions have half integer spin ($\frac{1}{2}, \frac{3}{2}, \frac{5}{2}..$)
+-   bosons have integer spin (0, 1, 2...)
 
 <br>
 
-- fermions need to satisfy Pauli
+-   fermions need to satisfy Pauli
 
 <br>
 
-- fermions are the *particles*
-- bosons are force carriers
+-   fermions are the *particles*
+-   bosons are force carriers
 
 ## Fermions - the fundamental leptons
 
@@ -257,6 +257,42 @@ z |> gt() |>
 
 Weak and electromagnetism united in to ***Electro-weak Force***
 
+## Feynman Diagrams
+
+- neat way of picturing particle interactions
+
+- form basis for complex mathematical calculations
+
+- time flows from left to right
+
+- fdermions represented by stright lines, bosons by wiggles
+
+- time flows backwards for anti-particles
+
+- at every vertex, quantities must be conserved
+    - charge
+    - colour
+    - lepton number
+    - baryon number
+    
+- two general types
+    - scattering
+    - annihilation
+    
+##
+
+:::: columns
+::: {.column width="50%"}
+![](images/feynman-ee-vv.png)
+:::
+::: {.column width="50%"}
+
+
+:::
+::::
+
+
+
 ## Shortcomings of the Standard Model
 
 -   very much a work in progress
@@ -286,3 +322,5 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 -   [Serway & Jewett - chapter 44](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
 -   [anti-matter](https://www.youtube.com/watch?v=Lo8NmoDL9T8&list=PLoaVOjvkzQtwltNydLdcTwBauZVpwdFwz&index=5){target="_blank"}
+
+- [Feynmaan Diagrams](https://www.coursera.org/learn/particle-physics/lecture/I3gxB/4-1a-how-to-construct-a-feynman-diagram-optional)
