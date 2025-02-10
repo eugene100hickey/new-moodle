@@ -259,39 +259,123 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 
 ## Feynman Diagrams
 
-- neat way of picturing particle interactions
+::: {style="font-size: 70%;"}
+-   neat way of picturing particle interactions
 
-- form basis for complex mathematical calculations
+-   form basis for complex mathematical calculations
 
-- time flows from left to right
+-   time flows from left to right
 
-- fdermions represented by stright lines, bosons by wiggles
+-   fermions represented by stright lines, bosons by wiggles, gluons by spirals
 
-- time flows backwards for anti-particles
+-   time flows backwards for anti-particles
 
-- at every vertex, quantities must be conserved
-    - charge
-    - colour
-    - lepton number
-    - baryon number
+-   at every vertex, quantities must be conserved
+
+    -   charge
+    -   colour (except for weak interaction)
+    -   lepton number
+    -   baryon number
+
+-   two general types
+
+    -   scattering
+    -   annihilation
+
+:::
+
+## 
+
+::::: columns
+::: {.column width="50%"}
+::: {style="font-size: 80%;"}
+- this is an annihilation process
+- central line 
+    - can't be a $\gamma$ as no charge on $\nu$
+    - can't be a gluon as no colour
+    - can't be a $W^{\pm}$ as no change in charge
+    - [must]{.underline} be a Z
     
-- two general types
-    - scattering
-    - annihilation
-    
-##
+:::
+:::
+
+::: {.column width="50%"}
+
+![](images/feynman-ee-vv.png)
+
+:::
+:::::
+
+::: {.callout-tip}
+## If you see a $\nu$ or $\bar{\nu}$ it must be a weak interaction
+:::
+
+## 
+
+::::: columns
+::: {.column width="50%"}
+::: {style="font-size: 80%;"}
+- again, this is an annihilation process
+- central line 
+    - can't be a gluon as no colour on $e^{\pm}$
+    - can't be a $W^{\pm}$ as no change in charge
+    - [could]{.underline} be a Z or a $\gamma$
+
+:::
+:::
+
+::: {.column width="50%"}
+![](images/feynman-ee-uu.png)
+:::
+:::::
+
+
+## 
 
 :::: columns
 ::: {.column width="50%"}
-![](images/feynman-ee-vv.png)
-:::
-::: {.column width="50%"}
+::: {style="font-size: 80%;"}
+- this is a scattering process as $e^-$ can't couple to u quark
+- central line 
+    - can't be a gluon as no colour on $e^{\pm}$ or $\nu_e$
+    - can't be a $\gamma$ or Z as change in charge
+    - [must]{.underline} must be a $W^-$
 
+:::
+:::
+
+::: {.column width="50%"}
+![](images/feynman-eu-vd.png)
 
 :::
 ::::
 
+::: {.callout-tip}
+## Never have a vertex connecting a lepton to a quark
+:::
 
+## 
+
+:::: columns
+::: {.column width="50%"}
+::: {style="font-size: 80%;"}
+- this is a scattering process
+- central line 
+    - can't be a $\gamma$, Z, or $W^\pm$ as change in colour
+    - [must]{.underline} must be a gluon, $g_{R\bar{B}}$
+
+:::
+:::
+
+::: {.column width="50%"}
+![](images/feynman-ud-ud.png)
+
+:::
+::::
+
+::: {.callout-tip}
+## If all or particles (or all are anti-particles), then it must be scattering
+:::
 
 ## Shortcomings of the Standard Model
 
@@ -323,4 +407,4 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 
 -   [anti-matter](https://www.youtube.com/watch?v=Lo8NmoDL9T8&list=PLoaVOjvkzQtwltNydLdcTwBauZVpwdFwz&index=5){target="_blank"}
 
-- [Feynmaan Diagrams](https://www.coursera.org/learn/particle-physics/lecture/I3gxB/4-1a-how-to-construct-a-feynman-diagram-optional)
+-   [Feynman Diagrams](https://www.coursera.org/learn/particle-physics/lecture/I3gxB/4-1a-how-to-construct-a-feynman-diagram-optional)
