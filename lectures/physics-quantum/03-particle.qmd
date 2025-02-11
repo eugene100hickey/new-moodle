@@ -39,6 +39,10 @@ These particles are grouped according to the ***Standard Model***.
 
 5.  Bosons
 
+1. Feynman Diagrams
+
+1. Particle Accelerators
+
 6.  Shortcomings of Standard Model
 
 ## 
