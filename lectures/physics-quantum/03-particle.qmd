@@ -11,6 +11,7 @@ format:
   revealjs:
     slide-number: true
     show-slide-number: all
+    chalkboard: true
 logo: logo.jpg
 include-in-header:
   - text: |
@@ -226,7 +227,7 @@ z |> gt() |>
 -   Electromagnetism
     -   medium strength
     -   +ve and -ve charges
-    -   mediated by photons
+    -   mediated by photons, $\gamma$
     -   Maxwell's Equations, QED \newline
 :::
 ::::
@@ -249,7 +250,7 @@ z |> gt() |>
 -   Strong Force
     -   only affects quarks
     -   super strong
-    -   QCD
+    -   QCD, gluons e.g. $g_{R\bar{G}}$
 :::
 ::::
 :::::::
@@ -281,99 +282,89 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 
     -   scattering
     -   annihilation
-
 :::
 
 ## 
 
-::::: columns
-::: {.column width="50%"}
+:::::: columns
+:::: {.column width="50%"}
 ::: {style="font-size: 80%;"}
-- this is an annihilation process
-- central line 
-    - can't be a $\gamma$ as no charge on $\nu$
-    - can't be a gluon as no colour
-    - can't be a $W^{\pm}$ as no change in charge
-    - [must]{.underline} be a Z
-    
+-   this is an annihilation process
+-   central line
+    -   can't be a $\gamma$ as no charge on $\nu$
+    -   can't be a gluon as no colour
+    -   can't be a $W^{\pm}$ as no change in charge
+    -   [must]{.underline} be a Z
 :::
-:::
+::::
 
 ::: {.column width="50%"}
-
 ![](images/feynman-ee-vv.png)
-
 :::
-:::::
+::::::
 
-::: {.callout-tip}
+::: callout-tip
 ## If you see a $\nu$ or $\bar{\nu}$ it must be a weak interaction
 :::
 
 ## 
 
-::::: columns
-::: {.column width="50%"}
+:::::: columns
+:::: {.column width="50%"}
 ::: {style="font-size: 80%;"}
-- again, this is an annihilation process
-- central line 
-    - can't be a gluon as no colour on $e^{\pm}$
-    - can't be a $W^{\pm}$ as no change in charge
-    - [could]{.underline} be a Z or a $\gamma$
-
+-   again, this is an annihilation process
+-   central line
+    -   can't be a gluon as no colour on $e^{\pm}$
+    -   can't be a $W^{\pm}$ as no change in charge
+    -   [could]{.underline} be a Z or a $\gamma$
 :::
-:::
+::::
 
 ::: {.column width="50%"}
 ![](images/feynman-ee-uu.png)
 :::
-:::::
-
+::::::
 
 ## 
 
-:::: columns
-::: {.column width="50%"}
+:::::: columns
+:::: {.column width="50%"}
 ::: {style="font-size: 80%;"}
-- this is a scattering process as $e^-$ can't couple to u quark
-- central line 
-    - can't be a gluon as no colour on $e^{\pm}$ or $\nu_e$
-    - can't be a $\gamma$ or Z as change in charge
-    - [must]{.underline} must be a $W^-$
-
-:::
-:::
-
-::: {.column width="50%"}
-![](images/feynman-eu-vd.png)
-
+-   this is a scattering process as $e^-$ can't couple to u quark
+-   central line
+    -   can't be a gluon as no colour on $e^{\pm}$ or $\nu_e$
+    -   can't be a $\gamma$ or Z as change in charge
+    -   [must]{.underline} must be a $W^-$
 :::
 ::::
 
-::: {.callout-tip}
+::: {.column width="50%"}
+![](images/feynman-eu-vd.png)
+:::
+::::::
+
+::: callout-tip
 ## Never have a vertex connecting a lepton to a quark
 :::
 
 ## 
 
-:::: columns
-::: {.column width="50%"}
+:::::: columns
+:::: {.column width="50%"}
 ::: {style="font-size: 80%;"}
-- this is a scattering process
-- central line 
-    - can't be a $\gamma$, Z, or $W^\pm$ as change in colour
-    - [must]{.underline} must be a gluon, $g_{R\bar{B}}$
-
-:::
-:::
-
-::: {.column width="50%"}
-![](images/feynman-ud-ud.png)
-
+-   this is a scattering process
+-   central line
+    -   can't be a $\gamma$, Z, or $W^\pm$ as change in colour
+    -   [must]{.underline} must be a gluon, $g_{R\bar{B}}$
 :::
 ::::
 
-::: {.callout-tip}
+::: {.column width="50%"}
+![](images/feynman-ud-ud.png)
+:::
+::::::
+
+::: callout-tip
 ## If all or particles (or all are anti-particles), then it must be scattering
 :::
 
