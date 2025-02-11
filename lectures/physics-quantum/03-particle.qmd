@@ -390,6 +390,42 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 
 -   neutrinos do something strange, seem to flip between $\nu_e$, $\nu_{\mu}$, and $\nu_{\tau}$
 
+## Particle Detectors
+
+::: {style="font-size: 85%;"}
+:::: columns
+::: {.column width="50%"}
+
+- some of the biggest experiments
+
+- accelerators
+    - linear
+    - synchrotrons / cyclotrons
+
+- LHC at CERN
+    - 14TeV
+    - proton-proton collisions
+    
+- Fermilab Tevatron
+    - 1GeV
+
+:::
+::: {.column width="50%"}
+    
+- RHIC at Brookhaven
+    - 250GeV
+    
+- LIGO
+    - looking or gravitational waves, gravitons
+    
+- as well as peak energy, the intensity is important
+    - looking for rare events
+    
+
+:::
+::::
+:::
+
 ## References
 
 -   [Young & Freedman - chapter 44](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1513){target="_blank"}
