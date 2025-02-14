@@ -1,0 +1,49 @@
+---
+title: "EUT+ Data Workshop III"
+author: "Technological University Dublin"
+format:
+  revealjs:
+    logo: images/workshop-banner.png
+    footer: "Data Science Workshop III"
+    slide-number: true
+    show-slide-number: all
+    css: logo.css
+editor: visual
+---
+
+- Dates:
+    - Thursday 29<sup>th</sup> & Friday 30<sup>th</sup> May 2025 
+
+- Venue:
+    - TU Dublin, Grangegorman Campus (City Centre-ish)
+    
+- Room
+    - CQ 337 (32 seater)
+    
+## Deadlines
+
+- abstract submission early May
+
+- Dublin is expensive - book early
+    - lots of hotels in city centre, but not cheap
+    - we'll look to make some recommendations
+    
+## Abstract
+
+- there'll be a form
+    - authors
+    - abstract (300 word limit)
+    - description (1000 word limit)
+    - references
+    
+- also, looking to give academic credit to presenters
+    - presentations recorded and made available on TUD system (Arrow)
+    - each will have a DOI
+    
+## Workshop Dinner
+
+- Thursday 
+
+- Darwin's Restaurant
+
+

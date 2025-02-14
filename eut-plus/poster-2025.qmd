@@ -1,0 +1,13 @@
+---
+title: ""
+format: html
+editor: visual
+footer: "May 29<sup>th</sup> & 30<sup>th</sup> 2025"
+---
+
+![](images/workshop-banner.png)
+
+![](images/workshop-topics.png)
+
+
+![](images/workshop-footer.png)

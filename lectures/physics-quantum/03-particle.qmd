@@ -39,11 +39,11 @@ These particles are grouped according to the ***Standard Model***.
 
 5.  Bosons
 
-1. Feynman Diagrams
+6.  Feynman Diagrams
 
-1. Particle Accelerators
+7.  Particle Accelerators
 
-6.  Shortcomings of Standard Model
+8.  Shortcomings of Standard Model
 
 ## 
 
@@ -396,39 +396,36 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 
 ## Particle Detectors
 
-::: {style="font-size: 85%;"}
-:::: columns
+:::::: {style="font-size: 85%;"}
+::::: columns
 ::: {.column width="50%"}
+-   some of the biggest experiments
 
-- some of the biggest experiments
+-   accelerators
 
-- accelerators
-    - linear
-    - synchrotrons / cyclotrons
+    -   linear
+    -   synchrotrons / cyclotrons
 
-- LHC at CERN
-    - 14TeV
-    - proton-proton collisions
-    
-- Fermilab Tevatron
-    - 1GeV
+-   LHC at CERN
 
+    -   14TeV
+    -   proton-proton collisions
+
+-   Fermilab Tevatron
+
+    -   1GeV
 :::
+
 ::: {.column width="50%"}
-    
-- RHIC at Brookhaven
-    - 250GeV
-    
-- LIGO
-    - looking or gravitational waves, gravitons
-    
-- as well as peak energy, the intensity is important
-    - looking for rare events
-    
-
+-   RHIC at Brookhaven
+    -   250GeV
+-   LIGO
+    -   looking or gravitational waves, gravitons
+-   as well as peak energy, the intensity is important
+    -   looking for rare events
 :::
-::::
-:::
+:::::
+::::::
 
 ## References
 
