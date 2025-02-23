@@ -150,61 +150,232 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
-<p>In solid form, many molecules line up in regular arrays showing long range order. These are crystals. Classically these are distinguished by flat faces and sharp edges, but in reality most solids are crystalline, just that the individual crystals are so small we don’t recognise this.</p>
-<p>The experimental study of crystals is a powerful way to unpick the structure of the molecules from which they are composed.</p>
+<p>Light shows many properties consistent with its nature as being a wave; examplees being difffraction and interference. But it also shows many properties that can only be explained by considering light as being a stream of particles, photons (<span class="math inline">\(\gamma\)</span>). This conflict can be viewed as a wave-particle duality, with a photon as a probability wave.</p>
+<p>Particles such as electrons also show similar effects.</p>
+<p>The wave-like properties can be interpreted using Heisenberg’s Uncertainty Principle.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
-<div style="font-size: 80%;">
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 90%;">
 <ol type="1">
-<li>Nature of Light</li>
+<li>Wave Nature of Light</li>
+<li>Particle Nature of Light
+<ol type="1">
 <li>Blackbody Radiation &amp; Planck</li>
-<li>Photoelectric Effect</li>
+<li>Photoelectric Effect
+<ul>
 <li>Energy &amp; Momentum of Photons</li>
+</ul></li>
 <li>Compton Effect</li>
+<li>Pair Production</li>
+</ol></li>
 </ol>
 </div>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:40%;">
+<div style="font-size: 90%;">
+<ol start="3" type="1">
+<li>Mathematics of Wave Packets</li>
+<li>Uncertainty Principle</li>
+<li>Wave Nature of Particles</li>
+<li>Equations</li>
+<li>References</li>
+</ol>
+</div>
+</div></div>
 </section>
 <section id="wave-nature-of-light" class="slide level2">
 <h2>Wave Nature of Light</h2>
-<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 90%;">
 <ul>
-<li>optical interference patterns explained by waves</li>
+<li><strong><em>optical diffraction</em></strong> explained by waves
+<ul>
+<li>analogous to phenomena in water waves, sound, etc</li>
+<li><span class="math inline">\(\theta \propto \frac{\lambda}{d}\)</span>, d is aperture width</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/Single_Slit_Diffraction.svg.png" style="width:80.0%;height:80.0%"></p>
+</div></div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div style="font-size: 80%;">
+<ul>
+<li><strong><em>two-slit interference pattern</em></strong> (Young’s)
+<ul>
+<li><span class="math inline">\(n\lambda = d \times sin\theta\)</span></li>
+</ul></li>
+</ul>
+<p><img data-src="images/youngs.png" style="width:60.0%;height:40.0%"></p>
+<p><br></p>
+<ul>
+<li><strong><em>X-ray diffraction</em></strong> patterns we looked at last week also explained by wave nature of light</li>
 </ul>
 </div>
 </section>
-<section id="particle-nature-of-light" class="slide level2">
-<h2>Particle Nature of Light</h2>
-<div style="font-size: 70%;">
+<section id="but-there-are-problems" class="slide level2">
+<h2>But there are problems</h2>
+<ol type="1">
+<li><p>Blackbody Radiation</p>
 <ul>
-<li>photoelectric effect</li>
-<li>pair-production</li>
-</ul>
-</div>
+<li>classical model of the spectrum of thermal radiation (Rayleigh-Jeans) gives infinities at short wavelengths</li>
+<li>called ultraviolet catastrophy</li>
+<li>solved by Planck’s Radiation Law</li>
+</ul></li>
+<li><p>photoelectric effect</p></li>
+<li><p>Compton Scattering</p></li>
+<li><p>Pair production</p></li>
+</ol>
 </section>
 <section id="blackbody-radiation" class="slide level2">
-<h2>Blackbody Radiation</h2>
+<h2>1. Blackbody Radiation</h2>
 <div style="font-size: 70%;">
 <ul>
-<li>every object emis light because of its temperature
+<li>every object emits light because of its temperature
 <ul>
-<li>hot bodies are brighter</li>
-<li>hot bodies <span class="math inline">\(\implies\)</span> more intense colours
+<li>hot bodies are brighter (Stefan Boltzman Law)</li>
+<li>hot bodies <span class="math inline">\(\implies\)</span> more intense colours (Wien’s Displacement Law)
 <ul>
 <li><span class="math inline">\(infrared \rightarrow  crimson \rightarrow yellow \rightarrow blue \rightarrow uv\)</span></li>
 </ul></li>
 <li>spectrum explained by Planck’s Radiation Law</li>
 </ul></li>
 </ul>
-<p><span class="math inline">\({\displaystyle B_{\nu }(\nu ,T)={\frac {2h\nu ^{3}}{c^{2}}}{\frac {1}{e^{h\nu /(k_{\mathrm {B} }T)}-1}}}\)</span></p>
+<p><span class="math inline">\({\displaystyle u_{\lambda }(\lambda ,T)={\frac {8\pi hc}{\lambda ^{5}}}{\frac {1}{e^{hc/(\lambda k_{\mathrm {B} }T)}-1}}}\)</span></p>
 <ul>
-<li>introduces Plank’s constant, <span class="math inline">\(h = 6.626 \times 10^{-34} Js\)</span></li>
+<li>introduces Plank’s constant, <span class="math inline">\(h = 6.626 \times 10^{-34} Js\)</span>
+<ul>
 <li>also <span class="math inline">\(\hbar = \frac{h}{2\pi} = 1.055 \times 10^{-34} Js\)</span></li>
+</ul></li>
+<li>where <span class="math inline">\(c = 2.99792458 \times 10^{8}m/s\)</span> = speed of light</li>
+<li><span class="math inline">\(k_B = 1.380649 \times 10^{-23} J/K\)</span> = Boltzman’s Constant</li>
 </ul>
 </div>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
+
+<img data-src="06-intro-quantum_files/figure-revealjs/planck-plot-1.png" width="960" class="r-stretch"></section>
+<section id="equations-for-our-photons" class="slide level2">
+<h2>Equations for Our Photons</h2>
+<ul>
+<li><span class="math inline">\(\omega = {2\pi}{f}\)</span> = angular velocity</li>
+<li><span class="math inline">\(k = \frac{2\pi}{\lambda}\)</span> = wave vector</li>
+<li><span class="math inline">\(E_{\gamma} = hf = \hbar \omega\)</span></li>
+<li><span class="math inline">\(E_{\gamma} = \frac{hc}{\lambda} = \hbar c k\)</span></li>
+<li><span class="math inline">\(p = \frac{h}{\lambda} = \hbar k\)</span> = momentum</li>
+</ul>
+</section>
+<section id="photoelectric-effect" class="slide level2">
+<h2>2. Photoelectric Effect</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 75%;">
+<ul>
+<li>shine light on metal plate</li>
+<li>electrons emitted
+<ul>
+<li>would expect the brighter the light <span class="math inline">\(\implies\)</span> the stronger the electric field <span class="math inline">\(\implies\)</span> the more energetic the electrons leaving plate</li>
+</ul></li>
+<li>don’t see this
+<ul>
+<li>energy of electrons depends on light wavelength</li>
+<li>number of electrons depends on brightness</li>
+<li><span class="math inline">\(KE_{{max}_{e^-}} = hf - \phi\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:&quot;40%;">
+<p><img data-src="images/photo-electric.png" style="width:90.0%;height:90.0%"></p>
+<div style="font-size: 75%;">
+<ul>
+<li>adjust voltage until just strong enough to stop all electrons
+<ul>
+<li><span class="math inline">\(eV = hf - \phi\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="compton-effect" class="slide level2">
+<h2>3. Compton Effect</h2>
+<p><br></p>
+<ul>
+<li><p>if light is just a wave, scattering off particles won’t effect <span class="math inline">\(\lambda\)</span></p></li>
+<li><p>but we <em>do</em> see change in <span class="math inline">\(\lambda\)</span></p>
+<ul>
+<li>have to look pretty carefully</li>
+<li>works best for x-rays scattering off electrons</li>
+</ul></li>
+<li><p>get <span class="math inline">\(\Delta \lambda = \lambda - \lambda_0 = \frac{h}{mc}(1-cos \theta)\)</span></p></li>
+</ul>
+</section>
+<section id="pair-production" class="slide level2">
+<h2>4. Pair Production</h2>
+
+<img data-src="images/pair-production.png" class="r-stretch"></section>
+<section id="mathematics-of-waves" class="slide level2">
+<h2>Mathematics of Waves</h2>
+<ul>
+<li>single wave <span class="math inline">\(A = A_0 sin(kx - \omega t)\)</span>
+<ul>
+<li>angular velocity; <span class="math inline">\(\omega = 2 \pi f\)</span>, where f is the frequency</li>
+<li>wavenumber; <span class="math inline">\(k = \frac{2 \pi}{\lambda}\)</span>, where <span class="math inline">\(\lambda\)</span> is the wavelength</li>
+<li>neat way of expressing this <span class="math inline">\(A = e^{i(kx - \omega t)}\)</span></li>
+<li>using <span class="math inline">\(v = f\lambda\)</span> get <span class="math inline">\(v = \frac{\omega}{k}\)</span></li>
+<li>this is the <em>phase velocity</em>, <span class="math inline">\(v_p\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+
+<img data-src="06-intro-quantum_files/figure-revealjs/waves-graph1-1.png" width="960" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+<img data-src="06-intro-quantum_files/figure-revealjs/waves-graph2-1.png" width="960" class="r-stretch"></section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+
+<img data-src="images/phase-group-velocity-animation.gif" class="r-stretch quarto-figure-center"><p class="caption">Credit: Institute of Sound and Vibration Research</p></section>
+<section id="heisenbergs-uncertainty-principle" class="slide level2">
+<h2>Heisenberg’s Uncertainty Principle</h2>
+<div style="font-size: 90%;">
+<ul>
+<li>light diffraction can be though of as an illustration of the uncertainty principle</li>
+<li>slit width <span class="math inline">\(d\)</span> so therefore uncertainty in photon position of <span class="math inline">\(\Delta x = d\)</span></li>
+<li>width of diffraction pattern = <span class="math inline">\(\Delta \theta = \frac{\lambda}{d}\)</span>
+<ul>
+<li>range of momentum values = <span class="math inline">\(\Delta p = p \Delta \theta = p \frac{\lambda}{d}\)</span></li>
+<li>but <span class="math inline">\(p = \frac{h}{\lambda}\)</span></li>
+<li>substituting we get <span class="math inline">\(\Delta p = \frac{h}{\lambda} \frac{\lambda}{d} = \frac{h}{d}\)</span></li>
+<li>but <span class="math inline">\(\Delta x = d\)</span>, so <span class="math inline">\(\Delta p = \frac{h}{\Delta x}\)</span></li>
+<li><span class="math inline">\(\implies \Delta x \Delta p \ge h\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="wave-nature-of-other-stuff" class="slide level2">
+<h2>Wave Nature of Other Stuff</h2>
+<ul>
+<li><p>electrons fired through a double slit apparatus also show a diffraction / interference pattern</p>
+<ul>
+<li>Davison Germer experiment with beam of electrons at nickel plate</li>
+<li>even when we dial the intensity way down, one electron at a time, we see the same pattern</li>
+<li>and this is also true for light, one photon at a time</li>
+</ul></li>
+</ul>
+</section>
+<section id="equations" class="slide level2">
+<h2>Equations</h2>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
@@ -429,6 +600,82 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
