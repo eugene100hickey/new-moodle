@@ -1,6 +1,6 @@
 ---
-title: "Eugene"
-author: "Energy in Sport"
+title: "Sports Science - Physics"
+author: "02a - Energy in Sport"
 date: "`r format(Sys.Date(), '%B %d %Y')`"
 format:
   revealjs:
