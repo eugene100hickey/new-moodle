@@ -30,82 +30,75 @@ The wave-like properties can be interpreted using Heisenberg's Uncertainty Princ
 
 ## Contents
 
-:::: columns
-::: {.column width="40%"}
-
+:::::::: columns
+:::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
 1.  Wave Nature of Light
-1. Particle Nature of Light
+2.  Particle Nature of Light
     1.  Blackbody Radiation & Planck
-    3.  Photoelectric Effect
-        - Energy & Momentum of Photons
-    5.  Compton Effect
-    3. Pair Production
-
-:::
-:::
-::: {.column width="10%"}
-:::
-::: {.column width="40%"}
-::: {style="font-size: 90%;"}
-
-3. Mathematics of Wave Packets
-1. Uncertainty Principle
-1. Wave Nature of Particles
-1. Equations
-1. References
-
-:::
+    2.  Photoelectric Effect
+        -   Energy & Momentum of Photons
+    3.  Compton Effect
+    4.  Pair Production
 :::
 ::::
+
+::: {.column width="10%"}
+:::
+
+:::: {.column width="40%"}
+::: {style="font-size: 90%;"}
+3.  Mathematics of Wave Packets
+4.  Uncertainty Principle
+5.  Wave Nature of Particles
+6.  Equations
+7.  References
+:::
+::::
+::::::::
 
 ## Wave Nature of Light
 
-:::: columns
-::: {.column width="40%"}
-
+:::::: columns
+:::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
--   **_optical diffraction_** explained by waves
+-   ***optical diffraction*** explained by waves
     -   analogous to phenomena in water waves, sound, etc
-    - $\theta \propto \frac{\lambda}{d}$, d is aperture width 
-    
+    -   $\theta \propto \frac{\lambda}{d}$, d is aperture width
 :::
-:::
-::: {.column width="60%"}
-    
-![](images/Single_Slit_Diffraction.svg.png){width="80%" height="80%"}
-:::   
 ::::
 
-##
+::: {.column width="60%"}
+![](images/Single_Slit_Diffraction.svg.png){width="80%" height="80%"}
+:::
+::::::
+
+## 
 
 ::: {style="font-size: 80%;"}
-
--   **_two-slit interference pattern_** (Young's)
+-   ***two-slit interference pattern*** (Young's)
     -   $n\lambda = d \times sin\theta$
-
 
 ![](images/youngs.png){width="60%" height="40%"}
 
 <br>
 
--   **_X-ray diffraction_** patterns we looked at last week also explained by wave nature of light
+-   ***X-ray diffraction*** patterns we looked at last week also explained by wave nature of light
 :::
-
 
 ## But there are problems
 
-1. Blackbody Radiation
-    - classical model of the spectrum of thermal radiation (Rayleigh-Jeans) gives infinities at short wavelengths
-    - called ultraviolet catastrophy
-    - solved by Planck's Radiation Law
+1.  Blackbody Radiation
 
-2. photoelectric effect
+    -   classical model of the spectrum of thermal radiation (Rayleigh-Jeans) gives infinities at short wavelengths
+    -   called ultraviolet catastrophy
+    -   solved by Planck's Radiation Law
 
-3. Compton Scattering
+2.  photoelectric effect
 
-4. Pair production
+3.  Compton Scattering
 
+4.  Pair production
 
 ## 1. Blackbody Radiation
 
@@ -120,11 +113,11 @@ ${\displaystyle u_{\lambda }(\lambda ,T)={\frac {8\pi hc}{\lambda ^{5}}}{\frac {
 
 -   introduces Plank's constant, $h = 6.626 \times 10^{-34} Js$
     -   also $\hbar = \frac{h}{2\pi} = 1.055 \times 10^{-34} Js$
-- where $c = 2.99792458 \times 10^{8}m/s$ = speed of light
-- $k_B = 1.380649 \times 10^{-23} J/K$ = Boltzman's Constant
+-   where $c = 2.99792458 \times 10^{8}m/s$ = speed of light
+-   $k_B = 1.380649 \times 10^{-23} J/K$ = Boltzman's Constant
 :::
 
-##
+## 
 
 ```{r set-up}
 #| echo: false
@@ -192,62 +185,53 @@ tibble(lambda = lambda*1e9, u1, u2, u3) |>
 
 ## Equations for Our Photons
 
-- $\omega = {2\pi}{f}$ = angular velocity
-- $k = \frac{2\pi}{\lambda}$ = wave vector
-- $E_{\gamma} = hf = \hbar \omega$
-- $E_{\gamma} = \frac{hc}{\lambda} = \hbar c k$
-- $p = \frac{h}{\lambda} = \hbar k$ = momentum
+-   $\omega = {2\pi}{f}$ = angular velocity
+-   $k = \frac{2\pi}{\lambda}$ = wave vector
+-   $E_{\gamma} = hf = \hbar \omega$
+-   $E_{\gamma} = \frac{hc}{\lambda} = \hbar c k$
+-   $p = \frac{h}{\lambda} = \hbar k$ = momentum
 
 ## 2. Photoelectric Effect
 
-:::: columns
-::: {.column width="50%"}
-
+::::::: columns
+:::: {.column width="50%"}
 ::: {style="font-size: 75%;"}
-
-- shine light on metal plate
-- electrons emitted
-    - would expect the brighter the light 
-    $\implies$ the stronger the electric field 
-    $\implies$ the more energetic the electrons leaving plate
-- don't see this
-    - energy of electrons depends on light wavelength
-    - number of electrons depends on brightness
-    - $KE_{{max}_{e^-}} = hf - \phi$
-
+-   shine light on metal plate
+-   electrons emitted
+    -   would expect the brighter the light $\implies$ the stronger the electric field $\implies$ the more energetic the electrons leaving plate
+-   don't see this
+    -   energy of electrons depends on light wavelength
+    -   number of electrons depends on brightness
+    -   $KE_{{max}_{e^-}} = hf - \phi$
 :::
-:::
+::::
 
-::: {.column width="40%}
-
+:::: {.column width="\"40%"}
 ![](images/photo-electric.png){width="90%" height="90%"}
 
 ::: {style="font-size: 75%;"}
-
-- adjust voltage until just strong enough to stop all electrons
-    - $eV = hf - \phi$
-
-:::
+-   adjust voltage until just strong enough to stop all electrons
+    -   $eV = hf - \phi$
 :::
 ::::
+:::::::
 
 ## 3. Compton Effect
 
 <br>
 
-- if light is just a wave, scattering off particles won't effect $\lambda$
+-   if light is just a wave, scattering off particles won't effect $\lambda$
 
-- but we *do* see change in $\lambda$
-    - have to look pretty carefully
-    - works best for x-rays scattering off electrons
-    
-- get $\Delta \lambda = \lambda - \lambda_0 = \frac{h}{mc}(1-cos \theta)$
-    
+-   but we *do* see change in $\lambda$
+
+    -   have to look pretty carefully
+    -   works best for x-rays scattering off electrons
+
+-   get $\Delta \lambda = \lambda - \lambda_0 = \frac{h}{mc}(1-cos \theta)$
+
 ## 4. Pair Production
 
 ![](images/pair-production.png)
-
-
 
 ## Mathematics of Waves
 
@@ -303,6 +287,8 @@ a <- map(1:n, function(index) sin(z*w[index])) |>
 #| message: false
 #| warning: false
 
+
+# https://www.wecanfigurethisout.org/ENERGY/Web_notes/Exotics/Exotics_Supporting_Files/Group%20velocity%20-%20Wikipedia.pdf
 df |> ggplot(aes(z, a)) +
   geom_line() +
   labs(x = "Distance (m)",
@@ -346,16 +332,14 @@ tibble(z, amp = a$total) |> ggplot(aes(z, amp)) +
 ## Heisenberg's Uncertainty Principle
 
 ::: {style="font-size: 90%;"}
-
-- light diffraction can be though of as an illustration of the uncertainty principle
-- slit width $d$ so therefore uncertainty in photon position of $\Delta x = d$
-- width of diffraction pattern = $\Delta \theta = \frac{\lambda}{d}$
-    - range of momentum values = $\Delta p = p \Delta \theta = p \frac{\lambda}{d}$
-    - but $p = \frac{h}{\lambda}$
-    - substituting we get $\Delta p = \frac{h}{\lambda} \frac{\lambda}{d} = \frac{h}{d}$
-    - but $\Delta x = d$, so $\Delta p = \frac{h}{\Delta x}$
-    - $\implies \Delta x \Delta p \ge h$
-    
+-   light diffraction can be though of as an illustration of the uncertainty principle
+-   slit width $d$ so therefore uncertainty in photon position of $\Delta x = d$
+-   width of diffraction pattern = $\Delta \theta = \frac{\lambda}{d}$
+    -   range of momentum values = $\Delta p = p \Delta \theta = p \frac{\lambda}{d}$
+    -   but $p = \frac{h}{\lambda}$
+    -   substituting we get $\Delta p = \frac{h}{\lambda} \frac{\lambda}{d} = \frac{h}{d}$
+    -   but $\Delta x = d$, so $\Delta p = \frac{h}{\Delta x}$
+    -   $\implies \Delta x \Delta p \ge h$
 :::
 
 ## Wave Nature of Other Stuff
@@ -365,9 +349,8 @@ tibble(z, amp = a$total) |> ggplot(aes(z, amp)) +
     -   Davison Germer experiment with beam of electrons at nickel plate
     -   even when we dial the intensity way down, one electron at a time, we see the same pattern
     -   and this is also true for light, one photon at a time
-    
-## Equations
 
+## Equations
 
 ## References
 
