@@ -190,6 +190,7 @@ tibble(lambda = lambda*1e9, u1, u2, u3) |>
 -   $E_{\gamma} = hf = \hbar \omega$
 -   $E_{\gamma} = \frac{hc}{\lambda} = \hbar c k$
 -   $p = \frac{h}{\lambda} = \hbar k$ = momentum
+-   also, photons are spin 1 particles $\implies$ bosons
 
 ## 2. Photoelectric Effect
 

@@ -65,9 +65,13 @@ include-in-header:
 
 -   [05 X-Ray Diffraction](https://tud.netlify.app/lectures/physics-quantum/05-crystals-x-ray-diffraction.html){target="_blank"}
 
--   [06 Introduction to Quantum Physics](https://tud.netlify.app/lectures/physics-quantum/04-xtals.html){target="_blank"}
+-   [06 Introduction to Quantum Physics](https://tud.netlify.app/lectures/physics-quantum/06-intro-quantum.html){target="_blank"}
 
--   [07 Shrodinger Equation](https://tud.netlify.app/lectures/physics-quantum/04-xtals.html){target="_blank"}
+-   [07 Shrodinger Equation - Square Well](https://tud.netlify.app/lectures/physics-quantum/07-square-well.html){target="_blank"}
+
+-   [08 Shrodinger Equation - SHO](https://tud.netlify.app/lectures/physics-quantum/08-sho.html){target="_blank"}
+
+-   [09 Shrodinger Equation - hydrogen](https://tud.netlify.app/lectures/physics-quantum/09-hydrogen.html){target="_blank"}
 
 ## ManTech Lectures
 
