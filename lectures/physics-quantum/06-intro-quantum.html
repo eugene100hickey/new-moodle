@@ -6,8 +6,8 @@
 <script src="06-intro-quantum_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="06-intro-quantum_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="06-intro-quantum_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="06-intro-quantum_files/libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.37">
+<link href="06-intro-quantum_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Physics Theory II PHYS2001">
   <title>05-Introduction to Quantum Physics</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="06-intro-quantum_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="06-intro-quantum_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link rel="stylesheet" href="logo.css">
   <link href="06-intro-quantum_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="06-intro-quantum_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -236,7 +236,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="blackbody-radiation" class="slide level2">
 <h2>1. Blackbody Radiation</h2>
-<div style="font-size: 70%;">
+<div style="font-size: 90%;">
 <ul>
 <li>every object emits light because of its temperature
 <ul>
@@ -245,21 +245,29 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ul>
 <li><span class="math inline">\(infrared \rightarrow  crimson \rightarrow yellow \rightarrow blue \rightarrow uv\)</span></li>
 </ul></li>
-<li>spectrum explained by Planck’s Radiation Law</li>
 </ul></li>
+</ul>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div style="font-size: 90%;">
+<ul>
+<li>spectrum explained by Planck’s Radiation Law</li>
 </ul>
 <p><span class="math inline">\({\displaystyle u_{\lambda }(\lambda ,T)={\frac {8\pi hc}{\lambda ^{5}}}{\frac {1}{e^{hc/(\lambda k_{\mathrm {B} }T)}-1}}}\)</span></p>
 <ul>
 <li>introduces Plank’s constant, <span class="math inline">\(h = 6.626 \times 10^{-34} Js\)</span>
 <ul>
 <li>also <span class="math inline">\(\hbar = \frac{h}{2\pi} = 1.055 \times 10^{-34} Js\)</span></li>
+<li>h is the talisman for quantum physics</li>
 </ul></li>
 <li>where <span class="math inline">\(c = 2.99792458 \times 10^{8}m/s\)</span> = speed of light</li>
 <li><span class="math inline">\(k_B = 1.380649 \times 10^{-23} J/K\)</span> = Boltzman’s Constant</li>
 </ul>
 </div>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 
 <img data-src="06-intro-quantum_files/figure-revealjs/planck-plot-1.png" width="960" class="r-stretch"></section>
@@ -271,6 +279,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><span class="math inline">\(E_{\gamma} = hf = \hbar \omega\)</span></li>
 <li><span class="math inline">\(E_{\gamma} = \frac{hc}{\lambda} = \hbar c k\)</span></li>
 <li><span class="math inline">\(p = \frac{h}{\lambda} = \hbar k\)</span> = momentum</li>
+<li>also, photons are spin 1 particles <span class="math inline">\(\implies\)</span> bosons</li>
 </ul>
 </section>
 <section id="photoelectric-effect" class="slide level2">
@@ -317,6 +326,65 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>get <span class="math inline">\(\Delta \lambda = \lambda - \lambda_0 = \frac{h}{mc}(1-cos \theta)\)</span></p></li>
 </ul>
 </section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div style="font-size: 65%;">
+<p><img data-src="images/compton.png"></p>
+<ul>
+<li>energy before = energy after</li>
+</ul>
+<p><span class="math inline">\(mc^2 + E_o = E_e + E\)</span> <span class="math inline">\(\implies E_e = E_0 + mc^2 - E\)</span> <span class="math inline">\(\implies \sqrt{(mc^2)^2+ (p_ec)^2}\)</span> <span class="math inline">\(= p_oc + mc^2 - pc\)</span> <span class="math inline">\(\implies \sqrt{(mc)^2+ (p_e)^2}\)</span> <span class="math inline">\(= p_o + mc - p\)</span></p>
+</div>
+</div><div class="column" style="width:'50%;">
+<div style="font-size: 65%;">
+<p><br></p>
+<ul>
+<li>conservation of momentum</li>
+</ul>
+<p><span class="math inline">\(\vec{p_0} = \vec{p} + \vec{p_e}\)</span> <span class="math inline">\(\implies \vec{p_e} = \vec{p_0} - \vec{p}\)</span> <span class="math inline">\(\implies p_e^2 = (\vec{p_0} - \vec{p})\cdot(\vec{p_0} - \vec{p})\)</span> <span class="math inline">\(\implies p_e^2 = p_0^2 + p^2 - 2p_0 p\; cos\theta\)</span></p>
+<ul>
+<li>combining, replacing <span class="math inline">\(p_e^2\)</span> from energy equation</li>
+</ul>
+<p><span class="math inline">\((mc)^2 + p_0^2 + p^2 - 2p p_0 cos \theta\)</span> <span class="math inline">\(= p_0^2 + p^2 -2pp_0 + m^2c^2 + 2p_0mc - 2pmc\)</span></p>
+<ul>
+<li>lots of terms cancel</li>
+</ul>
+<p><span class="math inline">\(-2pp_0 cos \theta = -2p_0p + 2mc(p_0-p)\)</span></p>
+<p><span class="math inline">\(p_0p(1-cos\theta) = mc(p_0-p)\)</span> <span class="math inline">\(\frac{1}{mc}(1-cos\theta) = \frac{1}{p}- \frac{1}{p_0}\)</span></p>
+</div>
+</div></div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Compton Shift is Pretty Small</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>photons scattering off electrons at <span class="math inline">\(\theta = 80 ^{\circ}\)</span></li>
+<li><span class="math inline">\(\Delta \lambda = \frac{h}{mc} (1 - cos\theta)\)</span></li>
+<li><span class="math inline">\(= \frac{6.626 \times 10^{-34}}{9.11 \times 10^{-31} \;\times \; 3 \times 10^8}\; \times (1-cos 80^{\circ})\)</span></li>
+<li><span class="math inline">\(= 2.426 \times 10^{-12} \; \times \; (1 - 0.1736)\)</span></li>
+<li><span class="math inline">\(= 2.005 \times 10^{-12} m\)</span></li>
+<li><span class="math inline">\(= 0.002005 \; nm\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li>gets worse if x-ray doesn’t liberate electron
+<ul>
+<li>replace <span class="math inline">\(m = 9.11 \times 10^{-31} kg\)</span> by mass of atom</li>
+</ul></li>
+</ul>
+</section>
 <section id="pair-production" class="slide level2">
 <h2>4. Pair Production</h2>
 
@@ -326,23 +394,71 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ul>
 <li>single wave <span class="math inline">\(A = A_0 sin(kx - \omega t)\)</span>
 <ul>
+<li>(neat way of expressing this <span class="math inline">\(A = e^{i(kx - \omega t)}\)</span>)</li>
+<li>solution to equation <span class="math inline">\(\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0\)</span></li>
 <li>angular velocity; <span class="math inline">\(\omega = 2 \pi f\)</span>, where f is the frequency</li>
 <li>wavenumber; <span class="math inline">\(k = \frac{2 \pi}{\lambda}\)</span>, where <span class="math inline">\(\lambda\)</span> is the wavelength</li>
-<li>neat way of expressing this <span class="math inline">\(A = e^{i(kx - \omega t)}\)</span></li>
 <li>using <span class="math inline">\(v = f\lambda\)</span> get <span class="math inline">\(v = \frac{\omega}{k}\)</span></li>
-<li>this is the <em>phase velocity</em>, <span class="math inline">\(v_p\)</span>.</li>
+<li>(this is the <em>phase velocity</em>, <span class="math inline">\(v_p\)</span>)</li>
 </ul></li>
 </ul>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 
 <img data-src="06-intro-quantum_files/figure-revealjs/waves-graph1-1.png" width="960" class="r-stretch"></section>
-<section id="section-3" class="slide level2">
+<section id="add-two-waves-of-slightly-different-frequency-together" class="slide level2">
+<h2>Add Two Waves of Slightly Different Frequency Together</h2>
+<div style="font-size: 85%;">
+<ul>
+<li><p><span class="math inline">\(A(x, t) = A_0 sin[(k-\Delta k)x - (\omega - \Delta \omega) t] +\)</span> <span class="math inline">\(A_0 sin[(k+\Delta k)x - (\omega + \Delta \omega) t]\)</span></p></li>
+<li><p>rearranging</p></li>
+<li><p><span class="math inline">\(A(x, t) = A_0 sin[(kx-\omega t) - (\Delta kx - \Delta \omega t)] +\)</span> <span class="math inline">\(A_0 sin[(kx-\omega t) + (\Delta kx - \Delta \omega t)]\)</span></p></li>
+<li><p>like adding two sines: <span class="math inline">\(sin(A+B) + sin(A-B) = 2sin(A)cos(B)\)</span></p></li>
+<li><p>get: <span class="math inline">\(A(x, t) = 2 \times A_0 sin(kx - \omega t)\; cos(\Delta kx -  \Delta \omega t)\)</span></p></li>
+<li><p>a sine wave modulated by a much slower cosine wave</p></li>
+</ul>
+</div>
+</section>
+<section id="section-6" class="slide level2">
 <h2></h2>
 
 <img data-src="06-intro-quantum_files/figure-revealjs/waves-graph2-1.png" width="960" class="r-stretch"></section>
-<section id="section-4" class="slide level2">
+<section id="section-7" class="slide level2">
+<h2></h2>
+<ul>
+<li><p><span class="math inline">\(A(x, t) = 2 \times A_0 sin(kx - \omega t)\; cos(\Delta kx -  \Delta \omega t)\)</span></p></li>
+<li><p>The sine wave has velocity <span class="math inline">\(v_p = \omega / k\)</span></p></li>
+<li><p>The longer cosine wave modulating it has velocity <span class="math inline">\(v_g = \Delta \omega / \Delta k\)</span></p></li>
+<li><p>this last we call the <strong><em>Group Velocity</em></strong></p></li>
+</ul>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<ul>
+<li><p>Add the two waves <span class="math inline">\(A_0 sin(k_1x - \omega_1 t)\)</span> and <span class="math inline">\(A_0 sin(k_2x - \omega_2 t)\)</span> where <span class="math inline">\(k_1 = 6.4 \; rads/m\)</span>, <span class="math inline">\(\omega_1 = 9.2 \; rads/s\)</span>, <span class="math inline">\(k_2 = 6.0 \; rads/m\)</span>, and <span class="math inline">\(\omega_2 = 9.0 \; rads/s\)</span></p></li>
+<li><p>the phase velocity is <span class="math inline">\(\omega / k\)</span> where <span class="math inline">\(\omega = \frac{(\omega_1 + \omega_2)}{2}\)</span> and <span class="math inline">\(k = \frac{(k_1 + k_2)}{2}\)</span> giving <span class="math inline">\(v_p = 9.1 / 6.2 = 1.47 m/s\)</span></p></li>
+<li><p>the group velocity is <span class="math inline">\(\Delta \omega / \Delta k\)</span> where <span class="math inline">\(\Delta \omega = \frac{(\omega_1 - \omega_2)}{2}\)</span> and <span class="math inline">\(\Delta k = \frac{(k_1 - k_2)}{2}\)</span> giving <span class="math inline">\(v_g = 0.2 / 0.4 = 0.50 m/s\)</span></p></li>
+</ul>
+</section>
+<section id="adding-more-than-two-waves" class="slide level2">
+<h2>Adding More than Two Waves</h2>
+<ul>
+<li><p>the two wave example above gives the general principle, but in practice many more waves combine to form a wave packet</p>
+<ul>
+<li><p>they’ll all have closely spaced frequencies (<span class="math inline">\(\frac{\omega}{2\pi}\)</span>)</p></li>
+<li><p>and closely spaced wavenumbers, k</p></li>
+</ul></li>
+<li><p>the average value for <span class="math inline">\(\omega\)</span> and k will give the phase velocity</p></li>
+<li><p>the way in which <span class="math inline">\(\omega\)</span> and k change across the wavepacket, <span class="math inline">\(d \omega / dk\)</span>, will give the group velocity</p></li>
+<li><p>the group velocity is of greater physical significance</p></li>
+</ul>
+</section>
+<section id="wavepacket-of-500-sine-waves" class="slide level2">
+<h2>Wavepacket of 500 Sine Waves</h2>
+
+<img data-src="06-intro-quantum_files/figure-revealjs/waves-graph3-1.png" width="960" class="r-stretch"></section>
+<section id="section-8" class="slide level2">
 <h2></h2>
 
 <img data-src="images/phase-group-velocity-animation.gif" class="r-stretch quarto-figure-center"><p class="caption">Credit: Institute of Sound and Vibration Research</p></section>
@@ -376,6 +492,26 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(A = A_0 sin(kx - \omega t)\)</span></li>
+<li><span class="math inline">\(A = e^{i(kx - \omega t)}\)</span>)</li>
+<li><span class="math inline">\(\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0\)</span></li>
+<li><span class="math inline">\(\omega = 2 \pi f\)</span></li>
+<li><span class="math inline">\(k = \frac{2 \pi}{\lambda}\)</span></li>
+</ul>
+</div><div class="columns" width="&quot;50%">
+<ul>
+<li><span class="math inline">\(v = \frac{\omega}{k}\)</span></li>
+<li>$p = = k $</li>
+<li><span class="math inline">\(E = hf = \frac{hc}{\lambda}= \hbar c k\)</span></li>
+<li><span class="math inline">\(v_p = \omega / k\)</span></li>
+<li><span class="math inline">\(v_g = \partial \omega / \partial k\)</span></li>
+<li><span class="math inline">\(\Delta \lambda = \frac{h}{mc} (1 - cos \theta)\)</span></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>

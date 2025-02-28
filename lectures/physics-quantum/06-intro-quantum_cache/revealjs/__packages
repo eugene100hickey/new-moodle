@@ -13,3 +13,6 @@ showtextdb
 showtext
 envalysis
 latex2exp
+constants
+ggrepel
+ggtext

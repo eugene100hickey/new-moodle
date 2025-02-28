@@ -7,10 +7,10 @@ font_add(family = "Ink Free", regular = "assets/Inkfree.ttf")
 showtext_auto()
 
 central <- 20
-step <- 0.5
-n <- 50
+step <- 0.01
+n <- 500
 w <- 1/seq(central-n*step/2, central+n*step/2, by = step)
-z <- -3000:3000
+z <- -5000:5000
 
 a <- map(1:n, function(index) sin(z*w[index])) |>
   data.frame() |>
