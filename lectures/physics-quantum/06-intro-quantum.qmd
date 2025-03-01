@@ -526,6 +526,21 @@ $i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial 
 - this is in free space, no forces
 - if we add a potential, $V$, we get
 
+:::{.goals}
+::::{.goals-header}
+
+$\; \; i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} [ \frac{\partial ^2 \Psi}{\partial x^2} + V]$
+
+::::
+::::{.goals-container}
+
+  
+::::
+:::
+
+
+##
+
 ::: {.callout-note collapse=true}
 
 ## Shrodinger Equation

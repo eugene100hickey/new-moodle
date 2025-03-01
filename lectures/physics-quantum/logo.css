@@ -16,3 +16,36 @@
   top: unset !important;
   color: #8d2220 !important;
 }
+
+// https://www.andreashandel.com/posts/2023-06-13-custom-callouts-quarto/
+
+.goals {
+  margin: 1em 0;
+  border: 2px solid gray;
+  border-left: 10px solid teal;
+  border-radius: 10px;
+}
+
+.goals-header {
+  margin-left: 1em;
+  padding-left:  30px;
+  padding-top:  5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: rgb(123, 173, 173);
+  border-top-right-radius: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("images/goal.png");
+}
+
+.goals-container {
+  padding-top: 5px;
+  padding-left: 10px;
+  color: black;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+}
