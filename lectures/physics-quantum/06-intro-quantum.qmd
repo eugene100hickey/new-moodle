@@ -549,7 +549,7 @@ $i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} [ \frac{\partia
 ::: {.columns width="50%}
 
 - $v = \frac{\omega}{k}$
-- $p = \frac{h}{\lambda} = \hbar k $
+- $p = \frac{h}{\lambda} = \hbar k$
 - $E = hf = \frac{hc}{\lambda}= \hbar c k$
 - $v_p = \omega / k$
 - $v_g = \partial \omega / \partial k$
