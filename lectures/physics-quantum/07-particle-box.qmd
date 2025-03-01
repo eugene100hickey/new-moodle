@@ -1,5 +1,5 @@
 ---
-title: "06-Introduction to Quantum Physics"
+title: "05-Introduction to Quantum Physics"
 author:
   - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
@@ -196,9 +196,9 @@ tibble(lambda = lambda*1e9, u1, u2, u3) |>
 
 -   $\omega = {2\pi}{f}$ = angular velocity
 -   $k = \frac{2\pi}{\lambda}$ = wave vector
--   $p = \frac{h}{\lambda} = \hbar k$ = momentum
 -   $E_{\gamma} = hf = \hbar \omega$
--   $E_{\gamma} = \frac{hc}{\lambda} = \hbar k c = pc$
+-   $E_{\gamma} = \frac{hc}{\lambda} = \hbar c k$
+-   $p = \frac{h}{\lambda} = \hbar k$ = momentum
 -   also, photons are spin 1 particles $\implies$ bosons
 
 ## 2. Photoelectric Effect
@@ -311,7 +311,7 @@ $\frac{1}{mc}(1-cos\theta) = \frac{1}{p}- \frac{1}{p_0}$
 
 -   single wave $A = A_0 sin(kx - \omega t)$
     -   (neat way of expressing this $A = e^{i(kx - \omega t)}$)
-    - solution to equation $\frac{\partial^2A}{\partial t^2}-(\frac{\omega}{k})^2 \frac{\partial^2A}{\partial x^2} = 0$
+    - solution to equation $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
     -   angular velocity; $\omega = 2 \pi f$, where f is the frequency
     -   wavenumber; $k = \frac{2 \pi}{\lambda}$, where $\lambda$ is the wavelength
     -   using $v = f\lambda$ get $v = \frac{\omega}{k}$
@@ -450,7 +450,7 @@ two_waves |> ggplot(aes(z, a)) +
     
     - and closely spaced wavenumbers, k
     
-- the average values for $\omega$ and k will generate the phase velocity
+- the average value for $\omega$ and k will give the phase velocity
 
 - the way in which  $\omega$ and k change across the wavepacket, $d \omega / dk$, will give the group velocity
 
@@ -499,40 +499,6 @@ tibble(z, amp = a$total) |> ggplot(aes(z, amp)) +
     -   Davison Germer experiment with beam of electrons at nickel plate
     -   even when we dial the intensity way down, one electron at a time, we see the same pattern
     -   and this is also true for light, one photon at a time
-    
-## 
-
-- we have $E = \hbar \omega$
-- for mass particles we have $E = \frac{1}{2} m v^2 = \frac{p^2}{2m}$
-- We need a differential equation that can work with the equation for a plane wave and yet give us the correct for the relation between energy and
-momentum
-    - Need to be proportional to $k^2$, not $k$
-    - How about differentiating twice on t but just once on x?
-    
-## 
-
-- something like $\frac{\partial A}{\partial t} = \propto \frac{\partial^2A}{\partial x^2}$
-- or, replacing $A$ with $\Psi$: $\frac{\partial \Psi}{\partial t} = \propto \frac{\partial^2 \Psi}{\partial x^2}$
-- if we put in the plan wave solution, $\Psi = e^{i(kx-\omega t)}$ get
-- $-k^2 = i \propto \omega$
-- if we use $p = \hbar k$ and $E = \frac{p^2}{2m}$ get:
-    - $\propto = -2mi/\hbar$
-    - feed this back in to our equation and rearrange to get:
-    
-##
-
-$i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2}$
-
-- this is in free space, no forces
-- if we add a potential, $V$, we get
-
-::: {.callout-note collapse=true}
-
-## Shrodinger Equation
-
-$i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} [ \frac{\partial ^2 \Psi}{\partial x^2} + V]$
-
-:::
 
 ## Equations
 
@@ -541,7 +507,7 @@ $i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} [ \frac{\partia
 
 -   $A = A_0 sin(kx - \omega t)$
 - $A = e^{i(kx - \omega t)}$)
-- $\frac{\partial^2A}{\partial t^2}-(\frac{\omega}{k})^2 \frac{\partial^2A}{\partial x^2} = 0$
+- $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
 - $\omega = 2 \pi f$
 - $k = \frac{2 \pi}{\lambda}$
 
@@ -561,6 +527,4 @@ $i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} [ \frac{\partia
 
 ## References
 
--   [Young & Freedman - chapter 38](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1283){target="_blank"}
-
--   [Serway & Jewett - chapter 4](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+-   [Young & Freedman - chapter 42.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1445){target="_blank"}
