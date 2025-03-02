@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="06-intro-quantum_files/libs/clipboard/clipboard.min.js"></script>
-<script src="06-intro-quantum_files/libs/quarto-html/tabby.min.js"></script>
-<script src="06-intro-quantum_files/libs/quarto-html/popper.min.js"></script>
-<script src="06-intro-quantum_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="06-intro-quantum_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="06-intro-quantum_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="06-intro-quantum_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="07-particle-box_files/libs/clipboard/clipboard.min.js"></script>
+<script src="07-particle-box_files/libs/quarto-html/tabby.min.js"></script>
+<script src="07-particle-box_files/libs/quarto-html/popper.min.js"></script>
+<script src="07-particle-box_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="07-particle-box_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="07-particle-box_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="07-particle-box_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Physics Theory II PHYS2001">
-  <title>06-Introduction to Quantum Physics</title>
+  <title>07-Shrodinger Equation - Particle in a Box</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="06-intro-quantum_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="06-intro-quantum_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="07-particle-box_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="07-particle-box_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,14 +29,14 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="06-intro-quantum_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
+  <link rel="stylesheet" href="07-particle-box_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link rel="stylesheet" href="logo.css">
-  <link href="06-intro-quantum_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="06-intro-quantum_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="06-intro-quantum_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="06-intro-quantum_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="06-intro-quantum_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="06-intro-quantum_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="07-particle-box_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="07-particle-box_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="07-particle-box_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="07-particle-box_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="07-particle-box_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="07-particle-box_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -131,7 +131,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">06-Introduction to Quantum Physics</h1>
+  <h1 class="title">07-Shrodinger Equation - Particle in a Box</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -152,9 +152,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
-<p>Light shows many properties consistent with its nature as being a wave; examplees being difffraction and interference. But it also shows many properties that can only be explained by considering light as being a stream of particles, photons (<span class="math inline">\(\gamma\)</span>). This conflict can be viewed as a wave-particle duality, with a photon as a probability wave.</p>
-<p>Particles such as electrons also show similar effects.</p>
-<p>The wave-like properties can be interpreted using Heisenberg’s Uncertainty Principle.</p>
+<p>In our first application of the Schrödinger Equation, we’ll look at a particle in a 1 -dimensional box. This particle is at zero potential in the interval <span class="math inline">\(0 \leq x \leq a\)</span> but cannot move outside these bounds.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
@@ -189,350 +187,123 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </div>
 </div></div>
 </section>
-<section id="wave-nature-of-light" class="slide level2">
-<h2>Wave Nature of Light</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
+<section id="time-dependent-schrödinger-equation" class="slide level2">
+<h2>Time Dependent Schrödinger Equation</h2>
 <div style="font-size: 90%;">
 <ul>
-<li><strong><em>optical diffraction</em></strong> explained by waves
-<ul>
-<li>analogous to phenomena in water waves, sound, etc</li>
-<li><span class="math inline">\(\theta \propto \frac{\lambda}{d}\)</span>, d is aperture width</li>
-</ul></li>
+<li>finished last week with the Time Dependent Schrödinger Equation</li>
 </ul>
+<center>
+<span class="math inline">\(i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V\Psi\)</span>
+</center>
+<ul>
+<li><p>Lots of times the potential, V, doesn’t depend on time, just position.</p></li>
+<li><p>There’s a neat trick called separation of variables we can use now.</p></li>
+</ul>
+<center>
+<span class="math inline">\(\Psi (x, t) = \psi (x) T(t)\)</span>
+</center>
 </div>
-</div><div class="column" style="width:60%;">
-<p><img data-src="images/Single_Slit_Diffraction.svg.png" style="width:80.0%;height:80.0%"></p>
-</div></div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<div style="font-size: 80%;">
 <ul>
-<li><strong><em>two-slit interference pattern</em></strong> (Young’s)
-<ul>
-<li><span class="math inline">\(n\lambda = d \times sin\theta\)</span></li>
-</ul></li>
+<li>Get:</li>
 </ul>
-<p><img data-src="images/youngs.png" style="width:60.0%;height:40.0%"></p>
+<center>
+<span class="math inline">\(i \hbar \frac{1}{T} \frac{\partial T}{\partial t} = - \frac{1}{\psi} \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V(x)\)</span>
+</center>
 <p><br></p>
 <ul>
-<li><strong><em>X-ray diffraction</em></strong> patterns we looked at last week also explained by wave nature of light</li>
+<li>Left hand side just depends on time, right hand side just on x</li>
 </ul>
-</div>
+<p><span class="math inline">\(\implies\)</span> both sides must be equal to some constant, call it E say</p>
+<p><span class="math inline">\(\implies\)</span> got ourselves two equations here</p>
 </section>
-<section id="but-there-are-problems" class="slide level2">
-<h2>But there are problems</h2>
-<ol type="1">
-<li><p>Blackbody Radiation</p>
+<section id="time-dependence" class="slide level2">
+<h2>Time Dependence</h2>
 <ul>
-<li>classical model of the spectrum of thermal radiation (Rayleigh-Jeans) gives infinities at short wavelengths</li>
-<li>called ultraviolet catastrophy</li>
-<li>solved by Planck’s Radiation Law</li>
-</ul></li>
-<li><p>photoelectric effect</p></li>
-<li><p>Compton Scattering</p></li>
-<li><p>Pair production</p></li>
-</ol>
-</section>
-<section id="blackbody-radiation" class="slide level2">
-<h2>1. Blackbody Radiation</h2>
-<div style="font-size: 90%;">
-<ul>
-<li>every object emits light because of its temperature
-<ul>
-<li>hot bodies are brighter (Stefan Boltzman Law)</li>
-<li>hot bodies <span class="math inline">\(\implies\)</span> more intense colours (Wien’s Displacement Law)
-<ul>
-<li><span class="math inline">\(infrared \rightarrow  crimson \rightarrow yellow \rightarrow blue \rightarrow uv\)</span></li>
-</ul></li>
-</ul></li>
+<li>Working with the left (time) side of the equation gives us:</li>
 </ul>
-</div>
-</section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<div style="font-size: 90%;">
+<center>
+<span class="math inline">\(i \hbar \frac{\partial T}{\partial t} = E \times T(t)\)</span>
+</center>
 <ul>
-<li>spectrum explained by Planck’s Radiation Law</li>
+<li>Solutions to this are fairly straightforward and not that interesting</li>
 </ul>
-<p><span class="math inline">\({\displaystyle u_{\lambda }(\lambda ,T)={\frac {8\pi hc}{\lambda ^{5}}}{\frac {1}{e^{hc/(\lambda k_{\mathrm {B} }T)}-1}}}\)</span></p>
+<center>
+<span class="math inline">\(T(t) = A e^{-iEt/\hbar}\)</span>
+</center>
 <ul>
-<li>introduces Plank’s constant, <span class="math inline">\(h = 6.626 \times 10^{-34} Js\)</span>
-<ul>
-<li>also <span class="math inline">\(\hbar = \frac{h}{2\pi} = 1.055 \times 10^{-34} Js\)</span></li>
-<li>h is the talisman for quantum physics</li>
-</ul></li>
-<li>where <span class="math inline">\(c = 2.99792458 \times 10^{8}m/s\)</span> = speed of light</li>
-<li><span class="math inline">\(k_B = 1.380649 \times 10^{-23} J/K\)</span> = Boltzman’s Constant</li>
-</ul>
-</div>
-</section>
-<section id="section-2" class="slide level2">
-<h2></h2>
-
-<img data-src="06-intro-quantum_files/figure-revealjs/planck-plot-1.png" width="960" class="r-stretch"></section>
-<section id="equations-for-our-photons" class="slide level2">
-<h2>Equations for Our Photons</h2>
-<ul>
-<li><span class="math inline">\(\omega = {2\pi}{f}\)</span> = angular velocity</li>
-<li><span class="math inline">\(k = \frac{2\pi}{\lambda}\)</span> = wave vector</li>
-<li><span class="math inline">\(p = \frac{h}{\lambda} = \hbar k\)</span> = momentum</li>
-<li><span class="math inline">\(E_{\gamma} = hf = \hbar \omega\)</span></li>
-<li><span class="math inline">\(E_{\gamma} = \frac{hc}{\lambda} = \hbar k c = pc\)</span></li>
-<li>also, photons are spin 1 particles <span class="math inline">\(\implies\)</span> bosons</li>
+<li>Gives temporal oscillations of the wavefunction</li>
 </ul>
 </section>
-<section id="photoelectric-effect" class="slide level2">
-<h2>2. Photoelectric Effect</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="time-independent-schrödinger-equation" class="slide level2">
+<h2>Time Independent Schrödinger Equation</h2>
+<ul>
+<li><p>On the other hand, the spatial element is rich in solutions, depends on shape of V(x)</p></li>
+<li><p>Get</p></li>
+</ul>
+<center>
+<span class="math inline">\(- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi\)</span>
+</center>
+<ul>
+<li><p>This is the time independent Schrödinger Equation</p></li>
+<li><p>Turns out, when we compare to the free space version, that E is the total energy of the system.</p></li>
+</ul>
+</section>
+<section id="boundary-conditions" class="slide level2">
+<h2>Boundary Conditions</h2>
 <div style="font-size: 75%;">
 <ul>
-<li>shine light on metal plate</li>
-<li>electrons emitted
+<li><p>Solving problems using Time independent Schrödinger Equation means</p>
 <ul>
-<li>would expect the brighter the light <span class="math inline">\(\implies\)</span> the stronger the electric field <span class="math inline">\(\implies\)</span> the more energetic the electrons leaving plate</li>
+<li><p>Applying different natures of the potential, V</p></li>
+<li><p>But also using boundary conditions, constraints on the wavefunction that tell us about the possible solutions</p>
+<ul>
+<li><p>Wavefunction must be a continuous single valued function of position and time</p></li>
+<li><p>The integral of the squared value of the wavefunction over all values of x must be finite (normalisable)</p></li>
+<li><p>The first derivatives of the wavefunction in x must be continuous everywhere except when there is an infinite discontinuity in the potential</p></li>
 </ul></li>
-<li>don’t see this
-<ul>
-<li>energy of electrons depends on light wavelength</li>
-<li>number of electrons depends on brightness</li>
-<li><span class="math inline">\(KE_{{max}_{e^-}} = hf - \phi\)</span></li>
 </ul></li>
-</ul>
-</div>
-</div><div class="column" style="width:&quot;40%;">
-<p><img data-src="images/photo-electric.png" style="width:90.0%;height:90.0%"></p>
-<div style="font-size: 75%;">
-<ul>
-<li>adjust voltage until just strong enough to stop all electrons
-<ul>
-<li><span class="math inline">\(eV = hf - \phi\)</span></li>
-</ul></li>
-</ul>
-</div>
-</div></div>
-</section>
-<section id="compton-effect" class="slide level2">
-<h2>3. Compton Effect</h2>
-<p><br></p>
-<ul>
-<li><p>if light is just a wave, scattering off particles won’t effect <span class="math inline">\(\lambda\)</span></p></li>
-<li><p>but we <em>do</em> see change in <span class="math inline">\(\lambda\)</span></p>
-<ul>
-<li>have to look pretty carefully</li>
-<li>works best for x-rays scattering off electrons</li>
-</ul></li>
-<li><p>get <span class="math inline">\(\Delta \lambda = \lambda - \lambda_0 = \frac{h}{mc}(1-cos \theta)\)</span></p></li>
-</ul>
-</section>
-<section id="section-3" class="slide level2">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<div style="font-size: 65%;">
-<p><img data-src="images/compton.png"></p>
-<ul>
-<li>energy before = energy after</li>
-</ul>
-<p><span class="math inline">\(mc^2 + E_o = E_e + E\)</span> <span class="math inline">\(\implies E_e = E_0 + mc^2 - E\)</span> <span class="math inline">\(\implies \sqrt{(mc^2)^2+ (p_ec)^2}\)</span> <span class="math inline">\(= p_oc + mc^2 - pc\)</span> <span class="math inline">\(\implies \sqrt{(mc)^2+ (p_e)^2}\)</span> <span class="math inline">\(= p_o + mc - p\)</span></p>
-</div>
-</div><div class="column" style="width:'50%;">
-<div style="font-size: 65%;">
-<p><br></p>
-<ul>
-<li>conservation of momentum</li>
-</ul>
-<p><span class="math inline">\(\vec{p_0} = \vec{p} + \vec{p_e}\)</span> <span class="math inline">\(\implies \vec{p_e} = \vec{p_0} - \vec{p}\)</span> <span class="math inline">\(\implies p_e^2 = (\vec{p_0} - \vec{p})\cdot(\vec{p_0} - \vec{p})\)</span> <span class="math inline">\(\implies p_e^2 = p_0^2 + p^2 - 2p_0 p\; cos\theta\)</span></p>
-<ul>
-<li>combining, replacing <span class="math inline">\(p_e^2\)</span> from energy equation</li>
-</ul>
-<p><span class="math inline">\((mc)^2 + p_0^2 + p^2 - 2p p_0 cos \theta\)</span> <span class="math inline">\(= p_0^2 + p^2 -2pp_0 + m^2c^2 + 2p_0mc - 2pmc\)</span></p>
-<ul>
-<li>lots of terms cancel</li>
-</ul>
-<p><span class="math inline">\(-2pp_0 cos \theta = -2p_0p + 2mc(p_0-p)\)</span></p>
-<p><span class="math inline">\(p_0p(1-cos\theta) = mc(p_0-p)\)</span> <span class="math inline">\(\frac{1}{mc}(1-cos\theta) = \frac{1}{p}- \frac{1}{p_0}\)</span></p>
-</div>
-</div></div>
-</section>
-<section id="section-4" class="slide level2">
-<h2></h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Compton Shift is Pretty Small</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>photons scattering off electrons at <span class="math inline">\(\theta = 80 ^{\circ}\)</span></li>
-<li><span class="math inline">\(\Delta \lambda = \frac{h}{mc} (1 - cos\theta)\)</span></li>
-<li><span class="math inline">\(= \frac{6.626 \times 10^{-34}}{9.11 \times 10^{-31} \;\times \; 3 \times 10^8}\; \times (1-cos 80^{\circ})\)</span></li>
-<li><span class="math inline">\(= 2.426 \times 10^{-12} \; \times \; (1 - 0.1736)\)</span></li>
-<li><span class="math inline">\(= 2.005 \times 10^{-12} m\)</span></li>
-<li><span class="math inline">\(= 0.002005 \; nm\)</span></li>
-</ul>
-</div>
-</div>
-</div>
-<ul>
-<li>gets worse if x-ray doesn’t liberate electron
-<ul>
-<li>replace <span class="math inline">\(m = 9.11 \times 10^{-31} kg\)</span> by mass of atom</li>
-</ul></li>
-</ul>
-</section>
-<section id="pair-production" class="slide level2">
-<h2>4. Pair Production</h2>
-
-<img data-src="images/pair-production.png" class="r-stretch"></section>
-<section id="mathematics-of-waves" class="slide level2">
-<h2>Mathematics of Waves</h2>
-<ul>
-<li>single wave <span class="math inline">\(A = A_0 sin(kx - \omega t)\)</span>
-<ul>
-<li>(neat way of expressing this <span class="math inline">\(A = e^{i(kx - \omega t)}\)</span>)</li>
-<li>solution to equation <span class="math inline">\(\frac{\partial^2A}{\partial t^2}-(\frac{\omega}{k})^2 \frac{\partial^2A}{\partial x^2} = 0\)</span></li>
-<li>angular velocity; <span class="math inline">\(\omega = 2 \pi f\)</span>, where f is the frequency</li>
-<li>wavenumber; <span class="math inline">\(k = \frac{2 \pi}{\lambda}\)</span>, where <span class="math inline">\(\lambda\)</span> is the wavelength</li>
-<li>using <span class="math inline">\(v = f\lambda\)</span> get <span class="math inline">\(v = \frac{\omega}{k}\)</span></li>
-<li>(this is the <em>phase velocity</em>, <span class="math inline">\(v_p\)</span>)</li>
-</ul></li>
-</ul>
-</section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-
-<img data-src="06-intro-quantum_files/figure-revealjs/waves-graph1-1.png" width="960" class="r-stretch"></section>
-<section id="add-two-waves-of-slightly-different-frequency-together" class="slide level2">
-<h2>Add Two Waves of Slightly Different Frequency Together</h2>
-<div style="font-size: 85%;">
-<ul>
-<li><p><span class="math inline">\(A(x, t) = A_0 sin[(k-\Delta k)x - (\omega - \Delta \omega) t] +\)</span> <span class="math inline">\(A_0 sin[(k+\Delta k)x - (\omega + \Delta \omega) t]\)</span></p></li>
-<li><p>rearranging</p></li>
-<li><p><span class="math inline">\(A(x, t) = A_0 sin[(kx-\omega t) - (\Delta kx - \Delta \omega t)] +\)</span> <span class="math inline">\(A_0 sin[(kx-\omega t) + (\Delta kx - \Delta \omega t)]\)</span></p></li>
-<li><p>like adding two sines: <span class="math inline">\(sin(A+B) + sin(A-B) = 2sin(A)cos(B)\)</span></p></li>
-<li><p>get: <span class="math inline">\(A(x, t) = 2 \times A_0 sin(kx - \omega t)\; cos(\Delta kx -  \Delta \omega t)\)</span></p></li>
-<li><p>a sine wave modulated by a much slower cosine wave</p></li>
+<li><p>We’ll first look at the nature of solutions to Schrödinger’s Equation, and then tackle some examples and put Schrödinger to work</p></li>
 </ul>
 </div>
 </section>
-<section id="section-6" class="slide level2">
-<h2></h2>
-
-<img data-src="06-intro-quantum_files/figure-revealjs/waves-graph2-1.png" width="960" class="r-stretch"></section>
-<section id="section-7" class="slide level2">
-<h2></h2>
-<ul>
-<li><p><span class="math inline">\(A(x, t) = 2 \times A_0 sin(kx - \omega t)\; cos(\Delta kx -  \Delta \omega t)\)</span></p></li>
-<li><p>The sine wave has velocity <span class="math inline">\(v_p = \omega / k\)</span></p></li>
-<li><p>The longer cosine wave modulating it has velocity <span class="math inline">\(v_g = \Delta \omega / \Delta k\)</span></p></li>
-<li><p>this last we call the <strong><em>Group Velocity</em></strong></p></li>
-</ul>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-<ul>
-<li><p>Add the two waves <span class="math inline">\(A_0 sin(k_1x - \omega_1 t)\)</span> and <span class="math inline">\(A_0 sin(k_2x - \omega_2 t)\)</span> where <span class="math inline">\(k_1 = 6.4 \; rads/m\)</span>, <span class="math inline">\(\omega_1 = 9.2 \; rads/s\)</span>, <span class="math inline">\(k_2 = 6.0 \; rads/m\)</span>, and <span class="math inline">\(\omega_2 = 9.0 \; rads/s\)</span></p></li>
-<li><p>the phase velocity is <span class="math inline">\(\omega / k\)</span> where <span class="math inline">\(\omega = \frac{(\omega_1 + \omega_2)}{2}\)</span> and <span class="math inline">\(k = \frac{(k_1 + k_2)}{2}\)</span> giving <span class="math inline">\(v_p = 9.1 / 6.2 = 1.47 m/s\)</span></p></li>
-<li><p>the group velocity is <span class="math inline">\(\Delta \omega / \Delta k\)</span> where <span class="math inline">\(\Delta \omega = \frac{(\omega_1 - \omega_2)}{2}\)</span> and <span class="math inline">\(\Delta k = \frac{(k_1 - k_2)}{2}\)</span> giving <span class="math inline">\(v_g = 0.2 / 0.4 = 0.50 m/s\)</span></p></li>
-</ul>
-</section>
-<section id="adding-more-than-two-waves" class="slide level2">
-<h2>Adding More than Two Waves</h2>
-<ul>
-<li><p>the two wave example above gives the general principle, but in practice many more waves combine to form a wave packet</p>
-<ul>
-<li><p>they’ll all have closely spaced frequencies (<span class="math inline">\(\frac{\omega}{2\pi}\)</span>)</p></li>
-<li><p>and closely spaced wavenumbers, k</p></li>
-</ul></li>
-<li><p>the average values for <span class="math inline">\(\omega\)</span> and k will generate the phase velocity</p></li>
-<li><p>the way in which <span class="math inline">\(\omega\)</span> and k change across the wavepacket, <span class="math inline">\(d \omega / dk\)</span>, will give the group velocity</p></li>
-<li><p>the group velocity is of greater physical significance</p></li>
-</ul>
-</section>
-<section id="wavepacket-of-500-sine-waves" class="slide level2">
-<h2>Wavepacket of 500 Sine Waves</h2>
-
-<img data-src="06-intro-quantum_files/figure-revealjs/waves-graph3-1.png" width="960" class="r-stretch"></section>
-<section id="section-8" class="slide level2">
-<h2></h2>
-
-<img data-src="images/phase-group-velocity-animation.gif" class="r-stretch quarto-figure-center"><p class="caption">Credit: Institute of Sound and Vibration Research</p></section>
-<section id="heisenbergs-uncertainty-principle" class="slide level2">
-<h2>Heisenberg’s Uncertainty Principle</h2>
+<section id="solutions-of-schrödingers-equation" class="slide level2">
+<h2>Solutions of Schrödinger’s Equation</h2>
 <div style="font-size: 90%;">
 <ul>
-<li>light diffraction can be though of as an illustration of the uncertainty principle</li>
-<li>slit width <span class="math inline">\(d\)</span> so therefore uncertainty in photon position of <span class="math inline">\(\Delta x = d\)</span></li>
-<li>width of diffraction pattern = <span class="math inline">\(\Delta \theta = \frac{\lambda}{d}\)</span>
+<li><p>Equation is linear in <span class="math inline">\(\psi\)</span></p>
 <ul>
-<li>range of momentum values = <span class="math inline">\(\Delta p = p \Delta \theta = p \frac{\lambda}{d}\)</span></li>
-<li>but <span class="math inline">\(p = \frac{h}{\lambda}\)</span></li>
-<li>substituting we get <span class="math inline">\(\Delta p = \frac{h}{\lambda} \frac{\lambda}{d} = \frac{h}{d}\)</span></li>
-<li>but <span class="math inline">\(\Delta x = d\)</span>, so <span class="math inline">\(\Delta p = \frac{h}{\Delta x}\)</span></li>
-<li><span class="math inline">\(\implies \Delta x \Delta p \ge h\)</span></li>
+<li><p>Superposition principle, if <span class="math inline">\(\psi_1\)</span> and <span class="math inline">\(\psi_2\)</span> are solutions then so is <span class="math inline">\(\psi_1 + \psi_2\)</span></p>
+<ul>
+<li>and indeed <span class="math inline">\(A\psi_1 + B\psi_2\)</span></li>
+</ul></li>
+</ul></li>
+<li><p>Solution solved by eigenfunctions, <span class="math inline">\(\psi_n\)</span>, and corresponding eigenvalues, <span class="math inline">\(E_n\)</span></p></li>
+<li><p>Set of all solutions forms an orthogonal basis set</p>
+<ul>
+<li><p><span class="math inline">\(\int \psi_n \psi_m dx = 0 \;if \; n \neq m\)</span></p></li>
+<li><p>Can make up any function from linear combination of <span class="math inline">\(\psi\)</span>’s</p>
+<ul>
+<li><span class="math inline">\(F(x) = \Sigma \psi_n\)</span></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
 </section>
-<section id="wave-nature-of-other-stuff" class="slide level2">
-<h2>Wave Nature of Other Stuff</h2>
+<section id="examples-of-time-independent-schrödinger-equation" class="slide level2">
+<h2>Examples of Time Independent Schrödinger Equation</h2>
 <ul>
-<li><p>electrons fired through a double slit apparatus also show a diffraction / interference pattern</p>
-<ul>
-<li>Davison Germer experiment with beam of electrons at nickel plate</li>
-<li>even when we dial the intensity way down, one electron at a time, we see the same pattern</li>
-<li>and this is also true for light, one photon at a time</li>
-</ul></li>
+<li><p>Infinite square well</p></li>
+<li><p>Finite square well</p></li>
+<li><p>Harmonic oscillator</p></li>
+<li><p>All of these are 1-D</p></li>
+<li><p>We’ll advance to 3-D later</p>
+<p>– Hydrogen atom</p>
+<p>– etc</p></li>
 </ul>
-</section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-<ul>
-<li>we have <span class="math inline">\(E = \hbar \omega\)</span></li>
-<li>for mass particles we have <span class="math inline">\(E = \frac{1}{2} m v^2 = \frac{p^2}{2m}\)</span></li>
-<li>We need a differential equation that can work with the equation for a plane wave and yet give us the correct for the relation between energy and momentum
-<ul>
-<li>Need to be proportional to <span class="math inline">\(k^2\)</span>, not <span class="math inline">\(k\)</span></li>
-<li>How about differentiating twice on t but just once on x?</li>
-</ul></li>
-</ul>
-</section>
-<section id="section-10" class="slide level2">
-<h2></h2>
-<ul>
-<li>something like <span class="math inline">\(\frac{\partial A}{\partial t} = \propto \frac{\partial^2A}{\partial x^2}\)</span></li>
-<li>or, replacing <span class="math inline">\(A\)</span> with <span class="math inline">\(\Psi\)</span>: <span class="math inline">\(\frac{\partial \Psi}{\partial t} = \propto \frac{\partial^2 \Psi}{\partial x^2}\)</span></li>
-<li>if we put in the plan wave solution, <span class="math inline">\(\Psi = e^{i(kx-\omega t)}\)</span> get</li>
-<li><span class="math inline">\(-k^2 = i \propto \omega\)</span></li>
-<li>if we use <span class="math inline">\(p = \hbar k\)</span> and <span class="math inline">\(E = \frac{p^2}{2m}\)</span> get:
-<ul>
-<li><span class="math inline">\(\propto = -2mi/\hbar\)</span></li>
-<li>feed this back in to our equation and rearrange to get:</li>
-</ul></li>
-</ul>
-</section>
-<section id="section-11" class="slide level2">
-<h2></h2>
-<p><span class="math inline">\(i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2}\)</span></p>
-<ul>
-<li>this is in free space, no forces</li>
-<li>if we add a potential, <span class="math inline">\(V\)</span>, we get</li>
-</ul>
-<div class="goals">
-<div class="goals-header">
-<p><span class="math inline">\(\; \; i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V\Psi\)</span></p>
-</div>
-<div class="goals-container">
-
-</div>
-</div>
 </section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
@@ -541,14 +312,14 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ul>
 <li><span class="math inline">\(A = A_0 sin(kx - \omega t)\)</span></li>
 <li><span class="math inline">\(A = e^{i(kx - \omega t)}\)</span>)</li>
-<li><span class="math inline">\(\frac{\partial^2A}{\partial t^2}-(\frac{\omega}{k})^2 \frac{\partial^2A}{\partial x^2} = 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0\)</span></li>
 <li><span class="math inline">\(\omega = 2 \pi f\)</span></li>
 <li><span class="math inline">\(k = \frac{2 \pi}{\lambda}\)</span></li>
 </ul>
 </div><div class="columns" width="&quot;50%">
 <ul>
 <li><span class="math inline">\(v = \frac{\omega}{k}\)</span></li>
-<li><span class="math inline">\(p = \frac{h}{\lambda} = \hbar k\)</span></li>
+<li>$p = = k $</li>
 <li><span class="math inline">\(E = hf = \frac{hc}{\lambda}= \hbar c k\)</span></li>
 <li><span class="math inline">\(v_p = \omega / k\)</span></li>
 <li><span class="math inline">\(v_g = \partial \omega / \partial k\)</span></li>
@@ -560,8 +331,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <section id="references" class="slide level2">
 <h2>References</h2>
 <ul>
-<li><p><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1283" target="_blank">Young &amp; Freedman - chapter 38</a></p></li>
-<li><p><a href="https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&amp;callbackUrl=https%3a%2f%2fresearch.ebsco.com&amp;db=nlebk&amp;format=EB&amp;profId=ehost&amp;lpid=&amp;ppid=&amp;lang=en&amp;location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&amp;isPLink=False&amp;requestContext=&amp;profileIdentifier=sr37fs&amp;recordId=lh37eixz3f" target="_blank">Serway &amp; Jewett - chapter 4</a></p></li>
+<li><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1445" target="_blank">Young &amp; Freedman - chapter 42.3</a></li>
 </ul>
 
 </section>
@@ -574,20 +344,20 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="06-intro-quantum_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="06-intro-quantum_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="07-particle-box_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -783,82 +553,6 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

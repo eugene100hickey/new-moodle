@@ -1,5 +1,5 @@
 ---
-title: "05-Introduction to Quantum Physics"
+title: "07-Shrodinger Equation - Particle in a Box"
 author:
   - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
@@ -11,6 +11,7 @@ format:
   revealjs:
     slide-number: true
     show-slide-number: all
+    chalkboard: true
 logo: logo.jpg
 include-in-header:
   - text: |
@@ -22,11 +23,8 @@ editor: visual
 
 ## Summary
 
-Light shows many properties consistent with its nature as being a wave; examplees being difffraction and interference. But it also shows many properties that can only be explained by considering light as being a stream of particles, photons ($\gamma$). This conflict can be viewed as a wave-particle duality, with a photon as a probability wave.
+In our first application of the Schrödinger Equation, we'll look at a particle in a 1 -dimensional box. This particle is at zero potential in the interval $0 \leq x \leq a$ but cannot move outside these bounds.
 
-Particles such as electrons also show similar effects.
-
-The wave-like properties can be interpreted using Heisenberg's Uncertainty Principle.
 
 ## Contents
 
@@ -57,473 +55,141 @@ The wave-like properties can be interpreted using Heisenberg's Uncertainty Princ
 ::::
 ::::::::
 
-## Wave Nature of Light
+## Time Dependent Schrödinger Equation
 
-:::::: columns
-:::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
--   ***optical diffraction*** explained by waves
-    -   analogous to phenomena in water waves, sound, etc
-    -   $\theta \propto \frac{\lambda}{d}$, d is aperture width
+
+- finished last week with the Time Dependent Schrödinger Equation
+
+<center> $i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V\Psi$ </center>
+
+-  Lots of times the potential, V, doesn’t depend on time, just position.
+
+- There’s a neat trick called separation of variables we can
+use now.
+
+<center> $\Psi (x, t) = \psi (x) T(t)$ </center>
+
 :::
-::::
+    
+##
 
-::: {.column width="60%"}
-![](images/Single_Slit_Diffraction.svg.png){width="80%" height="80%"}
-:::
-::::::
+- Get:
 
-## 
-
-::: {style="font-size: 80%;"}
--   ***two-slit interference pattern*** (Young's)
-    -   $n\lambda = d \times sin\theta$
-
-![](images/youngs.png){width="60%" height="40%"}
+<center> $i \hbar \frac{1}{T} \frac{\partial T}{\partial t} = - \frac{1}{\psi} \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V(x)$ </center>
 
 <br>
 
--   ***X-ray diffraction*** patterns we looked at last week also explained by wave nature of light
-:::
+- Left hand side just depends on time, right hand side just on x
 
-## But there are problems
+$\implies$ both sides must be equal to some constant, call it E say
 
-1.  Blackbody Radiation
+$\implies$ got ourselves two equations here
 
-    -   classical model of the spectrum of thermal radiation (Rayleigh-Jeans) gives infinities at short wavelengths
-    -   called ultraviolet catastrophy
-    -   solved by Planck's Radiation Law
+## Time Dependence
 
-2.  photoelectric effect
+- Working with the left (time) side of the equation gives us:
 
-3.  Compton Scattering
+<center> $i \hbar \frac{\partial T}{\partial t} = E \times T(t)$ </center>
 
-4.  Pair production
+- Solutions to this are fairly straightforward and not that interesting
 
-## 1. Blackbody Radiation
+<center> $T(t) = A e^{-iEt/\hbar}$ </center>
 
-::: {style="font-size: 90%;"}
--   every object emits light because of its temperature
-    -   hot bodies are brighter (Stefan Boltzman Law)
-    -   hot bodies $\implies$ more intense colours (Wien's Displacement Law)
-        -   $infrared \rightarrow  crimson \rightarrow yellow \rightarrow blue \rightarrow uv$
+- Gives temporal oscillations of the wavefunction
+
+## Time Independent Schrödinger Equation
+
+- On the other hand, the spatial element is rich in solutions, depends on shape of V(x)
+
+- Get
+
+<center> $- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi$ </center>
+
+- This is the time independent Schrödinger Equation
+
+- Turns out, when we compare to the free space version, that E is the total energy of the system.
+
+## Boundary Conditions
+
+::: {style="font-size: 75%;"}
+
+* Solving problems using Time independent Schrödinger Equation means
+
+    + Applying different natures of the potential, V
+    
+    + But also using boundary conditions, constraints on the wavefunction that tell us about the possible solutions
+    
+        - Wavefunction must be a continuous single valued function of position and time
         
+        - The integral of the squared value of the wavefunction over all values of x must be finite (normalisable) 
+        
+        - The first derivatives of the wavefunction in x must be continuous everywhere except when there is an infinite discontinuity in the potential
+        
+- We'll first look at the nature of solutions to Schrödinger's Equation, and then tackle some examples and put Schrödinger to work
+
 :::
 
-##
+## Solutions of Schrödinger's Equation
 
 ::: {style="font-size: 90%;"}
 
--   spectrum explained by Planck's Radiation Law
+* Equation is linear in $\psi$
 
-${\displaystyle u_{\lambda }(\lambda ,T)={\frac {8\pi hc}{\lambda ^{5}}}{\frac {1}{e^{hc/(\lambda k_{\mathrm {B} }T)}-1}}}$
+    + Superposition principle, if $\psi_1$ and $\psi_2$ are solutions then so is $\psi_1 + \psi_2$
 
--   introduces Plank's constant, $h = 6.626 \times 10^{-34} Js$
-    -   also $\hbar = \frac{h}{2\pi} = 1.055 \times 10^{-34} Js$
-    - h is the talisman for quantum physics
--   where $c = 2.99792458 \times 10^{8}m/s$ = speed of light
--   $k_B = 1.380649 \times 10^{-23} J/K$ = Boltzman's Constant
+        - and indeed $A\psi_1 + B\psi_2$
+
+* Solution solved by eigenfunctions, $\psi_n$, and corresponding eigenvalues, $E_n$
+
+* Set of all solutions forms an orthogonal basis set
+
+    + $\int \psi_n \psi_m dx = 0 \;if \; n \neq m$
+
+    + Can make up any function from linear combination of $\psi$'s
+
+        - $F(x) = \Sigma \psi_n$
 
 :::
+        
+## Examples of Time Independent Schrödinger Equation
 
-## 
+- Infinite square well
 
-```{r set-up}
-#| echo: false
-#| message: false
-#| warning: false
+- Finite square well
 
-library(tidyverse)
-library(constants)
-library(ggrepel)
-library(showtext)
-library(envalysis)
-library(ggtext)
-library(latex2exp)
+- Harmonic oscillator
 
-font_add(family = "Ink Free", regular = "assets/Inkfree.ttf")
-showtext_auto()
+- All of these are 1-D
 
-```
+- We'll advance to 3-D later
 
-```{r planck-plot}
-#| echo: false
-#| message: false
-#| warning: false
-
-h <- codata[198,]$value
-c0 <- codata[254, ]$value
-kb <- codata[43, ]$value
-
-lambda <- 100:2000 * 1e-9
-kelvin1 <- 5777
-col1 <- "#7A0403FF"
-kelvin2 <- 5277
-col2 <- "#18DEC1FF"
-kelvin3 <- 4777
-col3 <- "#3F3994FF"
-
-u1 <- 8*pi*h*c0 / lambda^5 / (exp(h*c0/(lambda*kb*kelvin1))-1)
-lambda_max1 <- lambda[which.max(u1)]*1e9
-u2 <- 8*pi*h*c0 / lambda^5 / (exp(h*c0/(lambda*kb*kelvin2))-1)
-lambda_max2 <- lambda[which.max(u2)]*1e9
-u3 <- 8*pi*h*c0 / lambda^5 / (exp(h*c0/(lambda*kb*kelvin3))-1)
-lambda_max3 <- lambda[which.max(u3)]*1e9
-
-my_title_cols <- glue::glue("<i style='color:{col1};'> {kelvin1}K </i>,
-                            <i style='color:{col2};'> {kelvin2}K </i>,
-                            and <i style='color:{col3};'> {kelvin3}K </i>")
-my_title <- paste0("Planck's Radiation   Law for ", my_title_cols)
-
-tibble(lambda = lambda*1e9, u1, u2, u3) |>
-  pivot_longer(-lambda, names_to = "temperature", values_to = "planck") |>
-  ggplot(aes(lambda, planck, colour = temperature)) +
-  geom_line(size = 2, show.legend = F) +
-  labs(x = TeX("$\\lambda\\; (nm)$"),
-       y = TeX("Light Intensity ($J/m^3/nm$)"),
-       title = my_title) +
-  scale_colour_manual(values = c(col1, col2, col3)) +
-  geom_vline(xintercept = c(lambda_max1, lambda_max2, lambda_max3),
-             linetype="dotted", size = 1, col = c(col1, col2, col3)) +
-  theme_publish(base_size = 32, base_family = "Ink Free", base_linewidth = 0.7) +
-  theme(axis.title = element_text(family = "Arial"),
-        axis.text.y = element_blank(),
-        plot.title = element_markdown())
-
-```
-
-## Equations for Our Photons
-
--   $\omega = {2\pi}{f}$ = angular velocity
--   $k = \frac{2\pi}{\lambda}$ = wave vector
--   $E_{\gamma} = hf = \hbar \omega$
--   $E_{\gamma} = \frac{hc}{\lambda} = \hbar c k$
--   $p = \frac{h}{\lambda} = \hbar k$ = momentum
--   also, photons are spin 1 particles $\implies$ bosons
-
-## 2. Photoelectric Effect
-
-::::::: columns
-:::: {.column width="50%"}
-::: {style="font-size: 75%;"}
--   shine light on metal plate
--   electrons emitted
-    -   would expect the brighter the light $\implies$ the stronger the electric field $\implies$ the more energetic the electrons leaving plate
--   don't see this
-    -   energy of electrons depends on light wavelength
-    -   number of electrons depends on brightness
-    -   $KE_{{max}_{e^-}} = hf - \phi$
-:::
-::::
-
-:::: {.column width="\"40%"}
-![](images/photo-electric.png){width="90%" height="90%"}
-
-::: {style="font-size: 75%;"}
--   adjust voltage until just strong enough to stop all electrons
-    -   $eV = hf - \phi$
-:::
-::::
-:::::::
-
-## 3. Compton Effect
-
-<br>
-
--   if light is just a wave, scattering off particles won't effect $\lambda$
-
--   but we *do* see change in $\lambda$
-
-    -   have to look pretty carefully
-    -   works best for x-rays scattering off electrons
-
--   get $\Delta \lambda = \lambda - \lambda_0 = \frac{h}{mc}(1-cos \theta)$
-
-## 
-
-:::: columns
-::: {.column width="45%"}
-::: {style="font-size: 65%;"}
-
-![](images/compton.png)
-
-- energy before = energy after
-
-$mc^2 + E_o = E_e + E$
-$\implies E_e = E_0 + mc^2 - E$
-$\implies \sqrt{(mc^2)^2+ (p_ec)^2}$
-$= p_oc + mc^2 - pc$
-$\implies \sqrt{(mc)^2+ (p_e)^2}$
-$= p_o + mc - p$
+    – Hydrogen atom
     
-:::
-:::
-:::{.column width='50%}
-::: {style="font-size: 65%;"}
+    – etc
 
-<br>
 
-- conservation of momentum
-
-$\vec{p_0} = \vec{p} + \vec{p_e}$
-$\implies \vec{p_e} = \vec{p_0} - \vec{p}$
-$\implies p_e^2 = (\vec{p_0} - \vec{p})\cdot(\vec{p_0} - \vec{p})$
-$\implies p_e^2 = p_0^2 + p^2 - 2p_0 p\; cos\theta$
-    
-- combining, replacing $p_e^2$ from energy equation
-
-$(mc)^2 + p_0^2 + p^2 - 2p p_0 cos \theta$
-$= p_0^2 + p^2 -2pp_0 + m^2c^2 + 2p_0mc - 2pmc$
-
-- lots of terms cancel
-
-$-2pp_0 cos \theta = -2p_0p + 2mc(p_0-p)$
-
-$p_0p(1-cos\theta) = mc(p_0-p)$
-$\frac{1}{mc}(1-cos\theta) = \frac{1}{p}- \frac{1}{p_0}$
-
-:::
-:::
-::::
-
-##
-
-::: callout-note
-## Compton Shift is Pretty Small
-
-- photons scattering off electrons at $\theta = 80 ^{\circ}$
-- $\Delta \lambda = \frac{h}{mc} (1 - cos\theta)$
-- $= \frac{6.626 \times 10^{-34}}{9.11 \times 10^{-31} \;\times \; 3 \times 10^8}\; \times (1-cos 80^{\circ})$
-- $= 2.426 \times 10^{-12} \; \times \; (1 - 0.1736)$
-- $= 2.005 \times 10^{-12} m$
-- $= 0.002005 \; nm$
-
-:::
-
-- gets worse if x-ray doesn't liberate electron
-    - replace $m = 9.11 \times 10^{-31} kg$ by mass of atom
-
-## 4. Pair Production
-
-![](images/pair-production.png)
-
-## Mathematics of Waves
-
--   single wave $A = A_0 sin(kx - \omega t)$
-    -   (neat way of expressing this $A = e^{i(kx - \omega t)}$)
-    - solution to equation $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
-    -   angular velocity; $\omega = 2 \pi f$, where f is the frequency
-    -   wavenumber; $k = \frac{2 \pi}{\lambda}$, where $\lambda$ is the wavelength
-    -   using $v = f\lambda$ get $v = \frac{\omega}{k}$
-    -   (this is the *phase velocity*, $v_p$)
-
-## 
-
-```{r waves}
-#| echo: false
-#| message: false
-#| warning: false
-
-library(tidyverse)
-library(showtext)
-library(envalysis)
-library(latex2exp)
-
-```
-
-```{r data}
-#| echo: false
-#| message: false
-#| warning: false
-#| cache: true
-
-font_add(family = "Ink Free", regular = "assets/Inkfree.ttf")
-showtext_auto()
-
-# single waveform is df
-df <- tibble(z=1:3000, a=sin(z/100))
-
-# sum of two waves
-two_waves <- tibble(z=1:60000, a=sin(z/100)+sin(z/95))
-
-# wavepacket is a
-central <- 20
-step <- 0.01
-n <- 500
-w <- 1/seq(central-n*step/2, central+n*step/2, by = step)
-z <- -5000:5000
-
-a <- map(1:n, function(index) sin(z*w[index])) |>
-  data.frame() |>
-  rowwise() |>
-  mutate(total = sum(c_across(everything())))
-```
-
-```{r waves-graph1}
-#| echo: false
-#| message: false
-#| warning: false
-
-
-# https://www.wecanfigurethisout.org/ENERGY/Web_notes/Exotics/Exotics_Supporting_Files/Group%20velocity%20-%20Wikipedia.pdf
-df |> ggplot(aes(z, a)) +
-  geom_line() +
-  labs(x = "Distance (m)",
-       y = "Amplitude") +
-  theme_publish(base_size = 28, base_family = "Ink Free", base_linewidth = 0.7) +
-  theme(axis.line.x = element_blank(),
-        axis.text.x = element_blank(),
-        axis.ticks.x = element_blank()) +
-  annotate("segment", x = 180, xend = 800, y = 1.1, yend = 1.1,
-           arrow = arrow(type = "open", length = unit(0.05, "npc"), ends = "both")) +
-  annotate("text", x = 500, y = 1.25, label = TeX("$\\lambda$"), size = 8) +
-  annotate("segment", x = 1000, xend = 2400, y = 0, yend = 0,
-           arrow = arrow(type = "open", length = unit(0.15, "npc"), ends = "last"),
-           linewidth = 2, colour = "firebrick4", alpha = 0.7) +
-  annotate("text", x = 1600, y = 0.3, label = "velocity", size = 10, colour = "firebrick4")
-```
-
-## Add Two Waves of Slightly Different Frequency Together
-
-::: {style="font-size: 85%;"}
-- $A(x, t) = A_0 sin[(k-\Delta k)x - (\omega - \Delta \omega) t] +$
-$A_0 sin[(k+\Delta k)x - (\omega + \Delta \omega) t]$
-
-- rearranging
-
-- $A(x, t) = A_0 sin[(kx-\omega t) - (\Delta kx - \Delta \omega t)] +$
-$A_0 sin[(kx-\omega t) + (\Delta kx - \Delta \omega t)]$
-
-- like adding two sines: $sin(A+B) + sin(A-B) = 2sin(A)cos(B)$
-
-- get:  $A(x, t) = 2 \times A_0 sin(kx - \omega t)\; cos(\Delta kx -  \Delta \omega t)$
-
-- a sine wave modulated by a much slower cosine wave
-
-:::
-
-##
-
-
-```{r waves-graph2}
-#| echo: false
-#| message: false
-#| warning: false
-
-
-# https://www.wecanfigurethisout.org/ENERGY/Web_notes/Exotics/Exotics_Supporting_Files/Group%20velocity%20-%20Wikipedia.pdf
-two_waves |> ggplot(aes(z, a)) +
-  geom_line() +
-  labs(x = "Distance (m)",
-       y = "Amplitude") +
-  theme_publish(base_size = 28, base_family = "Ink Free", base_linewidth = 0.7) +
-  theme(axis.line.x = element_blank(),
-        axis.text.x = element_blank(),
-        axis.ticks.x = element_blank())
-```
-
-
-##
-
--  $A(x, t) = 2 \times A_0 sin(kx - \omega t)\; cos(\Delta kx -  \Delta \omega t)$
-
-- The sine wave has velocity $v_p = \omega / k$
-
-- The longer cosine wave modulating it has velocity $v_g = \Delta \omega / \Delta k$
-
-- this last we call the **_Group Velocity_**
-
-## Example
-
-- Add the two waves $A_0 sin(k_1x - \omega_1 t)$ and $A_0 sin(k_2x - \omega_2 t)$ where $k_1 = 6.4 \; rads/m$, $\omega_1 = 9.2 \; rads/s$, $k_2 = 6.0 \; rads/m$, and $\omega_2 = 9.0 \; rads/s$
-
-- the phase velocity is $\omega / k$ where $\omega = \frac{(\omega_1 + \omega_2)}{2}$ and $k = \frac{(k_1 + k_2)}{2}$ giving $v_p = 9.1 / 6.2 = 1.47 m/s$
-
-- the group velocity is $\Delta \omega / \Delta k$ where $\Delta \omega = \frac{(\omega_1 - \omega_2)}{2}$ and $\Delta k = \frac{(k_1 - k_2)}{2}$ giving $v_g = 0.2 / 0.4 = 0.50 m/s$
-
-
-## Adding More than Two Waves
-
-- the two wave example above gives the general principle, but in practice many more waves combine to form a wave packet
-
-    - they'll all have closely spaced frequencies ($\frac{\omega}{2\pi}$)
-    
-    - and closely spaced wavenumbers, k
-    
-- the average value for $\omega$ and k will give the phase velocity
-
-- the way in which  $\omega$ and k change across the wavepacket, $d \omega / dk$, will give the group velocity
-
-- the group velocity is of greater physical significance
-
-## Wavepacket of 500 Sine Waves
-
-```{r waves-graph3}
-#| echo: false
-#| message: false
-#| warning: false
-
-tibble(z, amp = a$total) |> ggplot(aes(z, amp)) +
-  geom_line() +
-  labs(x = "Distance (m)",
-       y = "Amplitude") +
-  theme_publish(base_size = 28, base_family = "Ink Free", base_linewidth = 0.7) +
-  theme(axis.line.x = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks.x = element_blank())
-
-```
-
-## 
-
-![Credit: Institute of Sound and Vibration Research](images/phase-group-velocity-animation.gif)
-
-## Heisenberg's Uncertainty Principle
-
-::: {style="font-size: 90%;"}
--   light diffraction can be though of as an illustration of the uncertainty principle
--   slit width $d$ so therefore uncertainty in photon position of $\Delta x = d$
--   width of diffraction pattern = $\Delta \theta = \frac{\lambda}{d}$
-    -   range of momentum values = $\Delta p = p \Delta \theta = p \frac{\lambda}{d}$
-    -   but $p = \frac{h}{\lambda}$
-    -   substituting we get $\Delta p = \frac{h}{\lambda} \frac{\lambda}{d} = \frac{h}{d}$
-    -   but $\Delta x = d$, so $\Delta p = \frac{h}{\Delta x}$
-    -   $\implies \Delta x \Delta p \ge h$
-:::
-
-## Wave Nature of Other Stuff
-
--   electrons fired through a double slit apparatus also show a diffraction / interference pattern
-
-    -   Davison Germer experiment with beam of electrons at nickel plate
-    -   even when we dial the intensity way down, one electron at a time, we see the same pattern
-    -   and this is also true for light, one photon at a time
 
 ## Equations
 
-:::: columns
+::::: columns
 ::: {.column width="50%"}
-
 -   $A = A_0 sin(kx - \omega t)$
-- $A = e^{i(kx - \omega t)}$)
-- $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
-- $\omega = 2 \pi f$
-- $k = \frac{2 \pi}{\lambda}$
-
+-   $A = e^{i(kx - \omega t)}$)
+-   $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
+-   $\omega = 2 \pi f$
+-   $k = \frac{2 \pi}{\lambda}$
 :::
-::: {.columns width="50%}
 
-- $v = \frac{\omega}{k}$
-- $p = \frac{h}{\lambda} = \hbar k $
-- $E = hf = \frac{hc}{\lambda}= \hbar c k$
-- $v_p = \omega / k$
-- $v_g = \partial \omega / \partial k$
-- $\Delta \lambda = \frac{h}{mc} (1 - cos \theta)$
-
+::: {.columns width="\"50%"}
+-   $v = \frac{\omega}{k}$
+-   \$p = \frac{h}{\lambda} = \hbar k \$
+-   $E = hf = \frac{hc}{\lambda}= \hbar c k$
+-   $v_p = \omega / k$
+-   $v_g = \partial \omega / \partial k$
+-   $\Delta \lambda = \frac{h}{mc} (1 - cos \theta)$
 :::
-::::
-
+:::::
 
 ## References
 

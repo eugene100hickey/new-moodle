@@ -11,6 +11,7 @@ format:
   revealjs:
     slide-number: true
     show-slide-number: all
+    chalkboard: true
 logo: logo.jpg
 include-in-header:
   - text: |
@@ -529,7 +530,7 @@ $i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial 
 :::{.goals}
 ::::{.goals-header}
 
-$\; \; i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} [ \frac{\partial ^2 \Psi}{\partial x^2} + V]$
+$\; \; i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V\Psi$
 
 ::::
 ::::{.goals-container}
