@@ -9,6 +9,29 @@ include-in-header:
       <link rel = "shortcut icon" href = "../img/bullfinch.png" />
 ---
 
+## Physics-Quantum Lectures
+
+-   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
+
+-   [01 Radiation](https://tud.netlify.app/lectures/physics-quantum/01-radiation.html){target="_blank"}
+
+-   [02 Nuclear Physics](https://tud.netlify.app/lectures/physics-quantum/02-nuclear.html){target="_blank"}
+
+-   [03 Particle Physics](https://tud.netlify.app/lectures/physics-quantum/03-particle.html){target="_blank"}
+
+-   [04 Crystallography](https://tud.netlify.app/lectures/physics-quantum/04-xtals.html){target="_blank"}
+
+-   [05 X-Ray Diffraction](https://tud.netlify.app/lectures/physics-quantum/05-crystals-x-ray-diffraction.html){target="_blank"}
+
+-   [06 Introduction to Quantum Physics](https://tud.netlify.app/lectures/physics-quantum/06-intro-quantum.html){target="_blank"}
+
+-   [07 Shrodinger Equation - Square Well](https://tud.netlify.app/lectures/physics-quantum/07-particle-box.html){target="_blank"}
+
+-   [08 Shrodinger Equation - SHO](https://tud.netlify.app/lectures/physics-quantum/08-sho.html){target="_blank"}
+
+-   [09 Shrodinger Equation - hydrogen](https://tud.netlify.app/lectures/physics-quantum/09-hydrogen.html){target="_blank"}
+
+
 ## Presentations
 
 -   [February 14th](https://tud.netlify.app/eut-plus/workshop-kickoff-feb14-2025.html){target="_blank"}
@@ -51,27 +74,6 @@ include-in-header:
 
 -   [Projectile Motion](https://tud.netlify.app/projectile)
 
-## Physics-Quantum Lectures
-
--   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
-
--   [01 Radiation](https://tud.netlify.app/lectures/physics-quantum/01-radiation.html){target="_blank"}
-
--   [02 Nuclear Physics](https://tud.netlify.app/lectures/physics-quantum/02-nuclear.html){target="_blank"}
-
--   [03 Particle Physics](https://tud.netlify.app/lectures/physics-quantum/03-particle.html){target="_blank"}
-
--   [04 Crystallography](https://tud.netlify.app/lectures/physics-quantum/04-xtals.html){target="_blank"}
-
--   [05 X-Ray Diffraction](https://tud.netlify.app/lectures/physics-quantum/05-crystals-x-ray-diffraction.html){target="_blank"}
-
--   [06 Introduction to Quantum Physics](https://tud.netlify.app/lectures/physics-quantum/06-intro-quantum.html){target="_blank"}
-
--   [07 Shrodinger Equation - Square Well](https://tud.netlify.app/lectures/physics-quantum/07-square-well.html){target="_blank"}
-
--   [08 Shrodinger Equation - SHO](https://tud.netlify.app/lectures/physics-quantum/08-sho.html){target="_blank"}
-
--   [09 Shrodinger Equation - hydrogen](https://tud.netlify.app/lectures/physics-quantum/09-hydrogen.html){target="_blank"}
 
 ## ManTech Lectures
 
