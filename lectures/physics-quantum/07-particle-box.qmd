@@ -1,5 +1,5 @@
 ---
-title: "07-Shrodinger Equation - Particle in a Box"
+title: "07-Shrodinger Equation <br> Particle in a Box"
 author:
   - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
