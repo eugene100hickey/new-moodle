@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Physics Theory II PHYS2001">
-  <title>07-Shrodinger Equation - Particle in a Box</title>
+  <title>07-Shrodinger Equation   Particle in a Box</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -131,7 +131,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">07-Shrodinger Equation - Particle in a Box</h1>
+  <h1 class="title">07-Shrodinger Equation <br> Particle in a Box</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -160,16 +160,17 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <div class="column" style="width:40%;">
 <div style="font-size: 90%;">
 <ol type="1">
-<li>Wave Nature of Light</li>
-<li>Particle Nature of Light
+<li>Time Dependent Schrödinger Equation</li>
+<li>Separation of Variables
 <ol type="1">
-<li>Blackbody Radiation &amp; Planck</li>
-<li>Photoelectric Effect
-<ul>
-<li>Energy &amp; Momentum of Photons</li>
-</ul></li>
-<li>Compton Effect</li>
-<li>Pair Production</li>
+<li>Time Independent Schrödinger Equation</li>
+</ol></li>
+<li>Boundary Conditions</li>
+<li>Nature of solutions
+<ol type="1">
+<li>linearity</li>
+<li>orthonormal</li>
+<li>basis set</li>
 </ol></li>
 </ol>
 </div>
@@ -303,6 +304,271 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>We’ll advance to 3-D later</p>
 <p>– Hydrogen atom</p>
 <p>– etc</p></li>
+</ul>
+</section>
+<section id="infinite-square-well-particle-in-a-box" class="slide level2">
+<h2>Infinite Square Well (Particle in a Box)</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>V(x) has the form</p>
+<ul>
+<li><p>V = 0 when <span class="math inline">\(0&lt;x&lt;L\)</span></p></li>
+<li><p>V = <span class="math inline">\(\infty\)</span> when <span class="math inline">\(x&lt;0 \; or\; x&gt;L\)</span></p></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/infinte-well.png"></p>
+</div></div>
+</section>
+<section id="infinite-square-well---solutions" class="slide level2">
+<h2>Infinite Square Well - Solutions</h2>
+<ul>
+<li>Within the well, the Schrödinger Equation becomes:</li>
+</ul>
+<center>
+<span class="math inline">\(- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} = E \psi\)</span>
+</center>
+<ul>
+<li>General solution has the form</li>
+</ul>
+<center>
+<span class="math inline">\(\psi = A cos(kx) + B\sin(kx)\)</span>
+</center>
+<ul>
+<li>Where</li>
+</ul>
+<center>
+<span class="math inline">\(k = \sqrt{\frac{2mE}{\hbar^2}}\)</span>
+</center>
+</section>
+<section id="isw---boundary-conditions" class="slide level2">
+<h2>ISW - Boundary Conditions</h2>
+<div style="font-size: 80%;">
+<ul>
+<li>Boundary conditions dictate <span class="math inline">\(\psi\)</span> that vanishes at 0 and L</li>
+</ul>
+<center>
+<span class="math inline">\(0 = A cos(k0) + B\sin(k0)\)</span>
+</center>
+<center>
+<span class="math inline">\(0 = A cos(kL) + B\sin(kL)\)</span>
+</center>
+<ul>
+<li><p>First condition must mean A=0</p>
+<ul>
+<li>If A=0 then <span class="math inline">\(\sin(kL) = 0\)</span> and <span class="math inline">\(k = n\pi /L\)</span>, n=1, 2, 3..
+<ul>
+<li>(not n = 0 because that would give <span class="math inline">\(\psi = 0\)</span> everywhere)</li>
+</ul></li>
+</ul></li>
+<li><p>Means <span class="math inline">\(E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}\)</span></p></li>
+<li><p>when we normalise we get</p></li>
+</ul>
+<div class="goals">
+<div class="goals-header">
+<p><span class="math inline">\(\psi_n = \sqrt{2/L} \sin(n\pi x /L)\)</span></p>
+</div>
+<div class="goals-container">
+
+</div>
+</div>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="images/isw-energy.png" class="r-stretch"></section>
+<section id="conjugated-dyes" class="slide level2">
+<h2>Conjugated Dyes</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/conj-dye1.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/conj-dye2.png"></p>
+</div></div>
+<div style="font-size: 80%;">
+<ul>
+<li><p>Planar cations</p></li>
+<li><p>Number of carbons in chain varies</p></li>
+<li><p>End group (R) can be <span class="math inline">\(H\)</span>, <span class="math inline">\(CH_3\)</span>, etc</p></li>
+<li><p>Carbon chain acts like infinite square well</p>
+<ul>
+<li>delocalised pi electrons over the length of the molecule between N ions</li>
+<li>Free-Electron Molecular Orbital Model</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<ul>
+<li>Potential looks like this:</li>
+</ul>
+
+<img data-src="images/conj-dye3.png" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<ul>
+<li>spectra looks like this:</li>
+</ul>
+
+<img data-src="images/conj-dye4.png" class="r-stretch"></section>
+<section id="spectra-of-conjugated-dyes" class="slide level2">
+<h2>Spectra of Conjugated Dyes</h2>
+<p><br></p>
+<ul>
+<li><p>Absorption caused by transition from highest filled orbital (<span class="math inline">\(n_{HFO}\)</span>) to lowest unfilled orbital (<span class="math inline">\(n_{LUO}\)</span>)</p>
+<ul>
+<li>Get one electron from each carbon plus three from the nitrogens</li>
+<li>N = (no of carbons) + 3</li>
+</ul></li>
+<li><p><span class="math inline">\(n_{HFO} = N/2\)</span> and <span class="math inline">\(n_{LUO} = N/2 + 1\)</span> (Pauli Exclusion)</p></li>
+</ul>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p>Remember <span class="math inline">\(E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}\)</span> for infinite square well <span class="math inline">\(\Delta E = E_{LUO} – E_{HFO} = \frac{\hbar^2 \pi^2n_{LUO}^2}{2mL^2} - \frac{\hbar^2 \pi^2n_{HFO}^2}{2mL^2}\)</span></p>
+<p><span class="math inline">\(\implies \Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (n_{LUO}^2 - n_{HFO}^2)\)</span></p>
+<p><span class="math inline">\(\implies \Delta E = \frac{\hbar^2 \pi^2}{2mL^2} [(\frac{N}{2} + 1)^2 - (\frac{N}{2})^2]\)</span></p>
+<p><span class="math inline">\(\implies \Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)\)</span></p>
+<p><span class="math inline">\(\Delta E = 6.024 \times10^{-38} (N+1)/ L^2\)</span></p>
+<p>taking <span class="math inline">\(h=6.626 \times 10^{-34}Js\)</span> and <span class="math inline">\(m_e = 9.11 \times 10^{-31}kg\)</span></p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<ul>
+<li><p><span class="math inline">\(\Delta E = 6.024 \times10^{-38} (N+1)/ L^2\)</span></p></li>
+<li><p>Application to dyes on slide 17 gives:</p>
+<ul>
+<li>L for 3 carbons is 0.809nm</li>
+<li>L for 5 carbons is 1.056nm</li>
+<li>L for 7 carbons is 1.307nm</li>
+</ul></li>
+<li><p>Compares OK with C-C bond length of 0.146nm and C=C bond length of 0.134nm</p></li>
+<li><p>(remember <span class="math inline">\(E = \frac{hc}{\lambda}\)</span>)</p></li>
+</ul>
+</section>
+<section id="spectrum-of-butadiene" class="slide level2">
+<h2>Spectrum of Butadiene</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 80%;">
+<ul>
+<li><p>Four carbon molecule</p>
+<ul>
+<li><p>Four <span class="math inline">\(\pi\)</span> electrons, N=4</p></li>
+<li><p>Get <span class="math inline">\(\Delta E = \frac{\hbar^2 \pi^2 n^2}{2mL^2}(N+1) = \frac{5 \hbar^2 \pi^2}{2mL^2}\)</span></p></li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/butadiene.png"></p>
+</div></div>
+<div style="font-size: 80%;">
+<ul>
+<li><p>Length of molecule is (two double bonds) + (one single bond) + (a bit more at each end, say a total of a single bond)</p></li>
+<li><p>This gives L = 0.56nm</p></li>
+<li><p>Then <span class="math inline">\(E = 9.61 \times 10^{-19}J\)</span></p></li>
+<li><p>And <span class="math inline">\(\lambda_{max}\)</span> = 207nm</p></li>
+<li><p>Compares to experimental value of 210nm</p></li>
+<li><p>Got to admit agreement is pretty lucky, but still shows power of QM</p></li>
+</ul>
+</div>
+</section>
+<section id="selection-rules-for-square-well" class="slide level2">
+<h2>Selection Rules for Square Well</h2>
+<ul>
+<li><p>Not all transitions allowed, some have probability=0</p></li>
+<li><p>We’ll work out these selection rules for the infinite square well potential</p></li>
+<li><p>We’ll also show how longer molecules have stronger absorbtion</p></li>
+</ul>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p><br></p>
+<ul>
+<li><p>Incident light causes transition from occupied level to higher previously unoccupied level</p></li>
+<li><p>Absorbs energy from light beam</p></li>
+<li><p>Strength of light-molecule interaction depends on electric dipole moment of molecule</p>
+<ul>
+<li><p><span class="math inline">\(\epsilon = - \mu .E\)</span> where <span class="math inline">\(\mu\)</span> is dipole moment</p></li>
+<li><p><span class="math inline">\(\mu = \Sigma x_i e_i\)</span> where x is position and e is charge</p></li>
+</ul></li>
+<li><p>Light has long wavelength so E doesn’t depend on x</p></li>
+</ul>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<ul>
+<li>In quantum mechanics, the transition dipole moment is given by:</li>
+</ul>
+<center>
+<span class="math inline">\(\mu = \int \psi_f \;ex\; \psi_i dx\)</span>
+</center>
+<p><br></p>
+<ul>
+<li><p>When we evaluate this integral for the wavefunctions of the square well, we can see which ones disappear</p></li>
+<li><p>They disappear because integral = 0 because of symmetry</p></li>
+<li><p>These will be forbidden transitions</p></li>
+</ul>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<p><span class="math inline">\(\mu = - \int_0^L \psi_{final} \; ex\; \psi_{initial}\; dx\)</span></p>
+<p><span class="math inline">\(\implies \mu = - \frac{2e}{L} \int_0^L x \sin(\frac{n_{final} \pi x}{L}) \; \sin(\frac{n_{initial} \pi x}{L})\; dx\)</span></p>
+<ul>
+<li>but <span class="math inline">\(\sin(x) \sin(y) = \frac{1}{2} [ \cos(x-y) - \cos(x+y)]\)</span></li>
+</ul>
+<p><span class="math inline">\(\implies \mu = - \frac{e}{L} \int_0^L x [\cos(\frac{ \pi x ( n_{final} - n_{initial})}{L}) \;- \; \cos(\frac{ \pi x ( n_{final} + n_{initial})}{L})]\; dx\)</span></p>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<ul>
+<li><p>do this integration by parts using u = x and <span class="math inline">\(dv = \cos(x)dx\)</span></p></li>
+<li><p>gives <span class="math inline">\(\int_0^L x\; \cos(ax)\; dx = [\frac{x}{a} \sin(ax) + \frac{1}{a^2}\cos(ax)]_0^L\)</span></p></li>
+<li><p>then</p></li>
+</ul>
+<p><span class="math inline">\(\mu = - \frac{e}{L} (\frac{L}{\pi})^2[\frac{1}{n_{diff}^2}(\cos(n_{diff}\pi)-1) - \frac{1}{n_{total}^2}(\cos(n_{total}\pi)-1)\)</span></p>
+<p><span class="math inline">\(+ \frac{1}{n_{diff}} \sin(n_{diff}\pi) - \frac{1}{n_{total}} \sin(n_{total}\pi)]\)</span></p>
+<p>where <span class="math inline">\(n_{diff} = n_{final} - n_{initial}\)</span> and <span class="math inline">\(n_{total} = n_{final} + n_{initial}\)</span></p>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<p>See what happens when n is even or odd</p>
+<ul>
+<li>if n is even then <span class="math inline">\(\cos(n\pi) - 1 = 0\)</span> and <span class="math inline">\(\sin(n\pi) = 0\)</span></li>
+</ul>
+<p><span class="math inline">\(\implies \mu = 0\)</span> when <span class="math inline">\(n_{diff}\)</span> is even and <span class="math inline">\(n_{total}\)</span> is even</p>
+<ul>
+<li>this happens if both <span class="math inline">\(n_{initial}\)</span> and <span class="math inline">\(n_{final}\)</span> are both even or both odd</li>
+</ul>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<p>-on the other hand if one is even and the other odd</p>
+<p><span class="math inline">\(\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]\)</span></p>
+<p><span class="math inline">\(\implies \mu = \frac{2eL}{\pi^2}[\frac{n_{initial}\times n_{final}}{n_{initial}^2 - n_{final}^2}]\)</span></p>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<ul>
+<li><p>This all means:</p>
+<ul>
+<li>No transition if initial and final state have same parity
+<ul>
+<li>i.e.&nbsp;both even or both odd</li>
+</ul></li>
+<li>Transition if initial and final states have opposite parity
+<ul>
+<li>(<span class="math inline">\(n_{initial} – n_{final}\)</span>) must be odd</li>
+</ul></li>
+<li>Transition strength increases with L
+<ul>
+<li>Long molecules absorb strongly</li>
+<li>See spectra on page 17</li>
+</ul></li>
+</ul></li>
 </ul>
 </section>
 <section id="equations" class="slide level2">
