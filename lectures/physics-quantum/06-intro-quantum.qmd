@@ -23,7 +23,7 @@ editor: visual
 
 ## Summary
 
-Light shows many properties consistent with its nature as being a wave; examplees being difffraction and interference. But it also shows many properties that can only be explained by considering light as being a stream of particles, photons ($\gamma$). This conflict can be viewed as a wave-particle duality, with a photon as a probability wave.
+Light shows many properties consistent with its nature as being a wave; examples being difffraction and interference. But it also shows many properties that can only be explained by considering light as being a stream of particles, photons ($\gamma$). This conflict can be viewed as a wave-particle duality, with a photon as a probability wave.
 
 Particles such as electrons also show similar effects.
 
