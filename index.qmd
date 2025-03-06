@@ -35,7 +35,7 @@ include-in-header:
 
 -   [February 14th](https://tud.netlify.app/eut-plus/workshop-kickoff-feb14-2025.html){target="_blank"}
 
--   [March 24th](https://tud.netlify.app/physics-schoolphys-clin-discipline){target="_blank"}
+-   [March 24th](https://tud.netlify.app/physics-school/phys-clin-discipline){target="_blank"}
 
 -   [January 13th](https://tud.netlify.app/physics-school/organisational-change.html){target="_blank"}
 

@@ -31,6 +31,7 @@ execute:
 
 
 
+
 #  {.title}
 
 ::: r-fit-text
@@ -82,6 +83,7 @@ R You Ready
 ---
 
 
+
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
 ![](images/football.png){fig-align='center' width=512}
@@ -89,12 +91,15 @@ R You Ready
 :::
 
 
+
 ---
+
 
 
 ::: {.cell}
 
 :::
+
 
 
 ## flipbookr Runthrough
@@ -1215,6 +1220,15 @@ es |>
 #wwwxxogmwn .gt_indent_5 {
   text-indent: 25px;
 }
+
+#wwwxxogmwn .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#wwwxxogmwn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
@@ -1741,14 +1755,23 @@ es |>
 #wzrxxqmkri .gt_indent_5 {
   text-indent: 25px;
 }
+
+#wzrxxqmkri .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#wzrxxqmkri div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Team">Team</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Goal Excess">Goal Excess</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Season">Season</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Club Website">Club Website</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="team">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="excess">Goal Excess</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="season">Season</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="url">Club Website</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -2268,14 +2291,23 @@ es |>
 #qmmqpcifub .gt_indent_5 {
   text-indent: 25px;
 }
+
+#qmmqpcifub .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qmmqpcifub div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Team">Team</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Goal Excess">Goal Excess</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Season">Season</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Club Website">Club Website</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="team">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="excess">Goal Excess</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="season">Season</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="url">Club Website</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -2808,14 +2840,23 @@ es |>
 #bjencpjqrz .gt_indent_5 {
   text-indent: 25px;
 }
+
+#bjencpjqrz .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#bjencpjqrz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Team">Team</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Goal Excess">Goal Excess</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Season">Season</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Club Website">Club Website</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="team">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="excess">Goal Excess</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="season">Season</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="url">Club Website</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -3348,14 +3389,23 @@ es |>
 #mensromwnn .gt_indent_5 {
   text-indent: 25px;
 }
+
+#mensromwnn .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#mensromwnn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Team">Team</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Goal Excess">Goal Excess</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Season">Season</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Club Website">Club Website</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="team">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="excess">Goal Excess</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="season">Season</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="url">Club Website</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -3404,9 +3454,11 @@ es |>
 ---
 
 
+
 ::: {.cell}
 
 :::
+
 
 
 ## flipbookr Runthrough
@@ -3682,6 +3734,7 @@ theme_void()
 
 
 
+
 ::: {.cell}
 ::: {.cell-output-display}
 
@@ -3696,6 +3749,7 @@ theme_void()
 
 :::
 :::
+
 
 
 ## Advantages of `learnr`
@@ -3803,13 +3857,16 @@ quiz(
 
 ## `exams`
 
+
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
 ![](images/soybeans.png){fig-align='center' width=850}
 :::
 :::
 
+
 ---
+
 
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
@@ -3818,7 +3875,9 @@ quiz(
 :::
 
 
+
 ---
+
 
 
 ::: {.cell layout-align="center"}
@@ -3826,6 +3885,7 @@ quiz(
 ![](images/dna.png){fig-align='center' width=843}
 :::
 :::
+
 
 
 
@@ -3878,6 +3938,7 @@ quiz(
 
 
 
+
 ::: {.cell}
 
 ```{.r .cell-code}
@@ -3902,10 +3963,12 @@ my_table <- tibble(
 :::
 
 
+
 - note, `.Rmd` file with no `yaml`header.
 
 
 ## 2. Question Text
+
 
 
 ::: {.cell}
@@ -3925,7 +3988,9 @@ my_table |>
 :::
 
 
+
 ## 3. Feedback
+
 
 
 ::: {.cell}
@@ -3939,7 +4004,9 @@ The answers should be `r my_soln`.
 :::
 
 
+
 ## 4. Meta-Information
+
 
 
 ::: {.cell}
@@ -3958,7 +4025,9 @@ exextra[numwidth,logical]: TRUE
 
 
 
+
 ## 5. Make Moodle XML
+
 
 
 ::: {.cell}
@@ -3967,6 +4036,7 @@ exextra[numwidth,logical]: TRUE
 exams2moodle(file = "exams-example.Rmd", n = 100)
 ```
 :::
+
 
 
 - this will make a file called _moodlequiz.xml_ with 100 exemplars of the quiz with different input values.
