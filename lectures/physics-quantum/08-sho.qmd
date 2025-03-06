@@ -1,0 +1,469 @@
+---
+title: "07-Shrodinger Equation <br> Particle in a Box"
+author:
+  - name: Physics Theory II PHYS2001
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "logo.jpg" />
+css: logo.css
+footer: "Physics - Quantum"
+editor: visual
+---
+
+## Summary
+
+In our first application of the Schrödinger Equation, we'll look at a particle in a 1 -dimensional box. This particle is at zero potential in the interval $0 \leq x \leq a$ but cannot move outside these bounds.
+
+## Contents
+
+:::::::: columns
+:::: {.column width="40%"}
+::: {style="font-size: 90%;"}
+1.  Time Dependent Schrödinger Equation 
+2.  Separation of Variables
+    1.  Time Independent Schrödinger Equation
+1. Boundary Conditions
+1. Nature of solutions
+    1. linearity
+    2. orthonormal
+    3. basis set
+
+
+:::
+::::
+
+::: {.column width="10%"}
+:::
+
+:::: {.column width="40%"}
+::: {style="font-size: 90%;"}
+3.  Mathematics of Wave Packets
+4.  Uncertainty Principle
+5.  Wave Nature of Particles
+6.  Equations
+7.  References
+:::
+::::
+::::::::
+
+## Time Dependent Schrödinger Equation
+
+::: {style="font-size: 90%;"}
+-   finished last week with the Time Dependent Schrödinger Equation
+
+<center>$i \hbar \frac{\partial \Psi}{\partial t} = - \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V\Psi$</center>
+
+-   Lots of times the potential, V, doesn’t depend on time, just position.
+
+-   There’s a neat trick called separation of variables we can use now.
+
+<center>$\Psi (x, t) = \psi (x) T(t)$</center>
+:::
+
+## 
+
+-   Get:
+
+<center>$i \hbar \frac{1}{T} \frac{\partial T}{\partial t} = - \frac{1}{\psi} \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V(x)$</center>
+
+<br>
+
+-   Left hand side just depends on time, right hand side just on x
+
+$\implies$ both sides must be equal to some constant, call it E say
+
+$\implies$ got ourselves two equations here
+
+## Time Dependence
+
+-   Working with the left (time) side of the equation gives us:
+
+<center>$i \hbar \frac{\partial T}{\partial t} = E \times T(t)$</center>
+
+-   Solutions to this are fairly straightforward and not that interesting
+
+<center>$T(t) = A e^{-iEt/\hbar}$</center>
+
+-   Gives temporal oscillations of the wavefunction
+
+## Time Independent Schrödinger Equation
+
+-   On the other hand, the spatial element is rich in solutions, depends on shape of V(x)
+
+-   Get
+
+<center>$- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi$</center>
+
+-   This is the time independent Schrödinger Equation
+
+-   Turns out, when we compare to the free space version, that E is the total energy of the system.
+
+## Boundary Conditions
+
+::: {style="font-size: 75%;"}
+-   Solving problems using Time independent Schrödinger Equation means
+
+    -   Applying different natures of the potential, V
+
+    -   But also using boundary conditions, constraints on the wavefunction that tell us about the possible solutions
+
+        -   Wavefunction must be a continuous single valued function of position and time
+
+        -   The integral of the squared value of the wavefunction over all values of x must be finite (normalisable)
+
+        -   The first derivatives of the wavefunction in x must be continuous everywhere except when there is an infinite discontinuity in the potential
+
+-   We'll first look at the nature of solutions to Schrödinger's Equation, and then tackle some examples and put Schrödinger to work
+:::
+
+## Solutions of Schrödinger's Equation
+
+::: {style="font-size: 90%;"}
+-   Equation is linear in $\psi$
+
+    -   Superposition principle, if $\psi_1$ and $\psi_2$ are solutions then so is $\psi_1 + \psi_2$
+
+        -   and indeed $A\psi_1 + B\psi_2$
+
+-   Solution solved by eigenfunctions, $\psi_n$, and corresponding eigenvalues, $E_n$
+
+-   Set of all solutions forms an orthogonal basis set
+
+    -   $\int \psi_n \psi_m dx = 0 \;if \; n \neq m$
+
+    -   Can make up any function from linear combination of $\psi$'s
+
+        -   $F(x) = \Sigma \psi_n$
+:::
+
+## Examples of Time Independent Schrödinger Equation
+
+-   Infinite square well
+
+-   Finite square well
+
+-   Harmonic oscillator
+
+-   All of these are 1-D
+
+-   We'll advance to 3-D later
+
+    – Hydrogen atom
+
+    – etc
+
+## Infinite Square Well (Particle in a Box)
+
+:::: columns
+::: {.column width="60%"}
+
+- V(x) has the form
+
+    + V = 0 when $0<x<L$
+    
+    + V = $\infty$ when $x<0 \; or\; x>L$
+    
+:::
+::: {.column width="40%"}
+
+![](images/infinte-well.png)
+
+:::
+::::
+
+## Infinite Square Well - Solutions
+
+- Within the well, the Schrödinger Equation becomes:
+
+<center>$- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} = E \psi$</center>
+
+- General solution has the form
+
+<center>$\psi = A cos(kx) + B\sin(kx)$</center>
+
+- Where
+
+<center>$k = \sqrt{\frac{2mE}{\hbar^2}}$</center>
+
+## ISW - Boundary Conditions
+
+::: {style="font-size: 80%;"}
+
+- Boundary conditions dictate $\psi$ that vanishes at 0 and L
+
+<center>$0 = A cos(k0) + B\sin(k0)$</center>
+
+<center>$0 = A cos(kL) + B\sin(kL)$</center>
+
+- First condition must mean A=0
+    + If A=0 then $\sin(kL) = 0$ and $k = n\pi /L$, n=1, 2, 3..
+        - (not n = 0 because that would give $\psi = 0$ everywhere)
+        
+
+- Means $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
+
+- when we normalise we get
+        
+::::: goals
+::: goals-header
+$\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
+:::
+
+::: goals-container
+:::
+:::::
+
+:::
+
+
+##
+
+![](images/isw-energy.png)
+
+## Conjugated Dyes
+
+:::::::: columns
+:::: {.column width="50%"}
+
+![](images/conj-dye1.png)
+:::
+::: {.column width="50%"}
+
+![](images/conj-dye2.png)
+
+:::
+::::
+
+::: {style="font-size: 80%;"}
+
+- Planar cations
+
+- Number of carbons in chain varies
+
+- End group (R) can be $H$, $CH_3$, etc
+
+- Carbon chain acts like infinite square well
+     + delocalised pi electrons over the length of the molecule between N ions
+     + Free-Electron Molecular Orbital Model
+     
+:::
+
+##
+
+- Potential looks like this:
+
+![](images/conj-dye3.png)
+
+##
+
+- spectra looks like this:
+
+![](images/conj-dye4.png)
+
+## Spectra of Conjugated Dyes
+
+<br>
+
+- Absorption caused by transition from highest filled orbital ($n_{HFO}$) to lowest unfilled orbital ($n_{LUO}$)
+
+    + Get one electron from each carbon plus three from the nitrogens
+    + N = (no of carbons) + 3
+    
+- $n_{HFO} = N/2$ and $n_{LUO} = N/2 + 1$ (Pauli Exclusion)
+
+##
+
+Remember $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$ for infinite square well
+$\Delta E = E_{LUO} – E_{HFO} = \frac{\hbar^2 \pi^2n_{LUO}^2}{2mL^2} - \frac{\hbar^2 \pi^2n_{HFO}^2}{2mL^2}$
+
+$\implies \Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (n_{LUO}^2 - n_{HFO}^2)$
+
+$\implies \Delta E = \frac{\hbar^2 \pi^2}{2mL^2} [(\frac{N}{2} + 1)^2 - (\frac{N}{2})^2]$
+
+$\implies \Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)$
+
+$\Delta E = 6.024 \times10^{-38} (N+1)/ L^2$
+
+taking $h=6.626 \times 10^{-34}Js$ and $m_e = 9.11 \times 10^{-31}kg$
+
+##
+
+- $\Delta E = 6.024 \times10^{-38} (N+1)/ L^2$
+
+- Application to dyes on slide 17 gives:
+
+    + L for 3 carbons is 0.809nm
+    + L for 5 carbons is 1.056nm
+    + L for 7 carbons is 1.307nm
+    
+- Compares OK with C-C bond length of 0.146nm and C=C bond length of 0.134nm
+
+- (remember $E = \frac{hc}{\lambda}$)
+
+## Spectrum of Butadiene
+
+::::: columns
+::: {.column width="50%"}
+
+::: {style="font-size: 80%;"}
+
+- Four carbon molecule
+
+    - Four $\pi$ electrons, N=4
+    
+    - Get $\Delta E = \frac{\hbar^2 \pi^2 n^2}{2mL^2}(N+1) = \frac{5 \hbar^2 \pi^2}{2mL^2}$
+    
+:::
+:::
+::: {.column width="50%"}
+
+
+![](images/butadiene.png)
+
+:::
+::::
+
+::: {style="font-size: 80%;"}
+    
+    
+- Length of molecule is (two double bonds) + (one single bond) + (a bit more at each end, say a total of a single bond)
+
+- This gives L = 0.56nm
+
+- Then $E = 9.61 \times 10^{-19}J$
+
+- And $\lambda_{max}$ = 207nm
+
+- Compares to experimental value of 210nm
+
+- Got to admit agreement is pretty lucky, but still shows power of QM
+
+:::
+
+## Selection Rules for Square Well
+
+- Not all transitions allowed, some have probability=0
+
+- We’ll work out these selection rules for the infinite square well potential
+
+- We’ll also show how longer molecules have stronger absorbtion
+
+##
+<br>
+
+- Incident light causes transition from occupied level to higher previously unoccupied level
+
+- Absorbs energy from light beam
+
+- Strength of light-molecule interaction depends on electric dipole moment of molecule
+
+    + $\epsilon = - \mu .E$ where $\mu$ is dipole moment
+    
+    + $\mu = \Sigma x_i e_i$ where x is position and e is charge
+    
+- Light has long wavelength so E doesn’t depend on x
+
+## 
+
+- In quantum mechanics, the transition dipole moment is given by:
+
+<center>$\mu = \int \psi_f \;ex\; \psi_i dx$</center>
+
+<br>
+
+- When we evaluate this integral for the wavefunctions of the square well, we can see which ones disappear
+
+- They disappear because integral = 0 because of symmetry
+
+- These will be forbidden transitions
+
+##
+
+$\mu = - \int_0^L \psi_{final} \; ex\; \psi_{initial}\; dx$
+
+$\implies \mu = - \frac{2e}{L} \int_0^L x \sin(\frac{n_{final} \pi x}{L}) \; \sin(\frac{n_{initial} \pi x}{L})\; dx$
+
+- but $\sin(x) \sin(y) = \frac{1}{2} [ \cos(x-y) - \cos(x+y)]$
+
+$\implies \mu = - \frac{e}{L} \int_0^L x [\cos(\frac{ \pi x ( n_{final} - n_{initial})}{L}) \;- \; \cos(\frac{ \pi x ( n_{final} + n_{initial})}{L})]\; dx$
+
+##
+
+- do this integration by parts using u = x and $dv = \cos(x)dx$
+
+- gives $\int_0^L x\; \cos(ax)\; dx = [\frac{x}{a} \sin(ax) + \frac{1}{a^2}\cos(ax)]_0^L$
+
+- then 
+
+$\mu = - \frac{e}{L} (\frac{L}{\pi})^2[\frac{1}{n_{diff}^2}(\cos(n_{diff}\pi)-1) - \frac{1}{n_{total}^2}(\cos(n_{total}\pi)-1)$
+
+$+ \frac{1}{n_{diff}} \sin(n_{diff}\pi) - \frac{1}{n_{total}} \sin(n_{total}\pi)]$ 
+
+where $n_{diff} = n_{final} - n_{initial}$ and $n_{total} = n_{final} + n_{initial}$
+
+##
+
+See what happens when n is even or odd
+
+- if n is even then $\cos(n\pi) - 1 = 0$ and $\sin(n\pi) = 0$
+
+$\implies \mu = 0$ when $n_{diff}$ is even and $n_{total}$ is even
+
+- this happens if both $n_{initial}$ and $n_{final}$ are both even or both odd
+
+##
+
+-on the other hand if one is even and the other odd
+
+$\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$
+
+$\implies \mu = \frac{2eL}{\pi^2}[\frac{n_{initial}\times n_{final}}{n_{initial}^2 - n_{final}^2}]$
+
+##
+
+- This all means:
+
+    + No transition if initial and final state have  same parity
+        - i.e. both even or both odd
+    + Transition if initial and final states have opposite parity
+        - ($n_{initial} – n_{final}$) must be odd
+        
+    + Transition strength increases with L
+        - Long molecules absorb strongly
+        - See spectra on page 17
+
+## Equations
+
+::::: columns
+::: {.column width="50%"}
+-   $A = A_0 sin(kx - \omega t)$
+-   $A = e^{i(kx - \omega t)}$)
+-   $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
+-   $\omega = 2 \pi f$
+-   $k = \frac{2 \pi}{\lambda}$
+:::
+
+::: {.columns width="\"50%"}
+-   $v = \frac{\omega}{k}$
+-   \$p = \frac{h}{\lambda} = \hbar k \$
+-   $E = hf = \frac{hc}{\lambda}= \hbar c k$
+-   $v_p = \omega / k$
+-   $v_g = \partial \omega / \partial k$
+-   $\Delta \lambda = \frac{h}{mc} (1 - cos \theta)$
+:::
+:::::
+
+## References
+
+-   [Young & Freedman - chapter 42.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1445){target="_blank"}

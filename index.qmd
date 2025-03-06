@@ -31,20 +31,19 @@ include-in-header:
 
 -   [09 Shrodinger Equation - hydrogen](https://tud.netlify.app/lectures/physics-quantum/09-hydrogen.html){target="_blank"}
 
-
 ## Presentations
 
 -   [February 14th](https://tud.netlify.app/eut-plus/workshop-kickoff-feb14-2025.html){target="_blank"}
 
--   [March 24th](https://tud.netlify.app/phys-clin-discipline){target="_blank"}
+-   [March 24th](https://tud.netlify.app/physics-schoolphys-clin-discipline){target="_blank"}
 
--   [January 13th](https://tud.netlify.app/organisational-change.html){target="_blank"}
+-   [January 13th](https://tud.netlify.app/physics-school/organisational-change.html){target="_blank"}
 
--   [School Introductions](https://tud.netlify.app/school-c){target="_blank"}
+-   [School Introductions](https://tud.netlify.app/physics-school/school-c){target="_blank"}
 
--   [School Research Day](https://tud.netlify.app/school-c-research){target="_blank"}
+-   [School Research Day](https://tud.netlify.app/physics-school/school-c-research){target="_blank"}
 
--   [UPCT May 2024](https://tud.netlify.app/cartegena-May-2024.html){target="_blank"}
+-   [UPCT May 2024](https://tud.netlify.app/eut-plus/cartegena-May-2024.html){target="_blank"}
 
 ## University Rankings
 
@@ -73,7 +72,6 @@ include-in-header:
 -   [Momentum Conservation](https://tud.netlify.app/collision)
 
 -   [Projectile Motion](https://tud.netlify.app/projectile)
-
 
 ## ManTech Lectures
 
