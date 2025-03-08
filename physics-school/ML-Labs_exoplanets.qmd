@@ -1,0 +1,302 @@
+---
+title: "Machine Learning in Astrophysics"
+author:
+  - name: Reading Group - March 13<sup>th</sup> 2025
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "logo.jpg" />
+css: logo.css
+footer: "Astrodata"
+editor: visual
+---
+
+## Summary
+
+Astrophysics is a rich terrain for Data Science techniques. Large amounts of high quality data, freely available, and underanalysed. 
+
+
+:::::::: columns
+:::: {.column width="40%"}
+::: {style="font-size: 90%;"}
+1.  Time Dependent Schrödinger Equation
+2.  Separation of Variables
+    1.  Time Independent Schrödinger Equation
+3.  Boundary Conditions
+4.  Nature of solutions
+    1.  linearity
+    2.  orthonormal
+    3.  basis set
+:::
+::::
+
+::: {.column width="10%"}
+:::
+
+:::: {.column width="40%"}
+::: {style="font-size: 90%;"}
+3.  Mathematics of Wave Packets
+4.  Uncertainty Principle
+5.  Wave Nature of Particles
+6.  Equations
+7.  References
+:::
+::::
+::::::::
+
+## Astrodata
+
+::: {style="font-size: 100%;"}
+
+- astronomy at the forefront of big data
+
+    + seems to come in waves
+    
+    + next up is Vera Rubin and SKA
+
+- data is pretty much always openly available
+
+- pretty well curated
+
+- always interesting to put data from different sources together
+
+:::
+
+## Where to find it
+
+- [Simbad](https://cds.unistra.fr/){target="_blank"} is a good place to start
+
+- [Vera Rubin](https://www.lsst.org/about/dm/data-products){target="_blank"} will be a big deal
+
+- and archives, like the [exoplanet one](https://www.exoplanet.eu/home/){target="_blank"}, or the equivalent from [Nasa](https://exoplanetarchive.ipac.caltech.edu/docs/data.html){target="_blank"}
+
+## How to get it
+
+- there'll be an API
+
+    + if your code includes access to an API, please put it front and centre
+    + makes it easier to adapt when the API changes
+
+- can do something more à la carte
+
+- filter at source
+
+## What's happening in the field
+
+- mountain-top telescopes
+
+- space-based telescopes
+
+- radio-wave arrays
+
+- doing a lot of work in Infra-Red these days
+
+- spectroscopy
+
+- time-domain
+
+## Some key questions
+
+- formation of early universe
+
+- nature of dark matter
+
+- the mysteries of our solar system
+
+- exoplanets
+
+## Exoplanets
+
+
+
+::::columns
+::: {.column width="50%"}
+::: {style="font-size: 70%;"}
+
+
+- almost 6000 confirmed
+
+    + enough to do statistics
+    
+    + loads more candidates
+    
+       - pressing need for follow up studies
+       
+    + lots being discovered in legacy data
+
+- detect by:
+
+    + transits - they pass in front of their host star making them a little dimmer
+    
+    + radial velocity - the host star wobbles as the planet orbits, can be picked up by doppler shift in spectum
+    
+    + note, we never get to directly see the planet
+    
+:::
+:::
+
+::: {.column width="50%"}
+
+![](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){height="80%"}
+
+:::
+::::
+
+##
+
+![](images/GoldRush8.gif)
+    
+## What do we Know
+
+
+1. how far from its sun (from orbital period)
+
+1. measure planet size (how much dimming by transit)
+
+1. planet mass (from how much wobble it causes)
+
+    + these last two give us planet density
+    
+    + can figure out if it's a lump of rock or a ball of gas. And everything in between
+    
+1. Starting to get spectra of exoplanet atmospheres 
+
+
+## Surprises
+
+::: {style="font-size: 80%;"}
+
+- they are so common, seems like default for a star to have planets
+
+    + weren't expecting this, thought they'd be rare
+    
+- most systems have close in planets
+
+    + we just have Mercury at 88 days
+
+- planets migrate
+
+    + find planets in orbits where they couldn't possibly have formed
+    
+    + c.f. hot Jupiters
+
+- beefed up version of Earth is by far most common type
+
+    + nothing like this in our solar system
+    
+- orbits aren't very circular
+
+- __beads-on-a-string__ mechanism quite common
+
+:::
+
+## Where are they (so far)
+
+![](images/milky-way-exoplanets.jpg)
+
+## What comes next
+
+- exoplanet spectra will be a big deal
+
+    + what gasses are in the atmosphere
+    
+    + even isotope abundances ($^{13}C / ^{12}C$ and $^{18}O / ^{16}O$)
+    
+    + look for bio-signatures
+    
+    + look for techno-signatures
+    
+## Our Work
+
+::: {style="font-size: 80%;"}
+
+- most of the heavy lifting done from space (Kepler, TESS.....)
+
+- need ground based follow-up, or indeed discovery
+
+    + possible with modest telescope
+    
+- atmosphere is a big problem
+
+    + differential photometry
+        
+    + if all stars vary simultaneously, it's the atmosphere
+    
+    + if one blinks on its own, could be interesting
+        
+    + need good reference stars
+    
+        - same colour, similar intensity
+        
+        - our job is identifying fields with hosts of _clone_ stars
+
+:::
+
+## TrES-5
+
+<center> ![](images/tres5.png) </center>
+
+##
+
+<center> ![](images/tres5-1.png) </center>
+
+##
+
+:::: columns
+::: {.column width="33%"}
+
+![](images/tres5-actual.png)
+
+
+:::
+::: {.column width="33%"}
+
+
+![](images/tres5-4.png)
+
+
+
+![](images/tres5-6.png)
+
+
+
+
+:::
+::: {.column width="33%"}
+
+
+
+![](images/tres5-9.png)
+
+
+![](images/tres5-10.png)
+
+
+:::
+::::
+
+## What makes a _clone_?
+
+- ideally stellar spectra should be the same
+
+- for most stars, don't have a spectrum, just (5) colours in different wavelength bands
+
+- need some way to assess suitable with this limited information
+
+- time for some machine learning
+
+   + use stars with the full information
+   
+   + use them to infer behaviour for stars where we know less
+
+- 
