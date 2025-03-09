@@ -188,6 +188,16 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 <li><p>can do something more à la carte</p></li>
 <li><p>filter at source</p></li>
 </ul>
+<div class="goals">
+<div class="goals-header">
+<div style="font-size: 35%;">
+<p>“http://dr12.sdss.org/optical/spectrum/view/data/format=csv/spec=lite?” <br> “plateid={plate}&amp;mjd={mjd}&amp;fiberid={fiber}”</p>
+</div>
+</div>
+<div class="goals-container">
+
+</div>
+</div>
 </section>
 <section id="whats-happening-in-the-field" class="slide level2">
 <h2>What’s happening in the field</h2>
@@ -390,6 +400,64 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 </div><div class="column" style="width:60%;">
 <p><img data-src="images/histograms.png"></p>
 </div></div>
+</section>
+<section id="data-handling" class="slide level2">
+<h2>data handling</h2>
+<ul>
+<li><p>not hard to generate lots of data</p>
+<ul>
+<li>we settled for about 5000 pairs</li>
+</ul></li>
+<li><p>split into training (70%), test (15%), and validation (15%)</p></li>
+</ul>
+</section>
+<section id="modelling" class="slide level2">
+<h2>Modelling</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>applied 5 models to our data</p>
+<ul>
+<li>LM, RF, SVR, GBM, GLM</li>
+</ul></li>
+<li><p>SVR did best</p>
+<ul>
+<li>not surprising given nature of problem</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/models.png"></p>
+</div></div>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/residuals-histogram.png" class="quarto-figure quarto-figure-left" height="500"></p>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/correlation-plot.png" class="quarto-figure quarto-figure-center" height="500"></p>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/residuals-plot.png" class="quarto-figure quarto-figure-right" height="500"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="and-now." class="slide level2">
+<h2>and now….</h2>
+<ul>
+<li><p>use this to point at stars</p></li>
+<li><p>calculate benefit of the better reference stars</p></li>
+</ul>
 
 </section>
     </div>

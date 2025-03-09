@@ -63,6 +63,25 @@ Astrophysics is a rich terrain for Data Science techniques. Large amounts of hig
 
 - filter at source
 
+::::: goals
+::: goals-header
+::: {style="font-size: 35%;"}
+
+"http://dr12.sdss.org/optical/spectrum/view/data/format=csv/spec=lite?"
+<br>
+"plateid={plate}&mjd={mjd}&fiberid={fiber}"
+
+
+:::
+:::
+
+::: goals-container
+
+:::
+:::::
+
+
+
 ## What's happening in the field
 
 - mountain-top telescopes
@@ -301,3 +320,63 @@ Astrophysics is a rich terrain for Data Science techniques. Large amounts of hig
 ![](images/histograms.png)
 :::
 ::::
+
+## data handling
+
+- not hard to generate lots of data
+
+    + we settled for about 5000 pairs
+    
+- split into training (70%), test (15%), and validation (15%)
+
+## Modelling
+
+:::: columns
+::: {.column width="50%"}
+
+- applied 5 models to our data
+
+    + LM, RF, SVR, GBM, GLM
+
+- SVR did best
+
+    + not surprising given nature of problem
+
+:::
+::: {.column width="50%"}
+
+    
+![](images/models.png)
+
+:::
+::::
+
+
+
+##
+
+:::: columns
+
+::: {.column width="40%"}
+
+![](images/residuals-histogram.png){fig-align="left" height="500"}
+
+:::
+::: {.column width="30%"}
+
+![](images/correlation-plot.png){fig-align="center" height="500"}
+
+:::
+::: {.column width="30%"}
+
+
+![](images/residuals-plot.png){fig-align="right" height="500"}
+
+:::
+::::
+
+## and now....
+
+- use  this to point at stars
+
+- calculate benefit of the better reference stars
