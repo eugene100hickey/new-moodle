@@ -153,37 +153,6 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
 <p>Astrophysics is a rich terrain for Data Science techniques. Large amounts of high quality data, freely available, and underanalysed.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div style="font-size: 90%;">
-<ol type="1">
-<li>Time Dependent Schrödinger Equation</li>
-<li>Separation of Variables
-<ol type="1">
-<li>Time Independent Schrödinger Equation</li>
-</ol></li>
-<li>Boundary Conditions</li>
-<li>Nature of solutions
-<ol type="1">
-<li>linearity</li>
-<li>orthonormal</li>
-<li>basis set</li>
-</ol></li>
-</ol>
-</div>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:40%;">
-<div style="font-size: 90%;">
-<ol start="3" type="1">
-<li>Mathematics of Wave Packets</li>
-<li>Uncertainty Principle</li>
-<li>Wave Nature of Particles</li>
-<li>Equations</li>
-<li>References</li>
-</ol>
-</div>
-</div></div>
 </section>
 <section id="astrodata" class="slide level2">
 <h2>Astrodata</h2>
@@ -257,14 +226,17 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 </ul></li>
 <li><p>detect by:</p>
 <ul>
-<li><p>transits - they pass in front of their host star making them a little dimmer</p></li>
+<li><p>transits - they pass in front of their host star making them a little dimmer</p>
+<ul>
+<li>also, transit timing variations</li>
+</ul></li>
 <li><p>radial velocity - the host star wobbles as the planet orbits, can be picked up by doppler shift in spectum</p></li>
 <li><p>note, we never get to directly see the planet</p></li>
 </ul></li>
 </ul>
 </div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/exoplanets_by_jaysimons-d9dv6th-small1.jpg"></p>
+<p><img data-src="images/exoplanets_by_jaysimons-d9dv6th-small1.jpg" style="height:80.0%"></p>
 </div></div>
 </section>
 <section id="section" class="slide level2">
@@ -372,6 +344,47 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 </div><div class="column" style="width:33%;">
 <p><img data-src="images/tres5-9.png"></p>
 <p><img data-src="images/tres5-10.png"></p>
+</div></div>
+</section>
+<section id="what-makes-a-clone" class="slide level2">
+<h2>What makes a <em>clone</em>?</h2>
+<ul>
+<li><p>ideally stellar spectra should be the same</p></li>
+<li><p>for most stars, don’t have a spectrum, just (5) colours in different wavelength bands</p></li>
+<li><p>need some way to assess suitable with this limited information</p></li>
+<li><p>time for some machine learning</p>
+<ul>
+<li><p>use stars with the full information</p></li>
+<li><p>use them to infer behaviour for stars where we know less</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+<img data-src="images/spectra.png" class="r-stretch"></section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+
+<img data-src="images/spectra-good.png" class="r-stretch"></section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 80%;">
+<ul>
+<li><p>take correlation between spectra</p>
+<ul>
+<li><p>but correlation always between -1 and +1</p></li>
+<li><p>transform by logit()</p>
+<ul>
+<li><span class="math inline">\(logit(x) = log_e \frac{1+x}{1-x}\)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/histograms.png"></p>
 </div></div>
 
 </section>

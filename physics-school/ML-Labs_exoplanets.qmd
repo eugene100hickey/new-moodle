@@ -26,34 +26,6 @@ editor: visual
 Astrophysics is a rich terrain for Data Science techniques. Large amounts of high quality data, freely available, and underanalysed. 
 
 
-:::::::: columns
-:::: {.column width="40%"}
-::: {style="font-size: 90%;"}
-1.  Time Dependent Schrödinger Equation
-2.  Separation of Variables
-    1.  Time Independent Schrödinger Equation
-3.  Boundary Conditions
-4.  Nature of solutions
-    1.  linearity
-    2.  orthonormal
-    3.  basis set
-:::
-::::
-
-::: {.column width="10%"}
-:::
-
-:::: {.column width="40%"}
-::: {style="font-size: 90%;"}
-3.  Mathematics of Wave Packets
-4.  Uncertainty Principle
-5.  Wave Nature of Particles
-6.  Equations
-7.  References
-:::
-::::
-::::::::
-
 ## Astrodata
 
 ::: {style="font-size: 100%;"}
@@ -137,6 +109,8 @@ Astrophysics is a rich terrain for Data Science techniques. Large amounts of hig
 - detect by:
 
     + transits - they pass in front of their host star making them a little dimmer
+    
+        - also, transit timing variations
     
     + radial velocity - the host star wobbles as the planet orbits, can be picked up by doppler shift in spectum
     
@@ -299,4 +273,31 @@ Astrophysics is a rich terrain for Data Science techniques. Large amounts of hig
    
    + use them to infer behaviour for stars where we know less
 
-- 
+##
+
+![](images/spectra.png)
+
+##
+
+![](images/spectra-good.png)
+
+## 
+
+:::: columns
+::: {.column width="40%"}
+::: {style="font-size: 80%;"}
+- take correlation between spectra
+
+    - but correlation always between -1 and +1
+    
+    - transform by logit() 
+    
+        + $logit(x) = log_e \frac{1+x}{1-x}$
+        
+:::
+:::
+::: {.column width="60%"}
+
+![](images/histograms.png)
+:::
+::::
