@@ -23,174 +23,154 @@ include-in-header:
 
 ## Summary
 
-Astrophysics is a rich terrain for Data Science techniques. Large amounts of high quality data, freely available, and underanalysed. 
+<br> <br> <br>
 
+Astrophysics is a rich terrain for Data Science techniques. Large amounts of high quality data, freely available, and underanalysed.
 
 ## Astrodata
 
 ::: {style="font-size: 100%;"}
+-   astronomy at the forefront of big data
 
-- astronomy at the forefront of big data
+    -   seems to come in waves
 
-    + seems to come in waves
-    
-    + next up is Vera Rubin and SKA
+    -   next up is Vera Rubin and SKA
 
-- data is pretty much always openly available
+-   data is pretty much always openly available
 
-- pretty well curated
+-   pretty well curated
 
-- always interesting to put data from different sources together
-
+-   always interesting to put data from different sources together
 :::
 
 ## Where to find it
 
-- [Simbad](https://cds.unistra.fr/){target="_blank"} is a good place to start
+-   [Simbad](https://cds.unistra.fr/){target="_blank"} is a good place to start
 
-- [Vera Rubin](https://www.lsst.org/about/dm/data-products){target="_blank"} will be a big deal
+-   [Vera Rubin](https://www.lsst.org/about/dm/data-products){target="_blank"} will be a big deal
 
-- and archives, like the [exoplanet one](https://www.exoplanet.eu/home/){target="_blank"}, or the equivalent from [Nasa](https://exoplanetarchive.ipac.caltech.edu/docs/data.html){target="_blank"}
+-   and archives, like the [exoplanet one](https://www.exoplanet.eu/home/){target="_blank"}, or the equivalent from [Nasa](https://exoplanetarchive.ipac.caltech.edu/docs/data.html){target="_blank"}
 
 ## How to get it
 
-- there'll be an API
+-   there'll be an API
 
-    + if your code includes access to an API, please put it front and centre
-    + makes it easier to adapt when the API changes
+    -   if your code includes access to an API, please put it front and centre
+    -   makes it easier to adapt when the API changes
 
-- can do something more à la carte
+-   can do something more à la carte
 
-- filter at source
+-   filter at source
 
-::::: goals
-::: goals-header
+:::::: goals
+:::: goals-header
 ::: {style="font-size: 35%;"}
-
-"http://dr12.sdss.org/optical/spectrum/view/data/format=csv/spec=lite?"
-<br>
-"plateid={plate}&mjd={mjd}&fiberid={fiber}"
-
-
-:::
-:::
-
-::: goals-container
-
-:::
-:::::
-
-
-
-## What's happening in the field
-
-- mountain-top telescopes
-
-- space-based telescopes
-
-- radio-wave arrays
-
-- doing a lot of work in Infra-Red these days
-
-- spectroscopy
-
-- time-domain
-
-## Some key questions
-
-- formation of early universe
-
-- nature of dark matter
-
-- the mysteries of our solar system
-
-- exoplanets
-
-## Exoplanets
-
-
-
-::::columns
-::: {.column width="50%"}
-::: {style="font-size: 70%;"}
-
-
-- almost 6000 confirmed
-
-    + enough to do statistics
-    
-    + loads more candidates
-    
-       - pressing need for follow up studies
-       
-    + lots being discovered in legacy data
-
-- detect by:
-
-    + transits - they pass in front of their host star making them a little dimmer
-    
-        - also, transit timing variations
-    
-    + radial velocity - the host star wobbles as the planet orbits, can be picked up by doppler shift in spectum
-    
-    + note, we never get to directly see the planet
-    
-:::
-:::
-
-::: {.column width="50%"}
-
-![](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){fig-align="right" height="500"}
-
+"http://dr12.sdss.org/optical/spectrum/view/data/format=csv/spec=lite?" <br> "plateid={plate}&mjd={mjd}&fiberid={fiber}"
 :::
 ::::
 
-##
+::: goals-container
+:::
+::::::
+
+## What's happening in the field
+
+-   mountain-top telescopes
+
+-   space-based telescopes
+
+-   radio-wave arrays
+
+-   doing a lot of work in Infra-Red these days
+
+-   spectroscopy
+
+-   time-domain
+
+## Some key questions
+
+-   formation of early universe
+
+-   nature of dark matter
+
+-   the mysteries of our solar system
+
+-   exoplanets
+
+## Exoplanets
+
+:::::: columns
+:::: {.column width="50%"}
+::: {style="font-size: 70%;"}
+-   almost 6000 confirmed
+
+    -   enough to do statistics
+
+    -   loads more candidates
+
+        -   pressing need for follow up studies
+
+    -   lots being discovered in legacy data
+
+-   detect by:
+
+    -   transits - they pass in front of their host star making them a little dimmer
+
+        -   also, transit timing variations
+
+    -   radial velocity - the host star wobbles as the planet orbits, can be picked up by doppler shift in spectum
+
+    -   note, we never get to directly see the planet
+:::
+::::
+
+::: {.column width="50%"}
+![](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){fig-align="right" height="500"}
+:::
+::::::
+
+## 
 
 ![](images/GoldRush8.gif)
-    
+
 ## What do we Know
 
+1.  how far from its sun (from orbital period)
 
-1. how far from its sun (from orbital period)
+2.  measure planet size (how much dimming by transit)
 
-1. measure planet size (how much dimming by transit)
+3.  planet mass (from how much wobble it causes)
 
-1. planet mass (from how much wobble it causes)
+    -   these last two give us planet density
 
-    + these last two give us planet density
-    
-    + can figure out if it's a lump of rock or a ball of gas. And everything in between
-    
-1. Starting to get spectra of exoplanet atmospheres 
+    -   can figure out if it's a lump of rock or a ball of gas. And everything in between
 
+4.  Starting to get spectra of exoplanet atmospheres
 
 ## Surprises
 
 ::: {style="font-size: 80%;"}
+-   they are so common, seems like default for a star to have planets
 
-- they are so common, seems like default for a star to have planets
+    -   weren't expecting this, thought they'd be rare
 
-    + weren't expecting this, thought they'd be rare
-    
-- most systems have close in planets
+-   most systems have close in planets
 
-    + we just have Mercury at 88 days
+    -   we just have Mercury at 88 days
 
-- planets migrate
+-   planets migrate
 
-    + find planets in orbits where they couldn't possibly have formed
-    
-    + c.f. hot Jupiters
+    -   find planets in orbits where they couldn't possibly have formed
 
-- beefed up version of Earth is by far most common type
+    -   c.f. hot Jupiters
 
-    + nothing like this in our solar system
-    
-- orbits aren't very circular
+-   beefed up version of Earth is by far most common type
 
-- __beads-on-a-string__ mechanism quite common
+    -   nothing like this in our solar system
 
+-   orbits aren't very circular
+
+-   **beads-on-a-string** mechanism quite common
 :::
 
 ## Where are they (so far)
@@ -199,184 +179,154 @@ Astrophysics is a rich terrain for Data Science techniques. Large amounts of hig
 
 ## What comes next
 
-- exoplanet spectra will be a big deal
+-   exoplanet spectra will be a big deal
 
-    + what gasses are in the atmosphere
-    
-    + even isotope abundances ($^{13}C / ^{12}C$ and $^{18}O / ^{16}O$)
-    
-    + look for bio-signatures
-    
-    + look for techno-signatures
-    
+    -   what gasses are in the atmosphere
+
+    -   even isotope abundances ($^{13}C / ^{12}C$ and $^{18}O / ^{16}O$)
+
+    -   look for bio-signatures
+
+    -   look for techno-signatures
+
 ## Our Work
 
 ::: {style="font-size: 80%;"}
+-   most of the heavy lifting done from space (Kepler, TESS.....)
 
-- most of the heavy lifting done from space (Kepler, TESS.....)
+-   need ground based follow-up, or indeed discovery
 
-- need ground based follow-up, or indeed discovery
+    -   possible with modest telescope
 
-    + possible with modest telescope
-    
-- atmosphere is a big problem
+-   atmosphere is a big problem
 
-    + differential photometry
-        
-    + if all stars vary simultaneously, it's the atmosphere
-    
-    + if one blinks on its own, could be interesting
-        
-    + need good reference stars
-    
-        - same colour, similar intensity
-        
-        - our job is identifying fields with hosts of _clone_ stars
+    -   differential photometry
 
+    -   if all stars vary simultaneously, it's the atmosphere
+
+    -   if one blinks on its own, could be interesting
+
+    -   need good reference stars
+
+        -   same colour, similar intensity
+
+        -   our job is identifying fields with hosts of *clone* stars
 :::
 
 ## TrES-5
 
-<center> ![](images/tres5.png) </center>
+<center>![](images/tres5.png)</center>
 
-##
+## 
 
-<center> ![](images/tres5-1.png) </center>
+<center>![](images/tres5-1.png)</center>
 
-##
+## 
 
-:::: columns
+:::::: columns
 ::: {.column width="33%"}
-
 ![](images/tres5-actual.png)
-
-
 :::
+
 ::: {.column width="33%"}
-
-
 ![](images/tres5-4.png)
 
-
-
 ![](images/tres5-6.png)
-
-
-
-
 :::
+
 ::: {.column width="33%"}
-
-
-
 ![](images/tres5-9.png)
 
-
 ![](images/tres5-10.png)
-
-
 :::
-::::
+::::::
 
-## What makes a _clone_?
+## What makes a *clone*?
 
-- ideally stellar spectra should be the same
+-   ideally stellar spectra should be the same
 
-- for most stars, don't have a spectrum, just (5) colours in different wavelength bands
+-   for most stars, don't have a spectrum, just (5) colours in different wavelength bands
 
-- need some way to assess suitable with this limited information
+-   need some way to assess suitablity with this limited information
 
-- time for some machine learning
+-   time for some machine learning
 
-   + use stars with the full information
-   
-   + use them to infer behaviour for stars where we know less
+    -   use stars with the full information
 
-##
+    -   use them to infer behaviour for stars where we know less
+
+## 
 
 ![](images/spectra.png)
 
-##
+## 
 
 ![](images/spectra-good.png)
 
 ## 
 
-:::: columns
-::: {.column width="40%"}
+:::::: columns
+:::: {.column width="40%"}
 ::: {style="font-size: 80%;"}
-- take correlation between spectra
+-   take correlation between spectra
 
-    - but correlation always between -1 and +1
-    
-    - transform by logit() 
-    
-        + $logit(x) = log_e \frac{1+x}{1-x}$
-        
-:::
-:::
-::: {.column width="60%"}
+    -   but correlation always between -1 and +1
 
-![](images/histograms.png)
+    -   transform by logit()
+
+        -   $logit(x) = log_e \frac{1+x}{1-x}$
 :::
 ::::
+
+::: {.column width="60%"}
+![](images/histograms.png){height="500"}
+:::
+::::::
 
 ## data handling
 
-- not hard to generate lots of data
+-   not hard to generate lots of data
 
-    + we settled for about 5000 pairs
-    
-- split into training (70%), test (15%), and validation (15%)
+    -   we settled for about 5000 pairs
+
+-   split into training (70%), test (15%), and validation (15%)
 
 ## Modelling
 
-:::: columns
+::::: columns
 ::: {.column width="50%"}
+-   applied 5 models to our data
 
-- applied 5 models to our data
+    -   LM, RF, SVR, GBM, GLM
 
-    + LM, RF, SVR, GBM, GLM
+-   SVR did best
 
-- SVR did best
-
-    + not surprising given nature of problem
-
+    -   not surprising given nature of problem
 :::
-::: {.column width="50%"}
 
-    
+::: {.column width="50%"}
 ![](images/models.png)
-
 :::
-::::
+:::::
 
+## 
 
-
-##
-
-:::: columns
-
+:::::: columns
 ::: {.column width="40%"}
-
 ![](images/residuals-histogram.png){fig-align="left" height="500"}
-
 :::
-::: {.column width="30%"}
 
+::: {.column width="30%"}
 ![](images/correlation-plot.png){fig-align="center" height="500"}
-
 :::
+
 ::: {.column width="30%"}
-
-
 ![](images/residuals-plot.png){fig-align="right" height="500"}
-
 :::
-::::
+::::::
 
 ## and now....
 
-- use  this to point at stars
+-   use this to point at stars
 
-- calculate benefit of the better reference stars
+-   calculate benefit of the better reference stars
