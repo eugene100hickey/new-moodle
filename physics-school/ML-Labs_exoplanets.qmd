@@ -13,12 +13,12 @@ format:
     show-slide-number: all
     chalkboard: true
 logo: logo.jpg
-include-in-header:
-  - text: |
-      <link rel = "shortcut icon" href = "logo.jpg" />
 css: logo.css
 footer: "Astrodata"
 editor: visual
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "img/bullfinch.png" />
 ---
 
 ## Summary
@@ -121,7 +121,7 @@ Astrophysics is a rich terrain for Data Science techniques. Large amounts of hig
 
 ::: {.column width="50%"}
 
-![](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){height="80%"}
+![](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){fig-align="right" height="500"}
 
 :::
 ::::
