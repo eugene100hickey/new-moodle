@@ -406,6 +406,9 @@ $\implies \mu = 0$ when $n_{diff}$ is even and $n_{total}$ is even
 
 ## 
 
+<br>
+<br>
+
 -on the other hand if one of $n_{initial}$ and $n_{final}$ is even and the other odd
 
 <br>
@@ -442,7 +445,7 @@ $\implies \mu = 0$ when $n_{diff}$ is even and $n_{total}$ is even
 
 -  $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
 - $\Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)$
-- $\mu = \frac{2eL}{\pi^2}[\frac{n_{initial}\times n_{final}}{n_{initial}^2 - n_{final}^2}]$
+- $\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$
 
 :::
 ::::
