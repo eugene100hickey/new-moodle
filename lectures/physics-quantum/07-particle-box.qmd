@@ -30,15 +30,10 @@ In our first application of the Schrödinger Equation, we'll look at a particle 
 :::::::: columns
 :::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
-1.  Time Dependent Schrödinger Equation 
+1.  Time Dependent Schrödinger Equation
 2.  Separation of Variables
     1.  Time Independent Schrödinger Equation
-1. Boundary Conditions
-1. Nature of solutions
-    1. linearity
-    2. orthonormal
-    3. basis set
-
+3.  Boundary Conditions
 
 :::
 ::::
@@ -48,11 +43,15 @@ In our first application of the Schrödinger Equation, we'll look at a particle 
 
 :::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
-3.  Mathematics of Wave Packets
-4.  Uncertainty Principle
-5.  Wave Nature of Particles
-6.  Equations
-7.  References
+4.  Nature of solutions
+    +  linearity
+    +  orthonormal
+    +  basis set
+
+3.  Square Examples
+    + conjugated dyes
+    + butadiene
+4.  Selection Rules
 :::
 ::::
 ::::::::
@@ -165,56 +164,52 @@ $\implies$ got ourselves two equations here
 
 ## Infinite Square Well (Particle in a Box)
 
-:::: columns
+::::: columns
 ::: {.column width="60%"}
+-   V(x) has the form
 
-- V(x) has the form
+    -   V = 0 when $0<x<L$
 
-    + V = 0 when $0<x<L$
-    
-    + V = $\infty$ when $x<0 \; or\; x>L$
-    
+    -   V = $\infty$ when $x<0 \; or\; x>L$
 :::
+
 ::: {.column width="40%"}
-
 ![](images/infinte-well.png)
-
 :::
-::::
+:::::
 
 ## Infinite Square Well - Solutions
 
-- Within the well, the Schrödinger Equation becomes:
+-   Within the well, the Schrödinger Equation becomes:
 
 <center>$- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} = E \psi$</center>
 
-- General solution has the form
+-   General solution has the form
 
 <center>$\psi = A cos(kx) + B\sin(kx)$</center>
 
-- Where
+-   Where
 
 <center>$k = \sqrt{\frac{2mE}{\hbar^2}}$</center>
 
 ## ISW - Boundary Conditions
 
-::: {style="font-size: 80%;"}
-
-- Boundary conditions dictate $\psi$ that vanishes at 0 and L
+:::::: {style="font-size: 80%;"}
+-   Boundary conditions dictate $\psi$ that vanishes at 0 and L
 
 <center>$0 = A cos(k0) + B\sin(k0)$</center>
 
 <center>$0 = A cos(kL) + B\sin(kL)$</center>
 
-- First condition must mean A=0
-    + If A=0 then $\sin(kL) = 0$ and $k = n\pi /L$, n=1, 2, 3..
-        - (not n = 0 because that would give $\psi = 0$ everywhere)
-        
+-   First condition must mean A=0
 
-- Means $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
+    -   If A=0 then $\sin(kL) = 0$ and $k = n\pi /L$, n=1, 2, 3..
+        -   (not n = 0 because that would give $\psi = 0$ everywhere)
 
-- when we normalise we get
-        
+-   Means $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
+
+-   when we normalise we get
+
 ::::: goals
 ::: goals-header
 $\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
@@ -223,51 +218,46 @@ $\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
 ::: goals-container
 :::
 :::::
+::::::
 
-:::
-
-
-##
+## 
 
 ![](images/isw-energy.png)
 
 ## Conjugated Dyes
 
-:::::::: columns
-:::: {.column width="50%"}
-
+::::: columns
+::: {.column width="50%"}
 ![](images/conj-dye1.png)
 :::
+
 ::: {.column width="50%"}
-
 ![](images/conj-dye2.png)
-
 :::
-::::
+:::::
 
 ::: {style="font-size: 80%;"}
+-   Planar cations
 
-- Planar cations
+-   Number of carbons in chain varies
 
-- Number of carbons in chain varies
+-   End group (R) can be $H$, $CH_3$, etc
 
-- End group (R) can be $H$, $CH_3$, etc
+-   Carbon chain acts like infinite square well
 
-- Carbon chain acts like infinite square well
-     + delocalised pi electrons over the length of the molecule between N ions
-     + Free-Electron Molecular Orbital Model
-     
+    -   delocalised pi electrons over the length of the molecule between N ions
+    -   Free-Electron Molecular Orbital Model
 :::
 
-##
+## 
 
-- Potential looks like this:
+-   Potential looks like this:
 
 ![](images/conj-dye3.png)
 
-##
+## 
 
-- spectra looks like this:
+-   spectra looks like this:
 
 ![](images/conj-dye4.png)
 
@@ -275,17 +265,16 @@ $\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
 
 <br>
 
-- Absorption caused by transition from highest filled orbital ($n_{HFO}$) to lowest unfilled orbital ($n_{LUO}$)
+-   Absorption caused by transition from highest filled orbital ($n_{HFO}$) to lowest unfilled orbital ($n_{LUO}$)
 
-    + Get one electron from each carbon plus three from the nitrogens
-    + N = (no of carbons) + 3
-    
-- $n_{HFO} = N/2$ and $n_{LUO} = N/2 + 1$ (Pauli Exclusion)
+    -   Get one electron from each carbon plus three from the nitrogens
+    -   N = (no of carbons) + 3
 
-##
+-   $n_{HFO} = N/2$ and $n_{LUO} = N/2 + 1$ (Pauli Exclusion)
 
-Remember $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$ for infinite square well
-$\Delta E = E_{LUO} – E_{HFO} = \frac{\hbar^2 \pi^2n_{LUO}^2}{2mL^2} - \frac{\hbar^2 \pi^2n_{HFO}^2}{2mL^2}$
+## 
+
+Remember $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$ for infinite square well $\Delta E = E_{LUO} – E_{HFO} = \frac{\hbar^2 \pi^2n_{LUO}^2}{2mL^2} - \frac{\hbar^2 \pi^2n_{HFO}^2}{2mL^2}$
 
 $\implies \Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (n_{LUO}^2 - n_{HFO}^2)$
 
@@ -297,132 +286,125 @@ $\Delta E = 6.024 \times10^{-38} (N+1)/ L^2$
 
 taking $h=6.626 \times 10^{-34}Js$ and $m_e = 9.11 \times 10^{-31}kg$
 
-##
+## 
 
-- $\Delta E = 6.024 \times10^{-38} (N+1)/ L^2$
+-   $\Delta E = 6.024 \times10^{-38} (N+1)/ L^2$
 
-- Application to dyes on slide 17 gives:
+-   Application to dyes on slide 17 gives:
 
-    + L for 3 carbons is 0.809nm
-    + L for 5 carbons is 1.056nm
-    + L for 7 carbons is 1.307nm
-    
-- Compares OK with C-C bond length of 0.146nm and C=C bond length of 0.134nm
+    -   L for 3 carbons is 0.809nm
+    -   L for 5 carbons is 1.056nm
+    -   L for 7 carbons is 1.307nm
 
-- (remember $E = \frac{hc}{\lambda}$)
+-   Compares OK with C-C bond length of 0.146nm and C=C bond length of 0.134nm
+
+-   (remember $E = \frac{hc}{\lambda}$)
 
 ## Spectrum of Butadiene
 
-::::: columns
-::: {.column width="50%"}
-
+:::::: columns
+:::: {.column width="50%"}
 ::: {style="font-size: 80%;"}
+-   Four carbon molecule
 
-- Four carbon molecule
+    -   Four $\pi$ electrons, N=4
 
-    - Four $\pi$ electrons, N=4
-    
-    - Get $\Delta E = \frac{\hbar^2 \pi^2 n^2}{2mL^2}(N+1) = \frac{5 \hbar^2 \pi^2}{2mL^2}$
-    
-:::
-:::
-::: {.column width="50%"}
-
-
-![](images/butadiene.png)
-
+    -   Get $\Delta E = \frac{\hbar^2 \pi^2 n^2}{2mL^2}(N+1) = \frac{5 \hbar^2 \pi^2}{2mL^2}$
 :::
 ::::
 
+::: {.column width="50%"}
+![](images/butadiene.png)
+:::
+::::::
+
 ::: {style="font-size: 80%;"}
-    
-    
-- Length of molecule is (two double bonds) + (one single bond) + (a bit more at each end, say a total of a single bond)
+-   Length of molecule is (two double bonds) + (one single bond) + (a bit more at each end, say a total of a single bond)
 
-- This gives L = 0.56nm
+-   This gives L = 0.56nm
 
-- Then $E = 9.61 \times 10^{-19}J$
+-   Then $E = 9.61 \times 10^{-19}J$
 
-- And $\lambda_{max}$ = 207nm
+-   And $\lambda_{max}$ = 207nm
 
-- Compares to experimental value of 210nm
+-   Compares to experimental value of 210nm
 
-- Got to admit agreement is pretty lucky, but still shows power of QM
-
+-   Got to admit agreement is pretty lucky, but still shows power of QM
 :::
 
 ## Selection Rules for Square Well
 
-- Not all transitions allowed, some have probability=0
+-   Not all transitions allowed, some have probability=0
 
-- We’ll work out these selection rules for the infinite square well potential
+-   We’ll work out these selection rules for the infinite square well potential
 
-- We’ll also show how longer molecules have stronger absorbtion
-
-##
-<br>
-
-- Incident light causes transition from occupied level to higher previously unoccupied level
-
-- Absorbs energy from light beam
-
-- Strength of light-molecule interaction depends on electric dipole moment of molecule
-
-    + $\epsilon = - \mu .E$ where $\mu$ is dipole moment
-    
-    + $\mu = \Sigma x_i e_i$ where x is position and e is charge
-    
-- Light has long wavelength so E doesn’t depend on x
+-   We’ll also show how longer molecules have stronger absorbtion
 
 ## 
 
-- In quantum mechanics, the transition dipole moment is given by:
+<br>
+
+-   Incident light causes transition from occupied level to higher previously unoccupied level
+
+-   Absorbs energy from light beam
+
+-   Strength of light-molecule interaction depends on electric dipole moment of molecule
+
+    -   $\epsilon = - \mu .E$ where $\mu$ is dipole moment
+
+    -   $\mu = \Sigma x_i e_i$ where x is position and e is charge
+
+-   Light has long wavelength so E doesn’t depend on x
+
+## 
+
+-   In quantum mechanics, the transition dipole moment is given by:
 
 <center>$\mu = \int \psi_f \;ex\; \psi_i dx$</center>
 
 <br>
 
-- When we evaluate this integral for the wavefunctions of the square well, we can see which ones disappear
+-   When we evaluate this integral for the wavefunctions of the square well, we can see which ones disappear
 
-- They disappear because integral = 0 because of symmetry
+-   They disappear because integral = 0 because of symmetry
 
-- These will be forbidden transitions
+-   These will be forbidden transitions
 
-##
+## 
 
 $\mu = - \int_0^L \psi_{final} \; ex\; \psi_{initial}\; dx$
 
 $\implies \mu = - \frac{2e}{L} \int_0^L x \sin(\frac{n_{final} \pi x}{L}) \; \sin(\frac{n_{initial} \pi x}{L})\; dx$
 
-- but $\sin(x) \sin(y) = \frac{1}{2} [ \cos(x-y) - \cos(x+y)]$
+-   but $\sin(x) \sin(y) = \frac{1}{2} [ \cos(x-y) - \cos(x+y)]$
 
 $\implies \mu = - \frac{e}{L} \int_0^L x [\cos(\frac{ \pi x ( n_{final} - n_{initial})}{L}) \;- \; \cos(\frac{ \pi x ( n_{final} + n_{initial})}{L})]\; dx$
 
-##
+## 
 
-- do this integration by parts using u = x and $dv = \cos(x)dx$
+-   do this integration by parts using u = x and $dv = \cos(x)dx$
 
-- gives $\int_0^L x\; \cos(ax)\; dx = [\frac{x}{a} \sin(ax) + \frac{1}{a^2}\cos(ax)]_0^L$
+-   gives $\int_0^L x\; \cos(ax)\; dx = [\frac{x}{a} \sin(ax) + \frac{1}{a^2}\cos(ax)]_0^L$
 
-- then 
+-   then
 
 $\mu = - \frac{e}{L} (\frac{L}{\pi})^2[\frac{1}{n_{diff}^2}(\cos(n_{diff}\pi)-1) - \frac{1}{n_{total}^2}(\cos(n_{total}\pi)-1)$
 
-$+ \frac{1}{n_{diff}} \sin(n_{diff}\pi) - \frac{1}{n_{total}} \sin(n_{total}\pi)]$ 
+$+ \frac{1}{n_{diff}} \sin(n_{diff}\pi) - \frac{1}{n_{total}} \sin(n_{total}\pi)]$
 
 where $n_{diff} = n_{final} - n_{initial}$ and $n_{total} = n_{final} + n_{initial}$
 
-##
+## 
 
 See what happens when n is even or odd
 
-- if n is even then $\cos(n\pi) - 1 = 0$ and $\sin(n\pi) = 0$
+-   if n is even then $\cos(n\pi) - 1 = 0$ and $\sin(n\pi) = 0$
 
 $\implies \mu = 0$ when $n_{diff}$ is even and $n_{total}$ is even
 
-- this happens if both $n_{initial}$ and $n_{final}$ are both even or both odd
+-   this happens if both $n_{initial}$ and $n_{final}$ are both even or both odd
 
-##
+## 
 
 -on the other hand if one is even and the other odd
 
@@ -430,40 +412,44 @@ $\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$
 
 $\implies \mu = \frac{2eL}{\pi^2}[\frac{n_{initial}\times n_{final}}{n_{initial}^2 - n_{final}^2}]$
 
-##
+## 
 
-- This all means:
+-   This all means:
 
-    + No transition if initial and final state have  same parity
-        - i.e. both even or both odd
-    + Transition if initial and final states have opposite parity
-        - ($n_{initial} – n_{final}$) must be odd
-        
-    + Transition strength increases with L
-        - Long molecules absorb strongly
-        - See spectra on page 17
+    -   No transition if initial and final state have same parity
+        -   i.e. both even or both odd
+    -   Transition if initial and final states have opposite parity
+        -   ($n_{initial} – n_{final}$) must be odd
+    -   Transition strength increases with L
+        -   Long molecules absorb strongly
+        -   See spectra on page 17
 
 ## Equations
 
-::::: columns
+:::: columns
 ::: {.column width="50%"}
--   $A = A_0 sin(kx - \omega t)$
--   $A = e^{i(kx - \omega t)}$)
--   $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
--   $\omega = 2 \pi f$
--   $k = \frac{2 \pi}{\lambda}$
-:::
 
-::: {.columns width="\"50%"}
--   $v = \frac{\omega}{k}$
--   \$p = \frac{h}{\lambda} = \hbar k \$
--   $E = hf = \frac{hc}{\lambda}= \hbar c k$
--   $v_p = \omega / k$
--   $v_g = \partial \omega / \partial k$
--   $\Delta \lambda = \frac{h}{mc} (1 - cos \theta)$
+-   $i \hbar \frac{\partial T}{\partial t} = E \times T(t)$
+- $T(t) = A e^{-iEt/\hbar}$
+- $- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi$
+- $\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
+
+
 :::
-:::::
+::: {.column width="50%"}
+
+-  $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
+- $\Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)$
+- $\mu = \frac{2eL}{\pi^2}[\frac{n_{initial}\times n_{final}}{n_{initial}^2 - n_{final}^2}]$
+
+:::
+::::
 
 ## References
 
--   [Young & Freedman - chapter 42.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1445){target="_blank"}
+-   [Young & Freedman - chapter 40.2](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1361){target="_blank"}
+
+- [Serway & Jewett - chapter 7.4-7.8](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+
+- [Krane - Modern Physics Chapter 5.4](https://library.tudublin.ie/search?/Xkrane+modern+physics&SORT=D/Xkrane+modern+physics&SORT=D&SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&FF=Xkrane+modern+physics&SORT=D&1%2C1%2C){target="_blank"}
+
