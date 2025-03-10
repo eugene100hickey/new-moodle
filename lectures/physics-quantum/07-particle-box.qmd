@@ -390,7 +390,7 @@ $\implies \mu = - \frac{e}{L} \int_0^L x [\cos(\frac{ \pi x ( n_{final} - n_{ini
 
 $\mu = - \frac{e}{L} (\frac{L}{\pi})^2[\frac{1}{n_{diff}^2}(\cos(n_{diff}\pi)-1) - \frac{1}{n_{total}^2}(\cos(n_{total}\pi)-1)$
 
-$+ \frac{1}{n_{diff}} \sin(n_{diff}\pi) - \frac{1}{n_{total}} \sin(n_{total}\pi)]$
+$+ \frac{\pi}{n_{diff}} \sin(n_{diff}\pi) - \frac{\pi}{n_{total}} \sin(n_{total}\pi)]$
 
 where $n_{diff} = n_{final} - n_{initial}$ and $n_{total} = n_{final} + n_{initial}$
 
@@ -406,11 +406,13 @@ $\implies \mu = 0$ when $n_{diff}$ is even and $n_{total}$ is even
 
 ## 
 
--on the other hand if one is even and the other odd
+-on the other hand if one of $n_{initial}$ and $n_{final}$ is even and the other odd
 
-$\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$
+<br>
+<br>
 
-$\implies \mu = \frac{2eL}{\pi^2}[\frac{n_{initial}\times n_{final}}{n_{initial}^2 - n_{final}^2}]$
+<center>$\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$</center>
+
 
 ## 
 
