@@ -258,6 +258,10 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 <h2></h2>
 
 <img data-src="images/GoldRush8.gif" class="r-stretch"></section>
+<section id="where-are-they-so-far" class="slide level2">
+<h2>Where are they (so far)</h2>
+
+<img data-src="images/milky-way-exoplanets.jpg" class="r-stretch"></section>
 <section id="what-do-we-know" class="slide level2">
 <h2>What do we Know</h2>
 <ol type="1">
@@ -297,10 +301,6 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 </ul>
 </div>
 </section>
-<section id="where-are-they-so-far" class="slide level2">
-<h2>Where are they (so far)</h2>
-
-<img data-src="images/milky-way-exoplanets.jpg" class="r-stretch"></section>
 <section id="what-comes-next" class="slide level2">
 <h2>What comes next</h2>
 <ul>
@@ -431,6 +431,18 @@ Reading Group - March 13<sup>th</sup> 2025 <a href="https://orcid.org/0000-0001-
 </div></div>
 </section>
 <section id="section-6" class="slide level2">
+<h2></h2>
+<div style="font-size: 50%;">
+<ul>
+<li><p>Support Vector Regression follows the general principle of Support Vector Machines, but for regression rather than classification. It fits the data using a hyperplane, a plane in high dimensional space. An extra dimension is added using a kernel that facilitates fitting complex relationships. The hyperparameters Cost and 𝜎 are used to reduce overfitting of the data. The work here used a radial basis kernel function (Karatzoglou et al., 2004). A grid search on the hyperparameters Cost (C) and sigma (𝜎) was undertaken for values 8 &lt; C &lt; 25 and 0.08 &lt; 𝜎 &lt; 0.20. The model was optimised based on the RMSE of the training set. The best tune was obtained for C = 20 and 𝜎 = 0.12.</p></li>
+<li><p>Random Forests consist of an ensemble of a large number of decision trees (Breiman, 2001). Each tree is built from different subsamples of the training data. In addition, the split at each node is chosen based on a random subset of features which differs at every split. For regression, the mean of the predicted value from every tree is taken to be the overall predicted value. The work here used the ranger fast implementation of random forests (Wright and Ziegler, 2017). The number of trees was set to 500. The Minimum Node Size was set to be 5, the splitting rule was chosen to be variance. The number of variables to possibly split at each node (mtry) was tuned to be 6.</p></li>
+<li><p>Gradient Boosting uses an iterative series of decision trees where poorly predicted values in the training set are up-weighted in subsequent iterations. Here Friedman’s gradient boosting algorithm (Boehmke and Greenwell, 2019) was used. A grid search on the hyperparameters Number of Boosting Iterations (n.trees), Maximum Tree Depth (interaction.depth), Shrinkage (shrinkage) which corresponds to the Learning Rate, and Minimum Terminal Node Size (n.minobsinnode) was undertaken. The model was optimised based on the RMSE of the training set. The best tune was obtained for n.trees = 100, interaction.depth = 10, n.minobsinnode = 10, and shrinkage = 0.1.</p></li>
+<li><p>Generalised Linear Model fits generalised linear models by optimising the maximum likelihood (Friedman et al., 2010). It implements regularisation via a hyperparameter 𝛼 that varies from 0 (ridge regression) to 1 (lasso regression). It also optimises a regularisation penalty, 𝜆. The best performing parameters here were 𝛼 = 0.1 and 𝜆 = 6.7×10−4</p></li>
+<li><p>Linear Model was the simplest model used in this work. It consisted of refining an intercept as well as coefficients for each of the ten features in the model that minimised the RMSE between predicted and observed logit correlations. The linear model used the MASS R package (Venables and Ripley, 2002). There were no tunable parameters.</p></li>
+</ul>
+</div>
+</section>
+<section id="section-7" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
