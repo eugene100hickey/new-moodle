@@ -34,6 +34,7 @@ In our first application of the Schrödinger Equation, we'll look at a particle 
 2.  Separation of Variables
     1.  Time Independent Schrödinger Equation
 3.  Boundary Conditions
+
 :::
 ::::
 
@@ -43,13 +44,14 @@ In our first application of the Schrödinger Equation, we'll look at a particle 
 :::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
 4.  Nature of solutions
-    -   linearity
-    -   orthonormal
-    -   basis set
-5.  Square Examples
-    -   conjugated dyes
-    -   butadiene
-6.  Selection Rules
+    +  linearity
+    +  orthonormal
+    +  basis set
+
+3.  Square Examples
+    + conjugated dyes
+    + butadiene
+4.  Selection Rules
 :::
 ::::
 ::::::::
@@ -86,7 +88,7 @@ $\implies$ got ourselves two equations here
 
 -   Working with the left (time) side of the equation gives us:
 
-<center>$i \hbar \frac{d T}{d t} = E \times T(t)$</center>
+<center>$i \hbar \frac{\partial T}{\partial t} = E \times T(t)$</center>
 
 -   Solutions to this are fairly straightforward and not that interesting
 
@@ -100,7 +102,7 @@ $\implies$ got ourselves two equations here
 
 -   Get
 
-<center>$- \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + V(x) \psi = E \psi$</center>
+<center>$- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi$</center>
 
 -   This is the time independent Schrödinger Equation
 
@@ -180,7 +182,7 @@ $\implies$ got ourselves two equations here
 
 -   Within the well, the Schrödinger Equation becomes:
 
-<center>$- \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} = E \psi$</center>
+<center>$- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} = E \psi$</center>
 
 -   General solution has the form
 
@@ -404,13 +406,16 @@ $\implies \mu = 0$ when $n_{diff}$ is even and $n_{total}$ is even
 
 ## 
 
-<br> <br>
+<br>
+<br>
 
 -on the other hand if one of $n_{initial}$ and $n_{final}$ is even and the other odd
 
-<br> <br>
+<br>
+<br>
 
 <center>$\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$</center>
+
 
 ## 
 
@@ -426,25 +431,30 @@ $\implies \mu = 0$ when $n_{diff}$ is even and $n_{total}$ is even
 
 ## Equations
 
-::::: columns
+:::: columns
 ::: {.column width="50%"}
--   $i \hbar \frac{d T}{d t} = E \times T(t)$
--   $T(t) = A e^{-iEt/\hbar}$
--   $- \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + V(x) \psi = E \psi$
--   $\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
-:::
 
-::: {.column width="50%"}
--   $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
--   $\Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)$
--   $\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$
+-   $i \hbar \frac{\partial T}{\partial t} = E \times T(t)$
+- $T(t) = A e^{-iEt/\hbar}$
+- $- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi$
+- $\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
+
+
 :::
-:::::
+::: {.column width="50%"}
+
+-  $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
+- $\Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)$
+- $\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$
+
+:::
+::::
 
 ## References
 
 -   [Young & Freedman - chapter 40.2](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1361){target="_blank"}
 
--   [Serway & Jewett - chapter 7.4-7.8](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+- [Serway & Jewett - chapter 7.4-7.8](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
--   [Krane - Modern Physics Chapter 5.4](https://library.tudublin.ie/search?/Xkrane+modern+physics&SORT=D/Xkrane+modern+physics&SORT=D&SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&FF=Xkrane+modern+physics&SORT=D&1%2C1%2C){target="_blank"}
+- [Krane - Modern Physics Chapter 5.4](https://library.tudublin.ie/search?/Xkrane+modern+physics&SORT=D/Xkrane+modern+physics&SORT=D&SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&FF=Xkrane+modern+physics&SORT=D&1%2C1%2C){target="_blank"}
+
