@@ -152,45 +152,85 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
-<p>In our first application of the Schrödinger Equation, we’ll look at a particle in a 1 -dimensional box. This particle is at zero potential in the interval <span class="math inline">\(0 \leq x \leq a\)</span> but cannot move outside these bounds.</p>
+<p>For the next application of the Schrödinger Equation, we’ll look at a particle undergoing simple harmonic motion (SHO). This particle is in a parabolic potential and classically exhibits the kind of motion typical of pendula or stretched springs.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:100%;">
 <div style="font-size: 90%;">
 <ol type="1">
-<li>Time Dependent Schrödinger Equation</li>
-<li>Separation of Variables
-<ol type="1">
-<li>Time Independent Schrödinger Equation</li>
-</ol></li>
-<li>Boundary Conditions</li>
-<li>Nature of solutions
-<ol type="1">
-<li>linearity</li>
-<li>orthonormal</li>
-<li>basis set</li>
-</ol></li>
-</ol>
-</div>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:40%;">
-<div style="font-size: 90%;">
-<ol start="3" type="1">
-<li>Mathematics of Wave Packets</li>
-<li>Uncertainty Principle</li>
-<li>Wave Nature of Particles</li>
+<li>Wavefunctions revisited</li>
+<li>The SHO potential</li>
+<li>Hermite polynomials</li>
+<li>SHO energy levels</li>
+<li>Applications</li>
 <li>Equations</li>
 <li>References</li>
 </ol>
 </div>
+</div><div class="column" style="width:00%;">
+
+</div><div class="column" style="width:40%;">
+<div style="font-size: 90%;">
+
+</div>
 </div></div>
+</section>
+<section id="properties-of-wavefunctions" class="slide level2">
+<h2>Properties of Wavefunctions</h2>
+<ul>
+<li><p>the Schrödinger Equation is just a differential equation</p></li>
+<li><p>various solutions depend on:</p>
+<ul>
+<li>the potential <span class="math inline">\(V(x)\)</span></li>
+<li>the boundary conditions
+<ul>
+<li>these lead to <strong>quantisation</strong></li>
+</ul></li>
+</ul></li>
+<li><p>in general, get a family of solutions with different <span class="math inline">\(\psi_n\)</span> corresponding to different <span class="math inline">\(E_n\)</span></p></li>
+</ul>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<ul>
+<li><p><span class="math inline">\(\psi_n\)</span> is normalisable (Hilbert space)</p>
+<ul>
+<li><span class="math inline">\(\int_{-\infty}^{+\infty} \psi_n(x)^2 dx = 1\)</span></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>the <span class="math inline">\(\psi_n\)</span>’s are orthogonal</p>
+<ul>
+<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} \psi_n \psi_m dx = 0\)</span></p></li>
+<li><p>form a basis set</p>
+<ul>
+<li><span class="math inline">\(g(x) = \Sigma_{n=0}^\infty a_n \psi_n\)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<h3 id="operators">operators</h3>
+<div style="font-size: 85%;">
+<ul>
+<li><p><span class="math inline">\(\psi(x)\)</span> carries all the information we can get about measurements we’ll get on the particle</p>
+<ul>
+<li><p><span class="math inline">\(\bar{x} = \int_{-\infty}^{+\infty} \psi_n(x) x \psi_n(x) dx\)</span> gives average particle position</p></li>
+<li><p><span class="math inline">\(\bar{x^2} = \int_{-\infty}^{+\infty} \psi_n(x) x^2 \psi_n(x) dx\)</span> gives average of position squared</p></li>
+<li><p><span class="math inline">\(\sqrt{\bar{x}^2 - \bar{x^2}}\)</span> = spread of particle position</p></li>
+<li><p><span class="math inline">\(\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{\partial}{\partial x} \psi_n(x) dx = \vec{p_x}\)</span> gives particle momentum</p></li>
+<li><p><span class="math inline">\(\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{\partial}{\partial z} - z \frac{\partial}{\partial y}) \psi_n(x) dx = \vec{L_x}\)</span> gives particle angular momentum</p></li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section id="simple-harmonic-oscillator-sho" class="slide level2">
 <h2>Simple Harmonic Oscillator (SHO)</h2>
-<div style="font-size: 90%;">
+<div style="font-size: 80%;">
 <ul>
 <li>Something like a pendulum
 <ul>
@@ -209,7 +249,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </ul>
 </div>
 </section>
-<section id="section" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 
 <img data-src="images/sho-potential.png" class="r-stretch"></section>
@@ -223,7 +263,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>try: <span class="math inline">\(\psi(x) = C e^{\frac{- \alpha x^2}{2}}\)</span> where <span class="math inline">\(\alpha = \frac{m \omega}{\hbar}\)</span></p></li>
 </ul>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <ul>
 <li><p>Putting back into our Schrödinger Equation and equating powers of x we get:</p>
@@ -262,11 +302,11 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <section id="sho-energy-levels" class="slide level2">
 <h2>SHO Energy Levels</h2>
 <ul>
-<li>gives family of energy levels givenn by <span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></li>
+<li>gives family of energy levels given by <span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></li>
 </ul>
 
 <img data-src="images/sho-energy-levels.png" class="r-stretch"></section>
-<section id="section-2" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 <ul>
 <li><p>Energy levels evenly spaced, separation <span class="math inline">\(= \hbar \omega\)</span></p></li>
@@ -279,30 +319,24 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <p>– See wavefunctions on next page</p></li>
 </ul>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 
 <img data-src="images/sho-wavefunction.png" class="r-stretch"></section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:100%;">
 <ul>
-<li><span class="math inline">\(A = A_0 sin(kx - \omega t)\)</span></li>
-<li><span class="math inline">\(A = e^{i(kx - \omega t)}\)</span>)</li>
-<li><span class="math inline">\(\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0\)</span></li>
-<li><span class="math inline">\(\omega = 2 \pi f\)</span></li>
-<li><span class="math inline">\(k = \frac{2 \pi}{\lambda}\)</span></li>
+<li><em><span class="math inline">\(V(x) = ½ kx^2 = ½ m \omega ^2x^2\)</span></em></li>
+<li><em><span class="math inline">\(\omega = \sqrt{k/m} = 2 \pi f\)</span></em></li>
+<li><span class="math inline">\(\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}\)</span></li>
+<li><span class="math inline">\(N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}\)</span></li>
+<li><span class="math inline">\(H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}\)</span></li>
+<li><em><span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></em></li>
 </ul>
-</div><div class="columns" width="&quot;50%">
-<ul>
-<li><span class="math inline">\(v = \frac{\omega}{k}\)</span></li>
-<li>$p = = k $</li>
-<li><span class="math inline">\(E = hf = \frac{hc}{\lambda}= \hbar c k\)</span></li>
-<li><span class="math inline">\(v_p = \omega / k\)</span></li>
-<li><span class="math inline">\(v_g = \partial \omega / \partial k\)</span></li>
-<li><span class="math inline">\(\Delta \lambda = \frac{h}{mc} (1 - cos \theta)\)</span></li>
-</ul>
+</div><div class="columns" width="0%">
+
 </div>
 </div>
 </section>

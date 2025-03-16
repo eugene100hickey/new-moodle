@@ -26,7 +26,7 @@ include-in-header:
 
 <br> <br> <br>
 
-Astrophysics is a rich terrain for Data Science techniques. Large amounts of high quality data, freely available, and underanalysed.
+Astrophysics is a rich terrain for Data Science techniques. Large amounts of high quality data, freely available, and under-analysed.
 
 ## Astrodata
 
@@ -136,7 +136,7 @@ Astrophysics is a rich terrain for Data Science techniques. Large amounts of hig
 
 ## Where are they (so far)
 
-![Image from JPL  ](images/milky-way-exoplanets.jpg){data-credits="Image from JPL"}
+![Image from JPL](images/milky-way-exoplanets.jpg){data-credits="Image from JPL"}
 
 ## What do we Know
 

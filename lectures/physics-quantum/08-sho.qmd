@@ -23,52 +23,98 @@ editor: visual
 
 ## Summary
 
-In our first application of the Schrödinger Equation, we'll look at a particle in a 1 -dimensional box. This particle is at zero potential in the interval $0 \leq x \leq a$ but cannot move outside these bounds.
+For the next application of the Schrödinger Equation, we'll look at a particle undergoing simple harmonic motion (SHO). This particle is in a parabolic potential and classically exhibits the kind of motion typical of pendula or stretched springs.
 
 ## Contents
 
 :::::::: columns
-:::: {.column width="40%"}
+:::: {.column width="100%"}
 ::: {style="font-size: 90%;"}
-1.  Time Dependent Schrödinger Equation
-2.  Separation of Variables
-    1.  Time Independent Schrödinger Equation
-3.  Boundary Conditions
-4.  Nature of solutions
-    1.  linearity
-    2.  orthonormal
-    3.  basis set
-:::
-::::
-
-::: {.column width="10%"}
-:::
-
-:::: {.column width="40%"}
-::: {style="font-size: 90%;"}
-3.  Mathematics of Wave Packets
-4.  Uncertainty Principle
-5.  Wave Nature of Particles
+1.  Wavefunctions revisited
+2.  The SHO potential
+3.  Hermite polynomials
+1.  SHO energy levels
+1. Applications
 6.  Equations
 7.  References
 :::
 ::::
-::::::::
 
-## Simple Harmonic Oscillator  (SHO)
+::: {.column width="00%"}
+:::
 
+:::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
 
-- Something like a pendulum
-    + a system rocking back and forth about an equilibrium position
-    + Obeys Hooke’s Law: $F=-kx$
-    + Has elastic energies $V(x) = ½ kx^2 = ½ m \omega ^2x^2$
-    + $\omega = \sqrt{k/m}$ is the angular velocity $= 2 \pi f$
-    - Important in analysis of molecular vibrations
-    - Molecular bond not quite a simple harmonic system but good approximation for small vibrations
-    - Can look at departures from the ideal
-        - Anharmonic terms
-        - Perturbation theory (later on in course)
+:::
+::::
+::::::::
+
+## Properties  of Wavefunctions
+
+- the Schrödinger Equation is just a differential equation
+
+- various solutions depend on:
+
+    - the potential $V(x)$
+    - the boundary conditions
+        - these lead to __quantisation__
+    
+- in general, get a family of solutions with different $\psi_n$ corresponding to different $E_n$
+
+##
+
+- $\psi_n$ is normalisable (Hilbert space)
+
+    - $\int_{-\infty}^{+\infty} \psi_n(x)^2 dx = 1$
+    
+<br>
+    
+- the $\psi_n$'s are orthogonal
+
+    - $\int_{-\infty}^{+\infty} \psi_n \psi_m dx = 0$
+    
+
+    
+    - form a basis set
+    
+        - $g(x) = \Sigma_{n=0}^\infty a_n \psi_n$
+        
+        
+##
+
+### operators
+
+::: {style="font-size: 85%;"}
+
+- $\psi(x)$ carries all the information we can get about measurements we'll get on the particle
+
+    + $\bar{x} = \int_{-\infty}^{+\infty} \psi_n(x) x \psi_n(x) dx$ gives average particle position
+    
+    + $\bar{x^2} = \int_{-\infty}^{+\infty} \psi_n(x) x^2 \psi_n(x) dx$ gives average of position squared
+    
+    + $\sqrt{\bar{x}^2 - \bar{x^2}}$ = spread of particle position
+    
+    + $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{\partial}{\partial x} \psi_n(x) dx = \vec{p_x}$ gives particle momentum
+    
+    - $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{\partial}{\partial z} - z \frac{\partial}{\partial y}) \psi_n(x) dx = \vec{L_x}$ gives particle angular momentum
+
+
+:::
+
+## Simple Harmonic Oscillator (SHO)
+
+::: {style="font-size: 80%;"}
+-   Something like a pendulum
+    -   a system rocking back and forth about an equilibrium position
+    -   Obeys Hooke’s Law: $F=-kx$
+    -   Has elastic energies $V(x) = ½ kx^2 = ½ m \omega ^2x^2$
+    -   $\omega = \sqrt{k/m}$ is the angular velocity $= 2 \pi f$
+    -   Important in analysis of molecular vibrations
+    -   Molecular bond not quite a simple harmonic system but good approximation for small vibrations
+    -   Can look at departures from the ideal
+        -   Anharmonic terms
+        -   Perturbation theory (later on in course)
 :::
 
 ## 
@@ -83,89 +129,82 @@ $V = \frac{1}{2} m \omega^2 x^2$
 
 $\implies - \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial ^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi$
 
-- To be normalisable, need a solution for $\psi$ that goes to zero as x goes to $\infty$
+-   To be normalisable, need a solution for $\psi$ that goes to zero as x goes to $\infty$
 
-- try: $\psi(x) = C e^{\frac{- \alpha x^2}{2}}$ where $\alpha = \frac{m \omega}{\hbar}$
+-   try: $\psi(x) = C e^{\frac{- \alpha x^2}{2}}$ where $\alpha = \frac{m \omega}{\hbar}$
 
-##
+## 
 
-- Putting back into our Schrödinger Equation and equating powers of x we get:
+-   Putting back into our Schrödinger Equation and equating powers of x we get:
 
-    + $E = ½ \hbar \omega$
-    
-- This is first of a series of solutions given by the general formula:
+    -   $E = ½ \hbar \omega$
 
-    + $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
-    
-    + role of $N_{\nu}$ is to normalise wavefunction
-    
-        - $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
-        
+-   This is first of a series of solutions given by the general formula:
+
+    -   $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
+
+    -   role of $N_{\nu}$ is to normalise wavefunction
+
+        -   $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
+
 ## Hermite Polynomials
 
-- $H_{\nu}(x)$ are the __Hermite Polynomials__
+-   $H_{\nu}(x)$ are the **Hermite Polynomials**
 
-:::: columns
+::::: columns
 ::: {.column width="50%"}
+-   $H_0(x) = 1$
 
-- $H_0(x) = 1$
-    
-- $H_1(x) = 2x$
-    
-- $H_2(x) = -2 + 4x^2$
+-   $H_1(x) = 2x$
 
+-   $H_2(x) = -2 + 4x^2$
 :::
+
 ::: {.column width="50%"}
+-   $H_3(x) = -12x + 8x^3$
 
-- $H_3(x) = -12x + 8x^3$
-    
-- $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
-    
+-   $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
 :::
-::::
+:::::
 
 ## SHO Energy Levels
 
-- gives family of energy levels givenn by $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
+-   gives family of energy levels given by $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
 
 ![](images/sho-energy-levels.png)
 
-##
+## 
 
-- Energy levels evenly spaced, separation $= \hbar \omega$
+-   Energy levels evenly spaced, separation $= \hbar \omega$
 
-- Lowest possible energy is not zero, it’s $½\hbar \omega$
+-   Lowest possible energy is not zero, it’s $½\hbar \omega$
 
-    - By the way, this is consistent with uncertainty principle
+    -   By the way, this is consistent with uncertainty principle
 
-- Quantum harmonic oscillator can stretch to extents that, classically, wouldn’t be allowed
+-   Quantum harmonic oscillator can stretch to extents that, classically, wouldn’t be allowed
 
-- As they quantum number, , gets bigger and bigger the wavefunction starts to look more like classical case
+-   As they quantum number, , gets bigger and bigger the wavefunction starts to look more like classical case
 
     – See wavefunctions on next page
 
-##
+## 
 
 ![](images/sho-wavefunction.png)
 
 ## Equations
 
 ::::: columns
-::: {.column width="50%"}
--   $A = A_0 sin(kx - \omega t)$
--   $A = e^{i(kx - \omega t)}$)
--   $\frac{\partial^2A}{\partial x^2}-(\frac{k}{\omega})^2 \frac{\partial^2A}{\partial x^2} = 0$
--   $\omega = 2 \pi f$
--   $k = \frac{2 \pi}{\lambda}$
+::: {.column width="100%"}
+-   _$V(x) = ½ kx^2 = ½ m \omega ^2x^2$_
+-   _$\omega = \sqrt{k/m} = 2 \pi f$_
+- $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
+- $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
+- $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
+-  _$E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$_
 :::
 
-::: {.columns width="\"50%"}
--   $v = \frac{\omega}{k}$
--   \$p = \frac{h}{\lambda} = \hbar k \$
--   $E = hf = \frac{hc}{\lambda}= \hbar c k$
--   $v_p = \omega / k$
--   $v_g = \partial \omega / \partial k$
--   $\Delta \lambda = \frac{h}{mc} (1 - cos \theta)$
+::: {.columns width="0%"}
+
 :::
 :::::
 
