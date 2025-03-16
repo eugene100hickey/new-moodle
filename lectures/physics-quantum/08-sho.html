@@ -152,7 +152,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
-<p>For the next application of the Schrödinger Equation, we’ll look at a particle undergoing simple harmonic motion (SHO). This particle is in a parabolic potential and classically exhibits the kind of motion typical of pendula or stretched springs.</p>
+<p>For the next application of the Schrödinger Equation, we’ll look at a particle undergoing simple harmonic motion (SHO). This particle is in a parabolic potential and classically exhibits the kind of motion typical of pendula or stretched springs. This is typical of vibrational modes in molecules.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
@@ -324,13 +324,34 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <h2></h2>
 
 <img data-src="images/sho-wavefunction.png" class="r-stretch"></section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<div style="font-size: 75%;">
+<ul>
+<li><p>The strongest infrared band in CO occurs at <span class="math inline">\(2143cm^{-1}\)</span>. Find the force constant, <span class="math inline">\(k=m \omega^2\)</span> for the C=O bond (m is the reduced mass, <span class="math inline">\(m = \frac{m_1m_2}{m_1 + m_2}\)</span>) where <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span> are the masses of an ion of carbon and of oxygen (<span class="math inline">\(m_{oxygen} = 2.66 \times 10^{-26}kg\)</span> and <span class="math inline">\(m_{carbon} = 1.99 \times 10^{-26}kg\)</span>)</p></li>
+<li><p>from <span class="math inline">\(E = \frac{hc}{\lambda}\)</span> we get:</p>
+<ul>
+<li><span class="math inline">\(E = 2143 \times 1.988 \times 10^{-23} = 4.26 \times 10^{-20}J\)</span></li>
+</ul></li>
+<li><p>from <span class="math inline">\(E = \hbar \omega\)</span> we get:</p>
+<ul>
+<li><span class="math inline">\(\omega =  \frac{4.26 \times 10^{-20}}{6.626 \times 10^{-34}} = 6.43 \times 10^{13} rads/s\)</span></li>
+</ul></li>
+<li><p>from <span class="math inline">\(m = \frac{m_1m_2}{m_1 + m_2}\)</span> we get:</p>
+<ul>
+<li><span class="math inline">\(m = \frac{2.66 \times 10^{-26} \times 1.99 \times 10^{-26}}{2.66 \times 10^{-26} + 1.99 \times 10^{-26}} = 1.14 \times 10^{-26}kg\)</span></li>
+</ul></li>
+<li><p>finally <span class="math inline">\(k=m \omega^2 = 1.14 \times 10^{-26} \times (6.43 \times 10^{13})^2 = 47.13\:N/m\)</span></p></li>
+</ul>
+</div>
+</section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><em><span class="math inline">\(V(x) = ½ kx^2 = ½ m \omega ^2x^2\)</span></em></li>
-<li><em><span class="math inline">\(\omega = \sqrt{k/m} = 2 \pi f\)</span></em></li>
+<li><span class="math inline">\(V(x) = ½ kx^2 = ½ m \omega ^2x^2\)</span></li>
+<li><span class="math inline">\(\omega = \sqrt{k/m} = 2 \pi f\)</span></li>
 <li><span class="math inline">\(\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}\)</span></li>
 <li><span class="math inline">\(\alpha = \frac{m \omega}{\hbar}\)</span></li>
 </ul>
@@ -339,7 +360,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><span class="math inline">\(\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}\)</span></li>
 <li><span class="math inline">\(N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}\)</span></li>
 <li><span class="math inline">\(H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}\)</span></li>
-<li><em><span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></em></li>
+<li><span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></li>
 </ul>
 </div></div>
 </section>

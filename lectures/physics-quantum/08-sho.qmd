@@ -23,7 +23,7 @@ editor: visual
 
 ## Summary
 
-For the next application of the Schrödinger Equation, we'll look at a particle undergoing simple harmonic motion (SHO). This particle is in a parabolic potential and classically exhibits the kind of motion typical of pendula or stretched springs.
+For the next application of the Schrödinger Equation, we'll look at a particle undergoing simple harmonic motion (SHO). This particle is in a parabolic potential and classically exhibits the kind of motion typical of pendula or stretched springs. This is typical of vibrational modes in molecules.
 
 ## Contents
 
@@ -33,8 +33,8 @@ For the next application of the Schrödinger Equation, we'll look at a particle 
 1.  Wavefunctions revisited
 2.  The SHO potential
 3.  Hermite polynomials
-1.  SHO energy levels
-1. Applications
+4.  SHO energy levels
+5.  Applications
 6.  Equations
 7.  References
 :::
@@ -45,61 +45,54 @@ For the next application of the Schrödinger Equation, we'll look at a particle 
 
 :::: {.column width="40%"}
 ::: {style="font-size: 90%;"}
-
 :::
 ::::
 ::::::::
 
-## Properties  of Wavefunctions
+## Properties of Wavefunctions
 
-- the Schrödinger Equation is just a differential equation
+-   the Schrödinger Equation is just a differential equation
 
-- various solutions depend on:
+-   various solutions depend on:
 
-    - the potential $V(x)$
-    - the boundary conditions
-        - these lead to __quantisation__
-    
-- in general, get a family of solutions with different $\psi_n$ corresponding to different $E_n$
+    -   the potential $V(x)$
+    -   the boundary conditions
+        -   these lead to **quantisation**
 
-##
+-   in general, get a family of solutions with different $\psi_n$ corresponding to different $E_n$
 
-- $\psi_n$ is normalisable (Hilbert space)
+## 
 
-    - $\int_{-\infty}^{+\infty} \psi_n(x)^2 dx = 1$
-    
+-   $\psi_n$ is normalisable (Hilbert space)
+
+    -   $\int_{-\infty}^{+\infty} \psi_n(x)^2 dx = 1$
+
 <br>
-    
-- the $\psi_n$'s are orthogonal
 
-    - $\int_{-\infty}^{+\infty} \psi_n \psi_m dx = 0$
-    
+-   the $\psi_n$'s are orthogonal
 
-    
-    - form a basis set
-    
-        - $g(x) = \Sigma_{n=0}^\infty a_n \psi_n$
-        
-        
-##
+    -   $\int_{-\infty}^{+\infty} \psi_n \psi_m dx = 0$
+
+    -   form a basis set
+
+        -   $g(x) = \Sigma_{n=0}^\infty a_n \psi_n$
+
+## 
 
 ### operators
 
 ::: {style="font-size: 85%;"}
+-   $\psi(x)$ carries all the information we can get about measurements we'll get on the particle
 
-- $\psi(x)$ carries all the information we can get about measurements we'll get on the particle
+    -   $\bar{x} = \int_{-\infty}^{+\infty} \psi_n(x) x \psi_n(x) dx$ gives average particle position
 
-    + $\bar{x} = \int_{-\infty}^{+\infty} \psi_n(x) x \psi_n(x) dx$ gives average particle position
-    
-    + $\bar{x^2} = \int_{-\infty}^{+\infty} \psi_n(x) x^2 \psi_n(x) dx$ gives average of position squared
-    
-    + $\sqrt{\bar{x}^2 - \bar{x^2}}$ = spread of particle position
-    
-    + $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{d}{d x} \psi_n(x) dx = \vec{p_x}$ gives particle momentum
-    
-    - $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{d}{d z} - z \frac{d}{d y}) \psi_n(x) dx = \vec{L_x}$ gives particle angular momentum
+    -   $\bar{x^2} = \int_{-\infty}^{+\infty} \psi_n(x) x^2 \psi_n(x) dx$ gives average of position squared
 
+    -   $\sqrt{\bar{x}^2 - \bar{x^2}}$ = spread of particle position
 
+    -   $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{d}{d x} \psi_n(x) dx = \vec{p_x}$ gives particle momentum
+
+    -   $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{d}{d z} - z \frac{d}{d y}) \psi_n(x) dx = \vec{L_x}$ gives particle angular momentum
 :::
 
 ## Simple Harmonic Oscillator (SHO)
@@ -138,7 +131,7 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 -   Putting back into our Schrödinger Equation and equating powers of x we get:
 
     -   $\alpha = sqrt{\frac{mk}{\hbar^2}}$
-    - $E = ½ \hbar \omega$
+    -   $E = ½ \hbar \omega$
 
 -   This is first of a series of solutions given by the general formula:
 
@@ -192,25 +185,44 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 ![](images/sho-wavefunction.png)
 
+## Example
+
+::: {style="font-size: 75%;"}
+
+- The strongest infrared band in CO occurs at $2143cm^{-1}$. Find the force constant, $k=m \omega^2$ for the C=O bond (m is the reduced mass, $m = \frac{m_1m_2}{m_1 + m_2}$) where $m_1$ and $m_2$ are the masses of an ion of carbon and of oxygen ($m_{oxygen} = 2.66 \times 10^{-26}kg$ and $m_{carbon} = 1.99 \times 10^{-26}kg$)
+
+- from $E = \frac{hc}{\lambda}$ we get:
+
+    - $E = 2143 \times 1.988 \times 10^{-23} = 4.26 \times 10^{-20}J$
+
+- from $E = \hbar \omega$ we get:
+
+    - $\omega =  \frac{4.26 \times 10^{-20}}{6.626 \times 10^{-34}} = 6.43 \times 10^{13} rads/s$
+    
+- from $m = \frac{m_1m_2}{m_1 + m_2}$ we get:
+
+    - $m = \frac{2.66 \times 10^{-26} \times 1.99 \times 10^{-26}}{2.66 \times 10^{-26} + 1.99 \times 10^{-26}} = 1.14 \times 10^{-26}kg$ 
+
+- finally $k=m \omega^2 = 1.14 \times 10^{-26} \times (6.43 \times 10^{13})^2 = 47.13\:N/m$
+
+
+:::
+
 ## Equations
 
 ::::: columns
 ::: {.column width="50%"}
-
--   _$V(x) = ½ kx^2 = ½ m \omega ^2x^2$_
--   _$\omega = \sqrt{k/m} = 2 \pi f$_
-- $\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}$ 
-- $\alpha = \frac{m \omega}{\hbar}$
-
+-   $V(x) = ½ kx^2 = ½ m \omega ^2x^2$
+-   $\omega = \sqrt{k/m} = 2 \pi f$
+-   $\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}$
+-   $\alpha = \frac{m \omega}{\hbar}$
 :::
 
 ::: {.column width="50%"}
-
-- $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
-- $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
-- $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
--  _$E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$_
-
+-   $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
+-   $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
+-   $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
+-   $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
 :::
 :::::
 
