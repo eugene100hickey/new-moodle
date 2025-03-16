@@ -222,8 +222,8 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p><span class="math inline">\(\bar{x} = \int_{-\infty}^{+\infty} \psi_n(x) x \psi_n(x) dx\)</span> gives average particle position</p></li>
 <li><p><span class="math inline">\(\bar{x^2} = \int_{-\infty}^{+\infty} \psi_n(x) x^2 \psi_n(x) dx\)</span> gives average of position squared</p></li>
 <li><p><span class="math inline">\(\sqrt{\bar{x}^2 - \bar{x^2}}\)</span> = spread of particle position</p></li>
-<li><p><span class="math inline">\(\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{\partial}{\partial x} \psi_n(x) dx = \vec{p_x}\)</span> gives particle momentum</p></li>
-<li><p><span class="math inline">\(\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{\partial}{\partial z} - z \frac{\partial}{\partial y}) \psi_n(x) dx = \vec{L_x}\)</span> gives particle angular momentum</p></li>
+<li><p><span class="math inline">\(\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{d}{d x} \psi_n(x) dx = \vec{p_x}\)</span> gives particle momentum</p></li>
+<li><p><span class="math inline">\(\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{d}{d z} - z \frac{d}{d y}) \psi_n(x) dx = \vec{L_x}\)</span> gives particle angular momentum</p></li>
 </ul></li>
 </ul>
 </div>
@@ -255,9 +255,9 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <img data-src="images/sho-potential.png" class="r-stretch"></section>
 <section id="apply-schrödinger-equation" class="slide level2">
 <h2>Apply Schrödinger Equation</h2>
-<p><span class="math inline">\(- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial ^2} + V \psi = E\psi\)</span></p>
+<p><span class="math inline">\(- \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d ^2} + V \psi = E\psi\)</span></p>
 <p><span class="math inline">\(V = \frac{1}{2} m \omega^2 x^2\)</span></p>
-<p><span class="math inline">\(\implies - \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial ^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi\)</span></p>
+<p><span class="math inline">\(\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi\)</span></p>
 <ul>
 <li><p>To be normalisable, need a solution for <span class="math inline">\(\psi\)</span> that goes to zero as x goes to <span class="math inline">\(\infty\)</span></p></li>
 <li><p>try: <span class="math inline">\(\psi(x) = C e^{\frac{- \alpha x^2}{2}}\)</span> where <span class="math inline">\(\alpha = \frac{m \omega}{\hbar}\)</span></p></li>
@@ -268,6 +268,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ul>
 <li><p>Putting back into our Schrödinger Equation and equating powers of x we get:</p>
 <ul>
+<li><span class="math inline">\(\alpha = sqrt{\frac{mk}{\hbar^2}}\)</span></li>
 <li><span class="math inline">\(E = ½ \hbar \omega\)</span></li>
 </ul></li>
 <li><p>This is first of a series of solutions given by the general formula:</p>
@@ -326,19 +327,21 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
 <div class="columns">
-<div class="column" style="width:100%;">
+<div class="column" style="width:50%;">
 <ul>
 <li><em><span class="math inline">\(V(x) = ½ kx^2 = ½ m \omega ^2x^2\)</span></em></li>
 <li><em><span class="math inline">\(\omega = \sqrt{k/m} = 2 \pi f\)</span></em></li>
+<li><span class="math inline">\(\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}\)</span></li>
+<li><span class="math inline">\(\alpha = \frac{m \omega}{\hbar}\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
 <li><span class="math inline">\(\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}\)</span></li>
 <li><span class="math inline">\(N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}\)</span></li>
 <li><span class="math inline">\(H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}\)</span></li>
 <li><em><span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></em></li>
 </ul>
-</div><div class="columns" width="0%">
-
-</div>
-</div>
+</div></div>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>

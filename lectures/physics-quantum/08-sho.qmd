@@ -95,9 +95,9 @@ For the next application of the Schrödinger Equation, we'll look at a particle 
     
     + $\sqrt{\bar{x}^2 - \bar{x^2}}$ = spread of particle position
     
-    + $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{\partial}{\partial x} \psi_n(x) dx = \vec{p_x}$ gives particle momentum
+    + $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{d}{d x} \psi_n(x) dx = \vec{p_x}$ gives particle momentum
     
-    - $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{\partial}{\partial z} - z \frac{\partial}{\partial y}) \psi_n(x) dx = \vec{L_x}$ gives particle angular momentum
+    - $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{d}{d z} - z \frac{d}{d y}) \psi_n(x) dx = \vec{L_x}$ gives particle angular momentum
 
 
 :::
@@ -123,11 +123,11 @@ For the next application of the Schrödinger Equation, we'll look at a particle 
 
 ## Apply Schrödinger Equation
 
-$- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial ^2} + V \psi = E\psi$
+$- \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d ^2} + V \psi = E\psi$
 
 $V = \frac{1}{2} m \omega^2 x^2$
 
-$\implies - \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial ^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi$
+$\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi$
 
 -   To be normalisable, need a solution for $\psi$ that goes to zero as x goes to $\infty$
 
@@ -137,7 +137,8 @@ $\implies - \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial ^2} + \frac{1}{2
 
 -   Putting back into our Schrödinger Equation and equating powers of x we get:
 
-    -   $E = ½ \hbar \omega$
+    -   $\alpha = sqrt{\frac{mk}{\hbar^2}}$
+    - $E = ½ \hbar \omega$
 
 -   This is first of a series of solutions given by the general formula:
 
@@ -194,16 +195,21 @@ $\implies - \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial ^2} + \frac{1}{2
 ## Equations
 
 ::::: columns
-::: {.column width="100%"}
+::: {.column width="50%"}
+
 -   _$V(x) = ½ kx^2 = ½ m \omega ^2x^2$_
 -   _$\omega = \sqrt{k/m} = 2 \pi f$_
+- $\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}$ 
+- $\alpha = \frac{m \omega}{\hbar}$
+
+:::
+
+::: {.column width="50%"}
+
 - $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
 - $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
 - $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
 -  _$E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$_
-:::
-
-::: {.columns width="0%"}
 
 :::
 :::::
