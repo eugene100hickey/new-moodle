@@ -66,6 +66,8 @@ For the next application of the Schrödinger Equation, we'll look at a particle 
 -   $\psi_n$ is normalisable (Hilbert space)
 
     -   $\int_{-\infty}^{+\infty} \psi_n(x)^2 dx = 1$
+    
+    (assumes real valued $\psi$, otherwise $\int_{-\infty}^{+\infty} \psi_n^*(x)  \psi_n(x) dx = 1$)
 
 <br>
 
@@ -128,18 +130,22 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 ## 
 
+::: {style="font-size: 90%;"}
+
 -   Putting back into our Schrödinger Equation and equating powers of x we get:
 
-    -   $\alpha = sqrt{\frac{mk}{\hbar^2}}$
+    -   $\alpha = \sqrt{\frac{mk}{\hbar^2}}$
     -   $E = ½ \hbar \omega$
 
 -   This is first of a series of solutions given by the general formula:
 
-    -   $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
+    -   $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{- \alpha x^2}{2}}$
 
     -   role of $N_{\nu}$ is to normalise wavefunction
 
         -   $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
+
+:::
 
 ## Hermite Polynomials
 
@@ -165,7 +171,7 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 -   gives family of energy levels given by $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
 
-![](images/sho-energy-levels.png)
+![from openstax](images/sho-energy-levels.png)
 
 ## 
 
@@ -188,24 +194,21 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 ## Example
 
 ::: {style="font-size: 75%;"}
+-   The strongest infrared band in CO occurs at $2143cm^{-1}$. Find the force constant, $k=m \omega^2$ for the C=O bond (m is the reduced mass, $m = \frac{m_1m_2}{m_1 + m_2}$) where $m_1$ and $m_2$ are the masses of an ion of carbon and of oxygen ($m_{oxygen} = 2.66 \times 10^{-26}kg$ and $m_{carbon} = 1.99 \times 10^{-26}kg$)
 
-- The strongest infrared band in CO occurs at $2143cm^{-1}$. Find the force constant, $k=m \omega^2$ for the C=O bond (m is the reduced mass, $m = \frac{m_1m_2}{m_1 + m_2}$) where $m_1$ and $m_2$ are the masses of an ion of carbon and of oxygen ($m_{oxygen} = 2.66 \times 10^{-26}kg$ and $m_{carbon} = 1.99 \times 10^{-26}kg$)
+-   from $E = \frac{hc}{\lambda}$ we get:
 
-- from $E = \frac{hc}{\lambda}$ we get:
+    -   $E = 2143 \times 1.988 \times 10^{-23} = 4.26 \times 10^{-20}J$
 
-    - $E = 2143 \times 1.988 \times 10^{-23} = 4.26 \times 10^{-20}J$
+-   from $E = \hbar \omega$ we get:
 
-- from $E = \hbar \omega$ we get:
+    -   $\omega =  \frac{4.26 \times 10^{-20}}{6.626 \times 10^{-34}} = 6.43 \times 10^{13} rads/s$
 
-    - $\omega =  \frac{4.26 \times 10^{-20}}{6.626 \times 10^{-34}} = 6.43 \times 10^{13} rads/s$
-    
-- from $m = \frac{m_1m_2}{m_1 + m_2}$ we get:
+-   from $m = \frac{m_1m_2}{m_1 + m_2}$ we get:
 
-    - $m = \frac{2.66 \times 10^{-26} \times 1.99 \times 10^{-26}}{2.66 \times 10^{-26} + 1.99 \times 10^{-26}} = 1.14 \times 10^{-26}kg$ 
+    -   $m = \frac{2.66 \times 10^{-26} \times 1.99 \times 10^{-26}}{2.66 \times 10^{-26} + 1.99 \times 10^{-26}} = 1.14 \times 10^{-26}kg$
 
-- finally $k=m \omega^2 = 1.14 \times 10^{-26} \times (6.43 \times 10^{13})^2 = 47.13\:N/m$
-
-
+-   finally $k=m \omega^2 = 1.14 \times 10^{-26} \times (6.43 \times 10^{13})^2 = 47.13\:N/m$
 :::
 
 ## Equations
@@ -215,11 +218,11 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 -   $V(x) = ½ kx^2 = ½ m \omega ^2x^2$
 -   $\omega = \sqrt{k/m} = 2 \pi f$
 -   $\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}$
--   $\alpha = \frac{m \omega}{\hbar}$
+-   $\alpha = \frac{m \omega}{\hbar} = \sqrt{\frac{mk}{\hbar^2}}$
 :::
 
 ::: {.column width="50%"}
--   $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}$
+-   $\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{- \alpha x^2}{2}}$
 -   $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
 -   $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
 -   $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
@@ -229,3 +232,5 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 ## References
 
 -   [Young & Freedman - chapter 42.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1445){target="_blank"}
+
+- [openstax - simple harmonic oscilator](https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator){target="_blank"}

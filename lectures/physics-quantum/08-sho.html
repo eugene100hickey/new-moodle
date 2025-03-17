@@ -198,7 +198,8 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p><span class="math inline">\(\psi_n\)</span> is normalisable (Hilbert space)</p>
 <ul>
 <li><span class="math inline">\(\int_{-\infty}^{+\infty} \psi_n(x)^2 dx = 1\)</span></li>
-</ul></li>
+</ul>
+<p>(assumes real valued <span class="math inline">\(\psi\)</span>, otherwise <span class="math inline">\(\int_{-\infty}^{+\infty} \psi_n^*(x)  \psi_n(x) dx = 1\)</span>)</p></li>
 </ul>
 <p><br></p>
 <ul>
@@ -265,21 +266,23 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
+<div style="font-size: 90%;">
 <ul>
 <li><p>Putting back into our Schrödinger Equation and equating powers of x we get:</p>
 <ul>
-<li><span class="math inline">\(\alpha = sqrt{\frac{mk}{\hbar^2}}\)</span></li>
+<li><span class="math inline">\(\alpha = \sqrt{\frac{mk}{\hbar^2}}\)</span></li>
 <li><span class="math inline">\(E = ½ \hbar \omega\)</span></li>
 </ul></li>
 <li><p>This is first of a series of solutions given by the general formula:</p>
 <ul>
-<li><p><span class="math inline">\(\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}\)</span></p></li>
+<li><p><span class="math inline">\(\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{- \alpha x^2}{2}}\)</span></p></li>
 <li><p>role of <span class="math inline">\(N_{\nu}\)</span> is to normalise wavefunction</p>
 <ul>
 <li><span class="math inline">\(N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}\)</span></li>
 </ul></li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="hermite-polynomials" class="slide level2">
 <h2>Hermite Polynomials</h2>
@@ -306,7 +309,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li>gives family of energy levels given by <span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></li>
 </ul>
 
-<img data-src="images/sho-energy-levels.png" class="r-stretch"></section>
+<img data-src="images/sho-energy-levels.png" class="r-stretch quarto-figure-center"><p class="caption">from openstax</p></section>
 <section id="section-4" class="slide level2">
 <h2></h2>
 <ul>
@@ -353,11 +356,11 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><span class="math inline">\(V(x) = ½ kx^2 = ½ m \omega ^2x^2\)</span></li>
 <li><span class="math inline">\(\omega = \sqrt{k/m} = 2 \pi f\)</span></li>
 <li><span class="math inline">\(\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}\)</span></li>
-<li><span class="math inline">\(\alpha = \frac{m \omega}{\hbar}\)</span></li>
+<li><span class="math inline">\(\alpha = \frac{m \omega}{\hbar} = \sqrt{\frac{mk}{\hbar^2}}\)</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <ul>
-<li><span class="math inline">\(\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{-x^2}{2}}\)</span></li>
+<li><span class="math inline">\(\psi(x) = N_{\nu} H_{\nu}(x) e^{\frac{- \alpha x^2}{2}}\)</span></li>
 <li><span class="math inline">\(N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}\)</span></li>
 <li><span class="math inline">\(H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}\)</span></li>
 <li><span class="math inline">\(E_{\nu} = (\nu + \frac{1}{2})\hbar \omega\)</span></li>
@@ -367,7 +370,8 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <section id="references" class="slide level2">
 <h2>References</h2>
 <ul>
-<li><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1445" target="_blank">Young &amp; Freedman - chapter 42.3</a></li>
+<li><p><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1445" target="_blank">Young &amp; Freedman - chapter 42.3</a></p></li>
+<li><p><a href="https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator" target="_blank">openstax - simple harmonic oscilator</a></p></li>
 </ul>
 
 </section>
