@@ -259,6 +259,7 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 -   $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
 -   $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
 -   $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
+
 :::
 :::::
 
