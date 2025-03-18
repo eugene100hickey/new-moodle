@@ -190,6 +190,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </ul></li>
 </ul></li>
 <li><p>in general, get a family of solutions with different <span class="math inline">\(\psi_n\)</span> corresponding to different <span class="math inline">\(E_n\)</span></p></li>
+<li><p>write <span class="math inline">\(\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + V(x) \psi = E\psi\)</span> <span class="math inline">\(\implies H \psi = E \psi\)</span> where <span class="math inline">\(H\)</span> is the <strong>Hamiltonian</strong></p></li>
 </ul>
 </section>
 <section id="section" class="slide level2">
@@ -348,11 +349,36 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </ul>
 </div>
 </section>
+<section id="ladder-operators" class="slide level2">
+<h2>Ladder Operators</h2>
+<ul>
+<li><p>Schrödinger Equation is <span class="math inline">\(\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi\)</span></p></li>
+<li><p>rearrange: <span class="math inline">\(\frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right)\psi = E\psi\)</span></p></li>
+<li><p>looks like a difference of squares; <span class="math inline">\(u^2 + v^2 = (u-iv)(u+iv)\)</span></p>
+<ul>
+<li>not quite, as here we have <strong>operators</strong>, not values</li>
+</ul></li>
+<li><p><span class="math inline">\(a_{\pm} = \frac{1}{\sqrt{2m}}(\frac{\hbar}{i} \frac{d}{dx} \pm im\omega x)\)</span></p></li>
+<li><p>get <span class="math inline">\(a_- a_+ = \frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right) + \frac{1}{2}\hbar \omega\)</span></p></li>
+</ul>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<p>-ordering matters</p>
+<ul>
+<li><p><span class="math inline">\(a_+ a_- = \frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right) - \frac{1}{2}\hbar \omega\)</span></p></li>
+<li><p>looking back at our Schrödinger Equation:</p></li>
+<li><p><span class="math inline">\((a_+ a_-  + \frac{1}{2}\hbar \omega) \psi = E \psi\)</span></p></li>
+<li><p>can show <span class="math inline">\(a_+ \psi_n\)</span> satisfies the SE with energy <span class="math inline">\(E_n + \hbar \omega\)</span></p></li>
+<li><p>likewise <span class="math inline">\(a_- \psi_n\)</span> satisfies the SE with energy <span class="math inline">\(E_n - \hbar \omega\)</span></p></li>
+</ul>
+</section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
+<li><span class="math inline">\(\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi\)</span></li>
 <li><span class="math inline">\(V(x) = ½ kx^2 = ½ m \omega ^2x^2\)</span></li>
 <li><span class="math inline">\(\omega = \sqrt{k/m} = 2 \pi f\)</span></li>
 <li><span class="math inline">\(\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}\)</span></li>
@@ -372,6 +398,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ul>
 <li><p><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1445" target="_blank">Young &amp; Freedman - chapter 42.3</a></p></li>
 <li><p><a href="https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator" target="_blank">openstax - simple harmonic oscilator</a></p></li>
+<li><p><a href="https://library.tudublin.ie/record=b1229083">Griffith Intro to QM - 2.3</a></p></li>
 </ul>
 
 </section>
