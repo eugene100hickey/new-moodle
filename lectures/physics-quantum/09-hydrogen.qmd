@@ -64,24 +64,173 @@ Separation of variables will lead to three equations, each of which will configu
 
 ## 
 
+- Hydrogen atom potential, V, due to electrostatic attraction of nucleus
+
+
+- This is spherically symmetrical, makes sense to switch to spherical polar coords
+
+- Time independent Shrödinger equations becomes
+
+
 ${\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\partial }{\partial r}}\left(r^{2}{\frac {\partial \psi }{\partial r}}\right)+{\frac {1}{r^{2}\sin \theta }}{\frac {\partial }{\partial \theta }}\left(\sin \theta {\frac {\partial \psi }{\partial \theta }}\right)+{\frac {1}{r^{2}\sin ^{2}\theta }}{\frac {\partial ^{2}\psi }{\partial \varphi ^{2}}}\right]-{\frac {e^{2}}{4\pi \varepsilon _{0}r}}\psi =E\psi }$
 
-## Boundary Conditions
+##
 
-::: {style="font-size: 75%;"}
--   Solving problems using Time independent Schrödinger Equation means
+::: {style="font-size: 90%;"}
 
-    -   Applying different natures of the potential, V
+- Assume that potential, V, just depends on r, not $\theta$ or $\phi$
 
-    -   But also using boundary conditions, constraints on the wavefunction that tell us about the possible solutions
 
-        -   Wavefunction must be a continuous single valued function of position and time
+    + True for hydrogen (or He+, Li++, Be3+, etc)
+    
+    + Pretty true for most ions and atoms
+    
+    + Lousy for molecules
+    
+    + We’ll see that the solution to
 
-        -   The integral of the squared value of the wavefunction over all values of x must be finite (normalisable)
+${\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\partial }{\partial r}}\left(r^{2}{\frac {\partial \psi }{\partial r}}\right)+{\frac {1}{r^{2}\sin \theta }}{\frac {\partial }{\partial \theta }}\left(\sin \theta {\frac {\partial \psi }{\partial \theta }}\right)+{\frac {1}{r^{2}\sin ^{2}\theta }}{\frac {\partial ^{2}\psi }{\partial \varphi ^{2}}}\right] \\ -{\frac {e^{2}}{4\pi \varepsilon _{0}r}}\psi =E\psi }$
 
-        -   The first derivatives of the wavefunction in x must be continuous everywhere except when there is an infinite discontinuity in the potential
+- gives us......
 
--   We'll first look at the nature of solutions to Schrödinger's Equation, and then tackle some examples and put Schrödinger to work
+:::
+
+##
+
+![](images/ptable.png)
+
+##
+
+- Separation of variables
+
+
+- Consider $\psi(r, \theta, \phi) = R(r) Y(\theta, \phi)$
+
+- Divide through by $\psi$ and multiply by $r^2$
+to get
+
+- $-\frac{\hbar^2}{2m} \frac{1}{R} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial R}{\partial r} \right) + r^2V - r^2E = \\ \frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin\theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial Y}{\partial \theta} + \frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin^2\theta} \frac {\partial ^{2}Y }{\partial \varphi ^{2}}$
+
+
+
+## 
+
+
+ - Left side just depends on r, right side just depends on $\theta$ and $\phi$
+
+
+-  Then they must both be equal to a constant
+
+- Let this equal $-\lambda$, say
+
+- $-\frac{\hbar^2}{2m} \frac{1}{R} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial R}{\partial r} \right) + r^2V - r^2E = -\lambda$
+
+- $\frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin\theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial Y}{\partial \theta} + \frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin^2\theta} \frac {\partial ^{2}Y }{\partial \varphi ^{2}} = -\lambda$
+
+
+##
+
+- Leave aside radial part for the moment
+
+- Further separate the angular terms
+
+- Put $Y(\theta, \phi) = \Theta(\theta) \times \Phi(\phi)$
+
+- Divide through by $Y$ and multiply by $\sin^2\theta$
+
+- $\frac{\hbar^{2}}{2m} \frac{\sin\theta}{\Theta} \sin\theta \frac{\partial\Theta }{\partial \theta}  + \lambda \sin^2 \theta  = -\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{\partial^2 \Phi}{\partial \phi^2}$
+
+##
+
+- Left hand side depends just on $\theta$
+
+- Right hand side depends just on $\phi$
+
+- Must both be equal to some constant, $\nu$ say
+
+- $\frac{\hbar^{2}}{2m} \frac{\sin\theta}{\Theta} \sin\theta \frac{\partial\Theta }{\partial \theta}  + \lambda \sin^2 \theta = \nu$
+
+
+- $-\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{\partial^2 \Phi}{\partial \phi^2} = \nu$
+
+##
+
+- $\Phi$ part is easy
+
+    -  $-\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{\partial^2 \Phi}{\partial \phi^2} = \nu$
+    
+    - gives solution $\Phi = A e ^{ \pm i \sqrt{\frac{2m\nu}{\hbar^2}} \phi }$
+    
+- this must be single valued so:
+
+- $\Phi(\phi + 2\pi) = \Phi(\phi)$
+
+     $\implies e ^{ \pm i \sqrt{\frac{2m\nu}{\hbar^2}} 2\pi } = 1$
+
+     $\implies \sqrt{\frac{2m\nu}{\hbar^2}} = m$
+
+- where $m$ is some integer; positive, negative, or zero
+
+## 
+
+- subbing back into $\Phi$ we get
+
+    $\Phi = \frac{1}{\sqrt{2\pi} e^{im\phi}$
+    
+- factor $\frac{1}{\sqrt{2\pi}$ is first step in normalising
+
+- we now have our first quantum number, $m$
+
+##
+
+- Solution for $\Theta$ is more complex
+
+- Get Legendre polynomials
+
+- These are akin to Hermite polynomials we met with the SHO
+
+##
+
+The three separated equations are:
+
+- $\frac{\hbar^2}{2m} \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial R}{\partial r} \right) + \left[\frac{e^2}{4\pi\epsilon_0r} +  E - \frac{\lambda}{r^2}\right]R = 0$
+
+- $\frac{\hbar^{2}}{2m} \frac{1}{\sin\theta}  \frac{d}{d\theta} \sin\theta \frac{\partial\Theta }{\partial \theta}  + \left[ \lambda - \frac{\nu}{\sin^2 \theta} \right]\Theta  = 0$
+
+
+- $\frac{\hbar^{2}}{2m} \frac{\partial^2 \Phi}{\partial \phi^2}  + \nu \Phi = 0$
+
+##
+
+::: {style="font-size: 80%;"}
+
+- Each equation gives a quantum number
+
+    – $\Phi$ equation as we’ve seen gives $m$
+    
+    - This is the z component of angular momentum
+    
+    - Called magnetic quantum number
+
+– $\Theta$ equation will give ℓ where ℓ(ℓ+1)
+
+    - where ℓ is the total angular momentum
+    
+    -  Called orbital quantum number
+
+
+– R equation gives n
+
+    - Called principle quantum number
+
+- $\Phi$ quantisation comes from need to be single valued
+
+- Other two come from truncating a polynomial
+
+    – otherwise wavefunction couldn’t be kept finite at large r
+
+    – We wouldn’t be able to normalise $\Psi$
+
 :::
 
 ## Solutions of Schrödinger's Equation
