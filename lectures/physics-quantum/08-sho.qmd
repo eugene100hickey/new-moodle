@@ -1,5 +1,5 @@
 ---
-title: "07-Shrodinger Equation <br> Simple Harmonic Oscillator"
+title: "08-Shrodinger Equation <br> Simple Harmonic Oscillator"
 author:
   - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
