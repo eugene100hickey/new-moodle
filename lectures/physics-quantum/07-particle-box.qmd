@@ -72,7 +72,7 @@ In our first application of the Schrödinger Equation, we'll look at a particle 
 
 -   Get:
 
-<center>$i \hbar \frac{1}{T} \frac{\partial T}{\partial t} = - \frac{1}{\psi} \frac{\hbar^2}{2m} \frac{\partial ^2 \Psi}{\partial x^2} + V(x)$</center>
+<center>$i \hbar \frac{1}{T} \frac{\partial T}{\partial t} = - \frac{1}{\psi} \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x)$</center>
 
 <br>
 

@@ -61,15 +61,14 @@ For the next application of the Schrödinger Equation, we'll look at a particle 
 
 -   in general, get a family of solutions with different $\psi_n$ corresponding to different $E_n$
 
-- write $\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + V(x) \psi = E\psi$
-$\implies H \psi = E \psi$ where $H$ is the __Hamiltonian__
+-   write $\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + V(x) \psi = E\psi$ $\implies H \psi = E \psi$ where $H$ is the **Hamiltonian**
 
 ## 
 
 -   $\psi_n$ is normalisable (Hilbert space)
 
     -   $\int_{-\infty}^{+\infty} \psi_n(x)^2 dx = 1$
-    
+
     (assumes real valued $\psi$, otherwise $\int_{-\infty}^{+\infty} \psi_n^*(x)  \psi_n(x) dx = 1$)
 
 <br>
@@ -95,9 +94,9 @@ $\implies H \psi = E \psi$ where $H$ is the __Hamiltonian__
 
     -   $\sqrt{\bar{x}^2 - \bar{x^2}}$ = spread of particle position
 
-    -   $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{d}{d x} \psi_n(x) dx = \vec{p_x}$ gives particle momentum
+    -   $-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  \frac{d}{d x} \psi_n(x) dx = \vec{p_x}$ gives particle momentum
 
-    -   $\bar{x} =-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{d}{d z} - z \frac{d}{d y}) \psi_n(x) dx = \vec{L_x}$ gives particle angular momentum
+    -   $-i\hbar \int_{-\infty}^{+\infty} \psi_n(x)  (y \frac{d}{d z} - z \frac{d}{d y}) \psi_n(x) dx = \vec{L_x}$ gives particle angular momentum
 :::
 
 ## Simple Harmonic Oscillator (SHO)
@@ -133,8 +132,9 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 ## 
 
-::: {style="font-size: 90%;"}
+<br>  
 
+::: {style="font-size: 90%;"}
 -   Putting back into our Schrödinger Equation and equating powers of x we get:
 
     -   $\alpha = \sqrt{\frac{mk}{\hbar^2}}$
@@ -147,7 +147,6 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
     -   role of $N_{\nu}$ is to normalise wavefunction
 
         -   $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
-
 :::
 
 ## Hermite Polynomials
@@ -172,7 +171,7 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 ## SHO Energy Levels
 
--   gives family of energy levels given by $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
+-   gives family of energy levels given by $E_n = (n + \frac{1}{2})\hbar \omega$
 
 ![from openstax](images/sho-energy-levels.png)
 
@@ -186,7 +185,7 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 -   Quantum harmonic oscillator can stretch to extents that, classically, wouldn’t be allowed
 
--   As they quantum number, , gets bigger and bigger the wavefunction starts to look more like classical case
+-   As the quantum number, $n$, gets bigger and bigger the wavefunction starts to look more like classical case
 
     – See wavefunctions on next page
 
@@ -216,38 +215,37 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 ## Ladder Operators
 
-- Schrödinger Equation is $\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi$
+-   Schrödinger Equation is $\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi$
 
-- rearrange: $\frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right)\psi = E\psi$
+-   rearrange: $\frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right)\psi = E\psi$
 
-- looks like a difference of squares; $u^2 + v^2 = (u-iv)(u+iv)$
+-   looks like a difference of squares; $u^2 + v^2 = (u-iv)(u+iv)$
 
-    - not quite, as here we have __operators__, not values
-    
-- $a_{\pm} = \frac{1}{\sqrt{2m}}(\frac{\hbar}{i} \frac{d}{dx} \pm im\omega x)$
+    -   not quite, as here we have **operators**, not values
 
-- get $a_- a_+ = \frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right) + \frac{1}{2}\hbar \omega$
+-   $a_{\pm} = \frac{1}{\sqrt{2m}}(\frac{\hbar}{i} \frac{d}{dx} \pm im\omega x)$
 
-##
+-   get $a_- a_+ = \frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right) + \frac{1}{2}\hbar \omega$
 
+## 
 
 -ordering matters
 
-- $a_+ a_- = \frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right) - \frac{1}{2}\hbar \omega$
+-   $a_+ a_- = \frac{1}{2m} \left( (\frac{\hbar}{i}\frac {d}{d x})^2 + (m \omega x)^2 \right) - \frac{1}{2}\hbar \omega$
 
-- looking back at our Schrödinger Equation:
+-   looking back at our Schrödinger Equation:
 
-- $(a_+ a_-  + \frac{1}{2}\hbar \omega) \psi = E \psi$
+-   $(a_+ a_-  + \frac{1}{2}\hbar \omega) \psi = E \psi$
 
-- can show $a_+ \psi_n$ satisfies the SE with energy $E_n + \hbar \omega$
+-   can show $a_+ \psi_n$ satisfies the SE with energy $E_n + \hbar \omega$
 
-- likewise $a_- \psi_n$ satisfies the SE with energy $E_n - \hbar \omega$
+-   likewise $a_- \psi_n$ satisfies the SE with energy $E_n - \hbar \omega$
 
 ## Equations
 
 ::::: columns
 ::: {.column width="50%"}
-- $\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi$
+-   $\frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 x^2 \psi = E\psi$
 -   $V(x) = ½ kx^2 = ½ m \omega ^2x^2$
 -   $\omega = \sqrt{k/m} = 2 \pi f$
 -   $\psi_0(x) = C e^{\frac{- \alpha x^2}{2}}$
@@ -259,7 +257,6 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 -   $N_{\nu} = \sqrt{\frac{1}{2^{\nu} \nu ! \sqrt{\pi}}}$
 -   $H_{\nu}(x) = (-1)^{\nu} e^{x^2} \frac{d^{\nu}}{dx^{\nu}} e^{-x^2}$
 -   $E_{\nu} = (\nu + \frac{1}{2})\hbar \omega$
-
 :::
 :::::
 
@@ -267,6 +264,6 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 -   [Young & Freedman - chapter 42.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1445){target="_blank"}
 
-- [openstax - simple harmonic oscilator](https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator){target="_blank"}
+-   [openstax - simple harmonic oscilator](https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator){target="_blank"}
 
-- [Griffith Intro to QM - 2.3](https://library.tudublin.ie/record=b1229083)
+-   [Griffith Intro to QM - 2.3](https://library.tudublin.ie/record=b1229083)
