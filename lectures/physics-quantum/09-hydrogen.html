@@ -6,7 +6,8 @@
 <script src="09-hydrogen_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="09-hydrogen_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="09-hydrogen_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="09-hydrogen_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="09-hydrogen_files/libs/quarto-html/quarto-html-5363c96604a0db55e0fafc787385e36b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="09-hydrogen_files/libs/quarto-html/quarto-syntax-highlighting-a696728df169e363e4859ca3ec1ae01c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Physics Theory II PHYS2001">
@@ -293,7 +294,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <h2></h2>
 <ul>
 <li><p>subbing back into <span class="math inline">\(\Phi\)</span> we get</p></li>
-<li><p><span class="math inline">\(\Phi = \frac{1}{\sqrt{2\pi}} e^{i {m} \phi}\)</span></p></li>
+<li><p><span class="math inline">\(\Phi = \frac{1}{\sqrt{2\pi}} e^{i {\color{red}{m}} \phi}\)</span></p></li>
 <li><p>factor <span class="math inline">\(\frac{1}{\sqrt{2\pi}}\)</span> is first step in normalising</p></li>
 <li><p>we now have our first quantum number, <i style="color:red"><span class="math inline">\(m\)</span></i></p></li>
 </ul>
@@ -317,7 +318,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="section-11" class="slide level2">
 <h2></h2>
-<div style="font-size: 80%;">
+<div style="font-size: 100%;">
 <ul>
 <li><p>Each equation gives a quantum number</p>
 <p>– the <span class="math inline">\(\Phi\)</span> equation as we’ve seen gives <span class="math inline">\(m\)</span></p>
@@ -326,17 +327,45 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>Called magnetic quantum number</p></li>
 </ul></li>
 </ul>
-<p>– <span class="math inline">\(\Theta\)</span> equation will give ℓ where ℓ(ℓ+1)</p>
-<pre><code>- where ℓ is the total angular momentum
-
--  Called orbital quantum number</code></pre>
-<p>– R equation gives n</p>
-<pre><code>  - Called principle quantum number</code></pre>
+</div>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<p>– <span class="math inline">\(\Theta\)</span> equation will give <span class="math inline">\(\mathcal{l}\)</span> where <span class="math inline">\(\nu = \mathcal{l}(\mathcal{l} + 1)\)</span></p>
 <ul>
+<li><p>where <span class="math inline">\(\mathcal{l}\)</span> is the total angular momentum</p></li>
+<li><p>Called orbital quantum number</p></li>
+</ul>
+<p>– R equation gives n</p>
+<ul>
+<li><p>Called principle quantum number</p></li>
 <li><p><span class="math inline">\(\Phi\)</span> quantisation comes from need to be single valued</p></li>
 <li><p>Other two come from truncating a polynomial</p>
 <p>– otherwise wavefunction couldn’t be kept finite at large r</p>
 <p>– We wouldn’t be able to normalise <span class="math inline">\(\psi\)</span></p></li>
+</ul>
+</section>
+<section id="some-hydrogen-wavefunctions" class="slide level2">
+<h2>Some Hydrogen Wavefunctions</h2>
+<div style="font-size: 80%;">
+<ul>
+<li><p><span class="math inline">\({\color{purple}{Radial \; R(r)}}\)</span>, <span class="math inline">\({\color{darkgreen}{Polar \; \Theta(\theta)}}\)</span>, and <span class="math inline">\({\color{red}{Azimuthal \; \Phi(\phi)}}\)</span></p></li>
+<li><p><span class="math inline">\({\color{purple}{n=1}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 0}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
+<ul>
+<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\({\color{purple}{n=2}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 0}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
+<ul>
+<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{2} a_0^{3/2}} \left[1-\frac{r}{2a_0}\right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\({\color{purple}{n=2}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 1}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
+<ul>
+<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{6}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\({\color{purple}{n=2}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 1}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = \pm 1}}\)</span></p>
+<ul>
+<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{3}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}} e^{\pm i \phi} }}\)</span></li>
+</ul></li>
 </ul>
 </div>
 </section>
