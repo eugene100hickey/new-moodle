@@ -64,8 +64,7 @@ Expanding the Schrödinger Equation to 3 dimensions lets us have a look at probl
 
 ## 
 
-<br>
-<br>
+<br> <br>
 
 ::: {style="font-size: 90%;"}
 -   Hydrogen atom potential, V, due to electrostatic attraction of nucleus
@@ -82,7 +81,7 @@ ${\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\parti
 ::: {style="font-size: 90%;"}
 -   Assume that potential, V, just depends on r, not $\theta$ or $\phi$
 
-    -   True for hydrogen (or $He^+$, $Li^{++}$, $Be^{3+}$)
+    -   True for hydrogen (or $He^+$, $Li^{++}$, $Be^{3+}$....)
 
     -   Pretty true for most ions and atoms
 
@@ -111,8 +110,7 @@ ${\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\parti
 
 ## 
 
-<br>
-<br>
+<br> <br>
 
 -   Left side just depends on r, right side just depends on $\theta$ and $\phi$
 
@@ -150,6 +148,8 @@ ${\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\parti
 
 -   $-\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{d^2 \Phi}{d \phi^2} = \nu$
 
+- later on we'll set $\nu = \mathcal{l}(\mathcal{l} + 1)$ because the $\mathcal{l}$ is related to angular momentum
+
 ## 
 
 -   $\Phi$ part is easy
@@ -164,19 +164,19 @@ ${\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\parti
 
     $\implies e ^{ \pm i \sqrt{\frac{2m\nu}{\hbar^2}} 2\pi } = 1$
 
-    $\implies \sqrt{\frac{2m\nu}{\hbar^2}}$ = <i style="color:red">$m$</i>
+    $\implies \sqrt{\frac{2m\nu}{\hbar^2}} = {\color{red}{m_{\mathcal{l}}}}$
 
--   where <i style="color:red">$m$</i> is some integer; positive, negative, or zero
+-   where ${\color{red}{m_{\mathcal{l}}}}$ is some integer; positive, negative, or zero
 
 ## 
 
 -   subbing back into $\Phi$ we get
 
--   $\Phi = \frac{1}{\sqrt{2\pi}} e^{i {\color{red}{m}} \phi}$
+-   $\Phi = \frac{1}{\sqrt{2\pi}} e^{i {\color{red}{m_{\mathcal{l}}}} \phi}$
 
 -   factor $\frac{1}{\sqrt{2\pi}}$ is first step in normalising
 
--   we now have our first quantum number, <i style="color:red">$m$</i>
+-   we now have our first quantum number, ${\color{red}{m_{\mathcal{l}}}}$
 
 ## 
 
@@ -201,28 +201,24 @@ The three separated equations are:
 ::: {style="font-size: 100%;"}
 -   Each equation gives a quantum number
 
-      –   the $\Phi$ equation as we’ve seen gives $m$
+    – _the $\Phi$ equation as we’ve seen gives ${\color{red}{m_{\mathcal{l}}}}$_
 
-      -   This is the z component of angular momentum
+    -   This is the z component of angular momentum
 
-      -   Called magnetic quantum number
-
+    -   Called magnetic quantum number
 :::
 
-##
+## 
 
-– $\Theta$ equation will give $\mathcal{l}$ where $\nu = \mathcal{l}(\mathcal{l} + 1)$
-       
-- where $\mathcal{l}$ is the total angular momentum
+– _$\Theta$ equation will give $\mathcal{l}$ where $\nu = \mathcal{l}(\mathcal{l} + 1)$_
 
--  Called orbital quantum number
+-   where $\mathcal{l}$ is the total angular momentum
 
+-   Called orbital quantum number
 
-– R equation gives n
+– _R equation gives n_
 
-         
-- Called principle quantum number
-
+-   Called principle quantum number
 
 -   $\Phi$ quantisation comes from need to be single valued
 
@@ -232,34 +228,131 @@ The three separated equations are:
 
     – We wouldn’t be able to normalise $\psi$
 
-
 ## Some Hydrogen Wavefunctions
 
 ::: {style="font-size: 80%;"}
+-   ${\color{purple}{Radial \; R(r)}}$, ${\color{darkgreen}{Polar \; \Theta(\theta)}}$, and ${\color{red}{Azimuthal \; \Phi(\phi)}}$
 
-- ${\color{purple}{Radial \; R(r)}}$, ${\color{darkgreen}{Polar \; \Theta(\theta)}}$, and  ${\color{red}{Azimuthal \; \Phi(\phi)}}$
+-   ${\color{purple}{n=1}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
-- ${\color{purple}{n=1}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
+    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
 
-    + $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
-    
-    
-- ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
+-   ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
-    + $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{2} a_0^{3/2}} \left[1-\frac{r}{2a_0}\right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
+    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{2} a_0^{3/2}} \left[1-\frac{r}{2a_0}\right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
 
+-   ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 1}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
-- ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 1}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
+    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{6}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
 
-    + $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{6}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
+-   ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 1}}$, ${\color{red}{m_{\mathcal{l}} = \pm 1}}$
 
-
-- ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 1}}$, ${\color{red}{m_{\mathcal{l}} = \pm 1}}$
-
-    + $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{3}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}} e^{\pm i \phi} }}$
-
-
+    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{3}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}} e^{\pm i \phi} }}$
 :::
+
+## $a_0$ is the Bohr Radius
+
+- in the equations above used $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm$
+
+- this is the *__Bohr Radius__*
+
+- corresponds to mosyt likely distance from nucleus for electron when $n=1$
+
+
+## Principle Quantum Number, n, and Energy Levels in Hydrogen
+
+<br>  
+
+- electrostatic energy in Hydrogen only depends on how far you are from the nucleus
+
+    - radial part, $R(r)$, is only bit which matters
+    - no dependence on $\Theta(\theta)$ or on $\Phi(\phi)$
+    - values of ${\mathcal{l}}$ and ${m_{\mathcal{l}}}$ are degenerate
+    
+## 
+
+- get $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2}$
+
+- this is (coincidentally) the same as the experssion that Bohr got from his model
+
+- reduces to $E_n = -\frac{13.6057}{n^2} eV$
+
+## Orbital Quantum Number, ${\mathcal{l}}$, and Angular Momentum
+
+- the orbital angular momentum, $L$ is given by:
+
+- $L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar$  where ${\mathcal{l}} = 0, 1, 2...n-1$
+
+- note the ${\mathcal{l}}$ can be 0 leading to zero angular momentum. Unlike simple picture of hydrogen, the electron isn't *orbiting* around the nucleus
+
+## Magnetic Quantum Number, $m_{\mathcal{l}}$, and Z-Component of Angular Momentum
+
+- $m_{\mathcal{l}}$ dictates, kind of, the direction of the angular momentum, $L$.
+
+- $L_z = m_{\mathcal{l}}\hbar$ where $m_{\mathcal{l}} = 0, \pm1, \pm2..., \pm {\mathcal{l}}$
+
+- $L_z$ is always less that $L$, for obvious reasons
+
+- fact that $L_z < L$ is consistent with uncertainty principle
+
+## Hydrogen Spectra
+
+- energy levels given by: $E_n = \frac{13.6057}{n^2} eV$
+
+![](images/hydro-energy-levels.png)
+
+##
+
+- transitions between levels lead to lines in the hydrogen spectrum
+
+![](images/hydro-lines.png)
+
+## 
+
+<br>
+
+- corresponding wavelengths for the photon emitted by each transition is given by
+
+- $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
+
+- $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
+
+- R is the _Rydberg_ Constant
+
+- get lines at <i style='color:red;'>656nm</i>, <i style='color:green;'>486nm</i>, <i style='color:blue;'>434nm</i>, and <i style='color:violet;'>410nm</i> in the visible.
+
+## Hydrogen-Like Ions
+
+<br>
+
+- for hydrogen-like ions ($He^+$, $Li^{++}$, $Be^{3+}$), need extra factor of $Z^2$ in energy levels
+
+- $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2}$
+
+- $E_n = - Z^2 \frac{13.6057}{n^2} eV$
+
+- also need to modify **Bohr Radius** for these ions:
+
+    - $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
+    
+    - gives ground state wavefunction of $\psi_0(r) = Ae^{-Zr/a_0}$
+
+## Back to Our Periodic Table
+
+- Principle quantum number, $n$ gives level of orbital
+
+- The Orbital Quantum Number, ${\mathcal{l}}$, gives s, p, d, f etc
+
+    - **_1s_** orbital has $n=1$ and ${\mathcal{l}} = 0$
+
+    - **_2s_** orbital has $n=2$ and ${\mathcal{l}} = 0$
+
+    - **_2p_** orbital has $n=2$ and ${\mathcal{l}} = 1$
+
+    - **_3d_** orbital has $n=3$ and ${\mathcal{l}} = 2$
+    
+- maximum number of electrons in each orbital given by number of posssible $m_{\mathcal{l}}$ values $\times 2$
+
 
 ## Equations
 

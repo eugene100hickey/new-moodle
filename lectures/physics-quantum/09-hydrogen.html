@@ -218,7 +218,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ul>
 <li><p>Assume that potential, V, just depends on r, not <span class="math inline">\(\theta\)</span> or <span class="math inline">\(\phi\)</span></p>
 <ul>
-<li><p>True for hydrogen (or <span class="math inline">\(He^+\)</span>, <span class="math inline">\(Li^{++}\)</span>, <span class="math inline">\(Be^{3+}\)</span>)</p></li>
+<li><p>True for hydrogen (or <span class="math inline">\(He^+\)</span>, <span class="math inline">\(Li^{++}\)</span>, <span class="math inline">\(Be^{3+}\)</span>….)</p></li>
 <li><p>Pretty true for most ions and atoms</p></li>
 <li><p>Lousy for molecules</p></li>
 <li><p>We’ll see that the solution to</p></li>
@@ -273,6 +273,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>Must both be equal to some constant, <span class="math inline">\(\nu\)</span> say</p></li>
 <li><p><span class="math inline">\(\frac{\hbar^{2}}{2m} \frac{\sin\theta}{\Theta} \frac{d}{d \theta}  \sin\theta \frac{d\Theta }{d \theta}  + \lambda \sin^2 \theta = \nu\)</span></p></li>
 <li><p><span class="math inline">\(-\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{d^2 \Phi}{d \phi^2} = \nu\)</span></p></li>
+<li><p>later on we’ll set <span class="math inline">\(\nu = \mathcal{l}(\mathcal{l} + 1)\)</span> because the <span class="math inline">\(\mathcal{l}\)</span> is related to angular momentum</p></li>
 </ul>
 </section>
 <section id="section-7" class="slide level2">
@@ -286,17 +287,17 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>this must be single valued so:</p></li>
 <li><p><span class="math inline">\(\Phi(\phi + 2\pi) = \Phi(\phi)\)</span></p>
 <p><span class="math inline">\(\implies e ^{ \pm i \sqrt{\frac{2m\nu}{\hbar^2}} 2\pi } = 1\)</span></p>
-<p><span class="math inline">\(\implies \sqrt{\frac{2m\nu}{\hbar^2}}\)</span> = <i style="color:red"><span class="math inline">\(m\)</span></i></p></li>
-<li><p>where <i style="color:red"><span class="math inline">\(m\)</span></i> is some integer; positive, negative, or zero</p></li>
+<p><span class="math inline">\(\implies \sqrt{\frac{2m\nu}{\hbar^2}} = {\color{red}{m_{\mathcal{l}}}}\)</span></p></li>
+<li><p>where <span class="math inline">\({\color{red}{m_{\mathcal{l}}}}\)</span> is some integer; positive, negative, or zero</p></li>
 </ul>
 </section>
 <section id="section-8" class="slide level2">
 <h2></h2>
 <ul>
 <li><p>subbing back into <span class="math inline">\(\Phi\)</span> we get</p></li>
-<li><p><span class="math inline">\(\Phi = \frac{1}{\sqrt{2\pi}} e^{i {\color{red}{m}} \phi}\)</span></p></li>
+<li><p><span class="math inline">\(\Phi = \frac{1}{\sqrt{2\pi}} e^{i {\color{red}{m_{\mathcal{l}}}} \phi}\)</span></p></li>
 <li><p>factor <span class="math inline">\(\frac{1}{\sqrt{2\pi}}\)</span> is first step in normalising</p></li>
-<li><p>we now have our first quantum number, <i style="color:red"><span class="math inline">\(m\)</span></i></p></li>
+<li><p>we now have our first quantum number, <span class="math inline">\({\color{red}{m_{\mathcal{l}}}}\)</span></p></li>
 </ul>
 </section>
 <section id="section-9" class="slide level2">
@@ -321,7 +322,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <div style="font-size: 100%;">
 <ul>
 <li><p>Each equation gives a quantum number</p>
-<p>– the <span class="math inline">\(\Phi\)</span> equation as we’ve seen gives <span class="math inline">\(m\)</span></p>
+<p>– <em>the <span class="math inline">\(\Phi\)</span> equation as we’ve seen gives <span class="math inline">\({\color{red}{m_{\mathcal{l}}}}\)</span></em></p>
 <ul>
 <li><p>This is the z component of angular momentum</p></li>
 <li><p>Called magnetic quantum number</p></li>
@@ -331,12 +332,12 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="section-12" class="slide level2">
 <h2></h2>
-<p>– <span class="math inline">\(\Theta\)</span> equation will give <span class="math inline">\(\mathcal{l}\)</span> where <span class="math inline">\(\nu = \mathcal{l}(\mathcal{l} + 1)\)</span></p>
+<p>– <em><span class="math inline">\(\Theta\)</span> equation will give <span class="math inline">\(\mathcal{l}\)</span> where <span class="math inline">\(\nu = \mathcal{l}(\mathcal{l} + 1)\)</span></em></p>
 <ul>
 <li><p>where <span class="math inline">\(\mathcal{l}\)</span> is the total angular momentum</p></li>
 <li><p>Called orbital quantum number</p></li>
 </ul>
-<p>– R equation gives n</p>
+<p>– <em>R equation gives n</em></p>
 <ul>
 <li><p>Called principle quantum number</p></li>
 <li><p><span class="math inline">\(\Phi\)</span> quantisation comes from need to be single valued</p></li>
@@ -368,6 +369,104 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </ul></li>
 </ul>
 </div>
+</section>
+<section id="a_0-is-the-bohr-radius" class="slide level2">
+<h2><span class="math inline">\(a_0\)</span> is the Bohr Radius</h2>
+<ul>
+<li><p>in the equations above used <span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm\)</span></p></li>
+<li><p>this is the <em><strong>Bohr Radius</strong></em></p></li>
+<li><p>corresponds to mosyt likely distance from nucleus for electron when <span class="math inline">\(n=1\)</span></p></li>
+</ul>
+</section>
+<section id="principle-quantum-number-n-and-energy-levels-in-hydrogen" class="slide level2">
+<h2>Principle Quantum Number, n, and Energy Levels in Hydrogen</h2>
+<p><br></p>
+<ul>
+<li><p>electrostatic energy in Hydrogen only depends on how far you are from the nucleus</p>
+<ul>
+<li>radial part, <span class="math inline">\(R(r)\)</span>, is only bit which matters</li>
+<li>no dependence on <span class="math inline">\(\Theta(\theta)\)</span> or on <span class="math inline">\(\Phi(\phi)\)</span></li>
+<li>values of <span class="math inline">\({\mathcal{l}}\)</span> and <span class="math inline">\({m_{\mathcal{l}}}\)</span> are degenerate</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+<ul>
+<li><p>get <span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2}\)</span></p></li>
+<li><p>this is (coincidentally) the same as the experssion that Bohr got from his model</p></li>
+<li><p>reduces to <span class="math inline">\(E_n = -\frac{13.6057}{n^2} eV\)</span></p></li>
+</ul>
+</section>
+<section id="orbital-quantum-number-mathcall-and-angular-momentum" class="slide level2">
+<h2>Orbital Quantum Number, <span class="math inline">\({\mathcal{l}}\)</span>, and Angular Momentum</h2>
+<ul>
+<li><p>the orbital angular momentum, <span class="math inline">\(L\)</span> is given by:</p></li>
+<li><p><span class="math inline">\(L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar\)</span> where <span class="math inline">\({\mathcal{l}} = 0, 1, 2...n-1\)</span></p></li>
+<li><p>note the <span class="math inline">\({\mathcal{l}}\)</span> can be 0 leading to zero angular momentum. Unlike simple picture of hydrogen, the electron isn’t <em>orbiting</em> around the nucleus</p></li>
+</ul>
+</section>
+<section id="magnetic-quantum-number-m_mathcall-and-z-component-of-angular-momentum" class="slide level2">
+<h2>Magnetic Quantum Number, <span class="math inline">\(m_{\mathcal{l}}\)</span>, and Z-Component of Angular Momentum</h2>
+<ul>
+<li><p><span class="math inline">\(m_{\mathcal{l}}\)</span> dictates, kind of, the direction of the angular momentum, <span class="math inline">\(L\)</span>.</p></li>
+<li><p><span class="math inline">\(L_z = m_{\mathcal{l}}\hbar\)</span> where <span class="math inline">\(m_{\mathcal{l}} = 0, \pm1, \pm2..., \pm {\mathcal{l}}\)</span></p></li>
+<li><p><span class="math inline">\(L_z\)</span> is always less that <span class="math inline">\(L\)</span>, for obvious reasons</p></li>
+<li><p>fact that <span class="math inline">\(L_z &lt; L\)</span> is consistent with uncertainty principle</p></li>
+</ul>
+</section>
+<section id="hydrogen-spectra" class="slide level2">
+<h2>Hydrogen Spectra</h2>
+<ul>
+<li>energy levels given by: <span class="math inline">\(E_n = \frac{13.6057}{n^2} eV\)</span></li>
+</ul>
+
+<img data-src="images/hydro-energy-levels.png" class="r-stretch"></section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+<ul>
+<li>transitions between levels lead to lines in the hydrogen spectrum</li>
+</ul>
+
+<img data-src="images/hydro-lines.png" class="r-stretch"></section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+<p><br></p>
+<ul>
+<li><p>corresponding wavelengths for the photon emitted by each transition is given by</p></li>
+<li><p><span class="math inline">\(\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)\)</span></p></li>
+<li><p><span class="math inline">\(R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}\)</span></p></li>
+<li><p>R is the <em>Rydberg</em> Constant</p></li>
+<li><p>get lines at <i style="color:red;">656nm</i>, <i style="color:green;">486nm</i>, <i style="color:blue;">434nm</i>, and <i style="color:violet;">410nm</i> in the visible.</p></li>
+</ul>
+</section>
+<section id="hydrogen-like-ions" class="slide level2">
+<h2>Hydrogen-Like Ions</h2>
+<p><br></p>
+<ul>
+<li><p>for hydrogen-like ions (<span class="math inline">\(He^+\)</span>, <span class="math inline">\(Li^{++}\)</span>, <span class="math inline">\(Be^{3+}\)</span>), need extra factor of <span class="math inline">\(Z^2\)</span> in energy levels</p></li>
+<li><p><span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2}\)</span></p></li>
+<li><p><span class="math inline">\(E_n = - Z^2 \frac{13.6057}{n^2} eV\)</span></p></li>
+<li><p>also need to modify <strong>Bohr Radius</strong> for these ions:</p>
+<ul>
+<li><p><span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm\)</span></p></li>
+<li><p>gives ground state wavefunction of <span class="math inline">\(\psi_0(r) = Ae^{-Zr/a_0}\)</span></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="back-to-our-periodic-table" class="slide level2">
+<h2>Back to Our Periodic Table</h2>
+<ul>
+<li><p>Principle quantum number, <span class="math inline">\(n\)</span> gives level of orbital</p></li>
+<li><p>The Orbital Quantum Number, <span class="math inline">\({\mathcal{l}}\)</span>, gives s, p, d, f etc</p>
+<ul>
+<li><p><strong><em>1s</em></strong> orbital has <span class="math inline">\(n=1\)</span> and <span class="math inline">\({\mathcal{l}} = 0\)</span></p></li>
+<li><p><strong><em>2s</em></strong> orbital has <span class="math inline">\(n=2\)</span> and <span class="math inline">\({\mathcal{l}} = 0\)</span></p></li>
+<li><p><strong><em>2p</em></strong> orbital has <span class="math inline">\(n=2\)</span> and <span class="math inline">\({\mathcal{l}} = 1\)</span></p></li>
+<li><p><strong><em>3d</em></strong> orbital has <span class="math inline">\(n=3\)</span> and <span class="math inline">\({\mathcal{l}} = 2\)</span></p></li>
+</ul></li>
+<li><p>maximum number of electrons in each orbital given by number of posssible <span class="math inline">\(m_{\mathcal{l}}\)</span> values <span class="math inline">\(\times 2\)</span></p></li>
+</ul>
 </section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
