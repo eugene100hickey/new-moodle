@@ -155,39 +155,27 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <h2>Summary</h2>
 <p><br></p>
 <p>Expanding the Schrödinger Equation to 3 dimensions lets us have a look at problems sucha as the hydrogen atom. Because of the symmetry of the Coulomb potential, it makes sense to transform to spherical polar (<span class="math inline">\(r, \theta, \phi\)</span>) rather than x, y, z. Separation of variables will lead to three equations, each of which will configure a quantum number for hydrogen.</p>
+<p>We’ll look at the available energy levels and thus the spectrum of hydrogen.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
-<div style="font-size: 90%;">
+<div class="column" style="width:100%;">
+<div style="font-size: 100%;">
 <ol type="1">
-<li>Time Dependent Schrödinger Equation</li>
-<li>Separation of Variables
-<ol type="1">
-<li>Time Independent Schrödinger Equation</li>
-</ol></li>
-<li>Boundary Conditions</li>
+<li>T3-D Time Dependent Schrödinger Equation</li>
+<li>Separation of Variables</li>
+<li>Hydrogen Quantum Numbers</li>
+<li>Hydrogen Wavefunctions</li>
+<li>Bohr Radius Hydrogen Spectrum</li>
+<li>Hydrogen-Like Ions</li>
 </ol>
 </div>
-</div><div class="column" style="width:10%;">
+</div><div class="column" style="width:0%;">
 
-</div><div class="column" style="width:40%;">
+</div><div class="column" style="width:0%;">
 <div style="font-size: 90%;">
-<ol start="4" type="1">
-<li>Nature of solutions
-<ul>
-<li>linearity</li>
-<li>orthonormal</li>
-<li>basis set</li>
-</ul></li>
-<li>Square Examples
-<ul>
-<li>conjugated dyes</li>
-<li>butadiene</li>
-</ul></li>
-<li>Selection Rules</li>
-</ol>
+
 </div>
 </div></div>
 </section>
@@ -353,7 +341,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p><span class="math inline">\({\color{purple}{Radial \; R(r)}}\)</span>, <span class="math inline">\({\color{darkgreen}{Polar \; \Theta(\theta)}}\)</span>, and <span class="math inline">\({\color{red}{Azimuthal \; \Phi(\phi)}}\)</span></p></li>
 <li><p><span class="math inline">\({\color{purple}{n=1}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 0}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
 <ul>
-<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
+<li><span class="math inline">\(\psi({\color{purple}{r=1}}, {\color{darkgreen}{\theta=0}}, {\color{red}{\phi=0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
 </ul></li>
 <li><p><span class="math inline">\({\color{purple}{n=2}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 0}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
 <ul>
@@ -470,28 +458,36 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
+<div style="font-size: 80%;">
+<ul>
+<li><span class="math inline">\(- \frac{\hbar^2}{2m} (\frac{\partial ^2}{\partial x^2} + \frac{\partial ^2 }{\partial y^2} + \frac{\partial ^2 }{\partial z^2})\psi + V(x) \psi = E \psi\)</span></li>
+</ul>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><span class="math inline">\(i \hbar \frac{\partial T}{\partial t} = E \times T(t)\)</span></li>
-<li><span class="math inline">\(T(t) = A e^{-iEt/\hbar}\)</span></li>
-<li><span class="math inline">\(- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi\)</span></li>
-<li><span class="math inline">\(\psi_n = \sqrt{2/L} \sin(n\pi x /L)\)</span></li>
+<li><p><span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm\)</span></p></li>
+<li><p><span class="math inline">\(L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar\)</span></p></li>
+<li><p><span class="math inline">\(L_z = m_{\mathcal{l}}\hbar\)</span></p></li>
+<li><p><span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2} \\ = -\frac{13.6057}{n^2} eV\)</span></p></li>
+<li><p><span class="math inline">\(\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)\)</span></p></li>
+<li><p><span class="math inline">\(R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}\)</span></p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <ul>
-<li><span class="math inline">\(E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}\)</span></li>
-<li><span class="math inline">\(\Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)\)</span></li>
-<li><span class="math inline">\(\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]\)</span></li>
+<li><span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2} \\ = - Z^2 \frac{13.6057}{n^2} eV\)</span></li>
+<li><span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm\)</span></li>
+<li><span class="math inline">\(\psi({\color{purple}{1}}, {\color{darkgreen}{0}}, {\color{red}{0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
 </ul>
 </div></div>
+</div>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
 <ul>
-<li><p><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1361" target="_blank">Young &amp; Freedman - chapter 40.2</a></p></li>
-<li><p><a href="https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&amp;callbackUrl=https%3a%2f%2fresearch.ebsco.com&amp;db=nlebk&amp;format=EB&amp;profId=ehost&amp;lpid=&amp;ppid=&amp;lang=en&amp;location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&amp;isPLink=False&amp;requestContext=&amp;profileIdentifier=sr37fs&amp;recordId=lh37eixz3f" target="_blank">Serway &amp; Jewett - chapter 7.4-7.8</a></p></li>
-<li><p><a href="https://library.tudublin.ie/search?/Xkrane+modern+physics&amp;SORT=D/Xkrane+modern+physics&amp;SORT=D&amp;SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&amp;FF=Xkrane+modern+physics&amp;SORT=D&amp;1%2C1%2C" target="_blank">Krane - Modern Physics Chapter 5.4</a></p></li>
+<li><p><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1397" target="_blank">Young &amp; Freedman - chapter 41.3</a></p></li>
+<li><p><a href="https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&amp;callbackUrl=https%3a%2f%2fresearch.ebsco.com&amp;db=nlebk&amp;format=EB&amp;profId=ehost&amp;lpid=&amp;ppid=&amp;lang=en&amp;location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&amp;isPLink=False&amp;requestContext=&amp;profileIdentifier=sr37fs&amp;recordId=lh37eixz3f" target="_blank">Serway &amp; Jewett - chapter 41.4-41.6</a></p></li>
+<li><p><a href="https://library.tudublin.ie/search?/Xkrane+modern+physics&amp;SORT=D/Xkrane+modern+physics&amp;SORT=D&amp;SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&amp;FF=Xkrane+modern+physics&amp;SORT=D&amp;1%2C1%2C" target="_blank">Krane - Modern Physics Chapter 7</a></p></li>
+<li><p><a href="https://library.tudublin.ie/record=b5488599" target="_blank">Halliday &amp; Resnick - chapter 39.9</a></p></li>
 </ul>
 
 </section>

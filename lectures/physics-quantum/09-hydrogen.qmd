@@ -25,33 +25,31 @@ editor: visual
 
 <br>
 
-Expanding the Schrödinger Equation to 3 dimensions lets us have a look at problems sucha as the hydrogen atom. Because of the symmetry of the Coulomb potential, it makes sense to transform to spherical polar ($r, \theta, \phi$) rather than x, y, z. Separation of variables will lead to three equations, each of which will configure a quantum number for hydrogen.
+Expanding the Schrödinger Equation to 3 dimensions lets us have a look at problems sucha as the hydrogen atom. Because of the symmetry of the Coulomb potential, it makes sense to transform to spherical polar ($r, \theta, \phi$) rather than x, y, z. Separation of variables will lead to three equations, each of which will configure a quantum number for hydrogen.  
+
+We'll look at the available energy levels and thus the spectrum of hydrogen. 
 
 ## Contents
 
 :::::::: columns
-:::: {.column width="40%"}
-::: {style="font-size: 90%;"}
-1.  Time Dependent Schrödinger Equation
+:::: {.column width="100%"}
+::: {style="font-size: 100%;"}
+1.  T3-D Time Dependent Schrödinger Equation
 2.  Separation of Variables
-    1.  Time Independent Schrödinger Equation
-3.  Boundary Conditions
+3.  Hydrogen Quantum Numbers
+1. Hydrogen Wavefunctions
+1. Bohr Radius
+Hydrogen Spectrum
+1. Hydrogen-Like Ions
 :::
 ::::
 
-::: {.column width="10%"}
+::: {.column width="0%"}
 :::
 
-:::: {.column width="40%"}
+:::: {.column width="0%"}
 ::: {style="font-size: 90%;"}
-4.  Nature of solutions
-    -   linearity
-    -   orthonormal
-    -   basis set
-5.  Square Examples
-    -   conjugated dyes
-    -   butadiene
-6.  Selection Rules
+
 :::
 ::::
 ::::::::
@@ -235,7 +233,7 @@ The three separated equations are:
 
 -   ${\color{purple}{n=1}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
-    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
+    -   $\psi({\color{purple}{r=1}}, {\color{darkgreen}{\theta=0}}, {\color{red}{\phi=0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
 
 -   ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
@@ -356,25 +354,40 @@ The three separated equations are:
 
 ## Equations
 
+::: {style="font-size: 80%;"}
+
+-   $- \frac{\hbar^2}{2m} (\frac{\partial ^2}{\partial x^2} + \frac{\partial ^2 }{\partial y^2} + \frac{\partial ^2 }{\partial z^2})\psi + V(x) \psi = E \psi$
+
 ::::: columns
 ::: {.column width="50%"}
--   $i \hbar \frac{\partial T}{\partial t} = E \times T(t)$
--   $T(t) = A e^{-iEt/\hbar}$
--   $- \frac{\hbar^2}{2m} \frac{\partial ^2 \psi}{\partial x^2} + V(x) \psi = E \psi$
--   $\psi_n = \sqrt{2/L} \sin(n\pi x /L)$
+
+-   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm$
+- $L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar$
+- $L_z = m_{\mathcal{l}}\hbar$
+- $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2} \\ = -\frac{13.6057}{n^2} eV$
+ 
+- $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
+- $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
+
 :::
 
 ::: {.column width="50%"}
--   $E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$
--   $\Delta E = \frac{\hbar^2 \pi^2}{2mL^2} (N + 1)$
--   $\mu = \frac{2eL}{\pi^2}[\frac{1}{n_{diff}^2} - \frac{1}{n_{total}^2}]$
+
+- $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2} \\ = - Z^2 \frac{13.6057}{n^2} eV$
+- $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
+- $\psi({\color{purple}{1}}, {\color{darkgreen}{0}}, {\color{red}{0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
+
+
+:::
 :::
 :::::
 
 ## References
 
--   [Young & Freedman - chapter 40.2](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1361){target="_blank"}
+-   [Young & Freedman - chapter 41.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1397){target="_blank"}
 
--   [Serway & Jewett - chapter 7.4-7.8](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+-   [Serway & Jewett - chapter 41.4-41.6](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
--   [Krane - Modern Physics Chapter 5.4](https://library.tudublin.ie/search?/Xkrane+modern+physics&SORT=D/Xkrane+modern+physics&SORT=D&SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&FF=Xkrane+modern+physics&SORT=D&1%2C1%2C){target="_blank"}
+-   [Krane - Modern Physics Chapter 7](https://library.tudublin.ie/search?/Xkrane+modern+physics&SORT=D/Xkrane+modern+physics&SORT=D&SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&FF=Xkrane+modern+physics&SORT=D&1%2C1%2C){target="_blank"}
+
+-   [Halliday & Resnick - chapter 39.9](https://library.tudublin.ie/record=b5488599){target="_blank"}
