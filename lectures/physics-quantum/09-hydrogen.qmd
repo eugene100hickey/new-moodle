@@ -345,7 +345,7 @@ The three separated equations are:
 
     - **_1s_** orbital has $n=1$ and ${\mathcal{l}} = 0$
 
-    - **_2s_** orbital has $n=2$ and ${\mathcal{l}} = 0$
+    - **_2s_** orbital has $n=2$ and ${\mathcal{l}} = 0$ 
 
     - **_2p_** orbital has $n=2$ and ${\mathcal{l}} = 1$
 
