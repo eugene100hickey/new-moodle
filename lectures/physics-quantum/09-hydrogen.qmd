@@ -25,9 +25,9 @@ editor: visual
 
 <br>
 
-Expanding the Schrödinger Equation to 3 dimensions lets us have a look at problems sucha as the hydrogen atom. Because of the symmetry of the Coulomb potential, it makes sense to transform to spherical polar ($r, \theta, \phi$) rather than x, y, z. Separation of variables will lead to three equations, each of which will configure a quantum number for hydrogen.  
+Expanding the Schrödinger Equation to 3 dimensions lets us have a look at problems such as the hydrogen atom. Because of the symmetry of the Coulomb potential, it makes sense to transform to spherical polar ($r, \theta, \phi$) rather than x, y, z. Separation of variables will lead to three equations, each of which will configure a quantum number for hydrogen.
 
-We'll look at the available energy levels and thus the spectrum of hydrogen. 
+We'll then look at the available energy levels and thus the spectrum of hydrogen.
 
 ## Contents
 
@@ -37,10 +37,9 @@ We'll look at the available energy levels and thus the spectrum of hydrogen.
 1.  T3-D Time Dependent Schrödinger Equation
 2.  Separation of Variables
 3.  Hydrogen Quantum Numbers
-1. Hydrogen Wavefunctions
-1. Bohr Radius
-Hydrogen Spectrum
-1. Hydrogen-Like Ions
+4.  Hydrogen Wavefunctions
+5.  Bohr Radius Hydrogen Spectrum
+6.  Hydrogen-Like Ions
 :::
 ::::
 
@@ -49,7 +48,6 @@ Hydrogen Spectrum
 
 :::: {.column width="0%"}
 ::: {style="font-size: 90%;"}
-
 :::
 ::::
 ::::::::
@@ -146,7 +144,7 @@ ${\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\parti
 
 -   $-\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{d^2 \Phi}{d \phi^2} = \nu$
 
-- later on we'll set $\nu = \mathcal{l}(\mathcal{l} + 1)$ because the $\mathcal{l}$ is related to angular momentum
+-   later on we'll set $\nu = \mathcal{l}(\mathcal{l} + 1)$ because the $\mathcal{l}$ is related to angular momentum
 
 ## 
 
@@ -199,7 +197,7 @@ The three separated equations are:
 ::: {style="font-size: 100%;"}
 -   Each equation gives a quantum number
 
-    – _the $\Phi$ equation as we’ve seen gives ${\color{red}{m_{\mathcal{l}}}}$_
+    – *the* $\Phi$ equation as we’ve seen gives ${\color{red}{m_{\mathcal{l}}}}$
 
     -   This is the z component of angular momentum
 
@@ -208,13 +206,13 @@ The three separated equations are:
 
 ## 
 
-– _$\Theta$ equation will give $\mathcal{l}$ where $\nu = \mathcal{l}(\mathcal{l} + 1)$_
+– $\Theta$ equation will give $\mathcal{l}$ where $\nu = \mathcal{l}(\mathcal{l} + 1)$
 
 -   where $\mathcal{l}$ is the total angular momentum
 
 -   Called orbital quantum number
 
-– _R equation gives n_
+– *R equation gives n*
 
 -   Called principle quantum number
 
@@ -229,7 +227,10 @@ The three separated equations are:
 ## Some Hydrogen Wavefunctions
 
 ::: {style="font-size: 80%;"}
+
 -   ${\color{purple}{Radial \; R(r)}}$, ${\color{darkgreen}{Polar \; \Theta(\theta)}}$, and ${\color{red}{Azimuthal \; \Phi(\phi)}}$
+
+<br>
 
 -   ${\color{purple}{n=1}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
@@ -238,6 +239,21 @@ The three separated equations are:
 -   ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
     -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{2} a_0^{3/2}} \left[1-\frac{r}{2a_0}\right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
+    
+    
+-   ${\color{purple}{n=3}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
+
+    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{81 \sqrt{3} a_0^{3/2}} \left[27-18\frac{r}{2a_0}+2(18\frac{r}{2a_0})^2 \right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
+    
+:::
+    
+##
+
+::: {style="font-size: 80%;"}
+
+-   ${\color{purple}{Radial \; R(r)}}$, ${\color{darkgreen}{Polar \; \Theta(\theta)}}$, and ${\color{red}{Azimuthal \; \Phi(\phi)}}$
+
+<br>
 
 -   ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 1}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
@@ -250,58 +266,85 @@ The three separated equations are:
 
 ## $a_0$ is the Bohr Radius
 
-- in the equations above used $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm$
+<br>
 
-- this is the *__Bohr Radius__*
+-   in the equations above used $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm$
 
-- corresponds to mosyt likely distance from nucleus for electron when $n=1$
+-   this is the ***Bohr Radius***
 
+-   corresponds to mosyt likely distance from nucleus for electron when $n=1$
 
-## Principle Quantum Number, n, and Energy Levels in Hydrogen
-
-<br>  
-
-- electrostatic energy in Hydrogen only depends on how far you are from the nucleus
-
-    - radial part, $R(r)$, is only bit which matters
-    - no dependence on $\Theta(\theta)$ or on $\Phi(\phi)$
-    - values of ${\mathcal{l}}$ and ${m_{\mathcal{l}}}$ are degenerate
-    
-## 
-
-- get $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2}$
-
-- this is (coincidentally) the same as the experssion that Bohr got from his model
-
-- reduces to $E_n = -\frac{13.6057}{n^2} eV$
-
-## Orbital Quantum Number, ${\mathcal{l}}$, and Angular Momentum
-
-- the orbital angular momentum, $L$ is given by:
-
-- $L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar$  where ${\mathcal{l}} = 0, 1, 2...n-1$
-
-- note the ${\mathcal{l}}$ can be 0 leading to zero angular momentum. Unlike simple picture of hydrogen, the electron isn't *orbiting* around the nucleus
-
-## Magnetic Quantum Number, $m_{\mathcal{l}}$, and Z-Component of Angular Momentum
-
-- $m_{\mathcal{l}}$ dictates, kind of, the direction of the angular momentum, $L$.
-
-- $L_z = m_{\mathcal{l}}\hbar$ where $m_{\mathcal{l}} = 0, \pm1, \pm2..., \pm {\mathcal{l}}$
-
-- $L_z$ is always less that $L$, for obvious reasons
-
-- fact that $L_z < L$ is consistent with uncertainty principle
-
-## Hydrogen Spectra
-
-- energy levels given by: $E_n = \frac{13.6057}{n^2} eV$
-
-![](images/hydro-energy-levels.png)
 
 ##
 
-- transitions between levels lead to lines in the hydrogen spectrum
+![Young & Freedman](images/hydrogen-1s.png)
+
+## Principle Quantum Number, n, and Energy Levels in Hydrogen
+
+<br>
+
+-   electrostatic energy in Hydrogen only depends on how far you are from the nucleus
+
+    -   radial part, $R(r)$, is only bit which matters
+    -   no dependence on $\Theta(\theta)$ or on $\Phi(\phi)$
+    -   values of ${\mathcal{l}}$ and ${m_{\mathcal{l}}}$ are degenerate
+
+## 
+
+<br>
+
+-   get $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2}$
+
+-   this is (coincidentally) the same as the experssion that Bohr got from his model
+
+-   reduces to $E_n = -\frac{13.6057}{n^2} eV$
+
+## Orbital Quantum Number, ${\mathcal{l}}$, and Angular Momentum
+
+-   the orbital angular momentum, $L$ is given by:
+
+-   $L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar$ where ${\mathcal{l}} = 0, 1, 2...n-1$
+
+-   note the ${\mathcal{l}}$ can be 0 leading to zero angular momentum. Unlike simple picture of hydrogen, the electron isn't *orbiting* around the nucleus
+
+##
+
+
+
+![](images/hydrogen-L0.png){height="300px"}
+
+:::: columns
+::: {.column width="50%"}
+
+![Young & Freedman](images/hydrogen-L1.png)
+
+:::
+::: {.column width="50%"}
+
+![](images/hydrogen-L2.png)
+
+:::
+::::
+
+## Magnetic Quantum Number, $m_{\mathcal{l}}$, and Z-Component of Angular Momentum
+
+-   $m_{\mathcal{l}}$ dictates, kind of, the direction of the angular momentum, $L$.
+
+-   $L_z = m_{\mathcal{l}}\hbar$ where $m_{\mathcal{l}} = 0, \pm1, \pm2..., \pm {\mathcal{l}}$
+
+-   $L_z$ is always less that $L$, for obvious reasons
+
+-   fact that $L_z < L$ is consistent with uncertainty principle
+
+## Hydrogen Spectra
+
+-   energy levels given by: $E_n = \frac{13.6057}{n^2} eV$
+
+![](images/hydro-energy-levels.png)
+
+## 
+
+-   transitions between levels lead to lines in the hydrogen spectrum
 
 ![](images/hydro-lines.png)
 
@@ -309,78 +352,75 @@ The three separated equations are:
 
 <br>
 
-- corresponding wavelengths for the photon emitted by each transition is given by
+-   corresponding wavelengths for the photon emitted by each transition is given by
 
-- $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
+-   $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
 
-- $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
+-   $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
 
-- R is the _Rydberg_ Constant
+-   R is the *Rydberg* Constant
 
-- get lines at <i style='color:red;'>656nm</i>, <i style='color:green;'>486nm</i>, <i style='color:blue;'>434nm</i>, and <i style='color:violet;'>410nm</i> in the visible.
+-   get lines at <i style='color:red;'>656nm</i>, <i style='color:green;'>486nm</i>, <i style='color:blue;'>434nm</i>, and <i style='color:violet;'>410nm</i> in the visible.
 
 ## Hydrogen-Like Ions
 
 <br>
 
-- for hydrogen-like ions ($He^+$, $Li^{++}$, $Be^{3+}$), need extra factor of $Z^2$ in energy levels
+-   for hydrogen-like ions ($He^+$, $Li^{++}$, $Be^{3+}$), need extra factor of $Z^2$ in energy levels
 
-- $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2}$
+-   $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2}$
 
-- $E_n = - Z^2 \frac{13.6057}{n^2} eV$
+-   $E_n = - Z^2 \frac{13.6057}{n^2} eV$
 
-- also need to modify **Bohr Radius** for these ions:
+-   also need to modify **Bohr Radius** for these ions:
 
-    - $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
-    
-    - gives ground state wavefunction of $\psi_0(r) = Ae^{-Zr/a_0}$
+    -   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
+
+    -   gives ground state wavefunction of $\psi_0(r) = Ae^{-Zr/a_0}$
 
 ## Back to Our Periodic Table
 
-- Principle quantum number, $n$ gives level of orbital
+-   Principle quantum number, $n$ gives level of orbital
 
-- The Orbital Quantum Number, ${\mathcal{l}}$, gives s, p, d, f etc
+-   The Orbital Quantum Number, ${\mathcal{l}}$, gives s, p, d, f etc
 
-    - **_1s_** orbital has $n=1$ and ${\mathcal{l}} = 0$
+    -   ***1s*** orbital has $n=1$ and ${\mathcal{l}} = 0$
 
-    - **_2s_** orbital has $n=2$ and ${\mathcal{l}} = 0$ 
+    -   ***2s*** orbital has $n=2$ and ${\mathcal{l}} = 0$
 
-    - **_2p_** orbital has $n=2$ and ${\mathcal{l}} = 1$
+    -   ***2p*** orbital has $n=2$ and ${\mathcal{l}} = 1$
 
-    - **_3d_** orbital has $n=3$ and ${\mathcal{l}} = 2$
-    
-- maximum number of electrons in each orbital given by number of posssible $m_{\mathcal{l}}$ values $\times 2$
+    -   ***3d*** orbital has $n=3$ and ${\mathcal{l}} = 2$
 
+-   maximum number of electrons in each orbital given by number of posssible $m_{\mathcal{l}}$ values $\times 2$
 
 ## Equations
 
-::: {style="font-size: 80%;"}
-
+:::::: {style="font-size: 80%;"}
 -   $- \frac{\hbar^2}{2m} (\frac{\partial ^2}{\partial x^2} + \frac{\partial ^2 }{\partial y^2} + \frac{\partial ^2 }{\partial z^2})\psi + V(x) \psi = E \psi$
 
 ::::: columns
 ::: {.column width="50%"}
-
 -   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm$
-- $L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar$
-- $L_z = m_{\mathcal{l}}\hbar$
-- $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2} \\ = -\frac{13.6057}{n^2} eV$
- 
-- $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
-- $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
 
+-   $L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar$
+
+-   $L_z = m_{\mathcal{l}}\hbar$
+
+-   $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2} \\ = -\frac{13.6057}{n^2} eV$
+
+-   $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
+
+-   $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
 :::
 
 ::: {.column width="50%"}
-
-- $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2} \\ = - Z^2 \frac{13.6057}{n^2} eV$
-- $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
-- $\psi({\color{purple}{1}}, {\color{darkgreen}{0}}, {\color{red}{0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
-
-
-:::
+-   $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2} \\ = - Z^2 \frac{13.6057}{n^2} eV$
+-   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
+-   $\psi({\color{purple}{1}}, {\color{darkgreen}{0}}, {\color{red}{0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
 :::
 :::::
+::::::
 
 ## References
 
