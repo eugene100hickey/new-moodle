@@ -243,7 +243,7 @@ The three separated equations are:
     
 -   ${\color{purple}{n=3}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
-    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{81 \sqrt{3} a_0^{3/2}} \left[27-18\frac{r}{2a_0}+2(18\frac{r}{2a_0})^2 \right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
+    -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{81 \sqrt{3} a_0^{3/2}} \left[27-18\frac{r}{2a_0}+2(\frac{r}{2a_0})^2 \right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
     
 :::
     
