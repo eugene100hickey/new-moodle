@@ -31,6 +31,8 @@ include-in-header:
 
 -   [09 Shrodinger Equation - hydrogen](https://tud.netlify.app/lectures/physics-quantum/09-hydrogen.html){target="_blank"}
 
+-   [10 Variational Principle](https://tud.netlify.app/lectures/physics-quantum/10-variational.html){target="_blank"}
+
 ## Presentations
 
 -   [Exoplanets-ML-Labs March 13th](https://tud.netlify.app/physics-school/ML-Labs_exoplanets.html){target="_blank"}

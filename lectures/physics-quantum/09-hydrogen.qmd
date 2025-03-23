@@ -34,7 +34,7 @@ We'll then look at the available energy levels and thus the spectrum of hydrogen
 :::::::: columns
 :::: {.column width="100%"}
 ::: {style="font-size: 100%;"}
-1.  T3-D Time Dependent Schrödinger Equation
+1.  3-D Time Dependent Schrödinger Equation
 2.  Separation of Variables
 3.  Hydrogen Quantum Numbers
 4.  Hydrogen Wavefunctions
@@ -227,7 +227,6 @@ The three separated equations are:
 ## Some Hydrogen Wavefunctions
 
 ::: {style="font-size: 80%;"}
-
 -   ${\color{purple}{Radial \; R(r)}}$, ${\color{darkgreen}{Polar \; \Theta(\theta)}}$, and ${\color{red}{Azimuthal \; \Phi(\phi)}}$
 
 <br>
@@ -239,18 +238,15 @@ The three separated equations are:
 -   ${\color{purple}{n=2}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
     -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{2} a_0^{3/2}} \left[1-\frac{r}{2a_0}\right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
-    
-    
+
 -   ${\color{purple}{n=3}}$, ${\color{darkgreen}{\mathcal{l} = 0}}$, ${\color{red}{m_{\mathcal{l}} = 0}}$
 
     -   $\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{81 \sqrt{3} a_0^{3/2}} \left[27-18\frac{r}{2a_0}+2(\frac{r}{2a_0})^2 \right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
-    
 :::
-    
-##
+
+## 
 
 ::: {style="font-size: 80%;"}
-
 -   ${\color{purple}{Radial \; R(r)}}$, ${\color{darkgreen}{Polar \; \Theta(\theta)}}$, and ${\color{red}{Azimuthal \; \Phi(\phi)}}$
 
 <br>
@@ -274,8 +270,7 @@ The three separated equations are:
 
 -   corresponds to mosyt likely distance from nucleus for electron when $n=1$
 
-
-##
+## 
 
 ![Young & Freedman](images/hydrogen-1s.png)
 
@@ -307,24 +302,19 @@ The three separated equations are:
 
 -   note the ${\mathcal{l}}$ can be 0 leading to zero angular momentum. Unlike simple picture of hydrogen, the electron isn't *orbiting* around the nucleus
 
-##
-
-
+## 
 
 ![](images/hydrogen-L0.png){height="300px"}
 
-:::: columns
+::::: columns
 ::: {.column width="50%"}
-
 ![Young & Freedman](images/hydrogen-L1.png)
-
 :::
+
 ::: {.column width="50%"}
-
 ![](images/hydrogen-L2.png)
-
 :::
-::::
+:::::
 
 ## Magnetic Quantum Number, $m_{\mathcal{l}}$, and Z-Component of Angular Momentum
 
@@ -403,7 +393,7 @@ The three separated equations are:
 ::: {.column width="50%"}
 -   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm$
 
--   $L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar$
+-   $L = \sqrt{{\mathcal{l}} ({\mathcal{l}} + 1)}\hbar$
 
 -   $L_z = m_{\mathcal{l}}\hbar$
 

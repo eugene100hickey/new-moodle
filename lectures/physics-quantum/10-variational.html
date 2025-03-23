@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="09-hydrogen_files/libs/clipboard/clipboard.min.js"></script>
-<script src="09-hydrogen_files/libs/quarto-html/tabby.min.js"></script>
-<script src="09-hydrogen_files/libs/quarto-html/popper.min.js"></script>
-<script src="09-hydrogen_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="09-hydrogen_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="09-hydrogen_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="09-hydrogen_files/libs/quarto-html/quarto-html-5363c96604a0db55e0fafc787385e36b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="09-hydrogen_files/libs/quarto-html/quarto-syntax-highlighting-a696728df169e363e4859ca3ec1ae01c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="10-variational_files/libs/clipboard/clipboard.min.js"></script>
+<script src="10-variational_files/libs/quarto-html/tabby.min.js"></script>
+<script src="10-variational_files/libs/quarto-html/popper.min.js"></script>
+<script src="10-variational_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="10-variational_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="10-variational_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="10-variational_files/libs/quarto-html/quarto-html-5363c96604a0db55e0fafc787385e36b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="10-variational_files/libs/quarto-html/quarto-syntax-highlighting-a696728df169e363e4859ca3ec1ae01c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Physics Theory II PHYS2001">
-  <title>09-Hydrogen Atom</title>
+  <title>10 - Variational Principle</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="09-hydrogen_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="09-hydrogen_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="10-variational_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="10-variational_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,14 +30,14 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="09-hydrogen_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
+  <link rel="stylesheet" href="10-variational_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link rel="stylesheet" href="logo.css">
-  <link href="09-hydrogen_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="09-hydrogen_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="09-hydrogen_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="09-hydrogen_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="09-hydrogen_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="09-hydrogen_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="10-variational_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="10-variational_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="10-variational_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="10-variational_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="10-variational_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="10-variational_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -132,7 +132,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">09-Hydrogen Atom</h1>
+  <h1 class="title">10 - Variational Principle</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -154,8 +154,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
 <p><br></p>
-<p>Expanding the Schrödinger Equation to 3 dimensions lets us have a look at problems such as the hydrogen atom. Because of the symmetry of the Coulomb potential, it makes sense to transform to spherical polar (<span class="math inline">\(r, \theta, \phi\)</span>) rather than x, y, z. Separation of variables will lead to three equations, each of which will configure a quantum number for hydrogen.</p>
-<p>We’ll then look at the available energy levels and thus the spectrum of hydrogen.</p>
+<p>Unlike particles in boxes, SHO’s and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
@@ -179,320 +178,122 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </div>
 </div></div>
 </section>
-<section id="d-time-independent-schrödinger-equation" class="slide level2">
-<h2>3-D Time Independent Schrödinger Equation</h2>
+<section id="more-complex-problems" class="slide level2">
+<h2>More Complex Problems</h2>
+<div style="font-size: 80%;">
 <ul>
-<li>in 3-D, Schrödinger looks like this:</li>
+<li><p>Hydrogen atom can be solved exactly by time independent Schrödinger equation</p></li>
+<li><p>Other problems aren’t so kind</p>
+<p>– Multi-electron atoms</p>
+<p>– Molecules</p></li>
+<li><p>Need to cut some corners</p>
+<p>– Approximations</p>
+<p>– Astute guesses</p></li>
+<li><p>We’ll begin with two foundation methods</p>
+<p>– Variation method</p>
+<p>– Perturbation theory</p></li>
+<li><p>In practice, modifications / combinations of these two used</p></li>
 </ul>
-<center>
-<span class="math inline">\(- \frac{\hbar^2}{2m} (\frac{\partial ^2}{\partial x^2} + \frac{\partial ^2 }{\partial y^2} + \frac{\partial ^2 }{\partial z^2})\psi + V(x) \psi = E \psi\)</span>
-</center>
+</div>
+</section>
+<section id="variation-method" class="slide level2">
+<h2>Variation Method</h2>
+<div style="font-size: 90%;">
+<ul>
+<li><p>Get approximate energy of ground state without solving Schrödinger equation</p></li>
+<li><p>Gives upper bound for ground state energy</p></li>
+<li><p>Guess a trial wavefunction, <span class="math inline">\(\phi\)</span></p>
+<p>– <span class="math inline">\(\phi\)</span> must be normalisable</p>
+<p>– <span class="math inline">\(\phi\)</span> must satisfy relevant boundary conditions</p>
+<p>– Symmetry of problem leads us to <span class="math inline">\(\phi\)</span></p>
+<p>– Trying to make <span class="math inline">\(\phi\)</span> as close to what we think the real wavefunction, <span class="math inline">\(\psi\)</span>, is as possible</p></li>
+</ul>
+</div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<p><br> <br></p>
-<div style="font-size: 90%;">
 <ul>
-<li><p>Hydrogen atom potential, V, due to electrostatic attraction of nucleus</p></li>
-<li><p>This is spherically symmetrical, makes sense to switch to spherical polar coords</p></li>
-<li><p>Time independent Shrödinger equations becomes</p></li>
+<li>Bound on ground state energy given by:</li>
 </ul>
-<p><span class="math inline">\({\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\partial }{\partial r}}\left(r^{2}{\frac {\partial \psi }{\partial r}}\right)+{\frac {1}{r^{2}\sin \theta }}{\frac {\partial }{\partial \theta }}\left(\sin \theta {\frac {\partial \psi }{\partial \theta }}\right)+{\frac {1}{r^{2}\sin ^{2}\theta }}{\frac {\partial ^{2}\psi }{\partial \varphi ^{2}}}\right]\\-{\frac {e^{2}}{4\pi \varepsilon _{0}r}}\psi =E\psi }\)</span></p>
-</div>
+<p><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0\)</span></p>
+<ul>
+<li><p>H is the Hamiltonian, the energy operator for the system</p></li>
+<li><p>Can be proved by expanding <span class="math inline">\(\phi\)</span> in terms of the (unknown) true wavefunctions <span class="math inline">\(\psi\)</span></p></li>
+<li><p>Equation above assumes <span class="math inline">\(\psi\)</span> normalised</p></li>
+</ul>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-<div style="font-size: 90%;">
 <ul>
-<li><p>Assume that potential, V, just depends on r, not <span class="math inline">\(\theta\)</span> or <span class="math inline">\(\phi\)</span></p>
-<ul>
-<li><p>True for hydrogen (or <span class="math inline">\(He^+\)</span>, <span class="math inline">\(Li^{++}\)</span>, <span class="math inline">\(Be^{3+}\)</span>….)</p></li>
-<li><p>Pretty true for most ions and atoms</p></li>
-<li><p>Lousy for molecules</p></li>
-<li><p>We’ll see that the solution to</p></li>
-</ul></li>
+<li><p>In practice, skill in using variation method is astute choice of trial wavefunction</p></li>
+<li><p>If we happen to chance upon actual ground state wavefunction, <span class="math inline">\(\psi_0\)</span>, then we’ll get an energy = <span class="math inline">\(E_0\)</span></p></li>
+<li><p>Best way to use variation method</p>
+<p>– construct trial wavefunction with parameters that can be adjusted</p>
+<p>– Minimise value of integral by adjusting parameters</p></li>
 </ul>
-<p><span class="math inline">\({\displaystyle -{\frac {\hbar ^{2}}{2m }}\left[{\frac {1}{r^{2}}}{\frac {\partial }{\partial r}}\left(r^{2}{\frac {\partial \psi }{\partial r}}\right)+{\frac {1}{r^{2}\sin \theta }}{\frac {\partial }{\partial \theta }}\left(\sin \theta {\frac {\partial \psi }{\partial \theta }}\right)+{\frac {1}{r^{2}\sin ^{2}\theta }}{\frac {\partial ^{2}\psi }{\partial \varphi ^{2}}}\right] \\ -{\frac {e^{2}}{4\pi \varepsilon _{0}r}}\psi =E\psi }\)</span></p>
-<ul>
-<li>gives us……</li>
-</ul>
-</div>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-
-<img data-src="images/ptable.png" class="r-stretch"></section>
+<ul>
+<li><p>Take particle in one dimensional box, problem we solved exactly before</p>
+<ul>
+<li>Chose <span class="math inline">\(\phi = x(x-L)\)</span> as the trial wavefunction</li>
+</ul>
+<p>– Satisfies boundary conditions</p>
+<p>– Not normalised yet</p>
+<p>– Remember hamiltonian:</p></li>
+</ul>
+<p>inside the box</p>
+<center>
+<span class="math inline">\(H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}\)</span>
+</center>
+outside the box
+<center>
+<span class="math inline">\(H = 0\)</span>
+</center>
+</section>
 <section id="section-3" class="slide level2">
 <h2></h2>
 <ul>
-<li><p>Separation of variables</p></li>
-<li><p>Consider <span class="math inline">\(\psi(r, \theta, \phi) = R(r) Y(\theta, \phi)\)</span></p></li>
-<li><p>Divide through by <span class="math inline">\(\psi\)</span> and multiply by <span class="math inline">\(r^2\)</span> to get</p></li>
-<li><p><span class="math inline">\(-\frac{\hbar^2}{2m} \frac{1}{R} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial R}{\partial r} \right) + r^2V - r^2E = \\ \frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin\theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial Y}{\partial \theta} + \frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin^2\theta} \frac {\partial ^{2}Y }{\partial \varphi ^{2}}\)</span></p></li>
+<li><p><span class="math inline">\(H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}\)</span></p></li>
+<li><p>integral gives us</p></li>
+<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}\)</span></p></li>
+<li><p>to normalise we get <span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* \phi \; dx = \frac{L^5}{30}\)</span></p></li>
+<li><p>putting together we get:</p></li>
+</ul>
+<center>
+<span class="math inline">\(E_1 \le \frac{5 \hbar^2}{mL^2}\)</span>
+</center>
+<ul>
+<li><p>compare to <span class="math inline">\(E_1 = \frac{\pi^2 \hbar^2}{2mL^2}\)</span></p></li>
+<li><p>agrees to better than 2% (<span class="math inline">\(\frac{\pi^2}{2} = 4.935\)</span>)</p></li>
 </ul>
 </section>
 <section id="section-4" class="slide level2">
 <h2></h2>
-<p><br> <br></p>
 <ul>
-<li><p>Left side just depends on r, right side just depends on <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\phi\)</span></p></li>
-<li><p>Then they must both be equal to a constant</p></li>
-<li><p>Let this equal <span class="math inline">\(-\lambda\)</span>, say</p></li>
-<li><p><span class="math inline">\(-\frac{\hbar^2}{2m} \frac{1}{R} \frac{d}{d r} \left( r^{2} \frac{d R}{d r} \right) + r^2V - r^2E = -\lambda\)</span></p></li>
-<li><p><span class="math inline">\(\frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin\theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial Y}{\partial \theta} + \frac{\hbar^{2}}{2m} \frac{1}{Y} \frac{1}{\sin^2\theta} \frac {\partial ^{2}Y }{\partial \varphi ^{2}} = -\lambda\)</span></p></li>
+<li><p>Previous example didn’t have adjustable parameters</p>
+<p>– In general not the case</p></li>
 </ul>
 </section>
 <section id="section-5" class="slide level2">
 <h2></h2>
 <ul>
-<li><p>Leave aside radial part for the moment</p></li>
-<li><p>Further separate the angular terms</p></li>
-<li><p>Put <span class="math inline">\(Y(\theta, \phi) = \Theta(\theta) \times \Phi(\phi)\)</span></p></li>
-<li><p>Divide through by <span class="math inline">\(Y\)</span> and multiply by <span class="math inline">\(\sin^2\theta\)</span></p></li>
-<li><p><span class="math inline">\(\frac{\hbar^{2}}{2m} \frac{\sin\theta}{\Theta} \frac{\partial}{\partial \theta} \sin\theta \frac{\partial\Theta }{\partial \theta}  + \lambda \sin^2 \theta  = -\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{\partial^2 \Phi}{\partial \phi^2}\)</span></p></li>
+<li><p>Suppose we don’t know solution for SHO problem</p></li>
+<li><p>Guess that it’s similar to 1-D box we did</p></li>
+<li><p><span class="math inline">\(\phi = \sqrt{ \frac{2}{L} } \sin \frac{n \pi x}{L}\)</span> for <span class="math inline">\(0 \le x \le L\)</span></p></li>
+<li><p>get <span class="math inline">\(E_0 \le \frac{2}{L} \int_0^L \cos \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m^2 \omega^2 x^2\right) \cos \frac{\pi x}{L} dx\)</span></p></li>
+<li><p><span class="math inline">\(E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} + \frac{1}{4} m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})\)</span></p></li>
+<li><p>set <span class="math inline">\(\frac{dE_0}{dL} = 0\)</span> to get minimum of this and find <span class="math inline">\(L = 1.04 \sqrt{\frac{\hbar}{m \omega}}\)</span></p></li>
+<li><p>then <span class="math inline">\(E_0 \le 0.568 \hbar \omega\)</span></p></li>
 </ul>
 </section>
 <section id="section-6" class="slide level2">
 <h2></h2>
-<p><br></p>
 <ul>
-<li><p>Left hand side depends just on <span class="math inline">\(\theta\)</span></p></li>
-<li><p>Right hand side depends just on <span class="math inline">\(\phi\)</span></p></li>
-<li><p>Must both be equal to some constant, <span class="math inline">\(\nu\)</span> say</p></li>
-<li><p><span class="math inline">\(\frac{\hbar^{2}}{2m} \frac{\sin\theta}{\Theta} \frac{d}{d \theta}  \sin\theta \frac{d\Theta }{d \theta}  + \lambda \sin^2 \theta = \nu\)</span></p></li>
-<li><p><span class="math inline">\(-\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{d^2 \Phi}{d \phi^2} = \nu\)</span></p></li>
-<li><p>later on we’ll set <span class="math inline">\(\nu = \mathcal{l}(\mathcal{l} + 1)\)</span> because the <span class="math inline">\(\mathcal{l}\)</span> is related to angular momentum</p></li>
-</ul>
-</section>
-<section id="section-7" class="slide level2">
-<h2></h2>
-<ul>
-<li><p><span class="math inline">\(\Phi\)</span> part is easy</p>
-<ul>
-<li><p><span class="math inline">\(-\frac{\hbar^{2}}{2m} \frac{1}{\Phi}\frac{d^2 \Phi}{d \phi^2} = \nu\)</span></p></li>
-<li><p>gives solution <span class="math inline">\(\Phi = A e ^{ \pm i \sqrt{\frac{2m\nu}{\hbar^2}} \phi }\)</span></p></li>
-</ul></li>
-<li><p>this must be single valued so:</p></li>
-<li><p><span class="math inline">\(\Phi(\phi + 2\pi) = \Phi(\phi)\)</span></p>
-<p><span class="math inline">\(\implies e ^{ \pm i \sqrt{\frac{2m\nu}{\hbar^2}} 2\pi } = 1\)</span></p>
-<p><span class="math inline">\(\implies \sqrt{\frac{2m\nu}{\hbar^2}} = {\color{red}{m_{\mathcal{l}}}}\)</span></p></li>
-<li><p>where <span class="math inline">\({\color{red}{m_{\mathcal{l}}}}\)</span> is some integer; positive, negative, or zero</p></li>
-</ul>
-</section>
-<section id="section-8" class="slide level2">
-<h2></h2>
-<ul>
-<li><p>subbing back into <span class="math inline">\(\Phi\)</span> we get</p></li>
-<li><p><span class="math inline">\(\Phi = \frac{1}{\sqrt{2\pi}} e^{i {\color{red}{m_{\mathcal{l}}}} \phi}\)</span></p></li>
-<li><p>factor <span class="math inline">\(\frac{1}{\sqrt{2\pi}}\)</span> is first step in normalising</p></li>
-<li><p>we now have our first quantum number, <span class="math inline">\({\color{red}{m_{\mathcal{l}}}}\)</span></p></li>
-</ul>
-</section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-<ul>
-<li><p>Solution for <span class="math inline">\(\Theta\)</span> is more complex</p></li>
-<li><p>Get Legendre polynomials</p></li>
-<li><p>These are akin to Hermite polynomials we met with the SHO</p></li>
-</ul>
-</section>
-<section id="section-10" class="slide level2">
-<h2></h2>
-<p>The three separated equations are:</p>
-<ul>
-<li><p><span class="math inline">\(\frac{\hbar^2}{2m} \frac{1}{r^2} \frac{d}{d r} \left( r^{2} \frac{d R}{d r} \right) + \left[\frac{e^2}{4\pi\epsilon_0r} +  E - \frac{\lambda}{r^2}\right]R = 0\)</span></p></li>
-<li><p><span class="math inline">\(\frac{\hbar^{2}}{2m} \frac{1}{\sin\theta}  \frac{d}{d\theta} \sin\theta \frac{d\Theta }{d \theta}  + \left[ \lambda - \frac{\nu}{\sin^2 \theta} \right]\Theta  = 0\)</span></p></li>
-<li><p><span class="math inline">\(\frac{\hbar^{2}}{2m} \frac{d^2 \Phi}{d \phi^2}  + \nu \Phi = 0\)</span></p></li>
-</ul>
-</section>
-<section id="section-11" class="slide level2">
-<h2></h2>
-<div style="font-size: 100%;">
-<ul>
-<li><p>Each equation gives a quantum number</p>
-<p>– <em>the</em> <span class="math inline">\(\Phi\)</span> equation as we’ve seen gives <span class="math inline">\({\color{red}{m_{\mathcal{l}}}}\)</span></p>
-<ul>
-<li><p>This is the z component of angular momentum</p></li>
-<li><p>Called magnetic quantum number</p></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="section-12" class="slide level2">
-<h2></h2>
-<p>– <span class="math inline">\(\Theta\)</span> equation will give <span class="math inline">\(\mathcal{l}\)</span> where <span class="math inline">\(\nu = \mathcal{l}(\mathcal{l} + 1)\)</span></p>
-<ul>
-<li><p>where <span class="math inline">\(\mathcal{l}\)</span> is the total angular momentum</p></li>
-<li><p>Called orbital quantum number</p></li>
-</ul>
-<p>– <em>R equation gives n</em></p>
-<ul>
-<li><p>Called principle quantum number</p></li>
-<li><p><span class="math inline">\(\Phi\)</span> quantisation comes from need to be single valued</p></li>
-<li><p>Other two come from truncating a polynomial</p>
-<p>– otherwise wavefunction couldn’t be kept finite at large r</p>
-<p>– We wouldn’t be able to normalise <span class="math inline">\(\psi\)</span></p></li>
-</ul>
-</section>
-<section id="some-hydrogen-wavefunctions" class="slide level2">
-<h2>Some Hydrogen Wavefunctions</h2>
-<div style="font-size: 80%;">
-<ul>
-<li><span class="math inline">\({\color{purple}{Radial \; R(r)}}\)</span>, <span class="math inline">\({\color{darkgreen}{Polar \; \Theta(\theta)}}\)</span>, and <span class="math inline">\({\color{red}{Azimuthal \; \Phi(\phi)}}\)</span></li>
-</ul>
-<p><br></p>
-<ul>
-<li><p><span class="math inline">\({\color{purple}{n=1}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 0}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
-<ul>
-<li><span class="math inline">\(\psi({\color{purple}{r=1}}, {\color{darkgreen}{\theta=0}}, {\color{red}{\phi=0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
-</ul></li>
-<li><p><span class="math inline">\({\color{purple}{n=2}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 0}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
-<ul>
-<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{2} a_0^{3/2}} \left[1-\frac{r}{2a_0}\right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
-</ul></li>
-<li><p><span class="math inline">\({\color{purple}{n=3}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 0}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
-<ul>
-<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{2}{81 \sqrt{3} a_0^{3/2}} \left[27-18\frac{r}{2a_0}+2(\frac{r}{2a_0})^2 \right] e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="section-13" class="slide level2">
-<h2></h2>
-<div style="font-size: 80%;">
-<ul>
-<li><span class="math inline">\({\color{purple}{Radial \; R(r)}}\)</span>, <span class="math inline">\({\color{darkgreen}{Polar \; \Theta(\theta)}}\)</span>, and <span class="math inline">\({\color{red}{Azimuthal \; \Phi(\phi)}}\)</span></li>
-</ul>
-<p><br></p>
-<ul>
-<li><p><span class="math inline">\({\color{purple}{n=2}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 1}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = 0}}\)</span></p>
-<ul>
-<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{6}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
-</ul></li>
-<li><p><span class="math inline">\({\color{purple}{n=2}}\)</span>, <span class="math inline">\({\color{darkgreen}{\mathcal{l} = 1}}\)</span>, <span class="math inline">\({\color{red}{m_{\mathcal{l}} = \pm 1}}\)</span></p>
-<ul>
-<li><span class="math inline">\(\psi({\color{purple}{r}}, {\color{darkgreen}{\theta}}, {\color{red}{\phi}}) = {\color{purple}{\frac{1}{\sqrt{6} a_0^{3/2}} \frac{r}{2a_0} e^{-r/2a_0}}} \times{\color{darkgreen}{\frac{\sqrt{3}}{2} \cos \theta}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}} e^{\pm i \phi} }}\)</span></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="a_0-is-the-bohr-radius" class="slide level2">
-<h2><span class="math inline">\(a_0\)</span> is the Bohr Radius</h2>
-<p><br></p>
-<ul>
-<li><p>in the equations above used <span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm\)</span></p></li>
-<li><p>this is the <strong><em>Bohr Radius</em></strong></p></li>
-<li><p>corresponds to mosyt likely distance from nucleus for electron when <span class="math inline">\(n=1\)</span></p></li>
-</ul>
-</section>
-<section id="section-14" class="slide level2">
-<h2></h2>
-
-<img data-src="images/hydrogen-1s.png" class="r-stretch quarto-figure-center"><p class="caption">Young &amp; Freedman</p></section>
-<section id="principle-quantum-number-n-and-energy-levels-in-hydrogen" class="slide level2">
-<h2>Principle Quantum Number, n, and Energy Levels in Hydrogen</h2>
-<p><br></p>
-<ul>
-<li><p>electrostatic energy in Hydrogen only depends on how far you are from the nucleus</p>
-<ul>
-<li>radial part, <span class="math inline">\(R(r)\)</span>, is only bit which matters</li>
-<li>no dependence on <span class="math inline">\(\Theta(\theta)\)</span> or on <span class="math inline">\(\Phi(\phi)\)</span></li>
-<li>values of <span class="math inline">\({\mathcal{l}}\)</span> and <span class="math inline">\({m_{\mathcal{l}}}\)</span> are degenerate</li>
-</ul></li>
-</ul>
-</section>
-<section id="section-15" class="slide level2">
-<h2></h2>
-<p><br></p>
-<ul>
-<li><p>get <span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2}\)</span></p></li>
-<li><p>this is (coincidentally) the same as the experssion that Bohr got from his model</p></li>
-<li><p>reduces to <span class="math inline">\(E_n = -\frac{13.6057}{n^2} eV\)</span></p></li>
-</ul>
-</section>
-<section id="orbital-quantum-number-mathcall-and-angular-momentum" class="slide level2">
-<h2>Orbital Quantum Number, <span class="math inline">\({\mathcal{l}}\)</span>, and Angular Momentum</h2>
-<ul>
-<li><p>the orbital angular momentum, <span class="math inline">\(L\)</span> is given by:</p></li>
-<li><p><span class="math inline">\(L = \sqrt{{\mathcal{l}}({\mathcal{l}} + 1)}\hbar\)</span> where <span class="math inline">\({\mathcal{l}} = 0, 1, 2...n-1\)</span></p></li>
-<li><p>note the <span class="math inline">\({\mathcal{l}}\)</span> can be 0 leading to zero angular momentum. Unlike simple picture of hydrogen, the electron isn’t <em>orbiting</em> around the nucleus</p></li>
-</ul>
-</section>
-<section id="section-16" class="slide level2">
-<h2></h2>
-<p><img data-src="images/hydrogen-L0.png" height="300"></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hydrogen-L1.png"></p>
-<figcaption>Young &amp; Freedman</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/hydrogen-L2.png"></p>
-</div></div>
-</section>
-<section id="magnetic-quantum-number-m_mathcall-and-z-component-of-angular-momentum" class="slide level2">
-<h2>Magnetic Quantum Number, <span class="math inline">\(m_{\mathcal{l}}\)</span>, and Z-Component of Angular Momentum</h2>
-<ul>
-<li><p><span class="math inline">\(m_{\mathcal{l}}\)</span> dictates, kind of, the direction of the angular momentum, <span class="math inline">\(L\)</span>.</p></li>
-<li><p><span class="math inline">\(L_z = m_{\mathcal{l}}\hbar\)</span> where <span class="math inline">\(m_{\mathcal{l}} = 0, \pm1, \pm2..., \pm {\mathcal{l}}\)</span></p></li>
-<li><p><span class="math inline">\(L_z\)</span> is always less that <span class="math inline">\(L\)</span>, for obvious reasons</p></li>
-<li><p>fact that <span class="math inline">\(L_z &lt; L\)</span> is consistent with uncertainty principle</p></li>
-</ul>
-</section>
-<section id="hydrogen-spectra" class="slide level2">
-<h2>Hydrogen Spectra</h2>
-<ul>
-<li>energy levels given by: <span class="math inline">\(E_n = \frac{13.6057}{n^2} eV\)</span></li>
-</ul>
-
-<img data-src="images/hydro-energy-levels.png" class="r-stretch"></section>
-<section id="section-17" class="slide level2">
-<h2></h2>
-<ul>
-<li>transitions between levels lead to lines in the hydrogen spectrum</li>
-</ul>
-
-<img data-src="images/hydro-lines.png" class="r-stretch"></section>
-<section id="section-18" class="slide level2">
-<h2></h2>
-<p><br></p>
-<ul>
-<li><p>corresponding wavelengths for the photon emitted by each transition is given by</p></li>
-<li><p><span class="math inline">\(\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)\)</span></p></li>
-<li><p><span class="math inline">\(R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}\)</span></p></li>
-<li><p>R is the <em>Rydberg</em> Constant</p></li>
-<li><p>get lines at <i style="color:red;">656nm</i>, <i style="color:green;">486nm</i>, <i style="color:blue;">434nm</i>, and <i style="color:violet;">410nm</i> in the visible.</p></li>
-</ul>
-</section>
-<section id="hydrogen-like-ions" class="slide level2">
-<h2>Hydrogen-Like Ions</h2>
-<p><br></p>
-<ul>
-<li><p>for hydrogen-like ions (<span class="math inline">\(He^+\)</span>, <span class="math inline">\(Li^{++}\)</span>, <span class="math inline">\(Be^{3+}\)</span>), need extra factor of <span class="math inline">\(Z^2\)</span> in energy levels</p></li>
-<li><p><span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2}\)</span></p></li>
-<li><p><span class="math inline">\(E_n = - Z^2 \frac{13.6057}{n^2} eV\)</span></p></li>
-<li><p>also need to modify <strong>Bohr Radius</strong> for these ions:</p>
-<ul>
-<li><p><span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm\)</span></p></li>
-<li><p>gives ground state wavefunction of <span class="math inline">\(\psi_0(r) = Ae^{-Zr/a_0}\)</span></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="back-to-our-periodic-table" class="slide level2">
-<h2>Back to Our Periodic Table</h2>
-<ul>
-<li><p>Principle quantum number, <span class="math inline">\(n\)</span> gives level of orbital</p></li>
-<li><p>The Orbital Quantum Number, <span class="math inline">\({\mathcal{l}}\)</span>, gives s, p, d, f etc</p>
-<ul>
-<li><p><strong><em>1s</em></strong> orbital has <span class="math inline">\(n=1\)</span> and <span class="math inline">\({\mathcal{l}} = 0\)</span></p></li>
-<li><p><strong><em>2s</em></strong> orbital has <span class="math inline">\(n=2\)</span> and <span class="math inline">\({\mathcal{l}} = 0\)</span></p></li>
-<li><p><strong><em>2p</em></strong> orbital has <span class="math inline">\(n=2\)</span> and <span class="math inline">\({\mathcal{l}} = 1\)</span></p></li>
-<li><p><strong><em>3d</em></strong> orbital has <span class="math inline">\(n=3\)</span> and <span class="math inline">\({\mathcal{l}} = 2\)</span></p></li>
-</ul></li>
-<li><p>maximum number of electrons in each orbital given by number of posssible <span class="math inline">\(m_{\mathcal{l}}\)</span> values <span class="math inline">\(\times 2\)</span></p></li>
+<li><p>To find higher energy states, above ground state</p>
+<p>– Use trial wavefunctions that are orthonormal to ground state</p></li>
+<li><p>Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions</p></li>
 </ul>
 </section>
 <section id="equations" class="slide level2">
@@ -539,20 +340,20 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="09-hydrogen_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="10-variational_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="09-hydrogen_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="09-hydrogen_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="09-hydrogen_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="10-variational_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
