@@ -25,7 +25,7 @@ editor: visual
 
 <br>
 
-Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable. 
+Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable. But there are a number of techniques to get sensible, if not exact, solutions for quantum systems. We'll look at two of these. The first is the _Variational Principle_ in which we guess, and then optimise, a wavefunction in such a way to give an upper bound for the energy levels.
 
 ## Contents
 
@@ -53,141 +53,140 @@ Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in 
 ## More Complex Problems
 
 ::: {style="font-size: 80%;"}
+-   Hydrogen atom can be solved exactly by time independent Schrödinger equation
 
-- Hydrogen atom can be solved exactly by time independent Schrödinger equation
-
-- Other problems aren’t so kind
+-   Other problems aren’t so kind
 
     – Multi-electron atoms
-    
+
     – Molecules
-    
-- Need to cut some corners
+
+-   Need to cut some corners
 
     – Approximations
-    
+
     – Astute guesses
-    
-- We’ll begin with two foundation methods
+
+-   We’ll begin with two foundation methods
 
     – Variation method
-    
-    – Perturbation theory
-    
-- In practice, modifications / combinations of these two
-used
 
+    – Perturbation theory
+
+-   In practice, modifications / combinations of these two used
 :::
 
-## Variation Method
+## Variational Method
 
 ::: {style="font-size: 90%;"}
+-   Get approximate energy of ground state without solving Schrödinger equation
 
-- Get approximate energy of ground state without solving Schrödinger equation
+-   Gives upper bound for ground state energy
 
-- Gives upper bound for ground state energy
-
-- Guess a trial wavefunction, $\phi$
+-   Guess a trial wavefunction, $\phi$
 
     – $\phi$ must be normalisable
-    
+
     – $\phi$ must satisfy relevant boundary conditions
-    
+
     – Symmetry of problem leads us to $\phi$
-    
+
     – Trying to make $\phi$ as close to what we think the real wavefunction, $\psi$, is as possible
-    
 :::
 
-##
+## 
 
-- Bound on ground state energy given by:
+-   Bound on ground state energy given by:
 
 $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
-- H is the Hamiltonian, the energy operator for the system
+-   H is the Hamiltonian, the energy operator for the system
 
-- Can be proved by expanding $\phi$ in terms of the (unknown) true wavefunctions $\psi$
+-   Can be proved by expanding $\phi$ in terms of the (unknown) true wavefunctions $\psi$
 
-- Equation above assumes $\psi$ normalised
+-   Equation above assumes $\psi$ normalised
 
-##
+## 
 
-- In practice, skill in using variation method is astute choice of trial wavefunction
+-   In practice, skill in using variation method is astute choice of trial wavefunction
 
-- If we happen to chance upon actual ground state wavefunction, $\psi_0$, then we’ll get an energy = $E_0$
+-   If we happen to chance upon actual ground state wavefunction, $\psi_0$, then we’ll get an energy = $E_0$
 
-- Best way to use variation method
+-   Best way to use variation method
 
     – construct trial wavefunction with parameters that can be adjusted
 
     – Minimise value of integral by adjusting parameters
-    
-##
-
-- Take particle in one dimensional box, problem we solved exactly before
-
-    - Chose $\phi = x(x-L)$ as the trial wavefunction
-    
-    – Satisfies boundary conditions
-    
-    – Not normalised yet
-    
-    – Remember hamiltonian:
-    
-inside the box
-    
-<center> $H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$ </center>
-
-outside the box <center> $H = 0$ </center>
-
-##
-
-- $H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$
-
-- integral gives us 
-
-- $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
-
-- to normalise we get $\int_{-\infty}^{+\infty} \phi^* \phi \; dx = \frac{L^5}{30}$
-
-- putting together we get:
-
-<center> $E_1 \le \frac{5 \hbar^2}{mL^2}$   </center>
-
-- compare to $E_1 = \frac{\pi^2 \hbar^2}{2mL^2}$
-
-- agrees to better than 2% ($\frac{\pi^2}{2} = 4.935$)
 
 ## 
 
-- Previous example didn’t have adjustable parameters
-    
+-   Take particle in one dimensional box, problem we solved exactly before
+
+    -   Chose $\phi = x(x-L)$ as the trial wavefunction
+
+    – Satisfies boundary conditions
+
+    – Not normalised yet
+
+    – Remember hamiltonian:
+
+inside the box
+
+<center>$H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$</center>
+
+outside the box
+
+<center>$H = 0$</center>
+
+## 
+
+-   $H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$
+
+- Remember $\phi = x(x-L)$ is the trial wavefunction
+
+-   integral gives us
+
+-   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$, but really  $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
+
+-   to normalise we get $\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}$
+
+-   putting together we get:
+
+<center>$E_1 \le \frac{5 \hbar^2}{mL^2}$</center>
+
+-   compare to $E_1 = \frac{\pi^2 \hbar^2}{2mL^2}$
+
+-   agrees to better than 2% ($\frac{\pi^2}{2} = 4.935$)
+
+## 
+
+-   Previous example didn’t have adjustable parameters
+
     – In general not the case
 
-##
+## 
 
-- Suppose we don’t know solution for SHO problem
+-   Suppose we don’t know solution for SHO problem
 
-- Guess that it’s similar to 1-D box we did
+-   Guess that it’s similar to 1-D box we did
 
-- $\phi = \sqrt{ \frac{2}{L} } \sin \frac{n \pi x}{L}$ for $0 \le x \le L$
+-   $\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}$ for $0 \le x \le L$
 
-- get $E_0 \le \frac{2}{L} \int_0^L \cos \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m^2 \omega^2 x^2\right) \cos \frac{\pi x}{L} dx$
+-   get $E_0 \le \frac{2}{L} \int_0^L \sin \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m^2 \omega^2 x^2\right) \sin \frac{\pi x}{L} dx$
 
-- $E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} + \frac{1}{4} m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})$
+-   $E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} + \frac{1}{4} m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})$
 
-- set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 1.04 \sqrt{\frac{\hbar}{m \omega}}$
+-   set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 1.04 \sqrt{\frac{\hbar}{m \omega}}$
 
-- then $E_0 \le 0.568 \hbar \omega$
+-   then $E_0 \le 0.568 \hbar \omega$
 
-##
+## 
 
-- To find higher energy states, above ground state
+-   To find higher energy states, above ground state
 
     – Use trial wavefunctions that are orthonormal to ground state
 
-- Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
+-   Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
 
 ## Equations
 

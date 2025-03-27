@@ -154,7 +154,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
 <p><br></p>
-<p>Unlike particles in boxes, SHO’s and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable.</p>
+<p>Unlike particles in boxes, SHO’s and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable. But there are a number of techniques to get sensible, if not exact, solutions for quantum systems. We’ll look at two of these. The first is the <em>Variational Principle</em> in which we guess, and then optimise, a wavefunction in such a way to give an upper bound for the energy levels.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
@@ -196,8 +196,8 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </ul>
 </div>
 </section>
-<section id="variation-method" class="slide level2">
-<h2>Variation Method</h2>
+<section id="variational-method" class="slide level2">
+<h2>Variational Method</h2>
 <div style="font-size: 90%;">
 <ul>
 <li><p>Get approximate energy of ground state without solving Schrödinger equation</p></li>
@@ -247,7 +247,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <center>
 <span class="math inline">\(H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}\)</span>
 </center>
-outside the box
+<p>outside the box</p>
 <center>
 <span class="math inline">\(H = 0\)</span>
 </center>
@@ -256,9 +256,10 @@ outside the box
 <h2></h2>
 <ul>
 <li><p><span class="math inline">\(H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}\)</span></p></li>
+<li><p>Remember <span class="math inline">\(\phi = x(x-L)\)</span> is the trial wavefunction</p></li>
 <li><p>integral gives us</p></li>
-<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}\)</span></p></li>
-<li><p>to normalise we get <span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* \phi \; dx = \frac{L^5}{30}\)</span></p></li>
+<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}\)</span>, but really <span class="math inline">\(\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}\)</span></p></li>
+<li><p>to normalise we get <span class="math inline">\(\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}\)</span></p></li>
 <li><p>putting together we get:</p></li>
 </ul>
 <center>
@@ -281,8 +282,8 @@ outside the box
 <ul>
 <li><p>Suppose we don’t know solution for SHO problem</p></li>
 <li><p>Guess that it’s similar to 1-D box we did</p></li>
-<li><p><span class="math inline">\(\phi = \sqrt{ \frac{2}{L} } \sin \frac{n \pi x}{L}\)</span> for <span class="math inline">\(0 \le x \le L\)</span></p></li>
-<li><p>get <span class="math inline">\(E_0 \le \frac{2}{L} \int_0^L \cos \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m^2 \omega^2 x^2\right) \cos \frac{\pi x}{L} dx\)</span></p></li>
+<li><p><span class="math inline">\(\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}\)</span> for <span class="math inline">\(0 \le x \le L\)</span></p></li>
+<li><p>get <span class="math inline">\(E_0 \le \frac{2}{L} \int_0^L \sin \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m^2 \omega^2 x^2\right) \sin \frac{\pi x}{L} dx\)</span></p></li>
 <li><p><span class="math inline">\(E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} + \frac{1}{4} m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})\)</span></p></li>
 <li><p>set <span class="math inline">\(\frac{dE_0}{dL} = 0\)</span> to get minimum of this and find <span class="math inline">\(L = 1.04 \sqrt{\frac{\hbar}{m \omega}}\)</span></p></li>
 <li><p>then <span class="math inline">\(E_0 \le 0.568 \hbar \omega\)</span></p></li>
