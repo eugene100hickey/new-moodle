@@ -283,9 +283,10 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>Suppose we don’t know solution for SHO problem</p></li>
 <li><p>Guess that it’s similar to 1-D box we did</p></li>
 <li><p><span class="math inline">\(\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}\)</span> for <span class="math inline">\(0 \le x \le L\)</span></p></li>
-<li><p>get <span class="math inline">\(E_0 \le \frac{2}{L} \int_0^L \sin \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m^2 \omega^2 x^2\right) \sin \frac{\pi x}{L} dx\)</span></p></li>
-<li><p><span class="math inline">\(E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} + \frac{1}{4} m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})\)</span></p></li>
-<li><p>set <span class="math inline">\(\frac{dE_0}{dL} = 0\)</span> to get minimum of this and find <span class="math inline">\(L = 1.04 \sqrt{\frac{\hbar}{m \omega}}\)</span></p></li>
+<li><p>need to make box from <span class="math inline">\(-L \le x \le +L\)</span> by symmetry, and use cosine functions instead of sine</p></li>
+<li><p>get <span class="math inline">\(E_0 \le \frac{2}{L} \int_{-L}^L \cos \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{L} dx\)</span></p></li>
+<li><p><span class="math inline">\(E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{4\pi^2})\)</span></p></li>
+<li><p>set <span class="math inline">\(\frac{dE_0}{dL} = 0\)</span> to get minimum of this and find <span class="math inline">\(L = 2.0441 \sqrt{\frac{\hbar}{m \omega}}\)</span></p></li>
 <li><p>then <span class="math inline">\(E_0 \le 0.568 \hbar \omega\)</span></p></li>
 </ul>
 </section>

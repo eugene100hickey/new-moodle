@@ -172,11 +172,13 @@ outside the box
 
 -   $\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}$ for $0 \le x \le L$
 
--   get $E_0 \le \frac{2}{L} \int_0^L \sin \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m^2 \omega^2 x^2\right) \sin \frac{\pi x}{L} dx$
+- need to make box from $-L \le x \le +L$ by symmetry, and use cosine functions instead of sine 
 
--   $E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} + \frac{1}{4} m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})$
+-   get $E_0 \le \frac{2}{L} \int_{-L}^L \cos \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{L} dx$
 
--   set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 1.04 \sqrt{\frac{\hbar}{m \omega}}$
+-   $E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{4\pi^2})$
+
+-   set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 2.0441 \sqrt{\frac{\hbar}{m \omega}}$
 
 -   then $E_0 \le 0.568 \hbar \omega$
 
