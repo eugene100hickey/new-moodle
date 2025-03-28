@@ -33,6 +33,8 @@ include-in-header:
 
 -   [10 Variational Principle](https://tud.netlify.app/lectures/physics-quantum/10-variational.html){target="_blank"}
 
+-   [11 Perturbation Theory](https://tud.netlify.app/lectures/physics-quantum/11-perturbation.html){target="_blank"}
+
 ## Presentations
 
 -   [Exoplanets-ML-Labs March 13th](https://tud.netlify.app/physics-school/ML-Labs_exoplanets.html){target="_blank"}
