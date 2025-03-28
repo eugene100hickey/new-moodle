@@ -97,7 +97,9 @@ Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in 
 
 -   Bound on ground state energy given by:
 
-$\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
+$\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$ 
+
+- (or $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx \ge \; E_0$ for 1-D problems)
 
 -   H is the Hamiltonian, the energy operator for the system
 
@@ -147,7 +149,7 @@ outside the box
 
 -   integral gives us
 
--   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$, but really $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
+-   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx$, but really $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
 
 -   to normalise we get $\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}$
 
@@ -201,7 +203,7 @@ outside the box
 
     -   for example, for the SHO we could use $\psi_1(x) = A x \cos(\frac{\pi x}{2 L})$
 
-    -   $\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0$
+    -   $\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0$ because $x \cos (\frac{\pi x}{2 L})$ and $\cos (\frac{\pi x}{2 L})$ are orthogonal
 
 -   Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
 

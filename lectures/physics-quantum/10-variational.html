@@ -216,6 +216,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </ul>
 <p><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0\)</span></p>
 <ul>
+<li><p>(or <span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx \ge \; E_0\)</span> for 1-D problems)</p></li>
 <li><p>H is the Hamiltonian, the energy operator for the system</p></li>
 <li><p>Can be proved by expanding <span class="math inline">\(\phi\)</span> in terms of the (unknown) true wavefunctions <span class="math inline">\(\psi\)</span></p></li>
 <li><p>Equation above assumes <span class="math inline">\(\psi\)</span> normalised</p></li>
@@ -260,7 +261,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p><span class="math inline">\(H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}\)</span></p></li>
 <li><p>Remember <span class="math inline">\(\phi = x(x-L)\)</span> is the trial wavefunction</p></li>
 <li><p>integral gives us</p></li>
-<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}\)</span>, but really <span class="math inline">\(\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}\)</span></p></li>
+<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx\)</span>, but really <span class="math inline">\(\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}\)</span></p></li>
 <li><p>to normalise we get <span class="math inline">\(\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}\)</span></p></li>
 <li><p>putting together we get:</p></li>
 </ul>
@@ -310,7 +311,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <p>– Use trial wavefunctions that are orthonormal to ground state</p>
 <ul>
 <li><p>for example, for the SHO we could use <span class="math inline">\(\psi_1(x) = A x \cos(\frac{\pi x}{2 L})\)</span></p></li>
-<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0\)</span></p></li>
+<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0\)</span> because <span class="math inline">\(x \cos (\frac{\pi x}{2 L})\)</span> and <span class="math inline">\(\cos (\frac{\pi x}{2 L})\)</span> are orthogonal</p></li>
 </ul></li>
 <li><p>Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions</p></li>
 <li><p>Variational Method pretty useful for the quantum mechanics of <span class="math inline">\(He\)</span> and of the <span class="math inline">\(H_2\)</span> molecule</p></li>
