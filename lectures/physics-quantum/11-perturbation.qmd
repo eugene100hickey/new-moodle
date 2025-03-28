@@ -1,5 +1,5 @@
 ---
-title: "10 - Variational Principle"
+title: "11 - Perturbation Theory"
 author:
   - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
@@ -25,19 +25,14 @@ editor: visual
 
 <br>
 
-Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable. But there are a number of techniques to get sensible, if not exact, solutions for quantum systems. We'll look at two of these. The first is the *Variational Principle* in which we guess, and then optimise, a wavefunction in such a way to give an upper bound for the energy levels.
+An alternative to the Variational Method if Perturbation Theory. Oftentimes, while we might not be able to get exact solutions to our system of interest, there exist such solutions for another, similar system. We can treat the differences between these two systems as a _correction_, or perturbation, and watch how that effects the results as it propagates through our calculations. This lets us see the impact of the modification from the ideal to the actual system, and gives us an indication of how accurate our approximation is.
 
 ## Contents
 
 :::::::: columns
 :::: {.column width="100%"}
 ::: {style="font-size: 100%;"}
-1.  3-D Time Dependent Schrödinger Equation
-2.  Separation of Variables
-3.  Hydrogen Quantum Numbers
-4.  Hydrogen Wavefunctions
-5.  Bohr Radius Hydrogen Spectrum
-6.  Hydrogen-Like Ions
+1.  
 :::
 ::::
 
@@ -50,167 +45,104 @@ Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in 
 ::::
 ::::::::
 
-## More Complex Problems
+## Perturbation Theory
 
-::: {style="font-size: 80%;"}
--   Hydrogen atom can be solved exactly by time independent Schrödinger equation
 
--   Other problems aren’t so kind
+- Alternative to variation method
 
-    – Multi-electron atoms
+- Again, relies on having the Hamiltonian, i.e. the statement of the TimeIndepSchröE
 
-    – Molecules
+- Also, need to have solution to another system which is very comparable
 
--   Need to cut some corners
+- But this happens a lot
 
-    – Approximations
+- Examples:
 
-    – Astute guesses
-
--   We’ll begin with two foundation methods
-
-    – Variation method
-
-    – Perturbation theory
-
--   In practice, modifications / combinations of these two used
-:::
-
-## Variational Method
-
-::: {style="font-size: 90%;"}
--   Get approximate energy of ground state without solving Schrödinger equation
-
--   Gives upper bound for ground state energy
-
--   Guess a trial wavefunction, $\phi$
-
-    – $\phi$ must be normalisable
-
-    – $\phi$ must satisfy relevant boundary conditions
-
-    – Symmetry of problem leads us to $\phi$
-
-    – Trying to make $\phi$ as close to what we think the real wavefunction, $\psi$, is as possible
-:::
-
-## 
-
--   Bound on ground state energy given by:
-
-$\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
-
--   H is the Hamiltonian, the energy operator for the system
-
--   Can be proved by expanding $\phi$ in terms of the (unknown) true wavefunctions $\psi$
-
--   Equation above assumes $\psi$ normalised
-
-## 
-
--   In practice, skill in using variation method is astute choice of trial wavefunction
-
-    - often start with something like the SHO ground state: $\psi(x) = C e^{-\alpha x^2}$
-
--   If we happen to chance upon actual ground state wavefunction, $\psi_0$, then we’ll get an energy = $E_0$
-
--   Best way to use variation method
-
-    – construct trial wavefunction with parameters that can be adjusted
-
-    – Minimise value of integral by adjusting parameters
-
-## 
-
--   Take particle in one dimensional box, problem we solved exactly before
-
-    -   Chose $\phi = x(x-L)$ as the trial wavefunction
-
-    – Satisfies boundary conditions
-
-    – Not normalised yet
-
-    – Remember hamiltonian:
-
-inside the box
-
-<center>$H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$</center>
-
-outside the box
-
-<center>$H = 0$</center>
-
-## 
-
--   $H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$
-
--   Remember $\phi = x(x-L)$ is the trial wavefunction
-
--   integral gives us
-
--   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$, but really $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
-
--   to normalise we get $\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}$
-
--   putting together we get:
-
-<center>$E_1 \le \frac{5 \hbar^2}{mL^2}$</center>
-
--   compare to $E_1 = \frac{\pi^2 \hbar^2}{2mL^2}$
-
--   agrees to better than 2% ($\frac{\pi^2}{2} = 4.935$)
-
-## 
-
--   Previous example didn’t have adjustable parameters
-
-    – In general not the case
-
-## 
-
--   Suppose we don’t know solution for SHO problem
-
--   Guess that it’s similar to 1-D box we did
-
--   $\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}$ for $0 \le x \le L$
-
--   need to make box from $-L \le x \le +L$ by symmetry, and use cosine functions instead of sine
-
-- $\psi(x)= \frac{1}{\sqrt{L}} \cos(\frac{\pi x}{2L})$
-
-##
-
--   get $E_0 \le \frac{1}{L} \int_{-L}^L \cos \frac{\pi x}{2L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{2L} dx$
-
--   $E_0 \le \frac{\hbar^2 \pi^2}{8 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})$
-
--   set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 1.302 \sqrt{\frac{\hbar}{m \omega}}$
-
--   then $E_0 \le 0.839 \hbar \omega$
-
-- not a great choice of initial wavefunction
-
-    - $\psi(x)$ is too heavy when you get towards $\pm L$
+    - anharmonic terms in SHO
     
-- but still an instructive result
+    - Hydrogen in a weak electric field
+    
+    - The Helium atom
+
+
 
 ## 
 
--   To find higher energy states, above ground state
+- Express Hamiltonian as:
 
-    – Use trial wavefunctions that are orthonormal to ground state
-    
-    - for example, for the SHO we could use $\psi_1(x) = A x \cos(\frac{\pi x}{2 L})$
-    
-    - $\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0$
+- $H = H_0 + \lambda \;H_1$
 
--   Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
+    – $\lambda$ can be =1, but it helps us keep track of order of approximation
 
-- Variational Method pretty useful for the quantum mechanics of $He$ and of the $H_2$ molecule
+- Shrödinger Equation becomes:
+
+    - $(H_0 + \lambda H_1)\psi_n = E_n \psi_n$
+
+- We’re going to say that the solution to the unperturbed system is;
+
+- $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
+
+## 
+
+- Let’s do some maths now:
+
+- Express $E_n$ and $\psi_n$ as Taylor Series expansion in $\lambda$
+
+- $E_n = E_n^{(0)} + \lambda E_n^{(1)} + \lambda^2 E_n^{(2)} + ....$
+
+- $\psi_n = \psi_n^{(0)} + \lambda \psi_n^{(1)} + \lambda^2 \psi_n^{(2)} + ....$
+
+- Putting these back into Schrödinger we get:
+
+- $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
+
+- $H_1 \psi^{(0)}_n + H_0 \psi^{(1)}_n = E^{(0)}_n \psi^{(1)}_n + E^{(1)}_n \psi^{(0)}_n$ - the first order correction
+
+- $H_1 \psi^{(1)}_n + H_0 \psi^{(2)}_n = E^{(0)}_n \psi^{(2)}_n + E^{(1)}_n \psi^{(1)}_n  + E^{(2)}_n \psi^{(0)}_n$ - the second order correction
+
+
+
+- Zeroth order is just the unperturbed system
+
+- Higher orders give corrections
+
+## 
+
+- Get first order corrections given by:
+
+- $E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx$
+
+- $\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m$
+
+
+
+- Energy correction given by impact of perturbing potential on (unperturbed) ground state
+
+-  Wavefunction correction given by mixing pieces of excited states with ground state
+
+## Example - Anharmonic oscillator
+
+- Anharmonic oscillator, potential: $V = \frac{1}{2}m \omega^2 x^2 + \gamma x^4$
+
+- Remember, ground state: $\psi(x) = \frac{m \omega}{\pi \hbar} e^{-(m \omega x^2/\hbar)}$
+
+
+- Gives $En^{(1)} = \frac{3\hbar^2 \gamma}  {m^2 \omega^2}$
+
+- For small perturbations gives good agreement with experiment
+
+## Perturbation versus Variation
+
+- Perturbation can be hard to do because of infinite sums over discrete states and integrals over continuum states in higher order corrections
+
+- Perturbation does energy to order $2n+1$ whereas wavefunction only to order $n$
+
+- Remember, Variation also does energy better than wavefunction
+
 
 ## Equations
 
-- $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
+-   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
 ## References
 
