@@ -225,7 +225,10 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <section id="section-1" class="slide level2">
 <h2></h2>
 <ul>
-<li><p>In practice, skill in using variation method is astute choice of trial wavefunction</p></li>
+<li><p>In practice, skill in using variation method is astute choice of trial wavefunction</p>
+<ul>
+<li>often start with something like the SHO ground state: <span class="math inline">\(\psi(x) = C e^{-\alpha x^2}\)</span></li>
+</ul></li>
 <li><p>If we happen to chance upon actual ground state wavefunction, <span class="math inline">\(\psi_0\)</span>, then we’ll get an energy = <span class="math inline">\(E_0\)</span></p></li>
 <li><p>Best way to use variation method</p>
 <p>– construct trial wavefunction with parameters that can be adjusted</p>
@@ -284,52 +287,47 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p>Guess that it’s similar to 1-D box we did</p></li>
 <li><p><span class="math inline">\(\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}\)</span> for <span class="math inline">\(0 \le x \le L\)</span></p></li>
 <li><p>need to make box from <span class="math inline">\(-L \le x \le +L\)</span> by symmetry, and use cosine functions instead of sine</p></li>
-<li><p>get <span class="math inline">\(E_0 \le \frac{2}{L} \int_{-L}^L \cos \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{L} dx\)</span></p></li>
-<li><p><span class="math inline">\(E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{4\pi^2})\)</span></p></li>
-<li><p>set <span class="math inline">\(\frac{dE_0}{dL} = 0\)</span> to get minimum of this and find <span class="math inline">\(L = 2.0441 \sqrt{\frac{\hbar}{m \omega}}\)</span></p></li>
-<li><p>then <span class="math inline">\(E_0 \le 0.568 \hbar \omega\)</span></p></li>
+<li><p><span class="math inline">\(\psi(x)= \frac{1}{\sqrt{L}} \cos(\frac{\pi x}{2L})\)</span></p></li>
 </ul>
 </section>
 <section id="section-6" class="slide level2">
 <h2></h2>
 <ul>
+<li><p>get <span class="math inline">\(E_0 \le \frac{1}{L} \int_{-L}^L \cos \frac{\pi x}{2L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{2L} dx\)</span></p></li>
+<li><p><span class="math inline">\(E_0 \le \frac{\hbar^2 \pi^2}{8 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})\)</span></p></li>
+<li><p>set <span class="math inline">\(\frac{dE_0}{dL} = 0\)</span> to get minimum of this and find <span class="math inline">\(L = 1.302 \sqrt{\frac{\hbar}{m \omega}}\)</span></p></li>
+<li><p>then <span class="math inline">\(E_0 \le 0.839 \hbar \omega\)</span></p></li>
+<li><p>not a great choice of initial wavefunction</p>
+<ul>
+<li><span class="math inline">\(\psi(x)\)</span> is too heavy when you get towards <span class="math inline">\(\pm L\)</span></li>
+</ul></li>
+<li><p>but still an instructive result</p></li>
+</ul>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<ul>
 <li><p>To find higher energy states, above ground state</p>
-<p>– Use trial wavefunctions that are orthonormal to ground state</p></li>
+<p>– Use trial wavefunctions that are orthonormal to ground state</p>
+<ul>
+<li><p>for example, for the SHO we could use <span class="math inline">\(\psi_1(x) = A x \cos(\frac{\pi x}{2 L})\)</span></p></li>
+<li><p><span class="math inline">\(\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0\)</span></p></li>
+</ul></li>
 <li><p>Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions</p></li>
+<li><p>Variational Method pretty useful for the quantum mechanics of <span class="math inline">\(He\)</span> and of the <span class="math inline">\(H_2\)</span> molecule</p></li>
 </ul>
 </section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
-<div style="font-size: 80%;">
 <ul>
-<li><span class="math inline">\(- \frac{\hbar^2}{2m} (\frac{\partial ^2}{\partial x^2} + \frac{\partial ^2 }{\partial y^2} + \frac{\partial ^2 }{\partial z^2})\psi + V(x) \psi = E \psi\)</span></li>
+<li><span class="math inline">\(\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0\)</span></li>
 </ul>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><p><span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm\)</span></p></li>
-<li><p><span class="math inline">\(L = \sqrt{{\mathcal{l}} ({\mathcal{l}} + 1)}\hbar\)</span></p></li>
-<li><p><span class="math inline">\(L_z = m_{\mathcal{l}}\hbar\)</span></p></li>
-<li><p><span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2} \\ = -\frac{13.6057}{n^2} eV\)</span></p></li>
-<li><p><span class="math inline">\(\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)\)</span></p></li>
-<li><p><span class="math inline">\(R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}\)</span></p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><span class="math inline">\(E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2} \\ = - Z^2 \frac{13.6057}{n^2} eV\)</span></li>
-<li><span class="math inline">\(a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm\)</span></li>
-<li><span class="math inline">\(\psi({\color{purple}{1}}, {\color{darkgreen}{0}}, {\color{red}{0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}\)</span></li>
-</ul>
-</div></div>
-</div>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
 <ul>
-<li><p><a href="https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&amp;ppg=1397" target="_blank">Young &amp; Freedman - chapter 41.3</a></p></li>
-<li><p><a href="https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&amp;callbackUrl=https%3a%2f%2fresearch.ebsco.com&amp;db=nlebk&amp;format=EB&amp;profId=ehost&amp;lpid=&amp;ppid=&amp;lang=en&amp;location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&amp;isPLink=False&amp;requestContext=&amp;profileIdentifier=sr37fs&amp;recordId=lh37eixz3f" target="_blank">Serway &amp; Jewett - chapter 41.4-41.6</a></p></li>
-<li><p><a href="https://library.tudublin.ie/search?/Xkrane+modern+physics&amp;SORT=D/Xkrane+modern+physics&amp;SORT=D&amp;SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&amp;FF=Xkrane+modern+physics&amp;SORT=D&amp;1%2C1%2C" target="_blank">Krane - Modern Physics Chapter 7</a></p></li>
-<li><p><a href="https://library.tudublin.ie/record=b5488599" target="_blank">Halliday &amp; Resnick - chapter 39.9</a></p></li>
+<li><p><a href="https://library.tudublin.ie/record=b1229083" target="_blank">Griffiths - Chapter 7</a></p></li>
+<li><p><a href="https://library.tudublin.ie/record=b2298414" target="_blank">Levine - Chapte 8</a></p></li>
 </ul>
 
 </section>

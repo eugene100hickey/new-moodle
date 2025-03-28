@@ -38,9 +38,9 @@ We'll then look at the available energy levels and thus the spectrum of hydrogen
 2.  Separation of Variables
 3.  Hydrogen Quantum Numbers
 4.  Hydrogen Wavefunctions
-5.  Bohr Radius 
-7. Hydrogen Spectrum
-6.  Hydrogen-Like Ions
+5.  Bohr Radius
+6.  Hydrogen Spectrum
+7.  Hydrogen-Like Ions
 :::
 ::::
 
@@ -326,6 +326,10 @@ The three separated equations are:
 -   $L_z$ is always less that $L$, for obvious reasons
 
 -   fact that $L_z < L$ is consistent with uncertainty principle
+
+##
+
+![wikipedia](images/Hydrogen_Density_Plots.png)
 
 ## Hydrogen Spectra
 

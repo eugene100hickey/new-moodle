@@ -25,7 +25,7 @@ editor: visual
 
 <br>
 
-Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable. But there are a number of techniques to get sensible, if not exact, solutions for quantum systems. We'll look at two of these. The first is the _Variational Principle_ in which we guess, and then optimise, a wavefunction in such a way to give an upper bound for the energy levels.
+Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable. But there are a number of techniques to get sensible, if not exact, solutions for quantum systems. We'll look at two of these. The first is the *Variational Principle* in which we guess, and then optimise, a wavefunction in such a way to give an upper bound for the energy levels.
 
 ## Contents
 
@@ -110,6 +110,8 @@ $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
 -   In practice, skill in using variation method is astute choice of trial wavefunction
 
+    - often start with something like the SHO ground state: $\psi(x) = C e^{-\alpha x^2}$
+
 -   If we happen to chance upon actual ground state wavefunction, $\psi_0$, then we’ll get an energy = $E_0$
 
 -   Best way to use variation method
@@ -142,11 +144,11 @@ outside the box
 
 -   $H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$
 
-- Remember $\phi = x(x-L)$ is the trial wavefunction
+-   Remember $\phi = x(x-L)$ is the trial wavefunction
 
 -   integral gives us
 
--   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$, but really  $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
+-   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$, but really $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
 
 -   to normalise we get $\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}$
 
@@ -172,58 +174,46 @@ outside the box
 
 -   $\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}$ for $0 \le x \le L$
 
-- need to make box from $-L \le x \le +L$ by symmetry, and use cosine functions instead of sine 
+-   need to make box from $-L \le x \le +L$ by symmetry, and use cosine functions instead of sine
 
--   get $E_0 \le \frac{2}{L} \int_{-L}^L \cos \frac{\pi x}{L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{L} dx$
+- $\psi(x)= \frac{1}{\sqrt{L}} \cos(\frac{\pi x}{2L})$
 
--   $E_0 \le \frac{\hbar^2 \pi^2}{2 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{4\pi^2})$
+##
 
--   set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 2.0441 \sqrt{\frac{\hbar}{m \omega}}$
+-   get $E_0 \le \frac{1}{L} \int_{-L}^L \cos \frac{\pi x}{2L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{2L} dx$
 
--   then $E_0 \le 0.568 \hbar \omega$
+-   $E_0 \le \frac{\hbar^2 \pi^2}{8 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})$
+
+-   set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 1.302 \sqrt{\frac{\hbar}{m \omega}}$
+
+-   then $E_0 \le 0.839 \hbar \omega$
+
+- not a great choice of initial wavefunction
+
+    - $\psi(x)$ is too heavy when you get towards $\pm L$
+    
+- but still an instructive result
 
 ## 
 
 -   To find higher energy states, above ground state
 
     – Use trial wavefunctions that are orthonormal to ground state
+    
+    - for example, for the SHO we could use $\psi_1(x) = A x \cos(\frac{\pi x}{2 L})$
+    
+    - $\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0$
 
 -   Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
 
+- Variational Method pretty useful for the quantum mechanics of $He$ and of the $H_2$ molecule
+
 ## Equations
 
-:::::: {style="font-size: 80%;"}
--   $- \frac{\hbar^2}{2m} (\frac{\partial ^2}{\partial x^2} + \frac{\partial ^2 }{\partial y^2} + \frac{\partial ^2 }{\partial z^2})\psi + V(x) \psi = E \psi$
-
-::::: columns
-::: {.column width="50%"}
--   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{e^2m} = 0.0529nm$
-
--   $L = \sqrt{{\mathcal{l}} ({\mathcal{l}} + 1)}\hbar$
-
--   $L_z = m_{\mathcal{l}}\hbar$
-
--   $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2} \\ = -\frac{13.6057}{n^2} eV$
-
--   $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
-
--   $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
-:::
-
-::: {.column width="50%"}
--   $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2} \\ = - Z^2 \frac{13.6057}{n^2} eV$
--   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
--   $\psi({\color{purple}{1}}, {\color{darkgreen}{0}}, {\color{red}{0}}) = {\color{purple}{\frac{2}{a_0^{3/2}} e^{-r/a_0}}} \times{\color{darkgreen}{\frac{1}{\sqrt{2}}}} \times {\color{red}{\frac{1}{\sqrt{2 \pi}}}}$
-:::
-:::::
-::::::
+- $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
 ## References
 
--   [Young & Freedman - chapter 41.3](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1397){target="_blank"}
+-   [Griffiths - Chapter 7](https://library.tudublin.ie/record=b1229083){target="_blank"}
 
--   [Serway & Jewett - chapter 41.4-41.6](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
-
--   [Krane - Modern Physics Chapter 7](https://library.tudublin.ie/search?/Xkrane+modern+physics&SORT=D/Xkrane+modern+physics&SORT=D&SUBKEY=krane+modern+physics/1%2C3%2C3%2CB/frameset&FF=Xkrane+modern+physics&SORT=D&1%2C1%2C){target="_blank"}
-
--   [Halliday & Resnick - chapter 39.9](https://library.tudublin.ie/record=b5488599){target="_blank"}
+-   [Levine - Chapte 8](https://library.tudublin.ie/record=b2298414){target="_blank"}
