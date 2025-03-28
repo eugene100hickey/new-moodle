@@ -132,7 +132,7 @@ $\implies - \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d x^2} + \frac{1}{2} m \omega^2 
 
 ## 
 
-<br>  
+<br>
 
 ::: {style="font-size: 90%;"}
 -   Putting back into our Schrödinger Equation and equating powers of x we get:

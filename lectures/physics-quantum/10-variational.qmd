@@ -32,12 +32,11 @@ Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in 
 :::::::: columns
 :::: {.column width="100%"}
 ::: {style="font-size: 100%;"}
-1.  3-D Time Dependent Schrödinger Equation
-2.  Separation of Variables
-3.  Hydrogen Quantum Numbers
-4.  Hydrogen Wavefunctions
-5.  Bohr Radius Hydrogen Spectrum
-6.  Hydrogen-Like Ions
+1.  Variational Method
+2.  Application to Particle-in-a-Box
+3.  Application to Simple Harmonic Oscillator
+4.  Equations
+5.  References
 :::
 ::::
 
@@ -110,7 +109,7 @@ $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
 -   In practice, skill in using variation method is astute choice of trial wavefunction
 
-    - often start with something like the SHO ground state: $\psi(x) = C e^{-\alpha x^2}$
+    -   often start with something like the SHO ground state: $\psi(x) = C e^{-\alpha x^2}$
 
 -   If we happen to chance upon actual ground state wavefunction, $\psi_0$, then we’ll get an energy = $E_0$
 
@@ -176,9 +175,9 @@ outside the box
 
 -   need to make box from $-L \le x \le +L$ by symmetry, and use cosine functions instead of sine
 
-- $\psi(x)= \frac{1}{\sqrt{L}} \cos(\frac{\pi x}{2L})$
+-   $\psi(x)= \frac{1}{\sqrt{L}} \cos(\frac{\pi x}{2L})$
 
-##
+## 
 
 -   get $E_0 \le \frac{1}{L} \int_{-L}^L \cos \frac{\pi x}{2L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{2L} dx$
 
@@ -188,29 +187,29 @@ outside the box
 
 -   then $E_0 \le 0.839 \hbar \omega$
 
-- not a great choice of initial wavefunction
+-   not a great choice of initial wavefunction
 
-    - $\psi(x)$ is too heavy when you get towards $\pm L$
-    
-- but still an instructive result
+    -   $\psi(x)$ is too heavy when you get towards $\pm L$
+
+-   but still an instructive result
 
 ## 
 
 -   To find higher energy states, above ground state
 
     – Use trial wavefunctions that are orthonormal to ground state
-    
-    - for example, for the SHO we could use $\psi_1(x) = A x \cos(\frac{\pi x}{2 L})$
-    
-    - $\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0$
+
+    -   for example, for the SHO we could use $\psi_1(x) = A x \cos(\frac{\pi x}{2 L})$
+
+    -   $\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0$
 
 -   Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
 
-- Variational Method pretty useful for the quantum mechanics of $He$ and of the $H_2$ molecule
+-   Variational Method pretty useful for the quantum mechanics of $He$ and of the $H_2$ molecule
 
 ## Equations
 
-- $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
+-   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
 ## References
 
