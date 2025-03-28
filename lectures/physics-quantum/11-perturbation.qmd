@@ -1,0 +1,219 @@
+---
+title: "10 - Variational Principle"
+author:
+  - name: Physics Theory II PHYS2001
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "logo.jpg" />
+css: logo.css
+footer: "Physics - Quantum"
+editor: visual
+---
+
+## Summary
+
+<br>
+
+Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in quantum mechanics are not exactly solvable. But there are a number of techniques to get sensible, if not exact, solutions for quantum systems. We'll look at two of these. The first is the *Variational Principle* in which we guess, and then optimise, a wavefunction in such a way to give an upper bound for the energy levels.
+
+## Contents
+
+:::::::: columns
+:::: {.column width="100%"}
+::: {style="font-size: 100%;"}
+1.  3-D Time Dependent Schrödinger Equation
+2.  Separation of Variables
+3.  Hydrogen Quantum Numbers
+4.  Hydrogen Wavefunctions
+5.  Bohr Radius Hydrogen Spectrum
+6.  Hydrogen-Like Ions
+:::
+::::
+
+::: {.column width="0%"}
+:::
+
+:::: {.column width="0%"}
+::: {style="font-size: 90%;"}
+:::
+::::
+::::::::
+
+## More Complex Problems
+
+::: {style="font-size: 80%;"}
+-   Hydrogen atom can be solved exactly by time independent Schrödinger equation
+
+-   Other problems aren’t so kind
+
+    – Multi-electron atoms
+
+    – Molecules
+
+-   Need to cut some corners
+
+    – Approximations
+
+    – Astute guesses
+
+-   We’ll begin with two foundation methods
+
+    – Variation method
+
+    – Perturbation theory
+
+-   In practice, modifications / combinations of these two used
+:::
+
+## Variational Method
+
+::: {style="font-size: 90%;"}
+-   Get approximate energy of ground state without solving Schrödinger equation
+
+-   Gives upper bound for ground state energy
+
+-   Guess a trial wavefunction, $\phi$
+
+    – $\phi$ must be normalisable
+
+    – $\phi$ must satisfy relevant boundary conditions
+
+    – Symmetry of problem leads us to $\phi$
+
+    – Trying to make $\phi$ as close to what we think the real wavefunction, $\psi$, is as possible
+:::
+
+## 
+
+-   Bound on ground state energy given by:
+
+$\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
+
+-   H is the Hamiltonian, the energy operator for the system
+
+-   Can be proved by expanding $\phi$ in terms of the (unknown) true wavefunctions $\psi$
+
+-   Equation above assumes $\psi$ normalised
+
+## 
+
+-   In practice, skill in using variation method is astute choice of trial wavefunction
+
+    - often start with something like the SHO ground state: $\psi(x) = C e^{-\alpha x^2}$
+
+-   If we happen to chance upon actual ground state wavefunction, $\psi_0$, then we’ll get an energy = $E_0$
+
+-   Best way to use variation method
+
+    – construct trial wavefunction with parameters that can be adjusted
+
+    – Minimise value of integral by adjusting parameters
+
+## 
+
+-   Take particle in one dimensional box, problem we solved exactly before
+
+    -   Chose $\phi = x(x-L)$ as the trial wavefunction
+
+    – Satisfies boundary conditions
+
+    – Not normalised yet
+
+    – Remember hamiltonian:
+
+inside the box
+
+<center>$H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$</center>
+
+outside the box
+
+<center>$H = 0$</center>
+
+## 
+
+-   $H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$
+
+-   Remember $\phi = x(x-L)$ is the trial wavefunction
+
+-   integral gives us
+
+-   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$, but really $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
+
+-   to normalise we get $\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}$
+
+-   putting together we get:
+
+<center>$E_1 \le \frac{5 \hbar^2}{mL^2}$</center>
+
+-   compare to $E_1 = \frac{\pi^2 \hbar^2}{2mL^2}$
+
+-   agrees to better than 2% ($\frac{\pi^2}{2} = 4.935$)
+
+## 
+
+-   Previous example didn’t have adjustable parameters
+
+    – In general not the case
+
+## 
+
+-   Suppose we don’t know solution for SHO problem
+
+-   Guess that it’s similar to 1-D box we did
+
+-   $\phi = \sqrt{ \frac{2}{L} } \sin \frac{\pi x}{L}$ for $0 \le x \le L$
+
+-   need to make box from $-L \le x \le +L$ by symmetry, and use cosine functions instead of sine
+
+- $\psi(x)= \frac{1}{\sqrt{L}} \cos(\frac{\pi x}{2L})$
+
+##
+
+-   get $E_0 \le \frac{1}{L} \int_{-L}^L \cos \frac{\pi x}{2L}\left(\frac{- \hbar^2}{2m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2\right) \cos \frac{\pi x}{2L} dx$
+
+-   $E_0 \le \frac{\hbar^2 \pi^2}{8 m L^2} +  m \omega^2 L^2 (\frac{1}{6} - \frac{1}{\pi^2})$
+
+-   set $\frac{dE_0}{dL} = 0$ to get minimum of this and find $L = 1.302 \sqrt{\frac{\hbar}{m \omega}}$
+
+-   then $E_0 \le 0.839 \hbar \omega$
+
+- not a great choice of initial wavefunction
+
+    - $\psi(x)$ is too heavy when you get towards $\pm L$
+    
+- but still an instructive result
+
+## 
+
+-   To find higher energy states, above ground state
+
+    – Use trial wavefunctions that are orthonormal to ground state
+    
+    - for example, for the SHO we could use $\psi_1(x) = A x \cos(\frac{\pi x}{2 L})$
+    
+    - $\int_{-\infty}^{+\infty} x \cos^2(\frac{\pi x}{2 L}) dx = 0$
+
+-   Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
+
+- Variational Method pretty useful for the quantum mechanics of $He$ and of the $H_2$ molecule
+
+## Equations
+
+- $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
+
+## References
+
+-   [Griffiths - Chapter 7](https://library.tudublin.ie/record=b1229083){target="_blank"}
+
+-   [Levine - Chapte 8](https://library.tudublin.ie/record=b2298414){target="_blank"}
