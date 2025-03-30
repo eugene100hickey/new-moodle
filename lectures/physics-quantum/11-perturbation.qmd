@@ -25,7 +25,7 @@ editor: visual
 
 <br>
 
-An alternative to the Variational Method if Perturbation Theory. Oftentimes, while we might not be able to get exact solutions to our system of interest, there exist such solutions for another, similar system. We can treat the differences between these two systems as a _correction_, or perturbation, and watch how that effects the results as it propagates through our calculations. This lets us see the impact of the modification from the ideal to the actual system, and gives us an indication of how accurate our approximation is.
+An alternative to the Variational Method if Perturbation Theory. Oftentimes, while we might not be able to get exact solutions to our system of interest, there exist such solutions for another, similar system. We can treat the differences between these two systems as a *correction*, or perturbation, and watch how that effects the results as it propagates through our calculations. This lets us see the impact of the modification from the ideal to the actual system, and gives us an indication of how accurate our approximation is.
 
 ## Contents
 
@@ -33,8 +33,8 @@ An alternative to the Variational Method if Perturbation Theory. Oftentimes, whi
 :::: {.column width="100%"}
 ::: {style="font-size: 100%;"}
 1.  The principle of Perturbation Theory
-1. Anharmonic Oscillator
-1. Comaprison to Variational Method
+2.  Anharmonic Oscillator
+3.  Comparison to Variational Method
 :::
 ::::
 
@@ -50,112 +50,196 @@ An alternative to the Variational Method if Perturbation Theory. Oftentimes, whi
 ## Perturbation Theory
 
 ::: {style="font-size: 90%;"}
+-   Alternative to variation method
 
-- Alternative to variation method
+-   Again, relies on having the Hamiltonian, i.e. the statement of the TimeIndepSchröE
 
-- Again, relies on having the Hamiltonian, i.e. the statement of the TimeIndepSchröE
+-   Also, need to have solution to another system which is very comparable
 
-- Also, need to have solution to another system which is very comparable
+-   But this happens a lot
 
-- But this happens a lot
+-   Examples:
 
-- Examples:
+    -   anharmonic terms in SHO
 
-    - anharmonic terms in SHO
-    
-    - Hydrogen in a weak electric field
-    
-    - The Helium atom
+    -   Hydrogen in a weak electric field
 
+    -   The Helium atom
 :::
 
 ## 
 
-- Express Hamiltonian as:
+-   Express Hamiltonian as:
 
-- $H = H_0 + \lambda \;H_1$
+-   $H = H_0 + \lambda \;H_1$
 
     – $\lambda$ can be =1, but it helps us keep track of order of approximation
 
-- Schrödinger Equation becomes:
+-   Schrödinger Equation becomes:
 
-    - $(H_0 + \lambda H_1)\psi_n = E_n \psi_n$
+    -   $(H_0 + \lambda H_1)\psi_n = E_n \psi_n$
 
-- We’re going to say that the solution to the unperturbed system is;
+-   We’re going to say that the solution to the unperturbed system is;
 
-- $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
+-   $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
+
+## Some Terminology
+
+::: {style="font-size: 90%;"}
+
+- $H_0$ is the (well known) original waveform
+
+- $\lambda H_1$ is the correction to this
+
+- $E^{(0)}_n$ are the energy levels of the unperturbed system (also known)
+
+    - $E^{(0)}_0$ would be the ground state energy of this system
+    
+    - $E^{(0)}_1$ would be the first excited state
+
+- $\psi^{(0)}_n$ are the wavefunctions of the unperturbed system (and these are known)
+
+
+    - $\psi^{(0)}_0$ would be the ground state wavefunction of this system
+    
+    - $\psi^{(0)}_1$ would be the first excited state
+    
+:::
+
+##
+
+::: {style="font-size: 95%;"}
+
+- $E^{(1)}_n$ are the first order corrections to the energy levels
+
+    - $E^{(1)}_0$ would be the correction on the ground state energy of this system
+    
+    - $E^{(2)}_0$ would be the second order correction on the ground state energy of this system
+    
+    - $E^{(1)}_1$ would be the correction on the fixed excited state energy
+
+- $\psi^{(1)}_n$ are the corrections to the wavefunctions of the unperturbed system 
+
+    - $\psi^{(1)}_0$ would be the correction to the ground state wavefunction
+    
+    - $\psi^{(1)}_1$ would be the correction on the fixed excited state 
+    
+    
+:::
+
 
 ## 
 
 ::: {style="font-size: 90%;"}
+-   Let’s do some maths now:
 
-- Let’s do some maths now:
+-   Express $E_n$ and $\psi_n$ as Taylor Series expansion in $\lambda$
 
-- Express $E_n$ and $\psi_n$ as Taylor Series expansion in $\lambda$
+-   $E_n = E_n^{(0)} + \lambda E_n^{(1)} + \lambda^2 E_n^{(2)} + ....$
 
-- $E_n = E_n^{(0)} + \lambda E_n^{(1)} + \lambda^2 E_n^{(2)} + ....$
+-   $\psi_n = \psi_n^{(0)} + \lambda \psi_n^{(1)} + \lambda^2 \psi_n^{(2)} + ....$
 
-- $\psi_n = \psi_n^{(0)} + \lambda \psi_n^{(1)} + \lambda^2 \psi_n^{(2)} + ....$
+-   Putting these back into Schrödinger we get:
 
-- Putting these back into Schrödinger we get:
+-   $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
 
-- $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
+-   $H_1 \psi^{(0)}_n + H_0 \psi^{(1)}_n = E^{(0)}_n \psi^{(1)}_n + E^{(1)}_n \psi^{(0)}_n$ - the first order correction
 
-- $H_1 \psi^{(0)}_n + H_0 \psi^{(1)}_n = E^{(0)}_n \psi^{(1)}_n + E^{(1)}_n \psi^{(0)}_n$ - the first order correction
+-   $H_1 \psi^{(1)}_n + H_0 \psi^{(2)}_n = E^{(0)}_n \psi^{(2)}_n + E^{(1)}_n \psi^{(1)}_n  + E^{(2)}_n \psi^{(0)}_n$ - the second order correction
 
-- $H_1 \psi^{(1)}_n + H_0 \psi^{(2)}_n = E^{(0)}_n \psi^{(2)}_n + E^{(1)}_n \psi^{(1)}_n  + E^{(2)}_n \psi^{(0)}_n$ - the second order correction
+-   Zeroth order is just the unperturbed system
 
-
-
-- Zeroth order is just the unperturbed system
-
-- Higher orders give corrections
-
+-   Higher orders give corrections
 :::
 
 ## 
 
-- Get first order corrections given by:
+-   Get first order corrections given by:
 
-- $E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx$
+::::: goals
+::: goals-header
+::: {style="font-size: 85%;"}
 
-- $\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m$
+$E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx$
+
+$\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m$
+
+:::
+:::
+
+::: goals-container
+:::
+:::::
+
+::: {style="font-size: 90%;"}
+
+-   Energy correction given by impact of perturbing potential on (unperturbed) ground state
+
+-   Wavefunction correction given by mixing pieces of excited states with ground state
+
+    - only works when original energy levels far apart (compared to perturbation)
+    
+    - and non-degerate
+    
+:::
+
+## Example - Particle in Box with Non-Zero Potential
+
+- wavefunctions of unperturbed system are $\psi_n^{(0)}(x) = \sqrt{2/L} \sin(n\pi x /L)$
+
+- now let's raise the _floor_ of the system by a constant amount, $V_0$
+
+- first order correction to the energy of the $n^{th}$ state is:
+
+-  $E^{(1)}_n = \int_0^L \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx = V_0$
+
+- the corrected energy levels are then $E_n \approx E^{(0)}_n + V_0$
+
+- this actually the exact answer, all levels lifted by $V_0$
+
+##
+
+- raise only half the box by $V_0$
+
+-  $E^{(1)}_n = \int_0^{L/2} \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx$
+
+-  $E^{(1)}_n = \frac{2}{L} \int_0^{L/2} \sin(n\pi x /L)\; V_0 \; \sin(n\pi x /L) dx$
+
+-  $E^{(1)}_n = \frac{2V_0}{L} \int_0^{L/2} \sin^2(n\pi x /L)\;  dx$
+
+- $E^{(1)}_n = \frac{V_0}{2}$
+
+- this is not an exact result, but seems reasonable.
 
 
-
-- Energy correction given by impact of perturbing potential on (unperturbed) ground state
-
--  Wavefunction correction given by mixing pieces of excited states with ground state
 
 ## Example - Anharmonic oscillator
 
-- Anharmonic oscillator, potential: $V = \frac{1}{2}m \omega^2 x^2 + \gamma x^4$
+-   Anharmonic oscillator, potential: $V = \frac{1}{2}m \omega^2 x^2 + \gamma x^4$
 
-- Remember, ground state: $\psi(x) = \frac{m \omega}{\pi \hbar} e^{-(m \omega x^2/\hbar)}$
+-   Remember, ground state: $\psi(x) = \frac{m \omega}{\pi \hbar} e^{-(m \omega x^2/\hbar)}$
 
+-   Gives $En^{(1)} = \frac{3\hbar^2 \gamma}  {m^2 \omega^2}$
 
-- Gives $En^{(1)} = \frac{3\hbar^2 \gamma}  {m^2 \omega^2}$
-
-- For small perturbations gives good agreement with experiment
+-   For small perturbations gives good agreement with experiment
 
 ## Perturbation versus Variation
 
-- Perturbation can be hard to do because of infinite sums over discrete states and integrals over continuum states in higher order corrections
+-   Perturbation can be hard to do because of infinite sums over discrete states and integrals over continuum states in higher order corrections
 
-- Perturbation does energy to order $2n+1$ whereas wavefunction only to order $n$
+-   Perturbation does energy to order $2n+1$ whereas wavefunction only to order $n$
 
-- Remember, Variation also does energy better than wavefunction
-
+-   Remember, Variation also does energy better than wavefunction
 
 ## Equations
 
-- $H = H_0 + \lambda \;H_1$
+-   $H = H_0 + \lambda \;H_1$
 
-- $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
+-   $H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n$
 
-- $H_1 \psi^{(0)}_n + H_0 \psi^{(1)}_n = E^{(0)}_n \psi^{(1)}_n + E^{(1)}_n \psi^{(0)}_n$
+-   $E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx$
 
-- $H_1 \psi^{(1)}_n + H_0 \psi^{(2)}_n = E^{(0)}_n \psi^{(2)}_n + E^{(1)}_n \psi^{(1)}_n  + E^{(2)}_n \psi^{(0)}_n$
+-   $\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m$
 
 ## References
 

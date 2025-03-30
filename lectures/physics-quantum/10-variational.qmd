@@ -97,9 +97,9 @@ Unlike particles in boxes, SHO's and hydrogen-like ions, almost all problems in 
 
 -   Bound on ground state energy given by:
 
-$\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$ 
+$\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
-- (or $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx \ge \; E_0$ for 1-D problems)
+-   (or $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx \ge \; E_0$ for 1-D problems)
 
 -   H is the Hamiltonian, the energy operator for the system
 
@@ -166,6 +166,8 @@ outside the box
 -   Previous example didn’t have adjustable parameters
 
     – In general not the case
+
+    -   to be honest, result was kind of lucky
 
 ## 
 

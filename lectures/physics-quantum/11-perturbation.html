@@ -164,7 +164,7 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ol type="1">
 <li>The principle of Perturbation Theory</li>
 <li>Anharmonic Oscillator</li>
-<li>Comaprison to Variational Method</li>
+<li>Comparison to Variational Method</li>
 </ol>
 </div>
 </div><div class="column" style="width:0%;">
@@ -206,7 +206,44 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <li><p><span class="math inline">\(H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n\)</span></p></li>
 </ul>
 </section>
+<section id="some-terminology" class="slide level2">
+<h2>Some Terminology</h2>
+<div style="font-size: 90%;">
+<ul>
+<li><p><span class="math inline">\(H_0\)</span> is the (well known) original waveform</p></li>
+<li><p><span class="math inline">\(\lambda H_1\)</span> is the correction to this</p></li>
+<li><p><span class="math inline">\(E^{(0)}_n\)</span> are the energy levels of the unperturbed system (also known)</p>
+<ul>
+<li><p><span class="math inline">\(E^{(0)}_0\)</span> would be the ground state energy of this system</p></li>
+<li><p><span class="math inline">\(E^{(0)}_1\)</span> would be the first excited state</p></li>
+</ul></li>
+<li><p><span class="math inline">\(\psi^{(0)}_n\)</span> are the wavefunctions of the unperturbed system (and these are known)</p>
+<ul>
+<li><p><span class="math inline">\(\psi^{(0)}_0\)</span> would be the ground state wavefunction of this system</p></li>
+<li><p><span class="math inline">\(\psi^{(0)}_1\)</span> would be the first excited state</p></li>
+</ul></li>
+</ul>
+</div>
+</section>
 <section id="section-1" class="slide level2">
+<h2></h2>
+<div style="font-size: 95%;">
+<ul>
+<li><p><span class="math inline">\(E^{(1)}_n\)</span> are the first order corrections to the energy levels</p>
+<ul>
+<li><p><span class="math inline">\(E^{(1)}_0\)</span> would be the correction on the ground state energy of this system</p></li>
+<li><p><span class="math inline">\(E^{(2)}_0\)</span> would be the second order correction on the ground state energy of this system</p></li>
+<li><p><span class="math inline">\(E^{(1)}_1\)</span> would be the correction on the fixed excited state energy</p></li>
+</ul></li>
+<li><p><span class="math inline">\(\psi^{(1)}_n\)</span> are the corrections to the wavefunctions of the unperturbed system</p>
+<ul>
+<li><p><span class="math inline">\(\psi^{(1)}_0\)</span> would be the correction to the ground state wavefunction</p></li>
+<li><p><span class="math inline">\(\psi^{(1)}_1\)</span> would be the correction on the fixed excited state</p></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-2" class="slide level2">
 <h2></h2>
 <div style="font-size: 90%;">
 <ul>
@@ -223,14 +260,53 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 </ul>
 </div>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <ul>
-<li><p>Get first order corrections given by:</p></li>
-<li><p><span class="math inline">\(E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx\)</span></p></li>
-<li><p><span class="math inline">\(\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m\)</span></p></li>
+<li>Get first order corrections given by:</li>
+</ul>
+<div class="goals">
+<div class="goals-header">
+<div style="font-size: 85%;">
+<p><span class="math inline">\(E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx\)</span></p>
+<p><span class="math inline">\(\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m\)</span></p>
+</div>
+</div>
+<div class="goals-container">
+
+</div>
+</div>
+<div style="font-size: 90%;">
+<ul>
 <li><p>Energy correction given by impact of perturbing potential on (unperturbed) ground state</p></li>
-<li><p>Wavefunction correction given by mixing pieces of excited states with ground state</p></li>
+<li><p>Wavefunction correction given by mixing pieces of excited states with ground state</p>
+<ul>
+<li><p>only works when original energy levels far apart (compared to perturbation)</p></li>
+<li><p>and non-degerate</p></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="example---particle-in-box-with-non-zero-potential" class="slide level2">
+<h2>Example - Particle in Box with Non-Zero Potential</h2>
+<ul>
+<li><p>wavefunctions of unperturbed system are <span class="math inline">\(\psi_n^{(0)}(x) = \sqrt{2/L} \sin(n\pi x /L)\)</span></p></li>
+<li><p>now let’s raise the <em>floor</em> of the system by a constant amount, <span class="math inline">\(V_0\)</span></p></li>
+<li><p>first order correction to the energy of the <span class="math inline">\(n^{th}\)</span> state is:</p></li>
+<li><p><span class="math inline">\(E^{(1)}_n = \int_0^L \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx = V_0\)</span></p></li>
+<li><p>the corrected energy levels are then <span class="math inline">\(E_n \approx E^{(0)}_n + V_0\)</span></p></li>
+<li><p>this actually the exact answer, all levels lifted by <span class="math inline">\(V_0\)</span></p></li>
+</ul>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<ul>
+<li><p>raise only half the box by <span class="math inline">\(V_0\)</span></p></li>
+<li><p><span class="math inline">\(E^{(1)}_n = \int_0^{L/2} \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx\)</span></p></li>
+<li><p><span class="math inline">\(E^{(1)}_n = \frac{2}{L} \int_0^{L/2} \sin(n\pi x /L)\; V_0 \; \sin(n\pi x /L) dx\)</span></p></li>
+<li><p><span class="math inline">\(E^{(1)}_n = \frac{2V_0}{L} \int_0^{L/2} \sin^2(n\pi x /L)\;  dx\)</span></p></li>
+<li><p><span class="math inline">\(E^{(1)}_n = \frac{V_0}{2}\)</span></p></li>
+<li><p>this is not an exact result, but seems reasonable.</p></li>
 </ul>
 </section>
 <section id="example---anharmonic-oscillator" class="slide level2">
@@ -255,8 +331,8 @@ Physics Theory II PHYS2001 <a href="https://orcid.org/0000-0001-9813-9323" class
 <ul>
 <li><p><span class="math inline">\(H = H_0 + \lambda \;H_1\)</span></p></li>
 <li><p><span class="math inline">\(H_0 \psi^{(0)}_n = E^{(0)}_n \psi^{(0)}_n\)</span></p></li>
-<li><p><span class="math inline">\(H_1 \psi^{(0)}_n + H_0 \psi^{(1)}_n = E^{(0)}_n \psi^{(1)}_n + E^{(1)}_n \psi^{(0)}_n\)</span></p></li>
-<li><p><span class="math inline">\(H_1 \psi^{(1)}_n + H_0 \psi^{(2)}_n = E^{(0)}_n \psi^{(2)}_n + E^{(1)}_n \psi^{(1)}_n  + E^{(2)}_n \psi^{(0)}_n\)</span></p></li>
+<li><p><span class="math inline">\(E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx\)</span></p></li>
+<li><p><span class="math inline">\(\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m\)</span></p></li>
 </ul>
 </section>
 <section id="references" class="slide level2">
