@@ -33,11 +33,11 @@ An alternative to the Variational Method is Perturbation Theory. Oftentimes, whi
 :::: {.column width="100%"}
 ::: {style="font-size: 100%;"}
 1.  The principle of Perturbation Theory
-1. Particle in a Box - non zero potential
-2.  Anharmonic Oscillator
-3.  Comparison to Variational Method
-4. Equations
-2. References
+2.  Particle in a Box - non zero potential
+3.  Anharmonic Oscillator
+4.  Comparison to Variational Method
+5.  Equations
+6.  References
 :::
 ::::
 
@@ -88,7 +88,8 @@ An alternative to the Variational Method is Perturbation Theory. Oftentimes, whi
 
 ## Some Terminology
 
-::: {style="font-size: 90%;"}
+::: {style="font-size: 85%;"}
+
 -   $H_0$ is the (well known) original waveform
 
 -   $\lambda H_1$ is the correction to this
@@ -108,7 +109,8 @@ An alternative to the Variational Method is Perturbation Theory. Oftentimes, whi
 
 ## 
 
-::: {style="font-size: 95%;"}
+::: {style="font-size: 85%;"}
+
 -   $E^{(1)}_n$ are the first order corrections to the energy levels
 
     -   $E^{(1)}_0$ would be the correction on the ground state energy of this system
@@ -201,7 +203,7 @@ $\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^
 
 -   $E^{(1)}_n = \frac{V_0}{2}$
 
-- this is not an exact result, but seems reasonable.
+-   this is not an exact result, but seems reasonable.
 
 ## Example - Anharmonic oscillator
 
