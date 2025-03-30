@@ -33,8 +33,11 @@ An alternative to the Variational Method if Perturbation Theory. Oftentimes, whi
 :::: {.column width="100%"}
 ::: {style="font-size: 100%;"}
 1.  The principle of Perturbation Theory
+1. Particle in a Box - non zero potential
 2.  Anharmonic Oscillator
 3.  Comparison to Variational Method
+4. Equations
+2. References
 :::
 ::::
 
@@ -86,47 +89,40 @@ An alternative to the Variational Method if Perturbation Theory. Oftentimes, whi
 ## Some Terminology
 
 ::: {style="font-size: 90%;"}
+-   $H_0$ is the (well known) original waveform
 
-- $H_0$ is the (well known) original waveform
+-   $\lambda H_1$ is the correction to this
 
-- $\lambda H_1$ is the correction to this
+-   $E^{(0)}_n$ are the energy levels of the unperturbed system (also known)
 
-- $E^{(0)}_n$ are the energy levels of the unperturbed system (also known)
+    -   $E^{(0)}_0$ would be the ground state energy of this system
 
-    - $E^{(0)}_0$ would be the ground state energy of this system
-    
-    - $E^{(0)}_1$ would be the first excited state
+    -   $E^{(0)}_1$ would be the first excited state
 
-- $\psi^{(0)}_n$ are the wavefunctions of the unperturbed system (and these are known)
+-   $\psi^{(0)}_n$ are the wavefunctions of the unperturbed system (and these are known)
 
+    -   $\psi^{(0)}_0$ would be the ground state wavefunction of this system
 
-    - $\psi^{(0)}_0$ would be the ground state wavefunction of this system
-    
-    - $\psi^{(0)}_1$ would be the first excited state
-    
+    -   $\psi^{(0)}_1$ would be the first excited state
 :::
 
-##
+## 
 
 ::: {style="font-size: 95%;"}
+-   $E^{(1)}_n$ are the first order corrections to the energy levels
 
-- $E^{(1)}_n$ are the first order corrections to the energy levels
+    -   $E^{(1)}_0$ would be the correction on the ground state energy of this system
 
-    - $E^{(1)}_0$ would be the correction on the ground state energy of this system
-    
-    - $E^{(2)}_0$ would be the second order correction on the ground state energy of this system
-    
-    - $E^{(1)}_1$ would be the correction on the fixed excited state energy
+    -   $E^{(2)}_0$ would be the second order correction on the ground state energy of this system
 
-- $\psi^{(1)}_n$ are the corrections to the wavefunctions of the unperturbed system 
+    -   $E^{(1)}_1$ would be the correction on the fixed excited state energy
 
-    - $\psi^{(1)}_0$ would be the correction to the ground state wavefunction
-    
-    - $\psi^{(1)}_1$ would be the correction on the fixed excited state 
-    
-    
+-   $\psi^{(1)}_n$ are the corrections to the wavefunctions of the unperturbed system
+
+    -   $\psi^{(1)}_0$ would be the correction to the ground state wavefunction
+
+    -   $\psi^{(1)}_1$ would be the correction on the fixed excited state
 :::
-
 
 ## 
 
@@ -156,62 +152,56 @@ An alternative to the Variational Method if Perturbation Theory. Oftentimes, whi
 
 -   Get first order corrections given by:
 
-::::: goals
-::: goals-header
+:::::: goals
+:::: goals-header
 ::: {style="font-size: 85%;"}
-
 $E^{(1)}_n =\int \psi_n^{(0)} H_1 \psi_n^{(0)} dx$
 
 $\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^{(0)}_n - E^{(0)}_m} \psi^{(0)}_m$
-
 :::
-:::
+::::
 
 ::: goals-container
 :::
-:::::
+::::::
 
 ::: {style="font-size: 90%;"}
-
 -   Energy correction given by impact of perturbing potential on (unperturbed) ground state
 
 -   Wavefunction correction given by mixing pieces of excited states with ground state
 
-    - only works when original energy levels far apart (compared to perturbation)
-    
-    - and non-degerate
-    
+    -   only works when original energy levels far apart (compared to perturbation)
+
+    -   and non-degerate
 :::
 
 ## Example - Particle in Box with Non-Zero Potential
 
-- wavefunctions of unperturbed system are $\psi_n^{(0)}(x) = \sqrt{2/L} \sin(n\pi x /L)$
+-   wavefunctions of unperturbed system are $\psi_n^{(0)}(x) = \sqrt{2/L} \sin(n\pi x /L)$
 
-- now let's raise the _floor_ of the system by a constant amount, $V_0$
+-   now let's raise the *floor* of the system by a constant amount, $V_0$
 
-- first order correction to the energy of the $n^{th}$ state is:
+-   first order correction to the energy of the $n^{th}$ state is:
 
--  $E^{(1)}_n = \int_0^L \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx = V_0$
+-   $E^{(1)}_n = \int_0^L \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx = V_0$
 
-- the corrected energy levels are then $E_n \approx E^{(0)}_n + V_0$
+-   the corrected energy levels are then $E_n \approx E^{(0)}_n + V_0$
 
-- this actually the exact answer, all levels lifted by $V_0$
+-   this actually the exact answer, all levels lifted by $V_0$
 
-##
+## 
 
-- raise only half the box by $V_0$
+-   raise only half the box by $V_0$
 
--  $E^{(1)}_n = \int_0^{L/2} \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx$
+-   $E^{(1)}_n = \int_0^{L/2} \psi_n^{(0)}(x) V_0 \psi_n^{(0)}(x) dx$
 
--  $E^{(1)}_n = \frac{2}{L} \int_0^{L/2} \sin(n\pi x /L)\; V_0 \; \sin(n\pi x /L) dx$
+-   $E^{(1)}_n = \frac{2}{L} \int_0^{L/2} \sin(n\pi x /L)\; V_0 \; \sin(n\pi x /L) dx$
 
--  $E^{(1)}_n = \frac{2V_0}{L} \int_0^{L/2} \sin^2(n\pi x /L)\;  dx$
+-   $E^{(1)}_n = \frac{2V_0}{L} \int_0^{L/2} \sin^2(n\pi x /L)\;  dx$
 
-- $E^{(1)}_n = \frac{V_0}{2}$
+-   $E^{(1)}_n = \frac{V_0}{2}$
 
 - this is not an exact result, but seems reasonable.
-
-
 
 ## Example - Anharmonic oscillator
 
