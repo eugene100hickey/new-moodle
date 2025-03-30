@@ -233,6 +233,6 @@ $\psi^{(1)}_n= \Sigma _{m \ne n} \frac{\int \psi^{(0)}_m H_1 \psi^{(0)}_n dx}{E^
 
 ## References
 
--   [Griffiths - Chapter 7](https://library.tudublin.ie/record=b1229083){target="_blank"}
+-   [Griffiths - Chapter 6](https://library.tudublin.ie/record=b1229083){target="_blank"}
 
--   [Levine - Chapte 8](https://library.tudublin.ie/record=b2298414){target="_blank"}
+-   [Levine - Chapter 8](https://library.tudublin.ie/record=b2298414){target="_blank"}
