@@ -25,7 +25,7 @@ editor: visual
 
 <br>
 
-An alternative to the Variational Method if Perturbation Theory. Oftentimes, while we might not be able to get exact solutions to our system of interest, there exist such solutions for another, similar system. We can treat the differences between these two systems as a *correction*, or perturbation, and watch how that effects the results as it propagates through our calculations. This lets us see the impact of the modification from the ideal to the actual system, and gives us an indication of how accurate our approximation is.
+An alternative to the Variational Method is Perturbation Theory. Oftentimes, while we might not be able to get exact solutions to our system of interest, there exist such solutions for another, similar system. We can treat the differences between these two systems as a *correction*, or perturbation, and watch how that effects the results as it propagates through our calculations. This lets us see the impact of the modification from the ideal to the actual system, and gives us an indication of how accurate our approximation is.
 
 ## Contents
 
