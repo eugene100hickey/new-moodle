@@ -22,8 +22,7 @@ editor: visual
 
 ## Summary
 
-<br>
-<br>
+<br> <br>
 
 Course covers a smörgåsbord of topics; from all things nuclear, to crytallography, and finally through quantum mechanics. It will get increasing mathematical as the semester progresses. The emphasis will be problem solving and skills, rather than being heavy on volume and knowledge.
 
@@ -52,9 +51,9 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
 
 ## Assessment
 
-::::::: columns
-:::: {.column width="40%"}
-::: {style="background-color: #fff4e0"}
+::::::::: columns
+::::: {.column width="40%"}
+:::: {style="background-color: #fff4e0"}
 ::: {style="font-size: 90%;"}
 -   [**60% exam in May**]{style="color:#8d2220;"}
 
@@ -68,13 +67,12 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
 
     -   Q4 = Schrödinger
 :::
-:::
 ::::
+:::::
 
-:::: {.column width="60%"}
-::: {style="background-color: #fff4e0"}
+::::: {.column width="60%"}
+:::: {style="background-color: #fff4e0"}
 ::: {style="font-size: 80%;"}
-
 -   [**40% continuous assessment**]{style="color:#8d2220;"}
 
     -   online quiz on Brightspace every week.
@@ -87,9 +85,9 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
 
     -   get 3 attempts, best one counts
 :::
-:::
 ::::
-:::::::
+:::::
+:::::::::
 
 ## Recommended Texts & Resources
 

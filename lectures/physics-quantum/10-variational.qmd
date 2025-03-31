@@ -123,6 +123,8 @@ $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
 
 ## 
 
+<br>
+
 -   Take particle in one dimensional box, problem we solved exactly before
 
     -   Chose $\phi = x(x-L)$ as the trial wavefunction
@@ -132,14 +134,31 @@ $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx^3 \ge \; E_0$
     – Not normalised yet
 
     – Remember hamiltonian:
+    
+:::: columns
+::: {.column width="48%"}
+::: {style="background-color: #fff4e0"}
 
-inside the box
+<center>inside the box</center>
 
 <center>$H = -\frac{\hbar^2}{2m}  \frac{d^2}{dx^2}$</center>
 
-outside the box
+:::
+::: {.column width="4%"}
+:::
+
+:::
+::: {.column width="48%"}
+::: {style="background-color: #fff4e0"}
+
+<center>outside the box</center>
 
 <center>$H = 0$</center>
+
+
+:::
+:::
+::::
 
 ## 
 
@@ -149,9 +168,9 @@ outside the box
 
 -   integral gives us
 
--   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx$, but really $\int_{-L}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
+-   $\int_{-\infty}^{+\infty} \phi^* H \phi \; dx$, but really $\int_{0}^{+L} \phi^* H \phi \; dx = \frac{\hbar^2 L^3}{6m}$
 
--   to normalise we get $\int_{-L}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}$
+-   to normalise we get $\int_{0}^{+L} \phi^* \phi \; dx = \frac{L^5}{30}$
 
 -   putting together we get:
 
@@ -199,6 +218,8 @@ outside the box
 
 ## 
 
+::: {style="font-size: 90%;"}
+
 -   To find higher energy states, above ground state
 
     – Use trial wavefunctions that are orthonormal to ground state
@@ -210,6 +231,8 @@ outside the box
 -   Note that while estimations of energy levels can be pretty good, harder to get good picture of wavefunctions from adjusted trial wavefunctions
 
 -   Variational Method pretty useful for the quantum mechanics of $He$ and of the $H_2$ molecule
+
+:::
 
 ## Equations
 
