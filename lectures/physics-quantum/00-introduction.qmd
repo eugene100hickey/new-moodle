@@ -22,6 +22,9 @@ editor: visual
 
 ## Summary
 
+<br>
+<br>
+
 Course covers a smörgåsbord of topics; from all things nuclear, to crytallography, and finally through quantum mechanics. It will get increasing mathematical as the semester progresses. The emphasis will be problem solving and skills, rather than being heavy on volume and knowledge.
 
 ## Contents
@@ -42,7 +45,7 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
 
 -   2 lectures a week
     -   Wednesday 14:00-15:00 room CQ008
-    -   Wednesday 15:00-16:00 room CQ106
+    -   Wednesday 15:00-16:00 room CQ008
 -   tutorial hour every second week
     -   Thursday 16:00-17:00 room CQ009
     -   start next week (5<sup>th</sup> Feb.)
@@ -52,6 +55,7 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
 ::::::: columns
 :::: {.column width="40%"}
 ::: {style="background-color: #fff4e0"}
+::: {style="font-size: 90%;"}
 -   [**60% exam in May**]{style="color:#8d2220;"}
 
     -   4 questions answer any 3
@@ -62,12 +66,15 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
 
     -   Q3 = intro to quantum
 
-    -   Q4 = Sch$\hat{o}$dinger
+    -   Q4 = Schrödinger
+:::
 :::
 ::::
 
 :::: {.column width="60%"}
 ::: {style="background-color: #fff4e0"}
+::: {style="font-size: 80%;"}
+
 -   [**40% continuous assessment**]{style="color:#8d2220;"}
 
     -   online quiz on Brightspace every week.
@@ -79,6 +86,7 @@ Course covers a smörgåsbord of topics; from all things nuclear, to crytallogra
     -   10 questions on each quiz, usually MCQ's
 
     -   get 3 attempts, best one counts
+:::
 :::
 ::::
 :::::::

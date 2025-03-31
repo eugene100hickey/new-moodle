@@ -1,7 +1,7 @@
 ---
 title: "02-Nuclear"
 author:
-  - name: Eugene Hickey
+  - name: Physics Theory II PHYS2001
     orcid: 0000-0001-9813-9323
     email: eugene.hickey@tudublin.ie
     affiliation: 
@@ -22,9 +22,15 @@ editor: visual
 
 ## Summary
 
+<br>
+
+::: {style="font-size: 90%;"}
+
 The stability of the nucleus relies on the short range nuclear force. The models produced can account for the nature and energy of radiation products, the results of scattering experiments, and the range of isotopes across the table of elements. We get a measure of stability, the *binding energy per nucleon* that peaks around iron. Lighter elements will look to fuse together (fusion) and heavier elements to split apart (fission). Makes a source of tremendous amounts of energy.
 
 The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$), the natural energy or mass unit is the mega electron volt ($1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$)
+
+:::
 
 ## Contents
 
@@ -38,6 +44,8 @@ The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$
 
 ## Structure of Nucleus
 
+::: {style="font-size: 90%;"}
+
 -   must be something holding nucleus together, stoppping positive protons flying apart
 
 -   also need to explain radiation
@@ -50,6 +58,8 @@ The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$
 -   which nuclei are stable
 
 -   behind all this is the ***Nuclear Force***, the left over remnants of the ***Strong Force***
+
+:::
 
 ## Nuclear Force
 
@@ -113,6 +123,8 @@ The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$
 
 ## $\alpha$ Decay
 
+::: {style="font-size: 90%;"}
+
 -   looking within a nucleus, we see temporary assemblages of $\alpha$ particles.
 
 -   these aren't static, and collide up against the inner wall of the nucleus frequently
@@ -123,6 +135,9 @@ The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$
 
     -   explains the extreme range of $\alpha$ half lives
     -   get correlation between half life and ejected $\alpha$ energy
+    
+
+:::
 
 ## 
 
@@ -154,9 +169,14 @@ Makes for a handy unit to measure nuclear energies and masses.
 $(938.272 \times 92 + 939.565 \times 146 - 221743) / 238 = 7.372\; MeV\; per\; nucleon$
 :::
 
+
+::: {style="font-size: 90%;"}
+
 -   measure of how stable a nucleus is
     -   want this as big as possible
 -   can repeat this calculation for all nuclei
+
+:::
 
 ## 
 
@@ -198,7 +218,9 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
 
 -   B/A rises rapidly through the lightest elements
 
--   hits a maximum of \~8.75 MeV around $^{56}Fe$ (well, actually $^{62}Ni$)
+-   hits a maximum of \~8.75 MeV around $^{56}Fe$ 
+
+    - (well, actually $^{62}Ni$)
 
 -   decreases gradually beyond that
 

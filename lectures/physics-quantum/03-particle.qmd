@@ -271,7 +271,7 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 
 -   time flows from left to right
 
--   fermions represented by stright lines, bosons by wiggles, gluons by spirals
+-   fermions represented by straight lines, bosons by wiggles, gluons by spirals
 
 -   time flows backwards for anti-particles
 
@@ -369,7 +369,7 @@ Weak and electromagnetism united in to ***Electro-weak Force***
 ::::::
 
 ::: callout-tip
-## If all or particles (or all are anti-particles), then it must be scattering
+## If all are particles (or all are anti-particles), then it must be scattering
 :::
 
 ## Shortcomings of the Standard Model
