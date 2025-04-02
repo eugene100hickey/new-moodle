@@ -396,6 +396,8 @@ The three separated equations are:
 -   maximum number of electrons in each orbital given by number of posssible $m_{\mathcal{l}}$ values $\times 2$
 
     - max. no. = $(2 \times {\mathcal{l}} + 1) \times 2$ 
+    
+:::
 
 ## Equations
 
