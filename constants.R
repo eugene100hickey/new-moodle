@@ -14,6 +14,7 @@ ryd <- codata$value[codata$symbol == "ryd"]
 rydhcev <- codata$value[codata$symbol == "rydhcev"]
 bohr <- codata$value[codata$symbol == "bohrrada0"]
 u <- codata$value[codata$symbol == "u"]
+ep0 <-  codata$value[codata$symbol == "ep0"]
 
 meu <- 151.964*u
 (63*mp + 89*mn - meu)*c0^2
@@ -98,3 +99,14 @@ b <- -18
 c <- 27
 
 (-b + c(1, -1) * sqrt(b^2 - 4*a*c)) / (2*a)
+
+# Wed Apr  2 18:35:40 2025 ------------------------------
+
+
+## Rydberg
+
+1/(4*pi*ep0)^2 * me*e^4 / (4*pi*hbar^3*c0)
+
+1/(4*pi*ep0)^2 * me*e^4 / (2*hbar^2) / e
+
+4*pi*ep0*hbar^2 / (e^2*me) * 1e9

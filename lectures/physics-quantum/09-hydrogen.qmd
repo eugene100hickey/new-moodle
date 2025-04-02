@@ -289,7 +289,7 @@ The three separated equations are:
 
 <br>
 
--   get $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4 \pi \hbar^2} \frac{1}{n^2}$
+-   get $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^2} \frac{1}{n^2}$
 
 -   this is (coincidentally) the same as the expression that Bohr got from his model
 
@@ -373,7 +373,7 @@ The three separated equations are:
 
 -   for hydrogen-like ions ($He^+$, $Li^{++}$, $Be^{3+}$), need extra factor of $Z^2$ in energy levels
 
--   $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{4 \pi \hbar^2} \frac{1}{n^2}$
+-   $E_n = -\frac{1}{(4\pi\epsilon_0)^2} \frac{mZ^2e^4}{2 \hbar^2} \frac{1}{n^2}$
 
 -   $E_n = - Z^2 \frac{13.6057}{n^2} eV$
 
@@ -425,7 +425,7 @@ The three separated equations are:
 
 -   $\frac{1}{\lambda} = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4\pi \hbar^3 c} \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$
 
--   $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{2 \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
+-   $R = \frac{1}{(4\pi\epsilon_0)^2} \frac{me^4}{4 \pi \hbar^3 c} = 1.0974 \times 10^7 m^{-1}$
 :::
 
 ::: {.column width="50%"}
