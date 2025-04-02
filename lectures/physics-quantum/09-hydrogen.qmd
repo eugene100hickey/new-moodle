@@ -345,6 +345,8 @@ The three separated equations are:
 
 ## 
 
+::: {style="font-size: 90%;"}
+
 <br>
 
 -   corresponding wavelengths for the photon emitted by each transition is given by
@@ -361,7 +363,11 @@ The three separated equations are:
     
     - $n_{low} = 2$
 
+:::
+
 ## Hydrogen-Like Ions
+
+::: {style="font-size: 90%;"}
 
 <br>
 
@@ -376,6 +382,9 @@ The three separated equations are:
     -   $a_0 = \frac{4 \pi \epsilon_0 \hbar^2}{Ze^2m} = \frac{0.0529}{Z} nm$
 
     -   gives ground state wavefunction of $\psi_0(r) = Ae^{-Zr/a_0}$
+    
+    
+:::
 
 ## Back to Our Periodic Table
 
