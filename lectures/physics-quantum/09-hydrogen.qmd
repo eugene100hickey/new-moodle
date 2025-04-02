@@ -333,7 +333,7 @@ The three separated equations are:
 
 ## Hydrogen Spectra
 
--   energy levels given by: $E_n = \frac{13.6057}{n^2} eV$
+-   energy levels given by: $E_n = -\frac{13.6057}{n^2} eV$
 
 ![](images/hydro-energy-levels.png)
 
