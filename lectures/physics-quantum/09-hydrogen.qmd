@@ -357,6 +357,10 @@ The three separated equations are:
 
 -   get lines at <i style='color:red;'>656nm</i>, <i style='color:green;'>486nm</i>, <i style='color:blue;'>434nm</i>, and <i style='color:violet;'>410nm</i> in the visible.
 
+    - all Balmer series
+    
+    - $n_{low} = 2$
+
 ## Hydrogen-Like Ions
 
 <br>
@@ -375,6 +379,8 @@ The three separated equations are:
 
 ## Back to Our Periodic Table
 
+::: {style="font-size: 90%;"}
+
 -   Principle quantum number, $n$ gives level of orbital
 
 -   The Orbital Quantum Number, ${\mathcal{l}}$, gives s, p, d, f etc
@@ -388,6 +394,8 @@ The three separated equations are:
     -   ***3d*** orbital has $n=3$ and ${\mathcal{l}} = 2$
 
 -   maximum number of electrons in each orbital given by number of posssible $m_{\mathcal{l}}$ values $\times 2$
+
+    - max. no. = $(2 \times {\mathcal{l}} + 1) \times 2$ 
 
 ## Equations
 
