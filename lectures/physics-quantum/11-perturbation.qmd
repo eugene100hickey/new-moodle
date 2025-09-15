@@ -89,8 +89,7 @@ An alternative to the Variational Method is Perturbation Theory. Oftentimes, whi
 ## Some Terminology
 
 ::: {style="font-size: 85%;"}
-
--   $H_0$ is the (well known) original waveform
+-   $H_0$ is the (well known) original Hamiltonian
 
 -   $\lambda H_1$ is the correction to this
 
@@ -110,7 +109,6 @@ An alternative to the Variational Method is Perturbation Theory. Oftentimes, whi
 ## 
 
 ::: {style="font-size: 85%;"}
-
 -   $E^{(1)}_n$ are the first order corrections to the energy levels
 
     -   $E^{(1)}_0$ would be the correction on the ground state energy of this system

@@ -4,6 +4,8 @@ format:
   html:
     theme: solarized
 editor: visual
+execute: 
+  eval: true
 include-in-header:
   - text: |
       <link rel = "shortcut icon" href = "../img/bullfinch.png" />
@@ -35,7 +37,7 @@ include-in-header:
 
 -   [11 Perturbation Theory](https://tud.netlify.app/lectures/physics-quantum/11-perturbation.html){target="_blank"}
 
-## Presentations
+## Some Presentations
 
 -   [Exoplanets-ML-Labs March 13th](https://tud.netlify.app/physics-school/ML-Labs_exoplanets.html){target="_blank"}
 
@@ -80,6 +82,8 @@ include-in-header:
 -   [Projectile Motion](https://tud.netlify.app/projectile)
 
 ## ManTech Lectures
+
+-   [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf)
 
 -   [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf)
 
