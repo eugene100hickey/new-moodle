@@ -83,31 +83,31 @@ include-in-header:
 
 ## ManTech Lectures
 
--   [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf)
+-   [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf){target="_blank"}
 
--   [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf)
+-   [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf){target="_blank"}
 
--   [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf)
+-   [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf){target="_blank"}
 
--   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf)
+-   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf){target="_blank"}
 
--   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf)
+-   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf){target="_blank"}
 
--   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distil-tutorial.pdf)
+-   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distil-tutorial.pdf){target="_blank"}
 
--   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/)
+-   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/){target="_blank"}
 
 ## CMS Lectures
 
--   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf)
+-   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf){target="_blank"}
 
--   [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisation-cables.pdf)
+-   [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisation-cables.pdf){target="_blank"}
 
--   [White Noise](https://tud.netlify.app/lectures/cms/Whitenoisesound.wav)
+-   [White Noise](https://tud.netlify.app/lectures/cms/Whitenoisesound.wav){target="_blank"}
 
--   [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav)
+-   [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav){target="_blank"}
 
--   [3<sup>rd</sup> Filters Lab](https://tud.netlify.app/lectures/cms/filters-lab.zip)
+-   [3<sup>rd</sup> Filters Lab](https://tud.netlify.app/lectures/cms/filters-lab.zip){target="_blank"}
 
 ## LPP Lectures
 
