@@ -89,6 +89,8 @@ include-in-header:
 
 -   [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf){target="_blank"}
 
+-   [MATERIAL BALANCE Tutorial](https://tud.netlify.app/lectures/mantech/tutorial-01-material.pdf){target="_blank"}
+
 -   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf){target="_blank"}
 
 -   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf){target="_blank"}
