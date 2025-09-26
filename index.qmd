@@ -113,16 +113,16 @@ include-in-header:
 
 ## LPP Lectures
 
--   [Safety](https://tud.netlify.app/lectures/lpp/01-laboratory-safety.pdf)
+-   [Safety](https://tud.netlify.app/lectures/lpp/01-laboratory-safety.pdf){target="_blank"}
 
--   [Hazards](https://tud.netlify.app/lectures/lpp/02-hazards.pdf)
+-   [Hazards](https://tud.netlify.app/lectures/lpp/02-hazards.pdf){target="_blank"}
 
--   [Units](https://tud.netlify.app/lectures/lpp/03-units.pdf)
+-   [Units](https://tud.netlify.app/lectures/lpp/03-units.pdf){target="_blank"}
 
--   [Moles](https://tud.netlify.app/lectures/lpp/04-moles-molarity-solutions.pdf)
+-   [Moles](https://tud.netlify.app/lectures/lpp/04-moles-molarity-solutions.pdf){target="_blank"}
 
--   [Dilutions](https://tud.netlify.app/lectures/lpp/05-dilutions.pdf)
+-   [Dilutions](https://tud.netlify.app/lectures/lpp/05-dilutions.pdf){target="_blank"}
 
--   [Concentrations](https://tud.netlify.app/lectures/lpp/06_Concentrations.pdf)
+-   [Concentrations](https://tud.netlify.app/lectures/lpp/06_Concentrations.pdf){target="_blank"}
 
--   [Measurement](https://tud.netlify.app/lectures/lpp/07-measurement.pdf)
+-   [Measurement](https://tud.netlify.app/lectures/lpp/07-measurement.pdf){target="_blank"}
