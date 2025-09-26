@@ -113,6 +113,10 @@ include-in-header:
 
 ## LPP Lectures
 
+-   [Safety](https://tud.netlify.app/lectures/lpp/01-laboratory-safety.pdf)
+
+-   [Hazards](https://tud.netlify.app/lectures/lpp/02-hazards.pdf)
+
 -   [Units](https://tud.netlify.app/lectures/lpp/03-units.pdf)
 
 -   [Moles](https://tud.netlify.app/lectures/lpp/04-moles-molarity-solutions.pdf)
