@@ -97,6 +97,12 @@ include-in-header:
 
 -   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distil-tutorial.pdf){target="_blank"}
 
+-   [CRYSTALS-Unit Cells](https://tud.netlify.app/lectures/mantech/05-crystal_1.pdf){target="_blank"}
+
+-   [CRYSTALS-Space Groups](https://tud.netlify.app/lectures/mantech/06-crystal_2.pdf){target="_blank"}
+
+-   [CRYSTALS-XRD](https://tud.netlify.app/lectures/mantech/07-crystal_3.pdf){target="_blank"}
+
 -   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/){target="_blank"}
 
 ## CMS Lectures
