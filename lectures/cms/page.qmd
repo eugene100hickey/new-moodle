@@ -1,0 +1,59 @@
+---
+title: ""
+format: html
+editor: visual
+---
+
+![](logo.jpg){.absolute top="0" right="0" width="100" height="100"}
+
+## Signature Sheet
+
+### Course: Chromatography & Measurement Systems (Eugene)
+
+### Date: `r (Sys.Date() + 0) |> format("%A %B %d %Y")`
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+
+
+library(tidyverse)
+library(gt)
+library(readxl)
+
+z <- read_excel("classlist-cms.xlsx", sheet = "Sheet1") |>
+  janitor::clean_names() |> 
+  unite(col = "Name", c(last_name, first_name), sep = ", ") |> 
+  select(Name) |> 
+  mutate(Signature = "") |> 
+  add_row() |> 
+  mutate_all(~replace(., is.na(.), "")) |> 
+  add_row() |> 
+  mutate_all(~replace(., is.na(.), "")) |> 
+  add_row() |> 
+  mutate_all(~replace(., is.na(.), "")) |> 
+  add_row() |> 
+  mutate_all(~replace(., is.na(.), ""))
+
+
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+
+gt(z) |> 
+cols_width(
+Name ~ px(200),
+Signature ~ px(1000)
+) |> 
+tab_options(table.width = px(600)) |> 
+cols_align(align = "left") |> 
+cols_label(
+Name = md("**Name**"),
+Signature = md("**Signature**")
+)
+
+```
