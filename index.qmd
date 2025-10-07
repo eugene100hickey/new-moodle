@@ -95,6 +95,8 @@ include-in-header:
 
 -   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf){target="_blank"}
 
+-   [VLE Tutorial](https://tud.netlify.app/lectures/mantech/03-VLE-tutorial.pdf){target="_blank"}
+
 -   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distil-tutorial.pdf){target="_blank"}
 
 -   [CRYSTALS-Unit Cells](https://tud.netlify.app/lectures/mantech/05-crystal_1.pdf){target="_blank"}
