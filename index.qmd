@@ -117,6 +117,12 @@ include-in-header:
 
 -   [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisation-cables.pdf){target="_blank"}
 
+-   [Signals & Noise Tutorial](https://tud.netlify.app/lectures/cms/01-signals_noise_tutorial.pdf){target="_blank"}
+
+-   [Digitisation Tutorial](https://tud.netlify.app/lectures/cms/02-digitisation_tutorial.pdf){target="_blank"}
+
+-   [Cables, Images, & Malware Tutorial](https://tud.netlify.app/lectures/cms/03-cables_images_malware_tutorial.pdf){target="_blank"}
+
 -   [White Noise](https://tud.netlify.app/lectures/cms/Whitenoisesound.wav){target="_blank"}
 
 -   [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav){target="_blank"}
