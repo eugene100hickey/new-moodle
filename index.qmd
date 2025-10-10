@@ -93,6 +93,8 @@ include-in-header:
 
 -   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf){target="_blank"}
 
+-   [HEAT EXCHANGERS Tutorial](https://tud.netlify.app/lectures/mantech/02-heat_exchangers_turorial.pdf){target="_blank"}
+
 -   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf){target="_blank"}
 
 -   [VLE Tutorial](https://tud.netlify.app/lectures/mantech/03-VLE-tutorial.pdf){target="_blank"}
@@ -131,6 +133,6 @@ include-in-header:
 
 -   [Dilutions](https://tud.netlify.app/lectures/lpp/05-dilutions.pdf){target="_blank"}
 
--   [Concentrations](https://tud.netlify.app/lectures/lpp/06_Concentrations.pdf){target="_blank"}
+-   [Concentrations](https://tud.netlify.app/lectures/lpp/06-concentrations.pdf){target="_blank"}
 
 -   [Measurement](https://tud.netlify.app/lectures/lpp/07-measurement.pdf){target="_blank"}
