@@ -109,6 +109,8 @@ include-in-header:
 
 -   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/){target="_blank"}
 
+-   [Laboratory Manual](https://tud.netlify.app/lectures/mantech/Lab-Manual.pdf){target="_blank"}
+
 ## CMS Lectures
 
 -   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf){target="_blank"}
