@@ -99,13 +99,19 @@ include-in-header:
 
 -   [VLE Tutorial](https://tud.netlify.app/lectures/mantech/03-VLE-tutorial.pdf){target="_blank"}
 
--   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distil-tutorial.pdf){target="_blank"}
+-   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distillation-tutorial.pdf){target="_blank"}
 
 -   [CRYSTALS-Unit Cells](https://tud.netlify.app/lectures/mantech/05-crystal_1.pdf){target="_blank"}
 
+-   [CRYSTALS-Unit Cells Tutorial](https://tud.netlify.app/lectures/mantech/05-crystal_bravais_lattice-tutorial.pdf){target="_blank"}
+
 -   [CRYSTALS-Space Groups](https://tud.netlify.app/lectures/mantech/06-crystal_2.pdf){target="_blank"}
 
+-   [CRYSTALS-Space Groups Tutorial](https://tud.netlify.app/lectures/mantech/06-crystal_space_groups-tutorial.pdf){target="_blank"}
+
 -   [CRYSTALS-XRD](https://tud.netlify.app/lectures/mantech/07-crystal_3.pdf){target="_blank"}
+
+-   [CRYSTALS-X-Ray Diffraction Tutorial](https://tud.netlify.app/lectures/mantech/07-crystal_xrd-tutorial.pdf){target="_blank"}
 
 -   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/){target="_blank"}
 
