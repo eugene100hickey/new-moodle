@@ -93,7 +93,7 @@ include-in-header:
 
 -   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf){target="_blank"}
 
--   [HEAT EXCHANGERS Tutorial](https://tud.netlify.app/lectures/mantech/02-heat_exchangers_turorial.pdf){target="_blank"}
+-   [HEAT EXCHANGERS Tutorial](https://tud.netlify.app/lectures/mantech/02-heat_exchangers_tutorial.pdf){target="_blank"}
 
 -   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf){target="_blank"}
 
@@ -103,15 +103,15 @@ include-in-header:
 
 -   [CRYSTALS-Unit Cells](https://tud.netlify.app/lectures/mantech/05-crystal_1.pdf){target="_blank"}
 
--   [CRYSTALS-Unit Cells Tutorial](https://tud.netlify.app/lectures/mantech/05-crystal_bravais_lattice-tutorial.pdf){target="_blank"}
+-   [CRYSTALS-Unit Cells Tutorial](https://tud.netlify.app/lectures/mantech/05-crystals_bravais_lattice-tutorial.pdf){target="_blank"}
 
 -   [CRYSTALS-Space Groups](https://tud.netlify.app/lectures/mantech/06-crystal_2.pdf){target="_blank"}
 
--   [CRYSTALS-Space Groups Tutorial](https://tud.netlify.app/lectures/mantech/06-crystal_space_groups-tutorial.pdf){target="_blank"}
+-   [CRYSTALS-Space Groups Tutorial](https://tud.netlify.app/lectures/mantech/06-crystals_space_groups-tutorial.pdf){target="_blank"}
 
 -   [CRYSTALS-XRD](https://tud.netlify.app/lectures/mantech/07-crystal_3.pdf){target="_blank"}
 
--   [CRYSTALS-X-Ray Diffraction Tutorial](https://tud.netlify.app/lectures/mantech/07-crystal_xrd-tutorial.pdf){target="_blank"}
+-   [CRYSTALS-X-Ray Diffraction Tutorial](https://tud.netlify.app/lectures/mantech/07-crystals_xrd-tutorial.pdf){target="_blank"}
 
 -   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/){target="_blank"}
 
