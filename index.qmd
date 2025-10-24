@@ -133,6 +133,8 @@ include-in-header:
 
 -   [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav){target="_blank"}
 
+-   [Laboratory Manual](https://tud.netlify.app/lectures/cms/Measurement-manual.pdf){target="_blank"}
+
 -   [3<sup>rd</sup> Filters Lab](https://tud.netlify.app/lectures/cms/filters-lab.zip){target="_blank"}
 
 ## LPP Lectures
