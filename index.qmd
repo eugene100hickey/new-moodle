@@ -109,7 +109,7 @@ include-in-header:
 
 -   [CRYSTALS-Space Groups Tutorial](https://tud.netlify.app/lectures/mantech/06-crystals_space_groups-tutorial.pdf){target="_blank"}
 
--   [CRYSTALS-Space Groups Symmetries Tutorial](https://tud.netlify.app/lectures/mantech/06_Crystals_2_symmetries.pdf){target="_blank"}
+-   [CRYSTALS-Space Groups Symmetries  Tutorial](https://tud.netlify.app/lectures/mantech/06_Crystals_2_symmetries.pdf){target="_blank"}
 
 -   [CRYSTALS-XRD](https://tud.netlify.app/lectures/mantech/07-crystal_3.pdf){target="_blank"}
 
