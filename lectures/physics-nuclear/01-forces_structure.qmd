@@ -108,7 +108,7 @@ z |>
 
 - A solitary neutron isn't stable, decays with half-life of 878s (15 minutes)
 
-    - turn in to a proton and electron (and anti-neutrino)
+    - turns in to a proton and electron (and anti-neutrino)
     
 - Neutrons and protons aren't point particles (unlike the electron). Have radii of about 1fm.
 
@@ -120,20 +120,30 @@ z |>
 
 - nuclear radii range from 1fm to about 7fm
 
-## 
+    - very small compared to size of atom
 
-### Nuclear Drop Model
+- measure using:
 
--   nuclear densities pretty much all the same
+    - electron diffraction
+    - isotope wavelength shifts
+    - Coulomb energies of mirror nuclei
+    - scattering of $\alpha$ particles
+    - $\alpha$ decay lifetimes
+    
+##
 
-    -   $Radius\;=\;1.2 \times \sqrt[3]{A}$ in fm
+### Electron Diffraction
 
--   surface a little proton rich
+electrons have wavelengths given by:
 
--   shape roughly spherical, a little oblate. Usually.
-
-
-
+  $$\lambda \; = \; \frac{hc}{E}$$
+    
+  diffraction minima at $$sin\theta \; = \; \frac{1.22 \times \lambda}{D}$$
+    
+  420MeV electrons give minimum at $50.5^{\circ}$ for $^{12}_6C$
+    
+  gives nuclear radius of 2.33fm
+  
 ## Structure of Nucleus
 
 ::: {style="font-size: 90%;"}
@@ -151,21 +161,69 @@ z |>
 -   behind all this is the ***Nuclear Force***, the left over remnants of the ***Strong Force***
 :::
 
+    
+    
 ## Nuclear Force
 
--   short range
+::: {style="font-size: 90%;"}
 
-    -   has little impact beyond 3 fm ($3 \times 10^{-15}m$)
+Something has to hold the nucleus together. Some properties of this _nuclear force_
 
--   strongly repulsive at less than 1 fm
+- must be big, has to overcome Coulomb repulsion between protons
 
--   sees no difference between neutrons and protons
+$E_{pp} \; = \; \frac{1}{4 \pi \epsilon_\circ}\; \frac{e^2}{r}$ - this is about 1MeV for ~fm separation
+    
+- only relevant at fm distances, feeble at greater separations (>3fm)
 
--   electrons not affected by it at all
+- only effects protons and neutrons, not electrons
 
-    -   it's like they are nuclear force *neutral*
+    -   it's like electrons are nuclear force *neutral*
 
--   we don't have a good mathematical model for the nuclear force, a.k.a. QED or QCD
+- agnostic to difference between protons and neutrons
+
+- repulsive at short (< 0.5fm) distances
+
+- depends on spins of nucleons
+
+:::
+
+## Nuclear Force
+
+- no analytic form of nuclear force
+
+    - nothing like Coulomb's Law
+    
+$$F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}$$
+
+- best modelled as an _exchange_ force, mediated by some particle
+
+- first analysed by Yukawa
+
+
+## Investigating Nuclear Force
+
+- can get a bound state of a single proton and a single neutron, called _deuteron_ (c.f. deuterium, $^2H$)
+
+- don't get _proton-proton_ or _neutron-neutron_
+
+- deuteron has the protons and neutron spins parallel ($l = 1$, triplet)
+
+- no excited states of deuteron
+
+## 
+
+### Nuclear Drop Model
+
+-   nuclear densities pretty much all the same
+
+    -   $Radius\;=\;1.2 \times \sqrt[3]{A}$ in fm
+
+-   surface a little proton rich
+
+- but charge and matter radii of nucleu=i agree to within 0.1fm
+
+-   shape roughly spherical, a little oblate. Usually.
+
 
 
 
@@ -303,97 +361,6 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
     -   *fission* splits up heavier elements, moves up curve from the right
     -   *fusion* coalesces lighter elements, moves up curve from the left
 
-## Nuclear Fission
-
--   During Fission, a heavy isotope splits into two or more fragments , this binding energy is released during the process. Nuclear reactors and Atomic bombs make use of this. A typical reaction is $^1n\; +\; ^{235}U \rightarrow \;^{236}U \rightarrow \;^{141}Ba +\; ^{92}Kr +  3 ^1n$
-
--   Approximately 200 MeV of energy is released per fission
-
-    -   B/A for $^{235}U$ = 7.59MeV, for $^{141}Ba$ = 8.8MeV, for $^{92}Kr$ = 7.83MeV
-
-## 
-
--   During fission several neutrons are emitted by each nucleus and these cause further fission
-    -   can cause a chain reaction
-    -   reason for neutron emmission is to maintain proton/neutron ratio appropriate for atomic mass
-    -   fission products tend to be $\beta$ emitters
--   number of neutrons (*k*) that propagate reaction is crucial
-    -   if k \< 1 then reaction dies out
-    -   if k \> 1 then explosion
-    -   if k $\approx$ 1 then controlled power plant
-
-## 
-
--   control rods made from **Cadmium** can be used to absorb neutrons, keep k close to 1
-
--   surface to volume ratio important
-
-    -   critical mass (about 50kg for $^{235}U$)
-
--   Fission bomb types
-
-    -   gun type (*Little Boy* dropped on Hiroshima)
-    -   implosion type (*Fat Man* dropped on Nagasaki)
-
--   The large numbers of neutrons produced in a reactor can be used to produce nuclear transformations in suitable elements producing radioisotopes for therapy, tracing etc.
-
-## Neutrons in Fission
-
--   absorbtion of neutron is what triggers fission
-
--   $^{235}U$ is even-odd, $^{236}U$ is even-even
-
-    -   lots of energy released into nucleus which bubbles inside before splitting it apart
-
--   neutron absorbtion is much more probable for *slow* (thermal, \~10eV) neutrons
-
-    -   but neutrons emitted in fission are hot (\~MeV)
-    -   slow down by collisions with light nuclei
-    -   ***moderator***, usually water (contains $^1H^+$) or graphite carbon
-
-## Fission Reactors
-
--   natural Uranium is about 1% $^{235}U$ (mostly $^{238}U$)
-
--   reactor grade is about 20% $^{235}U$
-
--   weapons grade is about 85% $^{235}U$
-
--   $^{239}Pu$ also fissionable
-
-## 4<sup>th</sup> Generation Reactors - SMR
-
--   small and modular can be transported by road
-
--   higher temperatures so more efficient
-
--   liquid salt coolant (Natrium type) can act as energy reservoir
-
--   continuous fuel feed so no need to shut down to service
-
--   $^{238}U$ act as neutron absorber to control reaction rates
-
--   build on sites of old coal plants
-
--   cost about €3B, take \~ 10 years
-
--   typically 80-300MW per reactor
-
-## Fusion Reactors
-
--   use $^{3}T$ or $^{2}D$ (tritium or deuterium)
-
-    -   $^{2}D$ naturally occuring (1 in 6,500 water molecules)
-
-    -   $^{3}T$ is not, 12 year half-life
-
--   need temperatures of about 150 million $^{\circ} C$
-
-    -   laser induced fusion (pulse of 2 MJ)
-
-    -   magnetic confinement (20T) in a **Tokamak** (doughnut shape)
-
--   Large science effort, current leaders are Lawrence Livermore in California (laser) and ITER in Cadarache in France (tokomak)
 
 ## Equations
 
@@ -407,16 +374,11 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
 
 -   [Young & Freedman - chapter 43.2 (Nuclear Structure & Binding)](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}
 
--   [Young & Freedman - chapter 43.6-8 (Reactions, Fission, & Fusion)](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1496){target="_blank"}
-
--   [Serway & Jewett - chapter 43.2 (Binding Energy)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
 -   [Serway & Jewett - chapter 43.3 (Nuclear Models)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
--   [Serway & Jewett - chapter 43.7-10 (Reaction, Fission, & Fusion)](-%20%5BSerway%20&%20Jewett%20-%20chapter%2043.3%20(Nuclear%20Models)%5D(https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f)%7Btarget=%22_blank%22%7D){target="_blank"}
+-   [Serway & Jewett - chapter 43.2 (Binding Energy)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
--   [4th Generation Fission Reactors](){target="_blank"}
 
--   [Nuclear Power from *Coursera*](https://www.coursera.org/learn/particle-physics/home/module/2){target="_blank"}
 
 -   [nucleides](https://www.nndc.bnl.gov/nudat3/){target="_blank"}
