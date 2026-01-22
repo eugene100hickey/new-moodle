@@ -1,0 +1,336 @@
+---
+title: "02-Nuclear"
+author:
+  - name: Physics Theory II PHYS2001
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "logo.jpg" />
+css: logo.css
+footer: "Physics - Quantum"
+editor: visual
+---
+
+## Summary
+
+<br>
+
+::: {style="font-size: 90%;"}
+The stability of the nucleus relies on the short range nuclear force. The models produced can account for the nature and energy of radiation products, the results of scattering experiments, and the range of isotopes across the table of elements. We get a measure of stability, the *binding energy per nucleon* that peaks around iron. Lighter elements will look to fuse together (fusion) and heavier elements to split apart (fission). Makes a source of tremendous amounts of energy.
+
+The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$), the natural energy or mass unit is the mega electron volt ($1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$)
+:::
+
+## Contents
+
+1.  structure of nucleus
+2.  nuclear force
+3.  nuclear models
+4.  alpha decay
+5.  binding energy
+
+## Structure of Nucleus
+
+::: {style="font-size: 90%;"}
+-   must be something holding nucleus together, stopping positive protons flying apart
+
+-   also need to explain radiation
+
+    -   energies of $\alpha,\; \beta,\; \gamma$
+    -   nuclear half lives
+
+-   scattering experiments (fire electrons at nucleus and see how they bounce off)
+
+-   which nuclei are stable
+
+-   behind all this is the ***Nuclear Force***, the left over remnants of the ***Strong Force***
+:::
+
+## Nuclear Force
+
+-   short range
+
+    -   has little impact beyond 3 fm ($3 \times 10^{-15}m$)
+
+-   strongly repulsive at less than 1 fm
+
+-   sees no difference between neutrons and protons
+
+-   electrons not affected by it at all
+
+    -   it's like they are nuclear force *neutral*
+
+-   we don't have a good mathematical model for the nuclear force, a.k.a. QED or QCD
+
+## 
+
+### Nuclear Drop Model
+
+-   nuclear densities pretty much all the same
+
+    -   $Radius\;=\;1.2 \times \sqrt[3]{A}$ in femto-metres (1 fm = $10^{-15}m$)
+
+-   surface a little proton rich
+
+-   shape roughly spherical, a little oblate. Usually.
+
+## 
+
+### Nuclear Shell Model
+
+-   protons and neutrons moving in orbits within nucleus
+
+-   energy levels akin to atomic electron energy levels
+
+-   nuclei with evens numbers of protons and even numbers of neutrons most stable
+
+    -   protons and neutrons fill up energy levels independently\
+    -   of the 288 nuclei found in nature, 169 are even-even, only 8 are odd-odd
+    -   $^{2}D$, $^{8}Li$, $^{10}B$, $^{14}N$, $^{40}K$, $^{50}V$, $^{138}La$, $^{176}Lu$
+
+## 
+
+-   electrostatic repulsion between protons isn't nothing
+
+    -   they're only \~ 1fm apart
+    -   preference for neutrons (no repulsion)
+    -   light nuclei have Z \~ N (equal numbers)
+    -   heavier nuclei have more neutrons than protons
+
+-   set of magic numbers (a.k.a. noble elements)
+
+    -   2, 8, 20, 28, 50, 82, 126
+    -   lots of isotopes for these elements
+
+## 
+
+![Nuclear Valley of Stability (from wikipedia)](images/DecayModeNuDat2.png)
+
+## $\alpha$ Decay
+
+::: {style="font-size: 90%;"}
+-   looking within a nucleus, we see temporary assemblages of $\alpha$ particles.
+
+-   these aren't static, and collide up against the inner wall of the nucleus frequently
+
+-   classically they don't have enough energy to escape, but can get out through quantum mechanical *tunnelling*
+
+-   super sensitive to size of barrier, and the energy of this quasi-$alpha$ particle
+
+    -   explains the extreme range of $\alpha$ half lives
+    -   get correlation between half life and ejected $\alpha$ energy
+:::
+
+## 
+
+::: callout-note
+## Measuring mass in mega-electron volts (MeV)
+
+-   electron volts measure energy
+    -   literally energy an electron gets when it crosses a 1 volt battery
+    -   charge on electron is $1.6 \times 10^{-19}C$, so energy is $1eV = 1.6 \times 10^{-19}Joules$
+-   from relativity, $mass \; \leftrightarrow \; energy$
+-   using $E = m\times c^2$ thus $mass = energy\; /\;c^2$ and we get:
+-   $1eV = 1.6 \times 10^{-19} /\; c^2 = 1.6 \times 10^{-19} /\; (3 \times 10^8)^2 = 1.78 \times 10^{-36} kg$
+-   $1MeV =  10^{6}eV  = 1.78 \times 10^{-30} kg$
+:::
+
+Makes for a handy unit to measure nuclear energies and masses.
+
+## Nuclear Binding Energy
+
+-   nucleus is a little lighter than the sum of its parts
+
+::: callout-note
+## Binding Energy per Nucleon of $^{238}U$
+
+-   mass of proton = 938.272 MeV
+-   mass of neutron = 939.565 MeV
+-   mass of $^{238}U$ = 221 743 MeV
+
+$(938.272 \times 92 + 939.565 \times 146 - 221743) / 238 = 7.372\; MeV\; per\; nucleon$
+:::
+
+::: {style="font-size: 90%;"}
+-   measure of how stable a nucleus is
+    -   want this as big as possible
+-   can repeat this calculation for all nuclei
+:::
+
+## 
+
+```{r binding_energy}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-height: 6
+
+# https://www.semanticscholar.org/paper/Understanding-Nuclear-Binding-Energy-with-Nucleon-U.V-Lakshminarayana/c424f5ef6f2590143c0f7eb48898f40313bc1102
+
+library(tidyverse)
+library(ggrepel)
+library(showtext)
+library(envalysis)
+
+font_add(family = "Ink Free", regular = "assets/Inkfree.ttf")
+showtext_auto()
+
+elements <- readRDS("../../assets/elements-binding-energy")
+
+elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = seq(0, 260, by= 20)) +
+  scale_y_continuous(breaks = seq(0, 12, by = 2)) +
+  coord_cartesian(expand = FALSE) +
+  labs(title = "Binding Energy per Nucleon Across the\nLong Lived Elements and Most Common Isotopes",
+       x = "Mass Number (A)",
+       y = "Binding Energy per Nucleon (MeV)") +
+  geom_label_repel(data = elements |> slice_sample(n=10),
+                   aes(label = symbol),
+                   size = 12) +
+  theme_publish(base_size = 28, base_family = "Ink Free", base_linewidth = 0.7)
+
+```
+
+## 
+
+-   B/A rises rapidly through the lightest elements
+
+-   hits a maximum of \~8.75 MeV around $^{56}Fe$
+
+    -   (well, actually $^{62}Ni$)
+
+-   decreases gradually beyond that
+
+-   if we can turn elements into $^{56}Fe$, from either direction, we can release energy
+
+    -   *fission* splits up heavier elements, moves up curve from the right
+    -   *fusion* coalesces lighter elements, moves up curve from the left
+
+## Nuclear Fission
+
+-   During Fission, a heavy isotope splits into two or more fragments , this binding energy is released during the process. Nuclear reactors and Atomic bombs make use of this. A typical reaction is $^1n\; +\; ^{235}U \rightarrow \;^{236}U \rightarrow \;^{141}Ba +\; ^{92}Kr +  3 ^1n$
+
+-   Approximately 200 MeV of energy is released per fission
+
+    -   B/A for $^{235}U$ = 7.59MeV, for $^{141}Ba$ = 8.8MeV, for $^{92}Kr$ = 7.83MeV
+
+## 
+
+-   During fission several neutrons are emitted by each nucleus and these cause further fission
+    -   can cause a chain reaction
+    -   reason for neutron emmission is to maintain proton/neutron ratio appropriate for atomic mass
+    -   fission products tend to be $\beta$ emitters
+-   number of neutrons (*k*) that propagate reaction is crucial
+    -   if k \< 1 then reaction dies out
+    -   if k \> 1 then explosion
+    -   if k $\approx$ 1 then controlled power plant
+
+## 
+
+-   control rods made from **Cadmium** can be used to absorb neutrons, keep k close to 1
+
+-   surface to volume ratio important
+
+    -   critical mass (about 50kg for $^{235}U$)
+
+-   Fission bomb types
+
+    -   gun type (*Little Boy* dropped on Hiroshima)
+    -   implosion type (*Fat Man* dropped on Nagasaki)
+
+-   The large numbers of neutrons produced in a reactor can be used to produce nuclear transformations in suitable elements producing radioisotopes for therapy, tracing etc.
+
+## Neutrons in Fission
+
+-   absorbtion of neutron is what triggers fission
+
+-   $^{235}U$ is even-odd, $^{236}U$ is even-even
+
+    -   lots of energy released into nucleus which bubbles inside before splitting it apart
+
+-   neutron absorbtion is much more probable for *slow* (thermal, \~10eV) neutrons
+
+    -   but neutrons emitted in fission are hot (\~MeV)
+    -   slow down by collisions with light nuclei
+    -   ***moderator***, usually water (contains $^1H^+$) or graphite carbon
+
+## Fission Reactors
+
+-   natural Uranium is about 1% $^{235}U$ (mostly $^{238}U$)
+
+-   reactor grade is about 20% $^{235}U$
+
+-   weapons grade is about 85% $^{235}U$
+
+-   $^{239}Pu$ also fissionable
+
+## 4<sup>th</sup> Generation Reactors - SMR
+
+-   small and modular can be transported by road
+
+-   higher temperatures so more efficient
+
+-   liquid salt coolant (Natrium type) can act as energy reservoir
+
+-   continuous fuel feed so no need to shut down to service
+
+-   $^{238}U$ act as neutron absorber to control reaction rates
+
+-   build on sites of old coal plants
+
+-   cost about €3B, take \~ 10 years
+
+-   typically 80-300MW per reactor
+
+## Fusion Reactors
+
+-   use $^{3}T$ or $^{2}D$ (tritium or deuterium)
+
+    -   $^{2}D$ naturally occuring (1 in 6,500 water molecules)
+
+    -   $^{3}T$ is not, 12 year half-life
+
+-   need temperatures of about 150 million $^{\circ} C$
+
+    -   laser induced fusion (pulse of 2 MJ)
+
+    -   magnetic confinement (20T) in a **Tokamak** (doughnut shape)
+
+-   Large science effort, current leaders are Lawrence Livermore in California (laser) and ITER in Cadarache in France (tokomak)
+
+## Equations
+
+-   $1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$
+
+-   $Radius\;=\;1.2 \times \sqrt[3]{A}$ in femto-metres (1 fm = $10^{-15}m$)
+
+-   $Binding\; E.\; per\; nucleon = \frac{938.272 \times Z + 939.565 \times (A-Z) - (mass\;in\;MeV)}{A}$
+
+## References {.smaller}
+
+-   [Young & Freedman - chapter 43.2 (Nuclear Structure & Binding)](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}
+
+-   [Young & Freedman - chapter 43.6-8 (Reactions, Fission, & Fusion)](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1496){target="_blank"}
+
+-   [Serway & Jewett - chapter 43.2 (Binding Energy)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+
+-   [Serway & Jewett - chapter 43.3 (Nuclear Models)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+
+-   [Serway & Jewett - chapter 43.7-10 (Reaction, Fission, & Fusion)](-%20%5BSerway%20&%20Jewett%20-%20chapter%2043.3%20(Nuclear%20Models)%5D(https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f)%7Btarget=%22_blank%22%7D){target="_blank"}
+
+-   [4th Generation Fission Reactors](){target="_blank"}
+
+-   [Nuclear Power from *Coursera*](https://www.coursera.org/learn/particle-physics/home/module/2){target="_blank"}
+
+-   [nucleides](https://www.nndc.bnl.gov/nudat3/){target="_blank"}

@@ -1,0 +1,376 @@
+---
+title: "01-Radiation"
+author:
+  - name: Physics Theory II PHYS2001
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs: default
+    slide-number: true
+    show-slide-number: all
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "lectures/physics-nuclear/images/logo.jpg" />
+css: logo.css
+footer: "Physics - Quantum"
+editor: visual
+---
+
+## Summary
+
+Radioactivity is the spontaneous emission of high energy particles due to the decay of unstable nuclei
+
+## Contents
+
+1.  types of radiation
+2.  sources of radiation
+3.  applications of radioactivity
+4.  safety aspects of radioactivity
+5.  radioactive decay laws / radioactive half life
+6.  measurement of radiation / units radiation limits
+
+## 
+
+```{r radiation_types}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: 'asis'
+
+library(tidyverse)
+library(gt)
+
+z <- tribble(~parameter, ~alpha, ~beta, ~gamma,
+             "nature", "2 protons + 2 neutrons", "electron", "light ray",
+             "effects of em fields", "weakly afected", "strong", "no effect",
+             "penetration", "cm's in air, sheet of paper", "mm's of aluminium", "cm's of lead",
+             "ionise atoms", "strongly", "weakly", "very weakly",
+             "speed", "10% speed of light", "50% light", "speed of light",
+             "typical energy", "5MeV", "1MeV", "100keV",
+             "detectors", "photo film", "G-M tube", "G-M tube")
+z |> gt() |> 
+  cols_label(parameter = "",
+             alpha = html("&alpha;"),
+             beta = html("&beta;"),
+             gamma = html("&gamma;")) |> 
+  tab_header(md("**Summary of Properties of Radiation**")) |> 
+  tab_options(table.font.size = 24)
+```
+
+## Notation
+
+::: callout-note
+## Syntax
+
+$^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
+:::
+
+-   radioactivity originates in the nucleus. We need to develop a notation to discribe the processes in the nucleus.
+
+-   Atomic Number ( Z ) is the number of protons in the nucleus.
+
+-   Atomic Mass ( A ) is the combined number of protons and neutrons in the nucleus.
+
+-   ***Isotopes*** are nuclei with the same number of protons but different numbers of neutrons
+
+## Nucleus emits an $\alpha$ particle
+
+-   loses two protons and two neutrons
+-   Z decreases by 2 and A decreases by 4
+    -   $^A_ZParent\;=>\;^{A-4}_{Z-2}Daughter\;+\;\alpha$
+-   examples
+    -   $^{238}_{92}U\;=>\;^{234}_{90}Th\;+\;\alpha$
+    -   $^{210}_{84}Po\;=>\;^{206}_{82}Pb\;+\;\alpha$
+
+## Nucleus emits a $\beta$ particle
+
+<br>
+
+-   neutron in the nucleus splits into a proton and an electron
+-   electron emitted as a beta particle
+-   Z increases by 1 and A remains the same
+    -   $^A_DP\;=>\;^{A}_{Z+1}D\;+\;\beta^- \; + \; \bar{\nu}$
+-   examples
+    -   $^{99}_{42}Mo\;=>\;^{99}_{43}Tc\;+\;\beta^- \; + \; \bar{\nu}$
+    -   $^{14}_{6}C\;=>\;^{14}_{7}N\;+\;\beta^- \; + \; \bar{\nu}$
+
+## Nucleus emits an $\gamma$ ray
+
+<br>
+
+-   no change in A, Z, just loss of excess energy from nucleus
+
+## Sources of Radiation
+
+### $\alpha$ particles
+
+-   almost all alpha particles originate in the radioactive decay of heavy nuclei e.g. $^{238}U$, $^{226}Ra$, etc.
+-   $^{208}Pb$ is the heaviest stable nucleus known.
+-   typically $\alpha$ energy of 4MeV ($6.4 \times 10^{-13}$ Joules)
+-   \~highest is: $^{212}_{84}Po\; \rightarrow \; ^{208}_{82}Pb \;+\; \alpha\;+\;8.78MeV$
+
+## 
+
+### $\beta$ particles
+
+-   naturally occuring sources of beta particles are rare.
+-   often occur subsequent to nuclear fission.\
+-   They can be prepared by irradiating target nuclei with neutrons ( e.g. $^{125}I$ for thryoid treatments ).
+-   The beta emitter $^{14}C$ is produced by cosmic rays in the upper atmosphere
+-   bigger range of energies than $\alpha$ particles
+    -   3.5MeV for $^{137}_{54}Xe \; \rightarrow \; ^{137}_{55}Cs \;+ \; \beta \; + \; \nu$
+    -   18keV for $^{3}_{1}T \; \rightarrow \; ^{3}_{2}He \;+ \; \beta \; + \; \nu$
+
+## 
+
+### $\gamma$ rays
+
+<br>
+
+-   after $\alpha$ or $\beta$ decay, the daughter nucleus contains excess energy.
+-   This is liberated by the release of a $\gamma$ ray
+-   about 100keV typical energy
+
+## 
+
+<br>
+
+```{=html}
+<iframe width="1000" height="800" src="https://www.nndc.bnl.gov/nudat3/" title="Radiation Sources"></iframe>
+```
+
+## Applications of Radiation
+
+### Medicine;
+
+-   diagnostic imaging: radioactive tracers ($^{99}Tc$) latch onto a particular chemical in the body. The distribution of this chemical can be followed by radiation detectors
+-   PET scans use $^{18}F$ tracers to detect cancers.
+-   radiotherapy: focus radiation in the diseased part of the body, healthy cells recover, diseased cells die. $^{131}I$ in treatment of thyroid disorders.
+
+## 
+
+<br>
+
+### Appliances:
+
+-   devices such as smoke detectors use radiation ($\alpha$ particles from $^{241}Am$)
+
+### Archeology:
+
+-   radioactive dating; in dead material the ratio of $^{14}C$ to $^{12}C$ determines age.
+-   $^{14}C$ has a useful half-life of 5730 years
+-   Works for aging rocks as well; ratio of Uranium to Lead.
+
+## 
+
+### Engineering;
+
+-   checking welds
+-   thickness control
+-   testing wear and tear of a machine
+-   leak detection
+-   sterilising food
+
+## Radiation Safety
+
+-   radiation damages tissue
+    -   produces reactive chemicals (radicals) in the body
+-   $\alpha$ particles are the most dangerous, considered 20 times more dangerous than $\beta$'s
+    -   because they all their energy in a smaller volume
+-   $\gamma$ rays are more difficult to control because of their greater penetration
+
+## Radon
+
+-   large dose of radiation due to the build up of radon in houses
+-   radon decays to polonium, bismuth, etc. These latch onto dust particles and can be absorbed by the lungs. They emit a cascade of alpha particles
+-   20,000 deaths (lung cancer) per year in the USA due to radon
+
+## 
+
+-   radon dose determined by:
+    -   amount of uranium in underlying rocks
+    -   permeability of topsoil
+    -   cracks and fissures in floor
+    -   ventilation in house
+-   buildings from 1980's on
+    -   fine, contain impermeable plastic layer in foundations
+-   buildings from before 1950's
+    -   fine, because so draughty
+
+## Radioactive Decay Laws
+
+-   decay of individual nucleus is a totally random process, occurs with certain probability in a certain time period
+-   for large numbers of nuclei can use statistics
+-   rate of disintegrations from a nuclear source is proportional to the number of radioactive nuclei present
+
+## 
+
+::: callout-tip
+## Mathematics of Radioactive exponential decay
+
+-   $-\frac{dN}{dt}\;\alpha\;N$
+-   $-\frac{dN}{dt}\;=\;\lambda\;N$
+-   $N\;=\;N_0e^{-\lambda t}$
+:::
+
+-   where N is the number of radioactive nuclei present at a particular time
+-   $-\frac{dN}{dt}$ is the rate of decrease in N.
+-   $N_o$ is the original number of nuclei present.
+-   $\lambda$ is called the radioactive decay constant and depends on the nature of the nucleus
+
+## Radioactive Half Life, $t_{1/2}$
+
+<br>
+
+-   a convenient way of discribing radioactive decay is in terms of the radioactive half life, $t_{1/2}$ .
+-   the half life is defined as the time taken for the number of radioactive nuclei present in a source to fall to half it’s original value.
+-   half lives of naturally occurring radioisotopes vary over a wide range
+    -   $3 \times 10^{-7}$s ($^{212}Po$) to $1.4 \times 10^{10}$years ($^{232}Th$)
+
+## 
+
+<br> <br> <br>
+
+::: callout-tip
+## the half life is related to the decay constant by:
+
+-   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+:::
+
+## Radioactive Decay Curve
+
+```{r decay_curve}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(ggrepel)
+library(showtext)
+library(ggtext)
+library(envalysis)
+
+font_add(family = "Ink Free", regular = "assets/Inkfree.ttf")
+showtext_auto()
+
+time0 <- seq(0, 5, by = 0.001)
+n0 <- 100*exp(-time0*log(2))
+
+
+z <- tibble(half_lives = time0, number = n0)
+
+x_lines <- tibble(x = 0, xend = 1:4, y = 100/c(2, 4, 8, 16), 
+                  colour = c("#570700", "#bb2517", "#f25c4e", "#ffbcb4"))
+y_lines <- tibble(x = 1:4, y = 0, yend = 100/c(2, 4, 8, 16), 
+                  colour = c("#570700", "#bb2517", "#f25c4e", "#ffbcb4"))
+
+z |> ggplot(aes(half_lives, number)) +
+  geom_line(size = 2, colour = "firebrick4") +
+  labs(title = "Radioactive Decay Curve",
+       x = "Number of Half-Lives (t<sub>1/2</sub>)",
+       y = "Percentage of Number of Initial Nuclei Left") +
+  geom_segment(data = x_lines, aes(x = x, xend = xend, y = y, yend = y, colour = colour), 
+               linetype = 2) +
+  geom_segment(data = y_lines, aes(x = x, xend = x, y = y, yend = yend, colour = colour), 
+               linetype = 2) +
+  scale_color_identity() + 
+  coord_cartesian(expand = FALSE) +
+  theme_publish(base_size = 32, base_family = "Ink Free", base_linewidth = 0.7) +
+  theme(axis.title = element_markdown())
+```
+
+## Measurement of Radiation
+
+### Activity
+
+-   This is the number of disintegrations occurring per second.
+-   It is easily measured with a Geiger counter.
+-   This activity is proportional to the number of radioactive atoms in the sample.\
+-   $Activity\;=\; -\frac{dN}{dt}\; =\;\lambda N$
+
+## 
+
+### The units of activity are:
+
+-   Curie (Ci)
+    -   $1\;Ci\; =\; 3.7 \times10^{10}\; disintegrations/sec$
+    -   A clinical source of $^{60}Co$ has an activity of several Ci
+    -   An internally administered dose for cancer treatment would have an activity of $10^{-3}$ Ci
+-   Becquerel (Bq)
+    -   1 Bq = 1.0 disintegrations /sec
+    -   This is the SI. unit (1 Ci = $3.7 \times 10^{10}$ Bq)
+
+## Absorbed Dose
+
+::: {style="font-size: 90%;"}
+-   This is the effect of the radiation on the absorbing material
+-   The SI unit for absorbed dose is the gray (Gy) which is the amount of radiation which deposits energy at a rate of 1 J / kg in any absorbing material.
+    -   (The old unit was the rad ... 1 Gy = 100 rad)
+-   The absorbed dose depends on
+    1.  the strength of a given radiation beam (number of particles per second)
+    2.  the energy per particle but also on the type of material absorbing the radiation
+:::
+
+## 
+
+-   This is not the most meaningful units for measuring the biological damage produced by radiation.
+-   This is because equal doses of different types of radiation cause differing amounts of damage (1 gray of $\alpha$ particles produces 10 to 20 times the damage of 1 gray of $\beta$ particles or $\gamma$ rays)
+-   This is because the $\alpha$ particles move more slowly than $\beta$ and $\gamma$ rays of equal energy due to their greater mass and ionising collisions occur closer together resulting in more irreparable damage
+
+## 
+
+-   The ***relative biological effectiveness (RBE)*** or quality factor (QF) of a given type of radiation is defined as the number of grays of X-ray or $\gamma$ radiation that produces the same biological damage as 1 gray of the given radiation.
+-   The product of the dose in grays and the QF gives a unit of sieverts (previously rem)
+-   1 sievert of any type of radiation does the same approximate biological damage
+    -   Radioactive background 1.3 mSv /year
+    -   X-rays 0.7 mSv / year
+
+## Exposure Limits
+
+-   5 mSv per year exposure to the general population
+-   50 mSv per year to nuclear workers
+-   A 4 Sv dose in a short interval of time is fatal with 50% of cases but when spread over a few weeks it is not usually fatal.
+-   A 10 Sv dose is nearly always fatal
+
+## Principle sources of radiation
+
+-   Radon - 1mSv per year
+-   CT scans - 0.8mSv per year
+-   Nuclear Medcine - 0.4mSv per year
+-   Cosmic Rays - 0.15mSv per year
+-   internal radiation (mostly potassium, $^{40}K$) 0.03mSv per year
+-   get total of about $10\mu Sv$ per day. Below legal limit.
+
+## Equations
+
+::: {style="font-size: 80%;"}
+-   $N\;=\;N_0e^{-\lambda t}$
+
+-   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+
+-   $Bq = Ci \times 3.7\times10^{10}$
+
+-   $(energy\;in\;joules) = MeV \times 1.6\times 10^{-13}$
+
+-   $Gray = \frac{Bq \times (energy\;in\;joules)}{(person\;mass\; in \;kg)}$
+
+-   $Sv = \frac{Bq \times (energy\;in\;joules) \times RBE }{(person\;mass\; in \;kg)}$
+
+-   $(expected\;number\; of\; deaths) = \frac{(dose\; in\; Sievert) \times (population)}{50}$
+
+-   typical daily dose = 10$\mu$Sv.
+
+-   $LD_{50 / 30}$ = 4Sv
+:::
+
+## References
+
+-   [Young & Freedman - chapter 43.3-43.5](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}
+-   [Serway & Jewett - chapter 43.4](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk%26db%3dnlabk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+-   [Periodic Table from Jefferson Lab](https://education.jlab.org/itselemental/){target="_blank"}
+-   [XKCD radiation chart](https://xkcd.com/radiation/){target="_blank"}
+-   [Radiation doses - David Ruzic](https://www.youtube.com/watch?v=ugGVrI8pi6w&list=PLYcMUdmtJe6sdgkK0xQL7SbH6Y6MTOLq9&index=2){target="_blank"}

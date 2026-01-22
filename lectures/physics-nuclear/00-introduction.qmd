@@ -1,0 +1,205 @@
+---
+title: "00-Introduction"
+author:
+  - name: Nuclear Physics (TU879/2 + TU880/2 + TU878/2 + TU877/2 + TU754/3)
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "images/logo.jpg" />
+css: images/logo.css
+footer: "Physics - Nuclear"
+editor: visual
+---
+
+## Summary
+
+<br> <br>
+
+Course covers all things nuclear. It will get increasing mathematical as the semester progresses. The emphasis will be problem solving and skills, rather than being heavy on volume of knowledge. Focus on applications as well.
+
+## Contents
+
+-   Nuclear Forces and Nuclear Structure
+
+-   Radiation
+
+-   Nuclear Power
+
+-   Applications
+
+<!-- Radioactive decay law, mean and half- lives, activity and exponential decay -->
+
+<!-- Decay processes, decay energetics (Q-values). -->
+
+<!-- Radioactive dating. -->
+
+<!-- Inverse square law. -->
+
+<!-- The nuclear radius. -->
+
+<!-- Nuclide mass and abundance. -->
+
+<!-- Nuclear forces, stability of nuclei. -->
+
+<!-- Nuclear binding energy. -->
+
+<!-- Nuclear spin, magnetic moments. -->
+
+<!-- Rutherford particle scattering (including cross sections). -->
+
+<!-- Nuclear reactions. -->
+
+## Timetable
+
+-   1 lecture a week
+    -   Wednesday 14:00-15:00 room CQ008
+        -   tutorials on a regular basis
+        -   every third week instead of a new-material lecture
+
+## Schedule
+
+:::::::::::: columns
+::::: {.column width="48%"}
+:::: {style="background-color: #fff4e0"}
+::: {style="font-size: 80%;"}
+-   Wednesday 28th January - Nuclear Forces
+
+-   Wednesday 4th February - Binding Energies
+
+-   **Wednesday 11th February - tutorial**
+
+-   Wednesday 18th February - Types of Nuclear Radiation
+
+-   Wednesday 25th February - Units of Nuclear Radiation
+
+-   **Wednesday 4th March - tutorial**
+:::
+::::
+:::::
+
+::::: {.column width="4%"}
+:::: {style="background-color: #fff4e0"}
+::: {style="font-size: 80%;"}
+:::
+::::
+:::::
+
+::::: {.column width="48%"}
+:::: {style="background-color: #fff4e0"}
+::: {style="font-size: 80%;"}
+-   Wednesday 11th March - Nuclear Fission
+
+-   Wednesday 18th March - Nuclear Fusion
+
+-   **Wednesday 25th March - tutorial**
+
+-   Wednesday 15th April - Nuclear Applications - radionucleotide dating
+
+-   Wednesday 22th April - Nuclear Application - magnetic resonance
+
+-   **Wednesday 29th April - tutorial**
+
+-   Wednesday May 6th - course review
+:::
+::::
+:::::
+::::::::::::
+
+## Assessment (TU754)
+
+-   [**60% continuous assessment**]{style="color:#8d2220;"}
+
+    -   online quiz on Brightspace after every tuttorial (every three weeks).
+
+    -   opens on Wednesday afternoons
+
+    -   closes nine days later on Friday at midnight
+
+    -   10 questions on each quiz, usually MCQ's
+
+    -   get 3 attempts, best one counts
+
+-   [**40% end-of-semester-test**]{style="color:#8d2220;"}
+
+## Assessment (TU877-880)
+
+<br>
+
+::::::::: columns
+::::: {.column width="50%"}
+:::: {style="background-color: #fff4e0"}
+::: {style="font-size: 80%;"}
+-   [**70% exam in May**]{style="color:#8d2220;"}
+
+    -   in common with Aidan (relativity) and Justin (astro)
+
+    -   5/6 short questions (two nuclear)
+
+    -   Section B (nuclear) - answer 1/2 long questions
+
+        -   one question on nuclear forces and radioactivity
+
+        -   second question on fission / fusion / applications
+:::
+::::
+:::::
+
+::::: {.column width="50%"}
+:::: {style="background-color: #fff4e0"}
+::: {style="font-size: 80%;"}
+-   [**10% continuous assessment**]{style="color:#8d2220;"}
+
+    -   online quiz on Brightspace after every tutorial (every three weeks).
+
+    -   opens on Wednesday afternoons
+
+    -   closes nine days later on Friday at midnight
+
+    -   10 questions on each quiz, usually MCQ's
+
+    -   get 3 attempts, best one counts
+
+    -   remaining <b>[20%]{style="color:#8d2220;"}</b> comes from CA's with Aidan and Justin
+:::
+::::
+:::::
+:::::::::
+
+## Recommended Texts & Resources
+
+-   will add some at the end of every chapter
+
+::::::::: columns
+:::: {.column width="33%"}
+::: {style="background-color: #fff4e0"}
+-   [[**Young & Freedman**](https://ebookcentral.proquest.com/lib/tudublin/detail.action?docID=5853694){target="_blank"}]{style="color:#8d2220;"}
+
+    ![](images/university-physics.png){width="200"}
+:::
+::::
+
+:::: {.column width="33%"}
+::: {style="background-color: #fff4e0"}
+-   [[**Serway & Jewett**](https://research-ebsco-com.tudublin.idm.oclc.org/c/sr37fs/search/details/lh37eixz3f?db=nlebk&db=nlabk){target="_blank"}]{style="color:#8d2220;"}
+
+    ![](images/serway-jewett.jpg){width="200"}
+:::
+::::
+
+:::: {.column width="33%"}
+::: {style="background-color: #fff4e0"}
+-   [[**Knight, Randall, Dewey**](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=7051076&c=UERG&ppg=1263){target="_blank"}]{style="color:#8d2220;"}
+
+    ![](images/knight.png){width="200"}
+:::
+::::
+:::::::::
