@@ -19,6 +19,8 @@ include-in-header:
 
 -   [02 Lab Rota](https://tud.netlify.app/lectures/sports/lab-rota.html){target="_blank"}
 
+-   [Graph Rules](https://tud.netlify.app/graph-rules#1)
+
 ## Physics-Quantum Lectures
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
