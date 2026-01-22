@@ -21,6 +21,16 @@ include-in-header:
 
 -   [Graph Rules](https://tud.netlify.app/graph-rules#1)
 
+## Nuclear Lectures
+
+-   [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
+
+-   [01 Nuclear Force](https://tud.netlify.app/lectures/physics-nuclear/01-forces_structure.html){target="_blank"}
+
+-   [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/01-radiation.html){target="_blank"}
+
+-   [03 Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/03-fission-fusion.html){target="_blank"}
+
 ## Physics-Quantum Lectures
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
