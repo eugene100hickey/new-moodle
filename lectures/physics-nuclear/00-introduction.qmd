@@ -118,7 +118,7 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 
 -   [**60% continuous assessment**]{style="color:#8d2220;"}
 
-    -   online quiz on Brightspace after every tuttorial (every three weeks).
+    -   online quiz on Brightspace after every tutorial (every three weeks).
 
     -   opens on Wednesday afternoons
 

@@ -1,7 +1,7 @@
 ---
-title: "02-Nuclear"
+title: "01 - Nuclear Forces"
 author:
-  - name: Physics Theory II PHYS2001
+  - name: Nuclear Physics PHYS2829
     orcid: 0000-0001-9813-9323
     email: eugene.hickey@tudublin.ie
     affiliation: 
@@ -16,7 +16,7 @@ include-in-header:
   - text: |
       <link rel = "shortcut icon" href = "logo.jpg" />
 css: logo.css
-footer: "Physics - Quantum"
+footer: "Nuclear Physics"
 editor: visual
 ---
 
@@ -35,8 +35,9 @@ The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$
 
 1. Nuclear Constituents
 1. Nuclear Sizes and Shapes
-1. Nuclear Masses and Binding Energies
 1. The Nuclear Force
+1. Nuclear Masses and Binding Energies
+
 
 
 ## Nuclear Constituents
@@ -104,6 +105,12 @@ z |>
   opt_table_font(size = 32)
 
 ```
+
+- A solitary neutron isn't stable, decays with half-life of 878s (15 minutes)
+
+    - turn in to a proton and electron (and anti-neutrino)
+    
+- Neutrons and protons aren't point particles (unlike the electron). Have radii of about 1fm.
 
 ## Nuclear Size
 
