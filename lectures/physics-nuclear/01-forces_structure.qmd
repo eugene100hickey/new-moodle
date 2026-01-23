@@ -25,31 +25,28 @@ editor: visual
 <br>
 
 ::: {style="font-size: 90%;"}
-The nucleus is made of protons and neutrons. The stability of the nucleus relies on the short range nuclear force. The models produced can account for the nature and energy of radiation products, the results of scattering experiments, and the range of isotopes across the table of elements. We get a measure of stability, the *binding energy per nucleon* that peaks around iron. 
+The nucleus is made of protons and neutrons. The stability of the nucleus relies on the short range nuclear force. The models produced can account for the nature and energy of radiation products, the results of scattering experiments, and the range of isotopes across the table of elements. We get a measure of stability, the *binding energy per nucleon* that peaks around iron.
 
 The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$), the natural energy or mass unit is the mega electron volt ($1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$)
 :::
 
 ## Contents
 
-
-1. Nuclear Constituents
-1. Nuclear Sizes and Shapes
-1. The Nuclear Force
-1. Nuclear Masses and Binding Energies
-
-
+1.  Nuclear Constituents
+2.  Nuclear Sizes and Shapes
+3.  The Nuclear Force
+4.  Nuclear Masses and Binding Energies
 
 ## Nuclear Constituents
 
-- Nuclei consist of _protons_ and _neutrons_
+-   Nuclei consist of *protons* and *neutrons*
 
-    - these have almost exactly the same mass 
-    - neutrons a little heavier, but by less than 0.2%
-    
-- masses of nuclei are very nearly integers (when measured in amu)
+    -   these have almost exactly the same mass
+    -   neutrons a little heavier, but by less than 0.2%
 
-- intrinsic spin (and thus magnetic moment) of nucleus consistent with both neutrons and protons have spin $\frac{1}{2}$
+-   masses of nuclei are very nearly integers (when measured in amu)
+
+-   intrinsic spin (and thus magnetic moment) of nucleus consistent with both neutrons and protons have spin $\frac{1}{2}$
 
 ## Notation
 
@@ -60,18 +57,17 @@ The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$
 
 -   Atomic Mass ( A ) is the combined number of protons and neutrons in the nucleus.
 
-- Also, N is the number of neutrons, but we use that less often
+-   Also, N is the number of neutrons, but we use that less often
 
 $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 :::
 
-- how many protons and neutrons in $^{226}_{88}Ra$ ?
-
+-   how many protons and neutrons in $^{226}_{88}Ra$ ?
 
 -   ***Isotopes*** are nuclei with the same number of protons but different numbers of neutrons
 
-    - e.g. $^{226}_{82}Pb$, $^{226}_{82}Pb$, $^{226}_{82}Pb$, $^{226}_{82}Pb$
-    
+    -   e.g. $^{226}_{82}Pb$, $^{226}_{82}Pb$, $^{226}_{82}Pb$, $^{226}_{82}Pb$
+
 ## 
 
 ```{r nucleons}
@@ -106,44 +102,58 @@ z |>
 
 ```
 
-- A solitary neutron isn't stable, decays with half-life of 878s (15 minutes)
+::: {style="font-size: 90%;"}
 
-    - turns in to a proton and electron (and anti-neutrino)
+-   A solitary neutron isn't stable, decays with half-life of 878s (15 minutes)
+
+    -   turns in to a proton and electron (and anti-neutrino)
+
+-   Neutrons and protons aren't point particles (unlike the electron). Have radii of about 1fm.
+
+    - made of _quarks_
     
-- Neutrons and protons aren't point particles (unlike the electron). Have radii of about 1fm.
+        - up-up-down = proton
+        
+        - up-down-down = neutron
+        
+:::
 
 ## Nuclear Size
 
-- femtometer is natural unit for nucleus
+::: {style="font-size: 90%;"}
 
-    - $1fm \; = \; 10^{-15}m$
+-   femtometer is natural unit for nucleus
 
-- nuclear radii range from 1fm to about 7fm
+    -   $1fm \; = \; 10^{-15}m$
 
-    - very small compared to size of atom
+-   nuclear radii range from 1fm to about 7fm
 
-- measure using:
+    -   very small compared to size of atom
 
-    - electron diffraction
-    - isotope wavelength shifts
-    - Coulomb energies of mirror nuclei
-    - scattering of $\alpha$ particles
-    - $\alpha$ decay lifetimes
-    
-##
+-   measure using:
+
+    -   electron diffraction
+    -   isotope wavelength shifts
+    -   Coulomb energies of mirror nuclei
+    -   scattering of $\alpha$ particles
+    -   $\alpha$ decay lifetimes
+
+:::
+
+## 
 
 ### Electron Diffraction
 
 electrons have wavelengths given by:
 
-  $$\lambda \; = \; \frac{hc}{E}$$
-    
-  diffraction minima at $$sin\theta \; = \; \frac{1.22 \times \lambda}{D}$$
-    
-  420MeV electrons give minimum at $50.5^{\circ}$ for $^{12}_6C$
-    
-  gives nuclear radius of 2.33fm
-  
+$$\lambda \; = \; \frac{hc}{E}$$
+
+diffraction minima at $$sin\theta \; = \; \frac{1.22 \times \lambda}{D}$$
+
+420MeV electrons give minimum at $50.5^{\circ}$ for $^{12}_6C$
+
+gives nuclear radius of 2.33fm
+
 ## Structure of Nucleus
 
 ::: {style="font-size: 90%;"}
@@ -154,61 +164,56 @@ electrons have wavelengths given by:
     -   energies of $\alpha,\; \beta,\; \gamma$
     -   nuclear half lives
 
--   scattering experiments (fire electrons at nucleus and see how they bounce off)
+-   scattering experiments (fire particles at nucleus and see how they bounce off)
 
 -   which nuclei are stable
 
 -   behind all this is the ***Nuclear Force***, the left over remnants of the ***Strong Force***
 :::
 
-    
-    
 ## Nuclear Force
 
-::: {style="font-size: 90%;"}
+::: {style="font-size: 80%;"}
+Something has to hold the nucleus together. Some properties of this *nuclear force*
 
-Something has to hold the nucleus together. Some properties of this _nuclear force_
+-   must be big, has to overcome Coulomb repulsion between protons
 
-- must be big, has to overcome Coulomb repulsion between protons
+$E_{pp} \; = \; \frac{1}{4 \pi \epsilon_\circ}\; \frac{e^2}{r}$ - this is about 1MeV for \~fm separation
 
-$E_{pp} \; = \; \frac{1}{4 \pi \epsilon_\circ}\; \frac{e^2}{r}$ - this is about 1MeV for ~fm separation
-    
-- only relevant at fm distances, feeble at greater separations (>3fm)
+-   only relevant at fm distances, feeble at greater separations (\>3fm)
 
-- only effects protons and neutrons, not electrons
+-   only effects protons and neutrons, not electrons
 
     -   it's like electrons are nuclear force *neutral*
 
-- agnostic to difference between protons and neutrons
+-   agnostic to difference between protons and neutrons
 
-- repulsive at short (< 0.5fm) distances
+-   repulsive at short (\< 0.5fm) distances
 
-- depends on spins of nucleons
-
+-   depends on spins of nucleons
 :::
 
 ## Nuclear Force
 
-- no analytic form of nuclear force
+-   no analytic form of nuclear force
 
-    - nothing like Coulomb's Law
-    
-$$F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}$$
+    -   nothing like Coulomb's Law or Einstein's gravity
 
-- best modelled as an _exchange_ force, mediated by some particle
+$F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}$ or ${\displaystyle G_{\mu \nu }+\Lambda g_{\mu \nu }=\kappa T_{\mu \nu },}$
 
-- first analysed by Yukawa
+-   best modelled as an *exchange* force, mediated by some particle
 
+-   first analysed by Yukawa
 
 ## Investigating Nuclear Force
 
-- can get a bound state of a single proton and a single neutron, called _deuteron_ (c.f. deuterium, $^2H$)
+-   can get a bound state of a single proton and a single neutron, called *deuteron* (c.f. deuterium, $^2H$)
 
-- don't get _proton-proton_ or _neutron-neutron_
+-   don't get *proton-proton* or *neutron-neutron*
 
-- deuteron has the protons and neutron spins parallel ($l = 1$, triplet)
+-   deuteron has the protons and neutron spins parallel ($l = 1$, triplet)
 
-- no excited states of deuteron
+-   no excited states of deuteron
 
 ## 
 
@@ -220,12 +225,9 @@ $$F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}$$
 
 -   surface a little proton rich
 
-- but charge and matter radii of nucleu=i agree to within 0.1fm
+-   but charge and matter radii of nucleu=i agree to within 0.1fm
 
 -   shape roughly spherical, a little oblate. Usually.
-
-
-
 
 ## 
 
@@ -361,7 +363,6 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
     -   *fission* splits up heavier elements, moves up curve from the right
     -   *fusion* coalesces lighter elements, moves up curve from the left
 
-
 ## Equations
 
 -   $1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$
@@ -374,11 +375,8 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
 
 -   [Young & Freedman - chapter 43.2 (Nuclear Structure & Binding)](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}
 
-
 -   [Serway & Jewett - chapter 43.3 (Nuclear Models)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
 -   [Serway & Jewett - chapter 43.2 (Binding Energy)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
-
-
 
 -   [nucleides](https://www.nndc.bnl.gov/nudat3/){target="_blank"}
