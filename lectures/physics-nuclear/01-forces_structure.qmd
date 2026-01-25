@@ -193,6 +193,20 @@ The larger the nucleus, the less chance the electron (or in diagram above, muon)
 
 - can measure this energy difference by the maximum energy of positron from $\beta$ decay
 
+##
+
+### Nuclear Drop Model
+
+-   nuclear densities pretty much all the same
+
+    -   $Radius\;=\;1.2 \times \sqrt[3]{A}$ in fm
+
+-   surface a little proton rich
+
+-   but charge and matter radii of nuclei agree to within 0.1fm
+
+-   shape roughly spherical, a little oblate. Usually.
+
 
 ## Structure of Nucleus
 
@@ -256,6 +270,27 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 -   no excited states of deuteron
 
 ## 
+
+### Yukawa Exchange Force
+
+- fire a proton at a neutron
+
+    - it will scatter off in different directions
+    
+    - have to obey conservation of energy and momentum
+    
+    - most will go straight through pretty much
+    
+        - a neutron is a small target
+        
+    - intensity decreaases with angle
+    
+    - _but_ too many are scattered at up to $180^{\circ}$
+    
+    - explained by the proton becoming the neutron and vice-versa
+    
+    
+##
 
 ### Nuclear Drop Model
 
