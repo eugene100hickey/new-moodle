@@ -53,20 +53,20 @@ The natural distance scale for the nucleus is the femtometre (1 fm = $10^{-15}m$
 ::: callout-note
 ## Syntax
 
--   Atomic Number ( Z ) is the number of protons in the nucleus.
+-   Atomic Number ( **Z** ) is the number of protons in the nucleus.
 
--   Atomic Mass ( A ) is the combined number of protons and neutrons in the nucleus.
+-   Atomic Mass ( **A** ) is the combined number of protons and neutrons in the nucleus.
 
--   Also, N is the number of neutrons, but we use that less often
+-   Also, ( **N** ) is the number of neutrons, but we use that less often
 
 $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 :::
 
--   how many protons and neutrons in $^{226}_{88}Ra$ ?
+-   how many protons, neutrons in $^{226}_{88}Ra$ ? How about $^{56}Fe$ ?
 
 -   ***Isotopes*** are nuclei with the same number of protons but different numbers of neutrons
 
-    -   e.g. $^{226}_{82}Pb$, $^{226}_{82}Pb$, $^{226}_{82}Pb$, $^{226}_{82}Pb$
+    -   e.g. $^{208}_{82}Pb$, $^{207}_{82}Pb$, $^{206}_{82}Pb$, $^{204}_{82}Pb$
 
 ## 
 
