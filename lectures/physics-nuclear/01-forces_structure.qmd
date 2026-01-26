@@ -273,6 +273,24 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
     -   explained by the proton becoming the neutron and vice-versa
 
+##
+
+- has to be some particle being passed from neutron $\rightleftharpoons$ proton
+
+- only possible is we *borrow* energy using the uncertainty principle
+
+    - $\Delta E \Delta t \approx\frac{\hbar}{2}$
+    
+    - $\Delta t$ given by time taken to cross nucleus at speed of light
+    
+        - $\Delta t \le \frac{R}{c} = \frac{3 \times 10^{-15}}{3 \times 10^8} =  10^{-23}s$
+        
+        - this gives $\Delta E \approx \frac{\hbar c}{R c^2}$
+        
+        - gives a particle of about 200MeV (c.f. proton 938MeV, electron 0.511MeV)
+        
+        - eventually discovered the **Pion** ($\pi^{\circ} \; and \; \pi^{\pm}$), which is made up a quark and anti--quark.
+
 
 ## Investigating Nuclear Force
 
