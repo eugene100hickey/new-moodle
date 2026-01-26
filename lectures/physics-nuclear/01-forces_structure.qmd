@@ -188,6 +188,24 @@ The larger the nucleus, the less chance the electron (or in diagram above, muon)
 
 -   can measure this energy difference by the maximum energy of positron from $\beta$ decay
 
+
+## 
+
+### $\alpha$ Decay
+
+::: {style="font-size: 90%;"}
+-   looking within a nucleus, we see temporary assemblages of $\alpha$ particles.
+
+-   these aren't static, and collide up against the inner wall of the nucleus frequently
+
+-   classically they don't have enough energy to escape, but can get out through quantum mechanical *tunnelling*
+
+-   super sensitive to size of barrier, and the energy of this quasi-$alpha$ particle
+
+    -   explains the extreme range of $\alpha$ half lives
+    -   get correlation between half life and ejected $\alpha$ energy
+:::
+
 ## 
 
 ### So, what is the size of a nucleus?
@@ -275,9 +293,11 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
 ##
 
+::: {style="font-size: 85%;"}
+
 - has to be some particle being passed from neutron $\rightleftharpoons$ proton
 
-- only possible is we *borrow* energy using the uncertainty principle
+- only possible if we *borrow* energy using the uncertainty principle
 
     - $\Delta E \Delta t \approx\frac{\hbar}{2}$
     
@@ -285,12 +305,13 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
     
         - $\Delta t \le \frac{R}{c} = \frac{3 \times 10^{-15}}{3 \times 10^8} =  10^{-23}s$
         
-        - this gives $\Delta E \approx \frac{\hbar c}{R c^2}$
+        - this gives $\Delta E \approx \frac{\hbar c}{ 2 \times R}$
         
-        - gives a particle of about 200MeV (c.f. proton 938MeV, electron 0.511MeV)
+        - gives a particle of about 100MeV (c.f. proton 938MeV, electron 0.511MeV)
         
-        - eventually discovered the **Pion** ($\pi^{\circ} \; and \; \pi^{\pm}$), which is made up a quark and anti--quark.
+        - eventually discovered the **Pion** ($\pi^{\circ} \; and \; \pi^{\pm}$), which is made up a quark and anti--quark and has a mass of about 140MeV.
 
+:::
 
 ## Investigating Nuclear Force
 
@@ -335,20 +356,6 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
 ![Nuclear Valley of Stability (from wikipedia)](images/DecayModeNuDat2.png)
 
-## $\alpha$ Decay
-
-::: {style="font-size: 90%;"}
--   looking within a nucleus, we see temporary assemblages of $\alpha$ particles.
-
--   these aren't static, and collide up against the inner wall of the nucleus frequently
-
--   classically they don't have enough energy to escape, but can get out through quantum mechanical *tunnelling*
-
--   super sensitive to size of barrier, and the energy of this quasi-$alpha$ particle
-
-    -   explains the extreme range of $\alpha$ half lives
-    -   get correlation between half life and ejected $\alpha$ energy
-:::
 
 ## Nuclear Binding Energy
 
