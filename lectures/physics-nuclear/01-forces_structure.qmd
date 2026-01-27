@@ -180,7 +180,7 @@ The larger the nucleus, the less chance the electron (or in diagram above, muon)
 
 -   mirror nuclei have opposite numbers of protons and neutrons
 
-    -   example $^3_1H$ and $^3_2He$
+    -   example $^3_1H$ and $^3_2He$ or $^7_3Li$ and $^7_4Be$
 
 -   as far as the nuclear force is concerned, there is no difference between protons and neutrons
 
