@@ -107,7 +107,7 @@ z |>
 
     -   turns in to a proton and electron (and anti-neutrino)
 
--   Neutrons and protons aren't point particles (unlike the electron). Have radii of about 1fm.
+-   Neutrons and protons aren't point particles (unlike the electron). Have radii of about 0.8fm.
 
     -   made of *quarks*
 
@@ -162,7 +162,7 @@ $$\lambda \; = \; \frac{hc}{E}$$
 
 diffraction minima at $$sin\theta \; = \; \frac{1.22 \times \lambda}{D}$$
 
-420MeV electrons give minimum at $50.5^{\circ}$ for $^{12}_6C$
+420MeV ($\lambda \; = \; 2.95fm$) electrons give minimum at $50.5^{\circ}$ for $^{12}_6C$
 
 gives nuclear radius of 2.33fm
 
@@ -187,7 +187,6 @@ The larger the nucleus, the less chance the electron (or in diagram above, muon)
 -   but the extra positive charge in $^3_2He$ carries a Coulomb penalty, which will depend on the average separation of the protons
 
 -   can measure this energy difference by the maximum energy of positron from $\beta$ decay
-
 
 ## 
 
@@ -218,7 +217,7 @@ The larger the nucleus, the less chance the electron (or in diagram above, muon)
 
 -   but charge and matter radii of nuclei agree to within 0.1fm
 
--   shape roughly spherical, a little oblate. Usually.
+-   shape pretty spherical, a little oblate. Sometimes.
 
 ## Structure of Nucleus
 
@@ -228,25 +227,42 @@ The larger the nucleus, the less chance the electron (or in diagram above, muon)
 -   also need to explain radiation
 
     -   energies of $\alpha,\; \beta,\; \gamma$
+    
     -   nuclear half lives
 
--   scattering experiments (fire particles at nucleus and see how they bounce off)
+    -   scattering experiments (fire particles at nucleus and see how they bounce off)
 
--   which nuclei are stable
+    -   which nuclei are stable
 
 -   behind all this is the ***Nuclear Force***, the left over remnants of the ***Strong Force***
 :::
 
 ## Nuclear Force
 
-::: {style="font-size: 80%;"}
+::: {style="font-size: 90%;"}
 Something has to hold the nucleus together. Some properties of this *nuclear force*
 
 -   must be big, has to overcome Coulomb repulsion between protons
 
 $E_{pp} \; = \; \frac{1}{4 \pi \epsilon_\circ}\; \frac{e^2}{r}$ - this is about 1MeV for \~fm separation
 
+- in fact, quantum mechanics says it must be even bigger
+
+- particle in a box of size of a = 6fm (something like aluminium)
+
+$E \; = \; \frac{3 \hbar^2 \pi^2}{2m_pa^2} \approx 20MeV$
+
+:::
+
+##
+
+### Nuclear Force
+
+::: {style="font-size: 90%;"}
+
 -   only relevant at fm distances, feeble at greater separations (\>3fm)
+
+    - see this from proton scattering
 
 -   only effects protons and neutrons, not electrons
 
@@ -267,6 +283,11 @@ $E_{pp} \; = \; \frac{1}{4 \pi \epsilon_\circ}\; \frac{e^2}{r}$ - this is about 
 
 $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;$ or $\;\;{\displaystyle G_{\mu \nu }+\Lambda g_{\mu \nu }=\kappa T_{\mu \nu },}$
 
+
+- but it does have an exponential term
+
+    - $F_{nuclear} \propto  e ^{-\frac{r}{R_0}}$
+    
 -   best modelled as an *exchange* force, mediated by some particle
 
 -   first analysed by Yukawa
@@ -291,26 +312,24 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
     -   explained by the proton becoming the neutron and vice-versa
 
-##
+## 
 
-::: {style="font-size: 85%;"}
+::: {style="font-size: 90%;"}
+-   has to be some particle being passed from neutron $\rightleftharpoons$ proton
 
-- has to be some particle being passed from neutron $\rightleftharpoons$ proton
+-   only possible if we *borrow* energy using the uncertainty principle
 
-- only possible if we *borrow* energy using the uncertainty principle
+    -   $\Delta E \Delta t \ge \frac{\hbar}{2}$
 
-    - $\Delta E \Delta t \approx\frac{\hbar}{2}$
-    
-    - $\Delta t$ given by time taken to cross nucleus at speed of light
-    
-        - $\Delta t \le \frac{R}{c} = \frac{3 \times 10^{-15}}{3 \times 10^8} =  10^{-23}s$
-        
-        - this gives $\Delta E \approx \frac{\hbar c}{ 2 \times R}$
-        
-        - gives a particle of about 100MeV (c.f. proton 938MeV, electron 0.511MeV)
-        
-        - eventually discovered the **Pion** ($\pi^{\circ} \; and \; \pi^{\pm}$), which is made up a quark and anti--quark and has a mass of about 140MeV.
+    -   $\Delta t$ given by time taken to cross nucleus at speed of light
 
+        -   $\Delta t \le \frac{R}{c} = \frac{3 \times 10^{-15}}{3 \times 10^8} =  10^{-23}s$
+
+        -   this gives $\Delta E \approx \frac{\hbar c}{ 2 \times R}$
+
+        -   gives a particle of about 100MeV (c.f. proton 938MeV, electron 0.511MeV)
+
+        -   eventually discovered the **Pion** ($\pi^{\circ} \; and \; \pi^{\pm}$), which is made up a quark and anti--quark and has a mass of about 140MeV.
 :::
 
 ## Investigating Nuclear Force
@@ -322,6 +341,7 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 -   deuteron has the protons and neutron spins parallel ($l = 1$, triplet)
 
 -   no excited states of deuteron
+
 -   roughly spherical, a little oblate. Usually.
 
 ## 
@@ -355,7 +375,6 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 ## 
 
 ![Nuclear Valley of Stability (from wikipedia)](images/DecayModeNuDat2.png)
-
 
 ## Nuclear Binding Energy
 
