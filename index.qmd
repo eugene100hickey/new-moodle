@@ -105,6 +105,8 @@ include-in-header:
 
 -   [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf){target="_blank"}
 
+-   [INTRODUCTION DUBLIN](https://tud.netlify.app/lectures/mantech/00-Introduction_Dublin.pdf){target="_blank"}
+
 -   [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf){target="_blank"}
 
 -   [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf){target="_blank"}
