@@ -334,6 +334,7 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
 ## Investigating Nuclear Force - Deuteron
 
+::: {style="font-size: 90%;"}
 
 -   can get a bound state of a single proton and a single neutron, called *deuteron* (c.f. deuterium, $^2H$)
 
@@ -346,6 +347,8 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 -   deuteron has the protons and neutron spins parallel ($l = 1$, triplet)
 
 -   no excited states of deuteron (unfortunately)
+
+:::
 
 ##
 
