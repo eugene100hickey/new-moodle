@@ -332,9 +332,8 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
         -   eventually discovered the **Pion** ($\pi^{\circ} \; and \; \pi^{\pm}$), which is made up a quark and anti--quark and has a mass of about 140MeV.
 :::
 
-## Investigating Nuclear Force
+## Investigating Nuclear Force - Deuteron
 
-::: {style="font-size: 80%;"}
 
 -   can get a bound state of a single proton and a single neutron, called *deuteron* (c.f. deuterium, $^2H$)
 
@@ -348,6 +347,10 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
 -   no excited states of deuteron (unfortunately)
 
+##
+
+### Investigating Nuclear Force - Deuteron
+
 - depth of potential well is about 35MeV (remember, $E \; = \; \frac{3 \hbar^2 \pi^2}{2m_pa^2}$, for deuteron we measure radius, = a/2, to be 2.1fm)
 
 - but separation energy (like _ionisation energy_) is 2.224MeV
@@ -356,7 +359,6 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
     
 - so deuteron _only_ just exists, luckily for us
 
-:::
 
 ## 
 
@@ -378,6 +380,8 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
 ### Nuclear Shell - Quantum States
 
+::: {style="font-size: 90%;"}
+
 - would like to be able to solve the Schrödinger equation for the nuclear potential, just like we can to solve the electronic levels of Hydrogen
 
     - not possible because don't have a cleean equation for the nuclear force/potential
@@ -389,6 +393,8 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 - transitions between levels lead to the emission of light - $\gamma$ rays
 
 - separate suites of levels for protons and for neutrons
+
+:::
 
 ##
 
