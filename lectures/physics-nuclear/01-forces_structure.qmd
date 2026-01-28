@@ -334,19 +334,35 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
 ## Investigating Nuclear Force
 
+::: {style="font-size: 80%;"}
+
 -   can get a bound state of a single proton and a single neutron, called *deuteron* (c.f. deuterium, $^2H$)
+
+    - something like the equivalent of a hydrogen atom for atomic structure
+    
+        - the simplest possible system
 
 -   don't get *proton-proton* or *neutron-neutron*
 
 -   deuteron has the protons and neutron spins parallel ($l = 1$, triplet)
 
--   no excited states of deuteron
+-   no excited states of deuteron (unfortunately)
 
--   roughly spherical, a little oblate. Usually.
+- depth of potential well is about 35MeV (remember, $E \; = \; \frac{3 \hbar^2 \pi^2}{2m_pa^2}$, for deuteron we measure radius, = a/2, to be 2.1fm)
+
+- but separation energy (like _ionisation energy_) is 2.224MeV
+
+    - get this from binding energies and also from formation and disassociation energies (e.g. $^1H \; + \; n \; \rightarrow \; ^2H \; + \; \gamma$)
+    
+- so deuteron _only_ just exists, luckily for us
+
+:::
 
 ## 
 
 ### Nuclear Shell Model
+
+- Next level of complexity moves beyond simple potential well
 
 -   protons and neutrons moving in orbits within nucleus
 
@@ -359,6 +375,27 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
     -   $^{2}D$, $^{8}Li$, $^{10}B$, $^{14}N$, $^{40}K$, $^{50}V$, $^{138}La$, $^{176}Lu$
 
 ## 
+
+### Nuclear Shell - Quantum States
+
+- would like to be able to solve the Schrödinger equation for the nuclear potential, just like we can to solve the electronic levels of Hydrogen
+
+    - not possible because don't have a cleean equation for the nuclear force/potential
+    
+    - but can use some approximations to get useful results
+    
+- end up with a ladder of quatum levels (c.f. 1s, 2s, 2p... atomic orbitals)
+
+- transitions between levels lead to the emission of light - $\gamma$ rays
+
+- separate suites of levels for protons and for neutrons
+
+##
+
+![Mateusz Sitarz - 2019 thesis](images/sn-nuclear-levels.png)
+
+
+##
 
 -   electrostatic repulsion between protons isn't nothing
 
