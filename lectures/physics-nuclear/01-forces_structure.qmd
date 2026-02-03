@@ -227,7 +227,7 @@ The larger the nucleus, the less chance the electron (or in diagram above, muon)
 -   also need to explain radiation
 
     -   energies of $\alpha,\; \beta,\; \gamma$
-    
+
     -   nuclear half lives
 
     -   scattering experiments (fire particles at nucleus and see how they bounce off)
@@ -246,23 +246,21 @@ Something has to hold the nucleus together. Some properties of this *nuclear for
 
 $E_{pp} \; = \; \frac{1}{4 \pi \epsilon_\circ}\; \frac{e^2}{r}$ - this is about 1MeV for \~fm separation
 
-- in fact, quantum mechanics says it must be even bigger
+-   in fact, quantum mechanics says it must be even bigger
 
-- particle in a box of size of a = 6fm (something like aluminium)
+-   particle in a box of size of a = 6fm (something like aluminium)
 
 $E \; = \; \frac{3 \hbar^2 \pi^2}{2m_pa^2} \approx 20MeV$
-
 :::
 
-##
+## 
 
 ### Nuclear Force
 
 ::: {style="font-size: 90%;"}
-
 -   only relevant at fm distances, feeble at greater separations (\>3fm)
 
-    - see this from proton scattering
+    -   see this from proton scattering
 
 -   only effects protons and neutrons, not electrons
 
@@ -283,11 +281,10 @@ $E \; = \; \frac{3 \hbar^2 \pi^2}{2m_pa^2} \approx 20MeV$
 
 $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;$ or $\;\;{\displaystyle G_{\mu \nu }+\Lambda g_{\mu \nu }=\kappa T_{\mu \nu },}$
 
+-   but it does have an exponential term
 
-- but it does have an exponential term
+    -   $F_{nuclear} \propto  e ^{-\frac{r}{R_0}}$
 
-    - $F_{nuclear} \propto  e ^{-\frac{r}{R_0}}$
-    
 -   best modelled as an *exchange* force, mediated by some particle
 
 -   first analysed by Yukawa
@@ -306,7 +303,7 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
         -   a neutron is a small target
 
-    -   intensity decreaases with angle
+    -   intensity decreases with angle
 
     -   *but* too many are scattered at up to $180^{\circ}$
 
@@ -335,39 +332,36 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 ## Investigating Nuclear Force - Deuteron
 
 ::: {style="font-size: 90%;"}
-
 -   can get a bound state of a single proton and a single neutron, called *deuteron* (c.f. deuterium, $^2H$)
 
-    - something like the equivalent of a hydrogen atom for atomic structure
-    
-        - the simplest possible system
+    -   something like the equivalent of a hydrogen atom for atomic structure
+
+        -   the simplest possible system
 
 -   don't get *proton-proton* or *neutron-neutron*
 
 -   deuteron has the protons and neutron spins parallel ($l = 1$, triplet)
 
 -   no excited states of deuteron (unfortunately)
-
 :::
 
-##
+## 
 
 ### Investigating Nuclear Force - Deuteron
 
-- depth of potential well is about 35MeV (remember, $E \; = \; \frac{3 \hbar^2 \pi^2}{2m_pa^2}$, for deuteron we measure radius, = a/2, to be 2.1fm)
+-   depth of potential well is about 35MeV (remember, $E \; = \; \frac{3 \hbar^2 \pi^2}{2m_pa^2}$, for deuteron we measure radius, = a/2, to be 2.1fm)
 
-- but separation energy (like _ionisation energy_) is 2.224MeV
+-   but separation energy (like *ionisation energy*) is 2.224MeV
 
-    - get this from binding energies and also from formation and disassociation energies (e.g. $^1H \; + \; n \; \rightarrow \; ^2H \; + \; \gamma$)
-    
-- so deuteron _only_ just exists, luckily for us
+    -   get this from binding energies and also from formation and disassociation energies (e.g. $^1H \; + \; n \; \rightarrow \; ^2H \; + \; \gamma$)
 
+-   so deuteron *only* just exists, luckily for us
 
 ## 
 
 ### Nuclear Shell Model
 
-- Next level of complexity moves beyond simple potential well
+-   Next level of complexity moves beyond simple potential well
 
 -   protons and neutrons moving in orbits within nucleus
 
@@ -384,27 +378,24 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 ### Nuclear Shell - Quantum States
 
 ::: {style="font-size: 90%;"}
+-   would like to be able to solve the Schrödinger equation for the nuclear potential, just like we can to solve the electronic levels of Hydrogen
 
-- would like to be able to solve the Schrödinger equation for the nuclear potential, just like we can to solve the electronic levels of Hydrogen
+    -   not possible because don't have a clean equation for the nuclear force/potential
 
-    - not possible because don't have a cleean equation for the nuclear force/potential
-    
-    - but can use some approximations to get useful results
-    
-- end up with a ladder of quatum levels (c.f. 1s, 2s, 2p... atomic orbitals)
+    -   but can use some approximations to get useful results
 
-- transitions between levels lead to the emission of light - $\gamma$ rays
+-   end up with a ladder of quatum levels (c.f. 1s, 2s, 2p... atomic orbitals)
 
-- separate suites of levels for protons and for neutrons
+-   transitions between levels lead to the emission of light - $\gamma$ rays
 
+-   separate suites of levels for protons and for neutrons
 :::
 
-##
+## 
 
-![Mateusz Sitarz - 2019 thesis](images/sn-nuclear-levels.png)
+![Mateusz Sitarz - 2019 thesis - nuclear energy levels for $^{116}_{50}Sn$](images/sn-nuclear-levels.png)
 
-
-##
+## 
 
 -   electrostatic repulsion between protons isn't nothing
 
@@ -493,6 +484,39 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
     -   *fission* splits up heavier elements, moves up curve from the right
     -   *fusion* coalesces lighter elements, moves up curve from the left
 
+##
+
+### Semiempirical Mass Formula
+
+::: {style="font-size: 90%;"}
+
+- made of five terms
+
+    - an positive volume term proportional to A given by $a_{\nu} \; A$
+    
+    - a negative surface term given by $-a_sA^{-\frac{2}{3}}$
+    
+        - remember $Radius \; \propto \; A^{-\frac{1}{3}}$
+        
+    - a negative Coulomb term depending on the number and separation of the protons. Given by $-a_cZ(Z-1)A^{-\frac{1}{3}}$ (again, remember the radius)
+        
+    - a negative symmetric term favouring equal numbers of protons and neutrons, especially for light nuclei. Given by $-a_{sym}\frac{(A-2Z)^2}{A}$
+    
+    - a positive pairing term favourising even numbers of protons / neutrons. Let's call this term just $\delta$
+    
+:::
+
+##
+
+::: {.callout-important title="Binding Energy Equation"}
+
+::: {style="font-size: 120%;"}    
+    
+$B = a_{\nu} A - a_sA^{-\frac{2}{3}} - a_cZ(Z-1)A^{-\frac{1}{3}} - a_{sym}\frac{(A-2Z)^2}{A} + \delta$
+
+:::
+:::
+
 ## Equations
 
 -   $1MeV = 1.6 \times 10^{-13}J = 1.78 \times 10^{-30}kg$
@@ -500,6 +524,8 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
 -   $Radius\;=\;1.2 \times \sqrt[3]{A}$ in femto-metres (1 fm = $10^{-15}m$)
 
 -   $Binding\; E.\; per\; nucleon = \frac{938.272 \times Z + 939.565 \times (A-Z) - (mass\;in\;MeV)}{A}$
+
+-   $B = a_{\nu} A - a_sA^{-\frac{2}{3}} - a_cZ(Z-1)A^{-\frac{1}{3}} - a_{sym}\frac{(A-2Z)^2}{A} + \delta$
 
 ## References {.smaller}
 
