@@ -488,7 +488,7 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
 
 ### Semiempirical Mass Formula
 
-::: {style="font-size: 90%;"}
+::: {style="font-size: 80%;"}
 
 - made of five terms
 
