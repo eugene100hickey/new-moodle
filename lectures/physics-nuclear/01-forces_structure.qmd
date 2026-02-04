@@ -514,8 +514,22 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
     
 $B = a_{\nu} A - a_sA^{-\frac{2}{3}} - a_cZ(Z-1)A^{-\frac{1}{3}} - a_{sym}\frac{(A-2Z)^2}{A} + \delta$
 
+$\delta = \pm a_p A^{-\frac{3}{4}}$ "+" for Z/N even/even "-" for Z/N odd/odd else 0
+
 :::
 :::
+
+- a good fit for:
+
+    - $a_{\nu} = 15.5MeV$
+    
+    - $a_{s} = 16.8MeV$
+    
+    - $a_{c} = 0.72MeV$
+    
+    - $a_{sym} = 23MeV$
+    
+    - $a_{p} = 34MeV$
 
 ## Equations
 
