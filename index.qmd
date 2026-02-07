@@ -23,11 +23,19 @@ include-in-header:
 
 -   [ 03 Work and Energy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/03-work_energy_metabolism.pdf){target="_blank"}
 
+-   [ 04 BioEnergy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/04-bioEnergy.pdf){target="_blank"}
+
 -   [03 Circular Motion](https://tud.netlify.app/lectures/sports/03-circular_motion.pdf){target="_blank"}
+
+-   [ 05 Rotational Kinematics Tutorial](https://tud.netlify.app/lectures/sports/tutorials/05-rotational_kinematics.pdf){target="_blank"}
+
+-   [ 06 Rotational Review Tutorial](https://tud.netlify.app/lectures/sports/tutorials/06-rotational_review.pdf){target="_blank"}
 
 -   [04 Vectors](https://tud.netlify.app/lectures/sports/04-vectors.pdf){target="_blank"}
 
--   [Lab Rota](https://tud.netlify.app/lectures/sports/lab-rota.html){target="_blank"}
+-   [ 07 Vectors I Tutorial](https://tud.netlify.app/lectures/sports/tutorials/07-vectorsI.pdf){target="_blank"}
+
+-   [ 08 Vectors II Tutorial](https://tud.netlify.app/lectures/sports/tutorials/08-vectorsII.pdf){target="_blank"}
 
 -   [Graph Rules](https://tud.netlify.app/graph-rules#1)
 
