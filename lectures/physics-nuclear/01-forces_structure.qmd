@@ -484,52 +484,47 @@ elements |> ggplot(aes(Atomic_no, BE_nucleon)) +
     -   *fission* splits up heavier elements, moves up curve from the right
     -   *fusion* coalesces lighter elements, moves up curve from the left
 
-##
+## 
 
 ### Semiempirical Mass Formula
 
 ::: {style="font-size: 80%;"}
+-   made of five terms
 
-- made of five terms
+    -   an positive volume term proportional to A given by $a_{\nu} \; A$
 
-    - an positive volume term proportional to A given by $a_{\nu} \; A$
-    
-    - a negative surface term given by $-a_sA^{-\frac{2}{3}}$
-    
-        - remember $Radius \; \propto \; A^{-\frac{1}{3}}$
-        
-    - a negative Coulomb term depending on the number and separation of the protons. Given by $-a_cZ(Z-1)A^{-\frac{1}{3}}$ (again, remember the radius)
-        
-    - a negative symmetric term favouring equal numbers of protons and neutrons, especially for light nuclei. Given by $-a_{sym}\frac{(A-2Z)^2}{A}$
-    
-    - a positive pairing term favourising even numbers of protons / neutrons. Let's call this term just $\delta$
-    
+    -   a negative surface term given by $-a_sA^{-\frac{2}{3}}$
+
+        -   remember $Radius \; \propto \; A^{-\frac{1}{3}}$
+
+    -   a negative Coulomb term depending on the number and separation of the protons. Given by $-a_cZ(Z-1)A^{-\frac{1}{3}}$ (again, remember the radius)
+
+    -   a negative symmetric term favouring equal numbers of protons and neutrons, especially for light nuclei. Given by $-a_{sym}\frac{(A-2Z)^2}{A}$
+
+    -   a positive pairing term favourising even numbers of protons / neutrons. Let's call this term just $\delta$
 :::
 
-##
+## 
 
-::: {.callout-important title="Binding Energy Equation"}
-
-::: {style="font-size: 120%;"}    
-    
+:::: {.callout-important title="Binding Energy Equation"}
+::: {style="font-size: 120%;"}
 $B = a_{\nu} A - a_sA^{-\frac{2}{3}} - a_cZ(Z-1)A^{-\frac{1}{3}} - a_{sym}\frac{(A-2Z)^2}{A} + \delta$
 
 $\delta = \pm a_p A^{-\frac{3}{4}}$ "+" for Z/N even/even "-" for Z/N odd/odd else 0
-
 :::
-:::
+::::
 
-- a good fit for:
+-   a good fit for:
 
-    - $a_{\nu} = 15.5MeV$
-    
-    - $a_{s} = 16.8MeV$
-    
-    - $a_{c} = 0.72MeV$
-    
-    - $a_{sym} = 23MeV$
-    
-    - $a_{p} = 34MeV$
+    -   $a_{\nu} = 15.5MeV$
+
+    -   $a_{s} = 16.8MeV$
+
+    -   $a_{c} = 0.72MeV$
+
+    -   $a_{sym} = 23MeV$
+
+    -   $a_{p} = 34MeV$
 
 ## Equations
 

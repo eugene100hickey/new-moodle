@@ -13,11 +13,17 @@ include-in-header:
 
 ## Sports Science
 
--   [00 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
+-   [01 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
 
--   [01 Units Tutorial](https://tud.netlify.app/lectures/sports/01-units-tutorial.pdf){target="_blank"}
+-   [01 Units Tutorial](https://tud.netlify.app/lectures/sports/tutorials/01-units-tutorial.pdf){target="_blank"}
 
--   [02 Lab Rota](https://tud.netlify.app/lectures/sports/lab-rota.html){target="_blank"}
+-   [02 Biomechanics](https://tud.netlify.app/lectures/sports/02-biomechanics.pdf){target="_blank"}
+
+-   [ 02 Dynamics and Work Tutorial](https://tud.netlify.app/lectures/sports/tutorials/02-dynamics_work.pdf){target="_blank"}
+
+-   [ 03 Work and Energy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/03-work_energy_metabolism.pdf){target="_blank"}
+
+-   [Lab Rota](https://tud.netlify.app/lectures/sports/lab-rota.html){target="_blank"}
 
 -   [Graph Rules](https://tud.netlify.app/graph-rules#1)
 
