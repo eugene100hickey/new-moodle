@@ -49,6 +49,8 @@ include-in-header:
 
 -   [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/01-radiation.html){target="_blank"}
 
+-   [02 Tutorial - Radiation](https://tud.netlify.app/lectures/physics-nuclear/tutorials/02-radiation.pdf){target="_blank"}
+
 -   [03 Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/03-fission-fusion.html){target="_blank"}
 
 ## Physics-Quantum Lectures

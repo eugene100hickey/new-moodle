@@ -343,3 +343,4 @@ z |> ggplot(aes(half_lives, number)) +
 -   [Periodic Table from Jefferson Lab](https://education.jlab.org/itselemental/){target="_blank"}
 -   [XKCD radiation chart](https://xkcd.com/radiation/){target="_blank"}
 -   [Radiation doses - David Ruzic](https://www.youtube.com/watch?v=ugGVrI8pi6w&list=PLYcMUdmtJe6sdgkK0xQL7SbH6Y6MTOLq9&index=2){target="_blank"}
+-   [ABC's of Radiation - David Ruzic](ttps://www.youtube.com/watch?v=qjkTzk8NAxM){target="_blank"}
