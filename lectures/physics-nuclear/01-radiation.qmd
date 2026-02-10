@@ -1,22 +1,22 @@
 ---
-title: "01-Radiation"
+title: "02 - Radiation"
 author:
-  - name: Physics Theory II PHYS2001
+  - name: Nuclear Physics PHYS2829
     orcid: 0000-0001-9813-9323
     email: eugene.hickey@tudublin.ie
     affiliation: 
       - name: Technological University Dublin
         url: www.tudublin.ie
 format:
-  revealjs: default
+  revealjs:
     slide-number: true
     show-slide-number: all
 logo: logo.jpg
 include-in-header:
   - text: |
-      <link rel = "shortcut icon" href = "lectures/physics-nuclear/images/logo.jpg" />
+      <link rel = "shortcut icon" href = "logo.jpg" />
 css: logo.css
-footer: "Physics - Quantum"
+footer: "Nuclear Physics"
 editor: visual
 ---
 
@@ -64,7 +64,7 @@ z |> gt() |>
 ## Notation
 
 ::: callout-note
-## Syntax
+## Reminder - Syntax
 
 $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 :::
@@ -143,37 +143,6 @@ $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 <iframe width="1000" height="800" src="https://www.nndc.bnl.gov/nudat3/" title="Radiation Sources"></iframe>
 ```
 
-## Applications of Radiation
-
-### Medicine;
-
--   diagnostic imaging: radioactive tracers ($^{99}Tc$) latch onto a particular chemical in the body. The distribution of this chemical can be followed by radiation detectors
--   PET scans use $^{18}F$ tracers to detect cancers.
--   radiotherapy: focus radiation in the diseased part of the body, healthy cells recover, diseased cells die. $^{131}I$ in treatment of thyroid disorders.
-
-## 
-
-<br>
-
-### Appliances:
-
--   devices such as smoke detectors use radiation ($\alpha$ particles from $^{241}Am$)
-
-### Archeology:
-
--   radioactive dating; in dead material the ratio of $^{14}C$ to $^{12}C$ determines age.
--   $^{14}C$ has a useful half-life of 5730 years
--   Works for aging rocks as well; ratio of Uranium to Lead.
-
-## 
-
-### Engineering;
-
--   checking welds
--   thickness control
--   testing wear and tear of a machine
--   leak detection
--   sterilising food
 
 ## Radiation Safety
 

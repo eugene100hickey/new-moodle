@@ -1,0 +1,86 @@
+---
+format:
+  pdf:
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \usepackage{graphicx}
+        \pagestyle{fancy}
+        \fancyhf{} % Clear default header/footer
+        \fancyhead[C]{\includegraphics[width=\headwidth,height=1cm]{banner.png}} % Top Banner
+        \fancyfoot[C]{\thepage} % Page number in center
+        \renewcommand{\headrulewidth}{0pt} % Remove line below header
+---
+
+
+1.  What are the SI units for
+
+    a) force
+    b) energy
+    c) work
+    d) power
+    e) momentum
+
+2.  What force is needed to produce an acceleration of \$5ms\^{-2}\$ for an object of mass 6 kg ?
+    \[ 30 N\]
+
+3.  If a force of 12 N acts on a body of mass 2.4 kg calculate the resulting
+    acceleration.
+    \[5 m/s \]
+
+4.  A block of mass 8 kg is placed on a level surface. What is the magnitude and
+    direction of the reaction force exerted by the surface on the block ?
+    \[ 78.5 N, upwards\]
+
+5.  A block of mass 6 kg is sent sliding across a horizontal surface and is
+    observed to decelerate at a rate of \$5.6ms\^{-2}\$ because of the presence of friction. Calculate the decelerating force on the block and the coefficient of kinetic friction between the block and the surface. If a 10 kg mass was attached to the top of the block and the experiment repeated would the observed deceleration be greater than, less than, or equal to \$5.6ms\^{-2}\$?
+    \[ 55.2 N, 0.94 \]
+    6/ What force is required to produce an acceleration of 5 ms-2
+    for an object of
+    mass 5 kg ? It is observed in a real situation that when this force is applied to a
+    mass of 5 kg the acceleration produced is only 3 ms-2
+    due to friction. Calculate
+    the frictional force and the coefficient of friction.
+    \[ 25 N, 10 N, 0.2 \]
+    7/ A bullet of mass 0.1 kg travelling at 2 x 102 ms-1
+    collides with a stationary
+    wooden block of mass 5 kg. The bullet imbeds itself in the block. Calculate
+    the momentum of the bullet before the collision. Use conservation of
+    momentum to calculate the velocity of the block and bullet after the collision.
+    \[ 20 kgms-1
+    , 3.92 ms-1
+    \]
+    8/ An object of mass 4 kg moving with a velocity of 10 ms-1
+    in the +X direction
+    collides with an object of mass 1 kg moving in the -X direction with a velocity
+    of 4 ms-1
+    . After the collision the two masses stick together. Calculate their
+    common velocity after the collision.
+    \[ 7.2 ms-1 in +X \]
+    Tutorial Two FORCE & ENERGY
+    9/ A horizontal force of 5 N is required to maintain a velocity of 2ms-1
+    for an
+    object sliding over a rough surface. How much work is done by the force in
+    50s?
+    \[ 500J \]
+    10/ An object of mass 2 kg is initially at rest. If a force of 10 N is applied for a
+    period of 10 s calculate the acceleration during the 10 s interval, the final
+    velocity of the object, and the final kinetic energy of the object. Also calculate
+    the distance travelled and the work done by the force.
+    \[ 5 ms-2
+    , 50 ms-1
+    , 2.5 x 103
+    J, 250 m, 2.5 x 103
+    J \]
+    11/ A body of mass 5 kg is dropped from the top of a building 100 m high.
+    Calculate it’s potential energy when dropped, it’s kinetic and potential energy
+    70 m from the ground, it’s velocity and potential energy 40 m from the ground
+    and it’s velocity and potential energy just before impact.
+    \[ 4905 J, 1472 J, 3434 J, 34.3 ms-1
+    , 1962 J, 44.3 ms-1,, 4905 J \]
+    12/ An object of mass of 3.5 kg and velocity 8 ms-1
+    collides with a stationary
+    object of mass 10.5 kg. The two objects stick together after the collision. Use
+    conservation of momentum to work out the amount of energy lost during the
+    collision.
+    \[ 84 J \]

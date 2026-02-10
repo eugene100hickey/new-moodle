@@ -15,27 +15,27 @@ include-in-header:
 
 -   [01 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
 
--   [01 Units Tutorial](https://tud.netlify.app/lectures/sports/tutorials/01-units-tutorial.pdf){target="_blank"}
+-   [01 Units Tutorial](https://tud.netlify.app/lectures/sports/tutorials/01-units-tutorial1.pdf){target="_blank"}
 
 -   [02 Biomechanics](https://tud.netlify.app/lectures/sports/02-biomechanics.pdf){target="_blank"}
 
--   [ 02 Dynamics and Work Tutorial](https://tud.netlify.app/lectures/sports/tutorials/02-dynamics_work.pdf){target="_blank"}
+-   [02 Dynamics and Work Tutorial](https://tud.netlify.app/lectures/sports/tutorials/02-dynamics_work.pdf){target="_blank"}
 
--   [ 03 Work and Energy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/03-work_energy_metabolism.pdf){target="_blank"}
+-   [03 Work and Energy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/03-work_energy_metabolism.pdf){target="_blank"}
 
--   [ 04 BioEnergy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/04-bioEnergy.pdf){target="_blank"}
+-   [04 BioEnergy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/04-bioEnergy.pdf){target="_blank"}
 
 -   [03 Circular Motion](https://tud.netlify.app/lectures/sports/03-circular_motion.pdf){target="_blank"}
 
--   [ 05 Rotational Kinematics Tutorial](https://tud.netlify.app/lectures/sports/tutorials/05-rotational_kinematics.pdf){target="_blank"}
+-   [05 Rotational Kinematics Tutorial](https://tud.netlify.app/lectures/sports/tutorials/05-rotational_kinematics.pdf){target="_blank"}
 
--   [ 06 Rotational Review Tutorial](https://tud.netlify.app/lectures/sports/tutorials/06-rotational_review.pdf){target="_blank"}
+-   [06 Rotational Review Tutorial](https://tud.netlify.app/lectures/sports/tutorials/06-rotational_review.pdf){target="_blank"}
 
 -   [04 Vectors](https://tud.netlify.app/lectures/sports/04-vectors.pdf){target="_blank"}
 
--   [ 07 Vectors I Tutorial](https://tud.netlify.app/lectures/sports/tutorials/07-vectorsI.pdf){target="_blank"}
+-   [07 Vectors I Tutorial](https://tud.netlify.app/lectures/sports/tutorials/07-vectorsI.pdf){target="_blank"}
 
--   [ 08 Vectors II Tutorial](https://tud.netlify.app/lectures/sports/tutorials/08-vectorsII.pdf){target="_blank"}
+-   [08 Vectors II Tutorial](https://tud.netlify.app/lectures/sports/tutorials/08-vectorsII.pdf){target="_blank"}
 
 -   [Graph Rules](https://tud.netlify.app/graph-rules#1)
 
