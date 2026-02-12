@@ -1,0 +1,117 @@
+---
+title: "01 - Nuclear Forces"
+author:
+  - name: Nuclear Physics PHYS2829
+    orcid: 0000-0001-9813-9323
+    email: eugene.hickey@tudublin.ie
+    affiliation: 
+      - name: Technological University Dublin
+        url: www.tudublin.ie
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+logo: logo.jpg
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "logo.jpg" />
+css: logo.css
+footer: "Nuclear Physics"
+editor: visual
+---
+
+
+```{r}
+#| results: asis
+#| label: semf-data
+#| message: false
+#| echo: false
+#| warning: false
+
+library(tidyverse)
+library(rvest)
+library(PeriodicTable)
+data("periodicTable")
+
+my_url <- "https://en.wikipedia.org/wiki/Stable_nuclide#List_of_stable_nuclides"
+my_xml <- "#mw-content-text li , .mw-redirect"
+
+z <- read_html(my_url)
+z1 <- html_elements(z, my_xml)
+z2 <- html_text2(z1)
+
+ptable <- periodicTable |> 
+  select(z = numb, symb, element = name)
+
+nuclei <- tibble(nucl = z2[12:609]) |> 
+  separate(nucl, into = c("element", "a"), sep = "-") |> 
+  mutate(a = as.numeric(a)) |> 
+  drop_na() |> 
+  left_join(ptable) |> 
+  drop_na() |> 
+  mutate(n = a - z) |> 
+  arrange(desc(a))
+
+av <- 15.5
+as <- 16.8
+ac <- 0.72
+asym <- 23
+ap <- 34
+
+binding <- function(my_element) {
+  av <- 15.5
+  as <- 16.8
+  ac <- 0.72
+  asym <- 23
+  ap <- 34
+  
+  a <- my_element$a
+  z <- my_element$z
+  n <- my_element$n
+  
+  my_mult <- case_when(
+    n %% 2 == 0 & z %% 2 == 0 ~ +1,
+    n %% 2 == 1 & z %% 2 == 1 ~ -1,
+    .default = 0
+  )
+  
+  volume_energy = av * a
+  surface = as * (a)^(2/3)
+  coulomb = ac * z*(z-1) * (a)^(-1/3)
+  symmetry = asym * (a - 2*z)^2 / a
+  
+  be1 <- volume_energy / a
+  be2 <- (volume_energy - surface) / a
+  be3 <- (volume_energy - surface - coulomb) / a
+  be4 <- (volume_energy - surface - coulomb - symmetry) / a
+  be5 <- (volume_energy - surface - coulomb - symmetry + my_mult*ap*a^(-3/4)) / a
+  
+  #(volume_energy - surface - coulomb - symmetry + my_mult*ap*a^(-3/4)) / a
+  #(volume_energy - surface) / a
+  list(be1 = be1, be2 = be2, be3 = be3, be4 = be4, be5 = be5)
+  
+}
+
+
+zq <- map_df(1:397, function(i) {tibble(nuclei[i,], be = binding(nuclei[i,]) |> unlist())})
+zq$be_type <- rep(c("be1", "be2", "be3", "be4", "be5"), dim(zq)[1]/5)
+
+```
+
+::: panel-tabset
+
+```{r}
+#| results: asis
+#| label: dotplotcpdb
+
+row_nr = 1:8
+
+
+zq |> 
+  filter(be > 0) |> 
+  ggplot(aes(x = a, y = be, col = be_type)) + 
+  geom_point() + 
+  geom_line()
+```
+
+:::
