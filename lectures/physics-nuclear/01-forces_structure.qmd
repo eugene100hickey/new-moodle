@@ -608,7 +608,8 @@ zq$be_type <- rep(c("be1", "be2", "be3", "be4", "be5"), dim(zq)[1]/5)
 
 ::: {.panel-tabset}
 
-## Volume
+
+## Vol.
 
 ```{r}
 #| results: asis
@@ -642,7 +643,7 @@ be_plot
 ```
 
 
-## + Surface
+## + Surf
 
 ```{r}
 #| results: asis
@@ -711,7 +712,7 @@ be_plot
 
 
 
-## + Symmetry
+## + Symm
 
 ```{r}
 #| results: asis
@@ -742,6 +743,7 @@ be_plot <- zq |>
 
 be_plot
 ```
+
 
 ## + Pairing
 
@@ -774,6 +776,7 @@ be_plot <- zq |>
 
 be_plot
 ```
+
 
 :::
 
