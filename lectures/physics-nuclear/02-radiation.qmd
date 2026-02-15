@@ -158,15 +158,71 @@ z |> gt() |>
 
 ## 
 
+::: {style="font-size: 90%;"}
+
 ### How is this energy shared between  $\alpha$ and Daughter Nucleus - Momentum Conservation
 
 - total energy released is $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
 
-- this is equal to the kinetic enegies of the daughter nucleus and the $\alpha$
+- this is equal to the kinetic enegies, T,  of the daughter nucleus and the $\alpha$
 
 - assume parent nucleus at rest, so for momentum $p_{daughter} \; = \; p_{\alpha}$
 
 - as these are non-relativistic, we can use Kinetic Energy = $\frac{p^2}{2m}$
+
+- get $Q \; = T_{\alpha} \; + \; T_d \; = \; \frac{p_{\alpha}^2}{2m_{\alpha}} \; + \; \frac{p_d^2}{2m_d} \; = \; p_{\alpha}^2(\frac{1}{2m_{\alpha}} + \frac{1}{m_d})$
+
+- get $T_{\alpha} = \frac{Q}{(1+\frac{m_{\alpha}}{m_d})} \approx \; Q(1 - \frac{m_{\alpha}}{m_d})$
+
+- for 4MeV $\alpha$ decays, daughter nucleus gets about 100keV.
+
+    - enough to escape surface of material
+    
+:::
+
+##
+
+### Relation between Half-Lives and $\alpha$ energies
+
+- $\alpha$'s with high energies come from nuclei with short half-lives
+
+    - note how adding neutrons stabilises nucleus
+
+```{r geiger-nuttal}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-height: 10
+#| fig-width: 16
+
+library(tidyverse)
+library(latex2exp)
+library(showtext)
+library(scales)
+
+font_add(family = "Ink Free", regular = "../../fonts/Inkfree.ttf")
+showtext_auto()
+
+uranium <- tribble(~isotope, ~half_life, ~Q,
+                   "U238", 1.408416e+17, 4.19,
+                   "U236", 7.39079e+14, 4.50,
+                   "U234", 7.747391e+12, 4.77,
+                   "U232", 2174318640, 5.41,
+                   "U230", 1771200, 5.99,
+                   "U228", 546, 6.804)
+uranium |> 
+  ggplot(aes(Q, half_life)) + 
+  geom_line() + 
+  labs(title = TeX("Log Half-Life versus $\\alpha$ Energy for Even-Even Isotopes of Uranium"),
+      y = "Isotope Half-Life (s)",
+      x = "Q (MeV)") +
+  scale_y_log10(labels = label_log(digits = 2)) +
+  geom_label(aes(label = isotope), text.colour = "firebrick4", size = 16) +
+  theme_minimal() + 
+  theme(text = element_text(family = "Ink Free", size = 62), 
+        plot.title = element_text(size = 72, hjust = 1))
+```
+
 
 ## Sources of Radiation
 
