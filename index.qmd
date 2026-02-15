@@ -47,7 +47,7 @@ include-in-header:
 
 -   [01 Tutorial - Structure](https://tud.netlify.app/lectures/physics-nuclear/tutorials/01-structure_forces.pdf){target="_blank"}
 
--   [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/01-radiation.html){target="_blank"}
+-   [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/02-radiation.html){target="_blank"}
 
 -   [02 Tutorial - Radiation](https://tud.netlify.app/lectures/physics-nuclear/tutorials/02-radiation.pdf){target="_blank"}
 
