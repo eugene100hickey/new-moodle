@@ -223,12 +223,29 @@ uranium |>
         plot.title = element_text(size = 72, hjust = 1))
 ```
 
+## $\beta$ Decay
+
+- actually three types of $\beta$ decay
+
+    - negative $\beta$ decay: $n \rightarrow p \; + \; e^-$ $\beta^-$
+    
+    - negative $\beta$ decay: $p \rightarrow n \; + \; e^+$ $\beta^+$
+    
+    - orbital electron capture: $p \; + \; e^-$ \rightarrow n$ $\epsilon$
+    
+##
+
+### Neutrinos
+
+- the reactions above are missing something
+
+    - protons, electrons, and neutrons are all spin 1/2. 
 
 ## Sources of Radiation
 
 ### $\alpha$ particles
 
--   almost all alpha particles originate in the radioactive decay of heavy nuclei e.g. $^{238}U$, $^{226}Ra$, etc.
+-   almost all $\alpha$ particles originate in the radioactive decay of heavy nuclei e.g. $^{238}U$, $^{226}Ra$, etc.
 -   $^{208}Pb$ is the heaviest stable nucleus known.
 -   typically $\alpha$ energy of 4MeV ($6.4 \times 10^{-13}$ Joules)
 -   \~highest is: $^{212}_{84}Po\; \rightarrow \; ^{208}_{82}Pb \;+\; \alpha\;+\;8.78MeV$
@@ -262,6 +279,49 @@ uranium |>
 ```{=html}
 <iframe width="1000" height="800" src="https://www.nndc.bnl.gov/nudat3/" title="Radiation Sources"></iframe>
 ```
+
+
+## Decay Series
+
+- $\alpha$ decay changes nuclear mass by 4 units, $\beta$ and $\gamma$ don't change it at all. Means there are 4 *families* of nuclei.
+
+
+```{r decay-chains}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: 'asis'
+
+library(tidyverse)
+library(latex2exp)
+library(gt)
+
+# z <- tribble(~series, ~type, ~end_stage, ~longest_lived, ~half_life,
+#              "Thorium", "4n", TeX("$$^{208}Pb$$"), "<sup>232</sup>Th", latex("1.41 \\times 10^{10}"),
+#              "Neptunium", "4n + 1", TeX("$^{209}Bi$"), TeX("$^{237}Np$"), TeX("$2.14 \\times 10^{6}$"),
+#              "Uranium", "4n + 2", TeX("$^{206}Pb$"), TeX("$^{238}U$"), TeX("$4.47 \times 10^{9}$"),
+#              "Actinium", "4n + 3", TeX("$^{207}Pb$"), TeX("$^{235}U$"), TeX("$7.04 \times 10^{8}$"))
+z <- tribble(~series, ~type, ~end_stage, ~longest_lived, ~half_life,
+             "Thorium", "4n", "208Pb", "232Th", "14.1 GYr",
+             "Neptunium", "4n + 1", "209Bi", "237Np", "2.14 MYr",
+             "Uranium", "4n + 2", "206Pb", "238U", "4.47 GYr",
+             "Actinium", "4n + 3", "207Pb", "235", "0.704 GYr")
+
+z |> gt() |> 
+  cols_label(series = "Name",
+             type = "Type",
+             end_stage = "Final",
+             longest_lived = "Nucleus",
+             half_life = "Half-Life") |> 
+  tab_header(md("**Disintegration Series of the Heavy Elements**")) |> 
+  tab_spanner(label = "Longest Lived Member", columns = c(longest_lived, half_life)) |> 
+  tab_options(table.font.size = 24)
+```
+
+##
+
+![](images/thorium-series.png)
+
 
 ## Radiation Safety
 
