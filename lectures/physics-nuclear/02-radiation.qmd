@@ -123,11 +123,50 @@ z |> gt() |>
 
 ## 
 
-::: {.callout-tip}
+::: {.callout-tip collapse="false"}
+
+## $\alpha$ particle energy release from $^{226}Ra$ to $^{222}Rn$
+
+- $^{226}Ra \; mass  \; = \; 226.0253 \; g/mol$
+
+- $^{222}Rn \; mass  \; = \; 222.0175 \; g/mol$
+
+- $^{4}He \; mass  \; = \; 4.002604 \; g/mol$
+
+- $(226.0253 - 222.0175 - 4.002604) \times (1.660539\times10^{-27}) \times c^2/1.60218\times 10^{-19}$ 
+
+= $\; 4.84MeV$
+
+- compares to experimental value of 4.78MeV
+
+:::
+
+::: {.callout-tip collapse="true"}
+
+## Using Binding Energies
+
+- $^{226}Ra \; BE  \; = \; 7.6620 \; MeV/nucleon$
+
+- $^{222}Rn \; BE  \; = \; 7.6945 \; MeV/nucleon$
+
+- $^{4}He \; BE  \; = \; 7.0739 \; MeV/nucleon$
+
+- $(7.6945 \times 222 + 7.0739 \times 4 - 7.6620 \times 228) = 4.87MeV$
+
+:::
 
 
+## 
 
+### How is this energy shared between  $\alpha$ and Daughter Nucleus - Momentum Conservation
 
+- total energy released is $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
+
+- this is equal to the kinetic enegies of the daughter nucleus and the $\alpha$
+
+- assume parent nucleus at rest, so for momentum $p_{daughter} \; = \; p_{\alpha}$
+
+- as these are non-relativistic, we can use Kinetic Energy = $\frac{p^2}{2m}$
 
 ## Sources of Radiation
 
@@ -367,4 +406,5 @@ z |> ggplot(aes(half_lives, number)) +
 -   [Periodic Table from Jefferson Lab](https://education.jlab.org/itselemental/){target="_blank"}
 -   [XKCD radiation chart](https://xkcd.com/radiation/){target="_blank"}
 -   [Radiation doses - David Ruzic](https://www.youtube.com/watch?v=ugGVrI8pi6w&list=PLYcMUdmtJe6sdgkK0xQL7SbH6Y6MTOLq9&index=2){target="_blank"}
--   [ABC's of Radiation - David Ruzic](ttps://www.youtube.com/watch?v=qjkTzk8NAxM){target="_blank"}
+-   [ABC's of Radiation - David Ruzic](https://www.youtube.com/watch?v=qjkTzk8NAxM){target="_blank"}
+-   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
