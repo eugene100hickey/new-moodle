@@ -525,8 +525,8 @@ $\delta = \pm a_p A^{-\frac{3}{4}}$ "+" for Z/N even/even "-" for Z/N odd/odd el
     -   $a_{sym} = 23MeV$
 
     -   $a_{p} = 34MeV$
-    
-##
+
+## 
 
 ```{r}
 #| results: asis
@@ -606,9 +606,7 @@ zq$be_type <- rep(c("be1", "be2", "be3", "be4", "be5"), dim(zq)[1]/5)
 
 ```
 
-::: {.panel-tabset}
-
-
+::: panel-tabset
 ## Vol.
 
 ```{r}
@@ -641,7 +639,6 @@ be_plot <- zq |>
 be_plot
 
 ```
-
 
 ## + Surf
 
@@ -676,7 +673,6 @@ be_plot
 
 ```
 
-
 ## + Coulomb
 
 ```{r}
@@ -710,8 +706,6 @@ be_plot
 
 ```
 
-
-
 ## + Symm
 
 ```{r}
@@ -744,7 +738,6 @@ be_plot <- zq |>
 be_plot
 ```
 
-
 ## + Pairing
 
 ```{r}
@@ -776,8 +769,6 @@ be_plot <- zq |>
 
 be_plot
 ```
-
-
 :::
 
 ## Equations

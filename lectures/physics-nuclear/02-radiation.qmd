@@ -27,10 +27,11 @@ Radioactivity is the spontaneous emission of high energy particles due to the de
 ## Contents
 
 1.  types of radiation
-2.  sources of radiation
-3.  applications of radioactivity
+1. $\alpha \; decay$
+1. $\beta \; decay$
+1. $\gamma \; rays$
+2.  Radioactive decay series
 4.  safety aspects of radioactivity
-5.  radioactive decay laws / radioactive half life
 6.  measurement of radiation / units radiation limits
 
 ## 
@@ -61,22 +62,6 @@ z |> gt() |>
   tab_options(table.font.size = 24)
 ```
 
-## Notation
-
-::: callout-note
-## Reminder - Syntax
-
-$^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
-:::
-
--   radioactivity originates in the nucleus. We need to develop a notation to discribe the processes in the nucleus.
-
--   Atomic Number ( Z ) is the number of protons in the nucleus.
-
--   Atomic Mass ( A ) is the combined number of protons and neutrons in the nucleus.
-
--   ***Isotopes*** are nuclei with the same number of protons but different numbers of neutrons
-
 ## Nucleus emits an $\alpha$ particle
 
 -   loses two protons and two neutrons
@@ -103,6 +88,46 @@ $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 <br>
 
 -   no change in A, Z, just loss of excess energy from nucleus
+
+## $\alpha$ decay
+
+- $\alpha$ decay is caused by Coulomb Repulsion between protons
+
+    - binding energy increase as **A**
+    
+    - Coulomb repulsion increases as **$Z^2$**
+    
+    - heavy nuclei want to offload some nucleons
+    
+    - energetically, emitting a single proton or neutron  or some lighter nuclei (e.g. $^3_1H$) not possible
+    
+        - but $^4_2He$ unusually stable
+    
+##
+
+### Energy in $\alpha$ Decay
+
+- energy released given by the differences in rest masses
+
+    - $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
+    
+    - or, in terms of binding energy:
+    
+        - $Q \; = \; A_{daughter} BE_{daughter}  + 4BE_{\alpha}-  A_{parent} BE_{parent}$
+    
+    - typical figures of about 4MeV
+    
+        - this is much less than particle rest mass energies
+        
+        - so non-relativistic
+
+## 
+
+::: {.callout-tip}
+
+
+
+
 
 ## Sources of Radiation
 
@@ -142,7 +167,6 @@ $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 ```{=html}
 <iframe width="1000" height="800" src="https://www.nndc.bnl.gov/nudat3/" title="Radiation Sources"></iframe>
 ```
-
 
 ## Radiation Safety
 
