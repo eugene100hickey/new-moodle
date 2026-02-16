@@ -232,6 +232,8 @@ uranium |>
     - negative $\beta$ decay: $p \rightarrow n \; + \; e^+$ $\beta^+$
     
     - orbital electron capture: $p \; + \; e^-$ \rightarrow n$ $\epsilon$
+
+- $\beta$ decay is via the *weak force*, because of this the half lives tend to be quite long.
     
 ##
 
@@ -240,7 +242,38 @@ uranium |>
 - the reactions above are missing something
 
     - protons, electrons, and neutrons are all spin 1/2. 
+    
+    - also find spectrum of energy for the emitted $\beta$ particles
+    
+- answer is the neutrino
 
+   - $\beta$ decay: $n \rightarrow p \; + \; e^- \; + \; \bar{\nu}$ 
+   
+## 
+
+### Neutrinos
+
+-   vaste numbers produced in the Sun
+    -   1 trillion solar $\nu$'s pass through you every second
+    -   you'll only absorb one in your lifetime
+-   really hard to detect
+    -   take an old gold mine in South Dakota
+    -   fill it with cleaning fluid
+    -   wait
+    -   about once a day get $\nu _{e}+\ ^{37}Cl\longrightarrow \ ^{37}Ar^{+}+e^{-}$
+
+## 
+
+### Neutrinos
+
+-   following on from Homestake, other neutrino observatories such as:
+    -   SuperKamiokande in Japan
+    -   Sudbury (SNO) in Ontario
+    -   IceCube at the South Pole (literally) - $1km^3$
+-   in February 1987, sudden burst of $\nu$'s detected at various neutrino observatories
+    -   several hours later, light from a supernova in a nearby galaxy reached Earth
+    -   first time we'd seen this
+ 
 ## Sources of Radiation
 
 ### $\alpha$ particles
