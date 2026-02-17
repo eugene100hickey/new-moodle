@@ -22,17 +22,17 @@ editor: visual
 
 ## Summary
 
-Radioactivity is the spontaneous emission of high energy particles due to the decay of unstable nuclei
+Radioactivity is the spontaneous emission of high energy particles due to the decay of unstable nuclei. We'll look at the types of radiation, their sources, how they effect the elements we see in nature, and the safety implications of radioactivity.
 
 ## Contents
 
 1.  types of radiation
-1. $\alpha \; decay$
-1. $\beta \; decay$
-1. $\gamma \; rays$
-2.  Radioactive decay series
-4.  safety aspects of radioactivity
-6.  measurement of radiation / units radiation limits
+2.  $\alpha \; decay$
+3.  $\beta \; decay$
+4.  $\gamma \; rays$
+5.  Radioactive decay series
+6.  safety aspects of radioactivity
+7.  measurement of radiation / units radiation limits
 
 ## 
 
@@ -51,8 +51,7 @@ z <- tribble(~parameter, ~alpha, ~beta, ~gamma,
              "penetration", "cm's in air, sheet of paper", "mm's of aluminium", "cm's of lead",
              "ionise atoms", "strongly", "weakly", "very weakly",
              "speed", "10% speed of light", "50% light", "speed of light",
-             "typical energy", "5MeV", "1MeV", "100keV",
-             "detectors", "photo film", "G-M tube", "G-M tube")
+             "typical energy", "5MeV", "1MeV", "100keV")
 z |> gt() |> 
   cols_label(parameter = "",
              alpha = html("&alpha;"),
@@ -91,102 +90,109 @@ z |> gt() |>
 
 ## $\alpha$ decay
 
-- $\alpha$ decay is caused by Coulomb Repulsion between protons
+::: {style="font-size: 80%;"}
 
-    - binding energy increase as **A**
+-   $\alpha$ decay is caused by Coulomb Repulsion between protons
+
+    -   binding energy increase as **A**
+
+    -   Coulomb repulsion increases as **$Z^2$**
+
+    -   heavy nuclei want to offload some nucleons
     
-    - Coulomb repulsion increases as **$Z^2$**
-    
-    - heavy nuclei want to offload some nucleons
-    
-    - energetically, emitting a single proton or neutron  or some lighter nuclei (e.g. $^3_1H$) not possible
-    
-        - but $^4_2He$ unusually stable
-    
-##
+         - almost everything with A > 190 is energetically unstable
+         
+         - but for some lifetimes are so long we don't consider them radioactive, e.g. $^{204}Pb$ with half-life of $1.4 \times 10^{17}$ years.
+         
+         - also, sometimes $\beta$ deacy more likely so it masks the $\alpha$'s.
+
+    -   energetically, emitting a single proton or neutron or some lighter nuclei (e.g. $^3_1H$) not possible
+
+        -   but $^4_2He$ unusually stable
+
+:::
+
+## 
 
 ### Energy in $\alpha$ Decay
 
-- energy released given by the differences in rest masses
+-   energy released given by the differences in rest masses
 
-    - $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
-    
-    - or, in terms of binding energy:
-    
-        - $Q \; = \; A_{daughter} BE_{daughter}  + 4BE_{\alpha}-  A_{parent} BE_{parent}$
-    
-    - typical figures of about 4MeV
-    
-        - this is much less than particle rest mass energies
-        
-        - so non-relativistic
+    -   $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
+
+    -   or, in terms of binding energy:
+
+        -   $Q \; = \; A_{daughter} BE_{daughter}  + 4BE_{\alpha}-  A_{parent} BE_{parent}$
+
+    -   typical figures of about 4MeV
+
+        -   this is much less than particle rest mass energies
+
+        -   so non-relativistic
 
 ## 
 
-::: {.callout-tip collapse="false"}
+::: {style="font-size: 85%;"}
 
+::: {.callout-tip collapse="false"}
 ## $\alpha$ particle energy release from $^{226}Ra$ to $^{222}Rn$
 
-- $^{226}Ra \; mass  \; = \; 226.0253 \; g/mol$
+-   $^{226}Ra \; mass  \; = \; 226.0253 \; g/mol$
 
-- $^{222}Rn \; mass  \; = \; 222.0175 \; g/mol$
+-   $^{222}Rn \; mass  \; = \; 222.0175 \; g/mol$
 
-- $^{4}He \; mass  \; = \; 4.002604 \; g/mol$
+-   $^{4}He \; mass  \; = \; 4.002604 \; g/mol$
 
-- $(226.0253 - 222.0175 - 4.002604) \times (1.660539\times10^{-27}) \times c^2/1.60218\times 10^{-19}$ 
+-   $(226.0253 - 222.0175 - 4.002604) \times (1.660539\times10^{-27}) \times c^2/1.60218\times 10^{-19}$
 
 = $\; 4.84MeV$
 
-- compares to experimental value of 4.78MeV
-
+-   compares to experimental value of 4.78MeV
 :::
 
 ::: {.callout-tip collapse="true"}
-
 ## Using Binding Energies
 
-- $^{226}Ra \; BE  \; = \; 7.6620 \; MeV/nucleon$
+-   $^{226}Ra \; BE  \; = \; 7.6620 \; MeV/nucleon$
 
-- $^{222}Rn \; BE  \; = \; 7.6945 \; MeV/nucleon$
+-   $^{222}Rn \; BE  \; = \; 7.6945 \; MeV/nucleon$
 
-- $^{4}He \; BE  \; = \; 7.0739 \; MeV/nucleon$
+-   $^{4}He \; BE  \; = \; 7.0739 \; MeV/nucleon$
 
-- $(7.6945 \times 222 + 7.0739 \times 4 - 7.6620 \times 228) = 4.87MeV$
-
+-   $(7.6945 \times 222 + 7.0739 \times 4 - 7.6620 \times 228) = 4.87MeV$
 :::
 
+:::
 
 ## 
 
-::: {style="font-size: 90%;"}
+::: {style="font-size: 85%;"}
+### How is this energy shared between $\alpha$ and Daughter Nucleus - Momentum Conservation
 
-### How is this energy shared between  $\alpha$ and Daughter Nucleus - Momentum Conservation
+-   total energy released is $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
 
-- total energy released is $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
+-   this is equal to the kinetic enegies, T, of the daughter nucleus and the $\alpha$
 
-- this is equal to the kinetic enegies, T,  of the daughter nucleus and the $\alpha$
+-   assume parent nucleus at rest, so for momentum $p_{daughter} \; = \; p_{\alpha}$
 
-- assume parent nucleus at rest, so for momentum $p_{daughter} \; = \; p_{\alpha}$
+-   as these are non-relativistic, we can use Kinetic Energy = $\frac{p^2}{2m}$
 
-- as these are non-relativistic, we can use Kinetic Energy = $\frac{p^2}{2m}$
+-   get $Q \; = T_{\alpha} \; + \; T_d \; = \; \frac{p_{\alpha}^2}{2m_{\alpha}} \; + \; \frac{p_d^2}{2m_d} \; = \; p_{\alpha}^2(\frac{1}{2m_{\alpha}} + \frac{1}{m_d})$
 
-- get $Q \; = T_{\alpha} \; + \; T_d \; = \; \frac{p_{\alpha}^2}{2m_{\alpha}} \; + \; \frac{p_d^2}{2m_d} \; = \; p_{\alpha}^2(\frac{1}{2m_{\alpha}} + \frac{1}{m_d})$
+-   get $T_{\alpha} = \frac{Q}{(1+\frac{m_{\alpha}}{m_d})} \approx \; Q(1 - \frac{m_{\alpha}}{m_d})$
 
-- get $T_{\alpha} = \frac{Q}{(1+\frac{m_{\alpha}}{m_d})} \approx \; Q(1 - \frac{m_{\alpha}}{m_d})$
+-   for 4MeV $\alpha$ decays, daughter nucleus gets about 100keV.
 
-- for 4MeV $\alpha$ decays, daughter nucleus gets about 100keV.
-
-    - enough to escape surface of material
-    
+    -   enough to escape surface of material
 :::
 
-##
+## 
 
 ### Relation between Half-Lives and $\alpha$ energies
 
-- $\alpha$'s with high energies come from nuclei with short half-lives
+-   $\alpha$'s with high energies come from nuclei with short half-lives
 
-    - note how adding neutrons stabilises nucleus
+    -   note how adding neutrons stabilises nucleus
 
 ```{r geiger-nuttal}
 #| echo: false
@@ -203,21 +209,26 @@ library(scales)
 font_add(family = "Ink Free", regular = "../../fonts/Inkfree.ttf")
 showtext_auto()
 
-uranium <- tribble(~isotope, ~half_life, ~Q,
-                   "U238", 1.408416e+17, 4.19,
-                   "U236", 7.39079e+14, 4.50,
-                   "U234", 7.747391e+12, 4.77,
-                   "U232", 2174318640, 5.41,
-                   "U230", 1771200, 5.99,
-                   "U228", 546, 6.804)
+uranium <- tribble(~isotope, ~half_life, ~Q, ~series,
+                   "U238", 1.408416e+17, 4.19, "U",
+                   "U236", 7.39079e+14, 4.50, "U",
+                   "U234", 7.747391e+12, 4.77, "U",
+                   "U232", 2174318640, 5.41, "U",
+                   "U230", 1771200, 5.99, "U",
+                   "U228", 546, 6.804, "U",
+                   "Th232", 4.449622e+17, 4.01, "Th",
+                   "Th230", 2.524608e+12, 4.68, "Th",
+                   "Th228", 6027501600, 5.42, "Th",
+                   "Th226", 1836, 6.451, "Th")
 uranium |> 
-  ggplot(aes(Q, half_life)) + 
+  ggplot(aes(Q, half_life, group = series)) + 
   geom_line() + 
-  labs(title = TeX("Log Half-Life versus $\\alpha$ Energy for Even-Even Isotopes of Uranium"),
+  labs(title = TeX("Log Half-Life versus $\\alpha$ Energy for Some Even-Even Isotopes"),
       y = "Isotope Half-Life (s)",
       x = "Q (MeV)") +
   scale_y_log10(labels = label_log(digits = 2)) +
-  geom_label(aes(label = isotope), text.colour = "firebrick4", size = 16) +
+  geom_label(aes(label = isotope, colour = series), size = 16, show.legend = F) +
+  scale_colour_manual(values = c("firebrick4", "darkblue")) +
   theme_minimal() + 
   theme(text = element_text(family = "Ink Free", size = 62), 
         plot.title = element_text(size = 72, hjust = 1))
@@ -225,30 +236,30 @@ uranium |>
 
 ## $\beta$ Decay
 
-- actually three types of $\beta$ decay
+-   actually three types of $\beta$ decay
 
-    - negative $\beta$ decay: $n \rightarrow p \; + \; e^-$ $\beta^-$
-    
-    - negative $\beta$ decay: $p \rightarrow n \; + \; e^+$ $\beta^+$
-    
-    - orbital electron capture: $p \; + \; e^-$ \rightarrow n$ $\epsilon$
+    -   negative $\beta$ decay: $n \rightarrow p \; + \; e^-$  this is $\beta^-$
 
-- $\beta$ decay is via the *weak force*, because of this the half lives tend to be quite long.
-    
-##
+    -   negative $\beta$ decay: $p \rightarrow n \; + \; e^+$  this is $\beta^+$
+
+    -   orbital electron capture: $p \; + \; e^- \rightarrow n$ this is $\epsilon$
+
+-   $\beta$ decay is via the *weak force*, because of this the half lives tend to be quite long.
+
+## 
 
 ### Neutrinos
 
-- the reactions above are missing something
+-   the reactions above are missing something
 
-    - protons, electrons, and neutrons are all spin 1/2. 
-    
-    - also find spectrum of energy for the emitted $\beta$ particles
-    
-- answer is the neutrino
+    -   protons, electrons, and neutrons are all spin 1/2.
 
-   - $\beta$ decay: $n \rightarrow p \; + \; e^- \; + \; \bar{\nu}$ 
-   
+    -   also find spectrum of energy for the emitted $\beta$ particles
+
+-   answer is the neutrino
+
+    -   $\beta$ decay: $n \rightarrow p \; + \; e^- \; + \; \bar{\nu}$
+
 ## 
 
 ### Neutrinos
@@ -273,7 +284,7 @@ uranium |>
 -   in February 1987, sudden burst of $\nu$'s detected at various neutrino observatories
     -   several hours later, light from a supernova in a nearby galaxy reached Earth
     -   first time we'd seen this
- 
+
 ## Sources of Radiation
 
 ### $\alpha$ particles
@@ -313,11 +324,9 @@ uranium |>
 <iframe width="1000" height="800" src="https://www.nndc.bnl.gov/nudat3/" title="Radiation Sources"></iframe>
 ```
 
-
 ## Decay Series
 
-- $\alpha$ decay changes nuclear mass by 4 units, $\beta$ and $\gamma$ don't change it at all. Means there are 4 *families* of nuclei.
-
+-   $\alpha$ decay changes nuclear mass by 4 units, $\beta$ and $\gamma$ don't change it at all. Means there are 4 *families* of nuclei.
 
 ```{r decay-chains}
 #| echo: false
@@ -351,10 +360,9 @@ z |> gt() |>
   tab_options(table.font.size = 24)
 ```
 
-##
+## 
 
 ![](images/thorium-series.png)
-
 
 ## Radiation Safety
 
