@@ -103,7 +103,7 @@ z |> gt() |>
 
         -   but for some lifetimes are so long we don't consider them radioactive, e.g. $^{204}Pb$ with half-life of $1.4 \times 10^{17}$ years.
 
-        -   also, sometimes $\beta$ decay more likely so it masks the $\alpha$'s.
+        -   also, sometimes $\beta$ deacy more likely so it masks the $\alpha$'s.
 
     -   energetically, emitting a single proton or neutron or some lighter nuclei (e.g. $^3_1H$) not possible
 
@@ -386,6 +386,88 @@ z |> gt() |>
 -   buildings from before 1950's
     -   fine, because so draughty
 
+## Radioactive Decay Laws
+
+-   decay of individual nucleus is a totally random process, occurs with certain probability in a certain time period
+-   for large numbers of nuclei can use statistics
+-   rate of disintegrations from a nuclear source is proportional to the number of radioactive nuclei present
+
+## 
+
+::: callout-tip
+## Mathematics of Radioactive exponential decay
+
+-   $-\frac{dN}{dt}\;\alpha\;N$
+-   $-\frac{dN}{dt}\;=\;\lambda\;N$
+-   $N\;=\;N_0e^{-\lambda t}$
+:::
+
+-   where N is the number of radioactive nuclei present at a particular time
+-   $-\frac{dN}{dt}$ is the rate of decrease in N.
+-   $N_o$ is the original number of nuclei present.
+-   $\lambda$ is called the radioactive decay constant and depends on the nature of the nucleus
+
+## Radioactive Half Life, $t_{1/2}$
+
+<br>
+
+-   a convenient way of discribing radioactive decay is in terms of the radioactive half life, $t_{1/2}$ .
+-   the half life is defined as the time taken for the number of radioactive nuclei present in a source to fall to half it’s original value.
+-   half lives of naturally occurring radioisotopes vary over a wide range
+    -   $3 \times 10^{-7}$s ($^{212}Po$) to $1.4 \times 10^{10}$years ($^{232}Th$)
+
+## 
+
+<br> <br> <br>
+
+::: callout-tip
+## the half life is related to the decay constant by:
+
+-   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+:::
+
+## Radioactive Decay Curve
+
+```{r decay_curve}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(ggrepel)
+library(showtext)
+library(ggtext)
+library(envalysis)
+
+font_add(family = "Ink Free", regular = "assets/Inkfree.ttf")
+showtext_auto()
+
+time0 <- seq(0, 5, by = 0.001)
+n0 <- 100*exp(-time0*log(2))
+
+
+z <- tibble(half_lives = time0, number = n0)
+
+x_lines <- tibble(x = 0, xend = 1:4, y = 100/c(2, 4, 8, 16), 
+                  colour = c("#570700", "#bb2517", "#f25c4e", "#ffbcb4"))
+y_lines <- tibble(x = 1:4, y = 0, yend = 100/c(2, 4, 8, 16), 
+                  colour = c("#570700", "#bb2517", "#f25c4e", "#ffbcb4"))
+
+z |> ggplot(aes(half_lives, number)) +
+  geom_line(size = 2, colour = "firebrick4") +
+  labs(title = "Radioactive Decay Curve",
+       x = "Number of Half-Lives (t<sub>1/2</sub>)",
+       y = "Percentage of Number of Initial Nuclei Left") +
+  geom_segment(data = x_lines, aes(x = x, xend = xend, y = y, yend = y, colour = colour), 
+               linetype = 2) +
+  geom_segment(data = y_lines, aes(x = x, xend = x, y = y, yend = yend, colour = colour), 
+               linetype = 2) +
+  scale_color_identity() + 
+  coord_cartesian(expand = FALSE) +
+  theme_publish(base_size = 32, base_family = "Ink Free", base_linewidth = 0.7) +
+  theme(axis.title = element_markdown())
+```
+
 ## Measurement of Radiation
 
 ### Activity
@@ -443,7 +525,7 @@ z |> gt() |>
 
 -   Radon - 1mSv per year
 -   CT scans - 0.8mSv per year
--   Nuclear Medicine - 0.4mSv per year
+-   Nuclear Medcine - 0.4mSv per year
 -   Cosmic Rays - 0.15mSv per year
 -   internal radiation (mostly potassium, $^{40}K$) 0.03mSv per year
 -   get total of about $10\mu Sv$ per day. Below legal limit.
@@ -451,14 +533,9 @@ z |> gt() |>
 ## Equations
 
 ::: {style="font-size: 80%;"}
+-   $N\;=\;N_0e^{-\lambda t}$
 
-- $^A_ZParent\;=>\;^{A-4}_{Z-2}Daughter\;+\;\alpha$
-
-- $^A_ZP\;=>\;^{A}_{Z+1}D\;+\;\beta^- \; + \; \bar{\nu}$
-
-- $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
-
-- $Q \; = \; A_{daughter} BE_{daughter}  + 4BE_{\alpha}-  A_{parent} BE_{parent}$
+-   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
 
 -   $Bq = Ci \times 3.7\times10^{10}$
 
