@@ -37,6 +37,8 @@ include-in-header:
 
 -   [08 Vectors II Tutorial](https://tud.netlify.app/lectures/sports/tutorials/08-vectorsII.pdf){target="_blank"}
 
+-   [Lab Exam Preparation](https://tud.netlify.app/lectures/sports/laboratory/Lab-Exam-2026-prep.pdf){target="_blank"}
+
 -   [Graph Rules](https://tud.netlify.app/graph-rules#1)
 
 ## Nuclear Lectures

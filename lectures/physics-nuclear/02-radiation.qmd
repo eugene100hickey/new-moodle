@@ -450,7 +450,7 @@ z |> gt() |>
 
 ## Equations
 
-::: {style="font-size: 80%;"}
+::: {style="font-size: 70%;"}
 
 - $^A_ZParent\;=>\;^{A-4}_{Z-2}Daughter\;+\;\alpha$
 
