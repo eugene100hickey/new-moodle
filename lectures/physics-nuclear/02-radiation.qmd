@@ -299,8 +299,8 @@ uranium |>
 -   They can be prepared by irradiating target nuclei with neutrons ( e.g. $^{125}I$ for thryoid treatments ).
 -   The beta emitter $^{14}C$ is produced by cosmic rays in the upper atmosphere
 -   bigger range of energies than $\alpha$ particles
-    -   3.5MeV for $^{137}_{54}Xe \; \rightarrow \; ^{137}_{55}Cs \;+ \; \beta \; + \; \nu$
-    -   18keV for $^{3}_{1}T \; \rightarrow \; ^{3}_{2}He \;+ \; \beta \; + \; \nu$
+    -   3.5MeV for $^{137}_{54}Xe \; \rightarrow \; ^{137}_{55}Cs \;+ \; \beta \; + \; \bar{\nu}$
+    -   18keV for $^{3}_{1}T \; \rightarrow \; ^{3}_{2}He \;+ \; \beta \; + \; \bar{\nu}$
 
 ## 
 
@@ -450,15 +450,14 @@ z |> gt() |>
 
 ## Equations
 
-::: {style="font-size: 70%;"}
+::: {style="font-size: 65%;"}
+-   $^A_ZParent\;=>\;^{A-4}_{Z-2}Daughter\;+\;\alpha$
 
-- $^A_ZParent\;=>\;^{A-4}_{Z-2}Daughter\;+\;\alpha$
+-   $^A_ZP\;=>\;^{A}_{Z+1}D\;+\;\beta^- \; + \; \bar{\nu}$
 
-- $^A_ZP\;=>\;^{A}_{Z+1}D\;+\;\beta^- \; + \; \bar{\nu}$
+-   $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
 
-- $Q \; = (M_{parent} \; - \; M_{daughter} \; - \; M_{\alpha}) \times c^2$
-
-- $Q \; = \; A_{daughter} BE_{daughter}  + 4BE_{\alpha}-  A_{parent} BE_{parent}$
+-   $Q \; = \; A_{daughter} BE_{daughter}  + 4BE_{\alpha}-  A_{parent} BE_{parent}$
 
 -   $Bq = Ci \times 3.7\times10^{10}$
 
