@@ -23,6 +23,8 @@ include-in-header:
 
 -   [03 Work and Energy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/03-work_energy_metabolism.pdf){target="_blank"}
 
+-   [02a BioEnergy](https://tud.netlify.app/lectures/sports/02a-bioenergy.pdf){target="_blank"}
+
 -   [04 BioEnergy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/04-bioEnergy.pdf){target="_blank"}
 
 -   [03 Circular Motion](https://tud.netlify.app/lectures/sports/03-circular_motion.pdf){target="_blank"}

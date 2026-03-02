@@ -26,14 +26,12 @@ editor: visual
 
 ::: {style="font-size: 90%;"}
 The stability of the nucleus relies on the short range nuclear force. The models produced can account for the nature and energy of radiation products, the results of scattering experiments, and the range of isotopes across the table of elements. We get a measure of stability, the *binding energy per nucleon* that peaks around iron. Lighter elements will look to fuse together (fusion) and heavier elements to split apart (fission). Makes a source of tremendous amounts of energy.
-
 :::
 
 ## Contents
 
 1.  Nuclear Fission
-1. Nuclear Fusion
-
+2.  Nuclear Fusion
 
 ## Nuclear Fission
 
@@ -111,6 +109,21 @@ The stability of the nucleus relies on the short range nuclear force. The models
 
 -   typically 80-300MW per reactor
 
+## Proton-Proton Cycle
+
+$^1 H + ^1 H \rightarrow ^2 H + e^+ + \mu$
+
+$^2 H + ^1 H \rightarrow ^3 He + \gamma$
+
+$^3 He + ^3 He \rightarrow ^4 He + 2\;^1 H+ + \gamma$
+
+$N(t) = N_0\;e^{-\lambda t} $
+
+$t_{1/2} = \frac{log_e2}{\lambda} = \frac{0.693}{\lambda}$
+
+$\hbar = 1.0546 \times 10^{-34} Js$
+
+
 ## Fusion Reactors
 
 -   use $^{3}T$ or $^{2}D$ (tritium or deuterium)
@@ -128,8 +141,6 @@ The stability of the nucleus relies on the short range nuclear force. The models
 -   Large science effort, current leaders are Lawrence Livermore in California (laser) and ITER in Cadarache in France (tokomak)
 
 ## Equations
-
-
 
 ## References {.smaller}
 

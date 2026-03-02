@@ -483,3 +483,4 @@ z |> gt() |>
 -   [Radiation doses - David Ruzic](https://www.youtube.com/watch?v=ugGVrI8pi6w&list=PLYcMUdmtJe6sdgkK0xQL7SbH6Y6MTOLq9&index=2){target="_blank"}
 -   [ABC's of Radiation - David Ruzic](https://www.youtube.com/watch?v=qjkTzk8NAxM){target="_blank"}
 -   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
+-   [Radioactive decay series](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5139105&c=UERG&ppg=1610){target="_blank"}
