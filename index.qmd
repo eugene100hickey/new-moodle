@@ -43,6 +43,8 @@ include-in-header:
 
 -   [Graph Rules](https://tud.netlify.app/graph-rules#1)
 
+-   [May 2025 Exam Paper](https://tud.netlify.app/lectures/sports/exams/may-2025.pdf){target="_blank"}
+
 ## Nuclear Lectures
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
