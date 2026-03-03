@@ -1,5 +1,5 @@
 ---
-title: "03- Nuclear Energy"
+title: "03 - Nuclear Energy"
 author:
   - name: Nuclear Physics PHYS2829
     orcid: 0000-0001-9813-9323
@@ -25,7 +25,10 @@ editor: visual
 <br>
 
 ::: {style="font-size: 90%;"}
-The stability of the nucleus relies on the short range nuclear force. The models produced can account for the nature and energy of radiation products, the results of scattering experiments, and the range of isotopes across the table of elements. We get a measure of stability, the *binding energy per nucleon* that peaks around iron. Lighter elements will look to fuse together (fusion) and heavier elements to split apart (fission). Makes a source of tremendous amounts of energy.
+The strength of the nuclear force leads to enormous energies. These can be released when there is a change in nuclear profile. In the last section, we saw $\alpha$, $\beta$, and $\gamma$ radiations with energies of the order of 1MeV. Energies of around 200MeV can be released when a heavy nucleus splits (**fission**), and ten times more when light nuclei combine (**fusion**). 
+
+In this section, we'll look at the physical sources of these energies, specific examples of nucleear reactions involving them, and the uses they have been put to.
+
 :::
 
 ## Contents
@@ -41,7 +44,23 @@ The stability of the nucleus relies on the short range nuclear force. The models
 
     -   B/A for $^{235}U$ = 7.59MeV, for $^{141}Ba$ = 8.8MeV, for $^{92}Kr$ = 7.83MeV
 
-## 
+## Reason for Nuclear Fission
+
+::: {style="font-size: 90%;"}
+
+- Coulomb repulsion is at the heart of nuclear fission
+
+    - remember, the binding energy per nucleon curve only dips down, giving a maximum around $^{56}Fe$, when we introduce the Coulomb repulsion term
+    
+    - a large nucleus can deform, no longer spherical. The increase in surface energy being offset by a larger distance between protons
+    
+    - consider the reaction above. If the $^{141}Ba$ and $^{92}Kr$ nuclei are just touching, their separation will be $1.2 \times \sqrt[3]{141} + 1.2 \times \sqrt[3]{92} = 11.66nm$
+    
+    - the potential energy will be given by $E = \frac{1}{4\pi\epsilon_0} \frac{q_1q_2}{r} \approx 250MeV$ where the charge on $^{141}Ba$ is $56 \times e$ and on $^{92}Kr$ is $36 \times e$
+
+:::
+
+##
 
 -   During fission several neutrons are emitted by each nucleus and these cause further fission
     -   can cause a chain reaction
