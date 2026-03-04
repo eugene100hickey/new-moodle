@@ -25,10 +25,9 @@ editor: visual
 <br>
 
 ::: {style="font-size: 90%;"}
-The strength of the nuclear force leads to enormous energies. These can be released when there is a change in nuclear profile. In the last section, we saw $\alpha$, $\beta$, and $\gamma$ radiations with energies of the order of 1MeV. Energies of around 200MeV can be released when a heavy nucleus splits (**fission**), and ten times more when light nuclei combine (**fusion**). 
+The strength of the nuclear force leads to enormous energies. These can be released when there is a change in nuclear profile. In the last section, we saw $\alpha$, $\beta$, and $\gamma$ radiations with energies of the order of 1MeV. Energies of around 200MeV can be released when a heavy nucleus splits (**fission**), and ten times more when light nuclei combine (**fusion**).
 
 In this section, we'll look at the physical sources of these energies, specific examples of nucleear reactions involving them, and the uses they have been put to.
-
 :::
 
 ## Contents
@@ -38,7 +37,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ## Nuclear Fission
 
--   During Fission, a heavy isotope splits into two or more fragments , this binding energy is released during the process. Nuclear reactors and Atomic bombs make use of this. A typical reaction is $^1n\; +\; ^{235}U \rightarrow \;^{236}U \rightarrow \;^{141}Ba +\; ^{92}Kr +  3 ^1n$
+-   During Fission, a heavy isotope splits into two or more fragments, binding energy is released during the process. Nuclear reactors and Atomic bombs make use of this. A typical reaction is $^1n\; +\; ^{235}U \rightarrow \;^{236}U \rightarrow \;^{141}Ba +\; ^{92}Kr +  3 ^1n$
 
 -   Approximately 200 MeV of energy is released per fission
 
@@ -47,19 +46,69 @@ In this section, we'll look at the physical sources of these energies, specific 
 ## Reason for Nuclear Fission
 
 ::: {style="font-size: 90%;"}
+-   Coulomb repulsion is at the heart of nuclear fission
 
-- Coulomb repulsion is at the heart of nuclear fission
+    -   remember, the binding energy per nucleon curve only dips down, giving a maximum around $^{56}Fe$, when we introduce the Coulomb repulsion term
 
-    - remember, the binding energy per nucleon curve only dips down, giving a maximum around $^{56}Fe$, when we introduce the Coulomb repulsion term
-    
-    - a large nucleus can deform, no longer spherical. The increase in surface energy being offset by a larger distance between protons
-    
-    - consider the reaction above. If the $^{141}Ba$ and $^{92}Kr$ nuclei are just touching, their separation will be $1.2 \times \sqrt[3]{141} + 1.2 \times \sqrt[3]{92} = 11.66nm$
-    
-    - the potential energy will be given by $E = \frac{1}{4\pi\epsilon_0} \frac{q_1q_2}{r} \approx 250MeV$ where the charge on $^{141}Ba$ is $56 \times e$ and on $^{92}Kr$ is $36 \times e$
+    -   a large nucleus can deform, no longer spherical. The increase in surface energy being offset by a larger distance between protons
 
+    -   consider the reaction above. If the $^{141}Ba$ and $^{92}Kr$ nuclei are just touching, their separation will be $1.2 \times \sqrt[3]{141} + 1.2 \times \sqrt[3]{92} = 11.66nm$
+
+    -   the potential energy will be given by $E = \frac{1}{4\pi\epsilon_0} \frac{q_1q_2}{r} \approx 250MeV$ where the charge on $^{141}Ba$ is $56 \times e$ and on $^{92}Kr$ is $36 \times e$
 :::
 
+## Spontaneous Fission
+
+- spontaneous fission is rare, all but the heaviest nuclei will decay by $\alpha$ particle emission with much higher probability
+
+    - anything with A > 300 will do this straight away
+
+- examples include $^{238}U$, $^{240}Pu$, $^{252}Cf$
+
+- the heavy nuclei will split into two daughter nuclei
+    
+    - $^{252}Cf \rightarrow ^{140}Cs + ^{109}Tc + 3 ^1n$
+    
+    - one daughter nucleus significantly heavier than the other
+    
+    - also, a batch of neutrons emitted
+    
+## Stimulated Fission
+
+- rather than waiting around for spontaneous fission, we can prompt it to happen by bambarding a heavy nucleus with neutrons
+
+    - $^{235}U  + ^1n \rightarrow ^{236}U$
+    
+    - $^{236}U$ is even-even and more stable than $^{235}U$
+    
+    - adding this neutron leads to a $^{236}U$ having extra energy
+    
+    - B/A for $^{235}U$ is 7.590907 MeV/nucleon, for $^{236}U$ it's 7.586477 MeV/nucleon
+    
+        - gives 6.54 MeV after absorbing neutron
+        
+        - enough to quantum tunnel through fission barrier
+        
+##
+
+- case for stimulated emission from $^{238}U$ more complicated
+
+    - again, looking to do this by absorbing a neutron
+
+    - $^{238}U$ is already even-even, $^{239}U$ is even-odd
+    
+        - B/A for $^{238}U$ is 7.570120 MeV/nucleon, for $^{239}U$ 7.558557 MeV/nucleon
+        
+        - only get 4.81 MeV by absorbing neutron
+        
+        - not close enough to potential barrier to tunnel
+        
+        - absorbed neutron needs to arrive with ~1MeV extra energy
+        
+## Absorbing Neutrons
+
+- slow neutrons (called thermal) much more easily absorbed 
+        
 ##
 
 -   During fission several neutrons are emitted by each nucleus and these cause further fission
