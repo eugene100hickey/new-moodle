@@ -360,13 +360,32 @@ In this section, we'll look at the physical sources of these energies, specific 
 
     - yield from explosion give by :
     
-    $(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439 \; \times 1.6605 \times 10^{-27}$
+    $(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439 \; \times 1.6605 \times 10^{-27} \; \times \; efficiency$
     
     $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \div \; e$ Joules
     
     $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
 
 :::
+
+##
+
+### Effect of Nuclear Bomb
+
+- blast radius in km about cubed root of enegy in kilotons TNT
+
+    - at this radius get pressure wave of 1/4 bar
+    
+    - debris at 200 km/hr
+    
+    - 3rd degree burns on exposed tissue
+    
+    - several Sv 
+    
+- ground burst explosions can sweep up debris combining them with fission productsand carry lethal doses of radiation for many tens of km
+
+- air bursts can spread fission proucts over even larger areas
+
 
 ## Proton-Proton Cycle
 
