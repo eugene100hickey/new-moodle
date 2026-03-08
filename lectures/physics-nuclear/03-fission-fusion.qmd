@@ -189,7 +189,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 - let's look at these in four issues:
 
-    1. lots, maybe 10%, of the total fission energy comees from these subsequent decays
+    1. lots, maybe 10%, of the total fission energy comes from these subsequent decays
     
     1. the longer lived ($t_{\frac{1}{2}} \approx \; years$) fragments are hazardous waste
     
@@ -204,7 +204,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ### 1/ $\beta$ after heat energy
 
-::: {style="font-size: 90%;"}
+::: {style="font-size: 75%;"}
 
 - remember, about 200MeV per fission
 
@@ -255,6 +255,8 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ### 3/ Reactor Poisons
 
+::: {style="font-size: 85%;"}
+
 - ~6.4% of $^{235}U$ fissions produce $^{135}I$
 
 - $^{135}I$ decays over 6.7 hours into $^{135}Xe$
@@ -271,16 +273,22 @@ In this section, we'll look at the physical sources of these energies, specific 
     
     - lead to Chernobyl tragedy
 
+:::
+
 ##
 
--   Fission bomb types
+### 4/ Useful Fission Products
 
-    -   gun type (*Little Boy* dropped on Hiroshima)
-    -   implosion type (*Fat Man* dropped on Nagasaki)
+- most notable are $^{131}I$ (8 days)and $^{132}I$ (2.3 hours)
 
--   The large numbers of neutrons produced in a reactor can be used to produce nuclear transformations in suitable elements producing radioisotopes for therapy, tracing etc.
+    - iodine radiation used in the diagnosis and treatment of thyroid disorders
+    
+- $^{90}Sr$ (28.91 years) can be used as an energy source
 
-
+    - $^{90}Sr$ emits $\beta^-$ becoming $^{90}Y$ (64 hours) then becoming $^{90}Zr$ which is stable
+    
+    - very few $\gamma$ rays emitted so not hard to shield all radiation
+    
 ## Fission Reactors
 
 -   natural Uranium is about 1% $^{235}U$ (mostly $^{238}U$)
@@ -291,7 +299,9 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 -   $^{239}Pu$ also fissionable
 
-## 4<sup>th</sup> Generation Reactors - SMR
+##
+
+### 4<sup>th</sup> Generation Reactors - SMR
 
 -   small and modular can be transported by road
 
@@ -308,6 +318,55 @@ In this section, we'll look at the physical sources of these energies, specific 
 -   cost about €3B, take \~ 10 years
 
 -   typically 80-300MW per reactor
+    
+## Fission Bombs
+
+::: {style="font-size: 80%;"}
+
+- in contrast to nuclear reactors, in a bomb an uncontrolled fission chain reaction is needed
+
+- want as many neutrons as possible, and has to happen fast
+
+    - only *prompt* neutrons important here
+    
+- need to reduce neutron losses from the surface
+
+    - pellet of $^{235}U$ needs to be big enough to reduce surface / volume ratio
+    
+    - typically 10kg minimum
+    
+- need high purity $^{235}U$ or $^{239}Pu$
+
+- need to ensure the nuclei get a chance to fission before bomb blows itself apart
+
+    - mean free path of fast neutrons in $^{235}U$ is about 10cm
+
+:::
+
+##
+
+### Fission bomb types
+
+::: {style="font-size: 80%;"}
+
+- two solutions to that last problem:
+
+    -   gun type - $^{235}U$ (*Little Boy* dropped on Hiroshima)
+    
+    -   implosion type - $^{239}Pu$ (*Fat Man* dropped on Nagasaki and *Trinity* test in Nevada)
+    
+
+- in the cases above, only a few percent of the fissile material actually fissioned
+
+    - yield from explosion give by :
+    
+    $(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439 \; \times 1.6605 \times 10^{-27}$
+    
+    $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \div \; e$ Joules
+    
+    $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
+
+:::
 
 ## Proton-Proton Cycle
 
