@@ -61,7 +61,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 -   spontaneous fission is rare, all but the heaviest nuclei (but, all the really heavy nuclei) will decay by $\alpha$ particle emission with much higher probability
 
-    -   anything with A \> 300 will do this straight away
+    -   anything with A > 300 will do this straight away
 
 -   examples include $^{238}U$, $^{240}Pu$, $^{252}Cf$
 
@@ -153,7 +153,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ## Controlled Fission Power
 
-::: {style="font-size: 80%;"}
+::: {style="font-size: 85%;"}
 
 - natural uranium is 99.28% $^{238}U$, only 0.72% $^{235}U$
 
@@ -176,6 +176,100 @@ In this section, we'll look at the physical sources of these energies, specific 
     -   critical mass (about 50kg for $^{235}U$)
     
 :::
+
+## Significant Fission Products
+
+::: {style="font-size: 90%;"}
+
+- fission produces two daughter nuclei, one heavy (A ~ 140) and one lighter (A ~ 95)
+
+- the two daughter products after fission will be neutron rich
+
+    - tend to decay by $\beta$ emission
+
+- let's look at these in four issues:
+
+    1. lots, maybe 10%, of the total fission energy comees from these subsequent decays
+    
+    1. the longer lived ($t_{\frac{1}{2}} \approx \; years$) fragments are hazardous waste
+    
+    1. can interfere detrimentally with fission process. $^{135}Xe$ is the poster-child here.
+    
+    1. some of them can be useful
+
+:::
+
+##
+
+
+### 1/ $\beta$ after heat energy
+
+::: {style="font-size: 90%;"}
+
+- remember, about 200MeV per fission
+
+- this is followed by about 20MeV from $\beta$ decays of fragments
+
+- problem is that this mostly happens slowly, over hours or days
+
+- when nuclear power plant is shut down (control rods fully inserted) and fission stopped, large amounts of energy is still being produced
+
+- this is what happened in Fukishima in Japan in March 2011
+
+    - large earthquake and so plant was immediately shut down
+    
+    - but then tsunami knocked out all the cooling generators
+    
+    - after heat evaporated:
+    
+        - all the cooling water
+        
+        - melted the uranium cores
+        
+        - produced $H_2$ gas
+        
+        - and all four reactor buildings exploded
+
+:::
+
+##
+
+### 2/ Hazardous Waste
+
+- most of the fission products have short (~seconds) half lives
+
+- but some not
+
+    - $^{90}Sr$ with a half life of 28 years
+    
+    - $^{137}Cs$ also 28 years
+    
+    - $^{99}Tc$ with a half life of 210 thousand years
+    
+    - $^{129}I$ with a half life of 16 million years
+    
+- the strontium particularly worrisome as it is chemically similar to calcium
+
+
+##
+
+### 3/ Reactor Poisons
+
+- ~6.4% of $^{235}U$ fissions produce $^{135}I$
+
+- $^{135}I$ decays over 6.7 hours into $^{135}Xe$
+
+- $^{135}Xe$ has a freakishly large neutron absorbtion cross section and a half life of several hours
+
+- means reactor can't be restarted for several hours after a shut-down
+
+- $^{135}Xe$ will get burnt off during normal reactor operation
+
+    - but if reactor is idling at low power, $^{135}Xe$ will build up
+    
+    - curtails reactor control
+    
+    - lead to Chernobyl tragedy
 
 ##
 
