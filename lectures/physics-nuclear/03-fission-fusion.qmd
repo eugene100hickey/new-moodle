@@ -59,74 +59,125 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ## Spontaneous Fission
 
-- spontaneous fission is rare, all but the heaviest nuclei will decay by $\alpha$ particle emission with much higher probability
+-   spontaneous fission is rare, all but the heaviest nuclei (but, all the really heavy nuclei) will decay by $\alpha$ particle emission with much higher probability
 
-    - anything with A > 300 will do this straight away
+    -   anything with A \> 300 will do this straight away
 
-- examples include $^{238}U$, $^{240}Pu$, $^{252}Cf$
+-   examples include $^{238}U$, $^{240}Pu$, $^{252}Cf$
 
-- the heavy nuclei will split into two daughter nuclei
-    
-    - $^{252}Cf \rightarrow ^{140}Cs + ^{109}Tc + 3 ^1n$
-    
-    - one daughter nucleus significantly heavier than the other
-    
-    - also, a batch of neutrons emitted
-    
+-   the heavy nuclei will split into two daughter nuclei
+
+    -   $^{252}Cf \rightarrow ^{140}Cs + ^{109}Tc + 3 ^1n$
+
+    -   one daughter nucleus significantly heavier than the other
+
+    -   also, a batch of neutrons emitted
+
 ## Stimulated Fission
 
-- rather than waiting around for spontaneous fission, we can prompt it to happen by bambarding a heavy nucleus with neutrons
+-   rather than waiting around for spontaneous fission, we can prompt it to happen by bambarding a heavy nucleus with neutrons
 
-    - $^{235}U  + ^1n \rightarrow ^{236}U$
-    
-    - $^{236}U$ is even-even and more stable than $^{235}U$
-    
-    - adding this neutron leads to a $^{236}U$ having extra energy
-    
-    - B/A for $^{235}U$ is 7.590907 MeV/nucleon, for $^{236}U$ it's 7.586477 MeV/nucleon
-    
-        - gives 6.54 MeV after absorbing neutron
-        
-        - enough to quantum tunnel through fission barrier
-        
-##
+    -   $^{235}U  + ^1n \rightarrow ^{236}U$
 
-- case for stimulated emission from $^{238}U$ more complicated
+    -   $^{236}U$ is even-even and more stable than $^{235}U$
 
-    - again, looking to do this by absorbing a neutron
+    -   adding this neutron leads to a $^{236}U$ having extra energy
 
-    - $^{238}U$ is already even-even, $^{239}U$ is even-odd
-    
-        - B/A for $^{238}U$ is 7.570120 MeV/nucleon, for $^{239}U$ 7.558557 MeV/nucleon
-        
-        - only get 4.81 MeV by absorbing neutron
-        
-        - not close enough to potential barrier to tunnel
-        
-        - absorbed neutron needs to arrive with ~1MeV extra energy
-        
+    -   B/A for $^{235}U$ is 7.590907 MeV/nucleon, for $^{236}U$ it's 7.586477 MeV/nucleon
+
+        -   gives 6.54 MeV after absorbing neutron
+
+        -   enough to quantum tunnel through fission barrier
+
+## 
+
+-   case for stimulated emission from $^{238}U$ more complicated
+
+    -   again, looking to do this by absorbing a neutron
+
+    -   $^{238}U$ is already even-even, $^{239}U$ is even-odd
+
+        -   B/A for $^{238}U$ is 7.570120 MeV/nucleon, for $^{239}U$ 7.558557 MeV/nucleon
+
+        -   only get 4.81 MeV by absorbing neutron
+
+        -   not close enough to potential barrier to tunnel
+
+        -   absorbed neutron needs to arrive with ~1MeV extra energy
+
 ## Absorbing Neutrons
 
-- slow neutrons (called thermal) much more easily absorbed 
-        
-##
+-   slow neutrons (called thermal) much more easily absorbed
 
+    - 584 barns at room temperature ($\frac{1}{40}eV$)
+    
+    - 1 barn at 1MeV
+    
+- means that fissioning $^{238}U$ (or $^{242}Pu$) is much more difficult than fissioning $^{235}U$ (or $^{239}Pu$).
+
+## Emitting Neutrons
+
+::: {style="font-size: 80%;"}
+
+- this will be crucial
+
+    - difference between making a power plant or making a bomb
+    
 -   During fission several neutrons are emitted by each nucleus and these cause further fission
-    -   can cause a chain reaction
+
+    - can cause a chain reaction
+
+        - these are called **Prompt** neutrons
+        
+        - appear within $10^{-12}s$ of fission
+    
+    
     -   reason for neutron emmission is to maintain proton/neutron ratio appropriate for atomic mass
+    
     -   fission products tend to be $\beta$ emitters
+    
+        - a small (~ 1%) but important number of these will emit neutrons 
+        
+        - these are called **Delayed** neutrons
+        
+        - couldn't regulate a power plant without them
+        
+:::
+    
+##
+    
 -   number of neutrons (*k*) that propagate reaction is crucial
     -   if k \< 1 then reaction dies out
     -   if k \> 1 then explosion
     -   if k $\approx$ 1 then controlled power plant
 
-## 
+## Controlled Fission Power
+
+::: {style="font-size: 80%;"}
+
+- natural uranium is 99.28% $^{238}U$, only 0.72% $^{235}U$
+
+- usually need to enrich it to ~3% $^{235}U$
+
+- for $^{235}U$ typically get 2.5 neutrons per fission
+
+    - but these are *hot* neutrons, not easily absorbed
+    
+       - need to slow them down
+       
+       -   slow down by collisions with light nuclei
+    
+       -   ***moderator***, usually water (contains $^1H^+$) or heavy water (with deuterium) or graphite carbon
 
 -   control rods made from **Cadmium** can be used to absorb neutrons, keep k close to 1
 
 -   surface to volume ratio important
 
     -   critical mass (about 50kg for $^{235}U$)
+    
+:::
+
+##
 
 -   Fission bomb types
 
@@ -135,19 +186,6 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 -   The large numbers of neutrons produced in a reactor can be used to produce nuclear transformations in suitable elements producing radioisotopes for therapy, tracing etc.
 
-## Neutrons in Fission
-
--   absorbtion of neutron is what triggers fission
-
--   $^{235}U$ is even-odd, $^{236}U$ is even-even
-
-    -   lots of energy released into nucleus which bubbles inside before splitting it apart
-
--   neutron absorbtion is much more probable for *slow* (thermal, \~10eV) neutrons
-
-    -   but neutrons emitted in fission are hot (\~MeV)
-    -   slow down by collisions with light nuclei
-    -   ***moderator***, usually water (contains $^1H^+$) or graphite carbon
 
 ## Fission Reactors
 
