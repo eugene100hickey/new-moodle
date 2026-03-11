@@ -33,6 +33,14 @@ In this section, we'll look at the physical sources of these energies, specific 
 ## Contents
 
 1.  Nuclear Fission
+    1. Reasons for fission
+    1. Spontaneous fission
+    1. Stimulated fission
+    1. Neutrons in fission
+    1. Controlled fission
+    1. Fission products
+    1. Fission power plants
+    1. Fission bombs
 2.  Nuclear Fusion
 
 ## Nuclear Fission
@@ -61,7 +69,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 -   spontaneous fission is rare, all but the heaviest nuclei (but, all the really heavy nuclei) will decay by $\alpha$ particle emission with much higher probability
 
-    -   anything with A > 300 will do this straight away
+    -   anything with A \> 300 will do this straight away
 
 -   examples include $^{238}U$, $^{240}Pu$, $^{252}Cf$
 
@@ -103,49 +111,46 @@ In this section, we'll look at the physical sources of these energies, specific 
 
         -   not close enough to potential barrier to tunnel
 
-        -   absorbed neutron needs to arrive with ~1MeV extra energy
+        -   absorbed neutron needs to arrive with \~1MeV extra energy
 
 ## Absorbing Neutrons
 
 -   slow neutrons (called thermal) much more easily absorbed
 
-    - 584 barns at room temperature ($\frac{1}{40}eV$)
-    
-    - 1 barn at 1MeV
-    
-- means that fissioning $^{238}U$ (or $^{242}Pu$) is much more difficult than fissioning $^{235}U$ (or $^{239}Pu$).
+    -   584 barns at room temperature ($\frac{1}{40}eV$)
+
+    -   1 barn at 1MeV
+
+-   means that fissioning $^{238}U$ (or $^{242}Pu$) is much more difficult than fissioning $^{235}U$ (or $^{239}Pu$).
 
 ## Emitting Neutrons
 
-::: {style="font-size: 80%;"}
+::: {style="font-size: 75%;"}
+-   this will be crucial
 
-- this will be crucial
+    -   difference between making a power plant or making a bomb
 
-    - difference between making a power plant or making a bomb
-    
 -   During fission several neutrons are emitted by each nucleus and these cause further fission
 
-    - can cause a chain reaction
+    -   can cause a chain reaction
 
-        - these are called **Prompt** neutrons
-        
-        - appear within $10^{-12}s$ of fission
-    
-    
+        -   these are called **Prompt** neutrons
+
+        -   appear within $10^{-12}s$ of fission
+
     -   reason for neutron emmission is to maintain proton/neutron ratio appropriate for atomic mass
-    
+
     -   fission products tend to be $\beta$ emitters
-    
-        - a small (~ 1%) but important number of these will emit neutrons 
-        
-        - these are called **Delayed** neutrons
-        
-        - couldn't regulate a power plant without them
-        
+
+        -   a small (\~ 1%) but important number of these will emit neutrons
+
+        -   these are called **Delayed** neutrons
+
+        -   couldn't regulate a power plant without them
 :::
-    
-##
-    
+
+## 
+
 -   number of neutrons (*k*) that propagate reaction is crucial
     -   if k \< 1 then reaction dies out
     -   if k \> 1 then explosion
@@ -153,142 +158,132 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ## Controlled Fission Power
 
-::: {style="font-size: 85%;"}
+::: {style="font-size: 80%;"}
+-   natural uranium is 99.28% $^{238}U$, only 0.72% $^{235}U$
 
-- natural uranium is 99.28% $^{238}U$, only 0.72% $^{235}U$
+-   usually need to enrich it to \~3% $^{235}U$
 
-- usually need to enrich it to ~3% $^{235}U$
+-   for $^{235}U$ typically get 2.5 neutrons per fission
 
-- for $^{235}U$ typically get 2.5 neutrons per fission
+    -   but these are *hot* neutrons, not easily absorbed
 
-    - but these are *hot* neutrons, not easily absorbed
-    
-       - need to slow them down
-       
-       -   slow down by collisions with light nuclei
-    
-       -   ***moderator***, usually water (contains $^1H^+$) or heavy water (with deuterium) or graphite carbon
+        -   need to slow them down
+
+        -   slow down by collisions with light nuclei
+
+        -   ***moderator***, usually water (contains $^1H^+$) or heavy water (with deuterium) or graphite carbon
 
 -   control rods made from **Cadmium** can be used to absorb neutrons, keep k close to 1
 
 -   surface to volume ratio important
 
     -   critical mass (about 50kg for $^{235}U$)
-    
 :::
 
 ## Significant Fission Products
 
-::: {style="font-size: 90%;"}
+::: {style="font-size: 85%;"}
+-   fission produces two daughter nuclei, one heavy (A \~ 140) and one lighter (A \~ 95)
 
-- fission produces two daughter nuclei, one heavy (A ~ 140) and one lighter (A ~ 95)
+-   the two daughter products after fission will be neutron rich
 
-- the two daughter products after fission will be neutron rich
+    -   tend to decay by $\beta$ emission
 
-    - tend to decay by $\beta$ emission
+-   let's look at these in four issues:
 
-- let's look at these in four issues:
+    1.  lots, maybe 10%, of the total fission energy comes from these subsequent decays
 
-    1. lots, maybe 10%, of the total fission energy comes from these subsequent decays
-    
-    1. the longer lived ($t_{\frac{1}{2}} \approx \; years$) fragments are hazardous waste
-    
-    1. can interfere detrimentally with fission process. $^{135}Xe$ is the poster-child here.
-    
-    1. some of them can be useful
+    2.  the longer lived ($t_{\frac{1}{2}} \approx \; years$) fragments are hazardous waste
 
+    3.  can interfere detrimentally with fission process. $^{135}Xe$ is the poster-child here.
+
+    4.  some of them can be useful
 :::
 
-##
-
+## 
 
 ### 1/ $\beta$ after heat energy
 
-::: {style="font-size: 75%;"}
+::: {style="font-size: 70%;"}
+-   remember, about 200MeV per fission
 
-- remember, about 200MeV per fission
+-   this is followed by about 20MeV from $\beta$ decays of fragments
 
-- this is followed by about 20MeV from $\beta$ decays of fragments
+-   problem is that this mostly happens slowly, over hours or days
 
-- problem is that this mostly happens slowly, over hours or days
+-   when nuclear power plant is shut down (control rods fully inserted) and fission stopped, large amounts of energy is still being produced
 
-- when nuclear power plant is shut down (control rods fully inserted) and fission stopped, large amounts of energy is still being produced
+-   this is what happened in Fukishima in Japan in March 2011
 
-- this is what happened in Fukishima in Japan in March 2011
+    -   large earthquake and so plant was immediately shut down
 
-    - large earthquake and so plant was immediately shut down
-    
-    - but then tsunami knocked out all the cooling generators
-    
-    - after heat evaporated:
-    
-        - all the cooling water
-        
-        - melted the uranium cores
-        
-        - produced $H_2$ gas
-        
-        - and all four reactor buildings exploded
+    -   but then tsunami knocked out all the cooling generators
 
+    -   after heat evaporated:
+
+        -   all the cooling water
+
+        -   melted the uranium cores
+
+        -   produced $H_2$ gas
+
+        -   and all four reactor buildings exploded
 :::
 
-##
+## 
 
 ### 2/ Hazardous Waste
 
-- most of the fission products have short (~seconds) half lives
+-   most of the fission products have short (\~seconds) half lives
 
-- but some not
+-   but some not
 
-    - $^{90}Sr$ with a half life of 28 years
-    
-    - $^{137}Cs$ also 28 years
-    
-    - $^{99}Tc$ with a half life of 210 thousand years
-    
-    - $^{129}I$ with a half life of 16 million years
-    
-- the strontium particularly worrisome as it is chemically similar to calcium
+    -   $^{90}Sr$ with a half life of 28 years
 
+    -   $^{137}Cs$ also 28 years
 
-##
+    -   $^{99}Tc$ with a half life of 210 thousand years
+
+    -   $^{129}I$ with a half life of 16 million years
+
+-   the strontium particularly worrisome as it is chemically similar to calcium
+
+## 
 
 ### 3/ Reactor Poisons
 
 ::: {style="font-size: 85%;"}
+-   \~6.4% of $^{235}U$ fissions produce $^{135}I$
 
-- ~6.4% of $^{235}U$ fissions produce $^{135}I$
+-   $^{135}I$ decays over 6.7 hours into $^{135}Xe$
 
-- $^{135}I$ decays over 6.7 hours into $^{135}Xe$
+-   $^{135}Xe$ has a freakishly large neutron absorbtion cross section and a half life of 9.1 hours
 
-- $^{135}Xe$ has a freakishly large neutron absorbtion cross section and a half life of several hours
+-   means reactor can't be restarted for several hours after a shut-down
 
-- means reactor can't be restarted for several hours after a shut-down
+-   $^{135}Xe$ will get burnt off during normal reactor operation
 
-- $^{135}Xe$ will get burnt off during normal reactor operation
+    -   but if reactor is idling at low power, $^{135}Xe$ will build up
 
-    - but if reactor is idling at low power, $^{135}Xe$ will build up
-    
-    - curtails reactor control
-    
-    - lead to Chernobyl tragedy
+    -   curtails reactor control
 
+    -   lead to Chernobyl tragedy
 :::
 
-##
+## 
 
 ### 4/ Useful Fission Products
 
-- most notable are $^{131}I$ (8 days)and $^{132}I$ (2.3 hours)
+-   most notable are $^{131}I$ (8 days)and $^{132}I$ (2.3 hours)
 
-    - iodine radiation used in the diagnosis and treatment of thyroid disorders
-    
-- $^{90}Sr$ (28.91 years) can be used as an energy source
+    -   iodine radiation used in the diagnosis and treatment of thyroid disorders
 
-    - $^{90}Sr$ emits $\beta^-$ becoming $^{90}Y$ (64 hours) then becoming $^{90}Zr$ which is stable
-    
-    - very few $\gamma$ rays emitted so not hard to shield all radiation
-    
+-   $^{90}Sr$ (28.91 years) can be used as an energy source
+
+    -   $^{90}Sr$ emits $\beta^-$ becoming $^{90}Y$ (64 hours) then becoming $^{90}Zr$ which is stable
+
+    -   very few $\gamma$ rays emitted so not hard to shield all radiation
+
 ## Fission Reactors
 
 -   natural Uranium is about 1% $^{235}U$ (mostly $^{238}U$)
@@ -299,7 +294,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 -   $^{239}Pu$ also fissionable
 
-##
+## 
 
 ### 4<sup>th</sup> Generation Reactors - SMR
 
@@ -318,74 +313,68 @@ In this section, we'll look at the physical sources of these energies, specific 
 -   cost about €3B, take \~ 10 years
 
 -   typically 80-300MW per reactor
-    
+
 ## Fission Bombs
 
 ::: {style="font-size: 80%;"}
+-   in contrast to nuclear reactors, in a bomb an uncontrolled fission chain reaction is needed
 
-- in contrast to nuclear reactors, in a bomb an uncontrolled fission chain reaction is needed
+-   want as many neutrons as possible, and has to happen fast
 
-- want as many neutrons as possible, and has to happen fast
+    -   only *prompt* neutrons important here
 
-    - only *prompt* neutrons important here
-    
-- need to reduce neutron losses from the surface
+-   need to reduce neutron losses from the surface
 
-    - pellet of $^{235}U$ needs to be big enough to reduce surface / volume ratio
-    
-    - typically 10kg minimum
-    
-- need high purity $^{235}U$ or $^{239}Pu$
+    -   pellet of $^{235}U$ needs to be big enough to reduce surface / volume ratio
 
-- need to ensure the nuclei get a chance to fission before bomb blows itself apart
+    -   typically 10kg minimum
 
-    - mean free path of fast neutrons in $^{235}U$ is about 10cm
+-   need high purity $^{235}U$ or $^{239}Pu$
 
+-   need to ensure the nuclei get a chance to fission before bomb blows itself apart
+
+    -   mean free path of fast neutrons in $^{235}U$ is about 10cm
 :::
 
-##
+## 
 
 ### Fission bomb types
 
 ::: {style="font-size: 80%;"}
-
-- two solutions to that last problem:
+-   two solutions to that last problem:
 
     -   gun type - $^{235}U$ (*Little Boy* dropped on Hiroshima)
-    
+
     -   implosion type - $^{239}Pu$ (*Fat Man* dropped on Nagasaki and *Trinity* test in Nevada)
-    
 
-- in the cases above, only a few percent of the fissile material actually fissioned
+-   in the cases above, only a few percent of the fissile material actually fissioned
 
-    - yield from explosion give by :
-    
+    -   yield from explosion give by :
+
     $(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439 \; \times 1.6605 \times 10^{-27} \; \times \; efficiency$
-    
-    $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \div \; e$ Joules
-    
-    $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
 
+    $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \div \; e$ Joules
+
+    $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
 :::
 
-##
+## 
 
 ### Effect of Nuclear Bomb
 
-- blast radius in km about cubed root of enegy in kilotons TNT
+-   blast radius in km about cubed root of enegy in kilotons TNT
 
-    - at this radius get pressure wave of 1/4 bar
-    
-    - debris at 200 km/hr
-    
-    - 3rd degree burns on exposed tissue
-    
-    - several Sv 
-    
-- ground burst explosions can sweep up debris combining them with fission productsand carry lethal doses of radiation for many tens of km
+    -   at this radius get pressure wave of 1/4 bar
 
-- air bursts can spread fission proucts over even larger areas
+    -   debris at 200 km/hr
 
+    -   3rd degree burns on exposed tissue
+
+    -   several Sv
+
+-   ground burst explosions can sweep up debris combining them with fission productsand carry lethal doses of radiation for many tens of km
+
+-   air bursts can spread fission proucts over even larger areas
 
 ## Proton-Proton Cycle
 
