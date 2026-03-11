@@ -32,6 +32,10 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ## Contents
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 1.  Nuclear Fission
     1. Reasons for fission
     1. Spontaneous fission
@@ -41,7 +45,16 @@ In this section, we'll look at the physical sources of these energies, specific 
     1. Fission products
     1. Fission power plants
     1. Fission bombs
+    
+:::
+
+::: {.column width="50%"}
+    
 2.  Nuclear Fusion
+
+:::
+
+::::
 
 ## Nuclear Fission
 
