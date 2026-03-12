@@ -32,29 +32,23 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ## Contents
 
-:::: {.columns}
-
+::::: columns
 ::: {.column width="50%"}
-
 1.  Nuclear Fission
-    1. Reasons for fission
-    1. Spontaneous fission
-    1. Stimulated fission
-    1. Neutrons in fission
-    1. Controlled fission
-    1. Fission products
-    1. Fission power plants
-    1. Fission bombs
-    
+    1.  Reasons for fission
+    2.  Spontaneous fission
+    3.  Stimulated fission
+    4.  Neutrons in fission
+    5.  Controlled fission
+    6.  Fission products
+    7.  Fission power plants
+    8.  Fission bombs
 :::
 
 ::: {.column width="50%"}
-    
 2.  Nuclear Fusion
-
 :::
-
-::::
+:::::
 
 ## Nuclear Fission
 
@@ -73,7 +67,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
     -   a large nucleus can deform, no longer spherical. The increase in surface energy being offset by a larger distance between protons
 
-    -   consider the reaction above. If the $^{141}Ba$ and $^{92}Kr$ nuclei are just touching, their separation will be $1.2 \times \sqrt[3]{141} + 1.2 \times \sqrt[3]{92} = 11.66nm$
+    -   consider the reaction above. If the $^{141}Ba$ and $^{92}Kr$ nuclei are just touching, their separation will be $1.2 \times \sqrt[3]{141} + 1.2 \times \sqrt[3]{92} = 11.66fm$
 
     -   the potential energy will be given by $E = \frac{1}{4\pi\epsilon_0} \frac{q_1q_2}{r} \approx 250MeV$ where the charge on $^{141}Ba$ is $56 \times e$ and on $^{92}Kr$ is $36 \times e$
 :::
@@ -389,19 +383,125 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 -   air bursts can spread fission proucts over even larger areas
 
+
+## Nuclear Fusion
+
+::: {style="font-size: 80%;"}
+
+- now let's look at the left hand side of the Binding Energy per Nucleon curve
+
+- can climb towards the peak of the curve by combing light nuclei to the left of $^{56}Fe$
+
+- this is **_nuclear fusion_**
+
+- energy ggain is $\times$ 10 higher (curve is steeper)
+
+- _but_ have to overcome Coulomb barrrier before get close enough to combine
+
+- fusion is the energy source fueling stars, also thermonuclear weapons with destruction $\times$ 1000 of fission weapons (megatons TNT versus kilotons)
+
+- elusive prospect of fusion nuclear power stations
+
+    - limitless fuel
+    
+    - only short lived radiation by-products
+
+:::
+
+## Basic Fusion
+
+::: {style="font-size: 85%;"}
+
+- first step
+
+    - $^1H \; + ^1H \; \rightarrow \; ^2H \; + \; e^+ \; + \; \nu \:  \textbf{(Q = 1.44 MeV)}$  
+    
+    - note $^2He$ doesn't exist
+    
+- second steps (the deuterium-deuterium or D-D reactions)
+
+    - $^2H \; + ^2H \; \rightarrow \; ^4He \; + \gamma \: \textbf{(Q = 23.8 MeV)}$  
+    
+    - $^2H \; + ^2H \; \rightarrow \; ^3He \; + \; n \: \textbf{(Q = 3.3 MeV)}$  
+    
+    - $^2H \; + ^2H \; \rightarrow \; ^3H \; + p \: \textbf{(Q = 4.0 MeV)}$  
+    
+- the first of these is unlikely as the 23.8 MeV is so large is destroys the $^4He$ nucleus. Also, $^4He$ has no excited states to absorb some of this energy.
+
+:::
+
+##
+
+::: {style="font-size: 85%;"}
+
+- or the deuterium-tritium (D-T) reaction
+
+    - $^2H \; + ^3H \; \rightarrow \; ^4He \; + n \: \textbf{(Q = 17.6 MeV)}$  
+
+- assuming the initial nuclei here have low kinetic energy, the 17.6 MeV is shared according to energy and momentum conservation giving 14.4 MeV neutrons
+
+    - nice source of high energy neutrons
+    
+    - this mechanism is the one usually tried for fusion power plants
+    
+    - but tricky to extract the energy from these high energy neutrons
+
+:::
+
+
+## Fusion in Stars
+
+::: {style="font-size: 80%;"}
+
+- first step, as above is:
+
+    - $^1H \; + ^1H \; \rightarrow \; ^2H \; + \; e^+ \; + \; \nu \:  \textbf{(Q = 1.44 MeV)}$ 
+ 
+- this step is the **_bottleneck_** in the solar fusion chain
+
+    - the $\nu$ in the reaction means it must feature a _weak_ interaction, low probability
+    
+    - in the core of the Sun, the temperature is about 15 million Kelvin and this gives a reaction rate of $5 \times 10^{-18} s^{-1}$ per proton.
+    
+    - but the Sun's core has lots of protons (maybe $10^{56}$)
+    
+    - get $10^{38}$ reactions per second
+    
+    - once deuterium formed it immediately cooks to $^3He$
+    
+        - $^2H \; + \; ^1H \; \rightarrow \; ^3He \; + \; \gamma \: \textbf{(Q = 5.49 MeV)}$  
+        
+:::
+
+##
+
+::: {style="font-size: 90%;"}
+
+- we now have a mix of lots of protons ($^1H$), a tiny amount of $^2H$, and some $^3He$.
+
+    - $^3He \; + \; ^1H \; \rightarrow \; ^4Li$  won't work as $^4Li$ unstable
+    
+    - so little $^2H$ around that's unlikely to be encountered by a $^3He$
+    
+    - instead get $^3He \; + \; ^3He \; \rightarrow \; ^4He \; + \; 2^1H \: \textbf{(Q = 12.86 MeV)}$ 
+    
+    
+- overall process is $4 \times ^1H \; \rightarrow \; ^4He \; + \; 2e^+ \; + 2\nu  \: \textbf{(Q = 26.7 MeV)}$
+
+
+- some of the 26.7 MeV lost to the neutrinos
+
+- we can account for solar luminosity of $3.827 \times 10^{26}W$
+
+- proton-proton cycle is engine in _Main Sequence_ stars
+
+:::
+
 ## Proton-Proton Cycle
 
-$^1 H + ^1 H \rightarrow ^2 H + e^+ + \mu$
 
-$^2 H + ^1 H \rightarrow ^3 He + \gamma$
+![](images/Proton-proton.png)
 
-$^3 He + ^3 He \rightarrow ^4 He + 2\;^1 H+ + \gamma$
-
-\$N(t) = N_0;e\^{-\lambda t} \$
-
-$t_{1/2} = \frac{log_e2}{\lambda} = \frac{0.693}{\lambda}$
-
-$\hbar = 1.0546 \times 10^{-34} Js$
 
 ## Fusion Reactors
 
