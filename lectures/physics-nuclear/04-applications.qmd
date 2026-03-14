@@ -271,23 +271,7 @@ uranium |>
 
 ## 
 
-
-$^1H \; + \; ^1H \; \rightarrow \; ^2H \; + \; e^+ \; + \; \nu$
-$^2H \; + \; ^2H \; \rightarrow \; ^4He \; + \; \gamma$
-$^2H \; + \; ^2H \; \rightarrow \; ^3He \; + n$
-$^2H \; + \; ^2H \; \rightarrow \; ^3H \; + \; p$
-$^2H \; + \; ^3H \; \rightarrow \; ^4He \; + \; n$
-$^2H \; + \; ^1H \; \rightarrow \; ^3He \; + \; \gamma$
-$^3H \; + \; ^1H \; \rightarrow \; ^4Li$
-$^3He \; + \; ^3He \; \rightarrow \; ^4He \; + \; 2\times ^1H + \; \gamma$
-$^4He \; + \; ^4He \; \rightarrow \; ^8Be$
-$^{12}C \; + \; ^4He \; \rightarrow \; ^{16}O \; + \; \gamma$
-$^{16}O \; + \; ^4He \; \rightarrow \; ^{20}Ne \; + \; \gamma$
-$^{20}Ne \; + \; ^4He \; \rightarrow \; ^{24}Mg \; + \; \gamma$
-$^{12}C \; + \; ^{12}C \; \rightarrow \; ^{20}Ne \; + \; ^4He$
-$^{16}O \; + \; ^{16}O \; \rightarrow \; ^{28}Si \; + \; ^4He$
-$^{12}C \; + \; ^{12}C \; \rightarrow \; ^{23}Na \; + \; ^1H$
-$^{16}O \; + \; ^{16}O \; \rightarrow \; ^{31}P \; + \; ^1H$
+$^1H \; + \; ^1H \; \rightarrow \; ^2H \; + \; e^+ \; + \; \nu$ $^2H \; + \; ^2H \; \rightarrow \; ^4He \; + \; \gamma$ $^2H \; + \; ^2H \; \rightarrow \; ^3He \; + n$ $^2H \; + \; ^2H \; \rightarrow \; ^3H \; + \; p$ $^2H \; + \; ^3H \; \rightarrow \; ^4He \; + \; n$ $^2H \; + \; ^1H \; \rightarrow \; ^3He \; + \; \gamma$ $^3H \; + \; ^1H \; \rightarrow \; ^4Li$ $^3He \; + \; ^3He \; \rightarrow \; ^4He \; + \; 2\times ^1H + \; \gamma$ $^4He \; + \; ^4He \; \rightarrow \; ^8Be$ $^{12}C \; + \; ^4He \; \rightarrow \; ^{16}O \; + \; \gamma$ $^{16}O \; + \; ^4He \; \rightarrow \; ^{20}Ne \; + \; \gamma$ $^{20}Ne \; + \; ^4He \; \rightarrow \; ^{24}Mg \; + \; \gamma$ $^{12}C \; + \; ^{12}C \; \rightarrow \; ^{20}Ne \; + \; ^4He$ $^{16}O \; + \; ^{16}O \; \rightarrow \; ^{28}Si \; + \; ^4He$ $^{12}C \; + \; ^{12}C \; \rightarrow \; ^{23}Na \; + \; ^1H$ $^{16}O \; + \; ^{16}O \; \rightarrow \; ^{31}P \; + \; ^1H$
 
 ### Neutrinos
 
