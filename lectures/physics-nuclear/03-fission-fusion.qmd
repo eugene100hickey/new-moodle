@@ -394,7 +394,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 - this is **_nuclear fusion_**
 
-- energy ggain is $\times$ 10 higher (curve is steeper)
+- energy gain is $\times$ 10 higher (curve is steeper)
 
 - _but_ have to overcome Coulomb barrrier before get close enough to combine
 
@@ -453,6 +453,8 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ::: {style="font-size: 80%;"}
 
+- want to make $^4He$ from $ 4 \; \times \; ^1H$
+
 - first step, as above is:
 
     - $^1H \; + ^1H \; \rightarrow \; ^2H \; + \; e^+ \; + \; \nu \:  \textbf{(Q = 1.44 MeV)}$ 
@@ -461,7 +463,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
     - the $\nu$ in the reaction means it must feature a _weak_ interaction, low probability
     
-    - in the core of the Sun, the temperature is about 15 million Kelvin and this gives a reaction rate of $5 \times 10^{-18} s^{-1}$ per proton.
+    - in the core of the Sun, the temperature is about 15 million Kelvin and this gives a reaction rate of $5 \times 10^{-18} s^{-1}$ per proton (hotter would be faster).
     
     - but the Sun's core has lots of protons (maybe $10^{56}$)
     
@@ -502,6 +504,16 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ![](images/Proton-proton.png)
 
+
+## Stellar Nucleosynthesis - post Main Sequence
+
+- once $^1H$ depleted, core contracts and heats up
+
+- at ~ $10^8$ K (ten times hotter than our Sun) the $^4He$ - $^4He$ Coulomb barrier can be overcome
+
+    - $^4He \; + \; ^4He \; \rightarrow \; ^8Be$
+    
+    - but $^8Be$ is unstable and disintegrates again in about $10^{-16}s$ 
 
 ## Fusion Reactors
 
