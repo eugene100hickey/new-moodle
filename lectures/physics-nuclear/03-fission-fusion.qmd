@@ -498,50 +498,50 @@ In this section, we'll look at the physical sources of these energies, specific 
     -   $^4He \; + \; ^4He \; \rightarrow \; ^8Be$
 
     -   but $^8Be$ is unstable and disintegrates again in about $10^{-16}s$
-    
-##
-
-### Making $^{12}C$
-
-- lots of $^{12}C$ in the universe
-
-- need to be made from the $^8Be$ above
-
-- luckily there is a resonance with an excited state of the $^{12}C$ nucleus
-
-- so $^{8}Be \; + \; ^4He \; \rightarrow \; ^{12}C   \: \textbf{(Q = 7.45 MeV)}$
 
 ## 
 
-- once $^{12}C$ made, lots of subsequent reactions become possible
+### Making $^{12}C$
 
-    -  $^{12}C \; + \; ^4He \; \rightarrow \; ^{16}C   \: \textbf{(Q = 3.57 MeV)}$
-    
-    -  $^{16}O \; + \; ^4He \; \rightarrow \; ^{20}Ne   \: \textbf{(Q = 4.47 MeV)}$
-    
-    -  $^{20}Ne \; + \; ^4He \; \rightarrow \; ^{24}Mg   \: \textbf{(Q = 5.36 MeV)}$
-    
-    -  $^{12}C \; + \; ^{12}C \; \rightarrow \; ^{20}Ne \; + \; ^4He$
-    
-    -  $^{16}O \; + \; ^{16}O \; \rightarrow \; ^{28}Si \; + \; ^4He$
-    
-- at even higher temperatures get silicon burning to make elements up to $^{56}Ni$, $^{56}Co$, $^{56}Fe$
+-   lots of $^{12}C$ in the universe
 
-##
+-   need to be made from the $^8Be$ above
+
+-   luckily there is a resonance with an excited state of the $^{12}C$ nucleus
+
+-   so $^{8}Be \; + \; ^4He \; \rightarrow \; ^{12}C   \: \textbf{(Q = 7.45 MeV)}$
+
+## 
+
+-   once $^{12}C$ made, lots of subsequent reactions become possible
+
+    -   $^{12}C \; + \; ^4He \; \rightarrow \; ^{16}C   \: \textbf{(Q = 3.57 MeV)}$
+
+    -   $^{16}O \; + \; ^4He \; \rightarrow \; ^{20}Ne   \: \textbf{(Q = 4.47 MeV)}$
+
+    -   $^{20}Ne \; + \; ^4He \; \rightarrow \; ^{24}Mg   \: \textbf{(Q = 5.36 MeV)}$
+
+    -   $^{12}C \; + \; ^{12}C \; \rightarrow \; ^{20}Ne \; + \; ^4He$
+
+    -   $^{16}O \; + \; ^{16}O \; \rightarrow \; ^{28}Si \; + \; ^4He$
+
+-   at even higher temperatures get silicon burning to make elements up to $^{56}Ni$, $^{56}Co$, $^{56}Fe$
+
+## 
 
 ### Making Elements Beyond $^{56}Fe$
 
-- mechanism here is neutron capture
+-   mechanism here is neutron capture
 
-    - $^{56}Fe \; \rightarrow \; ^{57}Fe \; \rightarrow \; ^{58}Fe \; \rightarrow \; ^{59}Fe....$
-    
-    - this will proceed as long as the neutron rich nucleus survives
-    
-        - if neutron flux very large then neutron capture faster than $\beta$ decay and keep adding neutrons (**_r process_**)
-        
-        - if neutron flux less, then $\beta$ decays will happen moving element across periodic table (**_s process_**)
-        
-##
+    -   $^{56}Fe \; \rightarrow \; ^{57}Fe \; \rightarrow \; ^{58}Fe \; \rightarrow \; ^{59}Fe....$
+
+    -   this will proceed as long as the neutron rich nucleus survives
+
+        -   if neutron flux very large then neutron capture faster than $\beta$ decay and keep adding neutrons (***r process***)
+
+        -   if neutron flux less, then $\beta$ decays will happen moving element across periodic table (***s process***)
+
+## 
 
 ![](images/SProcess.png)
 
@@ -563,9 +563,28 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ## Fusion Bombs (Thermonuclear)
 
-- 
+::: {style="font-size: 90%;"}
 
-## Equations
+-   Need to create enormous temperatures to induce fusion
+
+    - use fission bomb as detonator
+    
+- fusion material itself starts as is solid lithium deuteride ($^6LiD$)
+
+    - $^{6}Li \; + \; n \; \rightarrow \; ^{3}H \; + \; ^4He    \: \textbf{(Q = 4.78  MeV)}$
+    
+    - the 4.78 MeV is shared between the tritium and the $^4He$
+    
+    - the tritium has enough energy to penetrate the Coulomb barrier and fuse with the deuterium
+    
+    - mostly, bomb surrounded by blanket of $^{238}U$, (hot) neutrons from the fusion process cause the $^{238}U$ to fission
+    
+    - about half the energy comes from this final fission process
+    
+    - weapons without the $^{238}U$ blanket will generate lots of neutrons but not so much radioactive isotopes
+
+:::
+    
 
 ## References {.smaller}
 
