@@ -367,7 +367,7 @@ In this section, we'll look at the physical sources of these energies, specific 
 
     $(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439 \; \times 1.6605 \times 10^{-27} \; \times \; efficiency$
 
-    $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \div \; e$ Joules
+    $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \times \; e$ Joules
 
     $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
 :::
@@ -595,11 +595,12 @@ In this section, we'll look at the physical sources of these energies, specific 
 ## Equations
 
 
-    $(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439 \; \times 1.6605 \times 10^{-27} \; \times \; efficiency$
+$(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439$
+$\times 1.6605 \times 10^{-27} \; \times \; efficiency$
 
-    $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \div \; e$ Joules
+$(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \times \; e$ Joules
 
-    $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
+$(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
 
 
 ## References {.smaller}
