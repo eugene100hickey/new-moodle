@@ -47,6 +47,13 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 ::: {.column width="50%"}
 2.  Nuclear Fusion
+
+    1. Basic Fusion
+    1. Fusion in Stars
+    1. Proton-Proton Cycle
+    1. Stellar Nucleosynthesis
+    1. Fusion Reactors
+    1. Fusion Bombs
 :::
 :::::
 
@@ -585,6 +592,15 @@ In this section, we'll look at the physical sources of these energies, specific 
 
 :::
     
+## Equations
+
+
+    $(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439 \; \times 1.6605 \times 10^{-27} \; \times \; efficiency$
+
+    $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \div \; e$ Joules
+
+    $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
+
 
 ## References {.smaller}
 
