@@ -48,12 +48,12 @@ In this section, we'll look at the physical sources of these energies, specific 
 ::: {.column width="50%"}
 2.  Nuclear Fusion
 
-    1. Basic Fusion
-    1. Fusion in Stars
-    1. Proton-Proton Cycle
-    1. Stellar Nucleosynthesis
-    1. Fusion Reactors
-    1. Fusion Bombs
+    1.  Basic Fusion
+    2.  Fusion in Stars
+    3.  Proton-Proton Cycle
+    4.  Stellar Nucleosynthesis
+    5.  Fusion Reactors
+    6.  Fusion Bombs
 :::
 :::::
 
@@ -571,37 +571,32 @@ In this section, we'll look at the physical sources of these energies, specific 
 ## Fusion Bombs (Thermonuclear)
 
 ::: {style="font-size: 90%;"}
-
 -   Need to create enormous temperatures to induce fusion
 
-    - use fission bomb as detonator
-    
-- fusion material itself starts as is solid lithium deuteride ($^6LiD$)
+    -   use fission bomb as detonator
 
-    - $^{6}Li \; + \; n \; \rightarrow \; ^{3}H \; + \; ^4He    \: \textbf{(Q = 4.78  MeV)}$
-    
-    - the 4.78 MeV is shared between the tritium and the $^4He$
-    
-    - the tritium has enough energy to penetrate the Coulomb barrier and fuse with the deuterium
-    
-    - mostly, bomb surrounded by blanket of $^{238}U$, (hot) neutrons from the fusion process cause the $^{238}U$ to fission
-    
-    - about half the energy comes from this final fission process
-    
-    - weapons without the $^{238}U$ blanket will generate lots of neutrons but not so much radioactive isotopes
+-   fusion material itself starts as is solid lithium deuteride ($^6LiD$)
 
+    -   $^{6}Li \; + \; n \; \rightarrow \; ^{3}H \; + \; ^4He    \: \textbf{(Q = 4.78  MeV)}$
+
+    -   the 4.78 MeV is shared between the tritium and the $^4He$
+
+    -   the tritium has enough energy to penetrate the Coulomb barrier and fuse with the deuterium
+
+    -   mostly, bomb surrounded by blanket of $^{238}U$, (hot) neutrons from the fusion process cause the $^{238}U$ to fission
+
+    -   about half the energy comes from this final fission process
+
+    -   weapons without the $^{238}U$ blanket will generate lots of neutrons but not so much radioactive isotopes
 :::
-    
+
 ## Equations
 
-
-$(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439$
-$\times 1.6605 \times 10^{-27} \; \times \; efficiency$
+$(number \; of \; fission \; events) \; = \; (mass \; of \; ^{235}U) \; \div \; 235.0439$ $\times 1.6605 \times 10^{-27} \; \times \; efficiency$
 
 $(yield \; in\; joules) \; = \; (number \; of \; fission \; events) \; \times \; (200MeV) \; \times \; e$ Joules
 
 $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.184 \times 10^{12}$ kilotons
-
 
 ## References {.smaller}
 
@@ -609,13 +604,13 @@ $(Yield \; in \; kilotons \; TNT) \; = \; (yield \; in\; joules) \; \div \; 4.18
 
 -   [Young & Freedman - chapter 43.6-8 (Reactions, Fission, & Fusion)](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1496){target="_blank"}
 
--   [Serway & Jewett - chapter 43.2 (Binding Energy)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+-   [Serway & Jewett - chapter 43.2 (Binding Energy)](https://research-ebsco-com.tudublin.idm.oclc.org/c/sr37fs/ebook-viewer/pdf/lh37eixz3f/page/pp_1182){target="_blank"}
 
--   [Serway & Jewett - chapter 43.3 (Nuclear Models)](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
+-   [Serway & Jewett - chapter 43.3 (Nuclear Models)](https://research-ebsco-com.tudublin.idm.oclc.org/c/sr37fs/ebook-viewer/pdf/lh37eixz3f/page/pp_1184?location=https%25253A%25252F%25252Fresearch-ebsco-com.tudublin.idm.oclc.org%25252Fc%25252Fsr37fs%25252Fsearch%25252Fdetails%25252Flh37eixz3f%25253Frequest-context%25253Dplink%252526db%25253Dnlebk%252526db%25253Dnlabk){target="_blank"}
 
--   [Serway & Jewett - chapter 43.7-10 (Reaction, Fission, & Fusion)](-%20%5BSerway%20&%20Jewett%20-%20chapter%2043.3%20(Nuclear%20Models)%5D(https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f)%7Btarget=%22_blank%22%7D){target="_blank"}
+-   [Serway & Jewett - chapter 43.7-10 (Reaction, Fission, & Fusion)](https://research-ebsco-com.tudublin.idm.oclc.org/c/sr37fs/ebook-viewer/pdf/lh37eixz3f/page/pp_1200){target="_blank"}
 
--   [4th Generation Fission Reactors](){target="_blank"}
+-   [4th Generation Fission Reactors](https://www.youtube.com/watch?v=_mJ3S-VQuHY){target="_blank"}
 
 -   [Nuclear Power from *Coursera*](https://www.coursera.org/learn/particle-physics/home/module/2){target="_blank"}
 
