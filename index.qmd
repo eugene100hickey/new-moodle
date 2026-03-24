@@ -59,6 +59,8 @@ include-in-header:
 
 -   [03 Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/03-fission-fusion.html){target="_blank"}
 
+-   [03 Tutorial - Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/tutorials/03-fission-fusion.pdf){target="_blank"}
+
 ## Physics-Quantum Lectures
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
