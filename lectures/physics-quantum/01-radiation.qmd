@@ -220,9 +220,7 @@ $^A_ZElement\;e.g.\;^4_2He\;has\; A=4\; and\; Z=2\; (sometimes\; just\;^4He)$
 
 ## 
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 ::: callout-tip
 ## the half life is related to the decay constant by:
@@ -296,14 +294,12 @@ z |> ggplot(aes(half_lives, number)) +
 ## Absorbed Dose
 
 ::: {style="font-size: 90%;"}
-
 -   This is the effect of the radiation on the absorbing material
 -   The SI unit for absorbed dose is the gray (Gy) which is the amount of radiation which deposits energy at a rate of 1 J / kg in any absorbing material.
     -   (The old unit was the rad ... 1 Gy = 100 rad)
 -   The absorbed dose depends on
     1.  the strength of a given radiation beam (number of particles per second)
     2.  the energy per particle but also on the type of material absorbing the radiation
-
 :::
 
 ## 

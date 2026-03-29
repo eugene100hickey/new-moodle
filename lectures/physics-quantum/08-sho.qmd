@@ -120,7 +120,7 @@ For the next application of the Schrödinger Equation, we'll look at a particle 
 
 ## Apply Schrödinger Equation
 
-$- \frac{\hbar^2}{2m} \frac{d ^2 \psi}{d ^2} + V \psi = E\psi$
+$- \frac{\hbar^2}{2m} \frac{d ^2 \psi}{dx ^2} + V \psi = E\psi$
 
 $V = \frac{1}{2} m \omega^2 x^2$
 
