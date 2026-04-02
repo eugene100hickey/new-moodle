@@ -22,27 +22,29 @@ editor: visual
 
 ## Summary
 
-Nuclear radiation can be very useful. We've already mentioned its use in medical diagnostics and therapy, and in the production of nuclear energy. In this section we'll discuss further applications such as _radiocarbon dating_, _radiometric dating of rocks_, chemical environment analysis by the _Mössbauer effect_, and _nuclear spins_.
+Nuclear radiation can be very useful. We've already mentioned its use in medical diagnostics and therapy, and in the production of nuclear energy. In this section we'll discuss further applications such as *radiocarbon dating*, *radiometric dating of rocks*, chemical environment analysis by the *Mössbauer effect*, and *nuclear spins*.
 
 ## Contents
 
 1.  Radioactive Decay Laws
 
-    - half lives and activities
-    
+    -   half lives and activities
+
 2.  Radioactive Dating
 
-    - radiocarbon dating of biological samples
-    
-    - dating rocks
-    
+    -   radiocarbon dating of biological samples
+
+    -   dating rocks
+
 3.  Mössbauer Spectroscopy
 
-1. Diagnostic Nuclear Medicine
+6.  Nuclear Spins
 
-1. Therapeutic Nuclear Medicine
+4.  Diagnostic Nuclear Medicine
 
-1. Nuclear Spins
+5.  Therapeutic Nuclear Medicine
+
+
 
 ## Radioactive Decay Laws
 
@@ -55,9 +57,14 @@ Nuclear radiation can be very useful. We've already mentioned its use in medical
 ::: callout-tip
 ## Mathematics of Radioactive exponential decay
 
+::: {style="font-size: 150%;"}
+
 -   $-\frac{dN}{dt}\;\alpha\;N$
 -   $-\frac{dN}{dt}\;=\;\lambda\;N$
 -   $N\;=\;N_0e^{-\lambda t}$
+
+:::
+
 :::
 
 -   where N is the number of radioactive nuclei present at a particular time
@@ -65,11 +72,11 @@ Nuclear radiation can be very useful. We've already mentioned its use in medical
 -   $N_o$ is the original number of nuclei present.
 -   $\lambda$ is called the radioactive decay constant and depends on the nature of the nucleus
 
-## Radioactive Half Life, $t_{1/2}$
+## Radioactive Half Life, $T_{1/2}$
 
 <br>
 
--   a convenient way of discribing radioactive decay is in terms of the radioactive half life, $t_{1/2}$ .
+-   a convenient way of discribing radioactive decay is in terms of the radioactive half life, $T_{1/2}$ .
 -   the half life is defined as the time taken for the number of radioactive nuclei present in a source to fall to half it’s original value.
 -   half lives of naturally occurring radioisotopes vary over a wide range
     -   $3 \times 10^{-7}$s ($^{212}Po$) to $1.4 \times 10^{10}$years ($^{232}Th$)
@@ -81,7 +88,13 @@ Nuclear radiation can be very useful. We've already mentioned its use in medical
 ::: callout-tip
 ## the half life is related to the decay constant by:
 
--   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+
+::: {style="font-size: 200%;"}
+
+-   $T_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+
+:::
+
 :::
 
 ## Radioactive Decay Curve
@@ -147,6 +160,106 @@ z |> ggplot(aes(half_lives, number)) +
     -   1 Bq = 1.0 disintegrations /sec
     -   This is the SI. unit (1 Ci = $3.7 \times 10^{10}$ Bq)
 
+## Radioactive Dating
+
+- we'll look at this in two regimes
+
+    - radiocarbon dating using $^{14}C$ for historic, biological samples
+    
+    - dating of rocks using $^{235}U$ / $^{207}Pb$ and $^{238}U$ / $^{206}Pb$
+    
+## Radiocarbon Dating - $^{14}C$
+
+- natural carbon has two isotopes ($^{12}C$ and $^{13}C$)
+
+- $^{14}C$ produced in the upper atmosphere ($^{14}N \; + \; ^1n \; \longrightarrow \; ^{14}C \; + \; ^1p$)
+
+    - those neutrons are produced by cosmic rays (mostly highly energy protons) striking other nuclei)
+
+- $^{14}C$ has a half-life of 5730 years and $\beta^-$ decays to $^{14}N$ (158keV)
+
+    - 1g of carbon produces about 15 decays per minute (0.255 Bq)
+    
+##
+
+::: {.callout-tip collapse="false"}
+## Radiocarbon dating
+
+- an archeological sample of 250mg of carbon exhibits a radioactivity of 5.1 mBq from $^{14}C$. Calculate the age of the sample.
+
+    - first calculate $\lambda$ from the half life
+    
+        - $\lambda \; = \; \frac{log_e(2)}{T_{1/2}} \;= \; \frac{0.693}{5730} \; = \; 121 \times 10^{-6} yr^{-1}$
+
+    - at time zero, 1g of carbon produces 0.255 Bq
+    
+    - our sample of 250mg produces 5.1 mBq
+    
+        - so if our sample was 1g we'd get $5.1 \; mBq \times \; \frac{1000}{250} \; = \; 20.4 \; mBq \; = \; 0.0204 Bq$
+        
+    - radioactivity (and thus total amount of $^{14}C$) has decreases by $\frac{0.0204}{0.255} \; = \; 0.08$
+    
+    - age of sample given by $t \; = \; \frac{log_e(0.08)}{-\lambda} \; = \; \frac{-2.5257}{121 \times 10^{-6}} \; = \; 20,873 \; years$
+
+
+:::
+
+
+##
+
+::: {.callout-tip collapse="false"}
+## Amount of $^{14}C$ in Carbon
+
+- given that natural carbon has a radioactivity of 0.255 Bq per gram from $^{14}C$,  calculate what fraction of carbon atoms are $^{14}C$.
+
+    - first calculate $\lambda$ from the half life, but this time in seconds
+    
+        - $\lambda \; = \; \frac{log_e(2)}{T_{1/2}} \;= \; \frac{0.693}{5730 \times 365.25 \times 24 \times 3600} \; = \; 3.833 \times 10^{-12} s^{-1}$
+    
+    - then calculate the number of $^{14}C$ atoms, N, in one gram from the activity:
+    
+        - $-\frac{dN(t)}{dt} \; = \; \lambda \; \times \; N \; = 0.255 s^{-1}$
+        
+        - $N \; = \; 0.255 / (3.833 \times 10^{-12} \; = \; 66.52 \times 10^{9} \; atoms/gram$
+
+    - then calculate the total of carbon atoms in one gram
+    
+        - $\frac{1}{12.011} \; \times \; 6.022 \times 10^{23} \; = \; 5.0137 \times 10^{22} \; atoms/gram$
+    
+    - take the ratio of the two to get
+    
+        - fraction of $^{14}C$ atoms to be $\frac{66.52 \times 10^{9}}{5.0137 \times 10^{22}} \; = \; 1.33 \times 10^{-12}$
+
+
+:::
+
+
+##
+
+### Limitations of $^{14}C$ dating
+
+::: {style="font-size: 80%;"}
+
+- assumes atmospheric content of $^{14}C$ has been stable over time (50,000 years)
+
+    - flux of cosmic rays adjusted by strength of Earth's magnetic dipole moment
+    
+        - e.g. magnetic dipole minimum 40,000 years ago lead to doubling of atmospheric $^{14}C$
+        
+    - geomagnetic latitudinal variation
+    
+        - more cosmic rays at high latitudes, but atmosphere pretty well mixed 
+        
+    - in recent times, burning fossil fuels has diluted $^{14}C$ levels whereas nuclear weapons testing in the 1950's has boosted the amount because of the number of neutrons emitted from atomic bombs
+        
+- time limitations
+    
+    - after ~50,000 years there won't be much $^{14}C$ left
+        
+    - measure $^{14}C$ directly using mass spectrometry rather than measuring radiation
+
+
+:::
 
 
 ## Equations

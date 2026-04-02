@@ -151,18 +151,24 @@ Nuclear Physics PHYS2829 <a href="https://orcid.org/0000-0001-9813-9323" class="
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
-<p>Radioactivity is the spontaneous emission of high energy particles due to the decay of unstable nuclei. We’ll look at the types of radiation, their sources, how they effect the elements we see in nature, and the safety implications of radioactivity.</p>
+<p>Nuclear radiation can be very useful. We’ve already mentioned its use in medical diagnostics and therapy, and in the production of nuclear energy. In this section we’ll discuss further applications such as <em>radiocarbon dating</em>, <em>radiometric dating of rocks</em>, chemical environment analysis by the <em>Mössbauer effect</em>, and <em>nuclear spins</em>.</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
 <ol type="1">
-<li>types of radiation</li>
-<li><span class="math inline">\(\alpha \; decay\)</span></li>
-<li><span class="math inline">\(\beta \; decay\)</span></li>
-<li><span class="math inline">\(\gamma \; rays\)</span></li>
-<li>Radioactive decay series</li>
-<li>safety aspects of radioactivity</li>
-<li>measurement of radiation / units radiation limits</li>
+<li><p>Radioactive Decay Laws</p>
+<ul>
+<li>half lives and activities</li>
+</ul></li>
+<li><p>Radioactive Dating</p>
+<ul>
+<li><p>radiocarbon dating of biological samples</p></li>
+<li><p>dating rocks</p></li>
+</ul></li>
+<li><p>Mössbauer Spectroscopy</p></li>
+<li><p>Nuclear Spins</p></li>
+<li><p>Diagnostic Nuclear Medicine</p></li>
+<li><p>Therapeutic Nuclear Medicine</p></li>
 </ol>
 </section>
 <section id="radioactive-decay-laws" class="slide level2">
@@ -184,11 +190,13 @@ Nuclear Physics PHYS2829 <a href="https://orcid.org/0000-0001-9813-9323" class="
 <p><strong>Mathematics of Radioactive exponential decay</strong></p>
 </div>
 <div class="callout-content">
+<div style="font-size: 150%;">
 <ul>
 <li><span class="math inline">\(-\frac{dN}{dt}\;\alpha\;N\)</span></li>
 <li><span class="math inline">\(-\frac{dN}{dt}\;=\;\lambda\;N\)</span></li>
 <li><span class="math inline">\(N\;=\;N_0e^{-\lambda t}\)</span></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -200,10 +208,10 @@ Nuclear Physics PHYS2829 <a href="https://orcid.org/0000-0001-9813-9323" class="
 </ul>
 </section>
 <section id="radioactive-half-life-t_12" class="slide level2">
-<h2>Radioactive Half Life, <span class="math inline">\(t_{1/2}\)</span></h2>
+<h2>Radioactive Half Life, <span class="math inline">\(T_{1/2}\)</span></h2>
 <p><br></p>
 <ul>
-<li>a convenient way of discribing radioactive decay is in terms of the radioactive half life, <span class="math inline">\(t_{1/2}\)</span> .</li>
+<li>a convenient way of discribing radioactive decay is in terms of the radioactive half life, <span class="math inline">\(T_{1/2}\)</span> .</li>
 <li>the half life is defined as the time taken for the number of radioactive nuclei present in a source to fall to half it’s original value.</li>
 <li>half lives of naturally occurring radioisotopes vary over a wide range
 <ul>
@@ -223,9 +231,11 @@ Nuclear Physics PHYS2829 <a href="https://orcid.org/0000-0001-9813-9323" class="
 <p><strong>the half life is related to the decay constant by:</strong></p>
 </div>
 <div class="callout-content">
+<div style="font-size: 200%;">
 <ul>
-<li><span class="math inline">\(t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}\)</span></li>
+<li><span class="math inline">\(T_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}\)</span></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -261,6 +271,123 @@ Nuclear Physics PHYS2829 <a href="https://orcid.org/0000-0001-9813-9323" class="
 <li>This is the SI. unit (1 Ci = <span class="math inline">\(3.7 \times 10^{10}\)</span> Bq)</li>
 </ul></li>
 </ul>
+</section>
+<section id="radioactive-dating" class="slide level2">
+<h2>Radioactive Dating</h2>
+<ul>
+<li><p>we’ll look at this in two regimes</p>
+<ul>
+<li><p>radiocarbon dating using <span class="math inline">\(^{14}C\)</span> for historic, biological samples</p></li>
+<li><p>dating of rocks using <span class="math inline">\(^{235}U\)</span> / <span class="math inline">\(^{207}Pb\)</span> and <span class="math inline">\(^{238}U\)</span> / <span class="math inline">\(^{206}Pb\)</span></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="radiocarbon-dating---14c" class="slide level2">
+<h2>Radiocarbon Dating - <span class="math inline">\(^{14}C\)</span></h2>
+<ul>
+<li><p>natural carbon has two isotopes (<span class="math inline">\(^{12}C\)</span> and <span class="math inline">\(^{13}C\)</span>)</p></li>
+<li><p><span class="math inline">\(^{14}C\)</span> produced in the upper atmosphere (<span class="math inline">\(^{14}N \; + \; ^1n \; \longrightarrow \; ^{14}C \; + \; ^1p\)</span>)</p>
+<ul>
+<li>those neutrons are produced by cosmic rays (mostly highly energy protons) striking other nuclei)</li>
+</ul></li>
+<li><p><span class="math inline">\(^{14}C\)</span> has a half-life of 5730 years and <span class="math inline">\(\beta^-\)</span> decays to <span class="math inline">\(^{14}N\)</span> (158keV)</p>
+<ul>
+<li>1g of carbon produces about 15 decays per minute (0.255 Bq)</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Radiocarbon dating</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>an archeological sample of 250mg of carbon exhibits a radioactivity of 5.1 mBq from <span class="math inline">\(^{14}C\)</span>. Calculate the age of the sample.</p>
+<ul>
+<li><p>first calculate <span class="math inline">\(\lambda\)</span> from the half life</p>
+<ul>
+<li><span class="math inline">\(\lambda \; = \; \frac{log_e(2)}{T_{1/2}} \;= \; \frac{0.693}{5730} \; = \; 121 \times 10^{-6} yr^{-1}\)</span></li>
+</ul></li>
+<li><p>at time zero, 1g of carbon produces 0.255 Bq</p></li>
+<li><p>our sample of 250mg produces 5.1 mBq</p>
+<ul>
+<li>so if our sample was 1g we’d get <span class="math inline">\(5.1 \; mBq \times \; \frac{1000}{250} \; = \; 20.4 \; mBq \; = \; 0.0204 Bq\)</span></li>
+</ul></li>
+<li><p>radioactivity (and thus total amount of <span class="math inline">\(^{14}C\)</span>) has decreases by <span class="math inline">\(\frac{0.0204}{0.255} \; = \; 0.08\)</span></p></li>
+<li><p>age of sample given by <span class="math inline">\(t \; = \; \frac{log_e(0.08)}{-\lambda} \; = \; \frac{-2.5257}{121 \times 10^{-6}} \; = \; 20,873 \; years\)</span></p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Amount of <span class="math inline">\(^{14}C\)</span> in Carbon</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>given that natural carbon has a radioactivity of 0.255 Bq per gram from <span class="math inline">\(^{14}C\)</span>, calculate what fraction of carbon atoms are <span class="math inline">\(^{14}C\)</span>.</p>
+<ul>
+<li><p>first calculate <span class="math inline">\(\lambda\)</span> from the half life, but this time in seconds</p>
+<ul>
+<li><span class="math inline">\(\lambda \; = \; \frac{log_e(2)}{T_{1/2}} \;= \; \frac{0.693}{5730 \times 365.25 \times 24 \times 3600} \; = \; 3.833 \times 10^{-12} s^{-1}\)</span></li>
+</ul></li>
+<li><p>then calculate the number of <span class="math inline">\(^{14}C\)</span> atoms, N, in one gram from the activity:</p>
+<ul>
+<li><p><span class="math inline">\(-\frac{dN(t)}{dt} \; = \; \lambda \; \times \; N \; = 0.255 s^{-1}\)</span></p></li>
+<li><p><span class="math inline">\(N \; = \; 0.255 / (3.833 \times 10^{-12} \; = \; 66.52 \times 10^{9} \; atoms/gram\)</span></p></li>
+</ul></li>
+<li><p>then calculate the total of carbon atoms in one gram</p>
+<ul>
+<li><span class="math inline">\(\frac{1}{12.011} \; \times \; 6.022 \times 10^{23} \; = \; 5.0137 \times 10^{22} \; atoms/gram\)</span></li>
+</ul></li>
+<li><p>take the ratio of the two to get</p>
+<ul>
+<li>fraction of <span class="math inline">\(^{14}C\)</span> atoms to be <span class="math inline">\(\frac{66.52 \times 10^{9}}{5.0137 \times 10^{22}} \; = \; 1.33 \times 10^{-12}\)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<h3 id="limitations-of-14c-dating">Limitations of <span class="math inline">\(^{14}C\)</span> dating</h3>
+<div style="font-size: 80%;">
+<ul>
+<li><p>assumes atmospheric content of <span class="math inline">\(^{14}C\)</span> has been stable over time (50,000 years)</p>
+<ul>
+<li><p>flux of cosmic rays adjusted by strength of Earth’s magnetic dipole moment</p>
+<ul>
+<li>e.g.&nbsp;magnetic dipole minimum 40,000 years ago lead to doubling of atmospheric <span class="math inline">\(^{14}C\)</span></li>
+</ul></li>
+<li><p>geomagnetic latitudinal variation</p>
+<ul>
+<li>more cosmic rays at high latitudes, but atmosphere pretty well mixed</li>
+</ul></li>
+<li><p>in recent times, burning fossil fuels has diluted <span class="math inline">\(^{14}C\)</span> levels whereas nuclear weapons testing in the 1950’s has boosted the amount because of the number of neutrons emitted from atomic bombs</p></li>
+</ul></li>
+<li><p>time limitations</p>
+<ul>
+<li><p>after ~50,000 years there won’t be much <span class="math inline">\(^{14}C\)</span> left</p></li>
+<li><p>measure <span class="math inline">\(^{14}C\)</span> directly using mass spectrometry rather than measuring radiation</p></li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
