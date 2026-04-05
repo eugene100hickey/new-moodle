@@ -253,6 +253,10 @@ Nuclear Physics PHYS2829 <a href="https://orcid.org/0000-0001-9813-9323" class="
 <li>This activity is proportional to the number of radioactive atoms in the sample.<br>
 </li>
 <li><span class="math inline">\(Activity\;=\; -\frac{dN}{dt}\; =\;\lambda N\)</span></li>
+<li>for radioactive dating, for a source activity A we get <span class="math inline">\(A \; + \;A_0e^{-\lambda t}\)</span>
+<ul>
+<li>so <span class="math inline">\(t \; = \frac{-1}{\lambda} \; ln(\frac{A}{A_0})\)</span></li>
+</ul></li>
 </ul>
 </section>
 <section id="section-2" class="slide level2">
@@ -387,6 +391,660 @@ Nuclear Physics PHYS2829 <a href="https://orcid.org/0000-0001-9813-9323" class="
 <li><p>measure <span class="math inline">\(^{14}C\)</span> directly using mass spectrometry rather than measuring radiation</p></li>
 </ul></li>
 </ul>
+</div>
+</section>
+<section id="dating-of-rocks-using-u-pb-ratios" class="slide level2">
+<h2>Dating of Rocks using U / Pb Ratios</h2>
+<ul>
+<li><p>both <span class="math inline">\(^{238}U\)</span> and <span class="math inline">\(^{235}U\)</span> are radioactive and eventually decay to <span class="math inline">\(^{206}Pb\)</span> and <span class="math inline">\(^{207}Pb\)</span> respectively by emitted <span class="math inline">\(\alpha\)</span> particles</p></li>
+<li><p>their half-lives are convenient for geology; <span class="math inline">\(^{235}U\)</span> is 0.7 billion years and <span class="math inline">\(^{235}U\)</span> is 4.5 billion years</p></li>
+<li><p>Zircon <span class="math inline">\(ZrSiO_4\)</span> is an extremely stable and long-lived mineral</p>
+<ul>
+<li><p>zirconium is chemically compatible with uranium but not at all with lead</p>
+<ul>
+<li>when formed <span class="math inline">\(ZrSiO_4\)</span> with contain lots of uranium in place of Zr, but no Pb</li>
+</ul></li>
+<li><p>get <span class="math inline">\(t \; = \frac{t_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)\)</span> where <span class="math inline">\(t\)</span> is the age of the rock and <span class="math inline">\(R\)</span> is the ratio of uranium to lead</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Age of Rocks from Peru</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>a zircon grain from a rock from Peru has a ratio of <span class="math inline">\(^{235}U\)</span>/<span class="math inline">\(^{207}Pb\)</span> of 0.0833 and a ratio of <span class="math inline">\(^{238}U\)</span>/<span class="math inline">\(^{206}Pb\)</span> of 2.51. Use both ratios to calculate two ages for this zircon grain. Are the figures compatible?</p>
+<ul>
+<li><p>for <span class="math inline">\(^{235}U\)</span>/<span class="math inline">\(^{207}Pb\)</span></p>
+<ul>
+<li><p><span class="math inline">\(t \; = \; \frac{t_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)\)</span></p></li>
+<li><p><span class="math inline">\(t \; = \; \frac{0.7 \times 10^9}{0.693} \; log_e(\frac{1}{0.0833} + 1) \; = \; 2.59 \; billion \; years\)</span></p></li>
+</ul></li>
+<li><p>for <span class="math inline">\(^{238}U\)</span>/<span class="math inline">\(^{206}Pb\)</span></p>
+<ul>
+<li><span class="math inline">\(t \; = \; \frac{4.5 \times 10^9}{0.693} \; log_e(\frac{1}{2.51} + 1) \; = \; 2.18 \; billion \; years\)</span></li>
+</ul></li>
+</ul></li>
+<li><p>these values don’t agree (called discordant).</p></li>
+<li><p>The zircon grain must have been damaged sometime since its formation</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="mössbauer-spectroscopy" class="slide level2">
+<h2>Mössbauer Spectroscopy</h2>
+<div style="font-size: 75%;">
+<ul>
+<li><p>as well as emitting <span class="math inline">\(\gamma\)</span> rays, nuclei can also absorb them</p>
+<ul>
+<li><p>but have to be just the right energy</p></li>
+<li><p>in practise this means coming from the same nucleus</p></li>
+<li><p>problem then is the recoil of the nucleus on both emission and absorbtion</p>
+<ul>
+<li><p>this soaks up some of the energy from the <span class="math inline">\(\gamma\)</span> ray</p></li>
+<li><p>get recoil energy <span class="math inline">\(= \; E_R \; = \; \frac{E_{\gamma}^2}{2Mc^2}\)</span> where M is the mass of the nucleus</p></li>
+<li><p>e.g.&nbsp;129.43 keV <span class="math inline">\(\gamma\)</span> from <span class="math inline">\(^{191}Ir\)</span> has recoil loss of <span class="math inline">\(E_R \; = \; \frac{E_{\gamma}^2}{2Mc^2} \; = \; \frac{(129.43 \times 10^3 \; \times \; 1.602 \times 10^{-19})^2}{2 \; \times \; 190.96 \; \times \; 1.6605 \times 10^{-27} \; \times \; (3 \times 10^8)^2} \; = \; 0.0453 eV\)</span></p></li>
+<li><p>this doesn’t sound like much, but is way bigger than the natural linewidth of the transition <span class="math inline">\(\Delta \; = \; \frac{\hbar}{T_{1/2}} \; = \; 1.34 \times 10^{-16} eV\)</span> for the 4.9s half life of <span class="math inline">\(^{191}Ir\)</span></p></li>
+<li><p>and also, have to double <span class="math inline">\(E_R\)</span> as effect both absorbtion and emission</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<h3 id="mössbauer-spectroscopy-continued">Mössbauer Spectroscopy (continued)</h3>
+<ul>
+<li><p>answer is to insert radioactive nuclei into a rigid solid</p></li>
+<li><p>then recoil is from solid as a whole rather than indiviual nuclei</p></li>
+</ul>
+</section>
+<section id="nuclear-spins-and-magnetic-moments" class="slide level2">
+<h2>Nuclear Spins and Magnetic Moments</h2>
+<div style="font-size: 85%;">
+<ul>
+<li><p>charged particles behave like little magnets because of both:</p>
+<ul>
+<li><p>their orbital motion, for example electrons in an atom</p></li>
+<li><p>but they also appear to have an <em>intrinsic</em> motion, their spin</p></li>
+</ul></li>
+<li><p>for the electron, this latter leads to a magnetic moment given by:</p>
+<ul>
+<li><p><span class="math inline">\(\mu_e \; = \; g \frac{e \hbar}{2m_e} \; = g \; \mu_B\)</span></p></li>
+<li><p>where <span class="math inline">\(\mu_B \; = \; 9.2741 \times 10^{-24} J/T\)</span> is the Bohr Magneton</p></li>
+</ul></li>
+<li><p>for nucleons things are a little more complicated</p>
+<ul>
+<li><p>analogous nuclear moment is expressed in terms of the nuclear magneton (<span class="math inline">\(\mu_N\)</span>)</p></li>
+<li><p><span class="math inline">\(\mu_N \; = \; \frac{e \hbar}{2m_p} \; = \; 5.0508 \times 10^{-27} J/T\)</span></p>
+<ul>
+<li><p><span class="math inline">\(\mu_p \; = \; 2.793 \; \mu_N\)</span></p></li>
+<li><p><span class="math inline">\(\mu_n \; = \; -1.913 \; \mu_N\)</span></p></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<h3 id="magnetic-moments-of-nuclei">Magnetic Moments of Nuclei</h3>
+<ul>
+<li></li>
+<li><p>in a nucleus, in the ground state paired nucleons will cancel out their magnetic moments</p>
+<ul>
+<li><p>even / even nuclei has zero magnetic moment (in their ground state)</p></li>
+<li><p>overall magnetic moment given by the values from the final, unpaired proton and/or unpaired neutron</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="gljcopuejr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gljcopuejr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#gljcopuejr thead, #gljcopuejr tbody, #gljcopuejr tfoot, #gljcopuejr tr, #gljcopuejr td, #gljcopuejr th {
+  border-style: none;
+}
+
+#gljcopuejr p {
+  margin: 0;
+  padding: 0;
+}
+
+#gljcopuejr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#gljcopuejr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#gljcopuejr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#gljcopuejr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#gljcopuejr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#gljcopuejr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#gljcopuejr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#gljcopuejr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#gljcopuejr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#gljcopuejr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#gljcopuejr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gljcopuejr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#gljcopuejr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#gljcopuejr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#gljcopuejr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gljcopuejr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#gljcopuejr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#gljcopuejr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#gljcopuejr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gljcopuejr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#gljcopuejr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gljcopuejr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#gljcopuejr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gljcopuejr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gljcopuejr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gljcopuejr .gt_left {
+  text-align: left;
+}
+
+#gljcopuejr .gt_center {
+  text-align: center;
+}
+
+#gljcopuejr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#gljcopuejr .gt_font_normal {
+  font-weight: normal;
+}
+
+#gljcopuejr .gt_font_bold {
+  font-weight: bold;
+}
+
+#gljcopuejr .gt_font_italic {
+  font-style: italic;
+}
+
+#gljcopuejr .gt_super {
+  font-size: 65%;
+}
+
+#gljcopuejr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#gljcopuejr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#gljcopuejr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#gljcopuejr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#gljcopuejr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#gljcopuejr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#gljcopuejr .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#gljcopuejr .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#gljcopuejr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="latex" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Nucleus</th>
+<th id="ex" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Ground State</th>
+<th id="t1_2" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Half Life</th>
+<th id="i" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Spin State</th>
+<th id="m_nm" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Magnetic Moment (μ<sub>N</sub>)</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{68}_{30}Zn\)</span></td>
+<td class="gt_row gt_right" headers="ex">1077</td>
+<td class="gt_row gt_left" headers="t1_2">0.9 ps</td>
+<td class="gt_row gt_right" headers="i">2+</td>
+<td class="gt_row gt_left" headers="m_nm">+1.0(2)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{78}_{34}Se\)</span></td>
+<td class="gt_row gt_right" headers="ex">614</td>
+<td class="gt_row gt_left" headers="t1_2">8.6 ps</td>
+<td class="gt_row gt_right" headers="i">2+</td>
+<td class="gt_row gt_left" headers="m_nm">+0.8(2)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{77}_{36}Kr\)</span></td>
+<td class="gt_row gt_right" headers="ex">0</td>
+<td class="gt_row gt_left" headers="t1_2">74.4 m</td>
+<td class="gt_row gt_right" headers="i">5/2+</td>
+<td class="gt_row gt_left" headers="m_nm">-0.583(3) d</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{95}_{42}Mo\)</span></td>
+<td class="gt_row gt_right" headers="ex">0</td>
+<td class="gt_row gt_left" headers="t1_2">stable</td>
+<td class="gt_row gt_right" headers="i">5/2+</td>
+<td class="gt_row gt_left" headers="m_nm">-0.9142(1)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{126}_{55}Cs\)</span></td>
+<td class="gt_row gt_right" headers="ex">0</td>
+<td class="gt_row gt_left" headers="t1_2">1.64 m</td>
+<td class="gt_row gt_right" headers="i">1+</td>
+<td class="gt_row gt_left" headers="m_nm">+0.777(4)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{126}_{58}Ce\)</span></td>
+<td class="gt_row gt_right" headers="ex">2887</td>
+<td class="gt_row gt_left" headers="t1_2">8 ps</td>
+<td class="gt_row gt_right" headers="i">10+</td>
+<td class="gt_row gt_left" headers="m_nm">~+10</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{135}_{60}Nd\)</span></td>
+<td class="gt_row gt_right" headers="ex">0</td>
+<td class="gt_row gt_left" headers="t1_2">12.4 m</td>
+<td class="gt_row gt_right" headers="i">9/2-</td>
+<td class="gt_row gt_left" headers="m_nm">-0.78(3)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{158}_{63}Eu\)</span></td>
+<td class="gt_row gt_right" headers="ex">0</td>
+<td class="gt_row gt_left" headers="t1_2">45.9 m</td>
+<td class="gt_row gt_right" headers="i">1(-)</td>
+<td class="gt_row gt_left" headers="m_nm">+1.44(2)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{152}_{68}Er\)</span></td>
+<td class="gt_row gt_right" headers="ex">2184</td>
+<td class="gt_row gt_left" headers="t1_2">1.8 ns</td>
+<td class="gt_row gt_right" headers="i">8+</td>
+<td class="gt_row gt_left" headers="m_nm">-0.6(6)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="latex"><span class="math inline">\(^{197}_{79}Au\)</span></td>
+<td class="gt_row gt_right" headers="ex">0</td>
+<td class="gt_row gt_left" headers="t1_2">stable</td>
+<td class="gt_row gt_right" headers="i">3/2+</td>
+<td class="gt_row gt_left" headers="m_nm">+0.145746(9)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
 </div>
 </section>
 <section id="equations" class="slide level2">

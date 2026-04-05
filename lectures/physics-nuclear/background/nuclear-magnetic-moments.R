@@ -26,5 +26,14 @@ z <- z |>
          latex = str_replace_all(latex, "open", "{"),
          latex = str_replace_all(latex, "close", "}"))
 
-z |> gt() |>
-  as_latex()
+z1 <- z |> filter(Ex == 0)
+cat(paste0('"', paste(z2$latex, collapse="\", \""), '"'))
+z2 <- z |>
+  filter(as.numeric(A) %% 2 == 0, as.numeric(Z) %% 2 == 0)
+
+
+zq <- z |>
+  janitor::clean_names() |>
+  select(latex, ex, t1_2, i, m_nm, z)
+
+#write_csv(zq, "lectures/physics-nuclear/background/nuclear-moments-table.csv")
