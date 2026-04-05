@@ -257,7 +257,7 @@ z |> ggplot(aes(half_lives, number)) +
 
         -   when formed $ZrSiO_4$ with contain lots of uranium in place of Zr, but no Pb
 
-    -   get $t \; = \frac{t_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$ where $t$ is the age of the rock and $R$ is the ratio of uranium to lead
+    -   get $t \; = \frac{T_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$ where $t$ is the age of the rock and $R$ is the ratio of uranium to lead
 
 ## 
 
@@ -268,7 +268,7 @@ z |> ggplot(aes(half_lives, number)) +
 
     -   for $^{235}U$/$^{207}Pb$
 
-        -   $t \; = \; \frac{t_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$
+        -   $t \; = \; \frac{T_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$
 
         -   $t \; = \; \frac{0.7 \times 10^9}{0.693} \; log_e(\frac{1}{0.0833} + 1) \; = \; 2.59 \; billion \; years$
 

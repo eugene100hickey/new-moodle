@@ -11,9 +11,7 @@ include-in-header:
       <link rel = "shortcut icon" href = "../img/bullfinch.png" />
 ---
 
-::: panel-tabset
-
-## Sports
+## Sports Science
 
 -   [01 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
 
@@ -47,13 +45,7 @@ include-in-header:
 
 -   [May 2025 Exam Paper](https://tud.netlify.app/lectures/sports/exams/may-2025.pdf){target="_blank"}
 
--   [Thermal Radiation](https://tud.netlify.app/wien)
-
--   [Momentum Conservation](https://tud.netlify.app/collision)
-
--   [Projectile Motion](https://tud.netlify.app/projectile)
-
-## Nuclear
+## Nuclear Lectures
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
 
@@ -71,7 +63,7 @@ include-in-header:
 
 -   [04 Nuclear Applications](https://tud.netlify.app/lectures/physics-nuclear/04-applications.html){target="_blank"}
 
-## Quantum
+## Physics-Quantum Lectures
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
 
@@ -97,7 +89,7 @@ include-in-header:
 
 -   [11 Perturbation Theory](https://tud.netlify.app/lectures/physics-quantum/11-perturbation.html){target="_blank"}
 
-## Presentations
+## Some Presentations
 
 -   [Exoplanets-ML-Labs March 13th](https://tud.netlify.app/physics-school/ML-Labs_exoplanets.html){target="_blank"}
 
@@ -113,7 +105,7 @@ include-in-header:
 
 -   [UPCT May 2024](https://tud.netlify.app/eut-plus/cartegena-May-2024.html){target="_blank"}
 
-## Rankings
+## University Rankings
 
 -   [SDG 1 - Poverty](https://tud.netlify.app/poverty#1)
 
@@ -127,8 +119,21 @@ include-in-header:
 
 -   [SDG 17 - Working Together](https://tud.netlify.app/working-together.html)
 
+## Sports Physics Lectures
 
-## ManTech
+-   [Bio Energy](https://tud.netlify.app/bioenergy1#/title-slide)
+
+## Sports Laboratory
+
+-   [Graph Rules](https://tud.netlify.app/graph-rules#1)
+
+-   [Thermal Radiation](https://tud.netlify.app/wien)
+
+-   [Momentum Conservation](https://tud.netlify.app/collision)
+
+-   [Projectile Motion](https://tud.netlify.app/projectile)
+
+## ManTech Lectures
 
 -   [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf){target="_blank"}
 
@@ -168,7 +173,7 @@ include-in-header:
 
 -   [Laboratory Manual](https://tud.netlify.app/lectures/mantech/Lab-Manual.pdf){target="_blank"}
 
-## CMS
+## CMS Lectures
 
 -   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf){target="_blank"}
 
@@ -188,7 +193,7 @@ include-in-header:
 
 -   [3<sup>rd</sup> Filters Lab](https://tud.netlify.app/lectures/cms/filters-lab.zip){target="_blank"}
 
-## LPP
+## LPP Lectures
 
 -   [Safety](https://tud.netlify.app/lectures/lpp/01-laboratory-safety.pdf){target="_blank"}
 
@@ -203,6 +208,3 @@ include-in-header:
 -   [Concentrations](https://tud.netlify.app/lectures/lpp/06-concentrations.pdf){target="_blank"}
 
 -   [Measurement](https://tud.netlify.app/lectures/lpp/07-measurement.pdf){target="_blank"}
-
-
-:::
