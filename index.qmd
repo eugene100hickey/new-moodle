@@ -3,6 +3,8 @@ title: "Eugene's Pages"
 format: 
   html:
     theme: solarized
+    fontsize: 22pt
+    page-layout: full
 editor: visual
 execute: 
   eval: true
@@ -12,8 +14,7 @@ include-in-header:
 ---
 
 ::: panel-tabset
-
-## Sports
+## Sport
 
 -   [01 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
 
@@ -53,7 +54,7 @@ include-in-header:
 
 -   [Projectile Motion](https://tud.netlify.app/projectile)
 
-## Nuclear
+## Nucl
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
 
@@ -71,7 +72,7 @@ include-in-header:
 
 -   [04 Nuclear Applications](https://tud.netlify.app/lectures/physics-nuclear/04-applications.html){target="_blank"}
 
-## Quantum
+## Quant
 
 -   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
 
@@ -97,7 +98,7 @@ include-in-header:
 
 -   [11 Perturbation Theory](https://tud.netlify.app/lectures/physics-quantum/11-perturbation.html){target="_blank"}
 
-## Pres.
+## Pres
 
 -   [Exoplanets-ML-Labs March 13th](https://tud.netlify.app/physics-school/ML-Labs_exoplanets.html){target="_blank"}
 
@@ -113,7 +114,7 @@ include-in-header:
 
 -   [UPCT May 2024](https://tud.netlify.app/eut-plus/cartegena-May-2024.html){target="_blank"}
 
-## Rankings
+## SDG
 
 -   [SDG 1 - Poverty](https://tud.netlify.app/poverty#1)
 
@@ -127,8 +128,7 @@ include-in-header:
 
 -   [SDG 17 - Working Together](https://tud.netlify.app/working-together.html)
 
-
-## ManTech
+## MT
 
 -   [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf){target="_blank"}
 
@@ -209,6 +209,4 @@ include-in-header:
 -   [Data Handling 2025](https://atu-2025.netlify.app/){target="_blank"}
 
 -   [Data Handling 2026](https://atu-2026.netlify.app/){target="_blank"}
-
-
 :::
