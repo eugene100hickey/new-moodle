@@ -384,7 +384,7 @@ $F_{Coulomb} \; = \; \frac{1}{4 \pi \epsilon_{\circ}} \; \frac{q_1 q_2}{r^2}\;\;
 
     -   but can use some approximations to get useful results
 
--   end up with a ladder of quatum levels (c.f. 1s, 2s, 2p... atomic orbitals)
+-   end up with a ladder of quantum levels (c.f. 1s, 2s, 2p... atomic orbitals)
 
 -   transitions between levels lead to the emission of light - $\gamma$ rays
 

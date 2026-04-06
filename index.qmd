@@ -11,9 +11,29 @@ execute:
 include-in-header:
   - text: |
       <link rel = "shortcut icon" href = "../img/bullfinch.png" />
+footer: https://github.com/eugene100hickey/new-moodle
 ---
 
 ::: panel-tabset
+
+## Nucl
+
+-   [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
+
+-   [01 Structure and Forces](https://tud.netlify.app/lectures/physics-nuclear/01-forces_structure.html){target="_blank"}
+
+-   [01 Tutorial - Structure](https://tud.netlify.app/lectures/physics-nuclear/tutorials/01-structure_forces.pdf){target="_blank"}
+
+-   [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/02-radiation.html){target="_blank"}
+
+-   [02 Tutorial - Radiation](https://tud.netlify.app/lectures/physics-nuclear/tutorials/02-radiation.pdf){target="_blank"}
+
+-   [03 Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/03-fission-fusion.html){target="_blank"}
+
+-   [03 Tutorial - Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/tutorials/03-fission-fusion.pdf){target="_blank"}
+
+-   [04 Nuclear Applications](https://tud.netlify.app/lectures/physics-nuclear/04-applications.html){target="_blank"}
+
 ## Sport
 
 -   [01 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
@@ -54,23 +74,6 @@ include-in-header:
 
 -   [Projectile Motion](https://tud.netlify.app/projectile)
 
-## Nucl
-
--   [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
-
--   [01 Structure and Forces](https://tud.netlify.app/lectures/physics-nuclear/01-forces_structure.html){target="_blank"}
-
--   [01 Tutorial - Structure](https://tud.netlify.app/lectures/physics-nuclear/tutorials/01-structure_forces.pdf){target="_blank"}
-
--   [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/02-radiation.html){target="_blank"}
-
--   [02 Tutorial - Radiation](https://tud.netlify.app/lectures/physics-nuclear/tutorials/02-radiation.pdf){target="_blank"}
-
--   [03 Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/03-fission-fusion.html){target="_blank"}
-
--   [03 Tutorial - Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/tutorials/03-fission-fusion.pdf){target="_blank"}
-
--   [04 Nuclear Applications](https://tud.netlify.app/lectures/physics-nuclear/04-applications.html){target="_blank"}
 
 ## Quant
 
