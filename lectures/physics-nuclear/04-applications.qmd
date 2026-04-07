@@ -311,6 +311,36 @@ z |> ggplot(aes(half_lives, number)) +
 
 -   then recoil is from solid as a whole rather than indiviual nuclei
 
+- not hard to compensate for this difference using Doppler Effect
+
+    - $v \; = \; c \frac{2 \times E_R}{E_{\gamma}}$
+    
+    - leads to velocities of ~1 mm/sec 
+    
+       - as opposed to ~ 100 m/sec for free ions
+
+- gives exquisite precision (1 part in $10^{13}$)
+
+##
+
+### Applications of Mössbauer Effect
+
+- key tool for studying chemical environments of relevant ions:
+
+    - $^{57}Fe$, $^{119}Sn$, $^{121}Sb$, $^{151}Eu$
+    
+- beautiful demonstration of General Relativity 
+
+    - red-shift of photons as they climb through Earth's gravitational field
+    
+##
+
+![](images/mossbauer.png)
+
+##
+
+![from Gütlich et al.](images/mossbauer-spectrum.png)
+
 ## Nuclear Spins and Magnetic Moments
 
 ::: {style="font-size: 85%;"}
