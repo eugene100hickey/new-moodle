@@ -1,0 +1,301 @@
+---
+title: "Eugene"
+author: "Energy in Sport"
+date: "`r format(Sys.Date(), '%B %d %Y')`"
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Energy & Training{.columns-2}
+
+Homeostasis
+
+* optimum temperature
+
+* optimum pH
+
+* optimal glucose levels
+
+* etc
+
+
+Adaptations
+
+* overload principle
+
+* specificity
+
+* reversibility
+
+* individuality
+
+
+## Calorimetry
+
+- Direct: measure heat produced during exercise - Human Calorimetry Chamber
+
+- Indirect: measure O~2~ consumption (VO~2~)
+typically about 
+0.25mL/kg/s of VO~2~ during exercise
+0.05mL/kg/s of VO~2~ during rest
+
+- Maximum VO~2~ measured by exercising to exhaustion
+get up to 1mL/kg/s
+
+- corresponds to about 250 Watts of power
+
+- training will increase your VO~2~ max
+
+- cardiovascular adaptations giving better O~2~ delivery
+
+- muscle mitocondrial O~2~ utilisation
+
+- athletes using large muscle masses for extended periods tend to have highest VO~2~ max
+
+## Respiratory Exchange Ratio (RER){.smaller}
+
+as well as measuring O~2~ levels we also monitor CO~2~
+gives us the RER
+$$ RER = \frac{V_{CO_2}}{V_{O_2}} $$
+This gives information on type of food being used
+
+- for fats, RER = 0.7
+
+- for glucose, RER = 1.0
+
+Fats, e.g. palmitate, 
+C~16~H~32~O~2~ + 23 O~2~ -> 16 CO~2~ + 16 H~2~O
+$$ \frac{16}{23} = 0.70 $$
+Glucose,
+C~6~H~12~O~6~ + 6 O~2~ -> 6 CO~2~ + 6 H~2~O
+$$ \frac{6}{6} = 1.0 $$
+
+## Fuel depends on Type of Exercise
+
+- for long distance, endurance, RER lets us deduce that mostly fats are burned
+
+- for high-powered activities like sprinting, mostly carbohydrates
+
+## Fuel used During a Marathon
+
+- muscle triglycerides: provide ~ 30% of energy initially but fades to ~10%  gradually over four hours
+
+- plasma FFA: provide ~ 20% initially but this grows to 50% over four hours
+
+- blood glucose: provides 10% initially, this grows to 40% after four hours
+
+- muscle glycogen: provides ~ 40% initially but fades out over about 3 hours
+
+- decrease in CHO use leads to a decrease inperformance and to the onset of fatigue
+
+See [this video](https://www.youtube.com/embed/HDG4GSypcIE) for a discussion of energy use in sled dogs.
+
+##  Fuel used During a Marathon
+
+```{r marathon, echo = F, warning = F, message = F, cache = T}
+library(tidyverse)
+marathon <- data.frame(Fuel = factor(rep(c("Muscle Triglyceride",
+                                    "Plasma FFA",
+                                    "Blood Glucose",
+                                    "Muscle Glycogen"), 3),
+                                    levels = c("Muscle Glycogen",
+                                               "Blood Glucose",
+                                               "Plasma FFA",
+                                               "Muscle Triglyceride")),
+                       Times = as.character(c(rep(25, 4), 
+                                              rep(65, 4), 
+                                              rep(85, 4))),
+                       Percentage = c(10, 80, 8, 2, 20, 30, 
+                                      10, 40, 10, 20, 15, 55))
+# marathon$Exercise <- as.factor(marathon$Exercise)
+# levels(marathon$Fuel) <- levels(marathon$Fuel)[c(3,4,1,2)]
+marathon %>% ggplot(aes(Times, Percentage, fill = Fuel)) + 
+  geom_col() + 
+  xlab(bquote("Exercise Intensity (%"~VO[2]~"max)")) +
+  ylab("% of Total Fuel Source") + 
+  labs(caption = "from \"Exercise Physiology\", Powers & Howley") +
+  theme_minimal() +
+  theme(plot.margin = unit(c(1,2,3,2),"cm"))
+
+```
+
+## Crossover Concept
+
+As exercise intensity increases
+
+- progressive **decrease** in **fats** as fuel source
+
+- progressive **increase** in **CHO** as fuel source
+
+Training adaptation - push this crossover point to higher intensities
+
+Leads to sparing of precious CHO stores
+
+Pushes back onset of fatigue
+
+## ATP & Muscle Work{.smaller}
+
+Only ATP can be used to directly cause muscle contraction
+
+- Breakdown of ATP allows crossbridge formation between actin and myosin (enzyme ATPase)
+
+- Amount of ATP in muscle is extremely low
+
+- During exercise as ATP utilisation goes up, need to replace it
+
+$$ ATP_{prod} = ATP_{util} $$
+ATP producing pathways turns on by the *energy charge* in the cell
+$$ Energy\; Charge = \frac{[ATP] + {1\over2} [ADP]}{[ATP] + [ADP] + [AMP]} $$
+At rest, the *energy charge* in muscle is about 0.85
+As *energy charge* decreases, ATP producing pathways are turned on while ATP utilising pathways are turned off
+
+## Mitochondria
+
+
+Oxidative production of ATP occurs in mitochondria.
+
+
+This is vast majority of ATP production.
+
+
+- Aerobic activity
+- Last minutes or longer
+
+## Anaerobic Sources of Energy
+
+Activities lasting seconds need energy immediately
+Access stores of ATP in the cell
+
+$$ ATP + H_2O\; \rightarrow\;ADP + P_i \qquad ATP_{ase} $$
+
+$$ CP + ADP\; \rightarrow \; ATP + C \qquad creatine\; kinase $$
+No O~2~ in either process
+
+## Carbohydrates
+
+Carbohydrate can be broken down anaerobically
+
+$$C_6H_{12}O_6\; \rightarrow\; 2 ATP + 2\; lactate $$
+Or aerobically
+
+$$C_6H_{12}O_6 + 6O_2\; \rightarrow\; 30ATP + 6CO_2 + 6H_2O$$
+(note, for the same glucose molecule we get 15 times more ATP when broken aerobically)
+Limited amount of carbohydrate in the body, aerobic metabolism helps preserves carbohydrate stores.
+
+Fats can also be broken down aerobically
+$$Palmitate + 23O_2\;\rightarrow\;108ATP + 16CO_2$$
+
+## Carbohydrate Storage{.smaller}
+
+Carbohydrates stored as *Glycogen*
+
+Glycogen = strings of glucose attached to each other
+
+When glucose needed, peeled off from glycogen
+
+
+Muscle Glycogen
+
+- typically 400g = 1600kCal
+- this is ~90mM/kg of muscle
+- can be depleted in minutes
+- carbohydrate loading: supercharges muscles with up to 250mM/kg of muscle
+- useful for exercises of > 90 minutes
+
+
+Liver Glycogen
+
+- typically 100g = 400kCal
+- needed to maintain blood glucose levels
+
+
+Blood
+
+- typically 3g = 12kCal (i.e. not very much)
+
+Total of 2000kCal can be depleted during endurance exercise
+
+## Compare to Fat Storage
+
+
+Adipose Tissue
+
+- typically 12kg = 108,000kCal
+- fifty times more energy than carbohydrates
+- key aerobic training adaptation is being able to use fat stores
+- this preserves carbohydrate stores
+
+## To What Extent do we use Carbohydrates?
+
+- __Intensity and duration of exercise__
+- at low intensities use fats
+- at high intensities use carbohydrates
+- at high intensities use mostly type II muscle fibres
+
+
+- Type of activity
+
+
+- Nutritional status
+
+## Different Muscle Fibres
+
+![Muscle Fibres](fibres.png)
+
+- Training level
+
+## Liver Glycogen
+
+- provides glucose for blood glucose levels
+
+- necessary to avoid exercise induced hypoglycemia
+
+- muscle uptake from blood is up to 50mM/min
+
+
+## Carbohydrate Loading
+
+- increase CHO content in muscles prior to exercise
+
+- can get up to 250 mM/kg of muscle
+
+- (compare to 90 mM/kg normally)
+
+- increase CHO intake in week prior to exercise
+
+- roughly double it to ~0.6kg/day
+
+- rest for day or so before exercise
+
+
+## Carbohydrate Feeding
+
+- consumption of very dilute CHO drink during exercise
+
+- athletes at 70 VO~2~ max can exercise for ~4 hours rather than 3 hours before fatigue
+
+- gives addition source of CHO thus sparing liver glycogen
+
+## Training Adaptations
+
+- sedentary individuals can double their cell mitochondrial content through training
+
+- takes several weeks
+
+- means using more CHO aerobically rather than anaerobically
+
+- as we've seen, this is more more efficient
+
+- spares muscle CHO content
+
+- also observe a lower *__RER__* for individuals after training
+
+- lower RER means greater fat usage
+
+- this happens at all VO~2~ % levels
