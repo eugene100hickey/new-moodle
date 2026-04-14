@@ -255,7 +255,7 @@ z |> ggplot(aes(half_lives, number)) +
 
     -   zirconium is chemically compatible with uranium but not at all with lead
 
-        -   when formed $ZrSiO_4$ with contain lots of uranium in place of Zr, but no Pb
+        -   when formed $ZrSiO_4$ will contain lots of uranium in place of Zr, but no Pb
 
     -   get $t \; = \frac{T_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$ where $t$ is the age of the rock and $R$ is the ratio of uranium to lead
 
@@ -278,7 +278,7 @@ z |> ggplot(aes(half_lives, number)) +
 
 -   these values don't agree (called discordant).
 
--   The zircon grain must have been damaged sometime since its formation
+-   The zircon grain must have been damaged/altered sometime since its formation
 :::
 
 ## Mössbauer Spectroscopy
