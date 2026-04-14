@@ -138,7 +138,7 @@ z |> ggplot(aes(half_lives, number)) +
 -   It is easily measured with a Geiger counter.
 -   This activity is proportional to the number of radioactive atoms in the sample.\
 -   $Activity\;=\; -\frac{dN}{dt}\; =\;\lambda N$
--   for radioactive dating, for a source activity A we get $A \; + \;A_0e^{-\lambda t}$
+-   for radioactive dating, for a source activity A we get $A \; = \;A_0e^{-\lambda t}$
     -   so $t \; = \frac{-1}{\lambda} \; ln(\frac{A}{A_0})$
 
 ## 
@@ -171,7 +171,7 @@ z |> ggplot(aes(half_lives, number)) +
 
 -   $^{14}C$ has a half-life of 5730 years and $\beta^-$ decays to $^{14}N$ (158keV)
 
-    -   1g of carbon produces about 15 decays per minute (0.255 Bq)
+    -   1g of (_fresh_) carbon produces about 15 decays per minute (0.255 Bq)
 
 ## 
 
@@ -210,7 +210,7 @@ z |> ggplot(aes(half_lives, number)) +
 
         -   $-\frac{dN(t)}{dt} \; = \; \lambda \; \times \; N \; = 0.255 s^{-1}$
 
-        -   $N \; = \; 0.255 / (3.833 \times 10^{-12} \; = \; 66.52 \times 10^{9} \; atoms/gram$
+        -   $N \; = \; \frac{0.255}{3.833 \times 10^{-12}} \; = \; 66.52 \times 10^{9} \; atoms/gram$
 
     -   then calculate the total of carbon atoms in one gram
 
