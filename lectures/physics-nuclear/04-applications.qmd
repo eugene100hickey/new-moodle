@@ -171,7 +171,7 @@ z |> ggplot(aes(half_lives, number)) +
 
 -   $^{14}C$ has a half-life of 5730 years and $\beta^-$ decays to $^{14}N$ (158keV)
 
-    -   1g of (_fresh_) carbon produces about 15 decays per minute (0.255 Bq)
+    -   1g of (*fresh*) carbon produces about 15 decays per minute (0.255 Bq)
 
 ## 
 
@@ -249,7 +249,7 @@ z |> ggplot(aes(half_lives, number)) +
 
 -   both $^{238}U$ and $^{235}U$ are radioactive and eventually decay to $^{206}Pb$ and $^{207}Pb$ respectively by emitted $\alpha$ particles
 
--   their half-lives are convenient for geology; $^{235}U$ is 0.7 billion years and $^{235}U$ is 4.5 billion years
+-   their half-lives are convenient for geology; $^{235}U$ is 0.7 billion years and $^{238}U$ is 4.5 billion years
 
 -   Zircon $ZrSiO_4$ is an extremely stable and long-lived mineral
 
