@@ -371,8 +371,6 @@ z |> ggplot(aes(half_lives, number)) +
 
 ### Magnetic Moments of Nuclei
 
--   
-
 -   in a nucleus, in the ground state paired nucleons will cancel out their magnetic moments
 
     -   even / even nuclei has zero magnetic moment (in their ground state)
@@ -392,20 +390,118 @@ library(gt)
 my_file <- here::here("lectures", "physics-nuclear", "background", "nuclear-moments-table.csv")
 z <- read_csv(my_file)
 z |> 
+  filter(ex == 0) |> 
   slice_sample(n=10) |> 
   arrange(z) |> 
-  select(-z) |> 
+  select(-z, -ex) |> 
   #mutate(m_nm = m_nm |> as.numeric() |> signif(4)) |> 
   gt() |> 
   fmt_markdown(columns = latex) |> 
   cols_label(latex = "Nucleus",
-             ex = "Ground State",
+             # ex = "Ground State",
              t1_2 = "Half Life",
              i = "Spin State",
              m_nm = html("Magnetic Moment (μ<sub>N</sub>)")
-             )
+             ) |> 
+  opt_table_font(font = google_font("Kalam"), size = 28) |> 
+  cols_align(align = "right", columns = m_nm)|> 
+  cols_align(align = "center", columns = i)
 
 ```
+
+## Nuclear Medicine
+
+- diagnostics
+
+- therapeutics
+
+- we'll look at a selection of modalities for diagnostics
+
+    - MRI
+    
+    - fMRI
+    
+    - PET
+    
+    - SPECT
+    
+##
+
+### Magnetic Resonance Imaging
+
+::: {style="font-size: 85%;"}
+
+- nuclei with magnetic spins will tend to line up in a magnetic field (~1.5T)
+
+    - will have different energies for spin up versus spin down
+    
+    - if we give them just the right energy they can flip-flop between spin up or down
+    
+    - can detect these flips and see where the nuclei are
+    
+    - have gradient applied magnetic field and apply radio frequency at right frequency to do the flips
+    
+    - reconstruct tomographically
+    
+    - very good for soft tissue (most MRI tunes to $^1H$)
+    
+    - two types
+    
+        - T1 tunes to fat, shows anatomy
+        
+        - T2 tunes to water, shows pathology
+        
+    - MRI images take several minutes, can't have body movement
+    
+        - can do coronary studies by ECG gating
+    
+:::
+    
+##
+
+### fMRI
+
+- carry out sequence of MRI scans while patient is asked to perform tasks
+
+- differences in MRI scans between times when tasks are performed can indicate which (brain) areas are involved 
+
+##
+
+### PET (positron emission tomography)
+
+- introduce radioactive element in to body
+
+- it emits a positron
+
+- this annihilates with an electron
+
+- emits 2 $\gamma$ rays of 511keV in exactly opposite directions
+
+- when these are detected, can figure out line along which original radioactive element was
+
+- usually use FDG molecule, glucose-like
+
+    - laced with $^{18}F$ instead of an $OH^-$ group
+    
+    - $^{18}F$ is a positron emittter, $T_{1/2}$ = 110 minutes
+  
+    - anomalous build-up of this _glucose_ means cells with higher metabolism, maybe cancer
+    
+##
+
+### Gamma Camera
+
+- used to detect $\gamma$ rays from PET or SPECT
+
+- consists of:
+
+    - outer tubes of lead to only permit passage of $\gamma$rays perpendicular to camera surface
+    
+    - scintillation crystal (NaI) that will emit optical flash when $\gamma$ ray strikes
+    
+    - camera to detect thesee flashes
+    
+- looks a lot like the tube of a CT or MRI machine
 
 ## Equations
 
@@ -433,8 +529,15 @@ z |>
 
 -   [Young & Freedman - chapter 43.3-43.5](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}
 -   [Serway & Jewett - chapter 43.4](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk%26db%3dnlabk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
--   [Periodic Table from Jefferson Lab](https://education.jlab.org/itselemental/){target="_blank"}
--   [XKCD radiation chart](https://xkcd.com/radiation/){target="_blank"}
--   [Radiation doses - David Ruzic](https://www.youtube.com/watch?v=ugGVrI8pi6w&list=PLYcMUdmtJe6sdgkK0xQL7SbH6Y6MTOLq9&index=2){target="_blank"}
--   [ABC's of Radiation - David Ruzic](https://www.youtube.com/watch?v=qjkTzk8NAxM){target="_blank"}
+
 -   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
+
+-   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
+
+-   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
+
+-   [MRI](https://www.radiologymasterclass.co.uk/tutorials/mri/mri_scan){target="_blank"}
+
+-   [Young & Freedman - MRI](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1476){target="_blank"}
+
+-   [fMRI on Coursera](https://www.coursera.org/learn/functional-mri/home/module/2){target="_blank"}
