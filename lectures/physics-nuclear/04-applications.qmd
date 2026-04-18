@@ -489,6 +489,15 @@ z |>
     
 ##
 
+### SPECT (Single Photon Emission Computed Tomography)
+
+- label pharmachemical with $\gamma$ emitter
+
+    - often $^{99}Tc$
+
+
+##
+
 ### Gamma Camera
 
 - used to detect $\gamma$ rays from PET or SPECT
@@ -502,6 +511,9 @@ z |>
     - camera to detect thesee flashes
     
 - looks a lot like the tube of a CT or MRI machine
+
+## Nuclear Radiotherapy
+
 
 ## Equations
 
