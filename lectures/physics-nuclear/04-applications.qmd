@@ -20,6 +20,10 @@ footer: "Nuclear Physics"
 editor: visual
 ---
 
+.column-line {
+  border-right: 1px solid #ccc;
+}
+
 ## Summary
 
 Nuclear radiation can be very useful. We've already mentioned its use in medical diagnostics and therapy, and in the production of nuclear energy. In this section we'll discuss further applications such as *radiocarbon dating*, *radiometric dating of rocks*, chemical environment analysis by the *Mössbauer effect*, and *nuclear spins*.
@@ -411,135 +415,204 @@ z |>
 
 ## Nuclear Medicine
 
-- diagnostics
+-   diagnostics
 
-- therapeutics
+-   therapeutics
 
-- we'll look at a selection of modalities for diagnostics
+-   we'll look at a selection of modalities for diagnostics
 
-    - MRI
+    -   MRI
+
+    -   fMRI
     
-    - fMRI
-    
-    - PET
-    
-    - SPECT
-    
-##
+    - $\gamma$ cameras
+
+    -   PET
+
+    -   SPECT
+
+## 
 
 ### Magnetic Resonance Imaging
 
 ::: {style="font-size: 85%;"}
+-   nuclei with magnetic spins will tend to line up in a magnetic field (\~1.5T)
 
-- nuclei with magnetic spins will tend to line up in a magnetic field (~1.5T)
+    -   will have different energies for spin up versus spin down
 
-    - will have different energies for spin up versus spin down
-    
-    - if we give them just the right energy they can flip-flop between spin up or down
-    
-    - can detect these flips and see where the nuclei are
-    
-    - have gradient applied magnetic field and apply radio frequency at right frequency to do the flips
-    
-    - reconstruct tomographically
-    
-    - very good for soft tissue (most MRI tunes to $^1H$)
-    
-    - two types
-    
-        - T1 tunes to fat, shows anatomy
-        
-        - T2 tunes to water, shows pathology
-        
-    - MRI images take several minutes, can't have body movement
-    
-        - can do coronary studies by ECG gating
-    
+    -   if we give them just the right energy they can flip-flop between spin up or down
+
+    -   can detect these flips and see where the nuclei are
+
+    -   have gradient applied magnetic field and apply radio frequency at right frequency to do the flips
+
+    -   reconstruct tomographically
+
+    -   very good for soft tissue (most MRI tunes to $^1H$)
+
+    -   two types
+
+        -   T1 tunes to fat, shows anatomy
+
+        -   T2 tunes to water, shows pathology
+
+    -   MRI images take several minutes, can't have body movement
+
+        -   can do coronary studies by ECG gating
 :::
-    
-##
+
+## 
 
 ### fMRI
 
-- carry out sequence of MRI scans while patient is asked to perform tasks
+-   carry out sequence of MRI scans while patient is asked to perform tasks
 
-- differences in MRI scans between times when tasks are performed can indicate which (brain) areas are involved 
+-   differences in MRI scans between times when tasks are performed can indicate which (brain) areas are involved
 
-##
+-   usually look at blood demand (BOLD) in the brain rather than direct neuronal activity
 
-### PET (positron emission tomography)
+## 
 
-- introduce radioactive element in to body
+### Nuclear Medicine
 
-- it emits a positron
+- introduce radioactive tracers in to the body and see where they go
 
-- this annihilates with an electron
+- e.g. iodine will migrate to the throid gland
 
-- emits 2 $\gamma$ rays of 511keV in exactly opposite directions
-
-- when these are detected, can figure out line along which original radioactive element was
-
-- usually use FDG molecule, glucose-like
-
-    - laced with $^{18}F$ instead of an $OH^-$ group
+    - use $^{123}I$ 
     
-    - $^{18}F$ is a positron emittter, $T_{1/2}$ = 110 minutes
-  
-    - anomalous build-up of this _glucose_ means cells with higher metabolism, maybe cancer
+        - 13 hour half life
+        
+        - decays by electron capture followed by a 159 keV $\gamma$ ray
+        
+- also $^{99}Tc$
+
+    - attach to a wide number of bio-molecules
     
-##
-
-### SPECT (Single Photon Emission Computed Tomography)
-
-- label pharmachemical with $\gamma$ emitter
-
-    - often $^{99}Tc$
-
-
-##
+    - half life of 6 hours
+    
+    - emits 140 keV $\gamma$ ray
 
 ### Gamma Camera
 
-- used to detect $\gamma$ rays from PET or SPECT
+-   used to detect these $\gamma$ rays
 
-- consists of:
+-   consists of:
 
-    - outer tubes of lead to only permit passage of $\gamma$rays perpendicular to camera surface
-    
-    - scintillation crystal (NaI) that will emit optical flash when $\gamma$ ray strikes
-    
-    - camera to detect thesee flashes
-    
-- looks a lot like the tube of a CT or MRI machine
+    -   outer tubes of lead to only permit passage of $\gamma$rays perpendicular to camera surface
 
-## Nuclear Radiotherapy
+    -   scintillation crystal (NaI) that will emit optical flash when $\gamma$ ray strikes
 
+    -   camera to detect thesee flashes
+
+-   ~1 metre diameter (double) disk that can rotated around the body
+
+##
+
+![](images/gamma-camera.jpg)
+
+## 
+
+### PET (positron emission tomography)
+
+-   introduce radioactive element in to body
+
+-   it emits a positron
+
+-   this annihilates with an electron
+
+-   emits 2 $\gamma$ rays of 511keV in exactly opposite directions
+
+-   when these are detected, can figure out line along which original radioactive element was
+
+-   usually use FDG molecule, glucose-like
+
+    -   laced with $^{18}F$ instead of an $OH^-$ group
+
+    -   $^{18}F$ is a positron emittter, $T_{1/2}$ = 110 minutes
+
+    -   anomalous build-up of this *glucose* means cells with higher metabolism, maybe cancer
+
+## 
+
+### SPECT (Single Photon Emission Computed Tomography)
+
+-   label pharmachemical with $\gamma$ emitter
+
+    -   often $^{99}Tc$
+
+
+## Therapeutic Nuclear Medicine
+
+-   goal is to reduce unwanted tissue in body
+
+    -   cancerous tissue
+
+    -   overactive thyroid gland
+
+-   multistage process
+
+    -   radiation induces *physical* changes in body - ionises molecules
+
+    -   these ionised molecules induce *chemical* changes, produce free radicals
+
+        -   these are neutral molecules with an unpaired electron
+
+    -   these free radicals induce *biological* changes in biological function
+
+        -   this can take a long time to manifest
+
+## 
+
+### Therapeutic Nuclear Medicine - Oxygen Effect
+
+-   presence of oxygen exacerbates effects of radiation
+
+    -   soaks up free electrons produced by radiation so radiation damage can't simply be *healed* by ionised omecules recombining with their lost electron
+
+-   cancerous tissue has less oxygen
+
+    -   means radiation effect on tumours is unfortunately about half what it should be
 
 ## Equations
 
-::: {style="font-size: 80%;"}
+::: {style="font-size: 110%;"}
+
+
+:::: {.columns}
+
+::: {.column .column-line}
+
+-   $\frac{dN}{dt} \; \alpha \; N$
+
 -   $N\;=\;N_0e^{-\lambda t}$
 
 -   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
 
--   $Bq = Ci \times 3.7\times10^{10}$
+- $t \; = \frac{-1}{\lambda} \; ln(\frac{A}{A_0})$
 
--   $(energy\;in\;joules) = MeV \times 1.6\times 10^{-13}$
+- $t \; = \frac{T_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$
 
--   $Gray = \frac{Bq \times (energy\;in\;joules)}{(person\;mass\; in \;kg)}$
+:::
 
--   $Sv = \frac{Bq \times (energy\;in\;joules) \times RBE }{(person\;mass\; in \;kg)}$
+:::{.column}
 
--   $(expected\;number\; of\; deaths) = \frac{(dose\; in\; Sievert) \times (population)}{50}$
+- $E_R \; = \; \frac{E_{\gamma}^2}{2Mc^2}$
 
--   typical daily dose = 10$\mu$Sv.
+- $\Delta E \; = \; \frac{\hbar}{T_{1/2}}$
 
--   $LD_{50 / 30}$ = 4Sv
+- $v \; = \; c \frac{2 \times E_R}{E_{\gamma}}$
+
+-  $\mu_N \; = \; \frac{e \hbar}{2m_p} \; = \; 5.0508 \times 10^{-27} J/T$
+
+:::
+::::
 :::
 
 ## References
 
 -   [Young & Freedman - chapter 43.3-43.5](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}
+
 -   [Serway & Jewett - chapter 43.4](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk%26db%3dnlabk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
 
 -   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
