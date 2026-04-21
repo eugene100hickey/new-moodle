@@ -433,7 +433,6 @@ z |>
 
 ### Magnetic Resonance Imaging
 
-::: {style="font-size: 85%;"}
 -   nuclei with magnetic spins will tend to line up in a magnetic field (\~1.5T)
 
     -   will have different energies for spin up versus spin down
@@ -447,6 +446,8 @@ z |>
     -   reconstruct tomographically
 
     -   very good for soft tissue (most MRI tunes to $^1H$)
+    
+    
 
 ##
 ### Magnetic Resonance Imaging - Types
