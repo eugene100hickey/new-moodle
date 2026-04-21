@@ -452,15 +452,15 @@ z |>
 ##
 ### Magnetic Resonance Imaging - Types
 
-    -   two types
+-   two types
 
-        -   T1 tunes to fat, shows anatomy
+    -   T1 tunes to fat, shows anatomy
 
-        -   T2 tunes to water, shows pathology
+    -   T2 tunes to water, shows pathology
 
-    -   MRI images take several minutes, can't have body movement
+-   MRI images take several minutes, can't have body movement
 
-        -   can do coronary studies by ECG gating
+    -   can do coronary studies by ECG gating
 
 
 ## 
