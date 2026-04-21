@@ -347,7 +347,7 @@ z |> ggplot(aes(half_lives, number)) +
 
 ## Nuclear Spins and Magnetic Moments
 
-::: {style="font-size: 85%;"}
+::: {style="font-size: 75%;"}
 -   charged particles behave like little magnets because of both:
 
     -   their orbital motion, for example electrons in an atom
@@ -450,6 +450,9 @@ z |>
 
     -   very good for soft tissue (most MRI tunes to $^1H$)
 
+##
+### Magnetic Resonance Imaging - Types
+
     -   two types
 
         -   T1 tunes to fat, shows anatomy
@@ -475,6 +478,8 @@ z |>
 
 ### Nuclear Medicine
 
+::: {style="font-size: 90%;"}
+
 - introduce radioactive tracers in to the body and see where they go
 
 - e.g. iodine will migrate to the throid gland
@@ -492,6 +497,10 @@ z |>
     - half life of 6 hours
     
     - emits 140 keV $\gamma$ ray
+
+:::
+
+##
 
 ### Gamma Camera
 
@@ -515,6 +524,8 @@ z |>
 
 ### PET (positron emission tomography)
 
+::: {style="font-size: 90%;"}
+
 -   introduce radioactive element in to body
 
 -   it emits a positron
@@ -533,6 +544,8 @@ z |>
 
     -   anomalous build-up of this *glucose* means cells with higher metabolism, maybe cancer
 
+:::
+
 ## 
 
 ### SPECT (Single Photon Emission Computed Tomography)
@@ -543,6 +556,8 @@ z |>
 
 
 ## Therapeutic Nuclear Medicine
+
+::: {style="font-size: 90%;"}
 
 -   goal is to reduce unwanted tissue in body
 
@@ -561,6 +576,8 @@ z |>
     -   these free radicals induce *biological* changes in biological function
 
         -   this can take a long time to manifest
+        
+:::
 
 ## 
 
@@ -614,10 +631,6 @@ z |>
 -   [Young & Freedman - chapter 43.3-43.5](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=5853694&ppg=1482){target="_blank"}
 
 -   [Serway & Jewett - chapter 43.4](https://viewer.ebscohost.com/EbscoViewerService/ebook?an=2639146&callbackUrl=https%3a%2f%2fresearch.ebsco.com&db=nlebk&format=EB&profId=ehost&lpid=&ppid=&lang=en&location=https%3a%2f%2fresearch.ebsco.com%2fc%2fsr37fs%2fsearch%2fdetails%2flh37eixz3f%3fdb%3dnlebk%26db%3dnlabk&isPLink=False&requestContext=&profileIdentifier=sr37fs&recordId=lh37eixz3f){target="_blank"}
-
--   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
-
--   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
 
 -   [Nuclear Chart](https://atom.kaeri.re.kr/nuchart/){target="_blank"}
 
