@@ -1,3 +1,7 @@
+.column-line {
+  border-right: 1px solid #ccc;
+}
+
 .reveal .slide-logo {
   display: block;
   position: fixed;

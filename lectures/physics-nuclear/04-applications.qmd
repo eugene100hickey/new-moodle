@@ -15,14 +15,12 @@ logo: logo.jpg
 include-in-header:
   - text: |
       <link rel = "shortcut icon" href = "logo.jpg" />
-css: logo.css
+css: images/logo.css
 footer: "Nuclear Physics"
 editor: visual
 ---
 
-.column-line {
-  border-right: 1px solid #ccc;
-}
+
 
 ## Summary
 
@@ -598,29 +596,34 @@ z |>
 
 :::: {.columns}
 
-::: {.column .column-line}
+::: {.column width="45%" .column-line}
 
--   $\frac{dN}{dt} \; \alpha \; N$
+$\frac{dN}{dt} \; \alpha \; N$
 
--   $N\;=\;N_0e^{-\lambda t}$
+$N\;=\;N_0e^{-\lambda t}$
 
--   $t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
+$t_{1/2}\;=\;\frac{log_e2}{\lambda}\;=\;\frac{0.693}{\lambda}$
 
-- $t \; = \frac{-1}{\lambda} \; ln(\frac{A}{A_0})$
+$t \; = \frac{-1}{\lambda} \; ln(\frac{A}{A_0})$
 
-- $t \; = \frac{T_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$
+$t \; = \frac{T_{1/2}}{0.693} \; log_e(\frac{1}{R} + 1)$
 
 :::
 
-:::{.column}
 
-- $E_R \; = \; \frac{E_{\gamma}^2}{2Mc^2}$
+:::{.column width="5%"}
 
-- $\Delta E \; = \; \frac{\hbar}{T_{1/2}}$
+:::
 
-- $v \; = \; c \frac{2 \times E_R}{E_{\gamma}}$
+:::{.column width="45%"}
 
--  $\mu_N \; = \; \frac{e \hbar}{2m_p} \; = \; 5.0508 \times 10^{-27} J/T$
+$E_R \; = \; \frac{E_{\gamma}^2}{2Mc^2}$
+
+$\Delta E \; = \; \frac{\hbar}{T_{1/2}}$
+
+$v \; = \; c \frac{2 \times E_R}{E_{\gamma}}$
+
+$\mu_N \; = \; \frac{e \hbar}{2m_p} \; = \; 5.0508 \times 10^{-27} J/T$
 
 :::
 ::::
