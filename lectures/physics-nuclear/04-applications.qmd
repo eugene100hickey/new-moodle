@@ -461,7 +461,7 @@ z |>
     -   MRI images take several minutes, can't have body movement
 
         -   can do coronary studies by ECG gating
-:::
+
 
 ## 
 
