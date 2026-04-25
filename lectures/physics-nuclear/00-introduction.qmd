@@ -28,13 +28,13 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 
 ## Contents
 
--   Nuclear Forces and Nuclear Structure
+- Nuclear Forces and Nuclear Structure
 
--   Radiation
+- Radiation
 
--   Nuclear Power
+- Nuclear Power
 
--   Applications
+- Applications
 
 <!-- Radioactive decay law, mean and half- lives, activity and exponential decay -->
 
@@ -60,10 +60,10 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 
 ## Timetable
 
--   1 lecture a week
-    -   Wednesday 14:00-15:00 room CQ008
-        -   tutorials on a regular basis
-        -   every third week instead of a new-material lecture
+- 1 lecture a week
+  - Wednesday 14:00-15:00 room CQ008
+    - tutorials on a regular basis
+    - every third week instead of a new-material lecture
 
 ## Schedule
 
@@ -71,17 +71,17 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 ::::: {.column width="48%"}
 :::: {style="background-color: #fff4e0"}
 ::: {style="font-size: 80%;"}
--   Wednesday 28th January - Nuclear Forces
+- Wednesday 28th January - Nuclear Forces
 
--   Wednesday 4th February - Binding Energies
+- Wednesday 4th February - Binding Energies
 
--   **Wednesday 11th February - tutorial**
+- **Wednesday 11th February - tutorial**
 
--   Wednesday 18th February - Types of Nuclear Radiation
+- Wednesday 18th February - Types of Nuclear Radiation
 
--   Wednesday 25th February - Units of Nuclear Radiation
+- Wednesday 25th February - Units of Nuclear Radiation
 
--   **Wednesday 4th March - tutorial**
+- **Wednesday 4th March - tutorial**
 :::
 ::::
 :::::
@@ -96,19 +96,18 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 ::::: {.column width="48%"}
 :::: {style="background-color: #fff4e0"}
 ::: {style="font-size: 80%;"}
--   Wednesday 11th March - Nuclear Fission
+- Wednesday 11th March - Nuclear Fission
 
--   Wednesday 18th March - Nuclear Fusion
+- Wednesday 18th March - Nuclear Fusion
 
--   **Wednesday 25th March - tutorial**
+- **Wednesday 25th March - tutorial**
 
--   Wednesday 15th April - Nuclear Applications - radionucleotide dating
+- Wednesday 15th April - Nuclear Applications - radionucleotide dating
 
--   Wednesday 22th April - Nuclear Application - magnetic resonance
+- Wednesday 22th April - Nuclear Application - magnetic resonance
 
--   **Wednesday 29th April - tutorial**
+- **Wednesday 29th April - CA exam for TU754**
 
--   Wednesday May 6th - course review
 :::
 ::::
 :::::
@@ -116,19 +115,19 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 
 ## Assessment (TU754)
 
--   [**60% continuous assessment**]{style="color:#8d2220;"}
+- [**60% continuous assessment**]{style="color:#8d2220;"}
 
-    -   online quiz on Brightspace after every tutorial (every three weeks).
+  - online quiz on Brightspace after every tutorial (every three weeks).
 
-    -   opens on Wednesday afternoons
+  - opens on Wednesday afternoons
 
-    -   closes nine days later on Friday at midnight
+  - closes nine days later on Friday at midnight
 
-    -   10 questions on each quiz, usually MCQ's
+  - 10 questions on each quiz, usually MCQ's
 
-    -   get 3 attempts, best one counts
+  - get 3 attempts, best one counts
 
--   [**40% end-of-semester-test**]{style="color:#8d2220;"}
+- [**40% end-of-semester-test**]{style="color:#8d2220;"}
 
 ## Assessment (TU877-880)
 
@@ -138,17 +137,17 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 ::::: {.column width="50%"}
 :::: {style="background-color: #fff4e0"}
 ::: {style="font-size: 80%;"}
--   [**70% exam in May**]{style="color:#8d2220;"}
+- [**70% exam in May**]{style="color:#8d2220;"}
 
-    -   in common with Aidan (relativity) and Justin (astro)
+  - in common with Aidan (relativity) and Justin (astro)
 
-    -   5/6 short questions (two nuclear)
+  - 5/6 short questions (two nuclear)
 
-    -   Section B (nuclear) - answer 1/2 long questions
+  - Section B (nuclear) - answer 1/2 long questions
 
-        -   one question on nuclear forces and radioactivity
+    - one question on nuclear forces and radioactivity
 
-        -   second question on fission / fusion / applications
+    - second question on fission / fusion / applications
 :::
 ::::
 :::::
@@ -156,19 +155,19 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 ::::: {.column width="50%"}
 :::: {style="background-color: #fff4e0"}
 ::: {style="font-size: 80%;"}
--   [**10% continuous assessment**]{style="color:#8d2220;"}
+- [**10% continuous assessment**]{style="color:#8d2220;"}
 
-    -   online quiz on Brightspace after every tutorial (every three weeks).
+  - online quiz on Brightspace after every tutorial (every three weeks).
 
-    -   opens on Wednesday afternoons
+  - opens on Wednesday afternoons
 
-    -   closes nine days later on Friday at midnight
+  - closes nine days later on Friday at midnight
 
-    -   10 questions on each quiz, usually MCQ's
+  - 10 questions on each quiz, usually MCQ's
 
-    -   get 3 attempts, best one counts
+  - get 3 attempts, best one counts
 
-    -   remaining <b>[20%]{style="color:#8d2220;"}</b> comes from CA's with Aidan and Justin
+  - remaining <b>[20%]{style="color:#8d2220;"}</b> comes from CA's with Aidan and Justin
 :::
 ::::
 :::::
@@ -176,30 +175,30 @@ Course covers all things nuclear. It will get increasing mathematical as the sem
 
 ## Recommended Texts & Resources
 
--   will add some at the end of every chapter
+- will add some at the end of every chapter
 
 ::::::::: columns
 :::: {.column width="33%"}
 ::: {style="background-color: #fff4e0"}
--   [[**Young & Freedman**](https://ebookcentral.proquest.com/lib/tudublin/detail.action?docID=5853694){target="_blank"}]{style="color:#8d2220;"}
+- [[**Young & Freedman**](https://ebookcentral.proquest.com/lib/tudublin/detail.action?docID=5853694){target="_blank"}]{style="color:#8d2220;"}
 
-    ![](images/university-physics.png){width="200"}
+  ![](images/university-physics.png){width="200"}
 :::
 ::::
 
 :::: {.column width="33%"}
 ::: {style="background-color: #fff4e0"}
--   [[**Serway & Jewett**](https://research-ebsco-com.tudublin.idm.oclc.org/c/sr37fs/search/details/lh37eixz3f?db=nlebk&db=nlabk){target="_blank"}]{style="color:#8d2220;"}
+- [[**Serway & Jewett**](https://research-ebsco-com.tudublin.idm.oclc.org/c/sr37fs/search/details/lh37eixz3f?db=nlebk&db=nlabk){target="_blank"}]{style="color:#8d2220;"}
 
-    ![](images/serway-jewett.jpg){width="200"}
+  ![](images/serway-jewett.jpg){width="200"}
 :::
 ::::
 
 :::: {.column width="33%"}
 ::: {style="background-color: #fff4e0"}
--   [[**Knight, Randall, Dewey**](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=7051076&c=UERG&ppg=1263){target="_blank"}]{style="color:#8d2220;"}
+- [[**Knight, Randall, Dewey**](https://ebookcentral.proquest.com/lib/tudublin/reader.action?docID=7051076&c=UERG&ppg=1263){target="_blank"}]{style="color:#8d2220;"}
 
-    ![](images/knight.png){width="200"}
+  ![](images/knight.png){width="200"}
 :::
 ::::
 :::::::::
