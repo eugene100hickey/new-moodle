@@ -15,201 +15,201 @@ footer: https://github.com/eugene100hickey/new-moodle
 ---
 
 ::: panel-tabset
-
 ## Nucl
 
--   [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
+- [00 Introduction](https://tud.netlify.app/lectures/physics-nuclear/00-introduction.html){target="_blank"}
 
--   [01 Structure and Forces](https://tud.netlify.app/lectures/physics-nuclear/01-forces_structure.html){target="_blank"}
+- [01 Structure and Forces](https://tud.netlify.app/lectures/physics-nuclear/01-forces_structure.html){target="_blank"}
 
--   [01 Tutorial - Structure](https://tud.netlify.app/lectures/physics-nuclear/tutorials/01-structure_forces.pdf){target="_blank"}
+- [01 Tutorial - Structure](https://tud.netlify.app/lectures/physics-nuclear/tutorials/01-structure_forces.pdf){target="_blank"}
 
--   [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/02-radiation.html){target="_blank"}
+- [02 Radiation](https://tud.netlify.app/lectures/physics-nuclear/02-radiation.html){target="_blank"}
 
--   [02 Tutorial - Radiation](https://tud.netlify.app/lectures/physics-nuclear/tutorials/02-radiation.pdf){target="_blank"}
+- [02 Tutorial - Radiation](https://tud.netlify.app/lectures/physics-nuclear/tutorials/02-radiation.pdf){target="_blank"}
 
--   [03 Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/03-fission-fusion.html){target="_blank"}
+- [03 Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/03-fission-fusion.html){target="_blank"}
 
--   [03 Tutorial - Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/tutorials/03-fission-fusion.pdf){target="_blank"}
+- [03 Tutorial - Nuclear Power](https://tud.netlify.app/lectures/physics-nuclear/tutorials/03-fission-fusion.pdf){target="_blank"}
 
--   [04 Nuclear Applications](https://tud.netlify.app/lectures/physics-nuclear/04-applications.html){target="_blank"}
+- [04 Nuclear Applications](https://tud.netlify.app/lectures/physics-nuclear/04-applications.html){target="_blank"}
+
+- [04 CA Test](https://tud.netlify.app/lectures/physics-nuclear/tutorials/04-ca_test.pdf){target="_blank"}
 
 ## Sport
 
--   [01 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
+- [01 Introduction](https://tud.netlify.app/lectures/sports/01-intro.pdf){target="_blank"}
 
--   [01 Units Tutorial](https://tud.netlify.app/lectures/sports/tutorials/01-units-tutorial1.pdf){target="_blank"}
+- [01 Units Tutorial](https://tud.netlify.app/lectures/sports/tutorials/01-units-tutorial1.pdf){target="_blank"}
 
--   [02 Biomechanics](https://tud.netlify.app/lectures/sports/02-biomechanics.pdf){target="_blank"}
+- [02 Biomechanics](https://tud.netlify.app/lectures/sports/02-biomechanics.pdf){target="_blank"}
 
--   [02 Dynamics and Work Tutorial](https://tud.netlify.app/lectures/sports/tutorials/02-dynamics_work.pdf){target="_blank"}
+- [02 Dynamics and Work Tutorial](https://tud.netlify.app/lectures/sports/tutorials/02-dynamics_work.pdf){target="_blank"}
 
--   [03 Work and Energy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/03-work_energy_metabolism.pdf){target="_blank"}
+- [03 Work and Energy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/03-work_energy_metabolism.pdf){target="_blank"}
 
--   [02a BioEnergy](https://tud.netlify.app/bioenergy1#/title-slide){target="_blank"}
+- [02a BioEnergy](https://tud.netlify.app/bioenergy1#/title-slide){target="_blank"}
 
--   [04 BioEnergy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/04-bioEnergy.pdf){target="_blank"}
+- [04 BioEnergy Tutorial](https://tud.netlify.app/lectures/sports/tutorials/04-bioEnergy.pdf){target="_blank"}
 
--   [03 Circular Motion](https://tud.netlify.app/lectures/sports/03-circular_motion.pdf){target="_blank"}
+- [03 Circular Motion](https://tud.netlify.app/lectures/sports/03-circular_motion.pdf){target="_blank"}
 
--   [05 Rotational Kinematics Tutorial](https://tud.netlify.app/lectures/sports/tutorials/05-rotational_kinematics.pdf){target="_blank"}
+- [05 Rotational Kinematics Tutorial](https://tud.netlify.app/lectures/sports/tutorials/05-rotational_kinematics.pdf){target="_blank"}
 
--   [06 Rotational Review Tutorial](https://tud.netlify.app/lectures/sports/tutorials/06-rotational_review.pdf){target="_blank"}
+- [06 Rotational Review Tutorial](https://tud.netlify.app/lectures/sports/tutorials/06-rotational_review.pdf){target="_blank"}
 
--   [04 Vectors](https://tud.netlify.app/lectures/sports/04-vectors.pdf){target="_blank"}
+- [04 Vectors](https://tud.netlify.app/lectures/sports/04-vectors.pdf){target="_blank"}
 
--   [07 Vectors I Tutorial](https://tud.netlify.app/lectures/sports/tutorials/07-vectorsI.pdf){target="_blank"}
+- [07 Vectors I Tutorial](https://tud.netlify.app/lectures/sports/tutorials/07-vectorsI.pdf){target="_blank"}
 
--   [08 Vectors II Tutorial](https://tud.netlify.app/lectures/sports/tutorials/08-vectorsII.pdf){target="_blank"}
+- [08 Vectors II Tutorial](https://tud.netlify.app/lectures/sports/tutorials/08-vectorsII.pdf){target="_blank"}
 
--   [Lab Exam Preparation](https://tud.netlify.app/lectures/sports/laboratory/Lab-Exam-2026-prep.pdf){target="_blank"}
+- [Lab Exam Preparation](https://tud.netlify.app/lectures/sports/laboratory/Lab-Exam-2026-prep.pdf){target="_blank"}
 
--   [Graph Rules](https://tud.netlify.app/graph-rules#1)
+- [Graph Rules](https://tud.netlify.app/graph-rules#1)
 
--   [May 2025 Exam Paper](https://tud.netlify.app/lectures/sports/exams/may-2025.pdf){target="_blank"}
+- [May 2025 Exam Paper](https://tud.netlify.app/lectures/sports/exams/may-2025.pdf){target="_blank"}
 
--   [Thermal Radiation](https://tud.netlify.app/wien)
+- [Thermal Radiation](https://tud.netlify.app/wien)
 
--   [Momentum Conservation](https://tud.netlify.app/collision)
+- [Momentum Conservation](https://tud.netlify.app/collision)
 
--   [Projectile Motion](https://tud.netlify.app/projectile)
-
+- [Projectile Motion](https://tud.netlify.app/projectile)
 
 ## Quant
 
--   [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
+- [00 Introduction](https://tud.netlify.app/lectures/physics-quantum/00-introduction.htm){target="_blank"}
 
--   [01 Radiation](https://tud.netlify.app/lectures/physics-quantum/01-radiation.html){target="_blank"}
+- [01 Radiation](https://tud.netlify.app/lectures/physics-quantum/01-radiation.html){target="_blank"}
 
--   [02 Nuclear Physics](https://tud.netlify.app/lectures/physics-quantum/02-nuclear.html){target="_blank"}
+- [02 Nuclear Physics](https://tud.netlify.app/lectures/physics-quantum/02-nuclear.html){target="_blank"}
 
--   [03 Particle Physics](https://tud.netlify.app/lectures/physics-quantum/03-particle.html){target="_blank"}
+- [03 Particle Physics](https://tud.netlify.app/lectures/physics-quantum/03-particle.html){target="_blank"}
 
--   [04 Crystallography](https://tud.netlify.app/lectures/physics-quantum/04-xtals.html){target="_blank"}
+- [04 Crystallography](https://tud.netlify.app/lectures/physics-quantum/04-xtals.html){target="_blank"}
 
--   [05 X-Ray Diffraction](https://tud.netlify.app/lectures/physics-quantum/05-crystals-x-ray-diffraction.html){target="_blank"}
+- [05 X-Ray Diffraction](https://tud.netlify.app/lectures/physics-quantum/05-crystals-x-ray-diffraction.html){target="_blank"}
 
--   [06 Introduction to Quantum Physics](https://tud.netlify.app/lectures/physics-quantum/06-intro-quantum.html){target="_blank"}
+- [06 Introduction to Quantum Physics](https://tud.netlify.app/lectures/physics-quantum/06-intro-quantum.html){target="_blank"}
 
--   [07 Shrodinger Equation - Square Well](https://tud.netlify.app/lectures/physics-quantum/07-particle-box.html){target="_blank"}
+- [07 Shrodinger Equation - Square Well](https://tud.netlify.app/lectures/physics-quantum/07-particle-box.html){target="_blank"}
 
--   [08 Shrodinger Equation - SHO](https://tud.netlify.app/lectures/physics-quantum/08-sho.html){target="_blank"}
+- [08 Shrodinger Equation - SHO](https://tud.netlify.app/lectures/physics-quantum/08-sho.html){target="_blank"}
 
--   [09 Shrodinger Equation - hydrogen](https://tud.netlify.app/lectures/physics-quantum/09-hydrogen.html){target="_blank"}
+- [09 Shrodinger Equation - hydrogen](https://tud.netlify.app/lectures/physics-quantum/09-hydrogen.html){target="_blank"}
 
--   [10 Variational Principle](https://tud.netlify.app/lectures/physics-quantum/10-variational.html){target="_blank"}
+- [10 Variational Principle](https://tud.netlify.app/lectures/physics-quantum/10-variational.html){target="_blank"}
 
--   [11 Perturbation Theory](https://tud.netlify.app/lectures/physics-quantum/11-perturbation.html){target="_blank"}
+- [11 Perturbation Theory](https://tud.netlify.app/lectures/physics-quantum/11-perturbation.html){target="_blank"}
 
 ## Pres
 
--   [Exoplanets-ML-Labs March 13th](https://tud.netlify.app/physics-school/ML-Labs_exoplanets.html){target="_blank"}
+- [Exoplanets-ML-Labs March 13th](https://tud.netlify.app/physics-school/ML-Labs_exoplanets.html){target="_blank"}
 
--   [February 14th](https://tud.netlify.app/eut-plus/workshop-kickoff-feb14-2025.html){target="_blank"}
+- [February 14th](https://tud.netlify.app/eut-plus/workshop-kickoff-feb14-2025.html){target="_blank"}
 
--   [March 24th](https://tud.netlify.app/physics-school/phys-clin-discipline){target="_blank"}
+- [March 24th](https://tud.netlify.app/physics-school/phys-clin-discipline){target="_blank"}
 
--   [January 13th](https://tud.netlify.app/physics-school/organisational-change.html){target="_blank"}
+- [January 13th](https://tud.netlify.app/physics-school/organisational-change.html){target="_blank"}
 
--   [School Introductions](https://tud.netlify.app/physics-school/school-c){target="_blank"}
+- [School Introductions](https://tud.netlify.app/physics-school/school-c){target="_blank"}
 
--   [School Research Day](https://tud.netlify.app/physics-school/school-c-research){target="_blank"}
+- [School Research Day](https://tud.netlify.app/physics-school/school-c-research){target="_blank"}
 
--   [UPCT May 2024](https://tud.netlify.app/eut-plus/cartegena-May-2024.html){target="_blank"}
+- [UPCT May 2024](https://tud.netlify.app/eut-plus/cartegena-May-2024.html){target="_blank"}
 
 ## SDG
 
--   [SDG 1 - Poverty](https://tud.netlify.app/poverty#1)
+- [SDG 1 - Poverty](https://tud.netlify.app/poverty#1)
 
--   [SDG 3 - Health](https://tud.netlify.app/health.html#1)
+- [SDG 3 - Health](https://tud.netlify.app/health.html#1)
 
--   [SDG 7-Energy](https://tud.netlify.app/energy#1)
+- [SDG 7-Energy](https://tud.netlify.app/energy#1)
 
--   [SDG 11 - Sustainable Cities](https://tud.netlify.app/sustainable.html#1)
+- [SDG 11 - Sustainable Cities](https://tud.netlify.app/sustainable.html#1)
 
--   [SDG 13 - Climate Action](https://tud.netlify.app/climate#1)
+- [SDG 13 - Climate Action](https://tud.netlify.app/climate#1)
 
--   [SDG 17 - Working Together](https://tud.netlify.app/working-together.html)
+- [SDG 17 - Working Together](https://tud.netlify.app/working-together.html)
 
 ## MT
 
--   [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf){target="_blank"}
+- [INTRODUCTION NANJING](https://tud.netlify.app/lectures/mantech/00-Introduction_Nanjing.pdf){target="_blank"}
 
--   [INTRODUCTION DUBLIN](https://tud.netlify.app/lectures/mantech/00-Introduction_Dublin.pdf){target="_blank"}
+- [INTRODUCTION DUBLIN](https://tud.netlify.app/lectures/mantech/00-Introduction_Dublin.pdf){target="_blank"}
 
--   [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf){target="_blank"}
+- [INTRODUCTION & FLOW](https://tud.netlify.app/lectures/mantech/02-introduction-flow-diagrams.pdf){target="_blank"}
 
--   [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf){target="_blank"}
+- [MATERIAL BALANCE](https://tud.netlify.app/lectures/mantech/01-material-balance.pdf){target="_blank"}
 
--   [MATERIAL BALANCE Tutorial](https://tud.netlify.app/lectures/mantech/tutorial-01-material.pdf){target="_blank"}
+- [MATERIAL BALANCE Tutorial](https://tud.netlify.app/lectures/mantech/tutorial-01-material.pdf){target="_blank"}
 
--   [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf){target="_blank"}
+- [HEAT EXCHANGERS](https://tud.netlify.app/lectures/mantech/03-heat-exchangers.pdf){target="_blank"}
 
--   [HEAT EXCHANGERS Tutorial](https://tud.netlify.app/lectures/mantech/02-heat_exchangers_tutorial.pdf){target="_blank"}
+- [HEAT EXCHANGERS Tutorial](https://tud.netlify.app/lectures/mantech/02-heat_exchangers_tutorial.pdf){target="_blank"}
 
--   [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf){target="_blank"}
+- [DISTILLATION](https://tud.netlify.app/lectures/mantech/04-distillation.pdf){target="_blank"}
 
--   [VLE Tutorial](https://tud.netlify.app/lectures/mantech/03-VLE-tutorial.pdf){target="_blank"}
+- [VLE Tutorial](https://tud.netlify.app/lectures/mantech/03-VLE-tutorial.pdf){target="_blank"}
 
--   [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distillation-tutorial.pdf){target="_blank"}
+- [DISTILLATION Tutorial](https://tud.netlify.app/lectures/mantech/04-distillation-tutorial.pdf){target="_blank"}
 
--   [CRYSTALS-Unit Cells](https://tud.netlify.app/lectures/mantech/05-crystal_1.pdf){target="_blank"}
+- [CRYSTALS-Unit Cells](https://tud.netlify.app/lectures/mantech/05-crystal_1.pdf){target="_blank"}
 
--   [CRYSTALS-Unit Cells Tutorial](https://tud.netlify.app/lectures/mantech/05-crystals_bravais_lattice-tutorial.pdf){target="_blank"}
+- [CRYSTALS-Unit Cells Tutorial](https://tud.netlify.app/lectures/mantech/05-crystals_bravais_lattice-tutorial.pdf){target="_blank"}
 
--   [CRYSTALS-Space Groups](https://tud.netlify.app/lectures/mantech/06-crystal_2.pdf){target="_blank"}
+- [CRYSTALS-Space Groups](https://tud.netlify.app/lectures/mantech/06-crystal_2.pdf){target="_blank"}
 
--   [CRYSTALS-Space Groups Tutorial](https://tud.netlify.app/lectures/mantech/06-crystals_space_groups-tutorial.pdf){target="_blank"}
+- [CRYSTALS-Space Groups Tutorial](https://tud.netlify.app/lectures/mantech/06-crystals_space_groups-tutorial.pdf){target="_blank"}
 
--   [CRYSTALS-Space Groups Symmetries Tutorial](https://tud.netlify.app/lectures/mantech/06_Crystals_2_symmetries.pdf){target="_blank"}
+- [CRYSTALS-Space Groups Symmetries Tutorial](https://tud.netlify.app/lectures/mantech/06_Crystals_2_symmetries.pdf){target="_blank"}
 
--   [CRYSTALS-XRD](https://tud.netlify.app/lectures/mantech/07-crystal_3.pdf){target="_blank"}
+- [CRYSTALS-XRD](https://tud.netlify.app/lectures/mantech/07-crystal_3.pdf){target="_blank"}
 
--   [CRYSTALS-X-Ray Diffraction Tutorial](https://tud.netlify.app/lectures/mantech/07-crystals_xrd-tutorial.pdf){target="_blank"}
+- [CRYSTALS-X-Ray Diffraction Tutorial](https://tud.netlify.app/lectures/mantech/07-crystals_xrd-tutorial.pdf){target="_blank"}
 
--   [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/){target="_blank"}
+- [Space Groups](https://tud.netlify.app/lectures/mantech/space-groups/){target="_blank"}
 
--   [Laboratory Manual](https://tud.netlify.app/lectures/mantech/Lab-Manual.pdf){target="_blank"}
+- [Laboratory Manual](https://tud.netlify.app/lectures/mantech/Lab-Manual.pdf){target="_blank"}
 
 ## CMS
 
--   [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf){target="_blank"}
+- [Signals & Noise](https://tud.netlify.app/lectures/cms/01-signals-noise.pdf){target="_blank"}
 
--   [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisation-cables.pdf){target="_blank"}
+- [Digitisation & Cables](https://tud.netlify.app/lectures/cms/02-digitisation-cables.pdf){target="_blank"}
 
--   [Signals & Noise Tutorial](https://tud.netlify.app/lectures/cms/01-signals_noise_tutorial.pdf){target="_blank"}
+- [Signals & Noise Tutorial](https://tud.netlify.app/lectures/cms/01-signals_noise_tutorial.pdf){target="_blank"}
 
--   [Digitisation Tutorial](https://tud.netlify.app/lectures/cms/02-digitisation_tutorial.pdf){target="_blank"}
+- [Digitisation Tutorial](https://tud.netlify.app/lectures/cms/02-digitisation_tutorial.pdf){target="_blank"}
 
--   [Cables, Images, & Malware Tutorial](https://tud.netlify.app/lectures/cms/03-cables_images_malware_tutorial.pdf){target="_blank"}
+- [Cables, Images, & Malware Tutorial](https://tud.netlify.app/lectures/cms/03-cables_images_malware_tutorial.pdf){target="_blank"}
 
--   [White Noise](https://tud.netlify.app/lectures/cms/Whitenoisesound.wav){target="_blank"}
+- [White Noise](https://tud.netlify.app/lectures/cms/Whitenoisesound.wav){target="_blank"}
 
--   [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav){target="_blank"}
+- [Pink Noise](https://tud.netlify.app/lectures/cms/pink_noise.wav){target="_blank"}
 
--   [Laboratory Manual](https://tud.netlify.app/lectures/cms/Measurement-manual.pdf){target="_blank"}
+- [Laboratory Manual](https://tud.netlify.app/lectures/cms/Measurement-manual.pdf){target="_blank"}
 
--   [3<sup>rd</sup> Filters Lab](https://tud.netlify.app/lectures/cms/filters-lab.zip){target="_blank"}
+- [3<sup>rd</sup> Filters Lab](https://tud.netlify.app/lectures/cms/filters-lab.zip){target="_blank"}
 
 ## LPP
 
--   [Safety](https://tud.netlify.app/lectures/lpp/01-laboratory-safety.pdf){target="_blank"}
+- [Safety](https://tud.netlify.app/lectures/lpp/01-laboratory-safety.pdf){target="_blank"}
 
--   [Hazards](https://tud.netlify.app/lectures/lpp/02-hazards.pdf){target="_blank"}
+- [Hazards](https://tud.netlify.app/lectures/lpp/02-hazards.pdf){target="_blank"}
 
--   [Units](https://tud.netlify.app/lectures/lpp/03-units.pdf){target="_blank"}
+- [Units](https://tud.netlify.app/lectures/lpp/03-units.pdf){target="_blank"}
 
--   [Moles](https://tud.netlify.app/lectures/lpp/04-moles-molarity-solutions.pdf){target="_blank"}
+- [Moles](https://tud.netlify.app/lectures/lpp/04-moles-molarity-solutions.pdf){target="_blank"}
 
--   [Dilutions](https://tud.netlify.app/lectures/lpp/05-dilutions.pdf){target="_blank"}
+- [Dilutions](https://tud.netlify.app/lectures/lpp/05-dilutions.pdf){target="_blank"}
 
--   [Concentrations](https://tud.netlify.app/lectures/lpp/06-concentrations.pdf){target="_blank"}
+- [Concentrations](https://tud.netlify.app/lectures/lpp/06-concentrations.pdf){target="_blank"}
 
--   [Measurement](https://tud.netlify.app/lectures/lpp/07-measurement.pdf){target="_blank"}
+- [Measurement](https://tud.netlify.app/lectures/lpp/07-measurement.pdf){target="_blank"}
 
 ## ATU
 
--   [Data Handling 2025](https://atu-2025.netlify.app/){target="_blank"}
+- [Data Handling 2025](https://atu-2025.netlify.app/){target="_blank"}
 
--   [Data Handling 2026](https://atu-2026.netlify.app/){target="_blank"}
+- [Data Handling 2026](https://atu-2026.netlify.app/){target="_blank"}
 :::
