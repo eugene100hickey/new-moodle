@@ -74,8 +74,17 @@ Astrophysics research has never been more active. There are numerous fundamental
 
 ## Exoplanets
 
-:::::: columns
-:::: {.column width="50%"}
+::::: columns
+
+::: {.column width="35%"}
+
+::: {style="text-align: center;"}
+![Martin Vargic](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){fig-align="right" height="500"}
+:::
+
+:::
+
+:::: {.column width="65%"}
 ::: {style="font-size: 70%;"}
 - over 6000 confirmed
 
@@ -99,10 +108,8 @@ Astrophysics research has never been more active. There are numerous fundamental
 :::
 ::::
 
-::: {.column width="50%"}
-![Martin Vargic](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){fig-align="right" height="500"}
-:::
-::::::
+
+:::::
 
 
 ## 
