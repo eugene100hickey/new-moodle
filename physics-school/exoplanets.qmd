@@ -26,7 +26,7 @@ include-in-header:
 
 <br> <br> <br>
 
-Astrophysics research has never been more active. There are numerous fundamental questions being addressed, with _big science_ missions to match. Because so much material is freely available to be analysed, it's a wonderful time for citizen scientists.
+Astrophysics research has never been more active. There are numerous fundamental questions being addressed, with *big science* missions to match. Because so much material is freely available to be analysed, it's a wonderful time for citizen scientists.
 
 ## Some key questions
 
@@ -34,18 +34,17 @@ Astrophysics research has never been more active. There are numerous fundamental
 
 - the dark sector
 
-    - nature of dark energy
-    
-    - and of dark matter
+  - nature of dark energy
 
+  - and of dark matter
 
 - the mysteries of our solar system
 
 - exoplanets
 
-    - bio-signatures
-    
-    - techno-signatures
+  - bio-signatures
+
+  - techno-signatures
 
 ## Where is all this information...
 
@@ -54,7 +53,6 @@ Astrophysics research has never been more active. There are numerous fundamental
 - [Vera Rubin](https://www.lsst.org/about/dm/data-products){target="_blank"} will be a big deal
 
 - and archives, like the [exoplanet one](https://www.exoplanet.eu/home/){target="_blank"}, or the equivalent from [Nasa](https://exoplanetarchive.ipac.caltech.edu/docs/data.html){target="_blank"}
-
 
 ## What's happening in the field
 
@@ -70,19 +68,14 @@ Astrophysics research has never been more active. There are numerous fundamental
 
 - time-domain
 
-
-
 ## Exoplanets
 
-::::: columns
-
-::: {.column width="35%"}
-
+::::::: columns
+:::: {.column width="35%"}
 ::: {style="text-align: center;"}
 ![Martin Vargic](images/exoplanets_by_jaysimons-d9dv6th-small1.jpg){fig-align="right" height="500"}
 :::
-
-:::
+::::
 
 :::: {.column width="65%"}
 ::: {style="font-size: 70%;"}
@@ -103,29 +96,25 @@ Astrophysics research has never been more active. There are numerous fundamental
     - also, transit timing variations
 
   - radial velocity - the host star wobbles as the planet orbits, can be picked up by doppler shift in spectum
+  
+  - gravitational $\micro$lensing
 
   - note, we never get to directly see the planet
 :::
 ::::
-
-
-:::::
-
+:::::::
 
 ## 
 
 ![](images/gold-rush-start.png)
 
-
 ## 
 
 ![](images/GoldRush8.gif)
 
-
 ## 
 
 ![](images/gold-rush-end.png)
-
 
 ## Where are they (so far)
 
@@ -149,7 +138,9 @@ Astrophysics research has never been more active. There are numerous fundamental
 
 - not much as the star is so much more massive
 
-    - our Sun does 500km _wobble_ every year because of Earth's orbit
+  - our Sun does 2000km *wobble* every year because of Earth's orbit
+  
+  - about 6cm per second
 
 - if lined up properly, sometimes the star moves towards us, sometimes recedes
 
@@ -157,32 +148,43 @@ Astrophysics research has never been more active. There are numerous fundamental
 
 - we can detect this
 
-##
+## 
 
-:::: columns
-
+:::::: columns
 ::: {.column width="45%"}
-
 <br> <br> <br>
 
-HARPS
-![](images/harps.jpg)
+HARPS ![](images/harps.jpg)
 :::
 
 ::: {.column width="10%"}
 :::
 
 ::: {.column width="45%"}
-
 <br> <br> <br>
 
 ESPRESSO
 
 ![](images/espresso.jpg)
-
 :::
+::::::
 
-::::
+## Transits
+
+- planet eclipses host star
+
+    - Jupiter would dim our sun by 1%
+    
+![](images/odhran-cully-transit.png){data-credits="Odhran Cully MSc Thesis 2026"}
+
+## $\micro$lensing
+
+- looking at a bright background star, normally just detect the light emitted directly towards us
+
+- but if something passes in between, the _something's_ gravitational field can bend more light to us
+
+- background object gets a little brighter for a while
+
 
 ## What do we Know
 

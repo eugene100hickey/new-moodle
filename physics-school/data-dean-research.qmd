@@ -1,0 +1,237 @@
+---
+title: "From Vision to Practice: Implementing a Research Strategy for the Faculty of Computing Digital and Data at TU Dublin"
+author: "Eugene Hickey"
+date: "[tud.netlify.app/data-dean-research.html](https://tud.netlify.app/data-dean-research.html)"
+format:
+  revealjs:
+    theme: style.scss
+    slide-number: true
+    show-slide-number: all
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+    embed-resources: true
+    includes:
+      favicon: favicon.html
+code-link: true
+execute:
+  echo: true
+  freeze: auto
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "img/bullfinch.jpg" />
+---
+
+
+Core Message
+
+TU Dublin has a strong [Research and Innovation Strategy](https://www.tudublin.ie/research-innovation/vice-president-office-for-r-and-i/research-and-innovation-strategy/), a framework that aligns people, resources, partnerships, and outcomes to create a sustainable research culture with societal and economic impact. 
+
+Looking to journey from the *Vision* presented in this plan to a *Measurable Implementation* through strategic, practical, action-oriented steps.
+
+## Research Strategy within the Context of TU Dublin
+
+Five Pillars of TU Dublin Research Strategy
+
+- Culture, Innovation, and Inclusivity in a changing society
+
+- Health and Wellbeing for a thriving society
+
+- Materials and Technologies for Sustainable Transformation
+
+- Sustainable Food Systems and Environmental Protection
+
+- Transformative Digital Solutions
+
+##
+
+
+- Rapid advances in AI, cybersecurity, data science, digital transformation, and sustainable computing.
+
+
+- Increasing competition for research funding and talent.
+
+- Strong alignment with national priorities and industry needs.
+
+- Research excellence enhances:
+
+    - Reputation
+    
+    - Student experience
+    
+    - Industry engagement
+    
+    - Regional and national impact
+
+
+## Defining the Vision 
+
+::: {style="font-size: 90%;"}
+
+"To become a recognised leader in impactful digital research that advances knowledge, drives innovation, and addresses societal challenges."
+
+:::: {columns}
+
+:::{.column}
+
+- Research Excellence
+- High-quality publications
+- International collaborations
+- Research Impact
+- Industry innovation
+- Public policy influence
+- Societal benefit
+
+:::
+:::{.column}
+- Talent Development
+- Research-active staff
+- PhD and postdoctoral growth
+- Global Visibility
+- Strategic partnerships
+- International reputation
+
+:::
+::::
+
+:::
+
+## Strategic Pillars
+
+::: {style="font-size: 90%;"}
+
+::: {layout="[[1,1], [1,1]]"}
+<div>
+**Pillar 1: People**
+
+- Develop research leaders
+
+- Support early-career researchers
+
+- Interdisciplinary teams
+</div>
+
+<div>
+**Pillar 2: Funding**
+
+- Increase national and European funding
+
+- Develop grant-writing capability
+
+</div>
+
+<div>
+**Pillar 3: Partnerships**
+
+- Strengthen industry collaboration
+
+
+- Build international networks
+</div>
+
+<div>
+**Pillar 4: Impact**
+
+- Translating research into outcomes
+
+
+- Commercialisation and societal benefit
+</div>
+:::
+
+:::
+
+## Turning Strategy into Action
+
+:::: {columns}
+
+:::{.column width="48%"}
+
+::: callout-note
+## EU Funding
+
+- we shy away from EU funding
+
+- EU COST Actions a gateway
+
+- 80 on stream this year
+
+    - many in our area
+    
+    - GenAI in Education
+ 
+ 
+ - workshops and meetings to build cross-EU collaborations
+ 
+ - undertaken in context of EUt+
+ 
+:::   
+:::
+
+:::{.column width="4%"}
+:::
+
+:::{.column width="48%"}
+::: callout-note
+
+## Synergy
+
+- on campus innovation centre
+
+- be more active in seeking collaborations
+
+- societal impact
+
+:::
+:::
+::::
+
+
+## Measuring Success
+
+::: {style="font-size: 80%;"}
+
+- A strategy succeeds only if progress is visible.
+
+- Key Performance Indicators
+
+::: {layout="[[1,1], [1,1]]"}
+<div>
+**Research Excellence**
+
+- Publications
+- Citations
+- Research awards
+</div>
+
+<div>
+**Research Capacity**
+
+- PhD enrolments
+- New principal investigators
+- Staff engagement
+</div>
+
+<div>
+**Research Funding**
+
+- Total grant income
+- EU funding growth
+</div>
+
+<div>
+**Research Impact**
+
+- Industry collaborations
+- Societal contributions
+</div>
+:::
+
+Message: Measure outcomes, not just activities.
+
+:::
+
+
+## Final Message
+
+"The future of the Faculty's research excellence will not be determined by our vision alone. It will be determined by our collective ability to translate that vision into everyday practice through people, partnerships, funding, and impact."

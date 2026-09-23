@@ -1,0 +1,345 @@
+---
+title: "From Vision to Practice: Implementing a Research Strategy for the Faculty of Computing Digital and Dat at TU Dublin"
+author: "Eugene Hickey"
+date: "[tud.netlify.app/data-dean-research.html](https://tud.netlify.app/data-dean-research.html)"
+format:
+  revealjs:
+    theme: style.scss
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+    embed-resources: true
+    includes:
+      favicon: favicon.html
+code-link: true
+execute:
+  echo: true
+  freeze: auto
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "img/bullfinch.jpg" />
+---
+
+
+Core Message
+
+TU Dublin has a strong [Research and Innovation Strategy](https://www.tudublin.ie/research-innovation/vice-president-office-for-r-and-i/research-and-innovation-strategy/), a framework that aligns people, resources, partnerships, and outcomes to create a sustainable research culture with societal and economic impact. 
+
+Looking to journey from the *Vision* presented in this plan to a *Measurable Implementation* through strategic, practical, action-oriented steps.
+
+## Research Strategy within the Context of TU Dublin
+
+Five Pillars of TU Dublin Research Strategy
+
+- Culture, Innovation, and Inclusivity in a changing society
+
+- Health and Wellbeing for a thriving society
+
+- Materials and Technologies for Sustainable Transformation
+
+- Sustainable Food Systems and Environmental Protection
+
+- Transformative Digital Solutions
+
+##
+
+
+- Rapid advances in AI, cybersecurity, data science, digital transformation, and sustainable computing.
+
+
+- Increasing competition for research funding and talent.
+
+- Strong alignment with national priorities and industry needs.
+
+- Research excellence enhances:
+
+    - Reputation
+    
+    - Student experience
+    
+    - Industry engagement
+    
+    - Regional and national impact
+
+
+## Defining the Vision 
+
+
+"To become a recognised leader in impactful digital research that advances knowledge, drives innovation, and addresses societal challenges."
+
+:::: {columns}
+
+:::{.column}
+
+- Research Excellence
+- High-quality publications
+- International collaborations
+- Research Impact
+- Industry innovation
+- Public policy influence
+- Societal benefit
+
+:::
+:::{.column}
+- Talent Development
+- Research-active staff
+- PhD and postdoctoral growth
+- Global Visibility
+- Strategic partnerships
+- International reputation
+
+:::
+::::
+
+
+## Strategic Pillars
+
+::: {layout="[[1,1], [1,1]]"}
+<div>
+**Pillar 1: People**
+
+- Develop research leaders
+
+- Support early-career researchers
+
+- Interdisciplinary teams
+</div>
+
+<div>
+**Pillar 2: Funding**
+
+- Increase national and European funding
+
+- Develop grant-writing capability
+
+</div>
+
+<div>
+**Pillar 3: Partnerships**
+
+- Strengthen industry collaboration
+
+
+- Build international networks
+</div>
+
+<div>
+**Pillar 4: Impact**
+
+- Translating research into outcomes
+
+
+- Commercialisation and societal benefit
+</div>
+:::
+
+
+
+
+
+
+## Slide 4: Turning Strategy into Action (2 minutes)
+
+This is the most important slide.
+
+Objective 1: Build Research Capacity
+
+Actions:
+
+Mentoring programmes
+Research development workshops
+Protected research time
+
+Measures:
+
+Number of active researchers
+PhD supervision capacity
+Research outputs
+Objective 2: Grow Research Funding
+
+##
+
+Actions:
+
+Target key funding calls
+Grant review panels
+Collaborative proposal development
+
+Measures:
+
+Applications submitted
+Success rates
+Funding secured
+Objective 3: Foster Collaboration
+
+##
+
+Actions:
+
+Interdisciplinary research clusters
+Industry challenge projects
+International partnerships
+
+Measures:
+
+Joint publications
+Collaborative grants
+Industry-funded projects
+
+
+## Slide 5: Measuring Success (1 minute)
+
+A strategy succeeds only if progress is visible.
+
+Key Performance Indicators
+
+Research Excellence
+
+Publications
+Citations
+Research awards
+
+Research Capacity
+
+PhD enrolments
+New principal investigators
+Staff engagement
+
+Research Funding
+
+Total grant income
+EU funding growth
+
+Research Impact
+
+Industry collaborations
+Innovation outputs
+Societal contributions
+
+Message: Measure outcomes, not just activities.
+
+## Slide 6: Roadmap and Call to Action (1.5 minutes)
+Year 1
+
+Foundation
+
+Define priorities
+Establish research clusters
+Build support mechanisms
+Years 2-3
+
+## Growth
+
+Increase funding applications
+Expand doctoral activity
+Strengthen collaborations
+Years 4-5
+
+## Leadership
+
+International recognition
+Major research centres
+Strong impact profile
+Final Message
+
+"The future of the Faculty's research excellence will not be determined by our vision alone. It will be determined by our collective ability to translate that vision into everyday practice through people, partnerships, funding, and impact."
+
+Why this works for an 8-minute slot
+
+This structure:
+
+Starts with the strategic rationale.
+Presents a clear vision.
+Focuses on practical implementation.
+Shows measurable outcomes.
+Ends with a strong leadership message.
+
+It is particularly suitable if your audience includes faculty leadership, researchers, and university management because it balances strategy, governance, and actionable delivery without becoming overly operational.
+
+Provide your feedback on BizChat
+You said:
+Add examples of successful implementation
+Copilot said:
+
+Adding real examples of successful implementation will make the presentation much more persuasive. Rather than discussing strategy in the abstract, you can demonstrate how universities have translated research ambitions into measurable outcomes.
+
+Revised Slide 4: Turning Strategy into Action (2 minutes)
+Objective 1: Build Research Capacity
+
+Actions
+
+Research mentoring programmes
+Support for early-career researchers
+Protected research time
+Doctoral researcher development
+
+Example University College Dublin's Conway Institute developed interdisciplinary research communities and structured supports for researchers, helping to build internationally recognised research groups and attract significant competitive funding.
+
+Lesson for TU Dublin Investing in people and research culture creates the foundations for future funding and impact.
+
+Objective 2: Grow Research Funding
+
+Actions
+
+Faculty grant-writing academy
+Internal peer review panels
+Seed funding for emerging ideas
+Identification of Horizon Europe opportunities
+
+Example Many leading universities use internal seed funding to help researchers generate preliminary results before applying for major grants. Small investments often unlock substantially larger external awards.
+
+Lesson for TU Dublin Targeted institutional support can significantly increase funding success rates.
+
+Objective 3: Foster Collaboration
+
+Actions
+
+Create interdisciplinary research clusters
+Industry challenge programmes
+International research partnerships
+
+Example TU Dublin's own Research Hubs and Enterprise Engagement activities have shown that collaboration with industry generates funding opportunities, student involvement, applied research outputs, and societal impact.
+
+Lesson for TU Dublin The Faculty already has strengths that can be scaled through a coordinated strategy.
+
+New Slide 5: What Success Looks Like - Examples We Can Learn From (1 minute)
+Example 1: MIT Media Lab
+
+Success Factor Brings together computing, design, engineering and industry partners around grand challenges.
+
+Outcome High-impact innovation, strong industrial partnerships, global reputation.
+
+Takeaway Interdisciplinary collaboration accelerates innovation.
+
+Example 2: University of Edinburgh School of Informatics
+
+Success Factor Clear research themes aligned with AI, data science, robotics and societal impact.
+
+Outcome International leadership in informatics and sustained research income.
+
+Takeaway Focus around a small number of strategic strengths.
+
+Example 3: Science Foundation Ireland Research Centres
+
+Success Factor Long-term partnerships between academia and industry.
+
+Outcome Significant research funding and commercial impact.
+
+Takeaway Industry engagement should be embedded within the research strategy, not treated as an add-on.
+
+Enhanced Final Slide: A TU Dublin Case Study Vision (1 minute)
+Imagine TU Dublin in 2030
+Recognised as a national leader in digital and data-driven research.
+Home to internationally recognised research groups in AI, cybersecurity, digital health, and sustainable computing.
+Increased Horizon Europe and national funding.
+Stronger PhD community.
+Industry partnerships delivering measurable societal impact.
+The Formula
+
+Vision + People + Investment + Partnerships + Measurement = Research Excellence
+
+Closing Message
+
+"The most successful research universities are not distinguished by having better strategies. They are distinguished by implementing their strategies consistently, investing in their people, and measuring what matters. The opportunity for TU Dublin is not merely to define a vision for research excellence, but to create the conditions that make that vision inevitable."
+
+This approach elevates the presentation from a planning discussion to a leadership narrative, showing both what TU Dublin should do and evidence that similar approaches have worked elsewhere.
