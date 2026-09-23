@@ -4,7 +4,6 @@ author: "Eugene Hickey"
 date: "[tud.netlify.app/data-dean-research.html](https://tud.netlify.app/data-dean-research.html)"
 format:
   revealjs:
-    theme: style.scss
     slide-number: true
     show-slide-number: all
     transition: fade
@@ -14,12 +13,16 @@ format:
     includes:
       favicon: favicon.html
 code-link: true
+title-slide-attributes:
+  data-background-image: /img/clock.jpg
+  data-background-size: contain
+  data-background-opacity: "0.2"
 execute:
   echo: true
   freeze: auto
 include-in-header:
   - text: |
-      <link rel = "shortcut icon" href = "img/bullfinch.jpg" />
+      <link rel = "shortcut icon" href = "img/bullfinch.png" />
 ---
 
 
