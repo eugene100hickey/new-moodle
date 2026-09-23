@@ -30,7 +30,7 @@ Core Message
 
 TU Dublin has a strong [Research and Innovation Strategy](https://www.tudublin.ie/research-innovation/vice-president-office-for-r-and-i/research-and-innovation-strategy/), a framework that aligns people, resources, partnerships, and outcomes to create a sustainable research culture with societal and economic impact. 
 
-Looking to journey from the *Vision* presented in this plan to a *Measurable Implementation* through strategic, practical, action-oriented steps.
+Mapping the the *Vision* presented in this plan to our faculty, and looking to journey to a *Measurable Implementation* through strategic, practical, action-oriented steps.
 
 ## Research Strategy within the Context of TU Dublin
 
@@ -48,11 +48,21 @@ Five Pillars of TU Dublin Research Strategy
 
 ##
 
+::: {style="font-size: 100%;"}
 
 - Rapid advances in AI, cybersecurity, data science, digital transformation, and sustainable computing.
 
 
-- Increasing competition for research funding and talent.
+- Increase competition for research funding and talent
+
+    - expand base of research active academics
+    - foster culture of writing research grant proposals
+    - increase collaborations
+    
+        - within our university
+        - across academic partner institutions
+        
+:::
 
 - Strong alignment with national priorities and industry needs.
 
@@ -67,6 +77,7 @@ Five Pillars of TU Dublin Research Strategy
     - Regional and national impact
 
 
+
 ## Defining the Vision 
 
 ::: {style="font-size: 90%;"}
@@ -77,22 +88,22 @@ Five Pillars of TU Dublin Research Strategy
 
 :::{.column}
 
-- Research Excellence
-- High-quality publications
-- International collaborations
-- Research Impact
-- Industry innovation
-- Public policy influence
-- Societal benefit
+- Research Excellence <span style="color: green;">&#x2713;</span>
+- High-quality publications <span style="color: green;">&#x2713;</span>
+- International collaborations <span style="color: green;">&#x2713;</span>
+- Research Impact <span style="color: green;">&#x2713;</span>
+- Industry innovation <span style="color: green;">&#x2713;</span>
+- Public policy influence <span style="color: green;">&#x2713;</span>
+- Societal benefit <span style="color: green;">&#x2713;</span>
 
 :::
 :::{.column}
-- Talent Development
-- Research-active staff
-- PhD and postdoctoral growth
-- Global Visibility
-- Strategic partnerships
-- International reputation
+- Talent Development <span style="color: green;">&#x2713;</span>
+- Research-active staff <span style="color: green;">&#x2713;</span>
+- PhD and postdoctoral growth <span style="color: green;">&#x2713;</span>
+- Global Visibility <span style="color: green;">&#x2713;</span>
+- Strategic partnerships <span style="color: green;">&#x2713;</span>
+- International reputation <span style="color: green;">&#x2713;</span>
 
 :::
 ::::
@@ -181,11 +192,22 @@ Five Pillars of TU Dublin Research Strategy
 
 - on campus innovation centre
 
-- be more active in seeking collaborations
+- be active in seeking collaborations
 
 - societal impact
 
 :::
+
+::: callout-note
+
+## Research Ireland
+
+- foster proficiency in grant proposal writing 
+
+- proposals make research ideas concrete
+
+:::
+
 :::
 ::::
 
