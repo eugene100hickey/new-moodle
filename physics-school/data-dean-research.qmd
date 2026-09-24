@@ -28,7 +28,7 @@ include-in-header:
 
 Core Message
 
-TU Dublin has a strong [Research and Innovation Strategy](https://www.tudublin.ie/research-innovation/vice-president-office-for-r-and-i/research-and-innovation-strategy/), a framework that aligns people, resources, partnerships, and outcomes to create a sustainable research culture with societal and economic impact. 
+TU Dublin has a strong [Research and Innovation Strategy](https://www.tudublin.ie/research-innovation/vice-president-office-for-r-and-i/research-and-innovation-strategy/){target="_blank"}, a framework that aligns people, resources, partnerships, and outcomes to create a sustainable research culture with societal and economic impact. 
 
 Mapping the the *Vision* presented in this plan to our faculty, and looking to journey to a *Measurable Implementation* through strategic, practical, action-oriented steps.
 
