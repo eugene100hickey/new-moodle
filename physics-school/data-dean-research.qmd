@@ -72,12 +72,11 @@ Five Pillars of TU Dublin Research Strategy
 
     - Reputation
     
-    - Student experience
-    
     - Industry engagement
     
     - Regional and national impact
-
+    
+    - Student experience
 
 
 ## Defining the Vision 
@@ -223,13 +222,6 @@ Five Pillars of TU Dublin Research Strategy
 - Key Performance Indicators
 
 ::: {layout="[[1,1], [1,1]]"}
-<div>
-**Research Excellence**
-
-- Publications
-- Citations
-- Research awards
-</div>
 
 <div>
 **Research Capacity**
@@ -247,6 +239,15 @@ Five Pillars of TU Dublin Research Strategy
 </div>
 
 <div>
+**Research Excellence**
+
+- Publications
+- Citations
+- Research awards
+</div>
+
+
+<div>
 **Research Impact**
 
 - Industry collaborations
@@ -261,4 +262,4 @@ Message: Measure outcomes, not just activities.
 
 ## Final Message
 
-"The future of the Faculty's research excellence will not be determined by our vision alone. It will be determined by our collective ability to translate that vision into everyday practice through people, partnerships, funding, and impact."
+"The future of the Faculty's research excellence will not be determined by our vision alone. It will be determined by our collective ability to translate that vision into everyday practice through people, funding, partnerships, and impact."
