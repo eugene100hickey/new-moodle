@@ -1,0 +1,11 @@
+name,discovery_year,mass_earth,radius_km,semi_major_axis_au,detection_method,planet_status_change_year,notes
+Mercury,Known since antiquity,0.0553,2439.7,0.387,Direct observation,,Planet
+Venus,Known since antiquity,0.815,6051.8,0.723,Direct observation,,Planet
+Earth,Known since antiquity,1.0,6371.0,1.0,Direct observation,,Planet
+Mars,Known since antiquity,0.107,3389.5,1.524,Direct observation,,Planet
+Jupiter,Known since antiquity,317.8,69911.0,5.203,Direct observation,,Planet
+Saturn,Known since antiquity,95.2,58232.0,9.537,Direct observation,,Planet
+Uranus,1781,14.5,25362.0,19.191,Telescopic observation,,Planet
+Neptune,1846,17.1,24622.0,30.069,Predicted then telescopic observation,,Planet
+Ceres,1801,0.000157,469.7,2.77,Telescopic observation,1850s,Reclassified as asteroid
+Pluto,1930,0.00218,1188.3,39.48,Telescopic observation,2006,Reclassified as dwarf planet
