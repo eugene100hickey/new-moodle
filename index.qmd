@@ -5,7 +5,7 @@ format:
     theme: solarized
     fontsize: 22pt
     page-layout: full
-editor: visual
+editor: source
 execute: 
   eval: true
 include-in-header:
